@@ -159,10 +159,10 @@ export const FooterLarge10 = () => {
                     </div>
 
                     <div className="mt-8 flex flex-col-reverse gap-3 self-stretch sm:flex-row sm:self-start lg:mt-0">
-                        <Button color="secondary" size="xl">
+                        <Button color="secondary" size="xl" href="/about/project-information">
                             Learn more
                         </Button>
-                        <Button size="xl">Get started</Button>
+                        <Button size="xl" href="/scripture">Get started</Button>
                     </div>
                 </div>
 
@@ -175,7 +175,7 @@ export const FooterLarge10 = () => {
                         <ul className="grid flex-1 grid-cols-2 gap-8 md:grid-cols-5">
                             {footerNavList.slice(0, 5).map((category) => (
                                 <li key={category.label}>
-                                    <h4 className="text-sm font-semibold text-quaternary">{category.label}</h4>
+                                    <h4 className="text-sm font-semibold text-fg-white">{category.label}</h4>
                                     <ul className="mt-4 flex flex-col gap-3">
                                         {category.items.map((item) => (
                                             <li key={item.label}>
