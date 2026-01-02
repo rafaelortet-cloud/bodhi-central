@@ -60,7 +60,7 @@ const footerNavList = [
             },
             {
                 label: "Study Centers",
-                href: "/Resources/Study Centers",
+                href: "/resources/study-centers",
             },
             {
                 label: "Transmissions",
