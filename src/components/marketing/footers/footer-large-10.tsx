@@ -34,11 +34,11 @@ const footerNavList = [
         label: "Learning Paths",
         items: [
             {
-                label: "Overview",
+                label: "Introduction",
                 href: "#",
             },
             {
-                label: "Guides",
+                label: "Shedra Paths",
                 href: "#",
             },
             {
@@ -63,15 +63,15 @@ const footerNavList = [
         label: "Resources",
         items: [
             {
-                label: "Groups around you",
+                label: "Groups Around You",
                 href: "#",
             },
             {
-                label: "Teaching Evolutions",
+                label: "Study Centers",
                 href: "#",
             },
             {
-                label: "Events",
+                label: "Transmissions",
                 href: "#",
             },
             {
@@ -149,12 +149,12 @@ const footerSocials = [
 
 export const FooterLarge10 = () => {
     return (
-        <footer className="bg-primary py-12 md:pt-16">
+        <footer className="bg-brand-950 py-12 md:pt-16">
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="flex flex-col justify-between border-b border-secondary pb-8 md:pb-16 lg:flex-row">
                     <div className="max-w-3xl">
-                        <h2 className="text-display-xs font-semibold text-primary md:text-display-sm">Start your 30-day free trial</h2>
-                        <p className="mt-2 text-md text-tertiary md:mt-4 md:text-xl">Join over 4,000+ startups already growing with Untitled.</p>
+                        <h2 className="text-display-xs font-semibold text-primary md:text-display-sm">Start your journey</h2>
+                        <p className="mt-2 text-md text-tertiary md:mt-4 md:text-xl">Join thousands of explorers of Buddhist awakening.</p>
                     </div>
 
                     <div className="mt-8 flex flex-col-reverse gap-3 self-stretch sm:flex-row sm:self-start lg:mt-0">
@@ -166,7 +166,7 @@ export const FooterLarge10 = () => {
                 </div>
 
                 <div className="mt-12 flex flex-col gap-12 md:mt-16 md:gap-16 xl:flex-row">
-                    <div className="flex flex-col gap-6 md:w-80 md:gap-8">
+                    <div className="flex flex-col gap-6 md:w-72 md:gap-8">
                         <UntitledLogo className="h-8 w-min shrink-0" />
                         <p className="text-md text-tertiary">An initiative aiming to explore and share the channeling of Buddhist scripture and its learning in digital format.</p>
                     </div>
