@@ -11,7 +11,7 @@ const items = [
     {
         title: "Collections",
         subtitle: "Browse the collections most popular and loved by thoughsands.",
-        href: "/collections",
+        href: "/scripture/collections",
         Icon: Stars02,
     },
     {
