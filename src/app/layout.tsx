@@ -5,6 +5,7 @@ import { Theme } from "@/providers/theme";
 import "@/styles/globals.css";
 import { cx } from "@/utils/cx";
 import { Header } from "@/components/marketing/header-navigation/header";
+import { FooterLarge10 } from "@/components/marketing/footers/footer-large-10";
 
 const nunito = Nunito({
     subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({
                     <Theme>
                         <Header />
                         {children}
+                        <FooterLarge10 />
                     </Theme>
                 </RouteProvider>
             </body>
