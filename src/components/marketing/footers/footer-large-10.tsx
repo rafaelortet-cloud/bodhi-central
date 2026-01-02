@@ -13,7 +13,7 @@ const footerNavList = [
             },
             {
                 label: "Collections",
-                href: "#",
+                href: "/scripture/collections",
             },
             {
                 label: "Traditions",

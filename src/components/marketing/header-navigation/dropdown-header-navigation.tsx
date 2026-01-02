@@ -3,27 +3,27 @@ import { NavMenuItemLink } from "./base-components/nav-menu-item";
 
 const items = [
     {
-        title: "Blog",
-        subtitle: "The latest industry new and guides curated by our expert team.",
-        href: "/blog",
+        title: "Scripture Overview",
+        subtitle: "The Buddhist scriptures at a glance.",
+        href: "/scripture",
         Icon: BookClosed,
     },
     {
-        title: "Customer stories",
-        subtitle: "Learn how our customers are using Untitled UI to 10x their growth.",
-        href: "/customer-stories",
+        title: "Collections",
+        subtitle: "Browse the collections most popular and loved by thoughsands.",
+        href: "/collections",
         Icon: Stars02,
     },
     {
-        title: "Video tutorials",
-        subtitle: "Get up and running on our newest features and in-depth guides.",
-        href: "/tutorials",
+        title: "Traditions",
+        subtitle: "Many traditions with one open goal.",
+        href: "/traditions",
         Icon: PlayCircle,
     },
     {
-        title: "Documentation",
-        subtitle: "In-depth articles on our tools and technologies to empower teams.",
-        href: "/docs",
+        title: "Connections",
+        subtitle: "Learn about the connections between Buddhism and the world.",
+        href: "/connections",
         Icon: FileCode01,
     },
     {

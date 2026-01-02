@@ -17,14 +17,14 @@ type HeaderNavItem = {
 };
 
 const headerNavItems: HeaderNavItem[] = [
-    { label: "Scripture", href: "/products", menu: <DropdownMenuSimple /> },
-    { label: "Learning", href: "/Services", menu: <DropdownMenuSimple /> },
+    { label: "Scripture", href: "/scripture", menu: <DropdownMenuSimple /> },
+    { label: "Learning", href: "/learning", menu: <DropdownMenuSimple /> },
     { label: "Resources", href: "/resources", menu: <DropdownMenuSimple /> },
-    { label: "About", href: "/about" },
+    { label: "About", href: "/about/project-information" },
 ];
 
 const footerNavItems = [
-    { label: "About us", href: "/" },
+    { label: "About us", href: "/about/project-information" },
     { label: "Press", href: "/products" },
     { label: "Careers", href: "/resources" },
     { label: "Legal", href: "/pricing" },
