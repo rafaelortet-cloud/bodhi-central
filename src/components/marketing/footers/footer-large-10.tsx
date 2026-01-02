@@ -9,7 +9,7 @@ const footerNavList = [
         items: [
             {
                 label: "Overview",
-                href: "#",
+                href: "/scripture",
             },
             {
                 label: "Canons",
