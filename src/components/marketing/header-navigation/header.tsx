@@ -17,9 +17,8 @@ type HeaderNavItem = {
 };
 
 const headerNavItems: HeaderNavItem[] = [
-    { label: "Products", href: "/products", menu: <DropdownMenuSimple /> },
-    { label: "Services", href: "/Services", menu: <DropdownMenuSimple /> },
-    { label: "Pricing", href: "/pricing" },
+    { label: "Scripture", href: "/products", menu: <DropdownMenuSimple /> },
+    { label: "Learning", href: "/Services", menu: <DropdownMenuSimple /> },
     { label: "Resources", href: "/resources", menu: <DropdownMenuSimple /> },
     { label: "About", href: "/about" },
 ];

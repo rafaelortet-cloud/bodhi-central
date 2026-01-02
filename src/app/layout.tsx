@@ -4,6 +4,7 @@ import { RouteProvider } from "@/providers/router-provider";
 import { Theme } from "@/providers/theme";
 import "@/styles/globals.css";
 import { cx } from "@/utils/cx";
+import { Header } from "@/components/marketing/header-navigation/header";
 
 const nunito = Nunito({
     subsets: ["latin"],
@@ -30,7 +31,10 @@ export default function RootLayout({
         <html lang="en" suppressHydrationWarning>
             <body className={cx(nunito.variable, "bg-primary antialiased")}>
                 <RouteProvider>
-                    <Theme>{children}</Theme>
+                    <Theme>
+                        <Header />
+                        {children}
+                    </Theme>
                 </RouteProvider>
             </body>
         </html>
