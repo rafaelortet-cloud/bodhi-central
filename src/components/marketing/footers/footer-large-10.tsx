@@ -38,7 +38,7 @@ const footerNavList = [
                 href: "#",
             },
             {
-                label: "Shedra Paths",
+                label: "Global Paths",
                 href: "#",
             },
             {
@@ -46,15 +46,7 @@ const footerNavList = [
                 href: "#",
             },
             {
-                label: "News",
-                href: "#",
-            },
-            {
-                label: "Media kit",
-                href: "#",
-            },
-            {
-                label: "Contact",
+                label: "Practice Paths",
                 href: "#",
             },
         ],
@@ -68,7 +60,7 @@ const footerNavList = [
             },
             {
                 label: "Study Centers",
-                href: "#",
+                href: "/Resources/Study Centers",
             },
             {
                 label: "Transmissions",
@@ -154,7 +146,7 @@ export const FooterLarge10 = () => {
                 <div className="flex flex-col justify-between border-b border-secondary pb-8 md:pb-16 lg:flex-row">
                     <div className="max-w-3xl">
                         <h2 className="text-display-xs font-semibold text-primary md:text-display-sm">Start your journey</h2>
-                        <p className="mt-2 text-md text-tertiary md:mt-4 md:text-xl">Join thousands of explorers of Buddhist awakening.</p>
+                        <p className="mt-2 text-md text-tertiary md:mt-4 md:text-xl">Join thousands exploring and realizing the Buddha's teachings.</p>
                     </div>
 
                     <div className="mt-8 flex flex-col-reverse gap-3 self-stretch sm:flex-row sm:self-start lg:mt-0">
@@ -168,7 +160,7 @@ export const FooterLarge10 = () => {
                 <div className="mt-12 flex flex-col gap-12 md:mt-16 md:gap-16 xl:flex-row">
                     <div className="flex flex-col gap-6 md:w-72 md:gap-8">
                         <UntitledLogo className="h-8 w-min shrink-0" />
-                        <p className="text-md text-tertiary">An initiative aiming to explore and share the channeling of Buddhist scripture and its learning in digital format.</p>
+                        <p className="text-md text-tertiary">An initiative to explore and share the channeling of Buddhist scripture and its learning.</p>
                     </div>
                     <nav className="flex-1">
                         <ul className="grid flex-1 grid-cols-2 gap-8 md:grid-cols-4">
