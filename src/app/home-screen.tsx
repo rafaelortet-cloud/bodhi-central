@@ -16,10 +16,10 @@ export const HomeScreen = () => {
                     <UntitledLogoMinimal className="size-10" />
                 </div>
 
-                <h1 className="max-w-3xl text-center text-display-sm font-semibold text-primary">Bodhi Station, a holistic presentation of Buddhist scriptures</h1>
+                <h1 className="max-w-3xl text-center text-display-sm font-semibold text-primary">Bodhi Station, a presentation of Buddhist teachings</h1>
 
                 <p className="mt-2 max-w-xl text-center text-lg text-tertiary">
-                    A hub of Buddha's teachings around the world.
+                    An open hub of Buddha's recipes to human problems.
                 </p>
 
                 <div className="relative mt-6 flex h-10 items-center rounded-lg border border-secondary bg-secondary">

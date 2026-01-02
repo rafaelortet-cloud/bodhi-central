@@ -5,14 +5,14 @@ import { AngelList, Dribbble, Facebook, GitHub, Layers, LinkedIn, X } from "@/co
 
 const footerNavList = [
     {
-        label: "Product",
+        label: "Scripture",
         items: [
             {
                 label: "Overview",
                 href: "#",
             },
             {
-                label: "Features",
+                label: "Canons",
                 href: "#",
             },
             {
@@ -25,32 +25,24 @@ const footerNavList = [
                 ),
             },
             {
-                label: "Tutorials",
-                href: "#",
-            },
-            {
-                label: "Pricing",
-                href: "#",
-            },
-            {
                 label: "Releases",
                 href: "#",
             },
         ],
     },
     {
-        label: "Company",
+        label: "Learning Paths",
         items: [
             {
-                label: "About us",
+                label: "Overview",
                 href: "#",
             },
             {
-                label: "Careers",
+                label: "Guides",
                 href: "#",
             },
             {
-                label: "Press",
+                label: "Shedra Paths",
                 href: "#",
             },
             {
@@ -71,11 +63,11 @@ const footerNavList = [
         label: "Resources",
         items: [
             {
-                label: "Blog",
+                label: "Groups around you",
                 href: "#",
             },
             {
-                label: "Newsletter",
+                label: "Teaching Evolutions",
                 href: "#",
             },
             {
@@ -83,44 +75,11 @@ const footerNavList = [
                 href: "#",
             },
             {
-                label: "Help centre",
-                href: "#",
-            },
-            {
-                label: "Tutorials",
+                label: "Learning Materials",
                 href: "#",
             },
             {
                 label: "Support",
-                href: "#",
-            },
-        ],
-    },
-    {
-        label: "Social",
-        items: [
-            {
-                label: "Twitter",
-                href: "#",
-            },
-            {
-                label: "LinkedIn",
-                href: "#",
-            },
-            {
-                label: "Facebook",
-                href: "#",
-            },
-            {
-                label: "GitHub",
-                href: "#",
-            },
-            {
-                label: "AngelList",
-                href: "#",
-            },
-            {
-                label: "Dribbble",
                 href: "#",
             },
         ],
@@ -160,11 +119,6 @@ const footerSocials = [
         label: "X (formerly Twitter)",
         icon: X,
         href: "https://x.com/",
-    },
-    {
-        label: "LinkedIn",
-        icon: LinkedIn,
-        href: "https://www.linkedin.com/",
     },
     {
         label: "Facebook",
@@ -214,10 +168,10 @@ export const FooterLarge10 = () => {
                 <div className="mt-12 flex flex-col gap-12 md:mt-16 md:gap-16 xl:flex-row">
                     <div className="flex flex-col gap-6 md:w-80 md:gap-8">
                         <UntitledLogo className="h-8 w-min shrink-0" />
-                        <p className="text-md text-tertiary">Design amazing digital experiences that create more happy in the world.</p>
+                        <p className="text-md text-tertiary">An initiative aiming to explore and share the channeling of Buddhist scripture and its learning in digital format.</p>
                     </div>
                     <nav className="flex-1">
-                        <ul className="grid flex-1 grid-cols-2 gap-8 md:grid-cols-5">
+                        <ul className="grid flex-1 grid-cols-2 gap-8 md:grid-cols-4">
                             {footerNavList.slice(0, 5).map((category) => (
                                 <li key={category.label}>
                                     <h4 className="text-sm font-semibold text-quaternary">{category.label}</h4>
@@ -237,7 +191,7 @@ export const FooterLarge10 = () => {
                 </div>
 
                 <div className="mt-12 flex flex-col-reverse justify-between gap-6 border-t border-secondary pt-8 md:mt-16 md:flex-row">
-                    <p className="text-md text-quaternary">© 2077 Untitled UI. All rights reserved.</p>
+                    <p className="text-md text-quaternary">© 2026 Bodhi Station. All rights reserved.</p>
                     <ul className="flex gap-6">
                         {footerSocials.map(({ label, icon: Icon, href }) => (
                             <li key={label}>
