@@ -21,12 +21,11 @@ const headerNavItems: HeaderNavItem[] = [
     { label: "Learning", href: "/learning", menu: <DropdownMenuSimple /> },
     { label: "My Desk", href: "/my-desk" },
     { label: "Resources", href: "/resources", menu: <DropdownMenuSimple /> },
-    { label: "About", href: "/about" },
 ];
 
 const footerNavItems = [
     { label: "Project information", href: "/about/project-information" },
-    { label: "Press", href: "/about/press" },
+    { label: "About us", href: "/about" },
     { label: "Legal", href: "/about/legal" },
     { label: "Contact", href: "/about/contact" },
     { label: "Sitemap", href: "/about/sitemap" },
