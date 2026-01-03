@@ -14,7 +14,7 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-    title: "Bodhi Station — Buddhist Scriptures",
+    title: "Bodhi Central — Buddhist Scriptures",
     description: "A hub for explorations of Buddha's teachings around the world.",
 };
 

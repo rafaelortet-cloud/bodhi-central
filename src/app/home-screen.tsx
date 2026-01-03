@@ -16,7 +16,7 @@ export const HomeScreen = () => {
                     <UntitledLogoMinimal className="size-10" />
                 </div>
 
-                <h1 className="max-w-3xl text-center text-display-sm font-semibold text-primary">Bodhi Station, a presentation of Buddhist teachings</h1>
+                <h1 className="max-w-3xl text-center text-display-sm font-semibold text-primary">Bodhi Central, a presentation of Buddhist teachings</h1>
 
                 <p className="mt-2 max-w-xl text-center text-lg text-tertiary">
                     An open hub of Buddha's recipes to human problems.
