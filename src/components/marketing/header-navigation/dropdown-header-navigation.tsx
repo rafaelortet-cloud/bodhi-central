@@ -4,20 +4,20 @@ import { NavMenuItemLink } from "./base-components/nav-menu-item";
 const items = [
     {
         title: "Scripture Overview",
-        subtitle: "The Buddhist scriptures at a glance.",
+        subtitle: "The Buddhist scriptures at a glance, sorted by traditions.",
         href: "/scripture",
         Icon: BookClosed,
     },
     {
         title: "Collections",
-        subtitle: "Browse the collections most popular and loved by thoughsands.",
+        subtitle: "Browse the collections most loved by thoughsands.",
         href: "/scripture/collections",
         Icon: Stars02,
     },
     {
         title: "Traditions",
         subtitle: "Many traditions with one open goal.",
-        href: "/traditions",
+        href: "/scripture/traditions",
         Icon: PlayCircle,
     },
     {

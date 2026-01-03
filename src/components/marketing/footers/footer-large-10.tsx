@@ -17,7 +17,7 @@ const footerNavList = [
             },
             {
                 label: "Traditions",
-                href: "#",
+                href: "/scripture/traditions",
                 badge: (
                     <Badge color="gray" type="modern" size="sm" className="ml-1">
                         New
@@ -77,11 +77,11 @@ const footerNavList = [
         items: [
             {
                 label: "Project Information",
-                href: "#",
+                href: "/about/project-information",
             },
             {
-                label: "Team",
-                href: "#",
+                label: "About Us",
+                href: "/about",
             },
             {
                 label: "Partners",
@@ -150,9 +150,9 @@ const footerSocials = [
 
 export const FooterLarge10 = () => {
     return (
-        <footer className="bg-brand-950 py-12 md:pt-16">
+        <footer className="bg-bg-secondary py-12 md:pt-16">
             <div className="mx-auto max-w-container px-4 md:px-8">
-                <div className="flex flex-col justify-between border-b border-tertiary pb-8 md:pb-16 lg:flex-row">
+                <div className="flex flex-col justify-between border-b border-secondary pb-8 md:pb-16 lg:flex-row">
                     <div className="max-w-3xl">
                         <h2 className="text-display-xs font-semibold text-primary md:text-display-sm">Start your journey</h2>
                         <p className="mt-2 text-md text-tertiary md:mt-4 md:text-xl">Join thousands of people exploring the Buddha's teachings.</p>
@@ -169,13 +169,13 @@ export const FooterLarge10 = () => {
                 <div className="mt-12 flex flex-col gap-12 md:mt-16 md:gap-16 xl:flex-row">
                     <div className="flex flex-col gap-6 md:w-64 md:gap-8">
                         <UntitledLogo className="h-8 w-min shrink-0" />
-                        <p className="text-md text-tertiary">An initiative to preserve and channel global Buddhist scripture and its learning.</p>
+                        <p className="text-md text-tertiary">An initiative to preserve and channel universal Buddhist scripture and its learning globally.</p>
                     </div>
                     <nav className="flex-1">
                         <ul className="grid flex-1 grid-cols-2 gap-8 md:grid-cols-5">
                             {footerNavList.slice(0, 5).map((category) => (
                                 <li key={category.label}>
-                                    <h4 className="text-sm font-semibold text-fg-white">{category.label}</h4>
+                                    <h4 className="text-sm font-semibold text-fg-brand-secondary">{category.label}</h4>
                                     <ul className="mt-4 flex flex-col gap-3">
                                         {category.items.map((item) => (
                                             <li key={item.label}>
@@ -191,7 +191,7 @@ export const FooterLarge10 = () => {
                     </nav>
                 </div>
 
-                <div className="mt-12 flex flex-col-reverse justify-between gap-6 border-t border-tertiary pt-8 md:mt-16 md:flex-row">
+                <div className="mt-12 flex flex-col-reverse justify-between gap-6 border-t border-secondary pt-8 md:mt-16 md:flex-row">
                     <p className="text-md text-quaternary">© 2026 Bodhi Station. All rights reserved.</p>
                     <ul className="flex gap-6">
                         {footerSocials.map(({ label, icon: Icon, href }) => (
