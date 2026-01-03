@@ -165,7 +165,7 @@ export const FooterLarge10 = () => {
                 <div className="mt-12 flex flex-col gap-12 md:mt-16 md:gap-16 xl:flex-row">
                     <div className="flex flex-col gap-6 md:w-64 md:gap-8">
                         <UntitledLogo className="h-8 w-min shrink-0" />
-                        <p className="text-md text-tertiary">An initiative to preserve and channel universal Buddhist scripture and its learning globally.</p>
+                        <p className="text-md text-tertiary">An initiative to maintain and channel universal Buddhist scripture and its learning globally.</p>
                     </div>
                     <nav className="flex-1">
                         <ul className="grid flex-1 grid-cols-2 gap-8 md:grid-cols-5">
