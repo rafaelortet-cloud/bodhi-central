@@ -84,11 +84,11 @@ const footerNavList = [
                 href: "/about",
             },
             {
-                label: "Partners",
+                label: "Get Involved",
                 href: "#",
             },
             {
-                label: "Get Involved",
+                label: "Contact Us",
                 href: "#",
             },
         ],
@@ -106,10 +106,6 @@ const footerNavList = [
             },
             {
                 label: "Cookies",
-                href: "#",
-            },
-            {
-                label: "Contact",
                 href: "#",
             },
         ],

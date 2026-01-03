@@ -19,19 +19,18 @@ type HeaderNavItem = {
 const headerNavItems: HeaderNavItem[] = [
     { label: "Scripture", href: "/scripture", menu: <DropdownMenuSimple /> },
     { label: "Learning", href: "/learning", menu: <DropdownMenuSimple /> },
+    { label: "My Desk", href: "/my-desk" },
     { label: "Resources", href: "/resources", menu: <DropdownMenuSimple /> },
-    { label: "About", href: "/about/project-information" },
+    { label: "About", href: "/about" },
 ];
 
 const footerNavItems = [
-    { label: "About us", href: "/about/project-information" },
-    { label: "Press", href: "/products" },
-    { label: "Careers", href: "/resources" },
-    { label: "Legal", href: "/pricing" },
-    { label: "Support", href: "/pricing" },
-    { label: "Contact", href: "/pricing" },
-    { label: "Sitemap", href: "/pricing" },
-    { label: "Cookie settings", href: "/pricing" },
+    { label: "Project information", href: "/about/project-information" },
+    { label: "Press", href: "/about/press" },
+    { label: "Legal", href: "/about/legal" },
+    { label: "Contact", href: "/about/contact" },
+    { label: "Sitemap", href: "/about/sitemap" },
+    { label: "Cookie settings", href: "/about/cookie-settings" },
 ];
 
 const MobileNavItem = (props: { className?: string; label: string; href?: string; children?: ReactNode }) => {
