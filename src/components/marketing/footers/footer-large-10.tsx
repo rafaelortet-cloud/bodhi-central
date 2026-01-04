@@ -151,7 +151,7 @@ export const FooterLarge10 = () => {
                 <div className="flex flex-col justify-between border-b border-secondary pb-8 md:pb-16 lg:flex-row">
                     <div className="max-w-3xl">
                         <h2 className="text-display-xs font-semibold text-primary md:text-display-sm">Continue your journey</h2>
-                        <p className="mt-2 text-md text-tertiary md:mt-4 md:text-xl">Join thousands of people exploring the Buddha's teachings.</p>
+                        <p className="mt-2 text-md text-tertiary md:mt-4 md:text-xl">Join thousands of people exploring the Buddha's teachings globally.</p>
                     </div>
 
                     <div className="mt-8 flex flex-col-reverse gap-3 self-stretch sm:flex-row sm:self-start lg:mt-0">

@@ -1,9 +1,8 @@
-import { TabList, Tabs } from "@/components/application/tabs/tabs";
 
 const tabs = [
     {
-        id: "legal",
-        label: "Legal version",
+        id: "extended",
+        label: "Extended version",
     },
     {
         id: "simple",
@@ -13,17 +12,15 @@ const tabs = [
 
 export const ProjectInfoArticle = () => {
     return (
-        <Tabs keyboardActivation="manual" className="bg-primary">
+        <div>
             <section className="bg-primary py-16 md:py-24">
                 <div className="mx-auto max-w-container px-4 md:px-8">
                     <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
                         <span className="text-sm font-semibold text-brand-secondary md:text-md">Current as of 4 Jan 2026</span>
                         <h2 className="mt-3 text-display-md font-semibold text-primary md:text-display-lg">Project Information</h2>
                         <p className="mt-4 text-lg text-tertiary md:mt-6 md:text-xl">
-                            Welcome to Bodhi Central. A public hub of dharma's teachings for awakening.
+                            Welcome to Bodhi Central. This section provides information on the initiative's scope, its content, audience, motivations, user experience propositions, and the roadmap.
                         </p>
-
-                        <TabList type="button-border" size="md" items={tabs} className="mt-8 w-full md:mt-12 md:w-auto **:[[role=tab]]:flex-1" />
                     </div>
                 </div>
             </section>
@@ -36,11 +33,8 @@ export const ProjectInfoArticle = () => {
                     <p>
                         Its core mission is twofold: first, to provide support to the living transmissions of scripture passed down by our Buddhist teachers; and second, to share open digital environments for students to access specific genres of the Tengyur catalog and their corresponding Tibetan commentaries.
                     </p>
-                    <p>
-                        This Welcome section informs about the content and auprovides information on the content and audience, motivational considerations, user experience propositions, and the 2022 roadmap of the initiative.
-                    </p>
 
-                    <h2 className="text-brand-secondary">Content and Audience</h2>
+                    <h2>Content and Audience</h2>
 
                     <p>
                         Among the numerous texts that conform the Buddhist scriptural collections, the content gathered here focuses primarily on the Mahayana studies, Indian Buddhist texts written down during the Golden Age of Buddhist philosophy in India. Alongside, students will find texts from the major commentarial traditions on Indian texts that developed in Tibet from the 8th century onwards.
@@ -59,9 +53,15 @@ export const ProjectInfoArticle = () => {
                         While hoping that this catalog might be useful, it should be emphasized the vital importance of receiving direct teachings from qualified teachers who can transmit the profound meaning of these texts. May this experiment contribute to the ongoing conversations and efforts on the Buddhist digital sphere to support living transmissions of scripture.
                     </p>
 
-                    <h2>Three Considerations</h2>
+                    <h2>Three Project Considerations</h2>
 
-                    <h3>Encrypted Yet Accessible</h3>
+                    <ol>
+                        <li>Encrypted Yet Accessible</li>
+                        <li>Many traditions, One Goal</li>
+                        <li>One Life-time Opportunity</li>
+                    </ol>
+
+                    <h3>1. Encrypted Yet Accessible</h3>
 
                     <p>
                         The first consideration here is a reflection on the universal naked wisdom to be revealed in Buddha's teachings encompassing a profound and compassionate message to humanity.
@@ -74,7 +74,7 @@ export const ProjectInfoArticle = () => {
                         In contemplating the becoming world it emerges the aspiration for these teachings to be always present thanks to the activity of unwavering bodhisattvas and our striving for awakening. Offsprings of the Victorious One in consonance continue decrypting and applying the teachings in meaningful ways, making them accessible and relevant to students and practitioners, and to the world in general without hesitation.
                     </p>
 
-                    <h3>Many Traditions, One Open Goal</h3>
+                    <h3>2. Many Traditions, One Open Goal</h3>
 
                     <p>
                         The processes of interpretation, validation, and assimilation of the teachings have given rise to an entropic development of numerous doctrines and traditions. The resulting diversification of Buddha's teachings is a testament of their adaptability at core, while at present facing the paradoxical possibility for these teachings to become more irrelevant to a world turning increasingly endangered, and deeply disturbed.
@@ -83,7 +83,7 @@ export const ProjectInfoArticle = () => {
                         The second consideration here is a dear appreciation of the skillful ways in which Buddha's teachings accommodate to the various types of individuals, temperaments, capacities, provisional circumstances, and life styles. This appreciation renders here as the intent for an ecumenic, empathetic, and accessible presentation of relevant scriptures and learning paths to support adaptive Buddhist living transmissions.
                     </p>
 
-                    <h3>One Lifetime Window Opportunity</h3>
+                    <h3>3. One Lifetime Window Opportunity</h3>
 
                     <p>
                         The third consideration here is the contemplation of the fragile perfect human birth, with the qualities of leisure and endowment, and the mind with trust, longing, and clarity. For such rare lifetime opportunity in our busy and distracting world, one may wonder:
@@ -95,13 +95,6 @@ export const ProjectInfoArticle = () => {
                     </ol>
                     <p>
                         In light of these challenges, this initiative focuses on solving real problems to scriptural accessibility to support students in the familiarization of texts and assimilation of meanings. Leveraging the power of digital environments combined with skillful presentations, contemplative virtual experiences might be feasible.
-                    </p>
-
-                    <h3>How do we keep your information safe?</h3>
-
-                    <p>
-                        Pharetra morbi libero id aliquam elit massa integer tellus. Quis felis aliquam ullamcorper porttitor. Pulvinar ullamcorper sit dictumst
-                        ut eget a, elementum eu. Maecenas est morbi mattis id in ac pellentesque ac.
                     </p>
 
                     <h2>User Experience Propositions</h2>
@@ -116,7 +109,7 @@ export const ProjectInfoArticle = () => {
                         <li>Engaging with the community at the Social Room</li>
                     </ol>
 
-                    <h3>Browse and Search the Catalog</h3>
+                    <h3>1. Browse and Search the Catalog</h3>
 
                     <p>
                         The catalog brings a high visibility to schools and genres collections, it provides a fluid and mnemonic navigation system throughout, and intends to effortlessly show relationships between groups of texts. The goal is to design a browsing experience that is informative, highly functional, customizable, and pleasant.
@@ -125,25 +118,39 @@ export const ProjectInfoArticle = () => {
                         The search function, available contextually from anywhere, may include advance features such as full-text search, auto-completion suggestions, fuzzy searching, multi-level filtering, diacritics inference, and granular indexing and queries for a great performance and smooth experience. The goal is for students to enjoy searching textual content and exploring the catalog offerings, while encouraging curiosity and discovery.
                     </p>
 
-                    <h3>Personalize Desk Spaces</h3>
+                    <h3>2. Personalize Desk Spaces</h3>
 
                     <p>
                         The My Desk is student's personal domain allowing users to store and organize favorite content. The goal is to offer intuitive ways for building personal configurations (spaces) to instantly launch sessions at the Learning Room based on user studies.
                     </p>
 
-                    <h3>Read Texts and Take Learning Paths</h3>
+                    <h3>3. Read Texts and Take Learning Paths</h3>
 
                     <p>
                         The Learning Room is a virtual space where students can read texts and take learning paths, in conjunction or separately, at the Learning Room based on user studies.
                     </p>
 
-                    <h3>Engage with the Community</h3>
+                    <h3>4. Engage with the Community</h3>
 
                     <p>
                         The Social Room is a virtual space where students can read texts and take learning paths, in conjunction or separately, at the Learning Room based on user studies.
                     </p>
+
+
+                    <h2>Roadmap</h2>
+
+                    <p>
+                        The roadmap is a work in progress and is subject to change. The goal is to provide a clear and concise overview of the project's future direction and to give users a sense of the project's progress.
+                    </p>
+
+                    <ol>
+                        <li>Phase 1: Core Features</li>
+                        <li>Phase 2: Advanced Features</li>
+                        <li>Phase 3: Future Features</li>
+                    </ol>
+
                 </div>
             </main>
-        </Tabs>
+        </div>
     );
 };
