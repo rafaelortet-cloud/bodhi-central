@@ -1,3 +1,3 @@
-import { ContentSimple } from "./project-info-screen";
+import { ProjectInfoArticle } from "./project-info-screen";
 
-export default ContentSimple;
+export default ProjectInfoArticle;
