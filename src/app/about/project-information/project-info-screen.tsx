@@ -22,8 +22,6 @@ export const ContentSimple = () => {
                         <p className="mt-4 text-lg text-tertiary md:mt-6 md:text-xl">
                             Welcome to Bodhi Central. A public hub of dharma's teachings for awakening.
                         </p>
-
-                        <TabList type="button-border" size="md" items={tabs} className="mt-8 w-full md:mt-12 md:w-auto [&_[role=tab]]:flex-1" />
                     </div>
                 </div>
             </section>
