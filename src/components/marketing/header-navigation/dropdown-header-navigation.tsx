@@ -23,14 +23,8 @@ const items = [
     {
         title: "Connections",
         subtitle: "Learn about the connections between Buddhism and the world.",
-        href: "/connections",
+        href: "/scripture/connections",
         Icon: FileCode01,
-    },
-    {
-        title: "Help and support",
-        subtitle: "Need help with something? Our expert team is here to help 24/7.",
-        href: "/help",
-        Icon: LifeBuoy01,
     },
 ];
 
