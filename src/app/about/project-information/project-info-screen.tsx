@@ -79,12 +79,22 @@ export const ContentSimple = () => {
                     <p>
                         The processes of interpretation, validation, and assimilation of the teachings have given rise to an entropic development of numerous doctrines and traditions. The resulting diversification of Buddha's teachings is a testament of their adaptability at core, while at present facing the paradoxical possibility for these teachings to become more irrelevant to a world turning increasingly endangered, and deeply disturbed.
                     </p>
+                    <p>
+                        The second consideration here is a dear appreciation of the skillful ways in which Buddha's teachings accommodate to the various types of individuals, temperaments, capacities, provisional circumstances, and life styles. This appreciation renders here as the intent for an ecumenic, empathetic, and accessible presentation of relevant scriptures and learning paths to support adaptive Buddhist living transmissions.
+                    </p>
 
-                    <h3>How long do we keep your information?</h3>
+                    <h3>One Lifetime Window Opportunity</h3>
 
                     <p>
-                        Pharetra morbi libero id aliquam elit massa integer tellus. Quis felis aliquam ullamcorper porttitor. Pulvinar ullamcorper sit dictumst
-                        ut eget a, elementum eu. Maecenas est morbi mattis id in ac pellentesque ac.
+                        The third consideration here is the contemplation of the fragile perfect human birth, with the qualities of leisure and endowment, and the mind with trust, longing, and clarity. For such rare lifetime opportunity in our busy and distracting world, one may wonder:
+                    </p>
+                    <ol>
+                        <li>How many core Dharma texts one can thoroughly study in this lifetime?</li>
+                        <li>How much quality time one can put into the study and contemplation of Dharma texts?</li>
+                        <li>How much time one can dedicate to the cultivation of bodhicitta?</li>
+                    </ol>
+                    <p>
+                        In light of these challenges, this initiative focuses on solving real problems to scriptural accessibility to support students in the familiarization of texts and assimilation of meanings. Leveraging the power of digital environments combined with skillful presentations, contemplative virtual experiences might be feasible.
                     </p>
 
                     <h3>How do we keep your information safe?</h3>
@@ -94,19 +104,43 @@ export const ContentSimple = () => {
                         ut eget a, elementum eu. Maecenas est morbi mattis id in ac pellentesque ac.
                     </p>
 
-                    <h2>What are your privacy rights?</h2>
+                    <h2>User Experience Propositions</h2>
 
                     <p>
-                        Pharetra morbi libero id aliquam elit massa integer tellus. Quis felis aliquam ullamcorper porttitor. Pulvinar ullamcorper sit dictumst
-                        ut eget a, elementum eu. Maecenas est morbi mattis id in ac pellentesque ac.
+                        This initiative is conceived upon four interwoven experiences:
+                    </p>
+                    <ol>
+                        <li>Browsing and searching the catalog easily</li>
+                        <li>Personalizing desk spaces based on current user studies</li>
+                        <li>Reading texts and taking learning paths, in conjunction or separately, at the Learning Room</li>
+                        <li>Engaging with the community at the Social Room</li>
+                    </ol>
+
+                    <h3>Browse and Search the Catalog</h3>
+
+                    <p>
+                        The catalog brings a high visibility to schools and genres collections, it provides a fluid and mnemonic navigation system throughout, and intends to effortlessly show relationships between groups of texts. The goal is to design a browsing experience that is informative, highly functional, customizable, and pleasant.
+                    </p>
+                    <p>
+                        The search function, available contextually from anywhere, may include advance features such as full-text search, auto-completion suggestions, fuzzy searching, multi-level filtering, diacritics inference, and granular indexing and queries for a great performance and smooth experience. The goal is for students to enjoy searching textual content and exploring the catalog offerings, while encouraging curiosity and discovery.
                     </p>
 
-                    <h3>How can you contact us about this policy?</h3>
+                    <h3>Personalize Desk Spaces</h3>
 
                     <p>
-                        Sagittis et eu at elementum, quis in. Proin praesent volutpat egestas sociis sit lorem nunc nunc sit. Eget diam curabitur mi ac. Auctor
-                        rutrum lacus malesuada massa ornare et. Vulputate consectetur ac ultrices at diam dui eget fringilla tincidunt. Arcu sit dignissim massa
-                        erat cursus vulputate gravida id. Sed quis auctor vulputate hac elementum gravida cursus dis.
+                        The My Desk is student's personal domain allowing users to store and organize favorite content. The goal is to offer intuitive ways for building personal configurations (spaces) to instantly launch sessions at the Learning Room based on user studies.
+                    </p>
+
+                    <h3>Read Texts and Take Learning Paths</h3>
+
+                    <p>
+                        The Learning Room is a virtual space where students can read texts and take learning paths, in conjunction or separately, at the Learning Room based on user studies.
+                    </p>
+
+                    <h3>Engage with the Community</h3>
+
+                    <p>
+                        The Social Room is a virtual space where students can read texts and take learning paths, in conjunction or separately, at the Learning Room based on user studies.
                     </p>
 
                     <ol>
