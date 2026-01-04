@@ -19,7 +19,7 @@ export const HomeScreen = () => {
                 <h1 className="max-w-3xl text-center text-display-sm font-semibold text-primary">Welcome to Bodhi Central</h1>
 
                 <p className="mt-2 max-w-xl text-center text-lg text-tertiary">
-                    A public hub of Buddha's teachings for awakening.
+                    A public hub of dharma's teachings for awakening.
                 </p>
 
                 <div className="relative mt-6 flex h-10 items-center rounded-lg border border-secondary bg-secondary">
