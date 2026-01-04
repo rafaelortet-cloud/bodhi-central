@@ -158,7 +158,7 @@ export const FooterLarge10 = () => {
                         <Button color="secondary" size="xl" href="/about/project-information">
                             Learn more
                         </Button>
-                        <Button size="xl" href="/scripture">Get started</Button>
+                        <Button size="xl" href="/my-desk">Open My Desk</Button>
                     </div>
                 </div>
 
