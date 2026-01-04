@@ -40,7 +40,7 @@ export const ProjectInfoArticle = () => {
                         This Welcome section informs about the content and auprovides information on the content and audience, motivational considerations, user experience propositions, and the 2022 roadmap of the initiative.
                     </p>
 
-                    <h2 className="text-fg-brand-primary">Content and Audience</h2>
+                    <h2 className="text-brand-secondary">Content and Audience</h2>
 
                     <p>
                         Among the numerous texts that conform the Buddhist scriptural collections, the content gathered here focuses primarily on the Mahayana studies, Indian Buddhist texts written down during the Golden Age of Buddhist philosophy in India. Alongside, students will find texts from the major commentarial traditions on Indian texts that developed in Tibet from the 8th century onwards.
@@ -142,12 +142,6 @@ export const ProjectInfoArticle = () => {
                     <p>
                         The Social Room is a virtual space where students can read texts and take learning paths, in conjunction or separately, at the Learning Room based on user studies.
                     </p>
-
-                    <ol>
-                        <li>Lectus id duis vitae porttitor enim gravida morbi.</li>
-                        <li>Eu turpis posuere semper feugiat volutpat elit, ultrices suspendisse. Auctor vel in vitae placerat.</li>
-                        <li>Suspendisse maecenas ac donec scelerisque diam sed est duis purus.</li>
-                    </ol>
                 </div>
             </main>
         </Tabs>
