@@ -6,10 +6,10 @@ import { NavMenuItemLink } from "./base-components/nav-menu-item";
 import { FeatureCardVertical } from "./base-components/nav-menu-item-card";
 
 const items = [
-    { title: "Blog", subtitle: "The latest industry new and guides curated by our expert team.", href: "/", Icon: BookClosed },
-    { title: "Customer stories", subtitle: "Learn how our customers are using Untitled UI to 10x their growth.", href: "/", Icon: Stars02 },
-    { title: "Video tutorials", subtitle: "Get up and running on our newest features and in-depth guides.", href: "/", Icon: PlayCircle },
-    { title: "Documentation", subtitle: "In-depth articles on our tools and technologies to empower teams.", href: "/", Icon: FileCode01 },
+    { title: "Introduction", subtitle: "Explore the learning paths organized by genres and purposes.", href: "/learning-paths", Icon: BookClosed },
+    { title: "Fundamental Paths", subtitle: "A collection of paths to immerse in the fundational aspects of the journey.", href: "/learning-paths/fundamental-paths", Icon: Stars02 },
+    { title: "Academic Paths", subtitle: "A selection of plans to immerse in systematic studies of the scriptures.", href: "/learning-paths/academic-paths", Icon: PlayCircle },
+    { title: "Practice Paths", subtitle: "Buddhist practices and rituals to immerse in the spiritual journey.", href: "/learning-paths/practice-paths", Icon: FileCode01 },
 ];
 
 export const DropdownMenuFeatureCard = () => {
@@ -27,15 +27,15 @@ export const DropdownMenuFeatureCard = () => {
                     <FeatureCardVertical
                         href="#"
                         imgSrc="https://www.untitledui.com/marketing/smiling-girl.webp"
-                        title="We've just released an update!"
-                        description="Check out the all new dashboard view. Pages now load up to 3x faster."
+                        title="We've just released a new Public path!"
+                        description="Check out all the new additions to the Learning Paths."
                         actionsContent={
                             <div className="inline-flex gap-3">
                                 <Button color="link-gray" size="sm">
                                     Dismiss
                                 </Button>
                                 <Button color="link-color" size="sm">
-                                    Changelog
+                                    View
                                 </Button>
                             </div>
                         }

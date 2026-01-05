@@ -35,19 +35,19 @@ const footerNavList = [
         items: [
             {
                 label: "Introduction",
-                href: "#",
+                href: "/learning-paths",
             },
             {
-                label: "Global Paths",
-                href: "#",
+                label: "Fundamental Paths",
+                href: "/learning-paths/fundamental-paths",
             },
             {
                 label: "Academic Paths",
-                href: "#",
+                href: "/learning-paths/academic-paths",
             },
             {
                 label: "Practice Paths",
-                href: "#",
+                href: "/learning-paths/practice-paths",
             },
         ],
     },

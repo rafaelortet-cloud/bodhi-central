@@ -8,6 +8,7 @@ import { Button } from "@/components/base/buttons/button";
 import { UntitledLogo } from "@/components/foundations/logo/untitledui-logo";
 import { UntitledLogoMinimal } from "@/components/foundations/logo/untitledui-logo-minimal";
 import { DropdownMenuSimple } from "@/components/marketing/header-navigation/dropdown-header-navigation";
+import { DropdownMenuFeatureCard } from "@/components/marketing/header-navigation/dropdown-menu-feature-card";
 import { cx } from "@/utils/cx";
 
 type HeaderNavItem = {
@@ -18,7 +19,7 @@ type HeaderNavItem = {
 
 const headerNavItems: HeaderNavItem[] = [
     { label: "Scripture", href: "/scripture", menu: <DropdownMenuSimple /> },
-    { label: "Learning", href: "/learning", menu: <DropdownMenuSimple /> },
+    { label: "Learning", href: "/learning", menu: <DropdownMenuFeatureCard /> },
     { label: "My Desk", href: "/my-desk" },
     { label: "Resources", href: "/resources", menu: <DropdownMenuSimple /> },
 ];
@@ -100,7 +101,7 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
         <header
             ref={headerRef}
             className={cx(
-                "relative flex h-18 w-full items-center justify-center md:h-20",
+                "sticky top-0 z-50 flex h-18 w-full items-center justify-center border-secondary border-b bg-white md:h-20",
                 isFloating && "h-16 md:h-19 md:pt-3",
                 isFullWidth && !isFloating ? "has-aria-expanded:bg-primary" : "max-md:has-aria-expanded:bg-primary",
                 className,
