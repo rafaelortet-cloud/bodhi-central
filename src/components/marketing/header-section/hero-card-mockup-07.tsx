@@ -21,7 +21,7 @@ const HeaderPrimaryDark = (props: ComponentProps<typeof Header>) => {
 
 export const HeroCardMockup07 = () => {
     return (
-        <div className="relative overflow-hidden bg-brand-section">
+        <div className="sticky top-16 z-50 overflow-hidden bg-brand-section">
             {/* Background pattern */}
             <img
                 alt="Grid of dots"
