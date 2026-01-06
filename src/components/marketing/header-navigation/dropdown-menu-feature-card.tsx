@@ -6,10 +6,10 @@ import { NavMenuItemLink } from "./base-components/nav-menu-item";
 import { FeatureCardVertical } from "./base-components/nav-menu-item-card";
 
 const items = [
-    { title: "Introduction", subtitle: "Explore the learning paths organized by genres and purposes.", href: "/learning-paths", Icon: BookClosed },
+    { title: "Intro to Learning Paths", subtitle: "Mapping the Buddhist learning paths by genres and tracks.", href: "/learning-paths", Icon: BookClosed },
     { title: "Fundamental Paths", subtitle: "A collection of paths to immerse in the fundational aspects of the journey.", href: "/learning-paths/fundamental-paths", Icon: Stars02 },
     { title: "Academic Paths", subtitle: "A selection of plans to immerse in systematic studies of the scriptures.", href: "/learning-paths/academic-paths", Icon: PlayCircle },
-    { title: "Practice Paths", subtitle: "Buddhist practices and rituals to immerse in the spiritual journey.", href: "/learning-paths/practice-paths", Icon: FileCode01 },
+    { title: "Practice Paths", subtitle: "Buddhist practices and rituals to traverse the spiritual journey.", href: "/learning-paths/practice-paths", Icon: FileCode01 },
 ];
 
 export const DropdownMenuFeatureCard = () => {
