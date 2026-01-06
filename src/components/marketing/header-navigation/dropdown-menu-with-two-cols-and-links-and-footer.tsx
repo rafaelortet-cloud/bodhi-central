@@ -24,13 +24,13 @@ const columns: MenuColumn[] = [
         items: [
             {
                 title: "Blogs",
-                subtitle: "The latest industry new and guides curated by our expert team.",
+                subtitle: "The latest news and guides curated by our team.",
                 href: "/",
                 Icon: BookClosed,
             },
             {
-                title: "Customer stories",
-                subtitle: "Learn how our customers are using Untitled UI to 10x their growth.",
+                title: "User stories",
+                subtitle: "Learn how our users are using Bodhi Central to 10x their experience.",
                 href: "/",
                 Icon: Stars02,
             },
@@ -73,8 +73,8 @@ export const DropdownMenuWithTwoColsAndLinksAndFooter = () => {
             <nav className="overflow-hidden rounded-xl bg-secondary shadow-xs ring-1 ring-secondary_alt md:rounded-2xl md:shadow-lg">
                 <div className="flex flex-col gap-5 rounded-xl bg-primary pt-4 pb-5 ring-1 ring-secondary md:gap-6 md:rounded-t-2xl md:p-6 md:pt-5">
                     <div className="flex flex-col gap-1 px-4 md:p-0">
-                        <p className="text-md font-semibold text-primary">Resources</p>
-                        <p className="text-sm text-tertiary">Get started and learn more about our products.</p>
+                        <p className="text-md font-semibold text-primary">RESOURCES</p>
+                        <p className="text-sm text-tertiary">Get started and discover more about our platform.</p>
                     </div>
 
                     <div className="flex flex-col gap-5 md:flex-row md:gap-8 md:py-0">
@@ -83,11 +83,9 @@ export const DropdownMenuWithTwoColsAndLinksAndFooter = () => {
                             <ul className="flex flex-col gap-3">
                                 {[
                                     { title: "Setup 101", href: "#" },
-                                    { title: "Adding users", href: "#" },
-                                    { title: "Video tutorials", href: "#" },
-                                    { title: "Libraries and SDKs", href: "#" },
-                                    { title: "Adding plugins", href: "#" },
-                                    { title: "Dashboard templates", href: "#" },
+                                    { title: "Add content to your desk", href: "#" },
+                                    { title: "Adapt Collections' Galleries", href: "#" },
+                                    { title: "Discover your Dashboard", href: "#" },
                                 ].map((item) => (
                                     <li key={item.title}>
                                         <Button href={item.href} color="link-gray" size="lg">
@@ -117,13 +115,13 @@ export const DropdownMenuWithTwoColsAndLinksAndFooter = () => {
 
                 <div className="mx-auto flex max-w-container flex-col px-4 py-5 md:flex-row md:items-center md:justify-between md:px-6">
                     <Button href="#" color="secondary" size="md" iconLeading={BookOpen01} className="hidden md:flex">
-                        Documentation
+                        Dashboard
                     </Button>
-                    <Button href="#" color="primary" size="md" className="hidden md:flex">
-                        View all resources
+                    <Button href="/my-desk" color="primary" size="md" className="hidden md:flex">
+                        Open My Desk
                     </Button>
-                    <Button href="#" color="primary" size="sm" className="md:hidden">
-                        View all resources
+                    <Button href="/my-desk" color="primary" size="sm" className="md:hidden">
+                        Open My Desk
                     </Button>
                 </div>
             </nav>
