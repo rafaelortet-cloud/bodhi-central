@@ -9,6 +9,7 @@ import { BodhicentralLogo } from "@/components/foundations/logo/bodhicentral-log
 import { BodhicentralLogoMinimal } from "@/components/foundations/logo/bodhicentral-logo-minimal";
 import { DropdownMenuSimple } from "@/components/marketing/header-navigation/dropdown-header-navigation";
 import { DropdownMenuFeatureCard } from "@/components/marketing/header-navigation/dropdown-menu-feature-card";
+import { DropdownMenuWithTwoColsAndLinksAndFooter } from "@/components/marketing/header-navigation/dropdown-menu-with-two-cols-and-links-and-footer";
 import { cx } from "@/utils/cx";
 
 type HeaderNavItem = {
@@ -20,8 +21,8 @@ type HeaderNavItem = {
 const headerNavItems: HeaderNavItem[] = [
     { label: "Scripture", href: "/scripture", menu: <DropdownMenuSimple /> },
     { label: "Learning", href: "/learning", menu: <DropdownMenuFeatureCard /> },
+    { label: "Resources", href: "/resources", menu: <DropdownMenuWithTwoColsAndLinksAndFooter /> },
     { label: "My Desk", href: "/my-desk" },
-    { label: "Resources", href: "/resources", menu: <DropdownMenuSimple /> },
 ];
 
 const footerNavItems = [
