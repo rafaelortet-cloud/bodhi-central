@@ -16,10 +16,10 @@ export const ProjectInfoArticle = () => {
             <section className="bg-primary py-16 md:py-24">
                 <div className="mx-auto max-w-container px-4 md:px-8">
                     <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
-                        <span className="text-sm font-semibold text-brand-secondary md:text-md">Current as of 4 Jan 2026</span>
+                        <span className="text-sm font-semibold text-brand-secondary md:text-md">Current as of Jan 6, 2026</span>
                         <h2 className="mt-3 text-display-md font-semibold text-primary md:text-display-lg">Project Information</h2>
                         <p className="mt-4 text-lg text-tertiary md:mt-6 md:text-xl">
-                            Welcome to Bodhi Central. This section provides information on the initiative's scope, its content, audience, motivations, user experience propositions, and the roadmap.
+                            Welcome to Bodhi Central. Learn more about the initiative's scope, its content, audience, motivations, user experience propositions, and the roadmap.
                         </p>
                     </div>
                 </div>
@@ -28,7 +28,7 @@ export const ProjectInfoArticle = () => {
             <main className="mx-auto max-w-container px-4 pb-24 md:px-8">
                 <div className="mx-auto prose md:prose-lg md:max-w-180">
                     <p>
-                        This initiative is a web application offering Buddhist traditional scriptures and learning experiences, embracing modernity and creativity with practical solutions for students.
+                        This initiative is a service to support the living transmissions of scripture passed down by our Buddhist teachers, offering traditional scriptures and learning experiences, and embracing modernity and creativity through practical solutions for students.
                     </p>
                     <p>
                         Its core mission is twofold: first, to provide support to the living transmissions of scripture passed down by our Buddhist teachers; and second, to share open digital environments for students to access specific genres of the Tengyur catalog and their corresponding Tibetan commentaries.
