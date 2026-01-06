@@ -7,6 +7,8 @@ import { Button as AriaButton, Dialog as AriaDialog, DialogTrigger as AriaDialog
 import { Button } from "@/components/base/buttons/button";
 import { UntitledLogo } from "@/components/foundations/logo/untitledui-logo";
 import { UntitledLogoMinimal } from "@/components/foundations/logo/untitledui-logo-minimal";
+import { BodhicentralLogo } from "@/components/foundations/logo/bodhicentral-logo";
+import { BodhicentralLogoMinimal } from "@/components/foundations/logo/bodhicentral-logo-minimal";
 import { DropdownMenuSimple } from "@/components/marketing/header-navigation/dropdown-header-navigation";
 import { DropdownMenuFeatureCard } from "@/components/marketing/header-navigation/dropdown-menu-feature-card";
 import { cx } from "@/utils/cx";
@@ -114,9 +116,9 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
                         isFloating && "ring-secondary_alt md:rounded-2xl md:bg-primary md:py-3 md:pr-3 md:pl-4 md:shadow-xs md:ring-1",
                     )}
                 >
-                    <div className="flex flex-1 items-center gap-5">
-                        <UntitledLogo className="h-8 md:max-lg:hidden" />
-                        <UntitledLogoMinimal className="hidden h-8 md:inline-block lg:hidden" />
+                    <div className="flex flex-1 items-center gap-8">
+                        <BodhicentralLogo className="h-10 md:max-lg:hidden" />
+                        <BodhicentralLogoMinimal className="hidden h-10 md:inline-block lg:hidden" />
 
                         {/* Desktop navigation */}
                         <nav className="max-md:hidden">

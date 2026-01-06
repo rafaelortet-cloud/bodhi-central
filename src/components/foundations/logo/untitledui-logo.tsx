@@ -55,6 +55,9 @@ export const UntitledLogo = (props: HTMLAttributes<HTMLOrSVGElement>) => {
                 <path d="M49.2305 23V8.45456H46.2049V23H49.2305Z" className="fill-fg-primary" />
                 <path d="M96.6729 23V8.45456H93.5977V23H96.6729Z" className="fill-fg-primary" />
             </svg>
+
+
+
         </div>
     );
 };
