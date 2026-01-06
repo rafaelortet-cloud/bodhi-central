@@ -67,8 +67,8 @@ const footerNavList = [
                 href: "/resources/digital-portals",
             },
             {
-                label: "Materials",
-                href: "#",
+                label: "Bodhi Central Blog",
+                href: "/resources/blog",
             },
         ],
     },
