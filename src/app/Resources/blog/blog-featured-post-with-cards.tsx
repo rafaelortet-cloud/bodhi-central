@@ -360,8 +360,8 @@ const featuredArticle: Article = {
         href: "#",
     },
     thumbnailUrl: "/blog-featured-img-001.webp",
-    title: 'The Buddhist monk who meditates for 10 hours a day',
-    summary: 'How to meditate for 10 hours a day and become a superhuman.',
+    title: 'An Introduction to Shamatha Stages of Meditation',
+    summary: 'The progressive stages of meditation explained in a simple way for beginners and seasoned practitioners.',
     href: "#",
     publishedAt: "10 April 2025",
     readingTime: "8 min read",
@@ -395,12 +395,12 @@ export const BlogFeaturedPostWithCards = () => {
 
     return (
         <div className="bg-primary">
-            <section className="bg-primary py-16 md:py-24">
+            <section className="bg-primary py-16 md:py-20">
                 <div className="mx-auto max-w-container px-4 md:px-8">
                     <div className="flex w-full max-w-3xl flex-col">
                         <span className="text-sm font-semibold text-brand-secondary md:text-md">Our blog</span>
-                        <h2 className="mt-3 text-display-md font-semibold text-primary md:text-display-lg">Articles and insights</h2>
-                        <p className="mt-4 text-lg text-tertiary md:mt-6 md:text-xl">The latest news from our global community, articles on Buddhist studies, practices, and public resources.</p>
+                        <h1 className="mt-3 text-display-md font-semibold text-primary md:text-display-lg">Articles and Insights</h1>
+                        <p className="mt-3 text-lg text-tertiary md:mt-4 md:text-xl">The latest news from our global community, articles on Buddhist studies, practices, and presenations of public resources.</p>
                     </div>
                 </div>
             </section>
