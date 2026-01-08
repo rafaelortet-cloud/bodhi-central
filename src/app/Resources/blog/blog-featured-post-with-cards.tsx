@@ -358,7 +358,7 @@ const featuredArticle: Article = {
         name: "Studies",
         href: "#",
     },
-    thumbnailUrl: "/public/blog/featured-images/IMG_1291.webp",
+    thumbnailUrl: "/src/public/blog-featured-img-001.webp",
     title: 'The Buddhist monk who meditates for 10 hours a day',
     summary: 'How to meditate for 10 hours a day and become a superhuman.',
     href: "#",
