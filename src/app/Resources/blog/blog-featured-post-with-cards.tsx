@@ -15,7 +15,7 @@ const articles: Article[] = [
     {
         id: "article-1",
         title: "Historical Evolution of Buddhist Canons",
-        summary: "A brief history of Buddhist canons over time and evolution across traditions.",
+        summary: "A brief history of Buddhist canons over 2,500 years and their evolution across traditions and languages.",
         href: "#",
         category: {
             name: "Research",
@@ -86,8 +86,8 @@ const articles: Article[] = [
     {
         id: "article-3",
         title: "Artificial Intelligence and Consciousness",
-        summary: "The rise of AI intersects with consciousness for managing human existence.",
-        href: "#",
+        summary: "Exploring the intersection of AI with mind, and the role of Buddhist teachings in human evolution.",
+        href: "/blog-ai-mind-buddhist-teachings.webp",
         category: {
             name: "Mind",
             href: "#",
@@ -96,7 +96,7 @@ const articles: Article[] = [
         publishedAt: "18 Jan 2025",
         readingTime: "8 min read",
         author: {
-            name: "Lana Steiner",
+            name: "Sonia Dominguez",
             href: "#",
             avatarUrl: "https://www.untitledui.com/images/avatars/lana-steiner?fm=webp&q=80",
         },
@@ -119,7 +119,7 @@ const articles: Article[] = [
         summary: "A short ",
         href: "#",
         category: {
-            name: "Community",
+            name: "Studies",
             href: "#",
         },
         thumbnailUrl: "https://www.untitledui.com/blog/two-people.webp",
@@ -145,8 +145,8 @@ const articles: Article[] = [
     },
     {
         id: "article-4",
-        title: "Mental models. Are you a good leader?",
-        summary: "For monsatics and laypersons, management mental models are expressions of complex processes of relationships and work ethics.",
+        title: "Are you a good Buddhist leader?",
+        summary: "For monastics and laypersons, mental models are expressions of complex interactions and work ethics.",
         href: "#",
         category: {
             name: "Community",
