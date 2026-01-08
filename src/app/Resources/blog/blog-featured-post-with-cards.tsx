@@ -359,7 +359,7 @@ const featuredArticle: Article = {
         name: "Studies",
         href: "#",
     },
-    thumbnailUrl: "/src/public/blog-featured-img-001.webp",
+    thumbnailUrl: "/blog-featured-img-001.webp",
     title: 'The Buddhist monk who meditates for 10 hours a day',
     summary: 'How to meditate for 10 hours a day and become a superhuman.',
     href: "#",
@@ -410,7 +410,7 @@ export const BlogFeaturedPostWithCards = () => {
                     href={featuredArticle.href}
                     className="relative hidden w-full overflow-hidden rounded-2xl outline-focus-ring select-none focus-visible:outline-2 focus-visible:outline-offset-4 md:block md:h-145 lg:h-180"
                 >
-                    <Image src={featuredArticle.thumbnailUrl} alt={featuredArticle.title} className="absolute inset-0 size-full object-cover" />
+                    <Image src={featuredArticle.thumbnailUrl} alt={featuredArticle.title} fill unoptimized className="absolute inset-0 size-full object-cover" />
 
                     <div className="absolute inset-x-0 bottom-0 w-full bg-linear-to-t from-black/40 to-transparent pt-24">
                         <div className="flex w-full flex-col gap-6 p-8">
