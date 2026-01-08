@@ -9,6 +9,7 @@ import { Select } from "@/components/base/select/select";
 import { type Article, Simple01Vertical } from "@/components/marketing/blog/base-components/blog-cards";
 import { useBreakpoint } from "@/hooks/use-breakpoint";
 import { cx } from "@/utils/cx";
+import Image from "next/image";
 
 const articles: Article[] = [
     {
@@ -409,7 +410,7 @@ export const BlogFeaturedPostWithCards = () => {
                     href={featuredArticle.href}
                     className="relative hidden w-full overflow-hidden rounded-2xl outline-focus-ring select-none focus-visible:outline-2 focus-visible:outline-offset-4 md:block md:h-145 lg:h-180"
                 >
-                    <img src={featuredArticle.thumbnailUrl} alt={featuredArticle.title} className="absolute inset-0 size-full object-cover" />
+                    <Image src={featuredArticle.thumbnailUrl} alt={featuredArticle.title} className="absolute inset-0 size-full object-cover" />
 
                     <div className="absolute inset-x-0 bottom-0 w-full bg-linear-to-t from-black/40 to-transparent pt-24">
                         <div className="flex w-full flex-col gap-6 p-8">
