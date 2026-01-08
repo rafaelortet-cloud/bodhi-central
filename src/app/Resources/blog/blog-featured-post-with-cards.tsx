@@ -87,12 +87,12 @@ const articles: Article[] = [
         id: "article-3",
         title: "Artificial Intelligence and Consciousness",
         summary: "Exploring the intersection of AI with mind, and the role of Buddhist teachings in human evolution.",
-        href: "/blog-ai-mind-buddhist-teachings.webp",
+        href: "#",
         category: {
             name: "Mind",
             href: "#",
         },
-        thumbnailUrl: "https://www.untitledui.com/blog/two-mobile-shapes-pattern.webp",
+        thumbnailUrl: "/blog-ai-mind-buddhist-teachings.webp",
         publishedAt: "18 Jan 2025",
         readingTime: "8 min read",
         author: {
@@ -115,14 +115,14 @@ const articles: Article[] = [
     },
     {
         id: "article-3.5",
-        title: "Ontological and Epistemological Dimensions of Buddhist Philosophy",
-        summary: "A short ",
+        title: "Ontological and Epistemological Dimensions in Buddhist Philosophy",
+        summary: "An overview of core concepts of ontology and epistemology in Tibetan Buddhist studies.",
         href: "#",
         category: {
             name: "Studies",
             href: "#",
         },
-        thumbnailUrl: "https://www.untitledui.com/blog/two-people.webp",
+        thumbnailUrl: "/blog-ontology-and-epistemology.webp",
         publishedAt: "17 Jan 2025",
         readingTime: "8 min read",
         author: {
@@ -152,7 +152,7 @@ const articles: Article[] = [
             name: "Community",
             href: "#",
         },
-        thumbnailUrl: "https://www.untitledui.com/marketing/smiling-girl-6.webp",
+        thumbnailUrl: "/blog-thumbnail-good-leadership.webp",
         publishedAt: "10 Jan 2026",
         readingTime: "8 min read",
         author: {
