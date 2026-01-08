@@ -14,15 +14,15 @@ import Image from "next/image";
 const articles: Article[] = [
     {
         id: "article-1",
-        title: "Evolution of Buddhist Canons",
-        summary: "The history of Buddhist canons and their evolution over time.",
+        title: "Historical Evolution of Buddhist Canons",
+        summary: "A brief history of Buddhist canons over time and evolution across traditions.",
         href: "#",
         category: {
             name: "Research",
             href: "#",
         },
-        thumbnailUrl: "https://www.untitledui.com/marketing/conversation.webp",
-        publishedAt: "20 Jan 2025",
+        thumbnailUrl: "/blog-thumbnail-buddhist-scriptures-002.webp",
+        publishedAt: "20 Jan 2026",
         readingTime: "8 min read",
         author: {
             name: "Rafael Ortegón",
@@ -51,17 +51,17 @@ const articles: Article[] = [
     {
         id: "article-2",
         title: "Meditation for time travellers",
-        summary: "A guide to meditation for time travellers and how it can help you.",
+        summary: "A guide to meditation for time travellers and how it can help you handle reality and illusions.",
         href: "#",
         category: {
             name: "Practice",
             href: "#",
         },
         thumbnailUrl: "https://www.untitledui.com/blog/two-people.webp",
-        publishedAt: "19 Jan 2025",
+        publishedAt: "12 Jan 2026",
         readingTime: "8 min read",
         author: {
-            name: "Phoenix Baker",
+            name: "Ernesto Bernal",
             href: "#",
             avatarUrl: "https://www.untitledui.com/images/avatars/phoenix-baker?fm=webp&q=80",
         },
@@ -115,8 +115,8 @@ const articles: Article[] = [
     },
     {
         id: "article-3.5",
-        title: "Bill Walsh Buddhist leadership lessons",
-        summary: "How to transform your life into a professional, clean, healthy, and happy lifestyle",
+        title: "Ontological and Epistemological Dimensions of Buddhist Philosophy",
+        summary: "A short ",
         href: "#",
         category: {
             name: "Community",
@@ -356,33 +356,33 @@ const sortByOptions = [
 const featuredArticle: Article = {
     id: "article-001",
     category: {
-        name: "Studies",
+        name: "Practice",
         href: "#",
     },
     thumbnailUrl: "/blog-featured-img-001.webp",
     title: 'An Introduction to Shamatha Stages of Meditation',
     summary: 'The progressive stages of meditation explained in a simple way for beginners and seasoned practitioners.',
     href: "#",
-    publishedAt: "10 April 2025",
+    publishedAt: "10 January 2026",
     readingTime: "8 min read",
     author: {
-        name: "Amélie Laurent",
+        name: "Maite Palacios",
         href: "#",
         avatarUrl: "https://www.untitledui.com/images/avatars/amelie-laurent?fm=webp&q=80",
     },
     tags: [
-        {
-            name: "Studies",
-            color: "gray",
-            href: "#",
-        },
         {
             name: "Practice",
             color: "gray",
             href: "#",
         },
         {
-            name: "Presentation",
+            name: "Mind",
+            color: "gray",
+            href: "#",
+        },
+        {
+            name: "Body",
             color: "gray",
             href: "#",
         },
@@ -400,7 +400,7 @@ export const BlogFeaturedPostWithCards = () => {
                     <div className="flex w-full max-w-3xl flex-col">
                         <span className="text-sm font-semibold text-brand-secondary md:text-md">Our blog</span>
                         <h1 className="mt-3 text-display-md font-semibold text-primary md:text-display-lg">Articles and Insights</h1>
-                        <p className="mt-3 text-lg text-tertiary md:mt-4 md:text-xl">The latest news from our global community, articles on Buddhist studies, practices, and presenations of public resources.</p>
+                        <p className="mt-3 text-lg text-tertiary md:mt-4 md:text-xl">The latest news from our global communities, articles on Buddhist studies, practices, and reviews of public resources.</p>
                     </div>
                 </div>
             </section>
@@ -438,7 +438,7 @@ export const BlogFeaturedPostWithCards = () => {
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-2">
-                                    <p className="text-sm font-semibold text-white">File under</p>
+                                    <p className="text-sm font-semibold text-white">Article under</p>
                                     <ul className="flex h-10 items-center gap-2">
                                         {featuredArticle.tags.map((tag) => (
                                             <li
