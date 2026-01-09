@@ -1,11 +1,11 @@
 "use client";
 
-import type { ComponentProps } from "react";
+
 import { CreditCard } from "@/components/shared-assets/credit-card/credit-card";
 import { PlayCircle } from "@untitledui/icons";
 import { Button } from "@/components/base/buttons/button";
 import { useClipboard } from "@/hooks/use-clipboard";
-import { cx } from "@/utils/cx";
+import { FeaturesAlternatingLayout01 } from "@/components/marketing/features/features-alternating-layout-01";
 
 export const HomeScreen = () => {
     const clipboard = useClipboard();
@@ -89,6 +89,7 @@ export const HomeScreen = () => {
                     </div>
                 </div>
             </section>
+            <FeaturesAlternatingLayout01 />
         </div >
 
 
