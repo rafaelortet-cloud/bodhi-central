@@ -1,7 +1,7 @@
 "use client";
 
 import type { FC, HTMLAttributes } from "react";
-import { ChartBreakoutSquare, MessageChatCircle, ZapFast } from "@untitledui/icons";
+import { BookOpen01, ChartBreakoutSquare, TrendUp01 } from "@untitledui/icons";
 import { FeaturedIcon } from "@/components/foundations/featured-icon/featured-icon";
 import { CheckItemText } from "@/components/marketing/pricing-sections/base-components/pricing-tier-card";
 import { cx } from "@/utils/cx";
@@ -31,7 +31,7 @@ export const FeaturesAlternatingLayout01 = () => {
                     <span className="text-sm font-semibold text-brand-secondary md:text-md">Features</span>
                     <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Beautiful presentations of Buddha's teachings</h2>
                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                        Relevant and powerful Buddha's transmissions to support your spiritual seekers and communities around the world.
+                        Gateways to relevant and powerful lineage transmissions to support spiritual seekers and communities around the world.
                     </p>
                 </div>
             </div>
@@ -39,15 +39,15 @@ export const FeaturesAlternatingLayout01 = () => {
             <div className="mx-auto flex w-full max-w-container flex-col gap-12 px-4 sm:gap-16 md:gap-20 md:px-8 lg:gap-24">
                 <div className="grid grid-cols-1 gap-10 md:gap-20 lg:grid-cols-2 lg:gap-24">
                     <div className="max-w-xl flex-1 self-center">
-                        <FeaturedIcon icon={MessageChatCircle} size="lg" color="brand" theme="light" />
-                        <h2 className="mt-5 text-display-xs font-semibold text-primary md:text-display-sm">Buddhist scriptures for all</h2>
+                        <FeaturedIcon icon={BookOpen01} size="lg" color="gray" theme="modern-neue" />
+                        <h2 className="mt-5 text-display-xs font-semibold text-primary md:text-display-sm">Kind Buddhist scriptures for all</h2>
                         <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">
-                            Whether you are focusing on studies, practices, or exploring what Buddha's teachings mean for your life, we have gather the most relevant texts for you.
+                            Whether you are focusing on studies, practices, or exploring what Buddha's teachings mean for your life, we have gather the most relevant texts for you, and across major traditions of Buddhism.
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
-                                "Ecumenic and interfaith approach to Buddhist collections of texts",
-                                "Organization of text and collecitons by traditions, themes, and topics",
+                                "Inclusive approach to collections of texts representing a wide range of streams of Buddhism",
+                                "Texts organized by traditions, themes, genres, topics, and purposes",
                                 "Customizable and extensible browsing experience to support your needs",
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
@@ -75,14 +75,14 @@ export const FeaturesAlternatingLayout01 = () => {
 
                 <div className="grid grid-cols-1 gap-10 md:gap-20 lg:grid-cols-2 lg:gap-24">
                     <div className="max-w-xl flex-1 self-center lg:order-last">
-                        <FeaturedIcon icon={ZapFast} size="lg" color="brand" theme="light" />
-                        <h2 className="mt-5 text-display-xs font-semibold text-primary md:text-display-sm">Deliver instant answers</h2>
+                        <FeaturedIcon icon={TrendUp01} size="lg" color="gray" theme="modern-neue" />
+                        <h2 className="mt-5 text-display-xs font-semibold text-primary md:text-display-sm">Delighful Learning Paths for all levels</h2>
                         <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">
                             An all-in-one customer service platform that helps you balance everything your customers need to be happy.
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
-                                "Keep your customers in the loop with live chat",
+                                "Foundational Paths for beginners and seasoned practitioners",
                                 "Embed help articles right on your website",
                                 "Customers never have to leave the page to find an answer",
                             ].map((feat) => (

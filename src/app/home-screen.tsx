@@ -41,10 +41,10 @@ export const HomeScreen = () => {
                         <span className="text-sm font-semibold text-secondary_on-brand md:text-md">Open. Inclusive. Relevant.</span>
 
                         <h1 className="mt-3 text-display-md font-semibold text-primary_on-brand md:text-display-lg lg:text-display-xl">
-                            Gateways for Buddhist study and practice.
+                            Gateways to Buddhist study and practice.
                         </h1>
                         <p className="mt-4 max-w-120 text-lg text-balance text-tertiary_on-brand md:mt-6 md:text-xl">
-                            A modern platform to channel universally revered Buddhist teachings for everyone.{" "}
+                            A modern and global platform channeling universally revered Buddhist teachings for everyone.{" "}
                         </p>
 
                         <div className="mt-8 flex w-full flex-col-reverse items-stretch gap-3 md:mt-12 md:flex-row md:items-start">
