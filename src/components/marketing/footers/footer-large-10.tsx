@@ -1,6 +1,7 @@
 import { Badge } from "@/components/base/badges/badges";
 import { Button } from "@/components/base/buttons/button";
 import { BodhicentralLogo } from "@/components/foundations/logo/bodhicentral-logo";
+import Link from "next/link";
 import { AngelList, Dribbble, Facebook, GitHub, Layers, LinkedIn, X } from "@/components/foundations/social-icons";
 
 const footerNavList = [
@@ -164,7 +165,9 @@ export const FooterLarge10 = () => {
 
                 <div className="mt-12 flex flex-col gap-12 md:mt-16 md:gap-16 xl:flex-row">
                     <div className="flex flex-col gap-6 md:w-64 md:gap-8">
-                        <BodhicentralLogo className="h-10 w-min shrink-0" />
+                        <Link href="/" className="flex w-min items-center outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-2">
+                            <BodhicentralLogo className="h-10 w-min shrink-0" />
+                        </Link>
                         <p className="text-md text-tertiary">An open platform to channel universally revered Buddhist scripture and modern learning globally.</p>
                     </div>
                     <nav className="flex-1">

@@ -10,6 +10,7 @@ import { BodhicentralLogoMinimal } from "@/components/foundations/logo/bodhicent
 import { DropdownMenuSimple } from "@/components/marketing/header-navigation/dropdown-header-navigation";
 import { DropdownMenuFeatureCard } from "@/components/marketing/header-navigation/dropdown-menu-feature-card";
 import { DropdownMenuWithTwoColsAndLinksAndFooter } from "@/components/marketing/header-navigation/dropdown-menu-with-two-cols-and-links-and-footer";
+import Link from "next/link";
 import { cx } from "@/utils/cx";
 
 type HeaderNavItem = {
@@ -116,8 +117,10 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
                     )}
                 >
                     <div className="flex flex-1 items-center gap-8">
-                        <BodhicentralLogo className="h-10 md:max-lg:hidden" />
-                        <BodhicentralLogoMinimal className="hidden h-10 md:inline-block lg:hidden" />
+                        <Link href="/" className="flex items-center outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-2">
+                            <BodhicentralLogo className="h-10 md:max-lg:hidden" />
+                            <BodhicentralLogoMinimal className="hidden h-10 md:inline-block lg:hidden" />
+                        </Link>
 
                         {/* Desktop navigation */}
                         <nav className="max-md:hidden">
