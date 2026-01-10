@@ -137,9 +137,9 @@ const calculateScale = (desiredWidth: number, originalWidth: number, originalHei
 };
 
 export const CreditCard = ({
-    company = "Untitled.",
-    cardNumber = "1234 1234 1234 1234",
-    cardHolder = "OLIVIA RHYE",
+    company = "Many traditions, one goal",
+    cardNumber = "Esoteric Buddhism",
+    cardHolder = "VAJRAYANA",
     cardExpiration = "06/28",
     type = "brand-dark",
     className,

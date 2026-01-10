@@ -64,7 +64,7 @@ export const HomeScreen = () => {
                                         transform: "scale(var(--scale)) rotateX(63deg) rotateY(1deg) rotateZ(51deg) skewX(14deg)",
                                     }}
                                 >
-                                    <CreditCard type="transparent-gradient" cardHolder="lana steiner" />
+                                    <CreditCard type="transparent-gradient" cardHolder="Esoteric" cardNumber="VAJRAYANA" cardExpiration=" - Himalayas" />
                                 </div>
                             </div>
                             <div className="relative z-2 translate-y-[10px] rotate-[14.8deg]">
@@ -74,7 +74,7 @@ export const HomeScreen = () => {
                                         transform: "scale(var(--scale)) rotateX(63deg) rotateY(1deg) rotateZ(51deg) skewX(14deg)",
                                     }}
                                 >
-                                    <CreditCard type="transparent-gradient" cardHolder="OLIVIA RHYE" />
+                                    <CreditCard type="transparent-gradient" cardHolder="Boddhisattva" cardNumber="MAHAYANA" cardExpiration=" - China" />
                                 </div>
                             </div>
                             <div
@@ -83,7 +83,7 @@ export const HomeScreen = () => {
                                     transform: "scale(var(--scale)) rotateX(63deg) rotateY(1deg) rotateZ(51deg) skewX(14deg)",
                                 }}
                             >
-                                <CreditCard type="transparent-gradient" cardHolder="Phoenix Baker" />
+                                <CreditCard type="transparent-gradient" cardHolder="Foundational" cardNumber="THERAVADHA" cardExpiration="- South Asia" />
                             </div>
                         </div>
                     </div>

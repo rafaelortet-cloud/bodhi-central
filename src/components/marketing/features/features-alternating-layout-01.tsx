@@ -40,15 +40,15 @@ export const FeaturesAlternatingLayout01 = () => {
                 <div className="grid grid-cols-1 gap-10 md:gap-20 lg:grid-cols-2 lg:gap-24">
                     <div className="max-w-xl flex-1 self-center">
                         <FeaturedIcon icon={BookOpen01} size="lg" color="gray" theme="modern-neue" />
-                        <h2 className="mt-5 text-display-xs font-semibold text-primary md:text-display-sm">Kind Buddhist scriptures for all</h2>
+                        <h2 className="mt-5 text-display-xs font-semibold text-primary md:text-display-sm">Kind Buddhist scriptures</h2>
                         <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">
-                            Whether you are focusing on studies, practices, or exploring what Buddha's teachings mean for your life, we have gather the most relevant texts for you, and across major traditions of Buddhism.
+                            Whether you are focusing on studies, practices, or exploring what Buddha's teachings mean for your life, we have gathered for you the most relevant texts across major streams of Buddhism.
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
-                                "Inclusive approach to collections of texts representing a wide range of streams of Buddhism",
-                                "Texts organized by traditions, themes, genres, topics, and purposes",
-                                "Customizable and extensible browsing experience to support your needs",
+                                "Inclusive approach to collections of texts representing a wide range of active transmissions of Buddhism",
+                                "Texts are organized by traditions, lineages, themes, genres, and specialized purposes",
+                                "State-of-the-art readers and workspaces to make your experience as smooth as possible, personalized browsing flows and much more!",
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
                             ))}
@@ -76,15 +76,15 @@ export const FeaturesAlternatingLayout01 = () => {
                 <div className="grid grid-cols-1 gap-10 md:gap-20 lg:grid-cols-2 lg:gap-24">
                     <div className="max-w-xl flex-1 self-center lg:order-last">
                         <FeaturedIcon icon={TrendUp01} size="lg" color="gray" theme="modern-neue" />
-                        <h2 className="mt-5 text-display-xs font-semibold text-primary md:text-display-sm">Delighful Learning Paths for all levels</h2>
+                        <h2 className="mt-5 text-display-xs font-semibold text-primary md:text-display-sm">Delighful Learning Paths</h2>
                         <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">
-                            An all-in-one customer service platform that helps you balance everything your customers need to be happy.
+                            Accessing Buddha's teachings has never been easier. Yet, it can be overwhelming to navigate the vast amount of resources available and engage in meaningful contemplation. We are changing that!
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
-                                "Foundational Paths for beginners and seasoned practitioners",
-                                "Embed help articles right on your website",
-                                "Customers never have to leave the page to find an answer",
+                                "Foundational Paths for newcomers and seasoned Buddhists",
+                                "Academic and scholarly learning paths for specialized and advanced students and educators",
+                                "Practice Learning Paths for Buddhists of all traditions and backgrounds to support their spiritual growth and development",
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
                             ))}
@@ -111,16 +111,17 @@ export const FeaturesAlternatingLayout01 = () => {
 
                 <div className="grid grid-cols-1 gap-10 md:gap-20 lg:grid-cols-2 lg:gap-24">
                     <div className="max-w-xl flex-1 self-center">
-                        <FeaturedIcon icon={ChartBreakoutSquare} size="lg" color="brand" theme="light" />
-                        <h2 className="mt-5 text-display-xs font-semibold text-primary md:text-display-sm">Manage your team with reports</h2>
+                        <FeaturedIcon icon={ChartBreakoutSquare} size="lg" color="gray" theme="modern-neue" />
+                        <h2 className="mt-5 text-display-xs font-semibold text-primary md:text-display-sm">Tools for individuals and communities</h2>
                         <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">
-                            Measure what matters with Untitled's easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.
+                            Whether you are a solo practitioner or a community leader, we have tools to help you enhance your practice and contribute to the communities.
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
-                                "Filter, export, and drilldown on the data quickly",
-                                "Save, schedule, and automate reports to your inbox",
-                                "Connect the tools you already use with 100+ integrations",
+                                "Find and connect with other practitioners and communities around the world",
+                                "Explore the global maps of Buddhist sites and centers for academic study programs for Westeners and monastics",
+                                "Discover our Blog articles and forums to spark your interest on a wide range of impactful topics",
+                                "Build your own workspace for your favorite texts and learning materials to optimize your productivity"
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
                             ))}
