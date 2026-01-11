@@ -59,8 +59,8 @@ export const FeaturesAlternatingLayout01 = () => {
                         <AlternateImageMockup className="lg:left-0">
                             {/* Light mode image (hidden in dark mode) */}
                             <img
-                                alt="Dashboard mockup showing application interface"
-                                src="https://www.untitledui.com/marketing/screen-mockups/dashboard-desktop-mockup-light-01.webp"
+                                alt="Scripture mockup showing Collections interface"
+                                src="/scripture-mockup-01.webp"
                                 className="size-full object-contain lg:w-auto lg:max-w-none dark:hidden"
                             />
                             {/* Dark mode image (hidden in light mode) */}
