@@ -40,7 +40,7 @@ export const FeaturesAlternatingLayout01 = () => {
                 <div className="grid grid-cols-1 gap-10 md:gap-20 lg:grid-cols-2 lg:gap-24">
                     <div className="max-w-xl flex-1 self-center">
                         <FeaturedIcon icon={BookOpen01} size="lg" color="gray" theme="modern-neue" />
-                        <h2 className="mt-5 text-display-xs font-semibold text-primary md:text-display-sm">Kind Buddhist scriptures</h2>
+                        <h2 className="mt-5 text-display-xs font-semibold text-primary md:text-display-sm">Buddhist Scriptures</h2>
                         <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">
                             Whether you are focusing on studies, practices, or exploring what Buddha's teachings mean for your life, we have gathered for you the most relevant texts across major streams of Buddhism.
                         </p>
@@ -76,15 +76,15 @@ export const FeaturesAlternatingLayout01 = () => {
                 <div className="grid grid-cols-1 gap-10 md:gap-20 lg:grid-cols-2 lg:gap-24">
                     <div className="max-w-xl flex-1 self-center lg:order-last">
                         <FeaturedIcon icon={TrendUp01} size="lg" color="gray" theme="modern-neue" />
-                        <h2 className="mt-5 text-display-xs font-semibold text-primary md:text-display-sm">Delighful Learning Paths</h2>
+                        <h2 className="mt-5 text-display-xs font-semibold text-primary md:text-display-sm">Learning Paths</h2>
                         <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">
-                            Accessing Buddha's teachings has never been easier. Yet, it can be overwhelming to navigate the vast amount of resources available and engage in meaningful contemplation. We are changing that!
+                            Accessing Buddha's teachings has never been easier. Yet, it can be overwhelming to navigate the vast amount of literature and teachings available today. We are changing that!
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
-                                "Foundational Paths for newcomers and seasoned Buddhists",
-                                "Academic and scholarly learning paths for specialized and advanced students and educators",
-                                "Practice Learning Paths for Buddhists of all traditions and backgrounds to support their spiritual growth and development",
+                                "Discover foundational learning paths that will provide you with a solid understanding of Buddhist core teachings",
+                                "Explore academic and scholarly learning paths for specialized and advanced students and educators",
+                                "Engage in Practice Learning Paths from different traditions and backgrounds to support your spiritual growth",
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
                             ))}
@@ -112,16 +112,16 @@ export const FeaturesAlternatingLayout01 = () => {
                 <div className="grid grid-cols-1 gap-10 md:gap-20 lg:grid-cols-2 lg:gap-24">
                     <div className="max-w-xl flex-1 self-center">
                         <FeaturedIcon icon={ChartBreakoutSquare} size="lg" color="gray" theme="modern-neue" />
-                        <h2 className="mt-5 text-display-xs font-semibold text-primary md:text-display-sm">Tools for individuals and communities</h2>
+                        <h2 className="mt-5 text-display-xs font-semibold text-primary md:text-display-sm">Resources for individuals and communities</h2>
                         <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">
-                            Whether you are a solo practitioner or a community leader, we have tools to help you enhance your practice and contribute to the communities.
+                            Whether you are a solo practitioner or a community leader, we develop tools and features to help you enhance your practice and contribute to the communities.
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
-                                "Find and connect with other practitioners and communities around the world",
-                                "Explore the global maps of Buddhist sites and centers for academic study programs for Westeners and monastics",
-                                "Discover our Blog articles and forums to spark your interest on a wide range of impactful topics",
-                                "Build your own workspace for your favorite texts and learning materials to optimize your productivity"
+                                "Find communities and connect with other fellows around the world",
+                                "Explore a world of Buddhist Western and Eastern centers for academic and advanced study programs",
+                                "Read articles on a wide range of impactful and relevant topics",
+                                "Build your personal library with your favorite texts and learning materials to improve your productivity"
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
                             ))}

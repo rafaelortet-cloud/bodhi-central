@@ -90,7 +90,7 @@ const footerNavList = [
             },
             {
                 label: "Contact Us",
-                href: "#",
+                href: "/contact",
             },
         ],
     },

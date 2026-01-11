@@ -23,7 +23,6 @@ const headerNavItems: HeaderNavItem[] = [
     { label: "Scripture", href: "/scripture", menu: <DropdownMenuSimple /> },
     { label: "Learning", href: "/learning", menu: <DropdownMenuFeatureCard /> },
     { label: "Resources", href: "/resources", menu: <DropdownMenuWithTwoColsAndLinksAndFooter /> },
-    { label: "My Desk", href: "/my-desk" },
 ];
 
 const footerNavItems = [
