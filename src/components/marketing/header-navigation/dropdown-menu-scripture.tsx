@@ -20,67 +20,55 @@ type MenuColumn = {
 
 const columns: MenuColumn[] = [
     {
-        title: "Resources",
+        title: "Scriptural Collections",
         items: [
             {
-                title: "Groups Around You",
-                subtitle: "Find Buddhist groups close to you.",
-                href: "/resources/community",
+                title: "Vajrayana Collections",
+                subtitle: "The esoteric Buddhism, the lineages from the Himalayas.",
+                href: "#",
                 Icon: BookClosed,
             },
             {
-                title: "Where to Study",
-                subtitle: "Find places to study Buddhism.",
-                href: "/resources/study-centers",
+                title: "Mahayana Collections",
+                subtitle: "The Bodhisattva archetypes, the largest Buddhist traditions.",
+                href: "#",
                 Icon: Stars02,
             },
             {
-                title: "Digital Portals",
-                subtitle: "Explore a world of digital portals for Buddhist scripture.",
-                href: "/resources/digital-portals",
+                title: "Theravada Collections",
+                subtitle: "The Pali Canon, the earliest Buddhist scriptures.",
+                href: "#",
                 Icon: Stars02,
-            },
-            {
-                title: "The Blog",
-                subtitle: "Read articles about Buddhist themes and topics.",
-                href: "/resources/blog",
-                Icon: PlayCircle,
             },
         ],
     },
     {
-        title: "Support",
+        title: "Traditions & Connections",
         items: [
             {
-                title: "Documentation",
-                subtitle: "In-depth articles on our tools and technologies to empower users.",
+                title: "Traditions",
+                subtitle: "Many traditions with one open goal.",
                 href: "/",
                 Icon: FileCode01,
             },
             {
-                title: "Join our Forum",
-                subtitle: "Engage in conversations and share knowledge with others.",
+                title: "Connections",
+                subtitle: "Learn how Buddhism evolved and how it is connected to the world.",
                 href: "/",
                 Icon: Stars02,
-            },
-            {
-                title: "Help and support",
-                subtitle: "Need help with something? Our team is here to help.",
-                href: "/",
-                Icon: LifeBuoy01,
             },
         ],
     },
 ];
 
-export const DropdownMenuWithTwoColsAndLinksAndFooter = () => {
+export const DropdownMenuScripture = () => {
     return (
         <div className="px-3 pb-2 md:max-w-200 md:p-0">
             <nav className="overflow-hidden rounded-xl bg-secondary shadow-lg ring-1 ring-secondary_alt md:rounded-2xl md:shadow-lg">
                 <div className="flex flex-col gap-5 rounded-xl bg-primary pt-4 pb-5 ring-1 ring-secondary md:gap-6 md:rounded-t-2xl md:p-6 md:pt-5">
                     <div className="flex flex-col gap-1 px-4 md:p-0">
-                        <p className="pt-4 text-2xl font-medium text-brand-primary">RESOURCES</p>
-                        <p className="text-sm text-brandtertiary">Get started and discover more about our platform.</p>
+                        <p className="pt-4 text-2xl font-medium text-brand-primary">SCRIPTURE</p>
+                        <p className="text-sm text-brandtertiary">Immerse yourself in the Buddhist scriptures.</p>
                     </div>
 
                     <div className="flex flex-col gap-5 md:flex-row md:gap-8 md:py-0">
@@ -88,9 +76,9 @@ export const DropdownMenuWithTwoColsAndLinksAndFooter = () => {
                             <h3 className="text-sm font-semibold text-brand-tertiary">Quick Links</h3>
                             <ul className="flex flex-col gap-3">
                                 {[
-                                    { title: "Add content to the Desk", href: "#" },
-                                    { title: "Manage your galleries", href: "#" },
-                                    { title: "Explore your Dashboard", href: "#" },
+                                    { title: "Your last reading", href: "#" },
+                                    { title: "Your saved searches", href: "#" },
+                                    { title: "Collections at a glance", href: "#" },
                                 ].map((item) => (
                                     <li key={item.title}>
                                         <Button href={item.href} color="link-gray" size="lg">

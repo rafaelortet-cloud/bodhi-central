@@ -7,9 +7,9 @@ import { Button as AriaButton, Dialog as AriaDialog, DialogTrigger as AriaDialog
 import { Button } from "@/components/base/buttons/button";
 import { BodhicentralLogo } from "@/components/foundations/logo/bodhicentral-logo";
 import { BodhicentralLogoMinimal } from "@/components/foundations/logo/bodhicentral-logo-minimal";
-import { DropdownMenuSimple } from "@/components/marketing/header-navigation/dropdown-header-navigation";
-import { DropdownMenuFeatureCard } from "@/components/marketing/header-navigation/dropdown-menu-feature-card";
-import { DropdownMenuWithTwoColsAndLinksAndFooter } from "@/components/marketing/header-navigation/dropdown-menu-with-two-cols-and-links-and-footer";
+import { DropdownMenuResources } from "@/components/marketing/header-navigation/dropdown-menu-resources";
+import { DropdownMenuLearningPaths } from "@/components/marketing/header-navigation/dropdown-menu-learning-paths";
+import { DropdownMenuScripture } from "@/components/marketing/header-navigation/dropdown-menu-scripture";
 import Link from "next/link";
 import { cx } from "@/utils/cx";
 
@@ -20,9 +20,9 @@ type HeaderNavItem = {
 };
 
 const headerNavItems: HeaderNavItem[] = [
-    { label: "Scripture", href: "/scripture", menu: <DropdownMenuSimple /> },
-    { label: "Learning", href: "/learning", menu: <DropdownMenuFeatureCard /> },
-    { label: "Resources", href: "/resources", menu: <DropdownMenuWithTwoColsAndLinksAndFooter /> },
+    { label: "Scripture", href: "/scripture", menu: <DropdownMenuScripture /> },
+    { label: "Learning", href: "/learning", menu: <DropdownMenuLearningPaths /> },
+    { label: "Resources", href: "/resources", menu: <DropdownMenuResources /> },
 ];
 
 const footerNavItems = [

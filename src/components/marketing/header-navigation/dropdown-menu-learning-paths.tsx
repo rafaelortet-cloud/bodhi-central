@@ -20,31 +20,25 @@ type MenuColumn = {
 
 const columns: MenuColumn[] = [
     {
-        title: "Resources",
+        title: "Learning Paths",
         items: [
             {
-                title: "Groups Around You",
-                subtitle: "Find Buddhist groups close to you.",
-                href: "/resources/community",
+                title: "Foundational Paths",
+                subtitle: "Immerse yourself in the fundamentals of the journey.",
+                href: "#",
                 Icon: BookClosed,
             },
             {
-                title: "Where to Study",
-                subtitle: "Find places to study Buddhism.",
+                title: "Academic Paths",
+                subtitle: "Paths to systematic studies of the enlightenment.",
                 href: "/resources/study-centers",
                 Icon: Stars02,
             },
             {
-                title: "Digital Portals",
-                subtitle: "Explore a world of digital portals for Buddhist scripture.",
+                title: "Practice Paths",
+                subtitle: "Practices and rituals to transform reality and the world.",
                 href: "/resources/digital-portals",
                 Icon: Stars02,
-            },
-            {
-                title: "The Blog",
-                subtitle: "Read articles about Buddhist themes and topics.",
-                href: "/resources/blog",
-                Icon: PlayCircle,
             },
         ],
     },
@@ -73,13 +67,13 @@ const columns: MenuColumn[] = [
     },
 ];
 
-export const DropdownMenuWithTwoColsAndLinksAndFooter = () => {
+export const DropdownMenuLearningPaths = () => {
     return (
         <div className="px-3 pb-2 md:max-w-200 md:p-0">
             <nav className="overflow-hidden rounded-xl bg-secondary shadow-lg ring-1 ring-secondary_alt md:rounded-2xl md:shadow-lg">
                 <div className="flex flex-col gap-5 rounded-xl bg-primary pt-4 pb-5 ring-1 ring-secondary md:gap-6 md:rounded-t-2xl md:p-6 md:pt-5">
                     <div className="flex flex-col gap-1 px-4 md:p-0">
-                        <p className="pt-4 text-2xl font-medium text-brand-primary">RESOURCES</p>
+                        <p className="pt-4 text-2xl font-medium text-brand-primary">LEARNING PATHS</p>
                         <p className="text-sm text-brandtertiary">Get started and discover more about our platform.</p>
                     </div>
 
@@ -88,9 +82,9 @@ export const DropdownMenuWithTwoColsAndLinksAndFooter = () => {
                             <h3 className="text-sm font-semibold text-brand-tertiary">Quick Links</h3>
                             <ul className="flex flex-col gap-3">
                                 {[
-                                    { title: "Add content to the Desk", href: "#" },
-                                    { title: "Manage your galleries", href: "#" },
-                                    { title: "Explore your Dashboard", href: "#" },
+                                    { title: "My last learning", href: "#" },
+                                    { title: "What's Next", href: "#" },
+                                    { title: "Learning Paths Catalog", href: "#" },
                                 ].map((item) => (
                                     <li key={item.title}>
                                         <Button href={item.href} color="link-gray" size="lg">

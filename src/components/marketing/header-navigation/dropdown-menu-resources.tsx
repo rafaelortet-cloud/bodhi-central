@@ -73,7 +73,7 @@ const columns: MenuColumn[] = [
     },
 ];
 
-export const DropdownMenuWithTwoColsAndLinksAndFooter = () => {
+export const DropdownMenuResources = () => {
     return (
         <div className="px-3 pb-2 md:max-w-200 md:p-0">
             <nav className="overflow-hidden rounded-xl bg-secondary shadow-lg ring-1 ring-secondary_alt md:rounded-2xl md:shadow-lg">

@@ -66,7 +66,7 @@ export const FeaturesAlternatingLayout01 = () => {
                             {/* Dark mode image (hidden in light mode) */}
                             <img
                                 alt="Dashboard mockup showing application interface"
-                                src="https://www.untitledui.com/marketing/screen-mockups/dashboard-desktop-mockup-dark-01.webp"
+                                src="/scripture-mockup-01.webp"
                                 className="size-full object-contain not-dark:hidden lg:w-auto lg:max-w-none"
                             />
                         </AlternateImageMockup>
@@ -83,7 +83,7 @@ export const FeaturesAlternatingLayout01 = () => {
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
                                 "Discover foundational learning paths that will provide you with a solid understanding of Buddhist core teachings",
-                                "Explore academic and scholarly learning paths, your truthworthy companion for in-depth study and research",
+                                "Explore academic and scholarly learning paths, your truthworthy companions for in-depth study and research",
                                 "Engage in practice learning paths from core traditions to support your spiritual growth",
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
@@ -95,14 +95,14 @@ export const FeaturesAlternatingLayout01 = () => {
                         <AlternateImageMockup className="lg:right-0">
                             {/* Light mode image (hidden in dark mode) */}
                             <img
-                                alt="Dashboard mockup showing application interface"
-                                src="https://www.untitledui.com/marketing/screen-mockups/dashboard-desktop-mockup-light-01.webp"
+                                alt="Mockup showing Learning Paths interface"
+                                src="/learning-paths-mockup-01.webp"
                                 className="size-full object-contain lg:w-auto lg:max-w-none dark:hidden"
                             />
                             {/* Dark mode image (hidden in light mode) */}
                             <img
-                                alt="Dashboard mockup showing application interface"
-                                src="https://www.untitledui.com/marketing/screen-mockups/dashboard-desktop-mockup-dark-01.webp"
+                                alt="Mockup showing Learning Paths interface"
+                                src="/learning-paths-mockup-01.webp"
                                 className="size-full object-contain not-dark:hidden lg:w-auto lg:max-w-none"
                             />
                         </AlternateImageMockup>
@@ -114,14 +114,14 @@ export const FeaturesAlternatingLayout01 = () => {
                         <FeaturedIcon icon={ChartBreakoutSquare} size="lg" color="gray" theme="modern-neue" />
                         <h2 className="mt-5 text-display-xs font-semibold text-primary md:text-display-sm">Resources for individuals and communities</h2>
                         <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">
-                            Whether you are a solo practitioner or a community leader, discover tools to enhance your personal activity and your contributions to the communities.
+                            Whether you are a solo practitioner or a community leader, discover tools to enhance your activities and contributions to the community.
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
-                                "Find communities and connect with other fellows around the world",
-                                "Explore a world of Western and Eastern Buddhist centers for academic and advanced study programs",
-                                "Read insightful articles on a wide range of topics relevant to these turbulent times presented from a Buddhist perspective",
-                                "Build your personal library with your favorite texts and learning materials to improve your productivity"
+                                "Find and connect with other fellows and communities around the world",
+                                "Explore a world of Western and Eastern Buddhist academic centers offering advanced study programs",
+                                "Read insightful articles on a range of topics relevant to these turbulent times, presented from a Buddhist perspective",
+                                "Build your personal library with favorite texts and learning materials to improve your productivity",
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
                             ))}

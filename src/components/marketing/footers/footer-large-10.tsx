@@ -151,15 +151,15 @@ export const FooterLarge10 = () => {
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="flex flex-col justify-between border-b border-secondary pb-8 md:pb-16 lg:flex-row">
                     <div className="max-w-3xl">
-                        <h2 className="text-display-xs font-semibold text-primary md:text-display-sm">Continue your journey</h2>
-                        <p className="mt-2 text-md text-tertiary md:mt-4 md:text-xl">Join thousands of people exploring the Buddha's teachings globally.</p>
+                        <h2 className="text-display-xs font-semibold text-primary md:text-display-sm">Your journey, your choices</h2>
+                        <p className="mt-2 text-md text-tertiary md:mt-4 md:text-xl">Choose your path with scripture and transmissions of realizations having your back, and make your journey count for yourself and others.</p>
                     </div>
 
                     <div className="mt-8 flex flex-col-reverse gap-3 self-stretch sm:flex-row sm:self-start lg:mt-0">
                         <Button color="secondary" size="xl" href="/about/project-information">
                             Learn more
                         </Button>
-                        <Button size="xl" href="/my-desk">Open My Desk</Button>
+                        <Button size="xl" href="/my-desk">My Desk</Button>
                     </div>
                 </div>
 
@@ -168,7 +168,7 @@ export const FooterLarge10 = () => {
                         <Link href="/" className="flex w-min items-center outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-2">
                             <BodhicentralLogo className="h-10 w-min shrink-0" />
                         </Link>
-                        <p className="text-md text-tertiary">An open platform to channel universally revered Buddhist scripture and modern learning globally.</p>
+                        <p className="text-md text-tertiary">An open platform to channel universally revered Buddhist scriptures and modern learning paths globally.</p>
                     </div>
                     <nav className="flex-1">
                         <ul className="grid flex-1 grid-cols-2 gap-8 md:grid-cols-5">
