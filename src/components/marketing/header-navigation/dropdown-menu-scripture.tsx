@@ -23,22 +23,22 @@ const columns: MenuColumn[] = [
         title: "Scriptural Collections",
         items: [
             {
-                title: "Vajrayana Collections",
-                subtitle: "The esoteric Buddhism, the lineages from the Himalayas.",
-                href: "#",
+                title: "Tibetan Schools",
+                subtitle: "The curricula of the four main lineages of Tibetan Buddhism.",
+                href: "/scripture/tibetan-schools",
+                Icon: BookOpen01,
+            },
+            {
+                title: "Tibetan Canons",
+                subtitle: "The Tibetan Buddhist scriptures and commentaries.",
+                href: "/scripture/tibetan-canons",
                 Icon: BookClosed,
             },
             {
-                title: "Mahayana Collections",
-                subtitle: "The Bodhisattva archetypes, the largest Buddhist traditions.",
-                href: "#",
-                Icon: Stars02,
-            },
-            {
-                title: "Theravada Collections",
+                title: "Theravada Canon",
                 subtitle: "The Pali Canon, the earliest Buddhist scriptures.",
                 href: "#",
-                Icon: Stars02,
+                Icon: BookClosed,
             },
         ],
     },
