@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 @theme {
     /* FONT FAMILY */
     --font-body: var(--font-nunito, "Nunito"), -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
