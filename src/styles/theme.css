@@ -7,6 +7,11 @@
     --font-mono: ui-monospace, "Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --font-tibetan: var(--font-tibetan, "NotoSerifTibetan"), -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 
+    /* FONT VARIATIONS */
+    --font-display--opsz: 144;
+    --font-display--wdth: 100;
+    --font-display--grad: 0;
+
     /* FONT SIZE */
     --text-xs: calc(var(--spacing) * 3);
     --text-xs--line-height: calc(var(--spacing) * 4.5);

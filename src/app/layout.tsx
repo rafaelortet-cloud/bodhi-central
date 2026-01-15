@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Nunito } from "next/font/google";
+import { Nunito, Roboto_Serif } from "next/font/google";
 import { RouteProvider } from "@/providers/router-provider";
 import { Theme } from "@/providers/theme";
 import "@/styles/globals.css";
@@ -11,6 +11,13 @@ const nunito = Nunito({
     subsets: ["latin"],
     display: "swap",
     variable: "--font-nunito",
+});
+
+const robotoSerif = Roboto_Serif({
+    subsets: ["latin"],
+    display: "swap",
+    variable: "--font-roboto-serif",
+    axes: ["wdth", "opsz", "GRAD"],
 });
 
 export const metadata: Metadata = {
@@ -29,8 +36,8 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" suppressHydrationWarning>
-            <body className={cx(nunito.variable, "bg-primary antialiased")}>
+        <html lang="en" suppressHydrationWarning className={cx(nunito.variable, robotoSerif.variable)}>
+            <body className="bg-primary antialiased">
                 <RouteProvider>
                     <Theme>
                         <Header />

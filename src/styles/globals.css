@@ -42,6 +42,39 @@ body {
     font-kerning: normal;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-display);
+    font-variation-settings:
+        "opsz" var(--font-display--opsz),
+        "wdth" var(--font-display--wdth),
+        "GRAD" var(--font-display--grad);
+}
+
+h1 {
+    --font-display--opsz: 144;
+    --font-display--grad: 50;
+}
+
+h2 {
+    --font-display--opsz: 100;
+    --font-display--grad: 25;
+}
+
+h3 {
+    --font-display--opsz: 48;
+}
+
+h4,
+h5,
+h6 {
+    --font-display--opsz: 24;
+}
+
 /* Hide the default expand arrow on Safari.  */
 details summary::-webkit-details-marker {
     display: none;
