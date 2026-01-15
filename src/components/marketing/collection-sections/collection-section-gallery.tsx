@@ -137,11 +137,11 @@ export const CollectionSectionGallery = () => {
                     <div className="flex flex-1 flex-col pr-4 md:pr-8">
                         <h2 className="text-display-sm font-semibold text-primary md:text-display-md">Nyingma Studies</h2>
                         <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                            The Thirteen Great Treatises of the Nyingma school form the core of the curriculum in most Nyingma monastic institutions and on which Mipham Rinpoche and Khenpo Shenga wrote commentaries.
+                            The Thirteen Great Treatises of the Nyingma school form the core of the curriculum in most Nyingma monastic institutions, on which treatises Mipham Rinpoche and Khenpo Shenga wrote commentaries.
                         </p>
                     </div>
                     <div className="mt-8 flex flex-col gap-3 self-stretch md:mt-0 md:flex-row-reverse md:justify-center md:self-start">
-                        <Button size="xl">Texts by Genres</Button>
+                        <Button size="xl">Explore Genres</Button>
                         <Button color="secondary" size="xl">
                             School's Overview
                         </Button>

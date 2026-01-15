@@ -1,5 +1,8 @@
 {
     "css.lint.unknownAtRules": "ignore",
+    "css.customData": [
+        "tailwind"
+    ],
     "scss.lint.unknownAtRules": "ignore",
     "less.lint.unknownAtRules": "ignore",
     "files.associations": {
