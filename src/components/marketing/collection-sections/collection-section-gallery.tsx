@@ -8,10 +8,10 @@ import { RoundButton } from "@/components/marketing/testimonials/round-button";
 
 const collectionTexts = [
     {
-        name: "Alisa Hester",
-        title: "Founder & CEO",
-        summary: "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
-        avatarUrl: "https://www.untitledui.com/images/portraits/alisa-hester",
+        name: "Pratimoksha Sutra or Sutra of Individual Liberation",
+        title: "Buddha Shakyamuni",
+        summary: "The Sutra of Individual Liberation on Vinaya by Shakyamuni Buddha is included among the so-called "Thirteen great texts", which form the core of the curriculum in most shedras and on which Khenpo Shenga provided commentaries.",
+        thumbnailCover: "/textCovers/thirteen-nyingma-texts-01-buddha-shakyamuni.jpg",
         socials: [
             {
                 icon: X,
@@ -31,7 +31,7 @@ const collectionTexts = [
         name: "Rich Wilson",
         title: "Engineering Manager",
         summary: "Lead engineering teams at Figma, Pitch, and Protocol Labs.",
-        avatarUrl: "https://www.untitledui.com/images/portraits/rich-wilson",
+        thumbnailCover: "https://www.untitledui.com/images/portraits/rich-wilson",
         socials: [
             {
                 icon: X,
@@ -51,7 +51,7 @@ const collectionTexts = [
         name: "Annie Stanley",
         title: "Product Manager",
         summary: "Former PM for Airtable, Medium, Ghost, and Lumi.",
-        avatarUrl: "https://www.untitledui.com/images/portraits/annie-stanley",
+        thumbnailCover: "https://www.untitledui.com/images/portraits/annie-stanley",
         socials: [
             {
                 icon: X,
@@ -71,7 +71,7 @@ const collectionTexts = [
         name: "Johnny Bell",
         title: "Frontend Developer",
         summary: "Former frontend dev for Linear, Coinbase, and Postscript.",
-        avatarUrl: "https://www.untitledui.com/images/portraits/johnny-bell",
+        thumbnailCover: "https://www.untitledui.com/images/portraits/johnny-bell",
         socials: [
             {
                 icon: X,
@@ -91,7 +91,7 @@ const collectionTexts = [
         name: "Mia Ward",
         title: "Backend Developer",
         summary: "Lead backend dev at Clearbit. Former Clearbit and Loom.",
-        avatarUrl: "https://www.untitledui.com/images/portraits/mia-ward",
+        thumbnailCover: "https://www.untitledui.com/images/portraits/mia-ward",
         socials: [
             {
                 icon: X,
@@ -111,7 +111,7 @@ const collectionTexts = [
         name: "Archie Young",
         title: "Product Designer",
         summary: "Founding design team at Figma. Former Pleo, Stripe, and Tile.",
-        avatarUrl: "https://www.untitledui.com/images/portraits/archie-young",
+        thumbnailCover: "https://www.untitledui.com/images/portraits/archie-young",
         socials: [
             {
                 icon: X,
@@ -129,7 +129,7 @@ const collectionTexts = [
     },
 ];
 
-export const CollectionSectionTextCoverGlass04 = () => {
+export const CollectionSectionGallery = () => {
     return (
         <section className="overflow-hidden bg-primary py-16 md:py-24">
             <div className="mx-auto max-w-container px-4 md:px-8">
@@ -160,7 +160,7 @@ export const CollectionSectionTextCoverGlass04 = () => {
                                 key={text.title}
                                 className="relative flex aspect-[.65] w-full max-w-70 flex-col justify-end md:aspect-[0.75] md:max-w-96"
                             >
-                                <img alt={text.name} src={text.avatarUrl} className="absolute inset-0 z-0 size-full cursor-grab object-cover" />
+                                <img alt={text.name} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full cursor-grab object-cover" />
 
                                 <div className="z-10 bg-linear-to-t from-black/40 to-black/0 pt-16 md:pt-20 lg:pt-24">
                                     <div className="relative bg-primary/30 px-5 pt-5 pb-6 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5">

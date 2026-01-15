@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { CollectionSectionGallery } from '@/components/marketing/collection-sections/collection-section-gallery';
 
 export default function TibetanSchoolsPage() {
     return (
@@ -51,6 +52,7 @@ export default function TibetanSchoolsPage() {
                     </section>
                 </div>
             </div>
+            <CollectionSectionGallery />
         </>
     );
 }
