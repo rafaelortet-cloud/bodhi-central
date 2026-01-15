@@ -19,11 +19,6 @@ const footerNavList = [
             {
                 label: "Traditions",
                 href: "/scripture/traditions",
-                badge: (
-                    <Badge color="gray" type="modern" size="sm" className="ml-1">
-                        New
-                    </Badge>
-                ),
             },
             {
                 label: "Connections",
@@ -56,8 +51,13 @@ const footerNavList = [
         label: "Resources",
         items: [
             {
-                label: "Groups Around You",
+                label: "Groups Around",
                 href: "/resources/community",
+                badge: (
+                    <Badge color="gray" type="modern" size="sm" className="ml-1">
+                        New
+                    </Badge>
+                ),
             },
             {
                 label: "Study Centers",
@@ -68,8 +68,13 @@ const footerNavList = [
                 href: "/resources/digital-portals",
             },
             {
-                label: "Bodhi Central Blog",
+                label: "The Blog",
                 href: "/resources/blog",
+                badge: (
+                    <Badge color="gray" type="modern" size="sm" className="ml-1">
+                        New
+                    </Badge>
+                ),
             },
         ],
     },
@@ -77,8 +82,13 @@ const footerNavList = [
         label: "About",
         items: [
             {
-                label: "Project Information",
+                label: "Project Info",
                 href: "/about/project-information",
+                badge: (
+                    <Badge color="gray" type="modern" size="sm" className="ml-1">
+                        New
+                    </Badge>
+                ),
             },
             {
                 label: "About Us",
@@ -89,8 +99,13 @@ const footerNavList = [
                 href: "#",
             },
             {
-                label: "Contact Us",
+                label: "Contact",
                 href: "/contact",
+                badge: (
+                    <Badge color="gray" type="modern" size="sm" className="ml-1">
+                        New
+                    </Badge>
+                ),
             },
         ],
     },
@@ -152,7 +167,7 @@ export const FooterLarge10 = () => {
                 <div className="flex flex-col justify-between border-b border-secondary pb-8 md:pb-16 lg:flex-row">
                     <div className="max-w-3xl">
                         <h2 className="text-display-xs font-semibold text-primary md:text-display-sm">Your journey, your choices</h2>
-                        <p className="mt-2 text-md text-tertiary md:mt-4 md:text-xl">Choose your path with scripture and transmissions of realizations having your back, and make your journey count for yourself and others.</p>
+                        <p className="mt-2 text-md text-tertiary md:mt-4 md:text-xl">Envision your path with scripture and transmissions of realizations having your back, and make your journey count for yourself and others.</p>
                     </div>
 
                     <div className="mt-8 flex flex-col-reverse gap-3 self-stretch sm:flex-row sm:self-start lg:mt-0">

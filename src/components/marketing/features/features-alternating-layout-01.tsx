@@ -48,7 +48,7 @@ export const FeaturesAlternatingLayout01 = () => {
                             {[
                                 "Inclusive approach to collections of texts representing a wide range of vital transmissions of Buddhism",
                                 "Organizing texts by traditions, lineages, themes, genres, and specialized tracks to meet your needs",
-                                "State-of-the-art readers and workspaces to make your experience as smooth and memorable as possible!",
+                                "State-of-the-art readers and workspaces to make your experience smooth and memorable",
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
                             ))}

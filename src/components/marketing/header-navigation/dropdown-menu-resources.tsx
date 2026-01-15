@@ -24,25 +24,25 @@ const columns: MenuColumn[] = [
         items: [
             {
                 title: "Groups Around You",
-                subtitle: "Find Buddhist groups close to you.",
+                subtitle: "Find and connect with others in your community.",
                 href: "/resources/community",
                 Icon: BookClosed,
             },
             {
                 title: "Where to Study",
-                subtitle: "Find places to study Buddhism.",
+                subtitle: "Explore Buddhist study centers around the world.",
                 href: "/resources/study-centers",
                 Icon: Stars02,
             },
             {
                 title: "Digital Portals",
-                subtitle: "Explore a world of digital portals for Buddhist scripture.",
+                subtitle: "Research a world of digital portals for preservation and accessibility.",
                 href: "/resources/digital-portals",
                 Icon: Stars02,
             },
             {
                 title: "The Blog",
-                subtitle: "Read articles about Buddhist themes and topics.",
+                subtitle: "Read articles distiling wisdom and caring for the world",
                 href: "/resources/blog",
                 Icon: PlayCircle,
             },

@@ -7,6 +7,7 @@ import { Button as AriaButton, Dialog as AriaDialog, DialogTrigger as AriaDialog
 import { Button } from "@/components/base/buttons/button";
 import { BodhicentralLogo } from "@/components/foundations/logo/bodhicentral-logo";
 import { BodhicentralLogoMinimal } from "@/components/foundations/logo/bodhicentral-logo-minimal";
+
 import { DropdownMenuResources } from "@/components/marketing/header-navigation/dropdown-menu-resources";
 import { DropdownMenuLearningPaths } from "@/components/marketing/header-navigation/dropdown-menu-learning-paths";
 import { DropdownMenuScripture } from "@/components/marketing/header-navigation/dropdown-menu-scripture";
@@ -21,7 +22,7 @@ type HeaderNavItem = {
 
 const headerNavItems: HeaderNavItem[] = [
     { label: "Scripture", href: "/scripture", menu: <DropdownMenuScripture /> },
-    { label: "Learning", href: "/learning", menu: <DropdownMenuLearningPaths /> },
+    { label: "Learning Paths", href: "/learning-paths", menu: <DropdownMenuLearningPaths /> },
     { label: "Resources", href: "/resources", menu: <DropdownMenuResources /> },
 ];
 

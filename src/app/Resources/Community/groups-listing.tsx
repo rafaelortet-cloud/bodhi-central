@@ -221,7 +221,7 @@ const traditions = [
 
 export const GroupsListing = () => {
     return (
-        <div className="flex w-full max-w-container mx-4 lg:mx-6 flex-col bg-primary lg:flex-row">
+        <div className="flex max-w-container mx-4 lg:mx-6 flex-col bg-primary lg:flex-row">
             <main className="flex flex-col pb-20 gap-y-8 gap-x-4 lg:flex-row">
 
                 {/* Mobile view */}
@@ -230,8 +230,8 @@ export const GroupsListing = () => {
                     <div className="pt-5">
                         <div className="flex flex-col gap-4 border-b border-secondary pb-4 lg:flex-row lg:justify-between">
                             <div className="flex flex-col gap-0.5 md:gap-1">
-                                <p className="text-xl font-semibold text-primary md:text-display-xs">21 groups in Mobile</p>
-                                <p className="text-md text-tertiary">Find groups to connect with like-minded people.</p>
+                                <p className="text-xl font-semibold text-primary md:text-display-xs">21 Buddhist groups in your area</p>
+                                <p className="text-md text-tertiary">Filter and refine your search.</p>
                             </div>
                             <div className="flex flex-row gap-3">
                                 <Button color="secondary" size="md">
@@ -256,13 +256,13 @@ export const GroupsListing = () => {
                 </div>
 
                 {/* Desktop view block : Header + Filters + Sorting + Listings */}
-                <div className="relative w-full flex flex-col gap-8 pt-8 pb-16 after:pointer-events-none after:absolute after:inset-0">
+                <div className="relative w-full mx-4 lg:mx-6 flex flex-col gap-8 pt-8 pb-16 after:pointer-events-none after:absolute after:inset-0">
                     {/* Page header simple */}
                     <div className="hidden md:block px-4 lg:px-4">
                         <div className="flex flex-col gap-4 border-b border-secondary pb-4 lg:flex-row lg:justify-between">
                             <div className="flex flex-col gap-0.5 md:gap-1">
-                                <p className="text-xl font-semibold text-primary md:text-display-xs">21 groups in Desktop</p>
-                                <p className="text-md text-tertiary">Find groups and communities around you.</p>
+                                <p className="text-xl font-semibold text-primary md:text-display-xs">21 Buddhist groups in your area</p>
+                                <p className="text-md text-tertiary">Filter and refine your search.</p>
                             </div>
                             <div className="flex flex-row gap-3">
                                 <Button color="secondary" size="md">
