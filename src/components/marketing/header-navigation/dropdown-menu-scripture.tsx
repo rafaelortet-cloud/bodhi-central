@@ -67,8 +67,8 @@ export const DropdownMenuScripture = () => {
             <nav className="overflow-hidden rounded-xl bg-secondary shadow-lg ring-1 ring-secondary_alt md:rounded-2xl md:shadow-lg">
                 <div className="flex flex-col gap-5 rounded-xl bg-primary pt-4 pb-5 ring-1 ring-secondary md:gap-6 md:rounded-t-2xl md:p-6 md:pt-5">
                     <div className="flex flex-col gap-1 px-4 md:p-0">
-                        <p className="pt-4 text-2xl font-medium text-brand-primary">SCRIPTURE</p>
-                        <p className="text-sm text-brandtertiary">Immerse yourself in the Buddhist scriptures.</p>
+                        <p className="pt-4 text-2xl font-medium text-brand-primary">BUDDHIST SCRIPTURE</p>
+                        <p className="text-sm text-brandtertiary">Immerse yourself in the profound Buddhist wealth of wisdom.</p>
                     </div>
 
                     <div className="flex flex-col gap-5 md:flex-row md:gap-8 md:py-0">
@@ -77,6 +77,8 @@ export const DropdownMenuScripture = () => {
                             <ul className="flex flex-col gap-3">
                                 {[
                                     { title: "Your last reading", href: "#" },
+                                    { title: "Genres & Purposes", href: "#" },
+                                    { title: "Authors", href: "#" },
                                     { title: "Your saved searches", href: "#" },
                                     { title: "Collections at a glance", href: "#" },
                                 ].map((item) => (
