@@ -56,13 +56,13 @@ h6 {
 }
 
 h1 {
-    --font-display--opsz: 144;
+    --font-display--opsz: 200;
     --font-display--grad: 50;
 }
 
 h2 {
-    --font-display--opsz: 100;
-    --font-display--grad: 25;
+    --font-display--opsz: 144;
+    --font-display--grad: 50;
 }
 
 h3 {

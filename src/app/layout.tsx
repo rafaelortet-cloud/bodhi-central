@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Nunito, Roboto_Serif } from "next/font/google";
+import { Nunito, Roboto_Serif, Noto_Serif_Tibetan } from "next/font/google";
 import { RouteProvider } from "@/providers/router-provider";
 import { Theme } from "@/providers/theme";
 import "@/styles/globals.css";
@@ -20,6 +20,12 @@ const robotoSerif = Roboto_Serif({
     axes: ["wdth", "opsz", "GRAD"],
 });
 
+const tibetan = Noto_Serif_Tibetan({
+    subsets: ["latin"],
+    display: "swap",
+    variable: "--font-noto-serif-tibetan",
+});
+
 export const metadata: Metadata = {
     title: "Bodhi Central — Buddhist Scriptures",
     description: "A hub for explorations of Buddha's teachings around the world.",
@@ -36,7 +42,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" suppressHydrationWarning className={cx(nunito.variable, robotoSerif.variable)}>
+        <html lang="en" suppressHydrationWarning className={cx(nunito.variable, robotoSerif.variable, tibetan.variable)}>
             <body className="bg-primary antialiased">
                 <RouteProvider>
                     <Theme>
