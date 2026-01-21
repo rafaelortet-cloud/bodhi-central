@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, BookOpen01 } from "@untitledui/icons";
+import { ArrowLeft, ArrowRight } from "@untitledui/icons";
 import { Carousel } from "@/components/application/carousel/carousel-base";
 import { Button } from "@/components/base/buttons/button";
 import { RoundButton } from "@/components/marketing/testimonials/round-button";
@@ -21,7 +21,7 @@ const collectionTexts = [
         english_title: "Commentary on the Sutra of Individual Liberation",
         author_english: "Khenpo Shenga",
         short_description: "The Sutra of Individual Liberation on Vinaya is included among the so-called Thirteen great texts, on which Khenpo Shenga provided commentaries.",
-        thumbnailCover: "/textCovers/thirteen-nyingma-texts-khenpo-shenga-thangka.jpg",
+        thumbnailCover: "/textCovers/khenpo-shenga-upcaled.jpeg",
         genre: "VINAYA",
     },
     {
@@ -30,7 +30,7 @@ const collectionTexts = [
         english_title: "The Vinayasutra",
         author_english: "Gunaprabha",
         short_description: "The Vinayasutra consists of a root text on Vinaya and its auto-commentary. Gunaprabha was an Indian master of the Vinaya tradition born in the 7th century and a disciple of Vasubandhu. According to one tradition, he is counted as one of the ‘Two Supreme Ones’—great commentators on the Buddha’s teachings.",
-        thumbnailCover: "/textCovers/thirteen-nyingma-texts-02-gunaprabha.jpg",
+        thumbnailCover: "/textCovers/gunaprabha-upscaled.jpeg",
         genre: "VINAYA",
     },
     {
@@ -39,7 +39,7 @@ const collectionTexts = [
         english_title: "Commentary on the Vinayasutra",
         author_english: "Khenpo Shenga",
         short_description: "Khenpo Shenga is an important figure in the Rimé movement who revitalized study in much of Eastern Tibet by founding shedras and by revising the scholastic curriculum with an emphasis on the classical treatises of India.",
-        thumbnailCover: "/textCovers/thirteen-nyingma-texts-khenpo-shenga-thangka.jpg",
+        thumbnailCover: "/textCovers/khenpo-shenga-upcaled.jpeg",
         genre: "VINAYA",
     },
     {
@@ -57,32 +57,31 @@ const collectionTexts = [
         english_title: "Commentary on the Compendium of Abhidharma",
         author_english: "Khenpo Shenga",
         short_description: "Khenpo Shenga is an important figure in the Rimé movement who revitalized study in much of Eastern Tibet by founding shedras and by revising the scholastic curriculum with an emphasis on the classical treatises of India.",
-        thumbnailCover: "/textCovers/thirteen-nyingma-texts-khenpo-shenga-thangka.jpg",
+        thumbnailCover: "/textCovers/khenpo-shenga-upcaled.jpeg",
         genre: "ABHIDHARMA",
     },
 ];
 
-export const CollectionSectionGallery = () => {
+export const CollectionGalleryNyingma = () => {
     return (
-        <section className="overflow-hidden bg-primary py-16 md:py-24">
+        <section className="overflow-hidden bg-blue-50 dark:bg-blue-950 py-12 md:py-20">
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="flex w-full flex-col justify-between md:flex-row">
-                    <div className="flex flex-1 flex-col pr-4 md:pr-8">
+                    <div className="flex flex-1 flex-col pr-4 md:pr-24">
                         <h2 className="text-display-md text-primary md:text-display-lg">Nyingma Studies</h2>
-                        <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
+                        <p className="mt-2 text-lg text-tertiary md:mt-5 md:text-xl">
                             The Thirteen Great Treatises form the core of the curriculum in most Nyingma monastic institutions, with commentaries by Mipham Rinpoche and Khenpo Shenga.
                         </p>
                     </div>
                     <div className="mt-8 flex flex-col gap-3 self-stretch md:mt-0 md:flex-row-reverse md:justify-center md:self-start">
-                        <Button size="xl">Explore Genres</Button>
-                        <Button color="secondary" size="xl">
-                            School's Overview
+                        <Button color="secondary" size="md">
+                            Explore genres
                         </Button>
                     </div>
                 </div>
 
                 <Carousel.Root
-                    className="mt-12 md:mt-16"
+                    className="mt-6 md:mt-8"
                     opts={{
                         align: "start",
                     }}
@@ -97,9 +96,9 @@ export const CollectionSectionGallery = () => {
 
                                 <div className="z-10 bg-linear-to-t from-black/30 to-black/0 pt-16 md:pt-20 lg:pt-24 rounded-b-sm">
                                     <div className="relative bg-blue-800/50 px-5 pt-5 pb-6 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5 rounded-b-sm">
-                                        <h3 className="text-md font-semibold text-brand-200">{text.english_title}</h3>
+                                        <h3 className="text-md font-medium text-brand-200">{text.english_title}</h3>
                                         <p className="tibetan-text mt-1 text-lg">{text.tibetan_title}</p>
-                                        <p className="mt-4 text-sm font-medium">{text.author_english}</p>
+                                        <p className="mt-4 text-sm font-regular">{text.author_english}</p>
                                         <p className="hidden mt-2 text-sm md:text-sm">{text.short_description}</p>
                                         <div className="flex gap-2 mt-1 justify-between items-top">
                                             <p className="text-xs font-normal text-brand-200">{text.genre}</p>

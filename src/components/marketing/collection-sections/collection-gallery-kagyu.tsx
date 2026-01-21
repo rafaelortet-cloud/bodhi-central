@@ -1,37 +1,37 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, BookOpen01 } from "@untitledui/icons";
+import { ArrowLeft, ArrowRight } from "@untitledui/icons";
 import { Carousel } from "@/components/application/carousel/carousel-base";
 import { Button } from "@/components/base/buttons/button";
 import { RoundButton } from "@/components/marketing/testimonials/round-button";
 
 const collectionTexts = [
     {
-        tibetan_title: "སོ་སོར་ཐར་པའི་མདོ།",
+        tibetan_title: "ཚད་མ་ལེགས་པར་བཤད་པ་ཐམས་ཅད་ཀྱི་ཆུ་བོ་ཡོངས་སུ་འདུ་བ་རིག་པའི་གཞུང་ལུགས་ཀྱི་རྒྱ་མཚོ་ཞེས་བྱ་བའི་གླེགས་བམ་དང་པོ།",
         author_tibetan: "སངས་རྒྱས་ཤཱཀྱ་ཐུབ་པ།",
-        english_title: "Sutra of Individual Liberation",
-        author_english: "Buddha Shakyamuni",
+        english_title: "The Ocean of Texts on Logic (Vol. 1)",
+        author_english: "Chödrak Gatyso",
         short_description: "The Sutra of Individual Liberation on Vinaya is included among the so-called Thirteen great texts, which form the core of the curriculum in most Nyigma shedras.",
-        thumbnailCover: "/textCovers/thirteen-nyingma-texts-01-buddha-shakyamuni.jpg",
-        genre: "VINAYA",
+        thumbnailCover: "/textCovers/eight-kagyu-texts-01-1.jpg",
+        genre: "PRAMANA",
     },
     {
-        tibetan_title: "སོ་སོར་ཐར་པའི་མདོ་ཡི་མཆན་འགྲེལ།",
+        tibetan_title: "ཚད་མ་ལེགས་པར་བཤད་པ་ཐམས་ཅད་ཀྱི་ཆུ་བོ་ཡོངས་སུ་འདུ་བ་རིག་པའི་གཞུང་ལུགས་ཀྱི་རྒྱ་མཚོ་ཞེས་བྱ་བའི་གླེགས་བམ་གཉིས་པ།",
         author_tibetan: "",
-        english_title: "Commentary on the Sutra of Individual Liberation",
-        author_english: "Khenpo Shenga",
+        english_title: "The Ocean of Texts on Logic (Vol. 2)",
+        author_english: "Chödrak Gatyso",
         short_description: "The Sutra of Individual Liberation on Vinaya is included among the so-called Thirteen great texts, on which Khenpo Shenga provided commentaries.",
-        thumbnailCover: "/textCovers/thirteen-nyingma-texts-khenpo-shenga-thangka.jpg",
-        genre: "VINAYA",
+        thumbnailCover: "/textCovers/eight-kagyu-texts-01-2.jpg",
+        genre: "PRAMANA",
     },
     {
-        tibetan_title: "འདུལ་བའི་མདོ།",
+        tibetan_title: "ཚད་མ་ལེགས་པར་བཤད་པ་ཐམས་ཅད་ཀྱི་ཆུ་བོ་ཡོངས་སུ་འདུ་བ་རིག་པའི་གཞུང་ལུགས་ཀྱི་རྒྱ་མཚོ་ཞེས་བྱ་བའི་གླེགས་བམ་གསུམ་པ།",
         author_tibetan: "",
-        english_title: "The Vinayasutra",
-        author_english: "Gunaprabha",
+        english_title: "The Ocean of Texts on Logic (Vol. 3)",
+        author_english: "Chödrak Gatyso",
         short_description: "The Vinayasutra consists of a root text on Vinaya and its auto-commentary. Gunaprabha was an Indian master of the Vinaya tradition born in the 7th century and a disciple of Vasubandhu. According to one tradition, he is counted as one of the ‘Two Supreme Ones’—great commentators on the Buddha’s teachings.",
-        thumbnailCover: "/textCovers/thirteen-nyingma-texts-02-gunaprabha.jpg",
-        genre: "VINAYA",
+        thumbnailCover: "/textCovers/eight-kagyu-texts-01-3.jpg",
+        genre: "PRAMANA",
     },
     {
         tibetan_title: "འདུལ་བ་མདོ་རྩ་བའི་མཆན་འགྲེལ་པདམ་དཀར་པོའི་ལྗོན་ཤིང་།",
@@ -62,27 +62,27 @@ const collectionTexts = [
     },
 ];
 
-export const CollectionSectionGallery = () => {
+export const CollectionGalleryKagyu = () => {
     return (
-        <section className="overflow-hidden bg-primary py-16 md:py-24">
+        <section className="overflow-hidden bg-red-50 dark:bg-red-950 py-12 md:py-20">
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="flex w-full flex-col justify-between md:flex-row">
-                    <div className="flex flex-1 flex-col pr-4 md:pr-8">
-                        <h2 className="text-display-md text-primary md:text-display-lg">Nyingma Studies</h2>
-                        <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                            The Thirteen Great Treatises form the core of the curriculum in most Nyingma monastic institutions, with commentaries by Mipham Rinpoche and Khenpo Shenga.
+                    <div className="flex flex-1 flex-col pr-4 md:pr-24">
+                        <h2 className="text-display-md text-primary md:text-display-lg">Kagyu Studies</h2>
+                        <p className="mt-2 text-lg text-tertiary md:mt-5 md:text-xl">
+                            TThe Eight Kagyu commentaries were recommended by the 16th Karmapa, Rangjung Rigpe Dorje, as the basis for study in the shedra at Rumtek Monastery.
                         </p>
                     </div>
                     <div className="mt-8 flex flex-col gap-3 self-stretch md:mt-0 md:flex-row-reverse md:justify-center md:self-start">
-                        <Button size="xl">Explore Genres</Button>
-                        <Button color="secondary" size="xl">
-                            School's Overview
+
+                        <Button color="secondary" size="md">
+                            Explore genres
                         </Button>
                     </div>
                 </div>
 
                 <Carousel.Root
-                    className="mt-12 md:mt-16"
+                    className="mt-6 md:mt-8"
                     opts={{
                         align: "start",
                     }}
@@ -91,12 +91,12 @@ export const CollectionSectionGallery = () => {
                         {collectionTexts.map((text) => (
                             <Carousel.Item
                                 key={text.tibetan_title}
-                                className="relative flex aspect-[.666] w-full max-w-64 flex-col justify-end md:aspect-[0.666] md:max-w-74 shadow-xl border-2 border-blue-200 rounded-xl overflow-hidden"
+                                className="relative flex aspect-[.666] w-full max-w-64 flex-col justify-end md:aspect-[0.666] md:max-w-74 shadow-xl border-2 border-red-200 rounded-xl overflow-hidden"
                             >
-                                <img alt={text.tibetan_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-[-3%] cursor-grab object-cover rounded-sm" />
+                                <img alt={text.tibetan_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-[-14%] cursor-grab object-cover rounded-sm" />
 
                                 <div className="z-10 bg-linear-to-t from-black/30 to-black/0 pt-16 md:pt-20 lg:pt-24 rounded-b-sm">
-                                    <div className="relative bg-blue-800/50 px-5 pt-5 pb-6 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5 rounded-b-sm">
+                                    <div className="relative bg-red-900/50 px-5 pt-5 pb-6 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5 rounded-b-sm">
                                         <h3 className="text-md font-semibold text-brand-200">{text.english_title}</h3>
                                         <p className="tibetan-text mt-1 text-lg">{text.tibetan_title}</p>
                                         <p className="mt-4 text-sm font-medium">{text.author_english}</p>
