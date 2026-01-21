@@ -12,7 +12,7 @@ const collectionTexts = [
         english_title: "Sutra of Individual Liberation",
         author_english: "Buddha Shakyamuni",
         short_description: "The Sutra of Individual Liberation on Vinaya is included among the so-called Thirteen great texts, which form the core of the curriculum in most Nyigma shedras.",
-        thumbnailCover: "/textCovers/thirteen-nyingma-texts-01-buddha-shakyamuni.jpg",
+        thumbnailCover: "/textCovers/buddha-shakyamuni-600.jpg",
         genre: "VINAYA",
     },
     {
@@ -21,7 +21,7 @@ const collectionTexts = [
         english_title: "Commentary on the Sutra of Individual Liberation",
         author_english: "Khenpo Shenga",
         short_description: "The Sutra of Individual Liberation on Vinaya is included among the so-called Thirteen great texts, on which Khenpo Shenga provided commentaries.",
-        thumbnailCover: "/textCovers/khenpo-shenga-upcaled.jpeg",
+        thumbnailCover: "/textCovers/khenpo-shenga-600.jpg",
         genre: "VINAYA",
     },
     {
@@ -30,7 +30,7 @@ const collectionTexts = [
         english_title: "The Vinayasutra",
         author_english: "Gunaprabha",
         short_description: "The Vinayasutra consists of a root text on Vinaya and its auto-commentary. Gunaprabha was an Indian master of the Vinaya tradition born in the 7th century and a disciple of Vasubandhu. According to one tradition, he is counted as one of the ‘Two Supreme Ones’—great commentators on the Buddha’s teachings.",
-        thumbnailCover: "/textCovers/gunaprabha-upscaled.jpeg",
+        thumbnailCover: "/textCovers/gunaprabha-600.jpg",
         genre: "VINAYA",
     },
     {
@@ -39,7 +39,7 @@ const collectionTexts = [
         english_title: "Commentary on the Vinayasutra",
         author_english: "Khenpo Shenga",
         short_description: "Khenpo Shenga is an important figure in the Rimé movement who revitalized study in much of Eastern Tibet by founding shedras and by revising the scholastic curriculum with an emphasis on the classical treatises of India.",
-        thumbnailCover: "/textCovers/khenpo-shenga-upcaled.jpeg",
+        thumbnailCover: "/textCovers/khenpo-shenga-600.jpg",
         genre: "VINAYA",
     },
     {
@@ -57,19 +57,19 @@ const collectionTexts = [
         english_title: "Commentary on the Compendium of Abhidharma",
         author_english: "Khenpo Shenga",
         short_description: "Khenpo Shenga is an important figure in the Rimé movement who revitalized study in much of Eastern Tibet by founding shedras and by revising the scholastic curriculum with an emphasis on the classical treatises of India.",
-        thumbnailCover: "/textCovers/khenpo-shenga-upcaled.jpeg",
+        thumbnailCover: "/textCovers/khenpo-shenga-600.jpg",
         genre: "ABHIDHARMA",
     },
 ];
 
 export const CollectionGalleryNyingma = () => {
     return (
-        <section className="overflow-hidden bg-blue-50 dark:bg-blue-950 py-12 md:py-20">
+        <section className="overflow-hidden bg-blue-50 dark:bg-blue-950 py-8 md:py-16">
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="flex w-full flex-col justify-between md:flex-row">
                     <div className="flex flex-1 flex-col pr-4 md:pr-24">
                         <h2 className="text-display-md text-primary md:text-display-lg">Nyingma Studies</h2>
-                        <p className="mt-2 text-lg text-tertiary md:mt-5 md:text-xl">
+                        <p className="mt-1 text-base text-tertiary md:mt-2 md:text-lg">
                             The Thirteen Great Treatises form the core of the curriculum in most Nyingma monastic institutions, with commentaries by Mipham Rinpoche and Khenpo Shenga.
                         </p>
                     </div>
@@ -90,9 +90,9 @@ export const CollectionGalleryNyingma = () => {
                         {collectionTexts.map((text) => (
                             <Carousel.Item
                                 key={text.tibetan_title}
-                                className="relative flex aspect-[.666] w-full max-w-64 flex-col justify-end md:aspect-[0.666] md:max-w-74 shadow-xl border-2 border-blue-200 rounded-xl overflow-hidden"
+                                className="relative flex aspect-[.6] w-full max-w-64 flex-col justify-end md:aspect-[0.6] md:max-w-74 shadow-xl border-2 border-blue-200 rounded-xl overflow-hidden"
                             >
-                                <img alt={text.tibetan_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-[-3%] cursor-grab object-cover rounded-sm" />
+                                <img alt={text.tibetan_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-[-1] cursor-grab object-cover rounded-sm" />
 
                                 <div className="z-10 bg-linear-to-t from-black/30 to-black/0 pt-16 md:pt-20 lg:pt-24 rounded-b-sm">
                                     <div className="relative bg-blue-800/50 px-5 pt-5 pb-6 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5 rounded-b-sm">

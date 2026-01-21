@@ -64,13 +64,13 @@ const collectionTexts = [
 
 export const CollectionGalleryKagyu = () => {
     return (
-        <section className="overflow-hidden bg-red-50 dark:bg-red-950 py-12 md:py-20">
+        <section className="overflow-hidden bg-red-50 dark:bg-red-950 py-8 md:py-16">
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="flex w-full flex-col justify-between md:flex-row">
                     <div className="flex flex-1 flex-col pr-4 md:pr-24">
                         <h2 className="text-display-md text-primary md:text-display-lg">Kagyu Studies</h2>
-                        <p className="mt-2 text-lg text-tertiary md:mt-5 md:text-xl">
-                            TThe Eight Kagyu commentaries were recommended by the 16th Karmapa, Rangjung Rigpe Dorje, as the basis for study in the shedra at Rumtek Monastery.
+                        <p className="mt-1 text-base text-tertiary md:mt-2 md:text-lg">
+                            The Eight Kagyu commentaries recommended by the 16th Karmapa, Rangjung Rigpe Dorje, are essential for a complete understanding of sutra and tantra from the Kagyu school perspective.
                         </p>
                     </div>
                     <div className="mt-8 flex flex-col gap-3 self-stretch md:mt-0 md:flex-row-reverse md:justify-center md:self-start">
@@ -91,7 +91,7 @@ export const CollectionGalleryKagyu = () => {
                         {collectionTexts.map((text) => (
                             <Carousel.Item
                                 key={text.tibetan_title}
-                                className="relative flex aspect-[.666] w-full max-w-64 flex-col justify-end md:aspect-[0.666] md:max-w-74 shadow-xl border-2 border-red-200 rounded-xl overflow-hidden"
+                                className="relative flex aspect-[.6] w-full max-w-64 flex-col justify-end md:aspect-[0.6] md:max-w-74 shadow-xl border-2 border-red-200 rounded-xl overflow-hidden"
                             >
                                 <img alt={text.tibetan_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-[-14%] cursor-grab object-cover rounded-sm" />
 
