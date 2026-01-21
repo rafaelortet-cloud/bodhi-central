@@ -64,10 +64,10 @@ const columns: MenuColumn[] = [
 export const DropdownMenuScripture = () => {
     return (
         <div className="px-3 pb-2 md:max-w-200 md:p-0">
-            <nav className="overflow-hidden rounded-xl bg-secondary shadow-lg ring-1 ring-secondary_alt md:rounded-2xl md:shadow-lg">
+            <nav className="overflow-hidden rounded-xl bg-secondary drop-shadow-2xl ring-1 ring-secondary_alt md:rounded-2xl md:shadow-lg">
                 <div className="flex flex-col gap-5 rounded-xl bg-primary pt-4 pb-5 ring-1 ring-secondary md:gap-6 md:rounded-t-2xl md:p-6 md:pt-5">
                     <div className="flex flex-col gap-1 px-4 md:p-0">
-                        <p className="pt-4 text-2xl font-medium text-brand-primary">BUDDHIST SCRIPTURE</p>
+                        <p className="pt-4 text-2xl font-light text-brand-primary">BUDDHIST SCRIPTURE</p>
                         <p className="text-sm text-brandtertiary">The profound Buddhist wealth of wisdom at your fingertips.</p>
                     </div>
 

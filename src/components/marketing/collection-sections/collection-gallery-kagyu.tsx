@@ -10,27 +10,27 @@ const collectionTexts = [
         tibetan_title: "ཚད་མ་ལེགས་པར་བཤད་པ་ཐམས་ཅད་ཀྱི་ཆུ་བོ་ཡོངས་སུ་འདུ་བ་རིག་པའི་གཞུང་ལུགས་ཀྱི་རྒྱ་མཚོ་ཞེས་བྱ་བའི་གླེགས་བམ་དང་པོ།",
         author_tibetan: "སངས་རྒྱས་ཤཱཀྱ་ཐུབ་པ།",
         english_title: "The Ocean of Texts on Logic (Vol. 1)",
-        author_english: "Chödrak Gatyso",
+        author_english: "Chödrak Gyatso",
         short_description: "The Sutra of Individual Liberation on Vinaya is included among the so-called Thirteen great texts, which form the core of the curriculum in most Nyigma shedras.",
-        thumbnailCover: "/textCovers/eight-kagyu-texts-01-1.jpg",
+        thumbnailCover: "/textCovers/chodrak-gyatso-vol-1-600.jpg",
         genre: "PRAMANA",
     },
     {
         tibetan_title: "ཚད་མ་ལེགས་པར་བཤད་པ་ཐམས་ཅད་ཀྱི་ཆུ་བོ་ཡོངས་སུ་འདུ་བ་རིག་པའི་གཞུང་ལུགས་ཀྱི་རྒྱ་མཚོ་ཞེས་བྱ་བའི་གླེགས་བམ་གཉིས་པ།",
         author_tibetan: "",
         english_title: "The Ocean of Texts on Logic (Vol. 2)",
-        author_english: "Chödrak Gatyso",
+        author_english: "Chödrak Gyatso",
         short_description: "The Sutra of Individual Liberation on Vinaya is included among the so-called Thirteen great texts, on which Khenpo Shenga provided commentaries.",
-        thumbnailCover: "/textCovers/eight-kagyu-texts-01-2.jpg",
+        thumbnailCover: "/textCovers/chodrak-gyatso-vol-2-600.jpg",
         genre: "PRAMANA",
     },
     {
         tibetan_title: "ཚད་མ་ལེགས་པར་བཤད་པ་ཐམས་ཅད་ཀྱི་ཆུ་བོ་ཡོངས་སུ་འདུ་བ་རིག་པའི་གཞུང་ལུགས་ཀྱི་རྒྱ་མཚོ་ཞེས་བྱ་བའི་གླེགས་བམ་གསུམ་པ།",
         author_tibetan: "",
         english_title: "The Ocean of Texts on Logic (Vol. 3)",
-        author_english: "Chödrak Gatyso",
+        author_english: "Chödrak Gyatso",
         short_description: "The Vinayasutra consists of a root text on Vinaya and its auto-commentary. Gunaprabha was an Indian master of the Vinaya tradition born in the 7th century and a disciple of Vasubandhu. According to one tradition, he is counted as one of the ‘Two Supreme Ones’—great commentators on the Buddha’s teachings.",
-        thumbnailCover: "/textCovers/eight-kagyu-texts-01-3.jpg",
+        thumbnailCover: "/textCovers/chodrak-gyatso-vol-3-600.jpg",
         genre: "PRAMANA",
     },
     {
@@ -64,7 +64,7 @@ const collectionTexts = [
 
 export const CollectionGalleryKagyu = () => {
     return (
-        <section className="overflow-hidden bg-red-50 dark:bg-red-950 py-8 md:py-16">
+        <section className="overflow-hidden bg-linear-to-b from-white to-red-50 dark:bg-linear-to-b dark:from-black dark:to-red-950 py-8 md:py-16">
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="flex w-full flex-col justify-between md:flex-row">
                     <div className="flex flex-1 flex-col pr-4 md:pr-24">
@@ -87,16 +87,16 @@ export const CollectionGalleryKagyu = () => {
                         align: "start",
                     }}
                 >
-                    <Carousel.Content overflowHidden={false} className="gap-4 pr-4 md:gap-6 md:pr-6">
+                    <Carousel.Content overflowHidden={false} className="gap-4 pr-4 md:gap-4 md:pr-4">
                         {collectionTexts.map((text) => (
                             <Carousel.Item
                                 key={text.tibetan_title}
-                                className="relative flex aspect-[.6] w-full max-w-64 flex-col justify-end md:aspect-[0.6] md:max-w-74 shadow-xl border-2 border-red-200 rounded-xl overflow-hidden"
+                                className="relative flex aspect-[.5625] w-full max-w-64 flex-col justify-end md:aspect-[0.5625] md:max-w-74 shadow-xl border-2 border-red-200 rounded-xl overflow-hidden"
                             >
-                                <img alt={text.tibetan_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-[-14%] cursor-grab object-cover rounded-sm" />
+                                <img alt={text.tibetan_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-0 cursor-grab object-cover rounded-sm" />
 
                                 <div className="z-10 bg-linear-to-t from-black/30 to-black/0 pt-16 md:pt-20 lg:pt-24 rounded-b-sm">
-                                    <div className="relative bg-red-900/50 px-5 pt-5 pb-6 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5 rounded-b-sm">
+                                    <div className="relative bg-red-900/50 px-5 pt-5 pb-4 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5 rounded-b-sm">
                                         <h3 className="text-md font-semibold text-brand-200">{text.english_title}</h3>
                                         <p className="tibetan-text mt-1 text-lg">{text.tibetan_title}</p>
                                         <p className="mt-4 text-sm font-medium">{text.author_english}</p>
