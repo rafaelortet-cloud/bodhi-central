@@ -4,6 +4,7 @@
     /* FONT FAMILY */
     --font-body: var(--font-nunito, "Nunito"), -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
     --font-display: var(--font-roboto-serif, "RobotoSerif"), -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    --font-serif: var(--font-fraunces, "Fraunces"), -apple-system, "Segoe UI", Roboto, Georgia, serif;
     --font-mono: ui-monospace, "Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --font-tibetan: var(--font-tibetan, "NotoSerifTibetan"), -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 
@@ -11,6 +12,11 @@
     --font-display--opsz: 144;
     --font-display--wdth: 100;
     --font-display--grad: 0;
+    --font-serif--opsz: 100;
+    --font-serif--soft: 0;
+    --font-serif--wonk: 10;
+    --font-serif--wdth: 100;
+    --font-serif--grad: 50;
 
     /* FONT SIZE */
     --text-xs: calc(var(--spacing) * 3);

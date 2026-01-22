@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Nunito, Roboto_Serif, Noto_Serif_Tibetan } from "next/font/google";
+import { Nunito, Roboto_Serif, Noto_Serif_Tibetan, Fraunces } from "next/font/google";
 import { RouteProvider } from "@/providers/router-provider";
 import { Theme } from "@/providers/theme";
 import "@/styles/globals.css";
@@ -20,6 +20,13 @@ const robotoSerif = Roboto_Serif({
     axes: ["wdth", "opsz", "GRAD"],
 });
 
+const fraunces = Fraunces({
+    subsets: ["latin"],
+    display: "swap",
+    variable: "--font-fraunces",
+    axes: ["opsz", "SOFT", "WONK"],
+});
+
 const tibetan = Noto_Serif_Tibetan({
     subsets: ["latin"],
     display: "swap",
@@ -28,7 +35,7 @@ const tibetan = Noto_Serif_Tibetan({
 
 export const metadata: Metadata = {
     title: "Bodhi Central — Buddhist Scriptures",
-    description: "A hub for explorations of Buddha's teachings around the world.",
+    description: "Gateways to accessible Buddhist knowledge and wisdom.",
 };
 
 export const viewport: Viewport = {
@@ -42,7 +49,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" suppressHydrationWarning className={cx(nunito.variable, robotoSerif.variable, tibetan.variable)}>
+        <html lang="en" suppressHydrationWarning className={cx(nunito.variable, robotoSerif.variable, fraunces.variable, tibetan.variable)}>
             <body className="bg-primary antialiased">
                 <RouteProvider>
                     <Theme>
