@@ -34,22 +34,22 @@ const collectionTexts = [
         genre: "PRAMANA",
     },
     {
-        tibetan_title: "འདུལ་བ་མདོ་རྩ་བའི་མཆན་འགྲེལ་པདམ་དཀར་པོའི་ལྗོན་ཤིང་།",
-        author_tibetan: "",
-        english_title: "Commentary on the Vinayasutra",
-        author_english: "Khenpo Shenga",
-        short_description: "Khenpo Shenga is an important figure in the Rimé movement who revitalized study in much of Eastern Tibet by founding shedras and by revising the scholastic curriculum with an emphasis on the classical treatises of India.",
-        thumbnailCover: "/textCovers/thirteen-nyingma-texts-khenpo-shenga-thangka.jpg",
-        genre: "VINAYA",
+        tibetan_title: "དབུ་མ་ལ་འཇུག་པའི་ཀར་ཊཱིཀ།",
+        author_tibetan: "མི་བསྐྱོད་རྡོ་རྗེ།",
+        english_title: "Commentary on the Entrance to the Middle Way: The Chariot of the Dakpo Kagyü Siddhas (Vol. 1)",
+        author_english: "Mikyö Dorje",
+        short_description: "Detailed commentary on Chandrakirti's Madhyamaka-vatara with extensive references to Nagarjuna's Mulamadhyamaka-vatara.",
+        thumbnailCover: "/textCovers/mikyo-dorje-vol-1-600.jpg",
+        genre: "MADHYAMAKA",
     },
     {
-        tibetan_title: "མངོན་པ་ཀུན་བཏུས།",
-        author_tibetan: "",
-        english_title: "Compendium of Abhidharma",
-        author_english: "Asanga",
-        short_description: "The Compendium of Abhidharma is one of the 'Six Ornaments', the greatest Buddhist authorities of Ancient India. It is a complete and systematic account of the Abhidharma.",
-        thumbnailCover: "/textCovers/indian-texts-asanga.jpg",
-        genre: "ABHIDHARMA",
+        tibetan_title: "དབུ་མ་ལ་འཇུག་པའི་ཀར་ཊཱིཀ།",
+        author_tibetan: "མི་བསྐྱོད་རྡོ་རྗེ།",
+        english_title: "Commentary on the Entrance to the Middle Way: The Chariot of the Dakpo Kagyü Siddhas (Vol. 2",
+        author_english: "Mikyö Dorje",
+        short_description: "Detailed commentary on Chandrakirti's Madhyamaka-vatara with extensive references to Nagarjuna's Mulamadhyamaka-vatara.",
+        thumbnailCover: "/textCovers/mikyo-dorje-vol-2-600.jpg",
+        genre: "MADHYAMAKA",
     },
     {
         tibetan_title: "ཐེག་པ་ཆེན་པོའི་ཆོས་མངོན་པ་ཀུན་ལས་བཏུས་པའི་མཆན་འགྲེལ་ནོར་བུའི་མེ་ལོང་།",
@@ -91,7 +91,7 @@ export const CollectionGalleryKagyu = () => {
                         {collectionTexts.map((text) => (
                             <Carousel.Item
                                 key={text.tibetan_title}
-                                className="relative flex aspect-[.5625] w-full max-w-64 flex-col justify-end md:aspect-[0.5625] md:max-w-74 shadow-xl border-2 border-red-200 rounded-xl overflow-hidden"
+                                className="relative flex aspect-[.5625] w-full max-w-64 flex-col justify-end md:aspect-[.5625] md:max-w-74 shadow-xl border-2 border-red-200 dark:border-red-950 rounded-xl overflow-hidden"
                             >
                                 <img alt={text.tibetan_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-0 cursor-grab object-cover rounded-sm" />
 

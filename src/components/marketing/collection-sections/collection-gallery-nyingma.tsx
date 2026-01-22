@@ -90,7 +90,7 @@ export const CollectionGalleryNyingma = () => {
                         {collectionTexts.map((text) => (
                             <Carousel.Item
                                 key={text.tibetan_title}
-                                className="relative flex aspect-[.5625] w-full max-w-64 flex-col justify-end md:aspect-[0.5625] md:max-w-74 drop-shadow-lg border-2 border-blue-200 dark:border-blue-800 rounded-xl overflow-hidden"
+                                className="relative flex aspect-[.5625] w-full max-w-64 flex-col justify-end md:aspect-[.5625] md:max-w-74 drop-shadow-lg border-2 border-blue-200 dark:border-blue-800 rounded-xl overflow-hidden"
                             >
                                 <img alt={text.tibetan_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-[-1] cursor-grab object-cover rounded-sm" />
 
