@@ -46,8 +46,8 @@ const columns: MenuColumn[] = [
         title: "Support",
         items: [
             {
-                title: "Documentation",
-                subtitle: "In-depth articles on our tools and technologies to empower users.",
+                title: "Where to Study",
+                subtitle: "Find a study center or online course around the world.",
                 href: "/",
                 Icon: FileCode01,
             },
@@ -57,12 +57,6 @@ const columns: MenuColumn[] = [
                 href: "/",
                 Icon: Stars02,
             },
-            {
-                title: "Help and support",
-                subtitle: "Need help with something? Our team is here to help.",
-                href: "/",
-                Icon: LifeBuoy01,
-            },
         ],
     },
 ];
@@ -70,21 +64,21 @@ const columns: MenuColumn[] = [
 export const DropdownMenuLearningPaths = () => {
     return (
         <div className="px-3 pb-2 md:max-w-200 md:p-0">
-            <nav className="overflow-hidden rounded-xl bg-secondary drop-shadow-2xl ring-1 ring-secondary_alt md:rounded-2xl md:shadow-lg">
-                <div className="flex flex-col gap-5 rounded-xl bg-primary pt-4 pb-5 ring-1 ring-secondary md:gap-6 md:rounded-t-2xl md:p-6 md:pt-5">
+            <nav className="overflow-hidden rounded-xl bg-brand-100 dark:bg-brand-900 drop-shadow-lg ring-1 ring-secondary_alt md:rounded-2xl md:drop-shadow-2xl dark:md:drop-shadow-gray-950">
+                <div className="flex flex-col gap-5 rounded-xl bg-brand-25 dark:bg-brand-950 pt-4 ring-1 ring-secondary md:gap-8 md:rounded-t-2xl md:p-6 md:pt-5">
                     <div className="flex flex-col gap-1 px-4 md:p-0">
-                        <p className="pt-4 text-2xl font-light text-brand-primary">LEARNING PATHS</p>
-                        <p className="text-sm text-brandtertiary">Get started and discover more about our platform.</p>
+                        <h4 className="pt-4 text-2xl">LEARNING PATHS</h4>
+                        <p className="text-sm text-tertiary">Buddha's teachings from the living traditions for enlightenment.</p>
                     </div>
 
                     <div className="flex flex-col gap-5 md:flex-row md:gap-8 md:py-0">
                         <div className="-mb-px flex flex-col gap-4 border-b border-b-secondary px-4 pb-5 md:mb-0 md:gap-5 md:border-none md:p-0">
-                            <h3 className="text-sm font-semibold text-brand-tertiary">Quick Links</h3>
+                            <h3 className="text-sm font-semibold text-brand-700 dark:text-brand-300">Quick Links</h3>
                             <ul className="flex flex-col gap-3">
                                 {[
-                                    { title: "My last learning", href: "#" },
-                                    { title: "What's Next", href: "#" },
-                                    { title: "Learning Paths Catalog", href: "#" },
+                                    { title: "Last Learning", href: "#" },
+                                    { title: "New Additions", href: "#" },
+                                    { title: "All Learning Paths", href: "#" },
                                 ].map((item) => (
                                     <li key={item.title}>
                                         <Button href={item.href} color="link-gray" size="lg">
@@ -98,7 +92,7 @@ export const DropdownMenuLearningPaths = () => {
                         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-2">
                             {columns.map((column) => (
                                 <div key={column.title}>
-                                    <h3 className="mb-2 px-4 text-sm font-semibold text-brand-tertiary md:px-0">{column.title}</h3>
+                                    <h3 className="mb-2 px-4 text-sm font-semibold text-brand-700 dark:text-brand-300 md:px-0">{column.title}</h3>
                                     <ul className="flex flex-col gap-0.5">
                                         {column.items.map(({ title, subtitle, href, Icon }) => (
                                             <li key={title}>

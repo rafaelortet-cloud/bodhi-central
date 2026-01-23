@@ -20,7 +20,7 @@ type MenuColumn = {
 
 const columns: MenuColumn[] = [
     {
-        title: "Scriptural Collections",
+        title: "Collections",
         items: [
             {
                 title: "Tibetan Schools",
@@ -47,13 +47,13 @@ const columns: MenuColumn[] = [
         items: [
             {
                 title: "Traditions",
-                subtitle: "Many traditions with one open goal.",
+                subtitle: "Many traditions with intertwined goals, an historical timeline.",
                 href: "/",
                 Icon: FileCode01,
             },
             {
                 title: "Connections",
-                subtitle: "Learn how Buddhism evolved and how it is connected to the world.",
+                subtitle: "Scriptural connections and parallels.",
                 href: "/",
                 Icon: Stars02,
             },
@@ -64,22 +64,22 @@ const columns: MenuColumn[] = [
 export const DropdownMenuScripture = () => {
     return (
         <div className="px-3 pb-2 md:max-w-200 md:p-0">
-            <nav className="overflow-hidden rounded-xl bg-secondary drop-shadow-2xl ring-1 ring-secondary_alt md:rounded-2xl md:shadow-lg">
-                <div className="flex flex-col gap-5 rounded-xl bg-primary pt-4 pb-5 ring-1 ring-secondary md:gap-6 md:rounded-t-2xl md:p-6 md:pt-5">
+            <nav className="overflow-hidden rounded-xl bg-brand-100 dark:bg-brand-900 drop-shadow-lg ring-1 ring-secondary_alt md:rounded-2xl md:drop-shadow-2xl dark:md:drop-shadow-gray-950">
+                <div className="flex flex-col gap-4 rounded-xl bg-brand-25 dark:bg-brand-950 pt-4 ring-1 ring-secondary md:gap-8 md:rounded-t-2xl md:p-6 md:pt-5">
                     <div className="flex flex-col gap-1 px-4 md:p-0">
-                        <p className="pt-4 text-2xl font-light text-brand-primary">BUDDHIST SCRIPTURE</p>
-                        <p className="text-sm text-brandtertiary">The profound Buddhist wealth of wisdom at your fingertips.</p>
+                        <h4 className="pt-4 text-2xl">BUDDHIST SCRIPTURE</h4>
+                        <p className="text-sm text-tertiary">The profound wealth of Buddhist wisdom at your fingertips.</p>
                     </div>
 
                     <div className="flex flex-col gap-5 md:flex-row md:gap-8 md:py-0">
                         <div className="-mb-px flex flex-col gap-4 border-b border-b-secondary px-4 pb-5 md:mb-0 md:gap-5 md:border-none md:p-0">
-                            <h3 className="text-sm font-semibold text-brand-tertiary">Quick Links</h3>
+                            <h3 className="text-sm font-semibold text-brand-700 dark:text-brand-300">Quick Links</h3>
                             <ul className="flex flex-col gap-3">
                                 {[
-                                    { title: "Your last reading", href: "#" },
+                                    { title: "Last Reading", href: "#" },
                                     { title: "Genres", href: "#" },
                                     { title: "Authors", href: "#" },
-                                    { title: "Your saved searches", href: "#" },
+                                    { title: "Saved Searches", href: "#" },
                                     { title: "Collections Overview", href: "#" },
                                 ].map((item) => (
                                     <li key={item.title}>
@@ -94,7 +94,7 @@ export const DropdownMenuScripture = () => {
                         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-2">
                             {columns.map((column) => (
                                 <div key={column.title}>
-                                    <h3 className="mb-2 px-4 text-sm font-semibold text-brand-tertiary md:px-0">{column.title}</h3>
+                                    <h3 className="mb-2 px-4 text-sm font-semibold text-brand-700 dark:text-brand-300 md:px-0">{column.title}</h3>
                                     <ul className="flex flex-col gap-0.5">
                                         {column.items.map(({ title, subtitle, href, Icon }) => (
                                             <li key={title}>

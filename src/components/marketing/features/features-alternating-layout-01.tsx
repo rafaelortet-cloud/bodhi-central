@@ -29,7 +29,7 @@ export const FeaturesAlternatingLayout01 = () => {
             <div className="mx-auto w-full max-w-container px-4 md:px-8">
                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
                     <span className="text-sm font-semibold text-brand-secondary md:text-md">Three Pillars</span>
-                    <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Beautiful presentations of Buddha's teachings</h2>
+                    <h2 className="mt-3 text-display-sm text-primary md:text-display-md">Beautiful presentations of Buddha's teachings</h2>
                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
                         Gateways to relevant and powerful lineage transmissions to support spiritual seekers and communities around the world.
                     </p>
@@ -40,14 +40,14 @@ export const FeaturesAlternatingLayout01 = () => {
                 <div className="grid grid-cols-1 gap-10 md:gap-20 lg:grid-cols-2 lg:gap-24">
                     <div className="max-w-xl flex-1 self-center">
                         <FeaturedIcon icon={BookOpen01} size="lg" color="gray" theme="modern-neue" />
-                        <h2 className="mt-5 text-display-xs font-semibold text-primary md:text-display-sm">Buddhist Scriptures</h2>
+                        <h3 className="mt-5 text-display-xs text-primary md:text-display-sm">Buddhist Scriptures</h3>
                         <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">
                             Whether you are focusing on studies, practices, or exploring what Buddha's teachings mean for your life, we have gathered for you the most relevant texts across major streams of Buddhism.
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
-                                "Inclusive approach to collections of texts representing a wide range of vital transmissions of Buddhism",
-                                "Organizing texts by traditions, lineages, themes, genres, and specialized tracks to meet your needs",
+                                "Inclusive approach to collections of texts representing a wide range of vital living transmissions of Buddhism",
+                                "Organizing texts by traditions, schools, genres, and specialized study tracks to meet your needs",
                                 "State-of-the-art readers and workspaces to make your experience smooth and memorable",
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
@@ -76,15 +76,15 @@ export const FeaturesAlternatingLayout01 = () => {
                 <div className="grid grid-cols-1 gap-10 md:gap-20 lg:grid-cols-2 lg:gap-24">
                     <div className="max-w-xl flex-1 self-center lg:order-last">
                         <FeaturedIcon icon={TrendUp01} size="lg" color="gray" theme="modern-neue" />
-                        <h2 className="mt-5 text-display-xs font-semibold text-primary md:text-display-sm">Learning Paths</h2>
+                        <h3 className="mt-5 text-display-xs text-primary md:text-display-sm">Learning Paths</h3>
                         <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">
-                            Accessing Buddha's teachings has never been easier. Yet, it can be overwhelming to navigate the vast amount of literature and teachings available today. We are changing that!
+                            Accessing Buddha's teachings has never been easier. Yet, navigating the vast amount of literature and teachings available today can be overwhelming. We are changing that!
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
-                                "Discover foundational learning paths that will provide you with a solid understanding of Buddhist core teachings",
+                                "Discover foundational learning paths that will provide you with a solid understanding of the Buddhist core teachings",
                                 "Explore academic and scholarly learning paths, your truthworthy companions for in-depth study and research",
-                                "Engage in practice learning paths from core traditions to support your spiritual growth",
+                                "Engage in practical learning paths brought to you by the living Buddhist traditions to support your spiritual growth",
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
                             ))}
@@ -112,16 +112,16 @@ export const FeaturesAlternatingLayout01 = () => {
                 <div className="grid grid-cols-1 gap-10 md:gap-20 lg:grid-cols-2 lg:gap-24">
                     <div className="max-w-xl flex-1 self-center">
                         <FeaturedIcon icon={ChartBreakoutSquare} size="lg" color="gray" theme="modern-neue" />
-                        <h2 className="mt-5 text-display-xs font-semibold text-primary md:text-display-sm">Resources for individuals and communities</h2>
+                        <h3 className="mt-5 text-display-xs text-primary md:text-display-sm">Resources for individuals and communities</h3>
                         <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">
                             Whether you are a solo practitioner or a community leader, discover tools to enhance your activities and contributions to the community.
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
                                 "Find and connect with other fellows and communities around the world",
-                                "Explore a world of Western and Eastern Buddhist academic centers offering advanced study programs",
-                                "Read insightful articles on a range of topics relevant to these turbulent times, presented from a Buddhist perspective",
-                                "Build your personal library with favorite texts and learning materials to improve your productivity",
+                                "Explore a range of Western and Eastern Buddhist academic centers offering advanced study programs",
+                                "Read insightful articles on topics relevant to these turbulent times, presented from a Buddhist perspective",
+                                "Build your personal library with favorite texts and learning materials to support your studies",
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
                             ))}

@@ -16,8 +16,8 @@ export const ProjectInfoArticle = () => {
             <section className="bg-primary py-16 md:py-24">
                 <div className="mx-auto max-w-container px-4 md:px-8">
                     <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
-                        <span className="text-sm font-semibold text-brand-secondary md:text-md">Current as of Jan 6, 2026</span>
-                        <h2 className="mt-3 text-display-md font-semibold text-primary md:text-display-lg">Project Information</h2>
+                        <span className="text-sm font-semibold text-brand-secondary md:text-md">Current as of Jan 22, 2026</span>
+                        <h1 className="mt-3 text-display-md text-primary md:text-display-lg">Project Information</h1>
                         <p className="mt-4 text-lg text-tertiary md:mt-6 md:text-xl">
                             Welcome to Bodhi Central. Learn more about the initiative's scope, its content, audience, motivations, user experience propositions, and the roadmap.
                         </p>
@@ -26,7 +26,7 @@ export const ProjectInfoArticle = () => {
             </section>
 
             <main className="mx-auto max-w-container px-4 pb-24 md:px-8">
-                <div className="mx-auto prose md:prose-lg md:max-w-180">
+                <div className="mx-auto prose md:prose-lg md:max-w-200">
                     <p>
                         This initiative is a service to support the living transmissions of scripture passed down by our Buddhist teachers, offering traditional scriptures and learning experiences, and embracing modernity and creativity through practical solutions for students.
                     </p>

@@ -108,12 +108,12 @@
 
     /* Headings */
     &:where(h1, h2, h3, h4, h5, h6) {
-        font-family: var(--font-display);
+        font-family: var(--font-serif);
     }
 
     &:where(h1) {
         color: var(--tw-prose-headings);
-        font-weight: 600;
+        font-weight: 350;
 
         font-size: var(--text-display-sm);
         line-height: var(--text-display-sm--line-height);
@@ -123,7 +123,7 @@
 
     &:where(h2) {
         color: var(--tw-prose-headings);
-        font-weight: 600;
+        font-weight: 450;
 
         font-size: var(--text-display-xs);
         line-height: var(--text-display-xs--line-height);
@@ -133,7 +133,7 @@
 
     &:where(h3) {
         color: var(--tw-prose-headings);
-        font-weight: 600;
+        font-weight: 500;
 
         font-size: var(--text-xl);
         line-height: var(--text-xl--line-height);
