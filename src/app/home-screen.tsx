@@ -57,24 +57,24 @@ export const HomeScreen = () => {
 
                     <div className="relative -mx-4 flex h-80 items-center justify-center md:mx-0 md:h-120 lg:h-full lg:min-h-140">
                         <div className="translate-x-[34px] translate-y-[3px] -space-y-[116.5px] md:translate-x-[53px] md:translate-y-[37px] md:-space-y-[83px]">
-                            <div className="relative z-3 translate-y-[22px] rotate-[29.9deg]">
+                            <div className="relative z-3 translate-y-[20px] rotate-[16deg]">
                                 <div
                                     className="[--scale:1.365] md:[--scale:2.1]"
                                     style={{
                                         transform: "scale(var(--scale)) rotateX(63deg) rotateY(1deg) rotateZ(51deg) skewX(14deg)",
                                     }}
                                 >
-                                    <CreditCard type="transparent-gradient" cardHolder="Esoteric" cardNumber="VAJRAYANA" cardExpiration=" - Himalayas" />
+                                    <CreditCard type="transparent-gradient" cardHolder="Vajrayana" cardNumber="Tibetan Buddhism" cardExpiration="" image="lineage-collections-wallpaper.jpg" imagePosition="top" />
                                 </div>
                             </div>
-                            <div className="relative z-2 translate-y-[10px] rotate-[14.8deg]">
+                            <div className="relative z-2 translate-y-[12px] rotate-[8deg]">
                                 <div
                                     className="[--scale:1.365] md:[--scale:2.099]"
                                     style={{
                                         transform: "scale(var(--scale)) rotateX(63deg) rotateY(1deg) rotateZ(51deg) skewX(14deg)",
                                     }}
                                 >
-                                    <CreditCard type="transparent-gradient" cardHolder="Boddhisattva" cardNumber="MAHAYANA" cardExpiration=" - China" />
+                                    <CreditCard type="transparent-gradient" cardHolder="Gradual Path" cardNumber="Mahayana Buddhism" cardExpiration="" image="lineage-collections-wallpaper.jpg" imagePosition="top" />
                                 </div>
                             </div>
                             <div
@@ -83,7 +83,7 @@ export const HomeScreen = () => {
                                     transform: "scale(var(--scale)) rotateX(63deg) rotateY(1deg) rotateZ(51deg) skewX(14deg)",
                                 }}
                             >
-                                <CreditCard type="transparent-gradient" cardHolder="Foundational" cardNumber="THERAVADHA" cardExpiration="- South Asia" />
+                                <CreditCard type="transparent-gradient" cardHolder="Foundational" cardNumber="Theravada Buddhism" cardExpiration="" image="lineage-collections-wallpaper.jpg" imagePosition="top" />
                             </div>
                         </div>
                     </div>

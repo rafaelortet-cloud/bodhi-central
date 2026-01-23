@@ -3,6 +3,7 @@
 import { useMemo } from "react";
 import { cx, sortCx } from "@/utils/cx";
 import { MastercardIcon, MastercardIconWhite, PaypassIcon } from "./icons";
+import { BookOpen01, BookClosed } from "@untitledui/icons";
 
 const styles = sortCx({
     // Normal
@@ -119,6 +120,9 @@ interface CreditCardProps {
     type?: CreditCardType;
     className?: string;
     width?: number;
+    image?: string;
+    imagePosition?: string;
+    imageSize?: string;
 }
 
 const calculateScale = (desiredWidth: number, originalWidth: number, originalHeight: number) => {
@@ -137,13 +141,16 @@ const calculateScale = (desiredWidth: number, originalWidth: number, originalHei
 };
 
 export const CreditCard = ({
-    company = "Many traditions, one goal",
-    cardNumber = "Esoteric Buddhism",
-    cardHolder = "VAJRAYANA",
+    company = "Himalayas",
+    cardNumber = "Tibetan Buddhism",
+    cardHolder = "Vajrayana",
     cardExpiration = "06/28",
     type = "brand-dark",
     className,
     width,
+    image = "",
+    imagePosition = "center",
+    imageSize = "cover",
 }: CreditCardProps) => {
     const originalWidth = 316;
     const originalHeight = 190;
@@ -172,6 +179,9 @@ export const CreditCard = ({
                     transform: `scale(${scale})`,
                     width: `${originalWidth}px`,
                     height: `${originalHeight}px`,
+                    backgroundImage: image ? `url(${image})` : undefined,
+                    backgroundSize: imageSize,
+                    backgroundPosition: imagePosition,
                 }}
                 className={cx("absolute top-0 left-0 flex origin-top-left flex-col justify-between overflow-hidden rounded-2xl p-4", styles[type].root)}
             >
@@ -228,7 +238,7 @@ export const CreditCard = ({
                     </div>
 
                     <div className={cx("flex h-8 w-11.5 shrink-0 items-center justify-center rounded", styles[type].cardTypeRoot)}>
-                        {CARD_WITH_COLOR_LOGO.includes(type as (typeof CARD_WITH_COLOR_LOGO)[number]) ? <MastercardIcon /> : <MastercardIconWhite />}
+                        {CARD_WITH_COLOR_LOGO.includes(type as (typeof CARD_WITH_COLOR_LOGO)[number]) ? <BookClosed /> : <BookOpen01 />}
                     </div>
                 </div>
             </div>
