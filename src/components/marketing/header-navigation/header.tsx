@@ -179,10 +179,10 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
                     </div>
 
                     <div className="hidden items-center gap-3 md:flex">
-                        <Button color="secondary" size={isFloating ? "md" : "lg"}>
+                        <Button color="secondary" size={isFloating ? "sm" : "md"}>
                             Log in
                         </Button>
-                        <Button color="primary" size={isFloating ? "md" : "lg"}>
+                        <Button color="primary" size={isFloating ? "sm" : "md"}>
                             Sign up
                         </Button>
                     </div>

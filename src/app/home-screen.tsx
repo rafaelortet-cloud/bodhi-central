@@ -41,7 +41,7 @@ export const HomeScreen = () => {
                         <span className="text-sm font-semibold text-secondary_on-brand md:text-md">Open. Inclusive. Relevant.</span>
 
                         <h1 className="mt-3 text-display-md font-semibold text-primary_on-brand md:text-display-lg lg:text-display-xl">
-                            Gateways to Buddhist study and practice.
+                            Gateways to Buddhist study and practice
                         </h1>
                         <p className="mt-4 max-w-120 text-lg text-balance text-tertiary_on-brand md:mt-6 md:text-xl">
                             A modern and global platform channeling universally revered Buddhist teachings for everyone.{" "}
@@ -57,33 +57,32 @@ export const HomeScreen = () => {
 
                     <div className="relative -mx-4 flex h-80 items-center justify-center md:mx-0 md:h-120 lg:h-full lg:min-h-140">
                         <div className="translate-x-[34px] translate-y-[3px] -space-y-[116.5px] md:translate-x-[53px] md:translate-y-[37px] md:-space-y-[83px]">
-                            <div className="relative z-3 translate-y-[20px] rotate-[16deg]">
+                            <div className="relative z-3 translate-y-[20px] rotate-16 drop-shadow-[0_0_12px_rgba(0,0,0,0.3)] opacity-90">
                                 <div
                                     className="[--scale:1.365] md:[--scale:2.1]"
                                     style={{
                                         transform: "scale(var(--scale)) rotateX(63deg) rotateY(1deg) rotateZ(51deg) skewX(14deg)",
                                     }}
                                 >
-                                    <CreditCard type="transparent-gradient" cardHolder="Vajrayana" cardNumber="Tibetan Buddhism" cardExpiration="" image="lineage-collections-wallpaper.jpg" imagePosition="top" />
+                                    <CreditCard type="transparent-gradient" cardHolder="Esoteric" cardNumber="VAJRAYANA" cardExpiration="" image="lineage-collections-wallpaper.jpg" imagePosition="top" />
                                 </div>
                             </div>
-                            <div className="relative z-2 translate-y-[12px] rotate-[8deg]">
+                            <div className="relative z-2 translate-y-[12px] rotate-8 drop-shadow-[0_0_12px_rgba(0,0,0,0.3)] opacity-80">
                                 <div
                                     className="[--scale:1.365] md:[--scale:2.099]"
                                     style={{
                                         transform: "scale(var(--scale)) rotateX(63deg) rotateY(1deg) rotateZ(51deg) skewX(14deg)",
                                     }}
                                 >
-                                    <CreditCard type="transparent-gradient" cardHolder="Gradual Path" cardNumber="Mahayana Buddhism" cardExpiration="" image="lineage-collections-wallpaper.jpg" imagePosition="top" />
+                                    <CreditCard type="transparent-gradient" cardHolder="Gradual" cardNumber="MAHAYANA" cardExpiration="" image="lineage-collections-wallpaper.jpg" imagePosition="top" />
                                 </div>
                             </div>
-                            <div
-                                className="relative z-1 [--scale:1.365] md:[--scale:2.1]"
+                            <div className="relative z-1 [--scale:1.365] md:[--scale:2.1] drop-shadow-[0_0_12px_rgba(0,0,0,0.2)] opacity-80"
                                 style={{
                                     transform: "scale(var(--scale)) rotateX(63deg) rotateY(1deg) rotateZ(51deg) skewX(14deg)",
                                 }}
                             >
-                                <CreditCard type="transparent-gradient" cardHolder="Foundational" cardNumber="Theravada Buddhism" cardExpiration="" image="lineage-collections-wallpaper.jpg" imagePosition="top" />
+                                <CreditCard type="transparent-gradient" cardHolder="Foundational" cardNumber="THERAVADA" cardExpiration="" image="lineage-collections-wallpaper.jpg" imagePosition="top" />
                             </div>
                         </div>
                     </div>

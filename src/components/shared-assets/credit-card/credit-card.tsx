@@ -16,9 +16,9 @@ const styles = sortCx({
     },
     "transparent-gradient": {
         root: "bg-black/10 bg-linear-to-br from-white/30 to-transparent backdrop-blur-[6px] before:pointer-events-none before:absolute before:inset-0 before:z-1 before:rounded-[inherit] before:mask-linear-135 before:mask-linear-to-white/20 before:ring-1 before:ring-white/30 before:ring-inset",
-        company: "text-white",
-        footerText: "text-white",
-        paypassIcon: "text-white",
+        company: "text-brand-200",
+        footerText: "text-white text-shadow-[0px_0px_6px_rgba(0,0,0,0.95)]",
+        paypassIcon: "text-brand-200",
         cardTypeRoot: "bg-white/10",
     },
     "brand-dark": {
@@ -141,7 +141,7 @@ const calculateScale = (desiredWidth: number, originalWidth: number, originalHei
 };
 
 export const CreditCard = ({
-    company = "Himalayas",
+    company = "",
     cardNumber = "Tibetan Buddhism",
     cardHolder = "Vajrayana",
     cardExpiration = "06/28",
