@@ -73,7 +73,7 @@ const collectionTexts = [
 
 export const CollectionGalleryKagyu = () => {
     return (
-        <section className="overflow-hidden bg-linear-to-b from-white to-pink-50 dark:bg-linear-to-b dark:from-black dark:to-pink-950 py-8 md:py-16">
+        <section className="overflow-hidden bg-linear-to-b from-white to-pink-50 dark:bg-linear-to-b dark:from-black dark:to-pink-950 py-6 md:py-12">
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="flex w-full flex-col justify-between md:flex-row">
                     <div className="flex flex-1 flex-col pr-4 md:pr-24">
@@ -121,7 +121,7 @@ export const CollectionGalleryKagyu = () => {
                             </Carousel.Item>
                         ))}
                     </Carousel.Content>
-                    <div className="mt-8 flex gap-4 md:gap-8">
+                    <div className="mt-6 flex gap-4 md:gap-8">
                         <Carousel.PrevTrigger asChild>
                             <RoundButton icon={ArrowLeft} />
                         </Carousel.PrevTrigger>

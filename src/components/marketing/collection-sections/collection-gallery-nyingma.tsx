@@ -64,13 +64,13 @@ const collectionTexts = [
 
 export const CollectionGalleryNyingma = () => {
     return (
-        <section className="overflow-hidden bg-linear-to-b from-white to-cyan-50 dark:bg-linear-to-b dark:from-black dark:to-cyan-950 py-8 md:py-16">
+        <section className="overflow-hidden bg-linear-to-b from-white to-cyan-50 dark:bg-linear-to-b dark:from-black dark:to-cyan-950 py-6 md:py-12">
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="flex w-full flex-col justify-between md:flex-row">
                     <div className="flex flex-1 flex-col pr-4 md:pr-24">
                         <h2 className="text-display-md text-primary md:text-display-lg">Nyingma Studies</h2>
                         <p className="mt-1 text-base text-tertiary md:mt-2 md:text-lg">
-                            The Thirteen Great Treatises are at the core of the curriculum of studies in most Nyingma monastic institutions, including commentaries by the great scholars Mipham Rinpoche and Khenpo Shenga.
+                            The Thirteen Great Treatises are considered the curriculum in most Nyingma monastic institutions, bringing together profound expositions of Buddha's teachings by realized scholars, including Mipham Rinpoche and Khenpo Shenga.
                         </p>
                     </div>
                     <div className="mt-8 flex flex-col gap-3 self-stretch md:mt-0 md:flex-row-reverse md:justify-center md:self-start">
@@ -111,7 +111,7 @@ export const CollectionGalleryNyingma = () => {
                             </Carousel.Item>
                         ))}
                     </Carousel.Content>
-                    <div className="mt-8 flex gap-4 md:gap-8">
+                    <div className="mt-6 flex gap-4 md:gap-8">
                         <Carousel.PrevTrigger asChild>
                             <RoundButton icon={ArrowLeft} />
                         </Carousel.PrevTrigger>
