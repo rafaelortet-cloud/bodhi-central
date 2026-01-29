@@ -73,7 +73,7 @@ const collectionTexts = [
 
 export const CollectionGalleryKagyu = () => {
     return (
-        <section className="overflow-hidden bg-linear-to-b from-white to-red-50 dark:bg-linear-to-b dark:from-black dark:to-red-950 py-8 md:py-16">
+        <section className="overflow-hidden bg-linear-to-b from-white to-pink-50 dark:bg-linear-to-b dark:from-black dark:to-pink-950 py-8 md:py-16">
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="flex w-full flex-col justify-between md:flex-row">
                     <div className="flex flex-1 flex-col pr-4 md:pr-24">
@@ -100,12 +100,12 @@ export const CollectionGalleryKagyu = () => {
                         {collectionTexts.map((text) => (
                             <Carousel.Item
                                 key={text.tibetan_title}
-                                className="relative flex aspect-[.5625] w-full max-w-64 flex-col justify-end md:aspect-[.5625] md:max-w-74 shadow-xl border-2 border-red-200 dark:border-red-950 rounded-xl overflow-hidden"
+                                className="relative flex aspect-[.5625] w-full max-w-64 flex-col justify-end md:aspect-[.5625] md:max-w-74 shadow-xl border-2 border-pink-200 dark:border-pink-950 rounded-xl overflow-hidden"
                             >
                                 <img alt={text.tibetan_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-0 cursor-grab object-cover rounded-sm" />
 
                                 <div className="z-10 bg-linear-to-t from-black/30 to-black/0 pt-16 md:pt-20 lg:pt-24 rounded-b-sm">
-                                    <div className="relative bg-red-900/50 px-5 pt-5 pb-4 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5 rounded-b-sm">
+                                    <div className="relative bg-pink-900/50 px-5 pt-5 pb-4 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5 rounded-b-sm">
                                         <h3 className="text-md font-semibold text-brand-200">{text.english_title}</h3>
                                         <p className="tibetan-text mt-1 text-lg">{text.tibetan_title}</p>
                                         <p className="mt-4 text-sm font-medium">{text.author_english}</p>
