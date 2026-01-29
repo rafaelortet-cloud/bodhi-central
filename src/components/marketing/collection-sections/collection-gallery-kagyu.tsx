@@ -66,7 +66,7 @@ const collectionTexts = [
         english_title: "An Explanation of the Treasury of Abhidharma called the Essence of the Ocean of Abhidharma",
         author_english: "Wangchuk Dorje",
         short_description: "Concised commentary on Maitraya-Asanga's Abhisamayalamkara.",
-        thumbnailCover: "/textCovers/konchok-yenlak-600.jpg",
+        thumbnailCover: "/textCovers/wangchuk-dorje-600.jpg",
         genre: "ABHIDHARMA",
     },
     {
@@ -126,10 +126,10 @@ export const CollectionGalleryKagyu = () => {
                     <Carousel.Content overflowHidden={false} className="gap-4 pr-4 md:gap-4 md:pr-4">
                         {collectionTexts.map((text) => (
                             <Carousel.Item
-                                key={text.tibetan_title}
+                                key={text.english_title}
                                 className="relative flex aspect-[.5625] w-full max-w-64 flex-col justify-end md:aspect-[.5625] md:max-w-74 shadow-xl border-2 border-pink-200 dark:border-pink-950 rounded-xl overflow-hidden"
                             >
-                                <img alt={text.tibetan_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-0 cursor-grab object-cover rounded-sm" />
+                                <img alt={text.english_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-0 cursor-grab object-cover rounded-sm" />
 
                                 <div className="z-10 bg-linear-to-t from-black/30 to-black/0 pt-16 md:pt-20 lg:pt-24 rounded-b-sm">
                                     <div className="relative bg-pink-900/50 px-5 pt-5 pb-4 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5 rounded-b-sm">
