@@ -96,6 +96,42 @@ const collectionTexts = [
         thumbnailCover: "/textCovers/mikyo-dorje-vol-3-600.jpg",
         genre: "VINAYA",
     },
+    {
+        english_title: "Commentary on the Uttaratantra Shastra: The Lion’s Roar of Irreversibility",
+        tibetan_title: "ཐེག་པ་ཆེན་པོ་རྒྱུད་བླ་མའི་བསྟན་བཅོས་སྙིང་པོའི་དོན་མངོན་སུམ་ལམ་གྱི་བཤད་སྲོལ་དང་སྦྱར་བའི་རྟམ་པར་འགྲེལ་པ་ཕྱིར་མི་ལྡོག་པ་སེང་གེའི་ང་རོ་ཞེས་བྱ་བ་བཞུགས་སོ།",
+        author_tibetan: "འཇམ་མགོན་ཀོང་སྤྲུལ།",
+        author_english: "Jamgön Kongtrul",
+        short_description: "This text is considered as the link between the sutra vehicle and the tantra vehicle in that it describes Buddha nature in detail, which is the basic ground of our minds and the underlying continuum of practice during all the phases of ground, path and fruition.",
+        thumbnailCover: "/textCovers/mikyo-dorje-vol-3-600.jpg",
+        genre: "UTTARATANTRA",
+    },
+    {
+        english_title: "Illuminating the Profound Reality",
+        tibetan_title: "ཟབ་མོ་ནང་དོན་གྱི་འགྲེལ་པ་ཟབ་དོན་སྣང་བྱེད།",
+        author_tibetan: "འཇམ་མགོན་ཀོང་སྤྲུལ།",
+        author_english: "Jamgön Kongtrul",
+        short_description: "A commentary on the Profound Inner Meaning, a core treatise by Karmapa the Third, Rangjung Dorje. by Jamgon Kongtrul Lodro Taye, concerning the tantric physiology and the subtle body, astrology, and esoteric yoga.",
+        thumbnailCover: "/textCovers/mikyo-dorje-vol-3-600.jpg",
+        genre: "Vajrayana",
+    },
+    {
+        english_title: "Commentary on the Hevajra Tantra: Elucidating the Secret of the Indestructible Vajra (Vol. 1)",
+        tibetan_title: "དཔལ་དགྱེས་པ་རྡོ་རྗེ་རྒྱུད་ཀྱི་རྒྱལ་པོ་བརྟག་པ་གཉིས་པའི་ཚིག་དོན་རྣམ་པར་འགྲོལ་བ་གཞོམ་མེད་རྡོ་རྗེའི་གསང་བ་འབྱེད་པ།",
+        author_tibetan: "འཇམ་མགོན་ཀོང་སྤྲུལ།",
+        author_english: "Jamgön Kongtrul",
+        short_description: "The main emphasis of this tantra is on the various types and expressions of conduct in the Vajrayana.",
+        thumbnailCover: "/textCovers/mikyo-dorje-vol-3-600.jpg",
+        genre: "Vajrayana",
+    },
+    {
+        english_title: "Commentary on the Hevajra Tantra: Elucidating the Secret of the Indestructible Vajra (Vol. 2)",
+        tibetan_title: "དཔལ་དགྱེས་པ་རྡོ་རྗེ་རྒྱུད་ཀྱི་རྒྱལ་པོ་བརྟག་པ་གཉིས་པའི་ཚིག་དོན་རྣམ་པར་འགྲོལ་བ་གཞོམ་མེད་རྡོ་རྗེའི་གསང་བ་འབྱེད་པ།",
+        author_tibetan: "འཇམ་མགོན་ཀོང་སྤྲུལ།",
+        author_english: "Jamgön Kongtrul",
+        short_description: "The main emphasis of this tantra is on the various types and expressions of conduct in the Vajrayana.",
+        thumbnailCover: "/textCovers/mikyo-dorje-vol-3-600.jpg",
+        genre: "Vajrayana",
+    },
 ];
 
 export const CollectionGalleryKagyu = () => {
