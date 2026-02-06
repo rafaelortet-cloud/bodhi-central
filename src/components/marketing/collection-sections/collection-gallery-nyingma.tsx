@@ -70,7 +70,7 @@ export const CollectionGalleryNyingma = () => {
                     <div className="flex flex-1 flex-col pr-4 md:pr-24">
                         <h2 className="text-display-md text-primary md:text-display-lg">Nyingma Studies</h2>
                         <p className="mt-1 text-base text-tertiary md:mt-2 md:text-lg">
-                            The Thirteen Great Treatises are considered the curriculum in most Nyingma monastic institutions, bringing together profound expositions of Buddha's teachings by realized scholars, including Mipham Rinpoche and Khenpo Shenga.
+                            The Thirteen Great Treatises are the foundation of the curriculum in Nyingma monastic institutions, bringing together profound expositions of Buddha's teachings by realized scholars, including Mipham Rinpoche and Khenpo Shenga.
                         </p>
                     </div>
                     <div className="mt-8 flex flex-col gap-3 self-stretch md:mt-0 md:flex-row-reverse md:justify-center md:self-start">

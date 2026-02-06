@@ -24,7 +24,7 @@ const columns: MenuColumn[] = [
         items: [
             {
                 title: "Foundational Paths",
-                subtitle: "Immerse yourself in the fundamentals of the journey.",
+                subtitle: "Immerse yourself in the fundamental theories of the journey.",
                 href: "#",
                 Icon: BookClosed,
             },
@@ -36,7 +36,7 @@ const columns: MenuColumn[] = [
             },
             {
                 title: "Practice Paths",
-                subtitle: "Practices and rituals to transform reality and the world.",
+                subtitle: "Practices and methods to transform your reality and the world.",
                 href: "/resources/digital-portals",
                 Icon: Stars02,
             },
@@ -47,7 +47,7 @@ const columns: MenuColumn[] = [
         items: [
             {
                 title: "Where to Study",
-                subtitle: "Find a study center or online course around the world.",
+                subtitle: "Find a study center or an online course around the world.",
                 href: "/",
                 Icon: FileCode01,
             },
@@ -67,8 +67,8 @@ export const DropdownMenuLearningPaths = () => {
             <nav className="overflow-hidden rounded-xl bg-brand-100 dark:bg-brand-900 drop-shadow-lg ring-1 ring-secondary_alt md:rounded-2xl md:drop-shadow-2xl dark:md:drop-shadow-gray-950">
                 <div className="flex flex-col gap-5 rounded-xl bg-brand-25 dark:bg-brand-950 pt-4 ring-1 ring-secondary md:gap-8 md:rounded-t-2xl md:p-6 md:pt-5">
                     <div className="flex flex-col gap-1 px-4 md:p-0">
-                        <h4 className="pt-4 text-2xl">LEARNING PATHS</h4>
-                        <p className="text-sm text-tertiary">Buddha's teachings from the living traditions for enlightenment.</p>
+                        <h4 className="pt-4 text-2xl">PATHS of STUDY & PRACTICE</h4>
+                        <p className="text-sm text-tertiary">Applicable Buddha's teachings from the living traditions of realizations for this modern world.</p>
                     </div>
 
                     <div className="flex flex-col gap-5 md:flex-row md:gap-8 md:py-0">
