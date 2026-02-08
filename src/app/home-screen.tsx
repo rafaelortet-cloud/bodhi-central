@@ -11,21 +11,21 @@ export const HomeScreen = () => {
     const clipboard = useClipboard();
 
     return (
-        <div className="relative overflow-hidden bg-brand-800 dark:bg-brand-950">
+        <div className="relative overflow-hidden bg-utility-brand-800">
             {/* Background pattern */}
             <img
                 alt="Grid of dots"
                 aria-hidden="true"
                 loading="lazy"
                 src="https://www.untitledui.com/patterns/light/grid-dot-sm-desktop.svg"
-                className="pointer-events-none absolute top-0 left-1/2 z-0 hidden max-w-none -translate-x-1/2 opacity-30 md:block dark:opacity-90 dark:brightness-[0.2]"
+                className="pointer-events-none absolute top-0 left-1/2 z-0 hidden max-w-none -translate-x-1/2 opacity-30 md:block dark:opacity-20 dark:brightness-[0.2]"
             />
             <img
                 alt="Grid of dots"
                 aria-hidden="true"
                 loading="lazy"
                 src="https://www.untitledui.com/patterns/light/grid-dot-sm-mobile.svg"
-                className="pointer-events-none absolute top-0 left-1/2 z-0 max-w-none -translate-x-1/2 opacity-20 md:hidden dark:opacity-100 dark:brightness-[0.2]"
+                className="pointer-events-none absolute top-0 left-1/2 z-0 max-w-none -translate-x-1/2 opacity-20 md:hidden dark:opacity-20 dark:brightness-[0.2]"
             />
 
             <section className="relative py-16 md:pb-24">
@@ -33,7 +33,7 @@ export const HomeScreen = () => {
                     alt="Light Accent"
                     aria-hidden="true"
                     src="cognitive-mandala-02.webp"
-                    className="absolute -right-4 -bottom-5 max-w-140 opacity-50 mix-blend-normal md:right-16 md:-bottom-5 md:max-w-190"
+                    className="absolute -right-4 -bottom-0 max-w-140 opacity-50 mix-blend-normal md:right-16 md:-bottom-0 md:max-w-190"
                 />
 
                 <div className="mx-auto grid max-w-container grid-cols-1 items-center gap-16 px-4 md:px-8 lg:grid-cols-2 lg:gap-16">
@@ -55,7 +55,7 @@ export const HomeScreen = () => {
                         </div>
                     </div>
 
-                    <div className="relative -mx-4 flex h-80 items-center justify-center md:mx-0 md:h-120 lg:h-full lg:min-h-140">
+                    <div className="relative -mx-4 flex h-80 items-center justify-center md:mx-0 md:h-120 lg:h-full lg:min-h-150">
                         <div className="translate-x-[34px] translate-y-[3px] -space-y-[116.5px] md:translate-x-[53px] md:translate-y-[37px] md:-space-y-[83px]">
                             <div className="relative z-3 translate-y-[20px] rotate-16 drop-shadow-[0_0_12px_rgba(0,0,0,0.3)] opacity-90">
                                 <div

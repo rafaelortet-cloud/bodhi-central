@@ -28,10 +28,10 @@ export const FeaturesAlternatingLayout01 = () => {
         <section className="flex flex-col gap-12 overflow-hidden bg-primary py-16 sm:gap-16 md:gap-20 md:py-24 lg:gap-24">
             <div className="mx-auto w-full max-w-container px-4 md:px-8">
                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
-                    <span className="text-sm font-semibold text-brand-secondary md:text-md">The Three Pillars</span>
+                    <span className="text-sm font-semibold text-brand-600 dark:text-brand-700 md:text-md">The Three Pillars</span>
                     <h2 className="mt-3 text-display-sm text-primary md:text-display-md">Beautiful presentations of Buddha's teachings</h2>
                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                        Gateways to relevant and powerful lineage transmissions to support spiritual seekers and communities around the world.
+                        Gateways for spiritual seekers and communities to connect with lineage masters around the world around.
                     </p>
                 </div>
             </div>
@@ -40,15 +40,15 @@ export const FeaturesAlternatingLayout01 = () => {
                 <div className="grid grid-cols-1 gap-10 md:gap-20 lg:grid-cols-2 lg:gap-24">
                     <div className="max-w-xl flex-1 self-center">
                         <FeaturedIcon icon={BookOpen01} size="lg" color="gray" theme="modern-neue" />
-                        <h3 className="mt-5 text-display-xs text-primary md:text-display-sm">Texts of Mindful Wisdom</h3>
+                        <h3 className="mt-5 text-display-xs text-primary md:text-display-sm">Mindful Wisdom</h3>
                         <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">
-                            Whether you are focusing on studies, practices, or exploring what Buddha's teachings mean for your life, we have gathered for you the most relevant Buddhist scriptures and commentaries across major streams of Buddhism.
+                            Whether you are already into study and practice, or exploring what Buddha's teachings mean to you, we have gathered teachings from active streams of Buddhism with a pragmatic approach:
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
-                                "Inclusive approach to collections of texts representing a wide range of vital living transmissions of Buddhism",
-                                "Organizing texts by traditions, schools, genres, and specialized study tracks to meet your needs",
-                                "State-of-the-art readers and workspaces to make your experience smooth and memorable",
+                                "Access to collections of texts used by modern transmissions of Buddhism",
+                                "Texts contextualized by vehicles, doctrines, genres, and specialized tracks to meet your needs",
+                                "State-of-the-art readers and personal workspaces to make your experience smooth and memorable",
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
                             ))}
@@ -118,10 +118,10 @@ export const FeaturesAlternatingLayout01 = () => {
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
-                                "Find and connect with other fellows and communities around the world",
-                                "Explore a range of Western and Eastern Buddhist academic centers offering advanced study programs",
-                                "Read insightful articles on topics relevant to these turbulent times, presented from a Buddhist perspective",
-                                "Build your personal library with favorite texts and learning materials to support your studies",
+                                "Find other fellows and connect communities around the world",
+                                "Explore Western and Eastern Buddhist academic centers with study programs",
+                                "Read articles on relevant topics to these times, presented from a Buddhist perspective",
+                                "Build your personal library with your favorite texts and paths to support your journey",
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
                             ))}
