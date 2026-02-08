@@ -64,11 +64,11 @@ const columns: MenuColumn[] = [
 export const DropdownMenuScripture = () => {
     return (
         <div className="px-3 pb-2 md:max-w-200 md:p-0">
-            <nav className="overflow-hidden rounded-xl bg-brand-100 dark:bg-brand-900 drop-shadow-lg ring-1 ring-secondary_alt md:rounded-2xl md:drop-shadow-2xl dark:md:drop-shadow-gray-950">
+            <nav className="overflow-hidden rounded-xl bg-brand-100 dark:bg-brand-900 drop-shadow-lg ring-1 ring-secondary_alt md:rounded-3xl md:drop-shadow-2xl dark:md:drop-shadow-gray-950">
                 <div className="flex flex-col gap-4 rounded-xl bg-brand-25 dark:bg-brand-950 pt-4 ring-1 ring-secondary md:gap-8 md:rounded-t-2xl md:p-6 md:pt-5">
-                    <div className="flex flex-col gap-1 px-4 md:p-0">
-                        <h4 className="pt-4 text-2xl">TEXTS of MINDFUL WISDOM</h4>
-                        <p className="text-sm text-tertiary">The profound wealth of Buddhist wisdom at your fingertips.</p>
+                    <div className="flex flex-col items-center gap-1 px-4 md:p-0">
+                        <h4 className="pt-4 text-4xl font-light">MINDFUL WISDOM</h4>
+                        <p className="text-sm text-tertiary">The profound wealth of Buddhist texts unlocking universal wisdom at your fingertips.</p>
                     </div>
 
                     <div className="flex flex-col gap-5 md:flex-row md:gap-8 md:py-0">
@@ -80,7 +80,7 @@ export const DropdownMenuScripture = () => {
                                     { title: "Genres", href: "#" },
                                     { title: "Authors", href: "#" },
                                     { title: "Saved Searches", href: "#" },
-                                    { title: "Collections Overview", href: "#" },
+                                    { title: "Collections", href: "#" },
                                 ].map((item) => (
                                     <li key={item.title}>
                                         <Button href={item.href} color="link-gray" size="lg">

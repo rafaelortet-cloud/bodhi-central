@@ -167,7 +167,7 @@ export const FooterLarge10 = () => {
                 <div className="flex flex-col justify-between border-b border-secondary pb-8 md:pb-16 lg:flex-row">
                     <div className="max-w-3xl">
                         <h2 className="text-display-xs font-semibold text-primary md:text-display-sm">Your gateways to accessible knowledge</h2>
-                        <p className="mt-2 text-md text-tertiary md:mt-4 md:text-xl">Explore paths of scripture and connect with the living transmissions to make your journey count for yourself and others.</p>
+                        <p className="mt-2 text-md text-tertiary md:mt-4 md:text-xl">Explore text of mindful wisdom and connect with the living transmissions to make your journey count for yourself and others.</p>
                     </div>
 
                     <div className="mt-8 flex flex-col-reverse gap-3 self-stretch sm:flex-row sm:self-start lg:mt-0">
@@ -183,7 +183,7 @@ export const FooterLarge10 = () => {
                         <Link href="/" className="flex w-min items-center outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-2">
                             <BodhicentralLogo className="h-10 w-min shrink-0" />
                         </Link>
-                        <p className="text-md text-tertiary">An open platform of universally revered Buddhist scriptures and modern learning paths.</p>
+                        <p className="text-md text-tertiary">A modern platform of universally revered Buddhist texts and accessible paths of study and practice.</p>
                     </div>
                     <nav className="flex-1">
                         <ul className="grid flex-1 grid-cols-2 gap-8 md:grid-cols-5">

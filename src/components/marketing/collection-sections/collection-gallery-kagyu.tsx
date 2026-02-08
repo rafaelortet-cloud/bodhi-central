@@ -136,25 +136,25 @@ const collectionTexts = [
 
 export const CollectionGalleryKagyu = () => {
     return (
-        <section className="overflow-hidden bg-linear-to-b from-white to-pink-50 dark:bg-linear-to-b dark:from-black dark:to-pink-950 py-6 md:py-12">
-            <div className="mx-auto max-w-container px-4 md:px-8">
+        <section className="overflow-hidden bg-linear-to-b from-pink-25 to-pink-50 dark:bg-linear-to-b dark:from-black dark:to-pink-950 py-6 md:py-10">
+            <div className="mx-auto px-4 md:px-8">
                 <div className="flex w-full flex-col justify-between md:flex-row">
-                    <div className="flex flex-1 flex-col pr-4 md:pr-24">
+                    <div className="flex flex-1 flex-col max-w-280 pr-4 md:pr-24">
                         <h2 className="text-display-md text-primary md:text-display-lg">Kagyu Studies</h2>
                         <p className="mt-1 text-base text-tertiary md:mt-2 md:text-lg">
-                            The Eight Kagyu commentaries recommended by the 16th Karmapa, Rangjung Rigpe Dorje, are essential for a complete understanding of sutra and tantra from the Kagyu school perspective.
+                            The Eight Kagyu commentaries recommended by the 16th Karmapa, Rangjung Rigpe Dorje, are essential for a complete understanding of Sutra and Tantra from the Kagyu school perspective.
                         </p>
                     </div>
                     <div className="mt-8 flex flex-col gap-3 self-stretch md:mt-0 md:flex-row-reverse md:justify-center md:self-start">
 
                         <Button color="secondary" size="md">
-                            Explore genres
+                            Texts by genre
                         </Button>
                     </div>
                 </div>
 
                 <Carousel.Root
-                    className="mt-6 md:mt-8"
+                    className="mt-4 md:mt-6"
                     opts={{
                         align: "start",
                     }}

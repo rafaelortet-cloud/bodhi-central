@@ -11,14 +11,14 @@ export const HomeScreen = () => {
     const clipboard = useClipboard();
 
     return (
-        <div className="relative overflow-hidden bg-brand-section">
+        <div className="relative overflow-hidden bg-brand-800 dark:bg-brand-950">
             {/* Background pattern */}
             <img
                 alt="Grid of dots"
                 aria-hidden="true"
                 loading="lazy"
                 src="https://www.untitledui.com/patterns/light/grid-dot-sm-desktop.svg"
-                className="pointer-events-none absolute top-0 left-1/2 z-0 hidden max-w-none -translate-x-1/2 opacity-20 md:block dark:opacity-100 dark:brightness-[0.2]"
+                className="pointer-events-none absolute top-0 left-1/2 z-0 hidden max-w-none -translate-x-1/2 opacity-30 md:block dark:opacity-90 dark:brightness-[0.2]"
             />
             <img
                 alt="Grid of dots"
@@ -32,8 +32,8 @@ export const HomeScreen = () => {
                 <img
                     alt="Light Accent"
                     aria-hidden="true"
-                    src="https://www.untitledui.com/marketing/light-accent.webp"
-                    className="absolute -right-4 -bottom-14 max-w-160 opacity-90 mix-blend-screen md:right-4 md:-bottom-1/3 md:max-w-7xl"
+                    src="cognitive-mandala-02.webp"
+                    className="absolute -right-4 -bottom-5 max-w-140 opacity-50 mix-blend-normal md:right-16 md:-bottom-5 md:max-w-190"
                 />
 
                 <div className="mx-auto grid max-w-container grid-cols-1 items-center gap-16 px-4 md:px-8 lg:grid-cols-2 lg:gap-16">
@@ -59,7 +59,7 @@ export const HomeScreen = () => {
                         <div className="translate-x-[34px] translate-y-[3px] -space-y-[116.5px] md:translate-x-[53px] md:translate-y-[37px] md:-space-y-[83px]">
                             <div className="relative z-3 translate-y-[20px] rotate-16 drop-shadow-[0_0_12px_rgba(0,0,0,0.3)] opacity-90">
                                 <div
-                                    className="[--scale:1.365] md:[--scale:2.1]"
+                                    className="hidden [--scale:1.365] md:[--scale:2.1]"
                                     style={{
                                         transform: "scale(var(--scale)) rotateX(63deg) rotateY(1deg) rotateZ(51deg) skewX(14deg)",
                                     }}
@@ -67,7 +67,7 @@ export const HomeScreen = () => {
                                     <CreditCard type="transparent-gradient" cardHolder="Esoteric" cardNumber="VAJRAYANA" cardExpiration="" image="lineage-collections-wallpaper.jpg" imagePosition="top" />
                                 </div>
                             </div>
-                            <div className="relative z-2 translate-y-[12px] rotate-8 drop-shadow-[0_0_12px_rgba(0,0,0,0.3)] opacity-80">
+                            <div className="hidden relative z-2 translate-y-[12px] rotate-8 drop-shadow-[0_0_12px_rgba(0,0,0,0.3)] opacity-80">
                                 <div
                                     className="[--scale:1.365] md:[--scale:2.099]"
                                     style={{
@@ -77,7 +77,7 @@ export const HomeScreen = () => {
                                     <CreditCard type="transparent-gradient" cardHolder="Gradual" cardNumber="MAHAYANA" cardExpiration="" image="lineage-collections-wallpaper.jpg" imagePosition="top" />
                                 </div>
                             </div>
-                            <div className="relative z-1 [--scale:1.365] md:[--scale:2.1] drop-shadow-[0_0_12px_rgba(0,0,0,0.2)] opacity-80"
+                            <div className="hidden relative z-1 [--scale:1.365] md:[--scale:2.1] drop-shadow-[0_0_12px_rgba(0,0,0,0.2)] opacity-80"
                                 style={{
                                     transform: "scale(var(--scale)) rotateX(63deg) rotateY(1deg) rotateZ(51deg) skewX(14deg)",
                                 }}
