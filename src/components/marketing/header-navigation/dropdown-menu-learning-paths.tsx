@@ -1,7 +1,7 @@
 "use client";
 
 import type { FC, ReactNode } from "react";
-import { BookClosed, BookOpen01, Codepen, FileCode01, LifeBuoy01, PlayCircle, Stars02 } from "@untitledui/icons";
+import { BookClosed, BookOpen01, FileCode01, Stars02, } from "@untitledui/icons";
 import { Button } from "@/components/base/buttons/button";
 import { NavMenuItemLink } from "./base-components/nav-menu-item";
 
@@ -20,17 +20,17 @@ type MenuColumn = {
 
 const columns: MenuColumn[] = [
     {
-        title: "Learning Paths",
+        title: "Pathways for everyone",
         items: [
             {
                 title: "Foundational Paths",
-                subtitle: "Immerse yourself in the fundamental theories of the journey.",
+                subtitle: "Immerse yourself in the fundamental theories and principles of the journey.",
                 href: "#",
                 Icon: BookClosed,
             },
             {
                 title: "Academic Paths",
-                subtitle: "Paths to systematic studies of the enlightenment.",
+                subtitle: "Entrnace to systematic studies of the enlightenment.",
                 href: "/resources/study-centers",
                 Icon: Stars02,
             },
@@ -52,8 +52,8 @@ const columns: MenuColumn[] = [
                 Icon: FileCode01,
             },
             {
-                title: "Join our Forum",
-                subtitle: "Engage in conversations and share knowledge with others.",
+                title: "Buddhist Curricula Overview",
+                subtitle: "A visual exploration of modern and traditional Buddhist curricula.",
                 href: "/",
                 Icon: Stars02,
             },
@@ -68,7 +68,7 @@ export const DropdownMenuLearningPaths = () => {
                 <div className="flex flex-col gap-5 rounded-xl bg-brand-25 dark:bg-brand-950 pt-4 ring-1 ring-secondary md:gap-8 md:rounded-t-2xl md:p-6 md:pt-5">
                     <div className="flex flex-col items-center gap-1 px-4 md:p-0">
                         <h4 className="pt-4 text-4xl font-light">STUDY and PRACTICE</h4>
-                        <p className="text-sm text-tertiary">Pathways of study and practice with masters of realization for our modern societies.</p>
+                        <p className="text-sm text-tertiary">Pathways of Buddhist study and practice to tranform our modern societies.</p>
                     </div>
 
                     <div className="flex flex-col gap-5 md:flex-row md:gap-8 md:py-0">

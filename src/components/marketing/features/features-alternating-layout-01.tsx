@@ -76,7 +76,7 @@ export const FeaturesAlternatingLayout01 = () => {
                 <div className="grid grid-cols-1 gap-10 md:gap-20 lg:grid-cols-2 lg:gap-24">
                     <div className="max-w-xl flex-1 self-center lg:order-last">
                         <FeaturedIcon icon={TrendUp01} size="lg" color="gray" theme="modern-neue" />
-                        <h3 className="mt-5 text-display-xs text-primary md:text-display-sm">Paths to Study and Practice</h3>
+                        <h3 className="mt-5 text-display-xs text-primary md:text-display-sm">Pathways of Study and Practice</h3>
                         <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">
                             Accessing Buddha's teachings has become easier than ever. Yet, navigating and making sense of the vast amount of literature and teachings available today can be overwhelming and complicated. We are changing that!
                         </p>
@@ -118,7 +118,7 @@ export const FeaturesAlternatingLayout01 = () => {
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
-                                "Find other fellows and connect communities around the world",
+                                "Meet people in like-minded forums and connect communities around the world",
                                 "Explore Western and Eastern Buddhist academic centers with study programs",
                                 "Read articles on relevant topics to these times, presented from a Buddhist perspective",
                                 "Build your personal library with your favorite texts and paths to support your journey",
@@ -132,14 +132,14 @@ export const FeaturesAlternatingLayout01 = () => {
                         <AlternateImageMockup className="lg:left-0">
                             {/* Light mode image (hidden in dark mode) */}
                             <img
-                                alt="Dashboard mockup showing application interface"
-                                src="https://www.untitledui.com/marketing/screen-mockups/dashboard-desktop-mockup-light-01.webp"
+                                alt="Mockup showing Resources interface"
+                                src="/resources-mockup-01.webp"
                                 className="size-full object-contain lg:w-auto lg:max-w-none dark:hidden"
                             />
                             {/* Dark mode image (hidden in light mode) */}
                             <img
-                                alt="Dashboard mockup showing application interface"
-                                src="https://www.untitledui.com/marketing/screen-mockups/dashboard-desktop-mockup-dark-01.webp"
+                                alt="Mockup showing Resources interface"
+                                src="/resources-mockup-01.webp"
                                 className="size-full object-contain not-dark:hidden lg:w-auto lg:max-w-none"
                             />
                         </AlternateImageMockup>

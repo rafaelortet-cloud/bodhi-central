@@ -6,14 +6,22 @@ import { AngelList, Dribbble, Facebook, GitHub, Layers, LinkedIn, X } from "@/co
 
 const footerNavList = [
     {
-        label: "Scripture",
+        label: "Texts",
         items: [
             {
                 label: "Overview",
                 href: "/scripture",
             },
             {
-                label: "Tibetan Schools",
+                label: "Tibetan Studies",
+                href: "/scripture/tibetan-schools",
+            },
+            {
+                label: "Tibetan Canons",
+                href: "/scripture/tibetan-schools",
+            },
+            {
+                label: "Theravada Canons",
                 href: "/scripture/tibetan-schools",
             },
             {
@@ -27,7 +35,7 @@ const footerNavList = [
         ],
     },
     {
-        label: "Learning Paths",
+        label: "Pathways",
         items: [
             {
                 label: "Introduction",
@@ -68,13 +76,17 @@ const footerNavList = [
                 href: "/resources/digital-portals",
             },
             {
-                label: "The Blog",
+                label: "Bodhi Blog",
                 href: "/resources/blog",
                 badge: (
                     <Badge color="gray" type="modern" size="sm" className="ml-1">
                         New
                     </Badge>
                 ),
+            },
+            {
+                label: "Visit the Forum",
+                href: "/resources/digital-portals",
             },
         ],
     },
@@ -89,10 +101,6 @@ const footerNavList = [
                         New
                     </Badge>
                 ),
-            },
-            {
-                label: "About Us",
-                href: "/about",
             },
             {
                 label: "Get Involved",

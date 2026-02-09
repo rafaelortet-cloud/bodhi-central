@@ -22,7 +22,7 @@ type HeaderNavItem = {
 
 const headerNavItems: HeaderNavItem[] = [
     { label: "Texts", href: "/scripture", menu: <DropdownMenuScripture /> },
-    { label: "Paths", href: "/learning-paths", menu: <DropdownMenuLearningPaths /> },
+    { label: "Pathways", href: "/learning-paths", menu: <DropdownMenuLearningPaths /> },
     { label: "Resources", href: "/resources", menu: <DropdownMenuResources /> },
 ];
 
