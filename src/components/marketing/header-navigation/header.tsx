@@ -12,6 +12,7 @@ import { DropdownMenuResources } from "@/components/marketing/header-navigation/
 import { DropdownMenuLearningPaths } from "@/components/marketing/header-navigation/dropdown-menu-learning-paths";
 import { DropdownMenuScripture } from "@/components/marketing/header-navigation/dropdown-menu-scripture";
 import Link from "next/link";
+import { ThemeToggle } from "@/components/application/theme-toggle";
 import { cx } from "@/utils/cx";
 
 type HeaderNavItem = {
@@ -181,6 +182,7 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
                     </nav>
                     {/* DESKTOP LOGIN/SIGNUP BUTTONS */}
                     <div className="hidden items-center gap-3 md:flex">
+                        <ThemeToggle />
                         <Button color="secondary" size={isFloating ? "sm" : "md"}>
                             Log in
                         </Button>

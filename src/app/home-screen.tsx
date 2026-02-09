@@ -27,7 +27,7 @@ export const HomeScreen = () => {
                 className="pointer-events-none absolute top-0 left-1/2 z-0 max-w-none -translate-x-1/2 opacity-20 md:hidden dark:opacity-20 dark:brightness-[0.2]"
             />
 
-            <section className="py-10 md:pb-16">
+            <section className="py-10 md:pb-10">
                 <div className="relative mx-auto grid max-w-container grid-cols-1 gap-16 px-4 md:px-8 lg:min-h-130 lg:items-center">
                     <div className="z-10 flex max-w-2xl flex-col items-start">
                         <span className="text-sm font-semibold text-brand-600 md:text-md">Open. Inclusive. Relevant.</span>
