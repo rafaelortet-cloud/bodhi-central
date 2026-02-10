@@ -42,9 +42,9 @@ const MobileNavItem = (props: { className?: string; label: string; href?: string
     if (props.href) {
         return (
             <li>
-                <a href={props.href} className="flex items-center justify-between px-4 py-3 text-md font-semibold text-primary hover:bg-primary_hover">
+                <Link href={props.href} className="flex items-center justify-between px-4 py-3 text-md font-semibold text-primary hover:bg-primary_hover">
                     {props.label}
-                </a>
+                </Link>
             </li>
         );
     }
@@ -169,12 +169,12 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
                                             </AriaPopover>
                                         </AriaDialogTrigger>
                                     ) : (
-                                        <a
-                                            href={navItem.href}
+                                        <Link
+                                            href={navItem.href!}
                                             className="flex cursor-pointer items-center gap-0.5 rounded-lg px-1.5 py-1 text-md font-semibold text-secondary outline-focus-ring transition duration-100 ease-linear hover:text-brand-secondary_hover focus:outline-offset-2 focus-visible:outline-2"
                                         >
                                             <span className="px-0.5">{navItem.label}</span>
-                                        </a>
+                                        </Link>
                                     )}
                                 </li>
                             ))}
