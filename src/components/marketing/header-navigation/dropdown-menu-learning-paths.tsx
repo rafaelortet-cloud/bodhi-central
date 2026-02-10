@@ -30,7 +30,7 @@ const columns: MenuColumn[] = [
             },
             {
                 title: "Academic Paths",
-                subtitle: "Entrnace to systematic studies of the enlightenment.",
+                subtitle: "Systematic studies of the awakening of the Buddha.",
                 href: "/resources/study-centers",
                 Icon: Stars02,
             },
@@ -68,7 +68,7 @@ export const DropdownMenuLearningPaths = () => {
                 <div className="flex flex-col gap-5 rounded-xl bg-brand-25 dark:bg-brand-950 pt-4 ring-1 ring-secondary md:gap-8 md:rounded-t-2xl md:p-6 md:pt-5">
                     <div className="flex flex-col items-center gap-1 px-4 md:p-0">
                         <h4 className="pt-4 text-4xl font-light">STUDY and PRACTICE</h4>
-                        <p className="text-sm text-tertiary">Pathways of Buddhist study and practice to tranform our modern societies.</p>
+                        <p className="text-sm text-tertiary">Pathways of Buddhist study and practice to transform our modern societies.</p>
                     </div>
 
                     <div className="flex flex-col gap-5 md:flex-row md:gap-8 md:py-0">

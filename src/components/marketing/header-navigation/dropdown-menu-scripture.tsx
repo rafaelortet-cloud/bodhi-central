@@ -23,19 +23,19 @@ const columns: MenuColumn[] = [
         title: "Collections",
         items: [
             {
-                title: "Tibetan Schools",
+                title: "Tibetan Studies",
                 subtitle: "The curricula of the four main lineages of Tibetan Buddhism.",
                 href: "/scripture/tibetan-schools",
                 Icon: BookOpen01,
             },
             {
-                title: "Tibetan Canons",
-                subtitle: "The Tibetan Buddhist scriptures and commentaries.",
+                title: "Tibetan Tradition",
+                subtitle: "The Tibetan Buddhist scriptures (Kangyur) and commentaries (Tengyur).",
                 href: "/scripture/tibetan-canons",
                 Icon: BookClosed,
             },
             {
-                title: "Theravada Canon",
+                title: "Theravada Tradition",
                 subtitle: "The Pali Canon, the earliest Buddhist scriptures.",
                 href: "#",
                 Icon: BookClosed,
@@ -43,10 +43,10 @@ const columns: MenuColumn[] = [
         ],
     },
     {
-        title: "Traditions & Connections",
+        title: "Traditions and Connections",
         items: [
             {
-                title: "Traditions",
+                title: "Traditions at a glance",
                 subtitle: "Many traditions with intertwined goals, an historical timeline.",
                 href: "/",
                 Icon: FileCode01,
@@ -68,7 +68,7 @@ export const DropdownMenuScripture = () => {
                 <div className="flex flex-col gap-4 rounded-xl bg-brand-25 dark:bg-brand-950 pt-4 ring-1 ring-secondary md:gap-8 md:rounded-t-2xl md:p-6 md:pt-5">
                     <div className="flex flex-col items-center gap-1 px-4 md:p-0">
                         <h4 className="pt-4 text-4xl font-light">MINDFUL WISDOM</h4>
-                        <p className="text-sm text-tertiary">The profound wealth of Buddhist texts unlocking universal wisdom at your fingertips.</p>
+                        <p className="text-sm text-tertiary">Profound and rich Buddhist texts at your fingertips, unlocking universal wisdom.</p>
                     </div>
 
                     <div className="flex flex-col gap-5 md:flex-row md:gap-8 md:py-0">
@@ -79,8 +79,8 @@ export const DropdownMenuScripture = () => {
                                     { title: "Last Reading", href: "#" },
                                     { title: "Genres", href: "#" },
                                     { title: "Authors", href: "#" },
-                                    { title: "Saved Searches", href: "#" },
                                     { title: "Collections", href: "#" },
+                                    { title: "Saved Searches", href: "#" },
                                 ].map((item) => (
                                     <li key={item.title}>
                                         <Button href={item.href} color="link-gray" size="lg">

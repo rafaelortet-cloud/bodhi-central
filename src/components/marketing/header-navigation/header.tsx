@@ -133,10 +133,10 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
                                 <li key={navItem.label}>
                                     {navItem.menu ? (
                                         <AriaDialogTrigger>
-                                            <AriaButton className="flex cursor-pointer items-center gap-0.5 rounded-lg px-1.5 py-1 text-md font-semibold text-secondary outline-focus-ring transition duration-100 ease-linear hover:text-secondary_hover focus-visible:outline-2 focus-visible:outline-offset-2">
+                                            <AriaButton className="flex cursor-pointer items-center gap-0.5 rounded-lg px-1.5 py-1 text-md font-semibold text-secondary outline-focus-ring transition duration-100 ease-linear hover:text-brand-secondary_hover aria-expanded:text-brand-secondary focus-visible:outline-2 focus-visible:outline-offset-2">
                                                 <span className="px-0.5">{navItem.label}</span>
 
-                                                <ChevronDown className="size-4 rotate-0 stroke-[2.625px] text-fg-quaternary transition duration-100 ease-linear in-aria-expanded:-rotate-180" />
+                                                <ChevronDown className="size-4 rotate-0 stroke-[2.625px] text-fg-quaternary transition duration-100 ease-linear in-aria-expanded:-rotate-180 in-aria-expanded:text-brand-secondary" />
                                             </AriaButton>
 
                                             <AriaPopover
@@ -171,7 +171,7 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
                                     ) : (
                                         <a
                                             href={navItem.href}
-                                            className="flex cursor-pointer items-center gap-0.5 rounded-lg px-1.5 py-1 text-md font-semibold text-secondary outline-focus-ring transition duration-100 ease-linear hover:text-secondary_hover focus:outline-offset-2 focus-visible:outline-2"
+                                            className="flex cursor-pointer items-center gap-0.5 rounded-lg px-1.5 py-1 text-md font-semibold text-secondary outline-focus-ring transition duration-100 ease-linear hover:text-brand-secondary_hover focus:outline-offset-2 focus-visible:outline-2"
                                         >
                                             <span className="px-0.5">{navItem.label}</span>
                                         </a>
@@ -183,10 +183,10 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
                     {/* DESKTOP LOGIN/SIGNUP BUTTONS */}
                     <div className="hidden items-center gap-3 md:flex">
                         <ThemeToggle />
-                        <Button color="secondary" size={isFloating ? "sm" : "md"}>
+                        <Button color="secondary" size={isFloating ? "sm" : "md"} href="/sign-in">
                             Log in
                         </Button>
-                        <Button color="primary" size={isFloating ? "sm" : "md"}>
+                        <Button color="primary" size={isFloating ? "sm" : "md"} href="/sign-up">
                             Sign up
                         </Button>
                     </div>

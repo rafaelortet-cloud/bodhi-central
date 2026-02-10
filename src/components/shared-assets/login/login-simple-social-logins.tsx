@@ -5,7 +5,7 @@ import { Button } from "@/components/base/buttons/button";
 import { SocialButton } from "@/components/base/buttons/social-button";
 import { Form } from "@/components/base/form/form";
 import { Input } from "@/components/base/input/input";
-import { UntitledLogoMinimal } from "@/components/foundations/logo/untitledui-logo-minimal";
+import { BodhicentralLogoMinimal } from "@/components/foundations/logo/bodhicentral-logo-minimal";
 import { BackgroundPattern } from "@/components/shared-assets/background-patterns";
 
 export const LoginSimpleSocialLogins = () => {
@@ -14,8 +14,8 @@ export const LoginSimpleSocialLogins = () => {
             <div className="relative z-10 mx-auto flex w-full flex-col gap-8 sm:max-w-90">
                 <div className="flex flex-col items-center gap-6 text-center">
                     <div className="relative">
-                        <UntitledLogoMinimal className="size-12 max-md:hidden" />
-                        <UntitledLogoMinimal className="size-10 md:hidden" />
+                        <BodhicentralLogoMinimal className="size-12 max-md:hidden" />
+                        <BodhicentralLogoMinimal className="size-10 md:hidden" />
                         <BackgroundPattern pattern="circle" className="absolute top-1/2 left-1/2 z-0 hidden -translate-x-1/2 -translate-y-1/2 md:block" />
                         <BackgroundPattern pattern="circle" size="md" className="absolute top-1/2 left-1/2 z-0 -translate-x-1/2 -translate-y-1/2 md:hidden" />
                     </div>
@@ -60,7 +60,7 @@ export const LoginSimpleSocialLogins = () => {
 
                 <div className="z-10 flex justify-center gap-1 text-center">
                     <span className="text-sm text-tertiary">Don't have an account?</span>
-                    <Button color="link-color" size="md" href="#">
+                    <Button color="link-color" size="md" href="/sign-up">
                         Sign up
                     </Button>
                 </div>

@@ -31,7 +31,7 @@ export const FeaturesAlternatingLayout01 = () => {
                     <span className="text-sm font-semibold text-brand-600 dark:text-brand-700 md:text-md">The Three Pillars</span>
                     <h2 className="mt-3 text-display-sm text-primary md:text-display-md">Beautiful presentations of Buddha's teachings</h2>
                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                        Gateways for spiritual seekers and communities to connect with lineage masters around the world around.
+                        Gateways for spiritual seekers to connect with Buddhist traditions, teachings, and communities around the world.
                     </p>
                 </div>
             </div>
