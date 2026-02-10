@@ -82,9 +82,9 @@ export const FeaturesAlternatingLayout01 = () => {
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
-                                "Discover engaging foundational learning paths that will provide you with a solid understanding of the Buddhist core teachings and theories",
-                                "Explore accessible academic and scholarly learning paths, your truthworthy companions for in-depth study and research",
-                                "Experience paths of practice brought to you by the living Buddhist traditions to support your spiritual growth",
+                                "Discover the foundational pathways providing a solid understanding of the Buddhist core theories and principles",
+                                "Explore accessible academic and scholarly pathways, your truthworthy companions for in-depth study and research",
+                                "Engage in practice pathways brought to you by the living Buddhist traditions to support your spiritual journey",
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
                             ))}
@@ -114,14 +114,14 @@ export const FeaturesAlternatingLayout01 = () => {
                         <FeaturedIcon icon={ChartBreakoutSquare} size="lg" color="gray" theme="modern-neue" />
                         <h3 className="mt-5 text-display-xs text-primary md:text-display-sm">Resources for Individuals and Communities</h3>
                         <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">
-                            Whether you are a solo practitioner or a community leader, discover tools to enhance your activities and contributions to the community.
+                            Whether you are a solo practitioner or an active community member, discover tools to enhance your activities and contributions.
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
                                 "Meet people in like-minded forums and connect communities around the world",
                                 "Explore Western and Eastern Buddhist academic centers with study programs",
-                                "Read articles on relevant topics to these times, presented from a Buddhist perspective",
-                                "Build your personal library with your favorite texts and paths to support your journey",
+                                "The Blog: Read articles on relevant topics, presented from a Buddhist perspective",
+                                "The Desk: Build your personal library with your favorite materials organized to support your learning",
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
                             ))}

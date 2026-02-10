@@ -1,7 +1,7 @@
 "use client";
 
 import type { FC, ReactNode } from "react";
-import { CheckCircle } from "@untitledui/icons";
+import { CheckCircle, BookOpen01, Star01, Star02 } from "@untitledui/icons";
 import { BadgeGroup } from "@/components/base/badges/badge-groups";
 import { Badge } from "@/components/base/badges/badges";
 import { Button } from "@/components/base/buttons/button";
@@ -52,7 +52,7 @@ export const CheckItemText = (props: {
             )}
 
             {iconStyle === "outlined" && (
-                <CheckCircle
+                <BookOpen01
                     className={cx(
                         "shrink-0",
                         color === "success" ? "text-fg-success-primary" : "text-fg-brand-primary",
