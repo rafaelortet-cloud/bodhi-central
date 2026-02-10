@@ -39,7 +39,7 @@ export const HomeScreen = () => {
                     <div className="z-10 flex max-w-2xl flex-col items-start">
                         <span className="text-sm font-semibold text-brand-600 md:text-md">Open. Inclusive. Relevant.</span>
                         <h1 className="text-display-md font-semibold text-brand-800 md:text-display-lg lg:text-display-xl">
-                            Gateways to Dharma, paths of the Awakening
+                            Gateways to Buddhist paths of the Awakening
                         </h1>
                         <p className="mt-4 max-w-xl text-lg text-balance text-gray-600 md:mt-6 md:text-xl">
                             A modern platform channeling universally revered Buddhist teachings and knowledge for everyone.{" "}
