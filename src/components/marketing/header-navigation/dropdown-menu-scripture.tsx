@@ -30,14 +30,14 @@ const columns: MenuColumn[] = [
             },
             {
                 title: "Tibetan Canons",
-                subtitle: "Tibetan Buddhist scriptures (Kangyur) and commentaries (Tengyur).",
+                subtitle: "The Kangyur and Tengyur, the Tibetan Buddhist canons.",
                 href: "/scripture/tibetan-canons",
                 Icon: BookClosed,
             },
             {
                 title: "Theravada Tradition",
                 subtitle: "The Pali Canon, the earliest Buddhist scriptures.",
-                href: "#",
+                href: "/scripture/theravada-tradition",
                 Icon: BookClosed,
             },
         ],

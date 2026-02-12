@@ -5,13 +5,13 @@ import { CollectionGalleryKagyu } from '@/components/marketing/collection-sectio
 export default function TibetanCanonsPage() {
     return (
         <>
-            <div className="relative mx-auto bg-[url(/himalayan-scenery-02.jpg)] bg-cover bg-center bg-no-repeat">
+            <div className="relative mx-auto bg-[url(/tibetan-buddhist-library-01.jpg)] bg-cover bg-center bg-no-repeat">
                 {/* Overlay layer for easy customization of color/transparency */}
                 <div className="absolute inset-0 bg-white/60 dark:bg-black/62 z-0" aria-hidden="true" />
 
                 {/* Content layer */}
                 <div className="relative z-10">
-                    <section className="flex flex-col items-center justify-center pt-12 pb-12 px-4 md:px-6">
+                    <section className="flex flex-col items-center justify-center pt-16 pb-12 px-4 md:px-6">
                         <h1 className="text-display-md text-brand-800 dark:text-brand-200 md:text-display-lg lg:text-display-xl">Tibetan Canons</h1>
                         <p className="text-center text-lg font-semibold text-tertiary">The Tibetan Buddhist scriptures and commentaries.</p>
                     </section>
