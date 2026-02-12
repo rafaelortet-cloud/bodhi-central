@@ -36,7 +36,7 @@ export default function TibetanSchoolsPage() {
                                 <Image src="/collections_thumbnails_nyingma.jpg" alt="Nyingma" width={190} height={190} className="rounded-full drop-shadow-xl" />
                                 <div className="flex flex-col items-center justify-center bg-white/65 dark:bg-black/40 p-2 border-b-3 border-cyan-700/50 rounded-t-4xl rounded-b-4xl">
                                     <h2 className="text-display-sm text-primary text-center py-2">Nyingma</h2>
-                                    <p className="pb-2 text-md text-tertiary text-center">Thirteen Indian Mahayana texts on Vinaya, Abhidharma, the Profound View, and Vast Conduct.</p>
+                                    <p className="pb-2 text-md text-tertiary text-center">The Thirteen Great Indian Treatises on Vinaya, Abhidharma, the Profound View, and Vast Conduct.</p>
                                 </div>
                             </div>
                             <div className="col-start-2 md:col-start-3 h-auto md:-mt-60 flex flex-col items-center justify-center gap-4">
