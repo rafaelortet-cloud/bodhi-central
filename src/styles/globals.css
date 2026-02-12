@@ -109,3 +109,19 @@ input[type="number"] {
 input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
 }
+
+/* Heptagon shape for Tibetan Studies cards on Header */
+.tibetanStudiesCard_img {
+    border-radius: 0;
+    -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+
+.tibetanStudiesCard_wrapper {
+    /* Use drop-shadow filter to create a border and shadow that follows the clipped shape */
+    filter: drop-shadow(0.5px 0.5px 0px gray) drop-shadow(-0.5px -0.5px 0px gray) drop-shadow(0.5px -0.5px 0px gray) drop-shadow(-0.5px 0.5px 0px gray) drop-shadow(0 20px 24px rgba(10, 13, 18, 0.20));
+}
+
+.dark .tibetanStudiesCard_wrapper {
+    filter: drop-shadow(0.5px 0.5px 0px rgba(255, 255, 255, 0.2)) drop-shadow(-0.5px -0.5px 0px rgba(255, 255, 255, 0.2)) drop-shadow(0.5px -0.5px 0px rgba(255, 255, 255, 0.2)) drop-shadow(-0.5px 0.5px 0px rgba(255, 255, 255, 0.2)) drop-shadow(0 20px 24px rgba(0, 0, 0, 0.4));
+}

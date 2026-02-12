@@ -1,8 +1,46 @@
+import Image from 'next/image';
+import { CollectionGalleryNyingma } from '@/components/marketing/collection-sections/collection-gallery-nyingma';
+import { CollectionGalleryKagyu } from '@/components/marketing/collection-sections/collection-gallery-kagyu';
+
 export default function TibetanCanonsPage() {
     return (
-        <div className="flex h-screen flex-col items-center justify-center px-4 md:px-6">
-            <h1 className="text-3xl font-bold">The Tibetan Canons</h1>
-            <p className="mt-2 text-center text-md text-tertiary">The Tibetan Buddhist scriptures and commentaries. Lorem ipsum polaris nectarium.</p>
-        </div>
+        <>
+            <div className="relative mx-auto bg-[url(/himalayan-scenery-02.jpg)] bg-cover bg-center bg-no-repeat">
+                {/* Overlay layer for easy customization of color/transparency */}
+                <div className="absolute inset-0 bg-white/60 dark:bg-black/62 z-0" aria-hidden="true" />
+
+                {/* Content layer */}
+                <div className="relative z-10">
+                    <section className="flex flex-col items-center justify-center pt-12 pb-12 px-4 md:px-6">
+                        <h1 className="text-display-md text-brand-800 dark:text-brand-200 md:text-display-lg lg:text-display-xl">Tibetan Canons</h1>
+                        <p className="text-center text-lg font-semibold text-tertiary">The Tibetan Buddhist scriptures and commentaries.</p>
+                    </section>
+                    <section>
+                        <div className="mx-auto max-w-4xl px-4 pb-20 md:px-6 grid grid-cols-2 md:grid-cols-2 gap-16 items-start">
+                            <div className="flex flex-col items-center justify-center gap-0">
+                                <div className="tibetanStudiesCard_wrapper">
+                                    <Image src="/collections_thumbnails_gelug.jpg" alt="Gelug" width={190} height={190} className="tibetanStudiesCard_img" />
+                                </div>
+                                <div className="flex flex-col items-center justify-center bg-white/50 dark:bg-black/40 p-4 rounded-3xl">
+                                    <h2 className="text-display-sm text-primary text-center py-2">The Kangyur</h2>
+                                    <p className="pb-2 text-md text-tertiary text-center text-balance">The Kangyur (Wylie: bka' 'gyur) is the collection of the translated words of the Buddha in Tibetan.</p>
+                                </div>
+                            </div>
+                            <div className="flex flex-col items-center justify-center gap-0">
+                                <div className="tibetanStudiesCard_wrapper">
+                                    <Image src="/collections_thumbnails_sakya.jpg" alt="Sakya" width={190} height={190} className="tibetanStudiesCard_img" />
+                                </div>
+                                <div className="flex flex-col items-center justify-center bg-white/50 dark:bg-black/40  p-4 rounded-3xl">
+                                    <h2 className="text-display-sm text-primary text-center py-2">The Tengyur</h2>
+                                    <p className="pb-2 text-md text-tertiary text-center text-balance">The Tengyur (Wylie: bsTan 'gyur) is the collection of the translated treatises in Tibetan.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <CollectionGalleryNyingma />
+            <CollectionGalleryKagyu />
+        </>
     );
 }

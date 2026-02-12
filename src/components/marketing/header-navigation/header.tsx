@@ -128,7 +128,7 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
                     </div>
                     {/* Desktop navigation */}
                     <nav className="flex items-center max-md:hidden">
-                        <ul className="flex items-center gap-0.5">
+                        <ul className="flex items-center gap-0.5 ml-20">
                             {items.map((navItem) => (
                                 <li key={navItem.label}>
                                     {navItem.menu ? (

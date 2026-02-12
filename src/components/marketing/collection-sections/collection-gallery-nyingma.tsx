@@ -90,13 +90,13 @@ export const CollectionGalleryNyingma = () => {
                         {collectionTexts.map((text) => (
                             <Carousel.Item
                                 key={text.tibetan_title}
-                                className="relative flex aspect-[.5625] w-full max-w-64 flex-col justify-end md:aspect-[.5625] md:max-w-74 drop-shadow-lg border-2 border-cyan-200 dark:border-cyan-800 rounded-xl overflow-hidden"
+                                className="relative flex aspect-[.5625] w-full max-w-56 flex-col justify-end md:aspect-[.5625] md:max-w-68 drop-shadow-lg border-2 border-cyan-200 dark:border-cyan-800 rounded-xl overflow-hidden"
                             >
                                 <img alt={text.tibetan_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-[-1] cursor-grab object-cover rounded-sm" />
 
                                 <div className="z-10 bg-linear-to-t from-black/30 to-black/0 pt-16 md:pt-20 lg:pt-24 rounded-b-sm">
                                     <div className="relative bg-cyan-800/50 px-5 pt-5 pb-4 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5 rounded-b-sm">
-                                        <h3 className="text-md font-medium text-brand-200">{text.english_title}</h3>
+                                        <h3 className="text-lg font-medium text-brand-200">{text.english_title}</h3>
                                         <p className="tibetan-text mt-1 text-lg">{text.tibetan_title}</p>
                                         <p className="mt-4 text-sm font-regular">{text.author_english}</p>
                                         <p className="hidden mt-2 text-sm md:text-sm">{text.short_description}</p>

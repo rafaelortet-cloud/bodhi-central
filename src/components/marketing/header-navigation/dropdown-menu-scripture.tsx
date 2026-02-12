@@ -29,8 +29,8 @@ const columns: MenuColumn[] = [
                 Icon: BookOpen01,
             },
             {
-                title: "Tibetan Tradition",
-                subtitle: "The Tibetan Buddhist scriptures (Kangyur) and commentaries (Tengyur).",
+                title: "Tibetan Canons",
+                subtitle: "Tibetan Buddhist scriptures (Kangyur) and commentaries (Tengyur).",
                 href: "/scripture/tibetan-canons",
                 Icon: BookClosed,
             },
