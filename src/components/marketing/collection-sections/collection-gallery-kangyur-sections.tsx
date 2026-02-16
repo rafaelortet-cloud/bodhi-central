@@ -15,6 +15,7 @@ const collectionTexts = [
         short_description: "Works focusing primarily on the monastic rules and their origins, but also containing a wealth of historical, biographical, and cultural material.",
         thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         canon_division: "Vinaya",
+        volumes: "Vols. 1-13",
         section_numbers: "Toh 1-7",
         color: "bg-cyan-950/75",
         darkColor: "dark:bg-cyan-950/75",
@@ -28,6 +29,7 @@ const collectionTexts = [
         short_description: "",
         thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         canon_division: "Discourses",
+        volumes: "Vols. 14-34",
         section_numbers: "Toh 8-30",
         color: "bg-yellow-950/75",
         darkColor: "dark:bg-yellow-950/75",
@@ -41,6 +43,7 @@ const collectionTexts = [
         short_description: "",
         thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         canon_division: "Discourses",
+        volumes: "Vols. 35-38",
         section_numbers: "Toh 44",
         color: "bg-yellow-950/75",
         darkColor: "dark:bg-yellow-950/75",
@@ -54,6 +57,7 @@ const collectionTexts = [
         short_description: "",
         thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         canon_division: "Discourses",
+        volumes: "Vols. 39-44",
         section_numbers: "Tok 45-93",
         color: "bg-yellow-950/75",
         darkColor: "dark:bg-yellow-950/75",
@@ -67,6 +71,7 @@ const collectionTexts = [
         short_description: "",
         thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         canon_division: "Discourses",
+        volumes: "Vols. 45-61",
         section_numbers: "Toh 94-359",
         color: "bg-yellow-950/75",
         darkColor: "dark:bg-yellow-950/75",
@@ -80,6 +85,7 @@ const collectionTexts = [
         short_description: "The principal tantra collection of 468 canonical tantras, mainly from the “later spread” of Vajrayāna to Tibet, arranged by level.",
         thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         canon_division: "Tantra",
+        volumes: "Vols. 46-50",
         section_numbers: "Toh 360-827",
         color: "bg-red-950/75",
         darkColor: "dark:bg-red-950/75",
@@ -93,6 +99,7 @@ const collectionTexts = [
         short_description: "Seventeen works representing a small selection of the many tantras of the Ngagyur Nyingma (“earlier translation”) tradition.",
         thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         canon_division: "Tantra",
+        volumes: "Vols. 51-52",
         section_numbers: "Toh 828-844",
         color: "bg-red-950/75",
         darkColor: "dark:bg-red-950/75",
@@ -106,6 +113,7 @@ const collectionTexts = [
         short_description: "",
         thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         canon_division: "Tantra",
+        volumes: "Vols. 53-54",
         section_numbers: "Toh 845",
         color: "bg-red-950/75",
         darkColor: "dark:bg-red-950/75",
@@ -119,6 +127,7 @@ const collectionTexts = [
         short_description: "Short sūtra or tantra texts used mainly for ritual purposes, mostly structured around a dhāraṇī formula in Sanskrit, its uses and the story of its origin.",
         thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         canon_division: "Dhāraṇī",
+        volumes: "Vols. 55-56",
         section_numbers: "Toh 846-1108",
         color: "bg-green-950/75",
         darkColor: "dark:bg-green-950/75",
@@ -167,7 +176,7 @@ export const CollectionGalleryKangyurSections = () => {
                                         <div className="flex gap-2 mt-1 justify-between items-top">
                                             <div className="flex flex-col gap-0">
                                                 <p className="text-sm text-brand-200 uppercase">{text.canon_division}</p>
-                                                <p className="text-xs text-brand-200">{text.section_numbers}</p>
+                                                <p className="text-xs text-brand-200">{text.volumes}</p>
                                             </div>
                                             <Button size="sm" className="bg-black/20 hover:bg-black/30 border-0.5 border-white/50 hover:border-white/50 text-white/50 hover:text-white/60 dark:bg-gray-900/50 dark:border-gray-900/50 dark:text-gray-400">
                                                 Explore

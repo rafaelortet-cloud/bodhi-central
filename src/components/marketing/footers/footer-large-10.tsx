@@ -18,11 +18,11 @@ const footerNavList = [
             },
             {
                 label: "Tibetan Canons",
-                href: "/scripture/tibetan-schools",
+                href: "/scripture/tibetan-canons",
             },
             {
                 label: "Theravada Canons",
-                href: "/scripture/tibetan-schools",
+                href: "/scripture/theravada-tradition",
             },
             {
                 label: "Traditions",
