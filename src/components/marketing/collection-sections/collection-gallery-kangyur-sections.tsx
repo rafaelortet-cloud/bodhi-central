@@ -107,7 +107,7 @@ const collectionTexts = [
 
 export const CollectionGalleryKangyurSections = () => {
     return (
-        <section className="relative overflow-hidden -mt-24 z-100 bg-linear-to-b from-red-25 to-red-50 dark:bg-linear-to-b dark:from-gray-950/0 dark:from-0% dark:via-gray-950 dark:via-10% dark:to-red-950 py-6 md:py-10">
+        <section className="relative overflow-hidden -mt-32 z-100 bg-linear-to-b from-red-25 from-0% via-red-50 via-10% to-red-50 to-100% dark:bg-linear-to-b dark:from-gray-950/0 dark:from-0% dark:via-gray-950 dark:via-10% dark:to-red-950 py-6 md:py-10">
             <div className="mx-auto px-4 md:px-8">
                 <div className="flex w-full flex-col justify-between md:flex-row">
                     <div className="flex flex-1 flex-col max-w-280 pr-4 md:pr-24">
