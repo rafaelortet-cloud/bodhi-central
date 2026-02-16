@@ -16,6 +16,8 @@ const collectionTexts = [
         thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         canon_division: "Vinaya",
         section_numbers: "Toh 1-7",
+        color: "bg-cyan-950/75",
+        darkColor: "dark:bg-cyan-950/75",
     },
     {
         english_title: "Perfection of Wisdom",
@@ -24,9 +26,11 @@ const collectionTexts = [
         author_english: "Buddha Shakyamuni",
         canon: "Kangyur",
         short_description: "This volume contains the second and last part of the Bhikkhu-vibhaṅga, “the Monks’ Analysis”. Whereas the first volume contains the heavy oﬀenses of pārājika and saṅghādisesa, also known as garukāpatti, the current volume contains the light oﬀenses, or lahukāpatti.",
-        thumbnailCover: "/textCovers/buddha-sakyamuni-vol-2-600.jpg",
+        thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         canon_division: "Discourses",
         section_numbers: "Toh 8-30",
+        color: "bg-yellow-950/75",
+        darkColor: "dark:bg-yellow-950/75",
     },
     {
         english_title: "A Multitude of Buddhas",
@@ -38,6 +42,8 @@ const collectionTexts = [
         thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         canon_division: "Discourses",
         section_numbers: "Toh 44",
+        color: "bg-yellow-950/75",
+        darkColor: "dark:bg-yellow-950/75",
     },
     {
         english_title: "Heap of Jewels",
@@ -46,9 +52,11 @@ const collectionTexts = [
         author_english: "Buddha Shakyamuni",
         canon: "Kangyur",
         short_description: "The Great Division is the first of the Khandhakas, and focuses mostly on the main regulations and ceremonies of the Sangha.",
-        thumbnailCover: "/textCovers/buddha-sakyamuni-zoom-in-xl-600.jpg",
+        thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         canon_division: "Discourses",
         section_numbers: "Tok 45-93",
+        color: "bg-yellow-950/75",
+        darkColor: "dark:bg-yellow-950/75",
     },
     {
         english_title: "General Sūtra Collection",
@@ -57,29 +65,37 @@ const collectionTexts = [
         author_english: "Buddha Shakyamuni",
         canon: "Kangyur",
         short_description: "The Lesser Division is the second of the Khandhakas, and is more concerned with lesser regulations and the working our of details.",
-        thumbnailCover: "/textCovers/buddha-sakyamuni-zoom-in-xl-600.jpg",
+        thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         canon_division: "Discourses",
         section_numbers: "Toh 94-359",
+        color: "bg-yellow-950/75",
+        darkColor: "dark:bg-yellow-950/75",
     },
     {
         english_title: "Tantra Collection",
         tibetan_title: "རྒྱུད་འབུམ།",
+        sanskrit_title: "Tantra",
         author_english: "Buddha Shakyamuni",
         canon: "Kangyur",
         short_description: "The principal tantra collection of 468 canonical tantras, mainly from the “later spread” of Vajrayāna to Tibet, arranged by level.",
-        thumbnailCover: "/textCovers/buddha-sakyamuni-zoom-in-2xl-600.jpg",
+        thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         canon_division: "Tantra",
         section_numbers: "Toh 360-827",
+        color: "bg-red-950/75",
+        darkColor: "dark:bg-red-950/75",
     },
     {
         english_title: "Nyingma Tantra",
         tibetan_title: "རྙིང་རྒྱུད།",
+        sanskrit_title: "Tantra",
         author_english: "Buddha Shakyamuni",
         canon: "Kangyur",
         short_description: "Seventeen works representing a small selection of the many tantras of the Ngagyur Nyingma (“earlier translation”) tradition.",
-        thumbnailCover: "/textCovers/buddha-sakyamuni-zoom-in-2xl-600.jpg",
+        thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         canon_division: "Tantra",
         section_numbers: "Toh 828-844",
+        color: "bg-red-50/75",
+        darkColor: "dark:bg-red-950/75",
     },
     {
         english_title: "Wheel of Time Commentary",
@@ -88,20 +104,24 @@ const collectionTexts = [
         author_english: "Buddha Shakyamuni",
         canon: "Kangyur",
         short_description: "The Parivāra is a detailed and condensed systematization of the most important rules and regulations of the first five volumes of the Vinaya.",
-        thumbnailCover: "/textCovers/buddha-sakyamuni-zoom-in-2xl-600.jpg",
+        thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         canon_division: "Tantra",
         section_numbers: "Toh 845",
+        color: "bg-red-950/75",
+        darkColor: "dark:bg-red-950/75",
     },
     {
-        english_title: "Dhāraṇī",
-        tibetan_title: "Parivāra",
+        english_title: "Dhāraṇīs Collection",
+        tibetan_title: "གཟུངས་འབུམ།",
         sanskrit_title: "Dhāraṇis",
         author_english: "Buddha Shakyamuni",
         canon: "Kangyur",
         short_description: "Short sūtra or tantra texts used mainly for ritual purposes, mostly structured around a dhāraṇī formula in Sanskrit, its uses and the story of its origin.",
-        thumbnailCover: "/textCovers/buddha-sakyamuni-zoom-in-2xl-600.jpg",
+        thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         canon_division: "Dhāraṇī",
         section_numbers: "Toh 846-1108",
+        color: "bg-green-950/75",
+        darkColor: "dark:bg-green-950/75",
     },
 ];
 
@@ -138,9 +158,10 @@ export const CollectionGalleryKangyurSections = () => {
                                 <img alt={text.english_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-[-1] cursor-grab object-cover rounded-sm" />
 
                                 <div className="z-10 bg-linear-to-t from-black/30 to-black/0 pt-16 md:pt-20 lg:pt-24 rounded-b-sm">
-                                    <div className="relative bg-red-900/50 px-5 pt-5 pb-4 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5 rounded-b-sm">
+                                    <div className={`relative ${text.color} ${text.darkColor} px-5 pt-5 pb-4 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5 rounded-b-sm`}>
                                         <h3 className="text-xl text-brand-200">{text.english_title}</h3>
-                                        <p className="tibetan-text mt-1 text-xl">{text.tibetan_title}</p>
+                                        <p className="tibetan-text mt-1 text-2xl">{text.tibetan_title}</p>
+                                        <p className="mt-1 text-md">{text.sanskrit_title}</p>
                                         <p className="mt-4 text-xs">{text.canon}</p>
                                         <p className="hidden mt-2 text-sm md:text-sm">{text.short_description}</p>
                                         <div className="flex gap-2 mt-1 justify-between items-top">
