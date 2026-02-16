@@ -70,7 +70,7 @@ const collectionTexts = [
 
 export const CollectionGalleryVinayaPitaka = () => {
     return (
-        <section className="overflow-hidden bg-linear-to-b from-orange-25 to-orange-50 dark:bg-linear-to-b dark:from-gray-950 dark:to-orange-950 py-6 md:py-10">
+        <section className="relative overflow-hidden -mt-28 z-100 bg-linear-to-b from-orange-25/0 from-0% via-orange-50 via-9% to-orange-50 to-100% dark:bg-linear-to-b dark:from-gray-950/0 dark:from-0% dark:via-gray-950 dark:via-9% dark:to-orange-950 py-6 md:py-10">
             <div className="mx-auto px-4 md:px-8">
                 <div className="flex w-full flex-col justify-between md:flex-row">
                     <div className="flex flex-1 flex-col max-w-280 pr-4 md:pr-24">
