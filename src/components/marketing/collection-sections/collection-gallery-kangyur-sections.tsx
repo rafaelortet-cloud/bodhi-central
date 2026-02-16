@@ -94,7 +94,7 @@ const collectionTexts = [
         thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         canon_division: "Tantra",
         section_numbers: "Toh 828-844",
-        color: "bg-red-50/75",
+        color: "bg-red-950/75",
         darkColor: "dark:bg-red-950/75",
     },
     {
@@ -133,7 +133,7 @@ export const CollectionGalleryKangyurSections = () => {
                     <div className="flex flex-1 flex-col max-w-280 pr-4 md:pr-24">
                         <h2 className="text-display-md text-primary md:text-display-lg">Kangyur Divisions</h2>
                         <p className="mt-1 text-base text-tertiary md:mt-2 md:text-lg">
-                            The Kangyur is the principal collection of the Buddhist scriptures in Tibetan. It contains some 900 works in over 100 volumes, all translations into Tibetan of the Indian texts considered to record the words of the Buddha.
+                            The Kangyur is the principal collection of the Buddhist scriptures in Tibetan. It contains some 900 works in over 100 volumes, all translations into Tibetan of the Indian texts considered to record the words of the Buddha. These eight divisions follow the Dege Kangyur edition by Adarshah.org.
                         </p>
                     </div>
                     <div className="mt-8 flex flex-col gap-3 self-stretch md:mt-0 md:flex-row-reverse md:justify-center md:self-start">
