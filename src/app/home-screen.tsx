@@ -16,18 +16,21 @@ export const HomeScreen = () => {
                 alt="Grid of dots"
                 aria-hidden="true"
                 loading="lazy"
-                src="https://www.untitledui.com/patterns/light/grid-dot-sm-desktop.svg"
-                className="pointer-events-none absolute top-0 left-1/2 z-0 hidden max-w-none -translate-x-1/2 opacity-90 md:block dark:opacity-20 dark:brightness-[0.2]"
+                src="https://www.untitledui.com/patterns/light/grid-sm-desktop.svg"
+                className="pointer-events-none absolute top-0 left-1/2 z-10 hidden max-w-none -translate-x-1/2 opacity-10 md:block dark:opacity-70 dark:brightness-[0.2]"
             />
             <img
                 alt="Grid of dots"
                 aria-hidden="true"
                 loading="lazy"
-                src="https://www.untitledui.com/patterns/light/grid-dot-sm-mobile.svg"
-                className="pointer-events-none absolute top-0 left-1/2 z-0 max-w-none -translate-x-1/2 opacity-20 md:hidden dark:opacity-20 dark:brightness-[0.2]"
+                src="https://www.untitledui.com/patterns/light/grid-sm-mobile.svg"
+                className="pointer-events-none absolute top-0 left-1/2 z-0 max-w-none -translate-x-1/2 opacity-10 md:hidden dark:opacity-70 dark:brightness-[0.2]"
             />
 
-            <section className="relative py-10 md:pb-10">
+            <section className="relative py-10 md:pb-10 bg-[url(/monk-seated-in-meditation-under-forest-tree-1920.webp)] bg-cover bg-center">
+                {/* Overlay layer for easy customization of color/transparency */}
+                <div className="absolute inset-0 bg-white/10 dark:bg-black/62 z-0" aria-hidden="true" />
+
 
                 <img
                     alt="Light Accent"
@@ -37,11 +40,11 @@ export const HomeScreen = () => {
                 />
                 <div className="relative mx-auto grid max-w-container grid-cols-1 gap-16 px-4 md:px-8 lg:min-h-150 lg:items-center">
                     <div className="z-10 flex max-w-2xl flex-col items-start">
-                        <span className="text-sm font-semibold text-brand-600 md:text-md">Open. Inclusive. Relevant.</span>
-                        <h1 className="text-display-md font-semibold text-brand-800 md:text-display-lg lg:text-display-xl">
+                        <span className="text-sm font-semibold text-brand-300 dark:text-brand-200 md:text-md">Open. Inclusive. Relevant.</span>
+                        <h1 className="text-display-md font-semibold text-brand-25 dark:text-brand-300 md:text-display-lg lg:text-display-xl text-shadow-lg text-shadow-gray-500 dark:text-shadow-gray-950">
                             Gateways to Buddhist paths of the Awakening
                         </h1>
-                        <p className="mt-4 max-w-xl text-lg text-balance text-gray-600 md:mt-6 md:text-xl">
+                        <p className="mt-4 max-w-xl text-lg text-balance text-brand-100 dark:text-brand-100 md:mt-6 md:text-xl">
                             A modern platform channeling universally revered Buddhist teachings and knowledge for everyone.{" "}
                         </p>
 
@@ -53,9 +56,9 @@ export const HomeScreen = () => {
                         </div>
                     </div>
 
-                    <div className="relative lg:absolute lg:top-0 lg:right-8 lg:h-full lg:w-140">
+                    <div className="hidden relative lg:absolute lg:top-0 lg:right-50 lg:h-100 lg:w-100 opacity-60 mix-blend-plus-lighter">
                         <img
-                            className="inset-0 h-70 w-full object-cover md:h-120 lg:h-full"
+                            className="inset-0 h-70 w-full object-cover md:h-100 lg:h-full"
                             src="/cognitive-mandala-02.webp"
                             alt="Cognitive mandala"
                         />

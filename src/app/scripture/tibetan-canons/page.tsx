@@ -18,19 +18,15 @@ export default function TibetanCanonsPage() {
                     <section>
                         <div className="mx-auto max-w-4xl px-4 pb-20 md:px-6 grid grid-cols-2 md:grid-cols-2 gap-16 items-start">
                             <div className="flex flex-col items-center justify-center gap-0">
-                                <div className="tibetanStudiesCard_wrapper">
-                                    <Image src="/collections_thumbnails_gelug.jpg" alt="Gelug" width={190} height={190} className="tibetanStudiesCard_img" />
-                                </div>
                                 <div className="flex flex-col items-center justify-center bg-white/50 dark:bg-black/40 p-4 rounded-3xl">
+                                    <Image src="/pecha-wrapped-on-cloth-600.webp" alt="Sakya" width={190} height={190} className="drop-shadow-lg" />
                                     <h2 className="text-display-sm text-primary text-center py-2">The Kangyur</h2>
                                     <p className="pb-2 text-md text-tertiary text-center text-balance">The Kangyur (Wylie: bka' 'gyur) is the collection of the translated words of the Buddha in Tibetan.</p>
                                 </div>
                             </div>
                             <div className="flex flex-col items-center justify-center gap-0">
-                                <div className="tibetanStudiesCard_wrapper">
-                                    <Image src="/collections_thumbnails_sakya.jpg" alt="Sakya" width={190} height={190} className="tibetanStudiesCard_img" />
-                                </div>
                                 <div className="flex flex-col items-center justify-center bg-white/50 dark:bg-black/40  p-4 rounded-3xl">
+                                    <Image src="/pecha-wrapped-on-cloth-600.webp" alt="Sakya" width={190} height={190} className="drop-shadow-lg" />
                                     <h2 className="text-display-sm text-primary text-center py-2">The Tengyur</h2>
                                     <p className="pb-2 text-md text-tertiary text-center text-balance">The Tengyur (Wylie: bsTan 'gyur) is the collection of the translated treatises in Tibetan.</p>
                                 </div>
