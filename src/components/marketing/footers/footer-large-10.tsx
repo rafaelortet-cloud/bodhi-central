@@ -175,12 +175,12 @@ export const FooterLarge10 = () => {
                 <div className="flex flex-col justify-between border-b border-secondary pb-8 md:pb-16 lg:flex-row">
                     <div className="max-w-3xl">
                         <h2 className="text-display-xs font-semibold text-primary md:text-display-sm">Gateways to Buddhist paths of study and practice</h2>
-                        <p className="mt-2 text-md text-tertiary md:mt-4 md:text-xl">Explore mindful wisdom and connect with the living masters to make your journey count for yourself and others.</p>
+                        <p className="mt-2 text-md text-tertiary md:mt-4 md:text-xl">Explore paths of mindful wisdom and connect with teachers and practitioners to make your journey count for yourself and others.</p>
                     </div>
 
                     <div className="mt-8 flex flex-col-reverse gap-3 self-stretch sm:flex-row sm:self-start lg:mt-0">
                         <Button color="secondary" size="xl" href="/about/project-information">
-                            Learn more
+                            Project Information
                         </Button>
                         <Button size="xl" href="/my-desk">My Desk</Button>
                     </div>
