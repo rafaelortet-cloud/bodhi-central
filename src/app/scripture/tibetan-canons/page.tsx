@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { CollectionGalleryKangyurSections } from '@/components/marketing/collection-sections/collection-gallery-kangyur-sections';
+import { Button } from '@/components/base/buttons/button';
 
 export default function TibetanCanonsPage() {
     return (
@@ -17,17 +18,23 @@ export default function TibetanCanonsPage() {
                     <section>
                         <div className="mx-auto max-w-4xl px-4 pb-20 md:px-6 grid grid-cols-2 md:grid-cols-2 gap-16 items-start">
                             <div className="flex flex-col items-center justify-center gap-0">
-                                <div className="flex flex-col items-center justify-center bg-white/40 dark:bg-black/30 p-4 rounded-4xl">
-                                    <Image src="/pecha-wrapped-on-cloth-600.webp" alt="Sakya" width={150} height={150} className="drop-shadow-lg" />
+                                <div className="flex flex-col items-center justify-center bg-linear-to-b from-white/0 from-0% via-white-30 via-20% to-white/40 dark:bg-linear-to-b dark:from-black/0 dark:from-0% dark:via-black/30 dark:via-25% dark:to-black/40 p-4 rounded-[4rem]">
+                                    <Image src="/pecha-wrapped-on-cloth-600.webp" alt="Sakya" width={120} height={120} className="drop-shadow-lg" />
                                     <h2 className="text-display-sm text-primary text-center py-2">The Kangyur</h2>
-                                    <p className="pb-2 text-md font-semibold text-tertiary text-center text-balance">The Kangyur is the collection of the translated words of the Buddha in Tibetan.</p>
+                                    <p className="pb-4 text-md font-semibold text-tertiary text-center text-balance">The Kangyur is the collection of the translated words of the Buddha in Tibetan.</p>
+                                    <Button color="secondary" size="sm">
+                                        Overview
+                                    </Button>
                                 </div>
                             </div>
                             <div className="flex flex-col items-center justify-center gap-0">
-                                <div className="flex flex-col items-center justify-center bg-white/40 dark:bg-black/30  p-4 rounded-4xl">
-                                    <Image src="/pecha-wrapped-on-cloth-600.webp" alt="Sakya" width={150} height={150} className="drop-shadow-lg " />
+                                <div className="flex flex-col items-center justify-center bg-linear-to-b from-white/0 from-0% via-white-30 via-20% to-white/40 dark:bg-linear-to-b dark:from-black/0 dark:from-0% dark:via-black/30 dark:via-25% dark:to-black/40 p-4 rounded-[4rem]">
+                                    <Image src="/pecha-wrapped-on-cloth-600.webp" alt="Sakya" width={120} height={120} className="drop-shadow-lg " />
                                     <h2 className="text-display-sm text-primary text-center py-2">The Tengyur</h2>
-                                    <p className="pb-2 text-md font-semibold text-tertiary text-center text-balance">The Tengyur is the collection of the translated Buddhist treatises in Tibetan.</p>
+                                    <p className="pb-4 text-md font-semibold text-tertiary text-center text-balance">The Tengyur is the collection of the translated Buddhist treatises in Tibetan.</p>
+                                    <Button color="secondary" size="sm">
+                                        Overview
+                                    </Button>
                                 </div>
                             </div>
                         </div>

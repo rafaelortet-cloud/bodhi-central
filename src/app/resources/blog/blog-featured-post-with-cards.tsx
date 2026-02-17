@@ -395,12 +395,12 @@ export const BlogFeaturedPostWithCards = () => {
 
     return (
         <div className="bg-primary">
-            <section className="bg-primary py-16 md:py-20">
+            <section className="bg-primary py-12 md:py-16">
                 <div className="mx-auto max-w-container px-4 md:px-8">
                     <div className="flex w-full max-w-3xl flex-col">
                         <span className="text-sm font-semibold text-brand-secondary md:text-md">Our blog</span>
-                        <h1 className="mt-3 text-display-md font-semibold text-primary md:text-display-lg">Articles and Insights</h1>
-                        <p className="mt-3 text-lg text-tertiary md:mt-4 md:text-xl">The latest news from our global communities, articles on Buddhist studies, practices, and reviews of public resources.</p>
+                        <h1 className="mt-2 text-display-md font-semibold text-primary md:text-display-lg">Articles and Insights</h1>
+                        <p className="mt-2 text-lg text-tertiary md:mt-3 md:text-xl">The latest news from our global communities, articles on Buddhist studies, practices, and reviews of public resources.</p>
                     </div>
                 </div>
             </section>
@@ -408,11 +408,11 @@ export const BlogFeaturedPostWithCards = () => {
             <main className="mx-auto flex w-full max-w-container flex-col gap-12 px-4 pb-16 md:gap-16 md:px-8 md:pb-24">
                 <a
                     href={featuredArticle.href}
-                    className="relative hidden w-full overflow-hidden rounded-2xl outline-focus-ring select-none focus-visible:outline-2 focus-visible:outline-offset-4 md:block md:h-145 lg:h-180"
+                    className="relative hidden w-full overflow-hidden rounded-2xl outline-focus-ring select-none focus-visible:outline-2 focus-visible:outline-offset-4 md:block md:h-140 lg:h-150"
                 >
                     <Image src={featuredArticle.thumbnailUrl} alt={featuredArticle.title} fill unoptimized className="absolute inset-0 size-full object-cover" />
 
-                    <div className="absolute inset-x-0 bottom-0 w-full bg-linear-to-t from-black/40 to-transparent pt-24">
+                    <div className="absolute inset-x-0 bottom-0 w-full bg-linear-to-t from-black/40 to-transparent pt-12">
                         <div className="flex w-full flex-col gap-6 p-8">
                             <div className="flex flex-col gap-2">
                                 <div className="flex gap-4">

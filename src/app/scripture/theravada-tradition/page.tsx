@@ -24,7 +24,7 @@ export default function TheravadaTraditionPage() {
                             <div className="flex flex-col items-center justify-center gap-0">
 
                                 <div className="flex flex-col items-center justify-center bg-linear-to-b from-white/0 from-0% via-white-30 via-20% to-white/40 dark:bg-linear-to-b dark:from-black/0 dark:from-0% dark:via-black/30 dark:via-20% dark:to-black/30 p-4 rounded-[3rem]">
-                                    <Image src="/pecha-wrapped-on-cloth-600.webp" alt="Gelug" width={130} height={130} className="drop-shadow-lg" />
+                                    <Image src="/pecha-wrapped-on-cloth-600.webp" alt="Gelug" width={120} height={120} className="drop-shadow-lg" />
                                     <h2 className="text-display-sm text-primary text-center py-2">Vinaya Piṭaka</h2>
                                     <p className="text-md text-tertiary text-center pb-4">The first basket of the Pali Canon, containing the rules and regulations for monks and nuns.</p>
                                     <Button color="secondary" size="sm">
@@ -34,7 +34,7 @@ export default function TheravadaTraditionPage() {
                             </div>
                             <div className="flex flex-col items-center justify-center gap-0">
                                 <div className="flex flex-col items-center justify-center bg-linear-to-b from-white/0 from-0% via-white-30 via-20% to-white/40 dark:bg-linear-to-b dark:from-black/0 dark:from-0% dark:via-black/30 dark:via-20% dark:to-black/30 p-4 rounded-[3rem]">
-                                    <Image src="/pecha-wrapped-on-cloth-600.webp" alt="Sakya" width={130} height={130} className="drop-shadow-lg" />
+                                    <Image src="/pecha-wrapped-on-cloth-600.webp" alt="Sakya" width={120} height={120} className="drop-shadow-lg" />
                                     <h2 className="text-display-sm text-primary text-center py-2">Sutta Piṭaka</h2>
                                     <p className="pb-4 text-md text-tertiary text-center">The second basket of the Pali Canon, containing the discourses of the Buddha.</p>
                                     <Button color="secondary" size="sm">
@@ -44,7 +44,7 @@ export default function TheravadaTraditionPage() {
                             </div>
                             <div className="flex flex-col items-center justify-center gap-0">
                                 <div className="flex flex-col items-center justify-center bg-linear-to-b from-white/0 from-0% via-white-30 via-20% to-white/40 dark:bg-linear-to-b dark:from-black/0 dark:from-0% dark:via-black/30 dark:via-20% dark:to-black/30 p-4 rounded-[3rem]">
-                                    <Image src="/pecha-wrapped-on-cloth-600.webp" alt="Sakya" width={130} height={130} className="drop-shadow-lg" />
+                                    <Image src="/pecha-wrapped-on-cloth-600.webp" alt="Sakya" width={120} height={120} className="drop-shadow-lg" />
                                     <h2 className="text-display-sm text-primary text-center py-2">Abhidhamma Piṭaka</h2>
                                     <p className="pb-4 text-md text-tertiary text-center">The third basket of the Pali Canon, containing the higher teachings and philosophical analysis.</p>
                                     <Button color="secondary" size="sm">
