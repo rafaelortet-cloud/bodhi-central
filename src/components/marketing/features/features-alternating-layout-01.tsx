@@ -46,8 +46,8 @@ export const FeaturesAlternatingLayout01 = () => {
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
-                                "Access to collections of texts currently used by modern transmissions of Buddhism",
-                                "Presenting texts contextualized by vehicles, doctrines, genres, and specialized tracks of study and research",
+                                "Access to collections of texts that are currently used by modern transmissions of Buddhism",
+                                "Presenting texts contextualized within vehicles, doctrines, genres, and specialized tracks of study and research",
                                 "State-of-the-art readers and personal workspaces to make your experience smooth and memorable",
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
@@ -119,7 +119,7 @@ export const FeaturesAlternatingLayout01 = () => {
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
                                 "Participate in like-minded forums and connect with communities around the world",
-                                "Explore Western and Eastern Buddhist academic centers offering study programs",
+                                "Explore Buddhist academic centers and institutions offering study programs",
                                 "Read articles on relevant topics, presented from a Buddhist perspective",
                                 "Build your personal library with your favorite materials and learning",
                             ].map((feat) => (

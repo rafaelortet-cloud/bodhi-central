@@ -81,7 +81,7 @@ export const CollectionGalleryVinayaPitaka = () => {
                     </div>
                     <div className="mt-8 flex flex-col gap-3 self-stretch md:mt-0 md:flex-row-reverse md:justify-center md:self-start">
                         <Button color="secondary" size="md">
-                            Vinaya Piṭaka overview
+                            See Vinaya Outline
                         </Button>
                     </div>
                 </div>

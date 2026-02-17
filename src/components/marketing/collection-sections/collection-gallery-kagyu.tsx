@@ -142,7 +142,7 @@ export const CollectionGalleryKagyu = () => {
                     <div className="flex flex-1 flex-col max-w-280 pr-4 md:pr-24">
                         <h2 className="text-display-md text-primary md:text-display-lg">Kagyu Studies</h2>
                         <p className="mt-1 text-base text-tertiary md:mt-2 md:text-lg">
-                            The Eight Kagyu commentaries recommended by the 16th Karmapa, Rangjung Rigpe Dorje, are essential for a complete understanding of Sutra and Tantra from the Kagyu school perspective.
+                            The Eight Kagyu commentaries were recommended by Rangjung Rigpe Dorje, the 16th Karmapa, as the core curriculum for a complete understanding of Sutra and Tantra from the Kagyu school perspective.
                         </p>
                     </div>
                     <div className="mt-8 flex flex-col gap-3 self-stretch md:mt-0 md:flex-row-reverse md:justify-center md:self-start">
@@ -174,7 +174,7 @@ export const CollectionGalleryKagyu = () => {
                                         <p className="mt-4 text-sm font-medium">{text.author_english}</p>
                                         <p className="hidden mt-2 text-sm md:text-sm">{text.short_description}</p>
                                         <div className="flex gap-2 mt-1 justify-between items-top">
-                                            <p className="text-xs font-normal text-brand-200">{text.genre}</p>
+                                            <p className="text-xs font-normal text-brand-200 uppercase">{text.genre}</p>
                                             <Button size="sm" className="bg-black/20 hover:bg-black/30 border-0.5 border-white/50 hover:border-white/50 text-white/50 hover:text-white/60 dark:bg-gray-900/50 dark:border-gray-900/50 dark:text-gray-400">
                                                 Read
                                             </Button>
