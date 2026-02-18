@@ -21,7 +21,7 @@ const robotoSerif = Roboto_Serif({
 });
 
 const fraunces = Fraunces({
-    subsets: ["latin"],
+    subsets: ["latin", "latin-ext"],
     display: "swap",
     variable: "--font-fraunces",
     axes: ["opsz", "SOFT", "WONK"],
@@ -35,7 +35,7 @@ const tibetan = Noto_Serif_Tibetan({
 
 export const metadata: Metadata = {
     title: "Bodhi Central — Buddhist Scriptures",
-    description: "Gateways to accessible Buddhist knowledge and wisdom.",
+    description: "Gateways to accessible Buddhist wisdom and knowledge.",
 };
 
 export const viewport: Viewport = {
