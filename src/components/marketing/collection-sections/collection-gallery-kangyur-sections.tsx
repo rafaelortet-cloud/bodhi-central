@@ -17,8 +17,8 @@ const collectionTexts = [
         canon_division: "Vinaya",
         volumes: "Vols. 1-13",
         section_numbers: "Toh 1-7",
-        color: "bg-cyan-950/75",
-        darkColor: "dark:bg-cyan-950/75",
+        color: "bg-blue-950/75",
+        darkColor: "dark:bg-blue-950/75",
     },
     {
         english_title: "Perfection of Wisdom",
@@ -31,8 +31,8 @@ const collectionTexts = [
         canon_division: "Discourses",
         volumes: "Vols. 14-33",
         section_numbers: "Toh 8-30",
-        color: "bg-yellow-950/75",
-        darkColor: "dark:bg-yellow-950/75",
+        color: "bg-yellow-950/70",
+        darkColor: "dark:bg-yellow-950/70",
     },
     {
         english_title: "Thirteen Theravāda Sūtras",
@@ -45,8 +45,8 @@ const collectionTexts = [
         canon_division: "Discourses",
         volumes: "Vol. 34",
         section_numbers: "Toh 31-43",
-        color: "bg-yellow-950/75",
-        darkColor: "dark:bg-yellow-950/75",
+        color: "bg-yellow-950/70",
+        darkColor: "dark:bg-yellow-950/70",
     },
     {
         english_title: "A Multitude of Buddhas",
@@ -57,10 +57,10 @@ const collectionTexts = [
         short_description: "",
         thumbnailCover: "/textCovers/buddha-sakyamuni-outline-600.png",
         canon_division: "Discourses",
-        volumes: "Vols. 35-38",
+        volumes: "Vols. xx-xx",
         section_numbers: "Toh 44",
-        color: "bg-yellow-950/75",
-        darkColor: "dark:bg-yellow-950/75",
+        color: "bg-yellow-950/70",
+        darkColor: "dark:bg-yellow-950/70",
     },
     {
         english_title: "Heap of Jewels",
@@ -71,10 +71,10 @@ const collectionTexts = [
         short_description: "",
         thumbnailCover: "/textCovers/buddha-sakyamuni-outline-600.png",
         canon_division: "Discourses",
-        volumes: "Vols. 39-44",
+        volumes: "Vols. xx-xx",
         section_numbers: "Tok 45-93",
-        color: "bg-yellow-950/75",
-        darkColor: "dark:bg-yellow-950/75",
+        color: "bg-yellow-950/70",
+        darkColor: "dark:bg-yellow-950/70",
     },
     {
         english_title: "General Sūtra Collection",
@@ -85,10 +85,10 @@ const collectionTexts = [
         short_description: "",
         thumbnailCover: "/textCovers/buddha-sakyamuni-outline-600.png",
         canon_division: "Discourses",
-        volumes: "Vols. 45-61",
+        volumes: "Vols. xx-xx",
         section_numbers: "Toh 94-359",
-        color: "bg-yellow-950/75",
-        darkColor: "dark:bg-yellow-950/75",
+        color: "bg-yellow-950/70",
+        darkColor: "dark:bg-yellow-950/70",
     },
     {
         english_title: "Tantra Collection",
@@ -99,10 +99,10 @@ const collectionTexts = [
         short_description: "The principal tantra collection of 468 canonical tantras, mainly from the “later spread” of Vajrayāna to Tibet, arranged by level.",
         thumbnailCover: "/textCovers/buddha-sakyamuni-outline-600.png",
         canon_division: "Tantra",
-        volumes: "Vols. 46-50",
+        volumes: "Vols. xx-xx",
         section_numbers: "Toh 360-827",
-        color: "bg-red-950/75",
-        darkColor: "dark:bg-red-950/75",
+        color: "bg-red-900/75",
+        darkColor: "dark:bg-red-900/75",
     },
     {
         english_title: "Nyingma Tantra",
@@ -113,10 +113,10 @@ const collectionTexts = [
         short_description: "Seventeen works representing a small selection of the many tantras of the Ngagyur Nyingma (“earlier translation”) tradition.",
         thumbnailCover: "/textCovers/buddha-sakyamuni-outline-600.png",
         canon_division: "Tantra",
-        volumes: "Vols. 51-52",
+        volumes: "Vols. xx-xx",
         section_numbers: "Toh 828-844",
-        color: "bg-red-950/75",
-        darkColor: "dark:bg-red-950/75",
+        color: "bg-red-900/75",
+        darkColor: "dark:bg-red-900/75",
     },
     {
         english_title: "Wheel of Time Commentary",
@@ -127,10 +127,10 @@ const collectionTexts = [
         short_description: "",
         thumbnailCover: "/textCovers/buddha-sakyamuni-outline-600.png",
         canon_division: "Tantra",
-        volumes: "Vols. 53-54",
+        volumes: "Vols. xx-xx",
         section_numbers: "Toh 845",
-        color: "bg-red-950/75",
-        darkColor: "dark:bg-red-950/75",
+        color: "bg-red-900/75",
+        darkColor: "dark:bg-red-900/75",
     },
     {
         english_title: "Dhāraṇīs Collection",
@@ -141,10 +141,24 @@ const collectionTexts = [
         short_description: "Short sūtra or tantra texts used mainly for ritual purposes, mostly structured around a dhāraṇī formula in Sanskrit, its uses and the story of its origin.",
         thumbnailCover: "/textCovers/buddha-sakyamuni-outline-600.png",
         canon_division: "Dhāraṇī",
-        volumes: "Vols. 55-56",
+        volumes: "Vols. xx-xx",
         section_numbers: "Toh 846-1108",
         color: "bg-green-950/75",
         darkColor: "dark:bg-green-950/75",
+    },
+    {
+        english_title: "Degé Kangyur Catalog",
+        tibetan_title: "བཀའ་འགྱུར་དཀར་ཆག",
+        sanskrit_title: "",
+        author_english: "",
+        canon: "Kangyur",
+        short_description: "",
+        thumbnailCover: "/pecha-wrapped-on-cloth-600.webp",
+        canon_division: "Catalog",
+        volumes: "Vols. 102",
+        section_numbers: "Toh 4568",
+        color: "bg-gray-900/75",
+        darkColor: "dark:bg-gray-900/75",
     },
 ];
 
@@ -156,7 +170,7 @@ export const CollectionGalleryKangyurSections = () => {
                     <div className="flex flex-1 flex-col max-w-280 pr-4 md:pr-24">
                         <h2 className="text-display-md text-primary md:text-display-lg">Kangyur Divisions</h2>
                         <p className="mt-1 text-base text-tertiary md:mt-2 md:text-lg">
-                            The Kangyur is the principal collection of the Buddhist scriptures in Tibetan. It contains some 900 works in over 100 volumes, all translations into Tibetan of the Indian texts considered to record the words of the Buddha. These nine divisions follow the Degé Kangyur digital edition by Adarshah.org.
+                            The Kangyur is the principal collection of the Buddhist scriptures in Tibetan. It contains some 900 works in over 100 volumes, all translations into Tibetan of the Indian texts considered to record the words of the Buddha. These eleven divisions follow the Degé Kangyur digital edition by Adarshah.org.
                         </p>
                     </div>
                     <div className="mt-8 flex flex-col gap-3 self-stretch md:mt-0 md:flex-row-reverse md:justify-center md:self-start">
@@ -176,9 +190,9 @@ export const CollectionGalleryKangyurSections = () => {
                         {collectionTexts.map((text) => (
                             <Carousel.Item
                                 key={text.english_title}
-                                className="relative flex aspect-[.5625] w-full max-w-56 flex-col justify-end md:aspect-[.5625] md:max-w-68 bg-radial-[at_50%_35%] from-yellow-25 via-yellow-300 via-30% to-yellow-700 to-75% dark:from-yellow-25 dark:via-yellow-400 dark:via-32% dark:to-yellow-800 dark:to-75% drop-shadow-lg border-2 border-yellow-300 dark:border-yellow-900 rounded-4xl overflow-hidden"
+                                className="relative flex aspect-[.5625] w-full max-w-56 flex-col justify-end md:aspect-[.5625] md:max-w-68 bg-radial-[at_50%_35%] from-yellow-50 via-yellow-200 via-27% to-yellow-600 to-75% dark:from-yellow-dark-100 dark:via-yellow-dark-300 dark:via-26% dark:to-yellow-700 dark:to-75% drop-shadow-lg border-2 border-yellow-300 dark:border-yellow-900 rounded-4xl overflow-hidden"
                             >
-                                <img alt={text.english_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-[-1] cursor-grab object-cover rounded-sm mix-blend-luminosity" />
+                                <img alt={text.english_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full cursor-grab object-contain rounded-sm mix-blend-luminosity" />
 
                                 <div className="z-10 bg-linear-to-t from-black/30 to-black/0 pt-16 md:pt-20 lg:pt-24 rounded-b-sm">
                                     <div className={`relative ${text.color} ${text.darkColor} px-5 pt-5 pb-4 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5 rounded-b-sm`}>
@@ -190,9 +204,9 @@ export const CollectionGalleryKangyurSections = () => {
                                         <div className="flex gap-2 mt-1 justify-between items-top">
                                             <div className="flex flex-col gap-0">
                                                 <p className="text-sm text-brand-200 uppercase">{text.canon_division}</p>
-                                                <p className="text-xs text-brand-200">{text.volumes}</p>
+                                                <p className="text-xs text-brand-200">{text.volumes} --- ({text.section_numbers})</p>
                                             </div>
-                                            <Button size="sm" className="bg-black/20 hover:bg-black/30 border-0.5 border-white/50 hover:border-white/50 text-white/50 hover:text-white/60 dark:bg-gray-900/50 dark:border-gray-900/50 dark:text-gray-400">
+                                            <Button size="sm" className="hidden bg-black/20 hover:bg-black/30 border-0.5 border-white/50 hover:border-white/50 text-white/50 hover:text-white/60 dark:bg-gray-900/50 dark:border-gray-900/50 dark:text-gray-400">
                                                 Explore
                                             </Button>
                                         </div>
