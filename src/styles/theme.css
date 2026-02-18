@@ -182,18 +182,21 @@
     --color-alpha-white: rgb(255 255 255);
     --color-alpha-black: rgb(0 0 0);
 
-    --color-brand-25: rgb(255 249 245);
-    --color-brand-50: rgb(255 244 237);
-    --color-brand-100: rgb(255 230 213);
-    --color-brand-200: rgb(255 214 174);
-    --color-brand-300: rgb(255 156 102);
-    --color-brand-400: rgb(255 105 46);
-    --color-brand-500: rgb(255 68 5);
-    --color-brand-600: rgb(230 46 5);
-    --color-brand-700: rgb(188 27 6);
-    --color-brand-800: rgb(151 24 12);
-    --color-brand-900: rgb(119 26 13);
-    --color-brand-950: rgb(87 19 10);
+    /* COLORS */
+
+    /* BRAND COLORS */
+    --color-brand-25: var(--color-orange-dark-25);
+    --color-brand-50: var(--color-orange-dark-50);
+    --color-brand-100: var(--color-orange-dark-100);
+    --color-brand-200: var(--color-orange-dark-200);
+    --color-brand-300: var(--color-orange-dark-300);
+    --color-brand-400: var(--color-orange-dark-400);
+    --color-brand-500: var(--color-orange-dark-500);
+    --color-brand-600: var(--color-orange-dark-600);
+    --color-brand-700: var(--color-orange-dark-700);
+    --color-brand-800: var(--color-orange-dark-800);
+    --color-brand-900: var(--color-orange-dark-900);
+    --color-brand-950: var(--color-orange-dark-950);
 
     --color-error-25: rgb(255 251 250);
     --color-error-50: rgb(254 243 242);
@@ -233,6 +236,62 @@
     --color-success-800: rgb(8 93 58);
     --color-success-900: rgb(7 77 49);
     --color-success-950: rgb(5 51 33);
+
+    /* RED COLORS (Tailwind) */
+    --color-red-25: oklch(97.1% 0.013 17.38);
+    --color-red-50: oklch(97.1% 0.013 17.38);
+    --color-red-100: oklch(93.6% 0.032 17.717);
+    --color-red-200: oklch(88.5% 0.062 18.334);
+    --color-red-300: oklch(80.8% 0.114 19.571);
+    --color-red-400: oklch(70.4% 0.191 22.216);
+    --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-red-600: oklch(57.7% 0.245 27.325);
+    --color-red-700: oklch(50.5% 0.213 27.518);
+    --color-red-800: oklch(44.4% 0.177 26.899);
+    --color-red-900: oklch(39.6% 0.141 25.723);
+    --color-red-950: oklch(25.8% 0.092 26.042);
+
+    /* ORANGE COLORS (Tailwind) */
+    --color-orange-25: rgb(254 250 245);
+    --color-orange-50: oklch(98% 0.016 73.684);
+    --color-orange-100: oklch(95.4% 0.038 75.164);
+    --color-orange-200: oklch(90.1% 0.076 70.697);
+    --color-orange-300: oklch(83.7% 0.128 66.29);
+    --color-orange-400: oklch(75% 0.183 55.934);
+    --color-orange-500: oklch(70.5% 0.213 47.604);
+    --color-orange-600: oklch(64.6% 0.222 41.116);
+    --color-orange-700: oklch(55.3% 0.195 38.402);
+    --color-orange-800: oklch(47% 0.157 37.304);
+    --color-orange-900: oklch(40.8% 0.123 38.172);
+    --color-orange-950: oklch(26.6% 0.079 36.259);
+
+    /* ORANGE COLORS (Untitled UI) */
+    --color-orange-dark-25: rgb(255 249 245);
+    --color-orange-dark-50: rgb(255 244 237);
+    --color-orange-dark-100: rgb(255 230 213);
+    --color-orange-dark-200: rgb(255 214 174);
+    --color-orange-dark-300: rgb(255 156 102);
+    --color-orange-dark-400: rgb(255 105 46);
+    --color-orange-dark-500: rgb(255 68 5);
+    --color-orange-dark-600: rgb(230 46 5);
+    --color-orange-dark-700: rgb(188 27 6);
+    --color-orange-dark-800: rgb(151 24 12);
+    --color-orange-dark-900: rgb(119 26 13);
+    --color-orange-dark-950: rgb(87 19 10);
+
+    /* YELLOW COLORS (Tailwind) */
+    --color-yellow-25: rgb(254 253 240);
+    --color-yellow-50: oklch(98.7% 0.026 102.212);
+    --color-yellow-100: oklch(97.3% 0.071 103.193);
+    --color-yellow-200: oklch(94.5% 0.129 101.54);
+    --color-yellow-300: oklch(90.5% 0.182 98.111);
+    --color-yellow-400: oklch(85.2% 0.199 91.936);
+    --color-yellow-500: oklch(79.5% 0.184 86.047);
+    --color-yellow-600: oklch(68.1% 0.162 75.834);
+    --color-yellow-700: oklch(55.4% 0.135 66.442);
+    --color-yellow-800: oklch(47.6% 0.114 61.907);
+    --color-yellow-900: oklch(42.1% 0.095 57.708);
+    --color-yellow-950: oklch(28.6% 0.066 53.813);
 
     --color-gray-25: rgb(253 253 253);
     --color-gray-50: rgb(250 250 250);
@@ -520,44 +579,33 @@
     --color-rose-900: rgb(137 18 62);
     --color-rose-950: rgb(81 11 36);
 
-    --color-orange-dark-25: rgb(255 249 245);
-    --color-orange-dark-50: rgb(255 244 237);
-    --color-orange-dark-100: rgb(255 230 213);
-    --color-orange-dark-200: rgb(255 214 174);
-    --color-orange-dark-300: rgb(255 156 102);
-    --color-orange-dark-400: rgb(255 105 46);
-    --color-orange-dark-500: rgb(255 68 5);
-    --color-orange-dark-600: rgb(230 46 5);
-    --color-orange-dark-700: rgb(188 27 6);
-    --color-orange-dark-800: rgb(151 24 12);
-    --color-orange-dark-900: rgb(119 26 13);
-    --color-orange-dark-950: rgb(87 19 10);
+    /* MIST COLORS (Tailwind) */
+    --color-mist-50: oklch(98.7% 0.002 197.1);
+    --color-mist-100: oklch(96.3% 0.002 197.1);
+    --color-mist-200: oklch(92.5% 0.005 214.3);
+    --color-mist-300: oklch(87.2% 0.007 219.6);
+    --color-mist-400: oklch(72.3% 0.014 214.4);
+    --color-mist-500: oklch(56% 0.021 213.5);
+    --color-mist-600: oklch(45% 0.017 213.2);
+    --color-mist-700: oklch(37.8% 0.015 216);
+    --color-mist-800: oklch(27.5% 0.011 216.9);
+    --color-mist-900: oklch(21.8% 0.008 223.9);
+    --color-mist-950: oklch(14.8% 0.004 228.8);
 
-    --color-orange-25: rgb(254 250 245);
-    --color-orange-50: rgb(254 246 238);
-    --color-orange-100: rgb(253 234 215);
-    --color-orange-200: rgb(249 219 175);
-    --color-orange-300: rgb(247 178 122);
-    --color-orange-400: rgb(243 135 68);
-    --color-orange-500: rgb(239 104 32);
-    --color-orange-600: rgb(224 79 22);
-    --color-orange-700: rgb(185 56 21);
-    --color-orange-800: rgb(147 47 25);
-    --color-orange-900: rgb(119 41 23);
-    --color-orange-950: rgb(81 28 16);
+    /* OLIVE COLORS (Tailwind) */
+    --color-olive-50: oklch(98.8% 0.003 106.5);
+    --color-olive-100: oklch(96.6% 0.005 106.5);
+    --color-olive-200: oklch(93% 0.007 106.5);
+    --color-olive-300: oklch(88% 0.011 106.6);
+    --color-olive-400: oklch(73.7% 0.021 106.9);
+    --color-olive-500: oklch(58% 0.031 107.3);
+    --color-olive-600: oklch(46.6% 0.025 107.3);
+    --color-olive-700: oklch(39.4% 0.023 107.4);
+    --color-olive-800: oklch(28.6% 0.016 107.4);
+    --color-olive-900: oklch(22.8% 0.013 107.4);
+    --color-olive-950: oklch(15.3% 0.006 107.1);
 
-    --color-yellow-25: rgb(254 253 240);
-    --color-yellow-50: rgb(254 251 232);
-    --color-yellow-100: rgb(254 247 195);
-    --color-yellow-200: rgb(254 238 149);
-    --color-yellow-300: rgb(253 226 114);
-    --color-yellow-400: rgb(250 197 21);
-    --color-yellow-500: rgb(234 170 8);
-    --color-yellow-600: rgb(202 133 4);
-    --color-yellow-700: rgb(161 92 7);
-    --color-yellow-800: rgb(133 74 14);
-    --color-yellow-900: rgb(113 59 18);
-    --color-yellow-950: rgb(84 44 13);
+
 
     /* LIGHT MODE VARIABLES */
 
@@ -800,7 +848,7 @@
     --color-bg-primary: var(--color-white);
     --color-bg-primary-solid: var(--color-gray-950);
     --color-bg-primary_alt: var(--color-white);
-    --color-bg-primary_hover: var(--color-gray-50);
+    --color-bg-primary_hover: var(--color-gray-100);
     --color-bg-secondary: var(--color-gray-50);
     --color-bg-secondary-solid: var(--color-gray-600);
     --color-bg-secondary_subtle: var(--color-gray-25);

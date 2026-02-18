@@ -17,8 +17,8 @@ const collectionTexts = [
         canon_division: "Praise",
         volumes: "Vols. 1-13",
         section_numbers: "Toh 1109-1179",
-        color: "bg-black/80",
-        darkColor: "dark:bg-black-80",
+        color: "bg-gray-700/70",
+        darkColor: "dark:bg-gray-700/70",
     },
     {
         english_title: "Tantra",
@@ -136,7 +136,7 @@ const collectionTexts = [
 
 export const CollectionGalleryTengyurSections = () => {
     return (
-        <section className="relative overflow-hidden bg-linear-to-b from-red-25/0 from-0% via-orange-50 via-10% to-orange-50 to-100% dark:bg-linear-to-b dark:from-gray-950/0 dark:from-0% dark:via-gray-950 dark:via-10% dark:to-red-950 py-6 md:py-10">
+        <section className="relative overflow-hidden bg-linear-to-b from-mist-50/0 from-0% via-mist-50 via-50% to-mist-200 to-100% dark:bg-linear-to-b dark:from-mist-800 dark:from-0% dark:via-mist-800 dark:via-50% dark:to-mist-950 py-6 md:py-10">
             <div className="mx-auto px-4 md:px-8">
                 <div className="flex w-full flex-col justify-between md:flex-row">
                     <div className="flex flex-1 flex-col max-w-280 pr-4 md:pr-24">
@@ -162,7 +162,7 @@ export const CollectionGalleryTengyurSections = () => {
                         {collectionTexts.map((text) => (
                             <Carousel.Item
                                 key={text.english_title}
-                                className="relative flex aspect-[.5625] w-full max-w-56 flex-col justify-end md:aspect-[.5625] md:max-w-68 bg-radial-[at_50%_35%] from-gray-100 via-gray-200 via-30% to-gray-700 to-75% dark:from-gray-100 dark:via-gray-400 dark:via-32% dark:to-gray-800 dark:to-75% drop-shadow-lg border-2 border-gray-300 dark:border-gray-900 rounded-4xl overflow-hidden"
+                                className="relative flex aspect-[.5625] w-full max-w-56 flex-col justify-end md:aspect-[.5625] md:max-w-68 bg-radial-[at_50%_35%] from-mist-50 via-mist-100 via-30% to-mist-400 to-75% dark:from-mist-50 dark:via-mist-200 dark:via-32% dark:to-mist-600 dark:to-75% drop-shadow-lg border-2 border-gray-300 dark:border-gray-900 rounded-4xl overflow-hidden"
                             >
                                 <img alt={text.english_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-[-1] cursor-grab object-cover rounded-sm mix-blend-luminosity" />
 

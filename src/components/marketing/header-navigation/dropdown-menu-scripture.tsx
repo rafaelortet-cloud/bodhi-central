@@ -1,7 +1,7 @@
 "use client";
 
 import type { FC, ReactNode } from "react";
-import { BookClosed, BookOpen01, Codepen, FileCode01, LifeBuoy01, PlayCircle, Stars02 } from "@untitledui/icons";
+import { BookClosed, BookOpen01, FileCode01, Stars02 } from "@untitledui/icons";
 import { Button } from "@/components/base/buttons/button";
 import { NavMenuItemLink } from "./base-components/nav-menu-item";
 
@@ -64,7 +64,7 @@ const columns: MenuColumn[] = [
 export const DropdownMenuScripture = () => {
     return (
         <div className="px-3 pb-2 md:max-w-200 md:p-0">
-            <nav className="overflow-hidden rounded-xl bg-brand-100 dark:bg-brand-900 drop-shadow-lg ring-1 ring-secondary_alt md:rounded-3xl md:drop-shadow-2xl dark:md:drop-shadow-gray-950">
+            <nav className="rounded-xl bg-brand-100 dark:bg-brand-900 drop-shadow-lg ring-1 ring-secondary_alt md:rounded-3xl md:drop-shadow-2xl dark:md:drop-shadow-gray-950">
                 <div className="flex flex-col gap-4 rounded-xl bg-brand-25 dark:bg-brand-950 pt-4 ring-1 ring-secondary md:gap-8 md:rounded-t-2xl md:p-6 md:pt-5">
                     <div className="flex flex-col items-center gap-1 px-4 md:p-0">
                         <h4 className="pt-4 text-4xl font-light uppercase">Kindful Wisdom</h4>
