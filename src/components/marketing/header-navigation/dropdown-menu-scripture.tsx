@@ -23,6 +23,12 @@ const columns: MenuColumn[] = [
         title: "Collections",
         items: [
             {
+                title: "Theravada Tradition",
+                subtitle: "The Pali Canon, the earliest Buddhist scriptures.",
+                href: "/scripture/theravada-tradition",
+                Icon: BookClosed,
+            },
+            {
                 title: "Tibetan Studies",
                 subtitle: "The curricula of the four main lineages of Tibetan Buddhism.",
                 href: "/scripture/tibetan-schools",
@@ -32,12 +38,6 @@ const columns: MenuColumn[] = [
                 title: "Tibetan Canons",
                 subtitle: "The Kangyur and Tengyur, the Tibetan Buddhist canons.",
                 href: "/scripture/tibetan-canons",
-                Icon: BookClosed,
-            },
-            {
-                title: "Theravada Tradition",
-                subtitle: "The Pali Canon, the earliest Buddhist scriptures.",
-                href: "/scripture/theravada-tradition",
                 Icon: BookClosed,
             },
         ],

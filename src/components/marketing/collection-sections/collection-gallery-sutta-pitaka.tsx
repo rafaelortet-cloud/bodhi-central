@@ -131,7 +131,7 @@ export const CollectionGallerySuttaPitaka = () => {
                     </div>
                     <div className="mt-8 flex flex-col gap-3 self-stretch md:mt-0 md:flex-row-reverse md:justify-center md:self-start">
                         <Button color="secondary" size="md">
-                            Sutta Piṭaka overview
+                            Sutta Piṭaka Outline
                         </Button>
                     </div>
                 </div>

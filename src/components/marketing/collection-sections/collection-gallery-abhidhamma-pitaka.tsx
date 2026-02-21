@@ -7,64 +7,64 @@ import { RoundButton } from "@/components/marketing/testimonials/round-button";
 
 const collectionTexts = [
     {
-        english_title: "Analysis of Rules for Monks (Part 1: Heavy oﬀenses, or garukāpatti)",
-        pali_title: "Bhikku Vibhaṅga",
+        english_title: "Abhidhamma Title 1",
+        pali_title: "Abhidhamma Title 1",
         author_pali: "Buddha Shakyamuni",
         canon: "Pali Canon",
         short_description: "The first part of the Vinaya Piṭaka is known as the Sutta-vibhaṅga,which can be rendered as the Analysis of the Sutta.In this context the word sutta does not mean a discourse of the Buddha, but refers to the Pātimokkha, the Monastic Code, which consists of the rules of conduct that form the kernel of the Sutta-vibhaṅga.14 The Sutta vibhaṅga, then, is the analysis of the rules of the Pātimokkha.",
-        thumbnailCover: "/textCovers/buddha-sakyamuni-vol-1-600.jpg",
-        pitaka_section: "Sutta-vibhaṅga",
-        section_numbers: "Bu Pj 1 - Bu Ay 2",
+        thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
+        pitaka_section: "Abhidhamma",
+        section_numbers: "AB",
     },
     {
-        english_title: "Analysis of Rules for Monks (Part 2: Light oﬀenses, or lahukāpatti)",
-        pali_title: "Bhikku Vibhaṅga",
+        english_title: "Abhidhamma Title 2",
+        pali_title: "Abhidhamma Title 2",
         author_pali: "Buddha Shakyamuni",
         canon: "Pali Canon",
         short_description: "This volume contains the second and last part of the Bhikkhu-vibhaṅga, “the Monks’ Analysis”. Whereas the first volume contains the heavy oﬀenses of pārājika and saṅghādisesa, also known as garukāpatti, the current volume contains the light oﬀenses, or lahukāpatti.",
-        thumbnailCover: "/textCovers/buddha-sakyamuni-vol-2-600.jpg",
-        pitaka_section: "Sutta-vibhaṅga",
-        section_numbers: "Bu Np 1 - Bu As 1-7",
+        thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
+        pitaka_section: "Abhidhamma",
+        section_numbers: "AB",
     },
     {
-        english_title: "Analysis of Rules for Nuns",
-        pali_title: "Bhikkhunī Vibhaṅga",
+        english_title: "Abhidhamma Title 3",
+        pali_title: "Abhidhamma Title 3",
         author_pali: "Buddha Shakyamuni",
         canon: "Pali Canon",
         short_description: "This volume consists of the Bhikkhunī-vibhaṅga, the Nuns’ Pātimokkha rules and their analysiss.",
         thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
-        pitaka_section: "Sutta-vibhaṅga",
-        section_numbers: "Bi Pj 1 - Bi As 1-7",
+        pitaka_section: "Abhidhamma",
+        section_numbers: "AB",
     },
     {
-        english_title: "The Great Division",
-        pali_title: "Mahāvagga",
+        english_title: "Abhidhamma Title 4",
+        pali_title: "Abhidhamma Title 4",
         author_pali: "Buddha Shakyamuni",
         canon: "Pali Canon",
         short_description: "The Great Division is the first of the Khandhakas, and focuses mostly on the main regulations and ceremonies of the Sangha.",
         thumbnailCover: "/textCovers/buddha-sakyamuni-zoom-in-xl-600.jpg",
-        pitaka_section: "KHANDHAKAS",
-        section_numbers: "KD 1-10",
+        pitaka_section: "Abhidhamma",
+        section_numbers: "AB",
     },
     {
-        english_title: "The Lesser Division",
-        pali_title: "Cūḷavagga",
+        english_title: "Abhidhamma Title 5",
+        pali_title: "Abhidhamma Title 5",
         author_pali: "Buddha Shakyamuni",
         canon: "Pali Canon",
         short_description: "The Lesser Division is the second of the Khandhakas, and is more concerned with lesser regulations and the working our of details.",
-        thumbnailCover: "/textCovers/buddha-sakyamuni-zoom-in-xl-600.jpg",
-        pitaka_section: "KHANDHAKAS",
-        section_numbers: "KD 11-22",
+        thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
+        pitaka_section: "Abhidhamma",
+        section_numbers: "AB",
     },
     {
-        english_title: "The Compendium",
-        pali_title: "Parivāra",
+        english_title: "Abhidhamma Title 6",
+        pali_title: "Abhidhamma Title 6",
         author_pali: "Buddha Shakyamuni",
         canon: "Pali Canon",
         short_description: "The Parivāra is a detailed and condensed systematization of the most important rules and regulations of the first five volumes of the Vinaya.",
-        thumbnailCover: "/textCovers/buddha-sakyamuni-zoom-in-2xl-600.jpg",
-        pitaka_section: "PARIVĀRA",
-        section_numbers: "Pvr 1-21",
+        thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
+        pitaka_section: "Abhidhamma",
+        section_numbers: "AB",
     },
 ];
 
@@ -81,7 +81,7 @@ export const CollectionGalleryAbhidhammaPitaka = () => {
                     </div>
                     <div className="mt-8 flex flex-col gap-3 self-stretch md:mt-0 md:flex-row-reverse md:justify-center md:self-start">
                         <Button color="secondary" size="md">
-                            Vinaya Piṭaka overview
+                            Abhidhamma Piṭaka Outline
                         </Button>
                     </div>
                 </div>

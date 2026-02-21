@@ -46,16 +46,16 @@ const columns: MenuColumn[] = [
         title: "Community",
         items: [
             {
-                title: "Where to Study",
-                subtitle: "Find a study center or an online course around the world.",
-                href: "/",
-                Icon: FileCode01,
-            },
-            {
                 title: "Buddhist Curricula Overview",
                 subtitle: "A visual exploration of modern and traditional Buddhist curricula.",
                 href: "/",
                 Icon: Stars02,
+            },
+            {
+                title: "Where to Study",
+                subtitle: "Find a study center or an online course around the world.",
+                href: "/",
+                Icon: FileCode01,
             },
         ],
     },

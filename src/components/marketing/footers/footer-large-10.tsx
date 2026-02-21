@@ -13,6 +13,10 @@ const footerNavList = [
                 href: "/scripture",
             },
             {
+                label: "Theravada Canons",
+                href: "/scripture/theravada-tradition",
+            },
+            {
                 label: "Tibetan Studies",
                 href: "/scripture/tibetan-schools",
             },
@@ -20,10 +24,7 @@ const footerNavList = [
                 label: "Tibetan Canons",
                 href: "/scripture/tibetan-canons",
             },
-            {
-                label: "Theravada Canons",
-                href: "/scripture/theravada-tradition",
-            },
+
             {
                 label: "Traditions",
                 href: "/scripture/traditions",
@@ -53,30 +54,17 @@ const footerNavList = [
                 label: "Practice Paths",
                 href: "/learning-paths/practice-paths",
             },
+            {
+                label: "Where to Study",
+                href: "/resources/study-centers",
+            },
         ],
     },
     {
         label: "Resources",
         items: [
             {
-                label: "Groups Around",
-                href: "/resources/community",
-                badge: (
-                    <Badge color="gray" type="modern" size="sm" className="ml-1">
-                        New
-                    </Badge>
-                ),
-            },
-            {
-                label: "Study Centers",
-                href: "/resources/study-centers",
-            },
-            {
-                label: "Digital Portals",
-                href: "/resources/digital-portals",
-            },
-            {
-                label: "Bodhi Blog",
+                label: "The Blog",
                 href: "/resources/blog",
                 badge: (
                     <Badge color="gray" type="modern" size="sm" className="ml-1">
@@ -87,6 +75,19 @@ const footerNavList = [
             {
                 label: "Visit the Forum",
                 href: "/resources/digital-portals",
+            },
+            {
+                label: "Digital Portals",
+                href: "/resources/digital-portals",
+            },
+            {
+                label: "Groups Around",
+                href: "/resources/community",
+                badge: (
+                    <Badge color="gray" type="modern" size="sm" className="ml-1">
+                        New
+                    </Badge>
+                ),
             },
         ],
     },
@@ -174,8 +175,8 @@ export const FooterLarge10 = () => {
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="flex flex-col justify-between border-b border-secondary pb-8 md:pb-16 lg:flex-row">
                     <div className="max-w-3xl">
-                        <h2 className="text-display-xs font-semibold text-primary md:text-display-sm">Gateways to Buddhist paths of study and practice</h2>
-                        <p className="mt-2 text-md text-tertiary md:mt-4 md:text-xl">Explore paths of mindful wisdom and connect with teachers and practitioners to make your journey count for yourself and others.</p>
+                        <h2 className="text-display-xs font-semibold text-primary md:text-display-sm">Gateways to Buddhist study and practice</h2>
+                        <p className="mt-2 text-md text-tertiary md:mt-4 md:text-xl">Explore paths of kindful wisdom and connect with teachers and practitioners to make your journey count for yourself and others.</p>
                     </div>
 
                     <div className="mt-8 flex flex-col-reverse gap-3 self-stretch sm:flex-row sm:self-start lg:mt-0">

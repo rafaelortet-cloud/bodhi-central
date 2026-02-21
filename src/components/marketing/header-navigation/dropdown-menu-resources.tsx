@@ -29,16 +29,16 @@ const columns: MenuColumn[] = [
                 Icon: PlayCircle,
             },
             {
-                title: "Groups Around You",
-                subtitle: "Find people and connect with communities around the world.",
-                href: "/resources/community",
-                Icon: BookClosed,
+                title: "Join our Forum",
+                subtitle: "Engage in conversations and share knowledge with others.",
+                href: "/",
+                Icon: Stars02,
             },
             {
-                title: "Digital Portals",
-                subtitle: "Portals preserving and making accessible Buddhist scriptures.",
-                href: "/resources/digital-portals",
-                Icon: Stars02,
+                title: "Documentation",
+                subtitle: "In-depth articles on our tools and technologies to empower users.",
+                href: "/",
+                Icon: FileCode01,
             },
         ],
     },
@@ -46,16 +46,16 @@ const columns: MenuColumn[] = [
         title: "Support",
         items: [
             {
-                title: "Documentation",
-                subtitle: "In-depth articles on our tools and technologies to empower users.",
-                href: "/",
-                Icon: FileCode01,
+                title: "Digital Portals",
+                subtitle: "Portals preserving Buddhist scriptures and making them accessible to all.",
+                href: "/resources/digital-portals",
+                Icon: Stars02,
             },
             {
-                title: "Join our Forum",
-                subtitle: "Engage in conversations and share knowledge with others.",
-                href: "/",
-                Icon: Stars02,
+                title: "Groups Around You",
+                subtitle: "A global directory of Buddhist groups and communities.",
+                href: "/resources/community",
+                Icon: BookClosed,
             },
             {
                 title: "Help and support",
@@ -74,7 +74,7 @@ export const DropdownMenuResources = () => {
                 <div className="flex flex-col gap-5 rounded-xl bg-brand-25 dark:bg-brand-950 pt-4 pb-5 ring-1 ring-secondary md:gap-8 md:rounded-t-2xl md:p-6 md:pt-5">
                     <div className="flex flex-col items-center gap-1 px-4 md:p-0">
                         <h4 className="pt-4 text-4xl font-light">RESOURCES</h4>
-                        <p className="text-sm text-tertiary">Tools and resources to expand your studies, research, and practices.</p>
+                        <p className="text-sm text-tertiary">Tools and resources to enhance your studies, research, and practices.</p>
                     </div>
 
                     <div className="flex flex-col gap-5 md:flex-row md:gap-8 md:py-0">
