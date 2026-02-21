@@ -47,7 +47,7 @@ const columns: MenuColumn[] = [
         items: [
             {
                 title: "Digital Portals",
-                subtitle: "Portals preserving Buddhist scriptures and making them accessible to all.",
+                subtitle: "Portals with Buddhist scriptures accessible to all.",
                 href: "/resources/digital-portals",
                 Icon: Stars02,
             },

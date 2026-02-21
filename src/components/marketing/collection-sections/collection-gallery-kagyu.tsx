@@ -61,9 +61,9 @@ const collectionTexts = [
         genre: "PRAJNAPARAMITA",
     },
     {
+        english_title: "Commentary on the Treasury of Abhidharma: The Essence of the Ocean of Abhidharma",
         tibetan_title: "ཆོས་མངོན་པ་མཛོད་ཀྱི་རྣམ་པར་བཤད་པ་ཆོས་མངོན་རྒྱ་མཚོའི་སྙིང་པོ་མཁྱེན་བརྩེའི་ཞལ་ལུང་གཞོན་ནུ་རྣམ་རོལ་ལེགས་བཤད་ཆོས་མིག་རྣམ་འབྱེད་གྲུབ་བདེའི་ཤིང་རྟ།",
         author_tibetan: "དབང་ཕྱུག་རྡོ་རྗེ།",
-        english_title: "An Explanation of the Treasury of Abhidharma called the Essence of the Ocean of Abhidharma",
         author_english: "Wangchuk Dorje",
         short_description: "Concised commentary on Maitraya-Asanga's Abhisamayalamkara.",
         thumbnailCover: "/textCovers/wangchuk-dorje-600.jpg",

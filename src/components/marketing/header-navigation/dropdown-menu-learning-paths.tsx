@@ -31,19 +31,19 @@ const columns: MenuColumn[] = [
             {
                 title: "Academic Paths",
                 subtitle: "Systematic studies of the awakening of the Buddha.",
-                href: "/resources/study-centers",
+                href: "/",
                 Icon: Stars02,
             },
             {
                 title: "Practice Paths",
                 subtitle: "Practices and methods to transform your reality and the world.",
-                href: "/resources/digital-portals",
+                href: "/",
                 Icon: Stars02,
             },
         ],
     },
     {
-        title: "Community",
+        title: "Curricula and Directories",
         items: [
             {
                 title: "Buddhist Curricula Overview",
@@ -54,7 +54,7 @@ const columns: MenuColumn[] = [
             {
                 title: "Where to Study",
                 subtitle: "Find a study center or an online course around the world.",
-                href: "/",
+                href: "/resources/study-centers",
                 Icon: FileCode01,
             },
         ],
