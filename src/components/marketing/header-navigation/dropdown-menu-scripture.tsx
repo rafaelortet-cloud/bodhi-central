@@ -1,7 +1,7 @@
 "use client";
 
 import type { FC, ReactNode } from "react";
-import { BookClosed, BookOpen01, FileCode01, Stars02 } from "@untitledui/icons";
+import { BookOpen01, Link03, Hurricane01 } from "@untitledui/icons";
 import { Button } from "@/components/base/buttons/button";
 import { NavMenuItemLink } from "./base-components/nav-menu-item";
 
@@ -26,7 +26,7 @@ const columns: MenuColumn[] = [
                 title: "Theravada Tradition",
                 subtitle: "The Pali Canon, the earliest Buddhist scriptures.",
                 href: "/scripture/theravada-tradition",
-                Icon: BookClosed,
+                Icon: BookOpen01,
             },
             {
                 title: "Tibetan Studies",
@@ -38,7 +38,7 @@ const columns: MenuColumn[] = [
                 title: "Tibetan Canons",
                 subtitle: "The Kangyur and Tengyur, the Tibetan Buddhist canons.",
                 href: "/scripture/tibetan-canons",
-                Icon: BookClosed,
+                Icon: BookOpen01,
             },
         ],
     },
@@ -49,13 +49,13 @@ const columns: MenuColumn[] = [
                 title: "Traditions at a glance",
                 subtitle: "Many traditions with intertwined goals, an historical timeline.",
                 href: "/",
-                Icon: FileCode01,
+                Icon: Hurricane01,
             },
             {
                 title: "Connections",
                 subtitle: "Scriptural connections and parallels.",
                 href: "/",
-                Icon: Stars02,
+                Icon: Link03,
             },
         ],
     },

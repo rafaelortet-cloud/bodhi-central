@@ -1,7 +1,7 @@
 "use client";
 
 import type { FC, ReactNode } from "react";
-import { BookClosed, BookOpen01, FileCode01, Stars02, } from "@untitledui/icons";
+import { BookOpen01, Stars02, GraduationHat01, Telescope, Target04, MagicWand02 } from "@untitledui/icons";
 import { Button } from "@/components/base/buttons/button";
 import { NavMenuItemLink } from "./base-components/nav-menu-item";
 
@@ -25,20 +25,20 @@ const columns: MenuColumn[] = [
             {
                 title: "Foundational Paths",
                 subtitle: "Immerse yourself in the fundamental theories and principles of the journey.",
-                href: "#",
-                Icon: BookClosed,
+                href: "/",
+                Icon: MagicWand02,
             },
             {
                 title: "Academic Paths",
                 subtitle: "Systematic studies of the awakening of the Buddha.",
                 href: "/",
-                Icon: Stars02,
+                Icon: Telescope,
             },
             {
                 title: "Practice Paths",
                 subtitle: "Practices and methods to transform your reality and the world.",
                 href: "/",
-                Icon: Stars02,
+                Icon: Target04,
             },
         ],
     },
@@ -49,13 +49,13 @@ const columns: MenuColumn[] = [
                 title: "Buddhist Curricula Overview",
                 subtitle: "A visual exploration of modern and traditional Buddhist curricula.",
                 href: "/",
-                Icon: Stars02,
+                Icon: GraduationHat01,
             },
             {
                 title: "Where to Study",
                 subtitle: "Find a study center or an online course around the world.",
                 href: "/resources/study-centers",
-                Icon: FileCode01,
+                Icon: GraduationHat01,
             },
         ],
     },

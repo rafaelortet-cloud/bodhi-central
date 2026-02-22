@@ -1,7 +1,7 @@
 "use client";
 
 import type { FC, ReactNode } from "react";
-import { BookClosed, BookOpen01, Codepen, FileCode01, LifeBuoy01, PlayCircle, Stars02 } from "@untitledui/icons";
+import { BookOpen01, LifeBuoy01, PlayCircle, FileQuestion01, UsersPlus, Building08, Certificate02 } from "@untitledui/icons";
 import { Button } from "@/components/base/buttons/button";
 import { NavMenuItemLink } from "./base-components/nav-menu-item";
 
@@ -24,38 +24,38 @@ const columns: MenuColumn[] = [
         items: [
             {
                 title: "The Blog",
-                subtitle: "Read articles distiling wisdom and caring for the world",
+                subtitle: "Read articles distiling kindlul wisdom and caring for the world",
                 href: "/resources/blog",
-                Icon: PlayCircle,
+                Icon: Certificate02,
             },
             {
                 title: "Join our Forum",
                 subtitle: "Engage in conversations and share knowledge with others.",
                 href: "/",
-                Icon: Stars02,
+                Icon: UsersPlus,
             },
             {
                 title: "Documentation",
                 subtitle: "In-depth articles on our tools and technologies to empower users.",
                 href: "/",
-                Icon: FileCode01,
+                Icon: FileQuestion01,
             },
         ],
     },
     {
-        title: "Support",
+        title: "Community and Support",
         items: [
             {
                 title: "Digital Portals",
-                subtitle: "Portals with Buddhist scriptures accessible to all.",
+                subtitle: "Portals of Buddhist scriptures accessible to all.",
                 href: "/resources/digital-portals",
-                Icon: Stars02,
+                Icon: BookOpen01,
             },
             {
                 title: "Groups Around You",
                 subtitle: "A global directory of Buddhist groups and communities.",
                 href: "/resources/community",
-                Icon: BookClosed,
+                Icon: Building08,
             },
             {
                 title: "Help and support",
@@ -79,7 +79,7 @@ export const DropdownMenuResources = () => {
 
                     <div className="flex flex-col gap-5 md:flex-row md:gap-8 md:py-0">
                         <div className="-mb-px flex flex-col gap-4 border-b border-b-secondary px-4 pb-5 md:mb-0 md:gap-5 md:border-none md:p-0">
-                            <h3 className="text-sm font-semibold text-brand-700 dark:text-brand-300">Quick Links</h3>
+                            <h3 className="text-sm font-semibold text-brand-700 dark:text-brand-300">Quick Help Links</h3>
                             <ul className="flex flex-col gap-3">
                                 {[
                                     { title: "Using the Desk", href: "#" },

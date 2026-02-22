@@ -129,7 +129,7 @@ const collectionTexts = [
         author_tibetan: "འཇམ་མགོན་ཀོང་སྤྲུལ།",
         author_english: "Jamgön Kongtrul",
         short_description: "The main emphasis of this tantra is on the various types and expressions of conduct in the Vajrayana.",
-        thumbnailCover: "/textCovers/mikyo-dorje-vol-3-600.jpg",
+        thumbnailCover: "/textCovers/mikyo-dorje-vol-2-600.jpg",
         genre: "Vajrayana",
     },
 ];

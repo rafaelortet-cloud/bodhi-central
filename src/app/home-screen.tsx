@@ -29,19 +29,19 @@ export const HomeScreen = () => {
 
             <section className="relative py-10 md:pb-10 bg-[url(/monk-seated-in-meditation-under-forest-tree-1920.webp)] bg-cover bg-center">
                 {/* Overlay layer for easy customization of color/transparency */}
-                <div className="absolute inset-0 bg-white/10 dark:bg-black/62 z-0" aria-hidden="true" />
+                <div className="absolute inset-0 bg-white/5 dark:bg-black/62 z-0" aria-hidden="true" />
 
 
                 <img
                     alt="Light Accent"
                     aria-hidden="true"
                     src="https://www.untitledui.com/marketing/light-accent.webp"
-                    className="absolute z-20 -right-0 -bottom-14 max-w-160 opacity-50 mix-blend-multiple md:right-10 md:-bottom-1/3 md:max-w-7xl mask-b-from-90% mask-b-to-100%"
+                    className="absolute z-20 -right-10 -bottom-14 max-w-160 opacity-30 mix-blend-multiple md:right-10 md:-bottom-1/3 md:max-w-7xl mask-b-from-90% mask-b-to-100% scale-x-[-1]"
                 />
                 <div className="relative mx-auto grid max-w-container grid-cols-1 gap-16 px-4 md:px-8 lg:min-h-150 lg:items-center">
                     <div className="z-10 flex max-w-2xl flex-col items-start">
-                        <span className="text-sm font-semibold text-brand-300 dark:text-brand-200 md:text-md">Open. Inclusive. Relevant.</span>
-                        <h1 className="text-display-md font-semibold text-brand-25 dark:text-brand-300 md:text-display-lg lg:text-display-xl text-shadow-lg text-shadow-gray-500 dark:text-shadow-gray-950">
+                        <span className="text-sm font-bold text-brand-200 dark:text-brand-200 md:text-md">Open. Inclusive. Relevant.</span>
+                        <h1 className="text-display-md text-brand-25 dark:text-brand-300 md:text-display-lg lg:text-display-xl text-shadow-md text-shadow-gray-700 dark:text-shadow-gray-950">
                             Gateways to Buddhist paths of the Awakening
                         </h1>
                         <p className="mt-4 max-w-xl text-lg text-balance text-brand-100 dark:text-brand-100 md:mt-6 md:text-xl">

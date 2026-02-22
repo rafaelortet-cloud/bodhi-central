@@ -56,7 +56,14 @@ export const FeaturesAlternatingLayout01 = () => {
                     </div>
 
                     <div className="relative w-full flex-1 lg:h-128">
+                        <img
+                            alt="Light Accent"
+                            aria-hidden="true"
+                            src="https://www.untitledui.com/marketing/light-accent.webp"
+                            className="absolute z-0 -right-0 -bottom-14 max-w-160 opacity-60 mix-blend-multiple md:right-10 md:-bottom-1/3 md:max-w-7xl mask-b-from-90% mask-b-to-100%"
+                        />
                         <AlternateImageMockup className="lg:left-0">
+
                             {/* Light mode image (hidden in dark mode) */}
                             <img
                                 alt="Scripture mockup showing Collections interface"
@@ -78,13 +85,13 @@ export const FeaturesAlternatingLayout01 = () => {
                         <FeaturedIcon icon={TrendUp01} size="lg" color="gray" theme="modern-neue" />
                         <h3 className="mt-5 text-display-xs text-primary md:text-display-sm">Pathways of Study and Practice</h3>
                         <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">
-                            Accessing Buddha's teachings has become easier than ever. Yet, navigating and making sense of the vast amount of literature and teachings available today can be overwhelming and complicated. We are changing that!
+                            Accessing Buddha's teachings has become easier than ever. Yet, navigating and making sense of the vast amount of literature and teachings available today can be overwhelming and complicated without the right guidance.
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
                                 "Discover the foundational pathways providing a solid understanding of the Buddhist core theories and principles",
-                                "Explore accessible academic and scholarly pathways (shedra), your truthworthy companions for in-depth study and research",
-                                "Engage in practice pathways (samatha, vipassana, etc.) brought to you by the living Buddhist traditions to support your spiritual journey",
+                                "Explore accessible academic and scholarly paths (shedra studies), your truthworthy companions for in-depth study and research",
+                                "Engage in practice paths (samatha, vipassana, etc.) brought to you by the living Buddhist traditions to support your spiritual journey",
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
                             ))}
@@ -129,6 +136,12 @@ export const FeaturesAlternatingLayout01 = () => {
                     </div>
 
                     <div className="relative w-full flex-1 lg:h-128">
+                        <img
+                            alt="Light Accent"
+                            aria-hidden="true"
+                            src="https://www.untitledui.com/marketing/light-accent.webp"
+                            className="absolute z-0 -right-4 -bottom-14 max-w-160 opacity-60 mix-blend-multiple md:-right-20 md:-bottom-1/3 md:max-w-7xl mask-b-from-90% mask-b-to-100% scale-x-[-1]"
+                        />
                         <AlternateImageMockup className="lg:left-0">
                             {/* Light mode image (hidden in dark mode) */}
                             <img
