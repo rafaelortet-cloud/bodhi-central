@@ -15,6 +15,8 @@ const collectionTexts = [
         thumbnailCover: "/textCovers/buddha-sakyamuni-DN-600.jpg",
         pitaka_section: "Dīgha Nikāya",
         section_numbers: "DN 1-13",
+        color: "bg-orange-950/65",
+        darkColor: "dark:bg-orange-900/50",
     },
     {
         english_title: "The Great Chapter",
@@ -25,6 +27,8 @@ const collectionTexts = [
         thumbnailCover: "/textCovers/buddha-sakyamuni-DN-600.jpg",
         pitaka_section: "Dīgha Nikāya",
         section_numbers: "DN 14-23",
+        color: "bg-orange-950/65",
+        darkColor: "dark:bg-orange-900/50",
     },
     {
         english_title: "The Chapter with Pāṭikaputta",
@@ -35,6 +39,8 @@ const collectionTexts = [
         thumbnailCover: "/textCovers/buddha-sakyamuni-DN-600.jpg",
         pitaka_section: "Dīgha Nikāya",
         section_numbers: "DN 24-34",
+        color: "bg-orange-950/65",
+        darkColor: "dark:bg-orange-900/50",
     },
     {
         english_title: "The First Fifty",
@@ -45,6 +51,8 @@ const collectionTexts = [
         thumbnailCover: "/textCovers/buddha-sakyamuni-MN-600.jpg",
         pitaka_section: "Majjhima Nikāya",
         section_numbers: "MN 1-50",
+        color: "bg-yellow-800/70",
+        darkColor: "dark:bg-yellow-800/70",
     },
     {
         english_title: "The Middle Fifty",
@@ -55,6 +63,8 @@ const collectionTexts = [
         thumbnailCover: "/textCovers/buddha-sakyamuni-MN-600.jpg",
         pitaka_section: "Majjhima Nikāya",
         section_numbers: "MN 51-100",
+        color: "bg-yellow-800/70",
+        darkColor: "dark:bg-yellow-800/70",
     },
     {
         english_title: "The Final Fifty",
@@ -65,6 +75,8 @@ const collectionTexts = [
         thumbnailCover: "/textCovers/buddha-sakyamuni-MN-600.jpg",
         pitaka_section: "Majjhima Nikāya",
         section_numbers: "MN 101-152",
+        color: "bg-yellow-800/70",
+        darkColor: "dark:bg-yellow-800/70",
     },
     {
         english_title: "The Group of Linked Discourses With Verses",
@@ -75,6 +87,8 @@ const collectionTexts = [
         thumbnailCover: "/textCovers/buddha-sakyamuni-SN-600.jpg",
         pitaka_section: "Saṁyutta Nikāya",
         section_numbers: "SN 1-11",
+        color: "bg-emerald-900/70",
+        darkColor: "dark:bg-emerald-900/70",
     },
     {
         english_title: "The Group of Linked Discourses Beginning With Causation",
@@ -85,6 +99,8 @@ const collectionTexts = [
         thumbnailCover: "/textCovers/buddha-sakyamuni-SN-600.jpg",
         pitaka_section: "Saṁyutta Nikāya",
         section_numbers: "SN 12-21",
+        color: "bg-emerald-900/70",
+        darkColor: "dark:bg-emerald-900/70",
     },
     {
         english_title: "The Group of Linked Discourses Beginning With the Aggregates",
@@ -95,6 +111,8 @@ const collectionTexts = [
         thumbnailCover: "/textCovers/buddha-sakyamuni-SN-600.jpg",
         pitaka_section: "Saṁyutta Nikāya",
         section_numbers: "SN 22-34",
+        color: "bg-emerald-900/70",
+        darkColor: "dark:bg-emerald-900/70",
     },
     {
         english_title: "The Group of Linked Discourses Beginning With the Six Sense Fields",
@@ -105,6 +123,8 @@ const collectionTexts = [
         thumbnailCover: "/textCovers/buddha-sakyamuni-SN-600.jpg",
         pitaka_section: "Saṁyutta Nikāya",
         section_numbers: "SN 35-44",
+        color: "bg-emerald-900/70",
+        darkColor: "dark:bg-emerald-900/70",
     },
     {
         english_title: "The Group of Linked Discourses on the Path",
@@ -115,6 +135,32 @@ const collectionTexts = [
         thumbnailCover: "/textCovers/buddha-sakyamuni-SN-600.jpg",
         pitaka_section: "Saṁyutta Nikāya",
         section_numbers: "SN 45-56",
+        color: "bg-emerald-900/70",
+        darkColor: "dark:bg-emerald-900/70",
+    },
+    {
+        english_title: "Numbered Discourses: The Book of the Ones, and so on",
+        pali_title: "Ekakanipāta, and so on",
+        author_pali: "Buddha Shakyamuni",
+        canon: "Numbered Discourses",
+        short_description: "The “Numbered” or “Numerical” Discourses are usually known as Aṅguttara Nikāya in Pali, abbreviated AN. However, the Pali tradition also knows the form Ekottara (“one-up” or “incremental”), and this is the form usually found in the northern collections. These collections organize texts in numbered sets, from one to eleven. Compared to the other nikāyas, they are more oriented to the lay community. ",
+        thumbnailCover: "/textCovers/buddha-sakyamuni-AN-600.jpg",
+        pitaka_section: "Aṅguttaranikāya",
+        section_numbers: "AN 1-11",
+        color: "bg-red-900/70",
+        darkColor: "dark:bg-red-900/70",
+    },
+    {
+        english_title: "Minor Collection",
+        pali_title: "Khuddakanikāya",
+        author_pali: "Buddha Shakyamuni",
+        canon: "Minor Collection",
+        short_description: "The word khuddaka means “lesser” or “minor”, and it seems that this category originally served to collect certain short collections, mostly verse, that were not conveniently assigned to one of the main nikāyas. Over time, however, the collection grew, so that the Khuddaka in the Pali canon today is the largest of the nikāyas. It includes some of the most popular texts in Theravāda Buddhism, such as the Dhammapada, the Sutta Nipāta, and the Jātakas. There is no closely parallel collection in the other canons, but many of the early texts have parallels in various places.",
+        thumbnailCover: "/textCovers/buddha-sakyamuni-KN-600.jpg",
+        pitaka_section: "Khuddakanikāya",
+        section_numbers: "KN 1-9 and others",
+        color: "bg-gray-900/70",
+        darkColor: "dark:bg-gray-900/70",
     },
 ];
 
@@ -151,7 +197,7 @@ export const CollectionGallerySuttaPitaka = () => {
                                 <img alt={text.pali_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-[-1] cursor-grab object-cover rounded-sm" />
 
                                 <div className="z-10 bg-linear-to-t from-black/30 to-black/0 pt-16 md:pt-20 lg:pt-24 rounded-b-sm">
-                                    <div className="relative bg-orange-900/50 px-4 pt-5 pb-4 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-4 rounded-b-sm">
+                                    <div className={`relative ${text.color} ${text.darkColor} px-4 pt-5 pb-4 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-4 rounded-b-sm`}>
                                         <h3 className="text-lg font-medium text-brand-200">{text.english_title}</h3>
                                         <p className="tibetan-text mt-1 text-lg">{text.pali_title}</p>
                                         <p className="mt-4 text-xs font-regular">{text.canon}</p>
