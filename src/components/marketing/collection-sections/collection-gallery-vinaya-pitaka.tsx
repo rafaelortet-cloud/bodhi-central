@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, ArrowRight } from "@untitledui/icons";
+import { ArrowLeft, ArrowRight, Dataflow01 } from "@untitledui/icons";
 import { Carousel } from "@/components/application/carousel/carousel-base";
 import { Button } from "@/components/base/buttons/button";
 import { RoundButton } from "@/components/marketing/testimonials/round-button";
@@ -15,6 +15,8 @@ const collectionTexts = [
         thumbnailCover: "/textCovers/buddha-sakyamuni-vol-1-600.jpg",
         pitaka_section: "Sutta-vibhaṅga",
         section_numbers: "Bu Pj 1 - Bu Ay 2",
+        color: "bg-cyan-950/65",
+        darkColor: "dark:bg-cyan-900/65",
     },
     {
         english_title: "Analysis of Rules for Monks (Part 2: Light oﬀenses, or lahukāpatti)",
@@ -25,6 +27,8 @@ const collectionTexts = [
         thumbnailCover: "/textCovers/buddha-sakyamuni-vol-2-600.jpg",
         pitaka_section: "Sutta-vibhaṅga",
         section_numbers: "Bu Np 1 - Bu As 1-7",
+        color: "bg-cyan-950/65",
+        darkColor: "dark:bg-cyan-900/65",
     },
     {
         english_title: "Analysis of Rules for Nuns",
@@ -35,6 +39,8 @@ const collectionTexts = [
         thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         pitaka_section: "Sutta-vibhaṅga",
         section_numbers: "Bi Pj 1 - Bi As 1-7",
+        color: "bg-cyan-950/65",
+        darkColor: "dark:bg-cyan-900/65",
     },
     {
         english_title: "The Great Division",
@@ -45,6 +51,8 @@ const collectionTexts = [
         thumbnailCover: "/textCovers/buddha-sakyamuni-zoom-in-xl-600.jpg",
         pitaka_section: "KHANDHAKAS",
         section_numbers: "KD 1-10",
+        color: "bg-fuchsia-950/65",
+        darkColor: "dark:bg-fuchsia-900/65",
     },
     {
         english_title: "The Lesser Division",
@@ -55,6 +63,8 @@ const collectionTexts = [
         thumbnailCover: "/textCovers/buddha-sakyamuni-zoom-in-xl-600.jpg",
         pitaka_section: "KHANDHAKAS",
         section_numbers: "KD 11-22",
+        color: "bg-fuchsia-950/65",
+        darkColor: "dark:bg-fuchsia-900/65",
     },
     {
         english_title: "The Compendium",
@@ -65,12 +75,14 @@ const collectionTexts = [
         thumbnailCover: "/textCovers/buddha-sakyamuni-zoom-in-2xl-600.jpg",
         pitaka_section: "PARIVĀRA",
         section_numbers: "Pvr 1-21",
+        color: "bg-red-900/65",
+        darkColor: "dark:bg-red-900/65",
     },
 ];
 
 export const CollectionGalleryVinayaPitaka = () => {
     return (
-        <section className="relative overflow-hidden -mt-28 z-100 bg-linear-to-b from-orange-25/0 from-0% via-orange-50 via-9% to-orange-50 to-100% dark:bg-linear-to-b dark:from-gray-950/0 dark:from-0% dark:via-gray-950 dark:via-9% dark:to-orange-950 py-6 md:py-10">
+        <section className="relative overflow-hidden -mt-28 z-100 bg-linear-to-b from-orange-25/0 from-0% via-orange-50 via-9% to-orange-100 to-100% dark:bg-linear-to-b dark:from-gray-950/0 dark:from-0% dark:via-gray-950 dark:via-9% dark:to-orange-950 py-6 md:py-10">
             <div className="mx-auto px-4 md:px-8">
                 <div className="flex w-full flex-col justify-between md:flex-row">
                     <div className="flex flex-1 flex-col max-w-280 pr-4 md:pr-24">
@@ -80,8 +92,8 @@ export const CollectionGalleryVinayaPitaka = () => {
                         </p>
                     </div>
                     <div className="mt-8 flex flex-col gap-3 self-stretch md:mt-0 md:flex-row-reverse md:justify-center md:self-start">
-                        <Button color="secondary" size="md">
-                            See Vinaya Outline
+                        <Button color="secondary" size="xl" iconLeading={Dataflow01}>
+                            Vinayapiṭaka Outline
                         </Button>
                     </div>
                 </div>
@@ -96,12 +108,12 @@ export const CollectionGalleryVinayaPitaka = () => {
                         {collectionTexts.map((text) => (
                             <Carousel.Item
                                 key={text.english_title}
-                                className="relative flex aspect-[.5625] w-full max-w-56 flex-col justify-end md:aspect-[.5625] md:max-w-68 drop-shadow-lg border-2 border-orange-300 dark:border-orange-900 rounded-xl overflow-hidden"
+                                className="relative flex aspect-[.5625] w-full max-w-56 flex-col justify-end md:aspect-[.5625] md:max-w-68 drop-shadow-lg border-2 border-orange-300 dark:border-red-950 rounded-xl overflow-hidden"
                             >
                                 <img alt={text.pali_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-[-1] cursor-grab object-cover rounded-sm" />
 
                                 <div className="z-10 bg-linear-to-t from-black/30 to-black/0 pt-16 md:pt-20 lg:pt-24 rounded-b-sm">
-                                    <div className="relative bg-orange-900/50 px-5 pt-5 pb-4 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5 rounded-b-sm">
+                                    <div className={`relative ${text.color} ${text.darkColor} px-5 pt-5 pb-4 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5 rounded-b-sm`}>
                                         <h3 className="text-lg font-medium text-brand-200">{text.english_title}</h3>
                                         <p className="tibetan-text mt-1 text-lg">{text.pali_title}</p>
                                         <p className="mt-4 text-xs font-regular">{text.canon}</p>

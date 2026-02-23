@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, ArrowRight } from "@untitledui/icons";
+import { ArrowLeft, ArrowRight, Dataflow01 } from "@untitledui/icons";
 import { Carousel } from "@/components/application/carousel/carousel-base";
 import { Button } from "@/components/base/buttons/button";
 import { RoundButton } from "@/components/marketing/testimonials/round-button";
@@ -258,8 +258,8 @@ export const CollectionGalleryTengyurSections = () => {
                         </p>
                     </div>
                     <div className="mt-8 flex flex-col gap-3 self-stretch md:mt-0 md:flex-row-reverse md:justify-center md:self-start">
-                        <Button color="secondary" size="md">
-                            Degé Tengyur Outline
+                        <Button color="secondary" size="xl" iconLeading={Dataflow01}>
+                            Tengyur Outline
                         </Button>
                     </div>
                 </div>

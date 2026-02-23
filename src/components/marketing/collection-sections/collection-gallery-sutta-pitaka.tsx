@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, ArrowRight } from "@untitledui/icons";
+import { ArrowLeft, ArrowRight, Dataflow01 } from "@untitledui/icons";
 import { Carousel } from "@/components/application/carousel/carousel-base";
 import { Button } from "@/components/base/buttons/button";
 import { RoundButton } from "@/components/marketing/testimonials/round-button";
@@ -16,7 +16,7 @@ const collectionTexts = [
         pitaka_section: "Dīgha Nikāya",
         section_numbers: "DN 1-13",
         color: "bg-orange-950/65",
-        darkColor: "dark:bg-orange-900/50",
+        darkColor: "dark:bg-orange-900/70",
     },
     {
         english_title: "The Great Chapter",
@@ -28,7 +28,7 @@ const collectionTexts = [
         pitaka_section: "Dīgha Nikāya",
         section_numbers: "DN 14-23",
         color: "bg-orange-950/65",
-        darkColor: "dark:bg-orange-900/50",
+        darkColor: "dark:bg-orange-900/70",
     },
     {
         english_title: "The Chapter with Pāṭikaputta",
@@ -40,7 +40,7 @@ const collectionTexts = [
         pitaka_section: "Dīgha Nikāya",
         section_numbers: "DN 24-34",
         color: "bg-orange-950/65",
-        darkColor: "dark:bg-orange-900/50",
+        darkColor: "dark:bg-orange-900/70",
     },
     {
         english_title: "The First Fifty",
@@ -166,7 +166,7 @@ const collectionTexts = [
 
 export const CollectionGallerySuttaPitaka = () => {
     return (
-        <section className="overflow-hidden bg-linear-to-b from-orange-25 to-orange-50 dark:bg-linear-to-b dark:from-gray-950 dark:to-orange-950 py-6 md:py-10">
+        <section className="overflow-hidden bg-linear-to-b from-orange-25 to-orange-100 dark:bg-linear-to-b dark:from-gray-900 dark:to-orange-950 py-6 md:py-10">
             <div className="mx-auto px-4 md:px-8">
                 <div className="flex w-full flex-col justify-between md:flex-row">
                     <div className="flex flex-1 flex-col max-w-280 pr-4 md:pr-24">
@@ -176,8 +176,8 @@ export const CollectionGallerySuttaPitaka = () => {
                         </p>
                     </div>
                     <div className="mt-8 flex flex-col gap-3 self-stretch md:mt-0 md:flex-row-reverse md:justify-center md:self-start">
-                        <Button color="secondary" size="md">
-                            Sutta Piṭaka Outline
+                        <Button color="secondary" size="xl" iconLeading={Dataflow01}>
+                            Suttapiṭaka Outline
                         </Button>
                     </div>
                 </div>
@@ -192,7 +192,7 @@ export const CollectionGallerySuttaPitaka = () => {
                         {collectionTexts.map((text) => (
                             <Carousel.Item
                                 key={text.english_title}
-                                className="relative flex aspect-[.5625] w-full max-w-56 flex-col justify-end md:aspect-[.5625] md:max-w-68 drop-shadow-lg border-2 border-orange-300 dark:border-orange-900 rounded-xl overflow-hidden"
+                                className="relative flex aspect-[.5625] w-full max-w-56 flex-col justify-end md:aspect-[.5625] md:max-w-68 drop-shadow-lg border-2 border-orange-300 dark:border-red-950 rounded-xl overflow-hidden"
                             >
                                 <img alt={text.pali_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-[-1] cursor-grab object-cover rounded-sm" />
 
