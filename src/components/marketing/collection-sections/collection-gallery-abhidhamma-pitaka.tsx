@@ -31,7 +31,7 @@ const collectionTexts = [
         darkColor: "dark:bg-gray-900/75",
     },
     {
-        english_title: "Discourse of Elements",
+        english_title: "Discoursion of Elements",
         pali_title: "Dhātukathā",
         author_pali: "Buddha Shakyamuni",
         canon: "Systematic Treatises",
@@ -120,7 +120,7 @@ export const CollectionGalleryAbhidhammaPitaka = () => {
                         {collectionTexts.map((text) => (
                             <Carousel.Item
                                 key={text.english_title}
-                                className="group relative flex aspect-[.5625] w-full max-w-56 flex-col justify-end md:aspect-[.5625] md:max-w-68 drop-shadow-lg border-2 border-orange-300 dark:border-red-950 rounded-xl overflow-hidden hover:scale-[1.03] transition-all duration-300"
+                                className="group relative flex aspect-[.5625] w-full max-w-60 flex-col justify-end md:aspect-[.5625] md:max-w-72 drop-shadow-lg border-2 border-orange-300 dark:border-red-950 rounded-xl overflow-hidden hover:scale-[1.03] transition-all duration-300"
                             >
                                 <img alt={text.pali_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-[-1] cursor-grab object-cover rounded-sm group-hover:hidden transition-all duration-300" />
 
