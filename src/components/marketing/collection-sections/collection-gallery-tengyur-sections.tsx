@@ -250,6 +250,7 @@ export const CollectionGalleryTengyurSections = () => {
     return (
         <section className="relative overflow-hidden bg-linear-to-b from-mist-50/0 from-0% via-mist-50 via-50% to-mist-200 to-100% dark:bg-linear-to-b dark:from-mist-800 dark:from-0% dark:via-mist-800 dark:via-50% dark:to-mist-950 py-6 md:py-10">
             <div className="mx-auto px-4 md:px-8">
+                {/* <!-- Collection Gallery Header --> */}
                 <div className="flex w-full flex-col justify-between md:flex-row">
                     <div className="flex flex-1 flex-col max-w-280 pr-4 md:pr-24">
                         <h2 className="text-display-md text-primary md:text-display-lg">Tengyur Divisions</h2>
@@ -264,6 +265,7 @@ export const CollectionGalleryTengyurSections = () => {
                     </div>
                 </div>
 
+                {/* <!-- Collection Gallery --> */}
                 <Carousel.Root
                     className="mt-4 md:mt-6"
                     opts={{

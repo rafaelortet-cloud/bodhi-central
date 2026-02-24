@@ -138,6 +138,7 @@ export const CollectionGalleryKagyu = () => {
     return (
         <section className="overflow-hidden bg-linear-to-b from-pink-25 to-pink-50 dark:bg-linear-to-b dark:from-black dark:to-pink-950 py-6 md:py-10">
             <div className="mx-auto px-4 md:px-8">
+                {/* <!-- Collection Gallery Header --> */}
                 <div className="flex w-full flex-col justify-between md:flex-row">
                     <div className="flex flex-1 flex-col max-w-280 pr-4 md:pr-24">
                         <h2 className="text-display-md text-primary md:text-display-lg">Kagyu Studies</h2>
@@ -152,7 +153,7 @@ export const CollectionGalleryKagyu = () => {
                         </Button>
                     </div>
                 </div>
-
+                {/* Collection Tibetan Texts Gallery */}
                 <Carousel.Root
                     className="mt-4 md:mt-6"
                     opts={{

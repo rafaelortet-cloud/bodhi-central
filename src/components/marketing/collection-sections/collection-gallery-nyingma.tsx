@@ -78,6 +78,7 @@ export const CollectionGalleryNyingma = () => {
     return (
         <section className="overflow-hidden bg-linear-to-b from-cyan-25 to-cyan-50 dark:bg-linear-to-b dark:from-black dark:to-cyan-950 py-6 md:py-10">
             <div className="mx-auto px-4 md:px-8">
+                {/* <!-- Collection Gallery Header --> */}
                 <div className="flex w-full flex-col justify-between md:flex-row">
                     <div className="flex flex-1 flex-col max-w-280 pr-4 md:pr-24">
                         <h2 className="text-display-md text-primary md:text-display-lg">Nyingma Studies</h2>
@@ -92,6 +93,7 @@ export const CollectionGalleryNyingma = () => {
                     </div>
                 </div>
 
+                {/* <!-- Collection Gallery --> */}
                 <Carousel.Root
                     className="mt-4 md:mt-6"
                     opts={{
