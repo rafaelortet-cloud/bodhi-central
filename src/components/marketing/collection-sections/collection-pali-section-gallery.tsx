@@ -26,6 +26,17 @@ interface CollectionPaliSectionGalleryProps {
     pitakaType: "vinaya" | "sutta" | "abhidhamma";
 }
 
+const TAILWIND_COLOR_SAFELIST = [
+    "bg-cyan-950/70", "dark:bg-cyan-900/70",
+    "bg-fuchsia-950/70", "dark:bg-fuchsia-900/70",
+    "bg-red-900/70", "dark:bg-red-900/70",
+    "bg-orange-950/65", "dark:bg-orange-900/70",
+    "bg-yellow-800/70", "dark:bg-yellow-800/70",
+    "bg-emerald-900/70", "dark:bg-emerald-900/70",
+    "bg-gray-900/70", "dark:bg-gray-900/70",
+    "bg-gray-900/65", "dark:bg-gray-900/75"
+];
+
 const PaliSectionCard = ({ section }: { section: PaliSection }) => {
     const [isFlipped, setIsFlipped] = useState(false);
 
@@ -38,7 +49,7 @@ const PaliSectionCard = ({ section }: { section: PaliSection }) => {
             <img
                 alt={section.pali_title}
                 src={section.thumbnail_cover}
-                className={`absolute inset-0 z-0 size-full top-[-1] cursor-grab object-cover rounded-sm ${isFlipped ? "opacity-0 invisible" : "group-hover:opacity-0 group-hover:invisible"}`}
+                className={`absolute inset-0 z-0 size-full top-0 cursor-grab object-cover rounded-sm ${isFlipped ? "opacity-0 invisible" : "group-hover:opacity-0 group-hover:invisible"}`}
             />
 
             <div className={`z-10 bg-linear-to-t from-black/30 to-black/0 pt-16 md:pt-20 lg:pt-24 rounded-b-sm ${isFlipped ? "opacity-0 invisible" : "group-hover:opacity-0 group-hover:invisible"}`}>
