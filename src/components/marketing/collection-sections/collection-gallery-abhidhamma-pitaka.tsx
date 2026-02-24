@@ -10,8 +10,8 @@ const collectionTexts = [
         english_title: "Compendium of Phenomena",
         pali_title: "Dhammasaṅgaṇī",
         author_pali: "Buddha Shakyamuni",
-        canon: "Pali Canon",
-        short_description: "The first part of the Vinaya Piṭaka is known as the Sutta-vibhaṅga,which can be rendered as the Analysis of the Sutta.In this context the word sutta does not mean a discourse of the Buddha, but refers to the Pātimokkha, the Monastic Code, which consists of the rules of conduct that form the kernel of the Sutta-vibhaṅga.14 The Sutta vibhaṅga, then, is the analysis of the rules of the Pātimokkha.",
+        canon: "Systematic Treatises",
+        short_description: "The Dhammasaṅgaṇī (Compendium of Phenomena) is built on the idea of a mātikā, a lists of contents or matrix. A mātikā acts as a simple instance of a template that is applied and transformed in ever more complex forms throughout the work. The Dhammasaṅgaṇī mātikās list sets of phenomena (dhammas). Most of these are doctrinal terms familiar from the suttas, although some are specialized Abhidhamma terms. The Dhammasaṅgaṇī starts with three mātikās. The first classifies dhammas into 22 sets of three (tika), and the next two use sets of two (duka), 100 pairs for Abhidhamma terms, and 42 for Sutta terms.",
         thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         pitaka_section: "Abhidhamma",
         section_numbers: "Ds",
@@ -22,8 +22,8 @@ const collectionTexts = [
         english_title: "Book of Analysis",
         pali_title: "Vibhaṅga",
         author_pali: "Buddha Shakyamuni",
-        canon: "Pali Canon",
-        short_description: "This volume contains the second and last part of the Bhikkhu-vibhaṅga, “the Monks’ Analysis”. Whereas the first volume contains the heavy oﬀenses of pārājika and saṅghādisesa, also known as garukāpatti, the current volume contains the light oﬀenses, or lahukāpatti.",
+        canon: "Systematic Treatises",
+        short_description: "The Vibhaṅga (Book of Analysis) consists of 18 chapters arranged by topic. The list of topics is closely related to the Saṁyutta Nikāya—aggregates, senses, dependent origination, etc. Most of the chapters have a threefold structure. (1) Analysis according to the suttas: this quotes a key passage from the suttas on the relvant topic and offers a modest analysis. (2) Analysis according to the Abhidhamma: applies the sets of synonyms and terms as developed in the Dhammasaṅgaṇī. (3) Catechism: tests the students knowledge with systematic questioning.",
         thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         pitaka_section: "Abhidhamma",
         section_numbers: "Vb",
@@ -34,8 +34,8 @@ const collectionTexts = [
         english_title: "Discourse of Elements",
         pali_title: "Dhātukathā",
         author_pali: "Buddha Shakyamuni",
-        canon: "Pali Canon",
-        short_description: "This volume consists of the Bhikkhunī-vibhaṅga, the Nuns’ Pātimokkha rules and their analysis.",
+        canon: "Systematic Treatises",
+        short_description: "The Dhātukathā (Discussion of Elements) shows how the mātikās relate to the 5 aggregates, 12 bases and 18 elements. It is organized according to fourteen methods.",
         thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         pitaka_section: "Abhidhamma",
         section_numbers: "Dt",
@@ -46,8 +46,8 @@ const collectionTexts = [
         english_title: "Description of Personality Types",
         pali_title: "Puggalapaññatti",
         author_pali: "Buddha Shakyamuni",
-        canon: "Pali Canon",
-        short_description: "This volume consists of the Bhikkhunī-vibhaṅga, the Nuns’ Pātimokkha rules and their analysis.",
+        canon: "Systematic Treatises",
+        short_description: "The Puggalapaññatti (Designation of Person) departs from the strictly phenomenological approach of most Abhidhamma texts to present a compendium of passages relating to different kinds of individual. These are set out in a mātikā listing kinds of individuals numerically organized from one to ten. As suggested by the numerical arrangement, these terms are mostly derived from the Aṅguttara Nikāya, with modest changes in wording. The main concern is to classify personal or psychological tendencies as they relate to the development of the Buddhist path.",
         thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         pitaka_section: "Abhidhamma",
         section_numbers: "Pp",
@@ -58,8 +58,8 @@ const collectionTexts = [
         english_title: "Points of Controversy",
         pali_title: "Kathāvatthu",
         author_pali: "Buddha Shakyamuni",
-        canon: "Pali Canon",
-        short_description: "The Lesser Division is the second of the Khandhakas, and is more concerned with lesser regulations and the working our of details.",
+        canon: "Systematic Treatises",
+        short_description: "The Kathāvatthu (Points of Controversy) is a collection of over 200 discussions on points of interpretation of Buddhist doctrine. These consist of a debate between unnamed protagonists. Each relies either on logic or quotations from the suttas to support their arguments. Some of the discussions concern central problems in Buddhist philosophy, such as the nature of not-self, or the problem of continuity and impermanence. Many, however, are very minor.",
         thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         pitaka_section: "Abhidhamma",
         section_numbers: "Kv",
@@ -70,8 +70,8 @@ const collectionTexts = [
         english_title: "The Pairs",
         pali_title: "Yamaka",
         author_pali: "Buddha Shakyamuni",
-        canon: "Pali Canon",
-        short_description: "The Parivāra is a detailed and condensed systematization of the most important rules and regulations of the first five volumes of the Vinaya.",
+        canon: "Systematic Treatises",
+        short_description: "The Yamaka (Pairs) consists of ten chapters on different topics, starting with the roots of wholesome or unwholesome conduct. It applies a series of pairs of questions, with the object of fully determining the scope of application of terms. For example, are all rūpa (physical phenomena) part of the aggregate of physical phenomena? No, because there are idiomatic uses of rūpa such as evarūpa (“of such a sort”). But are all instances of the aggregate of physical phenomena? Yes.",
         thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         pitaka_section: "Abhidhamma",
         section_numbers: "Ya",
@@ -82,8 +82,8 @@ const collectionTexts = [
         english_title: "Conditional Relations",
         pali_title: "Paṭṭhāna",
         author_pali: "Buddha Shakyamuni",
-        canon: "Pali Canon",
-        short_description: "The Parivāra is a detailed and condensed systematization of the most important rules and regulations of the first five volumes of the Vinaya.",
+        canon: "Systematic Treatises",
+        short_description: "Paṭṭhāna (Conditional Relations) sets out a simple mātikā listing 24 kinds of condition. For example, the first is the “root condition” (hetupaccayo), dealing with how acts are caused by the unwholesome roots of greed, hate, and delusion, or their opposites. This mātikā is then applied to the mātikās of Dhammasaṅgaṇī, creating a bewildering complexity of possible combinations. The Paṭṭhāna is always heavily abbreviated, but if it were to be fully spelled out, it would probably be the largest book ever created, with many billions of combinations.",
         thumbnailCover: "/textCovers/buddha-sakyamuni-600.jpg",
         pitaka_section: "Abhidhamma",
         section_numbers: "Patthana",
@@ -120,26 +120,35 @@ export const CollectionGalleryAbhidhammaPitaka = () => {
                         {collectionTexts.map((text) => (
                             <Carousel.Item
                                 key={text.english_title}
-                                className="relative flex aspect-[.5625] w-full max-w-56 flex-col justify-end md:aspect-[.5625] md:max-w-68 drop-shadow-lg border-2 border-orange-300 dark:border-red-950 rounded-xl overflow-hidden"
+                                className="group relative flex aspect-[.5625] w-full max-w-56 flex-col justify-end md:aspect-[.5625] md:max-w-68 drop-shadow-lg border-2 border-orange-300 dark:border-red-950 rounded-xl overflow-hidden hover:scale-[1.03] transition-all duration-300"
                             >
-                                <img alt={text.pali_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full cursor-grab object-cover rounded-sm" />
+                                <img alt={text.pali_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-[-1] cursor-grab object-cover rounded-sm group-hover:hidden transition-all duration-300" />
 
-                                <div className="z-10 bg-linear-to-t from-black/30 to-black/0 pt-16 md:pt-20 lg:pt-24 rounded-b-sm">
+                                <div className="z-10 bg-linear-to-t from-black/30 to-black/0 pt-16 md:pt-20 lg:pt-24 rounded-b-sm group-hover:hidden transition-all duration-300">
                                     <div className={`relative ${text.color} ${text.darkColor} px-5 pt-5 pb-4 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5 rounded-b-sm`}>
                                         <h3 className="text-lg font-medium text-brand-200">{text.english_title}</h3>
-                                        <p className="tibetan-text mt-1 text-lg">{text.pali_title}</p>
+                                        <p className="mt-1 text-lg">{text.pali_title}</p>
                                         <p className="mt-4 text-xs font-regular">{text.canon}</p>
-                                        <p className="hidden mt-2 text-sm md:text-sm">{text.short_description}</p>
                                         <div className="flex gap-2 mt-1 justify-between items-top">
                                             <div className="flex flex-col gap-0">
                                                 <p className="text-sm font-normal text-brand-200 uppercase">{text.pitaka_section}</p>
                                                 <p className="text-xs font-normal text-brand-200">{text.section_numbers}</p>
                                             </div>
-                                            <Button size="sm" className="bg-black/20 hover:bg-black/30 border-0.5 border-white/50 hover:border-white/50 text-white/50 hover:text-white/60 dark:bg-gray-900/50 dark:border-gray-900/50 dark:text-gray-400">
-                                                Read
-                                            </Button>
                                         </div>
                                     </div>
+                                </div>
+                                <div className={`hidden z-20 flex flex-col justify-between group-hover:flex ${text.color} ${text.darkColor} backdrop-blur-[10px] h-full transition-all duration-300 text-white p-5 overflow-y-auto`}>
+                                    <div className="flex flex-col gap-2 mt-1 items-top">
+                                        <div className="flex flex-col gap-0">
+                                            <p className="text-sm font-normal pb-2">{text.canon}</p>
+                                            <h3 className="text-lg font-medium text-brand-200">{text.english_title}</h3>
+                                        </div>
+                                        <p className="mt-2 text-sm md:text-regular tracking-tight pb-4">{text.short_description}</p>
+                                    </div>
+
+                                    <Button size="sm" className="bg-black/20 hover:bg-black/30 border-0.5 border-white/50 hover:border-white/50 text-white/50 hover:text-white/60 dark:bg-gray-900/50 dark:border-gray-900/50 dark:text-gray-400">
+                                        Explore section
+                                    </Button>
                                 </div>
                             </Carousel.Item>
                         ))}
