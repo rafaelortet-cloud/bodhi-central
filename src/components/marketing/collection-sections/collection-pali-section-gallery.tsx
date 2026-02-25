@@ -27,16 +27,16 @@ interface CollectionPaliSectionGalleryProps {
 }
 
 const TAILWIND_COLOR_SAFELIST = [
-    "bg-cyan-950/70", "dark:bg-cyan-950/70",
-    "bg-blue-950/70", "dark:bg-blue-950/70",
-    "bg-violet-950/70", "dark:bg-violet-950/80",
+    "bg-cyan-950/80", "dark:bg-cyan-950/80",
+    "bg-blue-950/80", "dark:bg-blue-950/80",
+    "bg-violet-950/80", "dark:bg-violet-950/80",
     "bg-red-900/80", "dark:bg-red-900/80",
     "bg-orange-900/80", "dark:bg-orange-900/80",
-    "bg-yellow-900/80", "dark:bg-yellow-900/80",
-    "bg-lime-900/80", "dark:bg-lime-900/80",
+    "bg-yellow-800/80", "dark:bg-yellow-800/80",
+    "bg-fuchsia-950/80", "dark:bg-fuchsia-950/80",
     "bg-emerald-900/80", "dark:bg-emerald-900/80",
-    "bg-gray-900/70", "dark:bg-gray-900/70",
-    "bg-gray-900/65", "dark:bg-gray-900/75"
+    "bg-gray-800/80", "dark:bg-gray-800/80",
+    "bg-olive-800/80", "dark:bg-olive-800/80"
 ];
 
 const PaliSectionCard = ({ section }: { section: PaliSection }) => {
