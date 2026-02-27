@@ -12,7 +12,7 @@ export const ThreePitakasDiagram = () => {
     return (
         <section className="py-10 md:py-16 bg-linear-to-b from-orange-50 to-orange-100 dark:bg-linear-to-b dark:from-mauve-900 dark:to-orange-950">
             {/* Section Header */}
-            <div className="mx-auto max-w-container px-4 md:px-8 pb-12">
+            <div className="mx-auto max-w-container px-4 md:px-8 pb-6">
                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
                     <span className="text-sm font-semibold text-brand-secondary md:text-md">Pali Canon</span>
                     <h2 className="mt-1 text-display-md font-semibold text-primary md:text-display-lg">The Three Piṭakas at a glance</h2>
@@ -20,7 +20,7 @@ export const ThreePitakasDiagram = () => {
             </div>
 
             {/* Toggle Switch */}
-            <div className="mx-auto max-w-container px-4 md:px-6 pb-4 border-b border-secondary">
+            <div className="mx-auto max-w-container px-4 md:px-8 pb-4 border-b border-secondary">
                 <div className="flex justify-end items-center gap-3">
                     <button
                         onClick={() => setIsRowsLayout(false)}
