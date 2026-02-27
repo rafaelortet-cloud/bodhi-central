@@ -13,7 +13,7 @@ interface PaliSection {
     english_title: string;
     pali_title: string;
     author_pali: string;
-    canon: string;
+    pitaka_section_english: string;
     short_description: string;
     thumbnail_cover: string;
     pitaka_section: string;
@@ -62,7 +62,7 @@ const PaliSectionCard = ({ section }: { section: PaliSection }) => {
                 <div className={`relative ${section.color} ${section.dark_color} px-5 pt-5 pb-4 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5 rounded-b-sm`}>
                     <h3 className="text-lg font-medium text-brand-200">{section.english_title}</h3>
                     <p className="mt-1 text-lg">{section.pali_title}</p>
-                    <p className="mt-4 text-xs font-regular">{section.canon}</p>
+                    <p className="mt-4 text-xs font-regular">{section.pitaka_section_english}</p>
                     <div className="flex gap-2 mt-1 justify-between items-top">
                         <div className="flex flex-col gap-0">
                             <p className="text-sm font-normal text-brand-200 uppercase">{section.pitaka_section}</p>
@@ -83,7 +83,7 @@ const PaliSectionCard = ({ section }: { section: PaliSection }) => {
                 {/* Card Reversed Side */}
                 <div className="flex flex-col gap-2 mt-1 items-top">
                     <div className="flex flex-col gap-0">
-                        <p className="text-sm font-normal pb-2">{section.canon}</p>
+                        <p className="text-sm font-normal pb-2">{section.pitaka_section_english}</p>
                         <h3 className="text-lg font-medium text-brand-200">{section.english_title}</h3>
                     </div>
                     <p className="mt-2 text-sm md:text-regular text-balance pb-4">{section.short_description}</p>

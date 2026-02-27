@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { CollectionGalleryKangyurSections } from '@/components/marketing/collection-sections/collection-gallery-kangyur-sections';
 import { CollectionGalleryTengyurSections } from '@/components/marketing/collection-sections/collection-gallery-tengyur-sections';
 import { Button } from '@/components/base/buttons/button';
+import { TibetanCanonsDiagram } from "@/components/marketing/sections/tibetan-canons-diagram";
 
 export default function TibetanCanonsPage() {
     return (
@@ -44,6 +45,7 @@ export default function TibetanCanonsPage() {
             </div>
             <CollectionGalleryKangyurSections />
             <CollectionGalleryTengyurSections />
+            <TibetanCanonsDiagram />
         </>
     );
 }
