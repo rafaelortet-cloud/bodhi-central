@@ -25,13 +25,13 @@ const columns: MenuColumn[] = [
             {
                 title: "Foundational Paths",
                 subtitle: "Immerse yourself in the fundamental theories and principles of the journey.",
-                href: "/",
+                href: "/learning-paths/foundational-paths",
                 Icon: MagicWand02,
             },
             {
                 title: "Academic Paths",
                 subtitle: "Systematic studies of the awakening of the Buddha.",
-                href: "/",
+                href: "/learning-paths/academic-paths",
                 Icon: Telescope,
             },
             {

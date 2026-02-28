@@ -48,13 +48,13 @@ const columns: MenuColumn[] = [
             {
                 title: "Traditions at a glance",
                 subtitle: "Many traditions with intertwined goals, an historical timeline.",
-                href: "/",
+                href: "/scripture/traditions",
                 Icon: Hurricane01,
             },
             {
                 title: "Connections",
                 subtitle: "Scriptural connections and parallels.",
-                href: "/",
+                href: "/scripture/connections",
                 Icon: Link03,
             },
         ],
