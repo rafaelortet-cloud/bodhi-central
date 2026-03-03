@@ -48,7 +48,7 @@ const columns: MenuColumn[] = [
             {
                 title: "Buddhist Curricula Overview",
                 subtitle: "A visual exploration of modern and traditional Buddhist curricula.",
-                href: "/",
+                href: "/learning-paths/buddhist-curricula",
                 Icon: GraduationHat01,
             },
             {

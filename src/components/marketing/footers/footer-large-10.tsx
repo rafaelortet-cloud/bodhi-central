@@ -24,7 +24,14 @@ const footerNavList = [
                 label: "Tibetan Canons",
                 href: "/scripture/tibetan-canons",
             },
-
+            {
+                label: "Authors",
+                href: "/scripture/authors",
+            },
+            {
+                label: "Genres",
+                href: "/scripture/genres",
+            },
             {
                 label: "Traditions",
                 href: "/scripture/traditions",
@@ -55,6 +62,10 @@ const footerNavList = [
                 href: "/learning-paths/practice-paths",
             },
             {
+                label: "Curricula by Tradition",
+                href: "/learning-paths/curricula-by-tradition",
+            },
+            {
                 label: "Where to Study",
                 href: "/resources/study-centers",
             },
@@ -74,7 +85,7 @@ const footerNavList = [
             },
             {
                 label: "Visit the Forum",
-                href: "/resources/digital-portals",
+                href: "/resources/forum",
             },
             {
                 label: "Digital Portals",

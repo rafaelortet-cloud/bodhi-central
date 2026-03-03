@@ -20,8 +20,18 @@ export const ThreePitakasDiagram = () => {
             </div>
 
             {/* Toggle Switch */}
-            <div className="mx-auto max-w-container px-4 md:px-8 pb-2">
+            <div className="mx-auto max-w-container px-4 md:px-6 pb-2">
                 <div className="flex justify-start items-center gap-3">
+                    <button
+                        onClick={() => setIsRowsLayout(true)}
+                        className={cx(
+                            "p-1 rounded-md transition-colors",
+                            isRowsLayout ? "text-brand-700 bg-orange-100 dark:bg-orange-900/40" : "text-tertiary hover:text-secondary"
+                        )}
+                        aria-label="Rows Layout"
+                    >
+                        <Rows03 className="size-5" />
+                    </button>
                     <button
                         onClick={() => setIsRowsLayout(false)}
                         className={cx(
@@ -33,16 +43,7 @@ export const ThreePitakasDiagram = () => {
                         <Columns03 className="size-5" />
                     </button>
 
-                    <button
-                        onClick={() => setIsRowsLayout(true)}
-                        className={cx(
-                            "p-1 rounded-md transition-colors",
-                            isRowsLayout ? "text-brand-700 bg-orange-100 dark:bg-orange-900/40" : "text-tertiary hover:text-secondary"
-                        )}
-                        aria-label="Rows Layout"
-                    >
-                        <Rows03 className="size-5" />
-                    </button>
+
                 </div>
             </div>
 
@@ -150,7 +151,7 @@ export const ThreePitakasDiagram = () => {
                     /* Tipiṭaka Baskets ROWS LAYOUT */
                     <div className="mx-auto max-w-container px-4 md:px-6 grid grid-cols-1 gap-4 items-start animate-in fade-in duration-500">
                         {/* Vinaya Piṭaka */}
-                        <div className="flex flex-col bg-secondary p-6 gap-2 rounded-4xl drop-shadow-sm">
+                        <div className="flex flex-col bg-secondary px-6 py-4 gap-2 rounded-4xl drop-shadow-sm">
                             <div className="flex flex-row items-center justify-between gap-4">
                                 <h4 className="text-display-xs text-brand-700 dark:text-brand-700/80">Vinaya Piṭaka</h4>
                                 <div className="flex flex-col gap-3 md:justify-center pb-1">
@@ -176,7 +177,7 @@ export const ThreePitakasDiagram = () => {
                         </div>
 
                         {/* Sutta Piṭaka */}
-                        <div className="flex flex-col bg-secondary p-6 gap-2 rounded-4xl drop-shadow-sm">
+                        <div className="flex flex-col bg-secondary px-6 py-4 gap-2 rounded-4xl drop-shadow-sm">
                             <div className="flex flex-row items-center justify-between gap-4">
                                 <h4 className="text-display-xs text-brand-700 dark:text-brand-700/80">Sutta Piṭaka</h4>
                                 <div className="flex flex-col gap-3 md:justify-center pb-1">
@@ -210,7 +211,7 @@ export const ThreePitakasDiagram = () => {
                         </div>
 
                         {/* Abhidhamma Piṭaka */}
-                        <div className="flex flex-col bg-secondary p-6 gap-2 rounded-4xl drop-shadow-sm">
+                        <div className="flex flex-col bg-secondary px-6 py-4 gap-2 rounded-4xl drop-shadow-sm">
                             <div className="flex flex-row items-center justify-between gap-4">
                                 <h4 className="text-display-xs text-brand-700 dark:text-brand-700/80">Abhidhamma Piṭaka</h4>
                                 <div className="flex flex-col gap-3 md:justify-center pb-1">
