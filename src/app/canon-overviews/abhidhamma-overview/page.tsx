@@ -10,7 +10,7 @@ import { SectionDivider } from "@/components/shared-assets/section-divider";
 import { useClipboard } from "@/hooks/use-clipboard";
 import { cx } from "@/utils/cx";
 import { isReactComponent } from "@/utils/is-react-component";
-import { CollectionGallerySuttaPitaka } from "@/components/marketing/collection-sections/collection-gallery-sutta-pitaka";
+import { CollectionGalleryAbhidhammaPitaka } from "@/components/marketing/collection-sections/collection-gallery-abhidhamma-pitaka";
 
 
 
@@ -320,111 +320,6 @@ const ContentSplitImage01 = () => {
                             <p>
                                 This critical tradition continues in the present day. Within the Tibetan Buddhist education system, Abhidharma texts and concepts are studied, and considered in light of the critiques by the Sautrāntikas and Mahāyānists. And while some Theravādins maintain that it is essential to study Abhidhamma, others claim that key Abhidhamma ideas depart from the suttas, and that study of the Abhidhamma is unnecessary.
                             </p>
-
-                            <p>
-                                Early discourses that were not included in the <i>nikāyas</i> were gathered by the Pali tradition into their Khuddaka or “minor” collection. It’s not entirely clear why these weren’t simply included in the four <i>nikāyas</i>; originally it may have simply been a matter of organizational convenience. The Pali has six works in the Khuddaka that are considered to belong to the early period. These mostly consist of verse, with some narrative and doctrinal material in prose.
-                            </p>
-                            <ul>
-                                <li>Dhammapada</li>
-                                <li>Udāna</li>
-                                <li>Itivuttaka</li>
-                                <li>Sutta Nipāta</li>
-                                <li>Theragāthā</li>
-                                <li>Therīgāthā</li>
-                            </ul>
-
-                            <p>
-                                While these texts are considered early, they are on the whole probably a little later than the main <i>nikāyas</i>. Certain chapters of the Sutta Nipāta have often been regarded as an especially early and authentic portion of the canon, but this should not be over-interpreted. Other parts of the Sutta Nipāta are clearly late. And there is nothing in the early portions to indicate that they are earlier than the bulk of the prose discourses.
-                            </p>
-                            <p>
-                                The collection seems to have been considered an open one until quite a late date. The Burmese recension of the Pali canon even includes the Milindapañha, a text that could not have been written less than three hundred years after the Buddha’s passing.
-
-                            </p>
-                            <p>
-                                It is unclear whether each school had its own version of the Khuddaka. However, many of these texts, especially the Dhammapada, have counterparts in the northern collections. It seems likely that despite differences in organization, each school would have had some collection loosely corresponding to the Khuddaka.
-                            </p>
-                            <p>
-                                The remaining texts in the Khuddaka were added later. In style and content, they represent a striking shift from the early texts. They indicate different developments within the Buddhist community in the centuries following the Buddha. These later texts include the extensive collections of Jātaka tales, found in Pali and other traditions. Note that in the Pali tradition, only the verses are canoncial, while the stories themselves are found in the commentary.
-                            </p>
-
-                            <h2 id="canonicity-of-the-suttas">Canonicity of the Suttas</h2>
-                            <p>
-                                The early Discourses are regarded as canonical in all schools of Buddhism. They are considered to be Buddhavacana, the “words of the Buddha”, and are revered as sacred scripture. Each school, of course, accepts other texts as canonical also; but the Discourses, together with the Vinayas, are the main areas of overlap between the schools.
-                            </p>
-                            <p>
-                                This general picture, however, gets more complicated when we try to pin down the details. While the Discourses are largely similar in each canon, they are not identical. Each of the three main schools maintains its own distinct canons: the Theravāda of South and Southeast Asia have their texts in Pali; Buddhists of Central Asia use Tibetan; and in East Asia the canon is in Chinese. A full set of nikāyas are in Pali; extensive collections are found in Chinese; and limited selections are found in Tibetan. The Sanskrit and other early Indic texts are not part of any formal canon, but the texts are nevertheless canonical in the sense that they are recognized as being the same as the texts in the canon.
-                            </p>
-                            <p>
-                                So while we can say that the early Discourses are in principle considered canonical generally, for practical purposes each of the schools has a specific set of early Discourses found in their own canon.
-                            </p>
-                            <h2 id="suttas-in-the-buddhist-traditions">Suttas in the Buddhist Traditions</h2>
-                            <p>
-                                In traditional Buddhist education, the Discourses have usually not been directly taught. Rather, the teachings and principles found in the Discourses have been assimilated and organized in later texts, which became the medium of education. In the Theravāda, Discourses were until recently passed down in Pali, and so were only accessible to those, usually monks, who learned Pali. And not all those who learned Pali would study the Discourses. It seems that teaching was for practical purposes handed down in local monastic traditions, based on handbooks and sets of notes and commentaries. Before modern times, it would have been rare to find any but the largest monasteries that actually possessed a full set of the Tipiṭaka. Today, printed sets of the canon are widely available in both Pali and translation; but they are still often left in a locked cabinet on the shrine, unread.
-                            </p>
-                            <p>
-                                For the most part, Buddhists might be familiar with a small set of popular discourses. These would include such texts as the Dhammacakkappavattana Sutta—the famous first sermon of the Buddha—and some short texts used for protection chanting and as the basis of sermons for the laity, such as the Maṅgala, Ratana, and Metta Suttas.
-                            </p>
-                            <p>
-                                Apart from scholars, most Theravāda Buddhists do not clearly distinguish early Discourses from other sacred texts. The word sutta can mean simply “sacred scripture” and may even be used for such things as magic formulas and the like. While Buddhists are generally aware that there is such a thing as the Tipiṭaka that contains the words of the Buddha, only educated Buddhists have a clear idea of the contents. There is no tradition in Buddhism comparable to the Bible readings of the Christian Mass, and so no standard way of communicating the contents of the texts directly to the people.
-                            </p>
-                            <p>
-                                In some Buddhist traditions, it is considered mandatory for ordained monks to memorize and study closely certain portions of the ancient texts. Sri Lankan monks, for example, memorize the Dhammapada. However, this is not the case in Thailand, for example, where there is no education requirement for monks. Even in the nine years of the formal Dhamma study curriculum in Thailand, the canonical Discourses are not studied, as they are considered too sacred.
-                            </p>
-                            <p>
-                                In East Asian Buddhism, traditional education focused on the Mahāyāna sutras and the texts of the Chinese masters, and there is little evidence that the early discourses were widely studied. It is sometimes said that the translation style of the āgamas compares poorly with the more elegant diction of the Mahāyāna translations by Xuanzang and other masters. And the early discourses are, of course, not organized for easy reading and study.
-                            </p>
-                            <p>
-                                Tibetan Buddhism includes study of early Buddhist schools as part of its regular curriculum. However, this refers to the Abhidhamma doctrines of the later schools. A reasonable grasp of the early Buddhist texts is, nevertheless, possible to achieve in Tibetan. Even though full āgama texts are lacking, substantial passages from the early texts are found in the Upāyika, which is a compilation of passages referred to in the Abhidharmakoṣa, and in other scattered texts.
-                            </p>
-                            <h2 id="modern-reform-and-postmodern-criticism">Modern Reform and Postmodern Criticism</h2>
-                            <p>
-                                From the middle of the 19th Century, European and Asian scholars began to study the Buddhist texts on historical grounds. Whereas traditional scholarship remained within each school, interpreting them within their local contexts, the new scholarship aimed to locate the texts in historical time and place. This approach was both critical—in the sense of being skeptical of traditional claims to authority, and requiring evidence to support claims—and constructive, in the sense that it aimed to build a coherent and meaningful historical picture in which to understand the texts.
-                            </p>
-                            <p>
-                                Modernity brought a range of new techniques and achievements. These include:
-                            </p>
-                            <ul>
-                                <li>Comparative study of the previously isolated scriptures in Chinese, Pali, Tibetan, and Sanskrit revealed both similarities and differences.</li>
-                                <li>Based on the accounts of Chinese pilgrims, archaeologists unearthed a series of ancient sites in India, proving that familiar sutta locations like Sāvatthī or Rājagaha were real places.</li>
-                                <li>Comparison of Buddhist scriptures with Hindu and Jaina texts allowed for a better understanding of the cultural forces active in the Buddha’s time.</li>
-                                <li>Application of text-critical methods established the historical and doctrinal evolution of the Buddhist texts and their relation to one another.</li>
-                                <li>The Aśokan pillars and inscriptions were discovered and deciphered, allowing for a proper historical understanding of this seminal Buddhist monarch.</li>
-                                <li>There was a new emphasis on the early Discourses as the historical source for the Buddha’s teachings.</li>
-
-                            </ul>
-                            <p>
-                                Modernist developments such as these are not confined to Western scholarship, but have been conducted in conjunction with textual and practical reforms throughout Asian Buddhism. Each of the traditions of Asian Buddhism has participated in and applied these developments in diverse ways. Some examples include:
-                            </p>
-                            <ul>
-                                <li>In Theravāda, the Fifth and Sixth Councils reasserted the centrality of the Pali canon.</li>
-                                <li>Translations of the Pali canon have been made into modern Asian languages and widely distributed across the Buddhist world, along with English translations.</li>
-                                <li>The reformist Buddhism of King Mongkut in 19th Century Thailand was largely inspired by modernist ideas of textual and disciplinary reform.</li>
-                                <li>Modern approaches to meditation were developed based on Pali texts. The Burmese vipassanā schools took the Satipaṭṭhāna Sutta as their core text, making this the single most influential text in the modern practice of meditation. In Thailand, reform movements such as the Forest Tradition, or Ajahn Buddhadāsa’s explicitly sutta-based approach, rejected traditional contemplative practices based on magical invocations, and advocated a return to the body-focused and grounded mindfulness practices of the early suttas.</li>
-                                <li>The hugely influential Taishō edition of the Chinese canon was developed by Japanese scholars who had studied text-critical techniques in Germany. They rearranged the canon to put the āgamas in pride of place at the start of the collection, in the sequence found in the Pali. They also included limited information on Pali parallels.</li>
-                                <li>The empirical and rational strands of the early texts were emphasized, arguing for an essential compatibility with modern science. This provided the basis for the later application of scientific method to mindfulness meditation, which has proved crucial to the global acceptance of meditation as an evidence-based approach to happiness, stress relief, and psychological wellness.</li>
-                            </ul>
-                            <p>
-                                It remains the case that direct study of the suttas is a minority practice. However, across Asia we find popular reform movements that emphasize the central importance of the suttas. Sutta study is most popular in Sri Lanka, where there is a proliferation of teachers and movements advocating a return to the suttas. The hugely popular monk Venerable Kiribathgoda Gnanananda Thero is controversial for his insistence on treating the suttas as the primary sources of Dhamma. In Thailand, the Buddhavacana movement of Ajahn Kukrit Sotthibalo is changing the face of contemporary Thailand, bringing many people to read the suttas for the first time. In Taiwan, similarly, the recently deceased master Yin Shun emphasized the historical primacy of the early texts, arguing that there was an essential continuity between them and early Mahāyāna. And in countries outside the regions of traditional Buddhism, teachers such as Ajahn Brahm, Bhikkhu Bodhi, and many others advocate the teachings of the suttas.
-                            </p>
-                            <p>
-                                Since the 1980s, such modernist reforms have come under postmodern criticism, mostly from American scholars who specialize in later forms of Buddhism. These criticisms aim to dislodge the modernist consensus, arguing that we have no real way of knowing what the Buddha taught, or the provenance of the Pali and other texts. A variety of specific arguments attempt to refute key claims of the modernists, such as the idea that the Buddha’s teaching was essentially rational. These arguments have been repeatedly criticized by experts in the field. The postmodern approach has yet to produce constructive results comparable to those of modernism.
-                            </p>
-                            <h2 id="translations">Translations</h2>
-                            <p>
-                                One of the most concrete outcomes of the modernist reforms has been the availability of translations of the early texts. Until now, almost all such translations have been from the Pali canon. But a few translations from the Chinese, Tibetan, and Sanskrit texts are now starting to appear.
-                            </p>
-                            <p>
-                                Work began in Europe with isolated translations such as Viggo Fausböll’s translation of the Dhammapada in 1855 and the Sutta Nipāta in 1881. Under the leadership of T.W. Rhys Davids, the Pali Text Society, founded in 1881, undertook the task of translating the entire canon into English. These translations were groundbreaking, but have for the most part been replaced by a more modern and accurate generation of translations by scholars such as Bhikkhu Bodhi. We include some of the older translations on SuttaCentral, but for the most part they are primarily of historical interest, since not only is the language archaic, but they contain many errors.
-                            </p>
-                            <p>
-                                Major translations from the Pali have also been made into Thai, Sinhala, Burmese, Cambodian, Vietnamese, Japanese, Hindi, and most recently Bangla. Most of these have been digitized and are available on SuttaCentral. However, we are still looking forward to including the Bangla and Cambodian translations, and the Japanese translation, though in the public domain, is unavailable due to the actions of the publisher.
-                            </p>
-                            <p>
-                                It’s not always possible to easily find out the translation methods and approaches of these different editions. However, my understanding is that the above translations were all made directly from the Pali. In addition to this, there have been many secondary translations made from the English translations. Most of the remaining translations in SuttaCentral fall into this category, though not all. Some translations, for instance, in German or Norwegian, have been made directly from the Pali.
-                            </p>
-                            <p>
-                                The new set of translations made from the Pali for SuttaCentral by myself and Bhante Brahmali build on this tradition. They aim to provide accurate, clear, and idiomatic translations of the early texts in Pali.
-                            </p>
                         </div>
 
                         <div className="mt-6 flex flex-col items-start justify-between gap-y-6 border-t border-secondary pt-6 md:flex-row">
@@ -473,7 +368,7 @@ const BlogPost05 = () => {
 
             <SectionDivider className="pt-16 md:pt-24" />
 
-            <CollectionGallerySuttaPitaka />
+            <CollectionGalleryAbhidhammaPitaka />
 
         </div>
     );
