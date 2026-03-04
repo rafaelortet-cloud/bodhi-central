@@ -13,170 +13,8 @@ import { cx } from "@/utils/cx";
 import { isReactComponent } from "@/utils/is-react-component";
 import { CollectionGalleryVinayaPitaka } from "@/components/marketing/collection-sections/collection-gallery-vinaya-pitaka";
 
-type Article = {
-    id: string;
-    href: string;
-    thumbnailUrl: string;
-    title: string;
-    summary: string;
-    category: {
-        href: string;
-        name: string;
-    };
-    author: {
-        href: string;
-        name: string;
-        avatarUrl: string;
-    };
-    publishedAt: string;
-    readingTime: string;
-    tags: Array<{ name: string; color: BadgeColor<"color">; href: string }>;
-    isFeatured?: boolean;
-};
 
-const articles: Article[] = [
-    {
-        id: "article-1",
-        title: "Sutta Piṭaka Overview",
-        summary: "How do you create compelling presentations that wow your colleagues and impress your managers?",
-        href: "#",
-        category: { name: "Sutta", href: "#" },
-        thumbnailUrl: "https://www.untitledui.com/marketing/spirals.webp",
-        publishedAt: "20 Jan 2025",
-        readingTime: "8 min read",
-        author: { name: "Bikkhu Sujato", href: "#", avatarUrl: "https://www.untitledui.com/images/avatars/olivia-rhye?fm=webp&q=80" },
-        tags: [
-            { name: "Design", color: "brand", href: "#" },
-            { name: "Research", color: "indigo", href: "#" },
-            { name: "Presentation", color: "pink", href: "#" },
-        ],
-        isFeatured: true,
-    },
-    {
-        id: "article-2",
-        title: "Migrating to Linear 101",
-        summary: "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here's how to get started.",
-        href: "#",
-        category: { name: "Product", href: "#" },
-        thumbnailUrl: "https://www.untitledui.com/marketing/conversation.webp",
 
-        publishedAt: "19 Jan 2025",
-        readingTime: "8 min read",
-        author: { name: "Phoenix Baker", href: "#", avatarUrl: "https://www.untitledui.com/images/avatars/phoenix-baker?fm=webp&q=80" },
-        tags: [
-            { name: "Product", color: "blue-light", href: "#" },
-            { name: "Tools", color: "pink", href: "#" },
-            { name: "SaaS", color: "pink", href: "#" },
-        ],
-    },
-    {
-        id: "article-3",
-        title: "Building your API stack",
-        summary: "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.",
-        href: "#",
-        category: { name: "Software Engineering", href: "#" },
-        thumbnailUrl: "https://www.untitledui.com/blog/two-mobile-shapes-pattern.webp",
-        publishedAt: "18 Jan 2025",
-        readingTime: "8 min read",
-        author: { name: "Lana Steiner", href: "#", avatarUrl: "https://www.untitledui.com/images/avatars/lana-steiner?fm=webp&q=80" },
-        tags: [
-            { name: "Software Development", color: "success", href: "#" },
-            { name: "Tools", color: "pink", href: "#" },
-        ],
-    },
-    {
-        id: "article-3.5",
-        title: "PM mental models",
-        summary: "Mental models are simple expressions of complex processes or relationships.",
-        href: "#",
-        category: { name: "Product", href: "#" },
-        thumbnailUrl: "https://www.untitledui.com/blog/two-people.webp",
-        publishedAt: "17 Jan 2025",
-        readingTime: "8 min read",
-        author: { name: "Demi Wilkinson", href: "#", avatarUrl: "https://www.untitledui.com/images/avatars/demi-wilkinson?fm=webp&q=80" },
-        tags: [
-            { name: "Leadership", color: "brand", href: "#" },
-            { name: "Management", color: "gray-blue", href: "#" },
-        ],
-    },
-    {
-        id: "article-4",
-        title: "PM mental models",
-        summary: "Mental models are simple expressions of complex processes or relationships.",
-        href: "#",
-        category: { name: "Product", href: "#" },
-        thumbnailUrl: "https://www.untitledui.com/marketing/brainstorming.webp",
-        publishedAt: "16 Jan 2025",
-        readingTime: "8 min read",
-        author: { name: "Demi Wilkinson", href: "#", avatarUrl: "https://www.untitledui.com/images/avatars/demi-wilkinson?fm=webp&q=80" },
-        tags: [
-            { name: "Product", color: "blue-light", href: "#" },
-            { name: "Research", color: "indigo", href: "#" },
-            { name: "Frameworks", color: "orange", href: "#" },
-        ],
-    },
-    {
-        id: "article-5",
-        title: "What is Wireframing?",
-        summary: "Introduction to Wireframing and its Principles. Learn from the best in the industry.",
-        href: "#",
-        category: { name: "Design", href: "#" },
-        thumbnailUrl: "https://www.untitledui.com/marketing/workspace-4.webp",
-        publishedAt: "15 Jan 2025",
-        readingTime: "8 min read",
-        author: { name: "Candice Wu", href: "#", avatarUrl: "https://www.untitledui.com/images/avatars/candice-wu?fm=webp&q=80" },
-        tags: [
-            { name: "Design", color: "brand", href: "#" },
-            { name: "Research", color: "indigo", href: "#" },
-        ],
-    },
-    {
-        id: "article-6",
-        title: "How collaboration makes us better designers",
-        summary: "Collaboration can make our teams stronger, and our individual designs better.",
-        href: "#",
-        category: { name: "Design", href: "#" },
-        thumbnailUrl: "https://www.untitledui.com/marketing/collaboration.webp",
-        publishedAt: "14 Jan 2025",
-        readingTime: "8 min read",
-        author: { name: "Natali Craig", href: "#", avatarUrl: "https://www.untitledui.com/images/avatars/natali-craig?fm=webp&q=80" },
-        tags: [
-            { name: "Design", color: "brand", href: "#" },
-            { name: "Research", color: "indigo", href: "#" },
-        ],
-    },
-    {
-        id: "article-7",
-        title: "Our top 10 Javascript frameworks to use",
-        summary: "JavaScript frameworks make development easy with extensive features and functionalities.",
-        href: "#",
-        category: { name: "Product", href: "#" },
-        thumbnailUrl: "https://www.untitledui.com/marketing/man-and-laptop-2.webp",
-        publishedAt: "13 Jan 2025",
-        readingTime: "8 min read",
-        author: { name: "Drew Cano", href: "#", avatarUrl: "https://www.untitledui.com/images/avatars/drew-cano?fm=webp&q=80" },
-        tags: [
-            { name: "Software development", color: "success", href: "#" },
-            { name: "Tools", color: "pink", href: "#" },
-            { name: "SaaS", color: "pink", href: "#" },
-        ],
-    },
-    {
-        id: "article-8",
-        title: "Podcast: Creating a better CX Community",
-        summary: "Starting a community doesn't need to be complicated, but how do you get started?",
-        href: "#",
-        category: { name: "Customer Success", href: "#" },
-        thumbnailUrl: "https://www.untitledui.com/marketing/podcast-girl-2.webp",
-        publishedAt: "12 Jan 2025",
-        readingTime: "8 min read",
-        author: { name: "Orlando Diggs", href: "#", avatarUrl: "https://www.untitledui.com/images/avatars/orlando-diggs?fm=webp&q=80" },
-        tags: [
-            { name: "Podcasts", color: "brand", href: "#" },
-            { name: "Customer success", color: "gray-blue", href: "#" },
-        ],
-    },
-];
 
 const ContentSplitImage01 = () => {
     const { copied, copy } = useClipboard();
@@ -209,7 +47,14 @@ const ContentSplitImage01 = () => {
                 <img
                     className="mt-16 h-100 w-full object-cover object-top rounded-3xl md:mt-0 md:ml-auto md:h-180 md:w-140 md:max-w-[50vw]"
                     src="/textCovers/buddha-sakyamuni-600.jpg"
-                    alt="How collaboration makes us better designers - two people collaborating"
+                    alt="Buddha Sakyamuni with two disciples"
+                />
+                {/* Background Image - Rainbow Light Accent */}
+                <img
+                    alt="Light Accent"
+                    aria-hidden="true"
+                    src="https://www.untitledui.com/marketing/light-accent.webp"
+                    className="absolute z-20 -right-1/3 bottom-1/2 max-w-160 opacity-50 dark:opacity-40 mix-blend-multiple md:right-8 md:-bottom-1/6 md:max-w-7xl mask-b-from-90% mask-b-to-100% scale-x-[-1]"
                 />
             </div>
             {/* Main content */}
@@ -251,7 +96,7 @@ const ContentSplitImage01 = () => {
                     {/* Article content */}
                     <div className="max-w-prose md:max-w-full">
                         <div className="mx-auto prose md:prose-lg">
-                            <p className="lead">
+                            <p className="lead first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-serif first-letter:text-brand-800 dark:first-letter:text-brand-100">
                                 The Monastic Law is available in more recensions than any other part of the Tipiṭaka. There is a full version in Pali, and four complete versions extant in Chinese translation, all belonging to different schools of early Buddhism: Mahāsāṅghika, Dharmaguptaka, Mahīśāsaka, and Sarvāstivāda. The Chinese Tipiṭaka also preserves other Vinaya related texts, such as an independent <i>bhikkhu pātimokkha</i> of the Kāśyapīya School and several more or less school-specific Vinaya texts. The Vinaya of the Mūlasarvāstivāda school exists in three versions: a complete text in Tibetan translation, a mostly complete version in Chinese, and substantial portions in Sanskrit. There are also several Vinaya texts, as well as a large number of fragments, in Sanskrit and other Indic languages, mostly of Mahāsāṅghika, Sarvāstivāda, and Mūlasarvāstivāda provenance.
                             </p>
                             <hr />
@@ -403,8 +248,8 @@ const ContentSplitImage01 = () => {
                             <p>
                                 In addition to the above, most Theravāda monasteries follow a number of rules that are more informal in nature. These include rules used to distinguish individual sects (<i>nikāyas</i>), such as rules on the style of robes and on the manner of wearing them. Then there are rules that pertain to particular teacher traditions, such as those that often form around especially charismatic and famous teachers. The final set of rules are those laid down at individual monasteries. These regulate the daily schedule and other aspects of monastic life that are monastery specific. Although all these rules are sometimes called Vinaya and therefore assumed to stem from the Vinaya Piṭaka or at least the commentaries, in reality, few of them have any Canonical basis.
                             </p>
-                            <div className="my-8 rounded-2xl bg-secondary px-5 py-6 text-lg text-tertiary md:my-12 md:p-8 [&>p+p]:mt-4.5">
-                                <h2 id="references-and-further-reading" className="mb-4 text-display-xs font-semibold text-primary">References and Further Reading</h2>
+                            <div className="my-12 rounded-3xl bg-secondary px-5 py-2 text-lg text-tertiary md:pt-1 md:pb-4 md:px-8 [&>p+p]:mt-4.5">
+                                <h2 id="references-and-further-reading">References and Further Reading</h2>
                                 <ul>
                                     <li>Clarke, Shayne; <i> Vinaya Mātṛikā – Mother of the Monastic Codes, or just Another Set of Lists?</i>; Indo-Iranian Journal 47: 77–120, 2004</li>
                                     <li>Clarke, Shayne; <i>Vinayas</i>; in Brill’s Encyclopaedia of Buddhism; Leiden, 2015; vol. I, pp. 60-87.</li>
@@ -421,15 +266,8 @@ const ContentSplitImage01 = () => {
                             </div>
                         </div>
 
-                        <div className="-mt-px flex flex-col items-start justify-between gap-y-6 border-t border-secondary pt-6 md:flex-row">
-                            <div className="flex gap-2">
-                                <Badge color="brand" size="md">
-                                    Theravāda
-                                </Badge>
-                                <Badge color="indigo" size="md">
-                                    Monastics
-                                </Badge>
-                            </div>
+                        <div className="mt-6 flex flex-col items-start justify-between gap-y-6 border-t border-secondary pt-6 md:flex-row">
+
                             <div className="flex gap-3 md:hidden">
                                 <Button color="secondary" size="md" onClick={() => copy("https://www.untitledui.com/")} iconLeading={copied ? Check : Copy01} />
                                 <Button color="secondary" size="md" className="text-fg-quaternary" iconLeading={X} />
@@ -463,93 +301,6 @@ const RoundButton = ({ icon: Icon, ...props }: RoundButtonProps) => {
                     <Icon className="size-5 text-fg-quaternary transition-inherit-all group-hover:text-fg-quaternary_hover md:size-6" />
                 ) : null)}
         </Button>
-    );
-};
-
-const Simple04Vertical = ({ article, imageClassName, className }: { article: Article; imageClassName?: string; className?: string }) => (
-    <article className={cx("flex flex-col gap-4", className)}>
-        <div className="relative">
-            <a href={article.href} className="w-full" tabIndex={-1}>
-                <img src={article.thumbnailUrl} alt={article.title} className={cx("aspect-[1.5] w-full object-cover", imageClassName)} />
-            </a>
-            <div className="absolute inset-x-0 bottom-0 overflow-hidden bg-linear-to-b from-transparent to-black/40">
-                <div className="relative flex items-start justify-between bg-alpha-white/30 p-4 backdrop-blur-md before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:p-5">
-                    <div>
-                        <a
-                            href={article.author.href}
-                            className="block rounded-xs text-sm font-semibold text-white outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-2"
-                        >
-                            {article.author.name}
-                        </a>
-                        <time className="block text-sm text-white">{article.publishedAt}</time>
-                    </div>
-                    <a
-                        href={article.category.href}
-                        className="rounded-xs text-sm font-semibold text-white outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-2"
-                    >
-                        {article.category.name}
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div className="flex flex-col items-start gap-5">
-            <div className="flex flex-col gap-1">
-                <a
-                    href={article.category.href}
-                    className="flex justify-between gap-x-4 rounded-md text-lg font-semibold text-primary outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-2"
-                >
-                    {article.title}
-                </a>
-                <p className="line-clamp-2 text-md text-tertiary">{article.summary}</p>
-            </div>
-
-            <Button href={article.href} color="link-color" size="lg" iconTrailing={ArrowUpRight}>
-                Read post
-            </Button>
-        </div>
-    </article>
-);
-
-const BlogSectionCarouselLayout01 = () => {
-    return (
-        <section className="overflow-hidden bg-primary py-16 md:py-24">
-            <div className="mx-auto max-w-container px-4 md:px-8">
-                <div className="flex flex-col items-start justify-between lg:flex-row">
-                    <div className="max-w-3xl">
-                        <p className="text-sm font-semibold text-brand-secondary md:text-md">Canon Overviews</p>
-                        <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">The Theravāda Pali Canon</h2>
-                        <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">A comprehensive overview of the Tipitaka sections and subsections: Vinaya, Sutta, and Abhidhamma.</p>
-                    </div>
-
-                    <div className="hidden gap-3 lg:flex">
-                        <Button size="xl">View all Pali canon sections</Button>
-                    </div>
-                </div>
-
-                <CollectionGalleryVinayaPitaka />
-                <Carousel.Root className="hidden mt-12 md:mt-16" opts={{ align: "start" }}>
-                    <Carousel.Content overflowHidden={false} className="gap-6 pr-4 md:gap-8 md:pr-8">
-                        {articles.map((article) => (
-                            <Carousel.Item key={article.id} className="max-w-xs md:max-w-96">
-                                <Simple04Vertical article={article} />
-                            </Carousel.Item>
-                        ))}
-                    </Carousel.Content>
-                    <div className="flex gap-4 md:mt-8 md:gap-8">
-                        <Carousel.PrevTrigger asChild>
-                            <RoundButton icon={ArrowLeft} />
-                        </Carousel.PrevTrigger>
-                        <Carousel.NextTrigger asChild>
-                            <RoundButton icon={ArrowRight} />
-                        </Carousel.NextTrigger>
-                    </div>
-                </Carousel.Root>
-                <div className="mt-12 flex flex-col gap-3 lg:hidden">
-                    <Button size="xl">View all posts</Button>
-                </div>
-            </div>
-        </section>
     );
 };
 
