@@ -38,7 +38,7 @@ const ContentSplitImage01 = () => {
                         />
                         <div>
                             <p className="text-md font-semibold text-primary">Bhikkhu Sujato</p>
-                            <p className="text-md text-tertiary">Published by Sutta Central</p>
+                            <p className="text-md text-tertiary">Published by SuttaCentral</p>
                         </div>
                     </div>
                 </div>
@@ -223,9 +223,6 @@ const ContentSplitImage01 = () => {
                             <p>
                                 The Puggalapaññatti (Designation of Persons) departs from the strictly phenomenological approach of most Abhidhamma texts to present a compendium of passages relating to different kinds of individual. These are set out in a mātikā that lists kinds of individuals numerically organized from one to ten. As suggested by the numerical arrangement, these terms are mostly derived from the Aṅguttara Nikāya, with modest changes in wording. The main concern is to classify personal or psychological tendencies as they relate to the development of the Buddhist path.
                             </p>
-                            <p>
-                                The Buddhist community, sponsored by kings such as Aśoka, took full advantage of these favorable conditions to spread the Dhamma over the Indian subcontinent and further. Less than two centuries after the Buddha’s passing, Buddhist communities were thriving in regions as far-flung as Sri Lanka and Afghanistan.
-                            </p>
                             <h3 id="kathavatthu">Kathāvatthu</h3>
                             <p>
                                 The Kathāvatthu (Points of Controversy) is a collection of over 200 discussions on points of interpretation of Buddhist doctrine. These consist of a debate between unnamed protagonists. Each relies either on logic or quotations from the suttas to support their arguments. Some of the discussions concern central problems in Buddhist philosophy, such as the nature of not-self, or the problem of continuity and impermanence. Many, however, are very minor.
@@ -296,12 +293,6 @@ const ContentSplitImage01 = () => {
                             </p>
                             <p>
                                 Perhaps unexpectedly, Abhidhamma is not restricted to monastic or scholarly circles. It is frequently taught to or by lay people, and is popular throughout Southeast Asia. In addition, Abhidhamma mātikās may form the basis for ceremonial recitation. In Thailand, the Dhammasaṅgaṇī tikamātikā and the 24 conditions of the Paṭṭhāna are used as funeral chants.
-                            </p>
-                            <p>
-                                Each of the schools seems to have had main four <i>nikāyas</i>. The sequence of these is not fixed. The form adopted on SuttaCentral is the well-known sequence as used in the Pali tradition. In other schools, as implied by the accounts of the First Council, the collections were in different orders, such as placing the Saṁyutta first. Note that in the Chinese canon, the editors of the Taishō edition rearranged their material under the influence of the Pali canon to adopt the same sequence.
-                            </p>
-                            <p>
-                                Each of the <i>nikāyas</i> includes material that was edited and arranged, and sometimes added to, over a period of time. While each collection contains some unique texts, for the most part the differences in the number of discourses is simply due to the fact that a given discourse may be assigned a different place in different collections.
                             </p>
 
                             <h2 id="criticism">Criticism</h2>
