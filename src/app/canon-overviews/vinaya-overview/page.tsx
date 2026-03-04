@@ -2,7 +2,6 @@
 
 import type { ComponentPropsWithRef, FC } from "react";
 import { ArrowLeft, ArrowRight, ArrowUpRight, Check, Copy01, Link01, Dataflow01 } from "@untitledui/icons";
-import { Carousel } from "@/components/application/carousel/carousel-base";
 import { BadgeGroup } from "@/components/base/badges/badge-groups";
 import { Badge, type BadgeColor } from "@/components/base/badges/badges";
 import { Button } from "@/components/base/buttons/button";
@@ -138,7 +137,7 @@ const ContentSplitImage01 = () => {
                                         alt="Olivia Rhye"
                                     />
                                     <div>
-                                        <p className="text-md font-semibold text-primary">Bikkhu Sujato</p>
+                                        <p className="text-md font-semibold text-primary">Bhikkhu Sujato</p>
                                         <cite className="text-md text-tertiary not-italic">Co-founder of SuttaCentral</cite>
                                     </div>
                                 </figcaption>
