@@ -25,9 +25,9 @@ const ContentSplitImage01 = () => {
                     <BadgeGroup size="md" addonText="Pali Canon Overviews" color="brand" theme="light" className="pr-3" iconTrailing={null}>
                         18 min read
                     </BadgeGroup>
-                    <h1 className="mt-4 text-display-md font-semibold text-primary md:text-display-xl text-balance">Discourses: conversations with the Buddha</h1>
+                    <h1 className="mt-4 text-display-md font-semibold text-primary md:text-display-xl text-balance">Abhidhamma: a systematic analysis of the doctrine</h1>
                     <p className="mt-4 max-w-140 text-lg text-tertiary md:mt-6 md:text-xl">
-                        The Sutta Piṭaka, the “Basket of Discourses”, contains the teachings of the Buddha, as they were preserved and transmitted by early Buddhist communities.
+                        The third basket of the Pali Canon, containing the higher teachings and philosophical analysis.
                     </p>
 
                     <div className="mt-8 flex items-center gap-3 md:mt-12">
@@ -68,13 +68,18 @@ const ContentSplitImage01 = () => {
                                 {[
                                     { title: "Introduction", href: "#introduction", indent: "ml-0" },
                                     { title: "Origins", href: "#origins", indent: "ml-0" },
-                                    { title: "Transmission", href: "#transmission", indent: "ml-0" },
-                                    { title: "The Early Schools of Buddhism", href: "#early-schools", indent: "ml-0" },
-                                    { title: "Structure", href: "#structure", indent: "ml-0" },
-                                    { title: "Canonicity of the Suttas", href: "#canonicity-of-the-suttas", indent: "ml-0" },
-                                    { title: "Suttas in the Buddhist Traditions", href: "#suttas-in-the-buddhist-traditions", indent: "ml-0" },
-                                    { title: "Modern Reform and Postmodern Criticism", href: "#modern-reform-and-postmodern-criticism", indent: "ml-0" },
-                                    { title: "Translations", href: "#translations", indent: "ml-0" },
+                                    { title: "The Books of the Theravāda Abhidhamma", href: "#the-books-of-the-theravada-abhidhamma", indent: "ml-0" },
+                                    { title: "Dhammasaṅgaṇī", href: "#dhammasangani", indent: "ml-6" },
+                                    { title: "Vibhaṅga", href: "#vibhanga", indent: "ml-6" },
+                                    { title: "Dhātukathā", href: "#dhatukatha", indent: "ml-6" },
+                                    { title: "Puggalapaññatti", href: "#puggalapannatti", indent: "ml-6" },
+                                    { title: "Kathāvatthu", href: "#kathavatthu", indent: "ml-6" },
+                                    { title: "Yamaka", href: "#yamaka", indent: "ml-6" },
+                                    { title: "Paṭṭhāna", href: "#patthana", indent: "ml-6" },
+                                    { title: "The Books of the Sarvāstivāda Abhidhamma", href: "#the-books-of-the-sarvastivada-abhidhamma", indent: "ml-0" },
+                                    { title: "The Dharmaguptaka Śāripūtrābhidharma", href: "#the-dharmaguptaka-sariputrabhidharma", indent: "ml-0" },
+                                    { title: "Abhidhamma in Buddhist Traditions", href: "#abhidhamma-in-buddhist-traditions", indent: "ml-0" },
+                                    { title: "Criticism", href: "#criticism", indent: "ml-0" },
                                 ].map((item) => (
                                     <li key={item.title} className={item.indent}>
                                         <Button href={item.href} size="lg" color="link-gray">
@@ -96,25 +101,31 @@ const ContentSplitImage01 = () => {
                     <div className="max-w-prose md:max-w-full">
                         <div className="mx-auto prose md:prose-lg">
                             <p className="lead first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-serif first-letter:text-brand-800 dark:first-letter:text-brand-100">
-                                The most important body of sacred scripture in Buddhism is the Suttapiṭaka, the “basket of discourses”. This collection contains the teachings of the Buddha and his closest disciples, as collected and transmitted by the schools of early Buddhism. This is the well-spring of Dhamma, from which the teachings and practices of the many schools of Buddhism are drawn.
+                                The Abhidhamma Piṭaka is the last of the three piṭakas (or “baskets”) in the canons of the early Buddhist schools. It takes the terms and ideas found in the Discourses, and organizes and analyzes them systematically.
                             </p>
                             <hr />
                             <h2 id="introduction">Introduction</h2>
                             <p>
-                                The term sutta in Pali or sūtra in Sanskrit is used quite liberally in the Buddhist traditions and may include a range of later texts. However, we only consider the earliest of these, which are the texts included in the Suttapiṭaka of the Pali canon, and the various corresponding collections and texts in other languages. Not all of these texts stem from the very earliest period, but we aim to be inclusive, so as to not miss any of the early scriptures. Generally speaking, they represent the first few centuries of Buddhist texts, with a special emphasis on those that may be plausibly attributed to the historical Buddha and his immediate disciples. Later texts such as the Mahāyāna sūtras fall outside our scope, except in cases where they quote from the early texts.
+                                There is a complete set of seven canonical Abhidhamma books in Pali, belonging to the Theravāda school. In addition, there is a complete set of seven (different) canonical texts of the Sarvāstivāda school preserved in Chinese translation, a major treatise of the Dharmaguptaka school in Chinese, and some smaller Sanskrit portions. As is the case with the Discourses, the Pali texts have received the most study and attention.
                             </p>
                             <p>
-                                This article is a general overview, and more specific details may be found on the pages for each collection. Please note that this article deals with the history and nature of the textual collections, not with the content and themes.
+                                Unlike the Suttas and Vinaya, the Abhidhamma texts of the different schools are not closely related. It seems likely, in fact, that these were some of the formative texts in establishing the different schools. Nevertheless, Erich Frauwallner in his Studies in Abhidharma Literature and the Origins of Buddhist Philosophical Systems (1996) has identified certain core features of Abhidhamma that are common between the traditions. This notably includes the Pali Vibhaṅga, the Sarvāstivāda Dharmaskandha, and the Dharmaguptaka Śāripūtrābhidharmaśastra. These texts all include a common core, which is ultimately derived from the Saṁyutta Nikāya.
+                            </p>
+                            <p>
+                                Despite their differences, however, it would be a mistake to see the canonical Abhidhamma texts as presenting strongly sectarian positions. Apart from the polemical works such as the Kathāvatthu, for the most part, they focus on presenting the central ideas of the Dhamma in different ways.
                             </p>
                             <h2 id="origins">Origins</h2>
                             <p>
-                                The Buddha lived around the 5th century BCE, and lived and taught in the nations of the Ganges plain in northern India, especially the regions known today as Bihar and Uttar Pradesh. He had a long career, and was said to have taught for forty-five years. The canonical Vinaya texts relate how, after his passing towards the end of the 5th century BCE, the Buddha’s followers, led by his closest disciple, Ānanda, collected his teachings at the great First Council in Rājagaha (modern Rajgir), ensuring their survival until today.
+                                The word abhidhamma is found occasionally in the early texts, usually alongside the parallel term abhivinaya. There is, of course, no body of texts called the abhivinaya, and these early uses of abhidhamma don’t refer to settled texts such as exist today. Rather, in this kind of context the prefix abhi- is comparable to the English “meta-” in the sense of “about the Dhamma, about the Vinaya”, and refers to discussions and conversations about the teachings. Such conversations would have, over time, been remembered and shared, and evolved gradually into the formalistic treatises of the Abhidhammapiṭaka.
                             </p>
                             <p>
-                                There are several different accounts of the First Council, and they vary somewhat in the details of the texts recited there. But it seems likely that the main content was similar to what is included today in the four main nikāyas, as well as the six early books of the Khuddaka, together with the early portions of the Vinaya. These are sometimes referred to as the Early Buddhist Texts (EBTs). It’s not the case that everything recited at the Council was identical with what we have today. Even the traditions acknowledge that there were additions. However, it seems reasonable to accept that the bulk of the content of these texts stems from this time. The main changes were in structure and arrangement, while changes to content were limited and readily identifiable.
+                                The traditions vary in how they see the origin of the Abhidhamma. The Chinese and Tibetan traditions typically ascribe each Abhidhamma book to a disciple of the Buddha. However, certain of the Vinaya accounts of the First Council include the Abhidhamma, and thus assume that it was present at the time of the Buddha’s passing. The Theravāda tradition also holds that the texts (with the exception of the Kathāvatthu) were spoken by the Buddha. This is mentioned in the late canononical Parivāra (sabbasattuttamo sīho, piṭake tīṇi desayi, Pvr 3#5) and the paracanonical Milindapañha (tepiṭakaṁ buddhavacanaṁ, Mil 2#55), which both date from about three to four hundred years after the Buddha passed away. The Theravādin commentaries were later to claim that the Buddha taught the seven books of the Abhidhamma Piṭaka to the deities in the Tāvatiṁsa heaven, headed by his mother. Venerable Sāriputta subsequently learned them and conveyed them to his students.
                             </p>
                             <p>
-                                The texts would have originally been in a Prākrit, that is, a dialect of Middle Indo-Aryan closely related to Sanskrit. The exact form of Prākrit is unknown, and indeed it may not have been entirely standardized, since monastics from the earliest times were using different dialects. Indications in the Pali texts suggest that they were derived from an earlier version in Māgadhī, that is, the language of the kingdom of Magadha. It appears that they were standardized in later centuries to a dialect similar to that used widely across central India for inscriptions, with a partial Sanskritization. Nevertheless, these languages differ mostly in phonology, and apart from a few edge cases, changes from one form to another do not affect the meaning.
+                                The long-standing consensus among historical scholars is that the books of the Abhidhamma were compiled in the centuries after the Buddha. It is not possible to determine definite dates. However, it is likely that the common core of the Vibhaṅga/Dharmaskandha/Śāripūtrābhidharmaśastra predates the separation between these traditions, which happened around the time of King Ashoka in about 250 BCE, less than two centuries after the Buddha’s death. But the bulk of the content must have been developed after this time. A number of details, such as the fact that the works were accepted as canonical in the Milinda, around 100 BCE, suggests that they were completed before this time. So a range of 300 BCE–100 BCE for the composition of the canonical Abhidhamma texts seems reasonable.
+                            </p>
+                            <p>
+                                While the belief that the books were composed by immediate students of the Buddha is untenable, it does point to something in how they might have developed. The major disciples would have established teaching lineages, or styles of learning, that reflected the specialties of the different masters. Over time, the explanations of various teachers became systematized and codified. The actual books as they exist today, however, are the products of schools, composed under the guidance of leading monks.
                             </p>
                             <figure>
                                 <img className="h-60 md:h-120" src="/jetavanaramaya-scenery-01.jpg" alt="Woman working at computer" />
@@ -129,106 +140,18 @@ const ContentSplitImage01 = () => {
                                 </figcaption>
                             </figure>
 
-                            <h2 id="transmission">Transmission</h2>
+                            <h2 id="the-books-of-the-theravada-abhidhamma">The Books of the Theravāda Abhidhamma</h2>
                             <p>
-                                For many years, the texts were passed down in an oral form. This was organized with groups of reciters, all reciting together the same text to ensure accuracy. We are often skeptical that an oral tradition can maintain texts accurately for a long time. This is our cultural bias, since all we’ve known are written texts. But oral transmission was normal in ancient India. The brahmanical Ṛg Veda, for example, was passed down in letter-perfect form for hundreds, maybe thousands, of years before being written down. No matter what the medium of transmission—oral, written, or digital—corruptions and changes can creep in. The most important thing in maintaining accuracy is not the medium, but the care and dedication of the people doing the work. The Buddhist texts, through the use of such devices as repetition, are highly optimized for reliable transmission of doctrine.
+                                For the most part, the long and complex texts of the Theravāda Abhidhamma are concerned with analyzing and classifying material, not with explaining it. Presumably they would have been taught by experienced teachers in monasteries, who would have drawn out, explained, and illustrated the abstruse texts. Eventually such explanations were codified and recorded in the Pali commentaries.
                             </p>
                             <p>
-                                The Sri Lankan historical chronicles record that in 29 BCE, to guard against upheaval in the country, the Pali canon was written down in the Aluvihare Rock Temple. While we don’t have historical records for the mainland, it seems safe to assume that texts there were written down around the same period. Indeed, a range of Buddhist manuscripts from northern regions have been found dating from the early centuries CE, one of which has been carbon dated to around 75 CE.
+                                While they introduced a number of new terms and methods, the canonical Abhidhamma texts are doctrinally conservative. Many of the concepts familiar from later Abhidhamma are not found—ultimate vs. conventional truth, mind moments, kalāpas, the idea that each phenomena is defined by its sabhāva or “individual essence”. While some new terms are found, for the most part they seem to have been introduced in order to clarify and disambiguate the terminology, and weren’t intended to convey specific new concepts. That is not to say that there are no new ideas, just that they play a fairly minor role overall.
                             </p>
-                            <p>
-                                Due to the materials and climate, no such early manuscripts of the Pali canon have survived. There are a few earlier passages in inscriptions and the like, but the bulk of our Pali texts come from manuscripts that have been recopied in the past few centuries.
-                            </p>
-                            <p>
-                                The Chinese texts originate from manuscripts of various schools that were taken to China and translated there by teams of monks. Each collection has a different origin, and due to the meticulous records of the Chinese canon, the translators and dates of these are usually well known. Most of the early Buddhist discourses were translated around the 5th century CE, though some were earlier and some later than this. It is not always possible to determine exactly what the original language of the manuscripts was, but in many cases it was probably Sanskrit. However, a variety of other Indic languages such as Gandhārī or Buddhist Hybrid Sanskrit may have been used.
-                            </p>
-                            <p>
-                                Likewise, the early texts found in Tibetan stem from Sanskrit texts that were translated in Tibet over millenium ago.
-                            </p>
-                            <p>
-                                None of the modern forms of Buddhism normally use Sanskrit texts, as the northern schools preserved only the translations. The texts in Sanskrit and other early Indic dialects stem from a range of fortuitous finds in the past century. Certain Sanskrit texts were discovered in ancient manuscripts in Nepal and Tibet, where they had lain mostly untouched since being brought from India nearly a thousand years ago. Several finds have unearthed more texts. Manuscripts from Gilgit and elsewhere in central Asia, Afghanistan, and Pakistan contain suttas in several different languages, ranging from extensive texts to tiny scraps containing only a few letters. Some were recovered from proper archaeological research, but other manuscripts simply appeared on the black market and their origin can only be guessed at. These manuscripts represent the spectrum of Buddhist literature of the time, including early suttas, Vinaya, Abhidhamma, legends, Mahāyāna texts, and commentaries. Here we are only concerned with the early sutta material.
-                            </p>
-                            <p>
-                                Such texts are sometimes called the “Dead Sea Scrolls” of Buddhism, but this is misleading. While the Dead Sea Scrolls contained new texts indicating a radically different perspective on early Christianity, these Buddhist suttas are almost always minor variations on what we find in the Pali canon. They serve to indicate the spread and diversity of Buddhism, and offer clarification on many points of history and detail, but they do not radically revise our understanding of the teachings.
-                            </p>
-                            <h2 id="early-schools">The Early Schools of Buddhism</h2>
-                            <p>
-                                The century after the Buddha passed away witnessed a transformation in Indian political history. The 16 nations of the Buddha’s time were amalgamated by the superior force of the Magadhan kingdom, which became an empire encompassing most of the Indian mainland. At the same time, the invasion by Alexander the Great established Greek kingdoms in the north-west, initiating an era of international trade.
-                            </p>
-                            <p>
-                                The Buddhist community, sponsored by kings such as Aśoka, took full advantage of these favorable conditions to spread the Dhamma over the Indian subcontinent and further. Less than two centuries after the Buddha’s passing, Buddhist communities were thriving in regions as far-flung as Sri Lanka and Afghanistan.
-                            </p>
-                            <p>
-                                But with this growth came new challenges. The community began to diverge, driven primarily by distance, but also by doctrinal disagreements and personality clashes. Soon there were, according to the traditional reckoning, “eighteen” schools. This is just a conventional number, and there were really four or five major groups of schools, with many regional branches.
-                            </p>
-                            <p>
-                                The sub-schools of the Sthavira branch for which we still have complete Vinayas fall into two sub-groups: the Sarvāstivāda and the Mūlasarvāstivāda on the one hand, and the Dharmaguptaka, the Mahīśāsaka, and the Theravāda on the other. First the Sarvāstivādins split from the rest of the Sthaviras. Over time the Mūlasarvāstivāda emerged as a sub-school of the Sarvāstivāda, and for this reason the Vinayas of these two schools share certain characteristics (Frauwallner, 1956: 194). After the Sarvāstivādin split, the remainder of the Sthaviras divided further, including into the Dharmaguptaka, the Mahīśāsaka, and the Theravāda. Yet these three schools were probably no more than regional variations of each other (Sujato, 2012: 102) and consequently their Vinayas have much in common (Frauwallner, 1956: 181).
-                            </p>
-                            <p>
-                                Each of these schools would have preserved a scriptural collection. Today we have only a small selection of these. Nevertheless, though much is lost, we do have enough to get a reasonable idea of the similarities and differences. Note that, unlike the Vinaya texts, it is sometimes difficult to determine the school affiliation of a sutta collection.
-                            </p>
-                            <p>
-                                For the purposes of the Discourses, the following schools are most important.
-                            </p>
-                            <ul>
-                                <li><strong>Theravāda</strong>: More precisely known as the Mahāvihāravāsins, the “Dwellers in the Great Monastery (at Anurādhapura)”, this group was established in Sri Lanka by Aśoka’s son, Mahinda. They passed down the collection known as the Pali Tipiṭaka, or Pali Canon. The collection retains the characteristics of its mainland origin, possibly from Avanti, and few changes were made on the island. This school exclusively used Pali for its canonical texts.</li>
-                                <li><strong>Sarvāstivāda</strong>: This was an influential school, or group of schools, mostly based in the north-west of India. We possess an extensive range of their Discourses—a Majjhima, a Saṁyutta, most of a Dīgha, and several partial collections. The bulk of the extant sutta texts in Sanskrit, Chinese, and Tibetan hail from this school, or one of their branches such as the Mūlasarvāstivāda. Their distinctive doctrine was that all phenomena in some sense “exist” in the past, present, and future. However, like all sectarian doctrines, this made little to no impact on their canonical texts. Their texts were passed down mainly in Sanskrit, and sometimes in a sanskritized Prākrit.</li>
-                                <li><strong>Dharmaguptaka</strong>: A school doctrinally almost indistinguishable from the Theravāda, but based in Gandhāra, in modern Pakistan and Afghanistan. They mainly used the language we call Gandhārī, and we possess a Dharmapada and some suttas in the original. The Dīrghāgama in Chinese (DA) is believed to have been translated from a text of this school.</li>
-                                <li><strong>Mahāsaṅghika</strong>: Some texts in Hybrid Sanskrit are from this school, and the Ekottarikāgama (EA) in Chinese is sometimes attributed to them, though this is unclear.</li>
-                            </ul>
-                            <p>
-                                Of these, only the Theravāda still exists as a school today, with an unbroken history of transmission of an entire collection in the original language. In addition, there is a complete set of commentaries for all the texts. For these reasons, the Pali collection has been, and will continue to be, the primary source for the early Buddhist teachings.
-                            </p>
-                            <p>
-                                For the rest, we have collections and fragments that were preserved primarily in Chinese translation, and to a lesser extent in Tibetan. The few texts in Sanskrit and other early Indic languages stem from chance finds; thousand year-old manuscripts preserved in mountain monasteries in Tibet or Nepal, or even older texts dug up from the sands of Central Asia. These texts are much less complete than the Pali, have been little studied, and pose a range of difficult linguistic and practical problems. Nevertheless, they have a unique value in offering an alternate source for checking and comparing the Pali texts.
-                            </p>
-                            <figure>
-                                <blockquote>
-                                    <p>
-                                        The unanimous opinion of the scholars who have studied these [sutta] texts is that they are mostly consistent in doctrine and content, and differ mainly in arrangement and organization. While it is true that the differences are not small, and it is hard to generalize, it is clear that the early community saw their main task to preserve verbatim the words of the Buddha, especially the essential teachings, a task that they took very seriously.
-                                    </p>
-                                </blockquote>
-                                <figcaption className="not-prose mt-6 flex gap-3 text-md md:mt-8">
-                                    <img
-                                        src="/collections_thumbnails_sakya.jpg"
-                                        className="size-12 rounded-full object-cover"
-                                        alt="Olivia Rhye"
-                                    />
-                                    <div>
-                                        <p className="text-md font-semibold text-primary">Bhikkhu Sujato</p>
-                                        <cite className="text-md text-tertiary not-italic">Co-founder of SuttaCentral</cite>
-                                    </div>
-                                </figcaption>
-                            </figure>
-
-                            <h2 id="structure">Structure</h2>
-                            <p>
-                                In the Buddha’s forty-five years of teaching, he was mainly concerned to address the person or people he was with, to appease their suffering. Thus he was not concerned with creating a overarching canon of his teachings. However, he did give some indications of a broader system of classifying the teachings. Sometimes he mentioned certain doctrinal formulations as the central content of his teachings—the four noble truths, or the sets of teachings on practice that came to be known as the <i>bodhipakkhiyā dhammā</i>, the “things leading to awakening”. These sets of doctrines form the backbone of the Saṁyutta Nikāya. He also mentioned an organization by literary style, known as the <i>aṅgas</i> or “branches”. While the Pali texts mention nine aṅgas, the northern texts typically mention twelve, and there is some indication that originally there may have been only three or four.
-                            </p>
-                            <p>
-                                Regardless of how the texts were organized in the Buddha’s life, early on the schools reorganized the texts in the system of <i>nikāyas</i> or <i>āgamas</i> as we have them today. (The term <i>nikāya</i>, a “collection” or “group”, is preferred in the Theravādin context, while the northern tradition usually used <i>āgama</i>, which has the sense of a “tradition” or “transmission”; however, these usages are not specific and may be used in any tradition.) This reorganization may well have started from the First Council, or at any rate, not much later. The primary motive was to arrange the collection into more manageable sections in order to facilitate memorization. The <i>nikāyas</i> were not absolute or fixed categories, but standards or templates which the different branches implemented in their own way.
-                            </p>
-                            <p>
-                                Each of the schools seems to have had main four <i>nikāyas</i>. The sequence of these is not fixed. The form adopted on SuttaCentral is the well-known sequence as used in the Pali tradition. In other schools, as implied by the accounts of the First Council, the collections were in different orders, such as placing the Saṁyutta first. Note that in the Chinese canon, the editors of the Taishō edition rearranged their material under the influence of the Pali canon to adopt the same sequence.
-                            </p>
-                            <p>
-                                Each of the <i>nikāyas</i> includes material that was edited and arranged, and sometimes added to, over a period of time. While each collection contains some unique texts, for the most part the differences in the number of discourses is simply due to the fact that a given discourse may be assigned a different place in different collections.
-                            </p>
-                            <ul>
-                                <li><strong>Long:</strong> A collection of the “long” discourses. The Dīgha has more elaborate literary ambitions than the remaining texts, and one of its aims seems to have been the conversion of brahmins, an educated class used to sophisticated literature. The Pali Dīgha Nikāya (DN) has 34 discourses, the Chinese (Dharmagupta) Dīrghāgama (DA) has 30. An old Sanskrit manuscript of the Sarvāstivādins, largely unpublished, indicates that their collection contained 47 discourses. In addition, there are a number of individual Dīrgha discourses preserved in Chinese translation.</li>
-                                <li><strong>Middle:</strong> The Majjhima contains a group of “middle length” discourses, 152 in Pali (MN), and 222 in the Chinese Sarvāstivāda version (MA). As with the Dīgha, there are a number of independent discourses in Chinese, too. The Majjhima contains a wide range of discourses on diverse topics, with an emphasis on dialogue and discussion.</li>
-                                <li><strong>Linked:</strong> The “linked” or “connected” discourses consists of a large number of smaller discourses organized mostly by topic, but also sometimes by the person who is involved. Here we find large collections of discourses on such key Buddhist topics as dependent origination, the five aggregates, the four noble truths, and the eightfold noble path. We have the Saṁyutta Nikāya (SN) in Pali, and a comparable Saṁyuktāgama of the Sarvāstivādins in Chinese translation (SA). In Chinese we also find two smaller, incomplete translations. In addition, there are a significant number of Saṁyutta style texts in Tibetan and Sanskrit.</li>
-                                <li><strong>Numbered:</strong> The “numbered” or “numerical” discourses are usually known as Aṅguttara Nikāya in Pali. However, the Pali tradition also knows the form Ekottara (“one-up” or “incremental”), and this is the form usually found in the northern collections. These collections organize texts in numbered sets, from one to eleven. Compared to the other nikāyas, they are more oriented to the lay community. The Ekottarikāgama (EA) in Chinese is a highly unusual text, which features a range of variations within itself when it comes even to basic doctrines. It shares considerably less in common with the Pali Aṅguttara than the other collections do with their counterparts. In addition, there is a partial Ekottarikāgama in Chinese, as well as a variety of individual discourses and fragments in Chinese and Sanskrit.</li>
-                            </ul>
-
-                            <p>
-                                The four <i>nikāyas</i> in Pali are a highly integrated corpus of texts, and we continually find passages, teachings, and phrases that are shared throughout. It is possible to discern differences in emphasis and orientation between them, but this should not obscure the fact that the bulk of the main doctrines are shared. Lacking complete sets of <i>āgamas</i> from other schools, it is hard to know for sure that their collections were similarly integrated, but it seems likely that this was the case.
-                            </p>
-                            {/* Vinaya Piṭaka */}
+                            {/* Abhidhamma Piṭaka */}
                             <figure>
                                 <div className="flex flex-col bg-secondary px-6 py-4 gap-2 rounded-4xl drop-shadow-sm">
                                     <div className="flex flex-row items-center justify-between gap-4">
-                                        <h4 className="not-prose text-display-xs text-brand-700 dark:text-brand-700/80">Sutta Piṭaka Nikāyas</h4>
+                                        <h4 className="not-prose text-display-xs text-brand-700 dark:text-brand-700/80">The Seven Books of the Theravāda Abhidhamma</h4>
                                         <div className="flex flex-col gap-3 md:justify-center pb-1">
                                             <Button color="secondary" size="sm" iconLeading={Dataflow01}>
                                                 Outline
@@ -236,29 +159,168 @@ const ContentSplitImage01 = () => {
                                         </div>
                                     </div>
                                     <div className="mx-auto w-full flex flex-row flex-wrap md:flex-nowrap items-center justify-center gap-2 rounded-3xl">
-                                        <div className="mx-auto w-full h-full flex flex-col items-center justify-center gap-0 bg-emerald-100/60 dark:bg-emerald-950/80 px-2 py-4 rounded-2xl border border-emerald-200 dark:border-emerald-800">
-                                            <p className="not-prose text-md font-light text-primary/70 text-center">Dīghanikāya</p>
-                                            <p className="not-prose text-md font-bold text-center text-secondary">Long Discourses</p>
+                                        <div className="mx-auto w-full h-full flex flex-col items-center justify-center gap-0 bg-olive-200/80 dark:bg-olive-800/80 px-2 py-3 rounded-2xl border border-olive-300 dark:border-olive-700">
+                                            <p className="not-prose text-md font-light text-primary/70 text-center">Dhammasaṅgaṇi</p>
+                                            <p className="not-prose text-md font-bold text-center text-secondary">Compendium of Phenomena</p>
                                         </div>
-                                        <div className="mx-auto w-full h-full flex flex-col items-center justify-center gap-0 bg-cyan-100/60 dark:bg-cyan-950/80 px-2 py-4 rounded-2xl border border-cyan-200 dark:border-cyan-800">
-                                            <p className="not-prose text-md font-light text-primary/70 text-center">Majjhimanikāya</p>
-                                            <p className="not-prose text-md font-bold text-center text-secondary">Middle Discourses</p>
+                                        <div className="mx-auto w-full h-full flex flex-col items-center justify-center gap-0 bg-gray-200/70 dark:bg-gray-800/80 px-2 py-3 rounded-2xl border border-zinc-300 dark:border-zinc-700">
+                                            <p className="not-prose text-md font-light text-primary/70 text-center">Vibhaṅga</p>
+                                            <p className="not-prose text-md font-bold text-center text-secondary">Book of Analysis</p>
                                         </div>
-                                        <div className="mx-auto w-full h-full flex flex-col items-center justify-center gap-0 bg-blue-100/60 dark:bg-blue-950/80 px-2 py-4 rounded-2xl border border-blue-200 dark:border-blue-800">
-                                            <p className="not-prose text-md font-light text-primary/70 text-center">Samyuttanikāya</p>
-                                            <p className="not-prose text-md font-bold text-center text-secondary">Linked Discourses</p>
+                                        <div className="mx-auto w-full h-full flex flex-col items-center justify-center gap-0 bg-gray-200/70 dark:bg-gray-800/80 px-2 py-3 rounded-2xl border border-gray-300 dark:border-gray-700">
+                                            <p className="not-prose text-md font-light text-primary/70 text-center">Dhātukathā</p>
+                                            <p className="not-prose text-md font-bold text-center text-secondary">Discussion of Elements</p>
                                         </div>
-                                        <div className="mx-auto w-full h-full flex flex-col items-center justify-center gap-0 bg-violet-100/60 dark:bg-violet-950/80 px-2 py-4 rounded-2xl border border-violet-200 dark:border-violet-800">
-                                            <p className="not-prose text-md font-light text-primary/70 text-center">Aṅguttaranikāya</p>
-                                            <p className="not-prose text-md font-bold text-center text-secondary">Numbered Discourses</p>
+                                        <div className="mx-auto w-full h-full flex flex-col items-center justify-center gap-0 bg-gray-200/70 dark:bg-gray-800/80 px-2 py-3 rounded-2xl border border-gray-300 dark:border-gray-700">
+                                            <p className="not-prose text-md font-light text-primary/70 text-center">Puggalapaññatti</p>
+                                            <p className="not-prose text-md font-bold text-center text-secondary">Description of Personality Types</p>
                                         </div>
-                                        <div className="mx-auto w-full h-full flex flex-col items-center justify-center gap-0 bg-fuchsia-100/60 dark:bg-fuchsia-950/80 px-2 py-4 rounded-2xl border border-fuchsia-200 dark:border-fuchsia-800">
-                                            <p className="not-prose text-md font-light text-primary/70 text-center">Khuddakanikāya</p>
-                                            <p className="not-prose text-md font-bold text-center text-secondary">Minor Collection</p>
+                                        <div className="mx-auto w-full h-full flex flex-col items-center justify-center gap-0 bg-gray-200/70 dark:bg-gray-800/80 px-2 py-3 rounded-2xl border border-gray-300 dark:border-gray-700">
+                                            <p className="not-prose text-md font-light text-primary/70 text-center">Kathāvatthu</p>
+                                            <p className="not-prose text-md font-bold text-center text-secondary">Points of Controversy</p>
+                                        </div>
+                                        <div className="mx-auto w-full h-full flex flex-col items-center justify-center gap-0 bg-gray-200/70 dark:bg-gray-800/80 px-2 py-3 rounded-2xl border border-gray-300 dark:border-gray-700">
+                                            <p className="not-prose text-md font-light text-primary/70 text-center">Yamaka</p>
+                                            <p className="not-prose text-md font-bold text-center text-secondary">The Pairs</p>
+                                        </div>
+                                        <div className="mx-auto w-full h-full flex flex-col items-center justify-center gap-0 bg-olive-200/80 dark:bg-olive-800/80 px-2 py-3 rounded-2xl border border-olive-300 dark:border-olive-700">
+                                            <p className="not-prose text-md font-light text-primary/70 text-center">Paṭṭhāna</p>
+                                            <p className="not-prose text-md font-bold text-center text-secondary">Conditional Relations</p>
                                         </div>
                                     </div>
                                 </div>
                             </figure>
+                            <h3 id="dhammasangani">Dhammasaṅgaṇī</h3>
+                            <p>
+                                The Dhammasaṅgaṇī (Enumeration of Phenomena) is built on the idea of a mātikā, a list of contents or matrix. A mātikā acts as a simple instance of a template that is applied and transformed in ever more complex forms throughout the work. The Dhammasaṅgaṇī mātikās list sets of phenomena (dhammas). Most of these are doctrinal terms familiar from the suttas, although some are specialized Abhidhamma terms. The Dhammasaṅgaṇī starts with three mātikās. The first classifies dhammas into 22 sets of three (tika), and the next two use sets of two (duka), 100 pairs for Abhidhamma terms, and 42 for Sutta terms.
+                            </p>
+                            <p>
+                                The first of the triple sets is the momentous group: wholesome, unwholesome, and undetermined. This serves as a framework for classifying all the various phenomena. While it seems simple enough, even this detail was controversial, as some schools rejected the existence of the undetermined, or morally neutral, category.
+                            </p>
+                            <h3 id="vibhanga">Vibhaṅga</h3>
+                            <p>
+                                The Vibhaṅga (Book of Analysis) consists of 18 chapters arranged by topic. The list of topics is closely related to the Saṁyutta Nikāya—aggregates, senses, dependent origination, etc. Most of the chapters have a threefold structure.
+                            </p>
+                            <ol>
+                                <li>
+                                    Analysis according to the suttas: this quotes a key passage from the suttas on the relevant topic and offers a modest analysis.
+                                </li>
+                                <li>
+                                    Analysis according to the Abhidhamma: applies the sets of synonyms and terms as developed in the Dhammasaṅgaṇī.
+                                </li>
+                                <li>
+                                    Catechism: tests the student’s knowledge with systematic questioning.
+                                </li>
+                            </ol>
+                            <p>
+                                A few sections, such as Vb 18 Dhammahadaya, do not fit this system. They may have originated as independent treatises.
+                            </p>
+                            <h3 id="dhatukatha">Dhātukathā</h3>
+                            <p>
+                                The Dhātukathā (Discussion of Elements) shows how the Dhammasaṅgaṇī mātikās relate to the 5 aggregates, 12 bases and 18 elements. It is organized according to fourteen methods.
+                            </p>
+                            <h3 id="puggalapannatti">Puggalapaññatti</h3>
+                            <p>
+                                The Puggalapaññatti (Designation of Persons) departs from the strictly phenomenological approach of most Abhidhamma texts to present a compendium of passages relating to different kinds of individual. These are set out in a mātikā that lists kinds of individuals numerically organized from one to ten. As suggested by the numerical arrangement, these terms are mostly derived from the Aṅguttara Nikāya, with modest changes in wording. The main concern is to classify personal or psychological tendencies as they relate to the development of the Buddhist path.
+                            </p>
+                            <p>
+                                The Buddhist community, sponsored by kings such as Aśoka, took full advantage of these favorable conditions to spread the Dhamma over the Indian subcontinent and further. Less than two centuries after the Buddha’s passing, Buddhist communities were thriving in regions as far-flung as Sri Lanka and Afghanistan.
+                            </p>
+                            <h3 id="kathavatthu">Kathāvatthu</h3>
+                            <p>
+                                The Kathāvatthu (Points of Controversy) is a collection of over 200 discussions on points of interpretation of Buddhist doctrine. These consist of a debate between unnamed protagonists. Each relies either on logic or quotations from the suttas to support their arguments. Some of the discussions concern central problems in Buddhist philosophy, such as the nature of not-self, or the problem of continuity and impermanence. Many, however, are very minor.
+                            </p>
+                            <p>
+                                While the text does not identify the points of view, most of them may be identified with the doctrines held by various Buddhist schools. Note that none of the controverted points deal with Brahmanical, Jaina, or other non-Buddhist views. Nor are there any significant differences in the suttas referred to; each debater assumes that they share a common sutta basis.
+                            </p>
+                            <p>
+                                The Kathāvatthu is the only book of the Abhidhamma ascribed by the Theravāda to a specific author, Moggaliputtatissa, a senior monk at the time of King Ashoka. The core of the work probably formed then, but it grew substantially over time. One or two of the core discussions appear to share a common basis with the Vijñānakāya.
+                            </p>
+                            <h3 id="yamaka">Yamaka</h3>
+                            <p>
+                                The Yamaka (Pairs) consists of ten chapters on different topics, starting with the roots of wholesome or unwholesome conduct. It applies a series of pairs of questions, with the object of fully determining the scope of application of terms. For example, are all instances of rūpa (form, physical phenomena) included in the aggregate of form (rūpakkhandha)? No, because there are idiomatic uses of rūpa such as evarūpa (“of such a sort”). But are all instances of the aggregate of form included in rūpa? Yes.
+                            </p>
+                            <h3 id="patthana">Paṭṭhāna</h3>
+                            <p>
+                                Paṭṭhāna (Conditional Relations) sets out a simple mātikā listing 24 kinds of condition. The first is the “root condition” (hetupaccayo), dealing with how acts are caused by the unwholesome roots of greed, hate, and delusion, or their opposites. This mātikā is then applied to the mātikās of Dhammasaṅgaṇī, creating a bewildering complexity of possible combinations. The Paṭṭhāna is always heavily abbreviated, but if it were to be fully spelled out, it would probably be the largest book ever created, with many billions of combinations.
+                            </p>
+                            <p>
+                                The Dhammasaṅgaṇī and the Paṭṭhāna bookend the Abhidhamma collection, the first dealing with phenomena, the latter with their relations. While method and the details have expanded considerably, the approach can be seen as a detailed application of the underlying principles of dependent origination.
+                            </p>
+                            <h2 id="the-books-of-the-sarvastivada-abhidhamma">The Books of the Sarvāstivāda Abhidhamma</h2>
+                            <p>
+                                While many, perhaps all, of the “eighteen” early schools would have had Abhidhamma texts of some sort, none were as famous as the Sarvāstivāda. The canonical texts mentioned here were supplemented or supplanted by the massively influential treatise Mahāvibhāṣa, which established the Sarvāstivāda as the Abhidhamma school par excellence. Even when later works such as Vasubandhu’s Abhidharmakoṣa or Nāgārjuna’s Mūlamadhyamakakārikā critiqued the Sarvāstivādin philosophy, they were still working with the framework of ideas and terms established by the school, and based originally on these canonical texts. Accordingly, while the Abhidhamma texts of most schools have disappeared, these texts were taken to China and preserved there in translation. In addition, there are some passages found in Sanskrit fragments and Tibetan texts.
+                            </p>
+                            <p>
+                                The originals of all these Sarvāstivāda works were in Sanskrit.
+                            </p>
+                            <h3 id="sangitiparyaya">Saṅgītiparyāya</h3>
+                            <p>
+                                Regarded as one of the earliest of the Abhidhamma books, this is essentially a commentary on the Sarvāstivādin version of the Saṅgīti Sutta (DN 33). It was composed by Mahākausthila (according to the Sanskrit and Tibetan sources) or Śāriputra (according to the Chinese sources). The Chinese recension was translated by Xuanzang.
+                            </p>
+                            <h3 id="dharmaskandha">Dharmaskandha</h3>
+                            <p>
+                                As noted above, this text appears to share a common origin with the Vibhaṅga of the Pali tradition. It is maintained today in a complete Chinese and partial Sanskrit version. Compared to the Vibhaṅga, the method appears to be less formalized and more discursive, quoting a range of sutta passages. It was composed by Śāriputra (according to the Sanskrit and Tibetan sources) or Maudgalyāyana (according to Chinese sources). The Chinese edition was translated by Xuanzang.
+                            </p>
+                            <h3 id="prajnapati-shastra">Prajñaptiśāstra</h3>
+                            <p>
+                                This consists of a series of questions and answers on points of doctrine based on a mātikā, supported by sutta quotes. It was said to be composed by either Maudgalyāyana or Mahākatyāyana. The Chinese translation is by Dharmarakṣita.
+                            </p>
+                            <h3 id="dhatukaya">Dhātukāya</h3>
+                            <p>
+                                Composed by Purna (according to Sanskrit and Tibetan sources), or Vasumitra (according to Chinese sources). It was translated into Chinese by Xuanzang. The Dhātukāya bears some similarity to the Pali Dhātukathā, although it uses a different mātikā.
+                            </p>
+                            <h3 id="vijnanakaya">Vijñānakāya</h3>
+                            <p>
+                                This is a counterpart of the Pali Kathāvatthu, and may share a common historical basis. The text mentions the Theravādin Moggaliputtatissa, author of the Kathāvatthu, as an opponent in the debate on the key Sarvāstivāda doctrine that all phenomena exist in the past, future, and present. The text discusses far fewer points than the Kathāvatthu, however. It was composed by Devasarman and translated into Chinese by Xuanzang.
+                            </p>
+                            <h3 id="prakaranapada">Prakaraṇapāda</h3>
+                            <p>
+                                Composed by Vasumitra, and translated by Xuanzang (T 1542), with another partial translation by Gunabhadra and Bodhiyasa at T 1541. This was a central Abhidharma treatise, which influenced even non-Sarvāstivādin texts such as the Mahāprajñapāramītopadeśa.
+                            </p>
+                            <h3 id="jnanaprasthana">Jñānaprasthāna</h3>
+                            <p>
+                                Composed by Kātyāyanīputra and translated into Chinese by Xuanzang at T 1544. It also appears translated by Saṅghadeva and Zhu-fo-nian under the name 阿毘曇八犍度論 at T 1543. The largest of the Sarvāstivādin Abhidhamma books, this formed the basis for the later Sarvāstivāda treatises, and hence the modern study of Abhidharma especially in Tibetan Buddhism.
+                            </p>
+
+                            <h2 id="the-dharmaguptaka-sariputrabhidharma">The Dharmaguptaka Śāripūtrābhidharma</h2>
+                            <p>
+                                The only extant work of the Dharmaguptaka Abhidhamma, this was translated into Chinese by Dharmayaśas and Dharmagupta. It shares some content with the Vibhaṅga and Dharmaskandha, and other details with other texts. Whereas the other schools maintained multiple Abhidhamma texts, this single text covers much of the same ground, and seems to contain the entire Abhidhamma system of the Dharmaguptakas.
+                            </p>
+                            <h2 id="abhidhamma-in-buddhist-traditions">Abhidhamma in Buddhist Traditions</h2>
+                            <p>
+                                Throughout the years, the study of Abhidhamma has been held in high esteem by the Buddhist traditions. The Theravāda tradition developed a series of commentaries and treatises explaining the ideas of the Abhidhamma and extending them further. This is a living tradition, which boasts an unbroken series of publications down to modern times. Today, Abhidhamma study is specially emphasized in Burmese Buddhism, although it remains active in all Theravāda regions. Tibetan Buddhism likewise strongly emphasizes study of the Abhidharma, based mostly on Sarvāstivādin sources. In all regions, however, contemporary Abhidhamma study primarily relies on later treatises, and the canonical texts are usually not directly studied in depth.
+                            </p>
+                            <p>
+                                As well as study, Abhidhamma has been a formative influence on several modern schools of meditation. In particular, the Burmese meditation schools, including Mahasi, Goenka, and Pa Auk, all rely closely on Abhidhamma concepts.
+                            </p>
+                            <p>
+                                Perhaps unexpectedly, Abhidhamma is not restricted to monastic or scholarly circles. It is frequently taught to or by lay people, and is popular throughout Southeast Asia. In addition, Abhidhamma mātikās may form the basis for ceremonial recitation. In Thailand, the Dhammasaṅgaṇī tikamātikā and the 24 conditions of the Paṭṭhāna are used as funeral chants.
+                            </p>
+                            <p>
+                                Each of the schools seems to have had main four <i>nikāyas</i>. The sequence of these is not fixed. The form adopted on SuttaCentral is the well-known sequence as used in the Pali tradition. In other schools, as implied by the accounts of the First Council, the collections were in different orders, such as placing the Saṁyutta first. Note that in the Chinese canon, the editors of the Taishō edition rearranged their material under the influence of the Pali canon to adopt the same sequence.
+                            </p>
+                            <p>
+                                Each of the <i>nikāyas</i> includes material that was edited and arranged, and sometimes added to, over a period of time. While each collection contains some unique texts, for the most part the differences in the number of discourses is simply due to the fact that a given discourse may be assigned a different place in different collections.
+                            </p>
+
+                            <h2 id="criticism">Criticism</h2>
+                            <p>
+                                The Abhidhamma itself is a critical system, developed to clarify understanding of fundamental concepts and relations. Underlying this project is the assumption that such clarification is needed, which implies that not everyone understands things the same way. This critical aspect comes to the fore in works such as the Kathāvatthu, which showcases the rational methods of clarifying doctrines.
+                            </p>
+                            <p>
+                                Some, such as the historical Sautrāntikas, criticized the Abhidhamma project itself, claiming it deviated from the suttas. It is not clear whether all early schools actually had an Abhidhamma Piṭaka. However, they all must have had some comparable works of analysis and explanation.
+                            </p>
+                            <p>
+                                Criticism of Abhidhamma was a foundation of the Mahāyāna. Mahāyāna sutras criticize both specific details of Abhidhamma doctrines—such as the notion that each phenomenon is defined by its individual essence—and the overall direction of the Abhidhamma schools, alleging that its followers waste time debating trivia rather than understanding the profundity of the teaching. Nevertheless, Mahāyāna texts developed their own forms of Abhidhamma, and study of Abhidhamma is a core part of many Mahāyāna curricula to this day.
+                            </p>
+                            <p>
+                                Criticism is also found in the Theravāda commentaries, which record challenges of the authenticity of the Abhidhamma. However, most of the debate in the schools concerns the interpretation of Abhidhamma, not the validity of the project itself.
+                            </p>
+                            <p>
+                                This critical tradition continues in the present day. Within the Tibetan Buddhist education system, Abhidharma texts and concepts are studied, and considered in light of the critiques by the Sautrāntikas and Mahāyānists. And while some Theravādins maintain that it is essential to study Abhidhamma, others claim that key Abhidhamma ideas depart from the suttas, and that study of the Abhidhamma is unnecessary.
+                            </p>
+
                             <p>
                                 Early discourses that were not included in the <i>nikāyas</i> were gathered by the Pali tradition into their Khuddaka or “minor” collection. It’s not entirely clear why these weren’t simply included in the four <i>nikāyas</i>; originally it may have simply been a matter of organizational convenience. The Pali has six works in the Khuddaka that are considered to belong to the early period. These mostly consist of verse, with some narrative and doctrinal material in prose.
                             </p>
