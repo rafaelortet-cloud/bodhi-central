@@ -45,7 +45,7 @@ export const HomeScreen = () => {
                             Gateways to Buddhist paths of the Awakening
                         </h1>
                         <p className="mt-4 max-w-xl text-lg text-balance text-brand-100 dark:text-brand-100 md:mt-6 md:text-xl">
-                            A modern platform channeling universally revered Buddhist teachings and knowledge for everyone.{" "}
+                            A modern platform channeling universally revered Buddhist teachings and practical knowledge for everyone.{" "}
                         </p>
 
                         <div className="mt-8 flex w-full flex-col-reverse items-stretch gap-3 md:mt-12 md:flex-row md:items-start">

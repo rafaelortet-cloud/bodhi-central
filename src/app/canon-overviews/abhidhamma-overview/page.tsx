@@ -100,7 +100,7 @@ const ContentSplitImage01 = () => {
                     {/* Article content */}
                     <div className="max-w-prose md:max-w-full">
                         <div className="mx-auto prose md:prose-lg">
-                            <p className="lead first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-serif first-letter:text-brand-800 dark:first-letter:text-brand-100">
+                            <p className="lead first-letter:float-left first-letter:text-7xl first-letter:leading-12 first-letter:mr-2 first-letter:font-serif first-letter:font-extralight first-letter:text-brand-800 dark:first-letter:text-brand-200">
                                 The Abhidhamma Piṭaka is the last of the three piṭakas (or “baskets”) in the canons of the early Buddhist schools. It takes the terms and ideas found in the Discourses, and organizes and analyzes them systematically.
                             </p>
                             <hr />

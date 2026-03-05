@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Nunito, Roboto_Serif, Noto_Serif_Tibetan, Fraunces } from "next/font/google";
+import { Crimson_Pro, Nunito, Roboto_Serif, Noto_Serif_Tibetan } from "next/font/google";
 import { RouteProvider } from "@/providers/router-provider";
 import { Theme } from "@/providers/theme";
 import "@/styles/globals.css";
@@ -20,11 +20,10 @@ const robotoSerif = Roboto_Serif({
     axes: ["wdth", "opsz", "GRAD"],
 });
 
-const fraunces = Fraunces({
+const crimsonPro = Crimson_Pro({
     subsets: ["latin", "latin-ext"],
     display: "swap",
-    variable: "--font-fraunces",
-    axes: ["opsz", "SOFT", "WONK"],
+    variable: "--font-crimson-pro",
 });
 
 const tibetan = Noto_Serif_Tibetan({
@@ -56,7 +55,7 @@ export default async function RootLayout({
     } = await supabase.auth.getUser();
 
     return (
-        <html lang="en" suppressHydrationWarning className={cx(nunito.variable, robotoSerif.variable, fraunces.variable, tibetan.variable)}>
+        <html lang="en" suppressHydrationWarning className={cx(nunito.variable, robotoSerif.variable, crimsonPro.variable, tibetan.variable)}>
             <body className="bg-primary antialiased">
                 <RouteProvider>
                     <Theme>
