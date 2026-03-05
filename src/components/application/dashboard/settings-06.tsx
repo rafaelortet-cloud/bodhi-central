@@ -19,7 +19,6 @@ import type { Color } from "react-aria-components";
 import { ColorField, ColorSwatch, Radio, RadioGroup, parseColor } from "react-aria-components";
 import { SidebarNavigationSectionsSubheadings } from "@/components/application/app-navigation/sidebar-navigation/sidebar-sections-subheadings";
 import { Dark, Light, System } from "@/components/application/modals/base-components/appearances";
-import { DefaultBanner, DefaultBannerSM, NoneBanner, NoneBannerSM, SimplifiedBanner } from "@/components/application/modals/base-components/banners";
 import { SectionFooter } from "@/components/application/section-footers/section-footer";
 import { SectionHeader } from "@/components/application/section-headers/section-headers";
 import { SectionLabel } from "@/components/application/section-headers/section-label";
@@ -63,30 +62,6 @@ const themes = [
         value: "dark",
         label: "Dark mode",
         component: Dark,
-    },
-];
-
-const banners = [
-    {
-        value: "default",
-        label: "Default",
-        description: "Default solid brand color.",
-        component: DefaultBanner,
-        componentSM: DefaultBannerSM,
-    },
-    {
-        value: "simplified",
-        label: "Simplified",
-        description: "Minimal and simplified.",
-        component: SimplifiedBanner,
-        componentSM: NoneBannerSM,
-    },
-    {
-        value: "custom",
-        label: "Custom styling",
-        description: "Manage styling with CSS.",
-        component: NoneBanner,
-        componentSM: NoneBannerSM,
     },
 ];
 
