@@ -128,7 +128,7 @@ export const Settings06 = () => {
                         items: [
                             {
                                 label: "Dashboard",
-                                href: "/",
+                                href: "/dashboard",
                                 icon: BarChartSquare02,
                             },
                             {
@@ -149,37 +149,12 @@ export const Settings06 = () => {
                         ],
                     },
                     {
-                        label: "Quick Access",
-                        items: [
-                            {
-                                label: "Bookmarks",
-                                href: "#",
-                                icon: Bookmark,
-                            },
-                            {
-                                label: "Notes",
-                                href: "#",
-                                icon: File05,
-                                badge: (
-                                    <Badge size="sm" type="modern">
-                                        8
-                                    </Badge>
-                                ),
-                            },
-                            {
-                                label: "Saved Searches",
-                                href: "/settings",
-                                icon: SearchLg,
-                            },
-                        ],
-                    },
-                    {
                         label: "My Desk",
                         items: [
                             {
                                 label: "Spaces",
                                 href: "#",
-                                icon: () => <Avatar src="https://www.untitledui.com/logos/images/Catalog.jpg" className="mr-2 size-5" />,
+                                icon: () => <Avatar src="/collections_thumbnails_kagyu.jpg" className="mr-2 size-5" />,
                                 badge: (
                                     <div className="flex items-center gap-3">
                                         <Badge size="sm" type="modern">
@@ -192,7 +167,7 @@ export const Settings06 = () => {
                             {
                                 label: "Texts",
                                 href: "#",
-                                icon: () => <Avatar src="https://www.untitledui.com/logos/images/Warpspeed.jpg" className="mr-2 size-5" />,
+                                icon: () => <Avatar src="/collections_thumbnails_kagyu.jpg" className="mr-2 size-5" />,
                                 badge: (
                                     <div className="flex items-center gap-3">
                                         <Badge size="sm" type="modern">
@@ -205,7 +180,7 @@ export const Settings06 = () => {
                             {
                                 label: "Study Paths",
                                 href: "#",
-                                icon: () => <Avatar src="https://www.untitledui.com/logos/images/Boltshift.jpg" className="mr-2 size-5" />,
+                                icon: () => <Avatar src="/collections_thumbnails_kagyu.jpg" className="mr-2 size-5" />,
                                 badge: (
                                     <div className="flex items-center gap-3">
                                         <Badge size="sm" type="modern">
@@ -218,7 +193,7 @@ export const Settings06 = () => {
                             {
                                 label: "Practice Paths",
                                 href: "#",
-                                icon: () => <Avatar src="https://www.untitledui.com/logos/images/Sisyphus.jpg" className="mr-2 size-5" />,
+                                icon: () => <Avatar src="/collections_thumbnails_kagyu.jpg" className="mr-2 size-5" />,
                                 badge: (
                                     <div className="flex items-center gap-3">
                                         <Badge size="sm" type="modern">
@@ -230,6 +205,32 @@ export const Settings06 = () => {
                             },
                         ],
                     },
+                    {
+                        label: "Quick Access",
+                        items: [
+                            {
+                                label: "Bookmarks",
+                                href: "/bookmarks",
+                                icon: Bookmark,
+                            },
+                            {
+                                label: "Notes",
+                                href: "/notes",
+                                icon: File05,
+                                badge: (
+                                    <Badge size="sm" type="modern">
+                                        8
+                                    </Badge>
+                                ),
+                            },
+                            {
+                                label: "Saved Searches",
+                                href: "/saved-searches",
+                                icon: SearchLg,
+                            },
+                        ],
+                    },
+
                 ]}
             />
 
