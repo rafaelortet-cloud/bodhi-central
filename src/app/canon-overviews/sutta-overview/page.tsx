@@ -95,7 +95,7 @@ const ContentSplitImage01 = () => {
                     {/* Article content */}
                     <div className="max-w-prose md:max-w-full">
                         <div className="mx-auto prose md:prose-lg">
-                            <p className="lead first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-serif first-letter:text-brand-800 dark:first-letter:text-brand-100">
+                            <p className="lead first-letter:float-left first-letter:text-7xl first-letter:leading-12 first-letter:mr-2 first-letter:font-serif first-letter:font-extralight first-letter:text-brand-800 dark:first-letter:text-brand-200">
                                 The most important body of sacred scripture in Buddhism is the Suttapiṭaka, the “basket of discourses”. This collection contains the teachings of the Buddha and his closest disciples, as collected and transmitted by the schools of early Buddhism. This is the well-spring of Dhamma, from which the teachings and practices of the many schools of Buddhism are drawn.
                             </p>
                             <hr />

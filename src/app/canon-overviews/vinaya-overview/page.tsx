@@ -21,7 +21,7 @@ const ContentSplitImage01 = () => {
     return (
         <div className="bg-primary">
             <div className="relative mx-auto flex max-w-container flex-col items-center px-4 py-16 md:flex-row md:px-8 md:pt-16 md:pb-24">
-                <div className="flex max-w-180 flex-col items-start md:absolute">
+                <div className="flex max-w-160 flex-col items-start md:absolute">
                     <BadgeGroup size="md" addonText="Pali Canon Overviews" color="brand" theme="light" className="pr-3" iconTrailing={null}>
                         10 min read
                     </BadgeGroup>
@@ -95,7 +95,7 @@ const ContentSplitImage01 = () => {
                     {/* Article content */}
                     <div className="max-w-prose md:max-w-full">
                         <div className="mx-auto prose md:prose-lg">
-                            <p className="lead first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-serif first-letter:text-brand-800 dark:first-letter:text-brand-100">
+                            <p className="lead first-letter:float-left first-letter:text-7xl first-letter:leading-12 first-letter:mr-2 first-letter:font-serif first-letter:font-extralight first-letter:text-brand-800 dark:first-letter:text-brand-200">
                                 The Monastic Law is available in more recensions than any other part of the Tipiṭaka. There is a full version in Pali, and four complete versions extant in Chinese translation, all belonging to different schools of early Buddhism: Mahāsāṅghika, Dharmaguptaka, Mahīśāsaka, and Sarvāstivāda. The Chinese Tipiṭaka also preserves other Vinaya related texts, such as an independent <i>bhikkhu pātimokkha</i> of the Kāśyapīya School and several more or less school-specific Vinaya texts. The Vinaya of the Mūlasarvāstivāda school exists in three versions: a complete text in Tibetan translation, a mostly complete version in Chinese, and substantial portions in Sanskrit. There are also several Vinaya texts, as well as a large number of fragments, in Sanskrit and other Indic languages, mostly of Mahāsāṅghika, Sarvāstivāda, and Mūlasarvāstivāda provenance.
                             </p>
                             <hr />
@@ -113,14 +113,14 @@ const ContentSplitImage01 = () => {
                                 The exact cut-off point after which no new material was added to the Canonical Vinaya is impossible to pin down and it would have varied from school to school. On linguistic grounds, it seems likely that the majority of additions to the Pali Vinaya, with the exception of the Parivāra, were done prior to its arrival in Sri Lanka in the third century BCE. After this point new material was added to the commentarial literature, which, despite its likely origin in the mainland, was greatly expanded and developed in Sri Lanka.
                             </p>
                             <figure>
-                                <img className="h-60 md:h-120" src="/jetavanaramaya-scenery-01.jpg" alt="Woman working at computer" />
+                                <img className="h-60 md:h-120" src="/content/jambudipa-c-500-bce-1600px.jpg" alt="Jambudipa Map c. 500 BCE" />
                                 <figcaption>
-                                    Image courtesy of Rafael Ortet via{" "}
+                                    Map of Jambudīpa is courtesy of Jonas David Mitja Lang via {" "}
                                     <a
-                                        href="https://artlist.io/"
+                                        href="https://suttacentral.net/"
                                         className="rounded-xs outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-2"
                                     >
-                                        ArtList
+                                        SuttaCentral
                                     </a>
                                 </figcaption>
                             </figure>
