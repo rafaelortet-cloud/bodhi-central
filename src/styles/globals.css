@@ -53,30 +53,26 @@ h6 {
     font-family: var(--font-serif);
     font-variation-settings:
         "opsz" var(--font-serif--opsz),
-        "SOFT" var(--font-serif--soft),
-        "WONK" var(--font-serif--wonk),
         "wdth" var(--font-serif--wdth),
         "GRAD" var(--font-serif--grad);
 }
 
 h1 {
     --font-serif--opsz: 60;
-    --font-serif--soft: 30;
-    --font-serif--wonk: 50;
     font-weight: 350;
+    font-size: var(--text-display-2xl);
+    line-height: var(--text-display-xl--line-height);
+    text-wrap: balance;
 }
 
 h2 {
     --font-serif--opsz: 60;
-    --font-serif--soft: 30;
-    --font-serif--wonk: 50;
-    font-weight: 350;
+    font-weight: 400;
+
 }
 
 h3 {
     --font-serif--opsz: 60;
-    --font-serif--soft: 50;
-    --font-serif--wonk: 50;
     font-weight: 500;
     text-wrap: balance;
 }
@@ -85,8 +81,6 @@ h4,
 h5,
 h6 {
     --font-serif--opsz: 60;
-    --font-serif--soft: 20;
-    --font-serif--wonk: 50;
 }
 
 /* Hide the default expand arrow on Safari.  */

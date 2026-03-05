@@ -18,7 +18,7 @@ export default function TheravadaTraditionPage() {
                 {/* Content layer */}
                 <div className="relative z-10">
                     <section className="flex flex-col items-center justify-center pt-20 pb-12 px-4 md:px-6">
-                        <h1 className="text-display-md text-brand-800 dark:text-brand-200 md:text-display-lg lg:text-display-xl">Theravada Tradition</h1>
+                        <h1 className="text-display-md text-brand-800 dark:text-brand-200 md:text-display-lg lg:text-display-xl">Theravāda Tradition</h1>
                         <p className="text-center text-lg font-semibold text-tertiary">The Pali Canon, the earliest Buddhist scriptures.</p>
                     </section>
                     <section>

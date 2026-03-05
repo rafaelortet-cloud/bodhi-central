@@ -54,7 +54,7 @@ export const CheckItemText = (props: {
             {iconStyle === "outlined" && (
                 <CornerDownRight
                     className={cx(
-                        "opacity-20 shrink-0",
+                        "opacity-40 shrink-0",
                         color === "success" ? "text-fg-success-primary" : "text-fg-brand-primary",
                         size === "lg" ? "size-7 md:h-8 md:w-8" : size === "md" ? "size-7" : "size-6",
                     )}

@@ -185,7 +185,7 @@ const ContentSplitImage01 = () => {
                             <figure>
                                 <blockquote>
                                     <p>
-                                        The unanimous opinion of the scholars who have studied these [sutta] texts is that they are mostly consistent in doctrine and content, and differ mainly in arrangement and organization. While it is true that the differences are not small, and it is hard to generalize, it is clear that the early community saw their main task to preserve verbatim the words of the Buddha, especially the essential teachings, a task that they took very seriously.
+                                        The unanimous opinion of the scholars who have studied these [early Buddhist] texts is that they are mostly consistent in doctrine and content, and differ mainly in arrangement and organization. While it is true that the differences are not small, and it is hard to generalize, it is clear that the early community saw their main task to preserve verbatim the words of the Buddha, especially the essential teachings, a task that they took very seriously.
                                     </p>
                                 </blockquote>
                                 <figcaption className="not-prose mt-6 flex gap-3 text-md md:mt-8">
