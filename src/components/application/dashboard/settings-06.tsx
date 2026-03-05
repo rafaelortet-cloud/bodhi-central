@@ -12,6 +12,8 @@ import {
     Rows01,
     SearchLg,
     Settings01 as Settings01Icon,
+    LifeBuoy01,
+    Bookmark,
 } from "@untitledui/icons";
 import type { Color } from "react-aria-components";
 import { ColorField, ColorSwatch, Radio, RadioGroup, parseColor } from "react-aria-components";
@@ -39,13 +41,11 @@ const tabs = [
     { id: "details", label: "My details" },
     { id: "profile", label: "Profile" },
     { id: "password", label: "Password" },
-    { id: "team", label: "Team" },
     { id: "appearance", label: "Appearance" },
+    { id: "plans", label: "Plans" },
     { id: "billing", label: "Billing" },
     { id: "email", label: "Email" },
     { id: "notifications", label: "Notifications", badge: 2 },
-    { id: "integrations", label: "Integrations" },
-    { id: "api", label: "API" },
 ];
 
 const themes = [
@@ -132,34 +132,34 @@ export const Settings06 = () => {
                                 icon: BarChartSquare02,
                             },
                             {
-                                label: "Projects",
-                                href: "/projects",
-                                icon: Rows01,
+                                label: "Settings",
+                                href: "/settings",
+                                icon: Settings01Icon,
                             },
                             {
-                                label: "Documents",
-                                href: "/documents",
+                                label: "Documentation",
+                                href: "/documentation",
                                 icon: File05,
                             },
                             {
-                                label: "Calendar",
-                                href: "/calendar",
-                                icon: Calendar,
+                                label: "Support",
+                                href: "/support",
+                                icon: LifeBuoy01,
                             },
                         ],
                     },
                     {
-                        label: "Untitled UI",
+                        label: "Quick Access",
                         items: [
                             {
-                                label: "Reporting",
+                                label: "Bookmarks",
                                 href: "#",
-                                icon: PieChart03,
+                                icon: Bookmark,
                             },
                             {
-                                label: "Tasks",
+                                label: "Notes",
                                 href: "#",
-                                icon: CheckDone01,
+                                icon: File05,
                                 badge: (
                                     <Badge size="sm" type="modern">
                                         8
@@ -167,17 +167,17 @@ export const Settings06 = () => {
                                 ),
                             },
                             {
-                                label: "Settings",
+                                label: "Saved Searches",
                                 href: "/settings",
-                                icon: Settings01Icon,
+                                icon: SearchLg,
                             },
                         ],
                     },
                     {
-                        label: "Your teams",
+                        label: "My Desk",
                         items: [
                             {
-                                label: "Catalog",
+                                label: "Spaces",
                                 href: "#",
                                 icon: () => <Avatar src="https://www.untitledui.com/logos/images/Catalog.jpg" className="mr-2 size-5" />,
                                 badge: (
@@ -190,7 +190,7 @@ export const Settings06 = () => {
                                 ),
                             },
                             {
-                                label: "Warpspeed",
+                                label: "Texts",
                                 href: "#",
                                 icon: () => <Avatar src="https://www.untitledui.com/logos/images/Warpspeed.jpg" className="mr-2 size-5" />,
                                 badge: (
@@ -203,7 +203,7 @@ export const Settings06 = () => {
                                 ),
                             },
                             {
-                                label: "Boltshift",
+                                label: "Study Paths",
                                 href: "#",
                                 icon: () => <Avatar src="https://www.untitledui.com/logos/images/Boltshift.jpg" className="mr-2 size-5" />,
                                 badge: (
@@ -216,7 +216,7 @@ export const Settings06 = () => {
                                 ),
                             },
                             {
-                                label: "Sisyphus",
+                                label: "Practice Paths",
                                 href: "#",
                                 icon: () => <Avatar src="https://www.untitledui.com/logos/images/Sisyphus.jpg" className="mr-2 size-5" />,
                                 badge: (
@@ -240,7 +240,7 @@ export const Settings06 = () => {
                         <div className="relative flex flex-col gap-5">
                             <div className="flex flex-col gap-4 lg:flex-row lg:justify-between">
                                 <div className="flex flex-col gap-0.5 lg:gap-1">
-                                    <h1 className="text-xl font-semibold text-primary lg:text-display-xs">Settings</h1>
+                                    <h1 className="text-xl font-semibold text-primary dark:text-brand-200 lg:text-display-xs">Settings</h1>
                                 </div>
                                 <div className="flex flex-col gap-4 lg:flex-row">
                                     <Input className="lg:w-80" size="sm" shortcut aria-label="Search" placeholder="Search" icon={SearchLg} />
@@ -289,6 +289,7 @@ export const Settings06 = () => {
 
                         {/* Form content */}
                         <div className="flex flex-col gap-5">
+                            {/* Company logo */}
                             <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(200px,280px)_1fr] lg:gap-8">
                                 <SectionLabel.Root size="sm" title="Company logo" description="Update your company logo." />
 
@@ -311,12 +312,13 @@ export const Settings06 = () => {
 
                             <hr className="h-px w-full border-none bg-border-secondary" />
 
+                            {/* Theme color */}
                             <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(200px,280px)_1fr] lg:gap-8">
-                                <SectionLabel.Root size="sm" title="Brand color" description="Select or customize your brand color." />
+                                <SectionLabel.Root size="sm" title="Theme color" description="Select or customize your theme color." />
 
                                 <div className="flex flex-col gap-3 md:flex-row md:items-center">
                                     <RadioGroup
-                                        aria-label="Brand color"
+                                        aria-label="Theme color"
                                         value={color?.toString("hex")}
                                         onChange={(value) => setColor(parseColor(value))}
                                         className="flex flex-col items-start gap-4 md:flex-row md:items-center"
@@ -374,6 +376,7 @@ export const Settings06 = () => {
 
                             <hr className="h-px w-full border-none bg-border-secondary" />
 
+                            {/* Display preference */}
                             <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(200px,280px)_1fr] lg:gap-8">
                                 <SectionLabel.Root size="sm" title="Display preference" description="Switch between light and dark modes." />
 
@@ -418,6 +421,7 @@ export const Settings06 = () => {
 
                             <hr className="h-px w-full border-none bg-border-secondary" />
 
+                            {/* Transparent sidebar */}
                             <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(200px,280px)_1fr] lg:gap-8">
                                 <SectionLabel.Root size="sm" title="Transparent sidebar" description="Make the sidebar transparent." />
                                 <Toggle aria-label="Transparent sidebar" defaultSelected size="md" />
@@ -425,6 +429,7 @@ export const Settings06 = () => {
 
                             <hr className="h-px w-full border-none bg-border-secondary" />
 
+                            {/* Dashboard Language */}
                             <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(200px,280px)_1fr] lg:gap-8">
                                 <SectionLabel.Root size="sm" title="Language" description="Default language for public dashboard." />
 
@@ -458,65 +463,6 @@ export const Settings06 = () => {
                                             </Select.Item>
                                         )}
                                     </Select>
-                                </div>
-                            </div>
-
-                            <hr className="h-px w-full border-none bg-border-secondary" />
-
-                            <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(200px,280px)_1fr] lg:gap-8">
-                                <SectionLabel.Root size="sm" title="Banner appearance" description="Change how banners appear to visitors." />
-
-                                <div className="-m-4 w-screen overflow-auto p-4 lg:w-[calc(100%+48px)]">
-                                    <RadioGroup aria-label="Banner appearances" defaultValue="simplified" className="flex gap-5">
-                                        {banners.map((banner) => (
-                                            <Radio
-                                                key={banner.value}
-                                                value={banner.value}
-                                                aria-label={banner.label}
-                                                className="flex cursor-pointer flex-col gap-3"
-                                            >
-                                                {({ isSelected, isFocusVisible }) => (
-                                                    <>
-                                                        <section
-                                                            className={cx(
-                                                                "relative h-33 w-50 rounded-[10px] bg-utility-gray-100 before:absolute before:inset-0 before:z-10 before:rounded-[10px] before:border before:border-primary",
-                                                                isSelected && "outline-2 outline-offset-2 outline-focus-ring",
-                                                            )}
-                                                        >
-                                                            <banner.component className="size-full" />
-
-                                                            {isSelected && (
-                                                                <RadioButtonBase
-                                                                    size="md"
-                                                                    isSelected={isSelected}
-                                                                    isFocusVisible={isFocusVisible}
-                                                                    className="absolute bottom-2 left-2 z-1"
-                                                                />
-                                                            )}
-
-                                                            {banner.value === "custom" && (
-                                                                <>
-                                                                    <Button
-                                                                        size="sm"
-                                                                        iconLeading={Code02}
-                                                                        color="secondary"
-                                                                        className="absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2"
-                                                                    >
-                                                                        Edit CSS
-                                                                    </Button>
-                                                                    <span className="absolute top-0 left-0 size-full rounded-md bg-linear-to-b from-[rgba(0,0,0,0.02)] to-[rgba(0,0,0,0.17)] to-90% backdrop-blur-[1.875px] sm:rounded-[10px]" />
-                                                                </>
-                                                            )}
-                                                        </section>
-                                                        <section className="w-full">
-                                                            <p className="text-sm font-semibold text-primary">{banner.label}</p>
-                                                            <p className="text-sm text-tertiary">{banner.description}</p>
-                                                        </section>
-                                                    </>
-                                                )}
-                                            </Radio>
-                                        ))}
-                                    </RadioGroup>
                                 </div>
                             </div>
                         </div>
