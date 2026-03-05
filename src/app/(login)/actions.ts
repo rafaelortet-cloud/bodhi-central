@@ -18,7 +18,7 @@ export async function signIn(formData: FormData) {
         return redirect("/sign-in?error=" + encodeURIComponent(error.message));
     }
 
-    return redirect("/my-desk");
+    return redirect("/settings");
 }
 
 export async function signUp(formData: FormData) {

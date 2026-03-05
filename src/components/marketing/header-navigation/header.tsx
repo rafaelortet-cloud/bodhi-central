@@ -16,6 +16,7 @@ import { ThemeToggle } from "@/components/application/theme-toggle";
 import { cx } from "@/utils/cx";
 import { signOut } from "@/app/(login)/actions";
 import { User } from "@supabase/supabase-js";
+import { DropdownAvatar } from "@/components/base/avatar/dropdown-avatar";
 
 type HeaderNavItem = {
     label: string;
@@ -84,15 +85,9 @@ const MobileFooter = ({ user }: { user?: User | null }) => {
             </div>
             <div className="flex flex-col gap-3">
                 {user ? (
-                    <>
-                        <div className="flex flex-col gap-1 px-4 py-2">
-                            <span className="text-sm font-semibold text-secondary">Logged in as:</span>
-                            <span className="text-md font-medium text-primary">{user.email}</span>
-                        </div>
-                        <Button color="secondary" size="lg" onClick={() => signOut()}>
-                            Sign out
-                        </Button>
-                    </>
+                    <div className="px-1">
+                        <DropdownAvatar user={user} />
+                    </div>
                 ) : (
                     <>
                         <Button size="lg" href="/sign-up">
@@ -207,14 +202,7 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
                     <div className="hidden items-center gap-3 md:flex">
                         <ThemeToggle />
                         {user ? (
-                            <div className="flex items-center gap-4">
-                                <span className="text-sm font-semibold text-secondary">
-                                    {user.email?.split("@")[0]}
-                                </span>
-                                <Button color="secondary" size={isFloating ? "sm" : "md"} onClick={() => signOut()}>
-                                    Sign out
-                                </Button>
-                            </div>
+                            <DropdownAvatar user={user} />
                         ) : (
                             <>
                                 <Button color="secondary" size={isFloating ? "sm" : "md"} href="/sign-in">
