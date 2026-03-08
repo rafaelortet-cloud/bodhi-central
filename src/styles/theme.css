@@ -27,10 +27,10 @@
     --text-md--line-height: calc(var(--spacing) * 6);
 
     --text-lg: calc(var(--spacing) * 4.5);
-    --text-lg--line-height: calc(var(--spacing) * 7);
+    --text-lg--line-height: calc(var(--spacing) * 6.5);
 
     --text-xl: calc(var(--spacing) * 5);
-    --text-xl--line-height: calc(var(--spacing) * 7.5);
+    --text-xl--line-height: calc(var(--spacing) * 7);
 
     --text-2xl: calc(var(--spacing) * 6);
     --text-2xl--line-height: calc(var(--spacing) * 8);
@@ -902,8 +902,8 @@
     --color-bg-brand-primary: var(--color-brand-50);
     --color-bg-brand-primary_alt: var(--color-brand-50);
     --color-bg-brand-secondary: var(--color-brand-100);
-    --color-bg-brand-solid: var(--color-brand-600);
-    --color-bg-brand-solid_hover: var(--color-brand-700);
+    --color-bg-brand-solid: var(--color-brand-700);
+    --color-bg-brand-solid_hover: var(--color-brand-800);
     --color-bg-brand-section: var(--color-brand-800);
     --color-bg-brand-section_subtle: var(--color-brand-700);
 

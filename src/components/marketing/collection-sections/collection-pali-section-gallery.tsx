@@ -60,7 +60,7 @@ const PaliSectionCard = ({ section }: { section: PaliSection }) => {
 
             <div className={`z-10 bg-linear-to-t from-black/30 to-black/0 pt-16 md:pt-20 lg:pt-24 rounded-b-sm ${isFlipped ? "opacity-0 invisible" : "group-hover:opacity-0 group-hover:invisible"}`}>
                 <div className={`relative ${section.color} ${section.dark_color} px-5 pt-5 pb-4 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5 rounded-b-sm`}>
-                    <h3 className="text-lg font-medium text-brand-200">{section.english_title}</h3>
+                    <h3 className="text-xl font-medium text-brand-200">{section.english_title}</h3>
                     <p className="mt-1 text-lg">{section.pali_title}</p>
                     <p className="mt-4 text-xs font-regular">{section.pitaka_section_english}</p>
                     <div className="flex gap-2 mt-1 justify-between items-top">

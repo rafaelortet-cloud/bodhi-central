@@ -44,8 +44,8 @@ const ContentSplitImage01 = () => {
                 </div>
 
                 <img
-                    className="mt-16 h-100 w-full object-cover object-top rounded-3xl md:mt-0 md:ml-auto md:h-180 md:w-140 md:max-w-[50vw]"
-                    src="/textCovers/buddha-sakyamuni-zoom-in-2xl-600.jpg"
+                    className="mt-16 h-100 w-full object-cover object-center rounded-3xl md:mt-0 md:ml-auto md:h-180 md:w-140 md:max-w-[50vw]"
+                    src="/tibetan-buddhist-library-01.jpg"
                     alt="Buddha Sakyamuni with two disciples"
                 />
                 {/* Background Image - Rainbow Light Accent */}

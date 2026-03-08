@@ -20,6 +20,7 @@ const ContentSplitImage01 = () => {
 
     return (
         <div className="bg-primary">
+            {/* Article Header */}
             <div className="relative mx-auto flex max-w-container flex-col items-center px-4 py-16 md:flex-row md:px-8 md:pt-16 md:pb-24">
                 <div className="flex max-w-160 flex-col items-start md:absolute">
                     <BadgeGroup size="md" addonText="Vinaya Piṭaka" color="brand" theme="light" className="pr-3" iconTrailing={null}>
@@ -44,8 +45,8 @@ const ContentSplitImage01 = () => {
                 </div>
 
                 <img
-                    className="mt-16 h-100 w-full object-cover object-left rounded-3xl md:mt-0 md:ml-auto md:h-180 md:w-140 md:max-w-[50vw]"
-                    src="/blog-thumbnail-good-leadership.webp"
+                    className="mt-16 h-100 w-full object-cover object-center rounded-3xl md:mt-0 md:ml-auto md:h-180 md:w-140 md:max-w-[50vw]"
+                    src="/monk-seated-in-meditation-under-forest-tree-1920.webp"
                     alt="Good Leadership"
                 />
                 {/* Background Image - Rainbow Light Accent */}

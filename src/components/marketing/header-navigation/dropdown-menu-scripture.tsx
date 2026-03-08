@@ -77,9 +77,10 @@ export const DropdownMenuScripture = ({ onClose }: { onClose?: () => void }) => 
                             <ul className="flex flex-col gap-3">
                                 {[
                                     { title: "Last Reading", href: "#" },
+                                    { title: "All Collections", href: "/scripture/collections" },
                                     { title: "Genres", href: "/scripture/genres" },
                                     { title: "Authors", href: "/scripture/authors" },
-                                    { title: "Collections", href: "/scripture/collections" },
+
                                     { title: "Saved Searches", href: "#" },
                                 ].map((item) => (
                                     <li key={item.title}>

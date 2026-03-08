@@ -11,7 +11,7 @@ const articles: Article[] = [
             name: "Vinaya Piṭaka",
             href: "#",
         },
-        thumbnailUrl: "/blog-thumbnail-good-leadership.webp",
+        thumbnailUrl: "/monk-seated-in-meditation-under-forest-tree-1920.webp",
         publishedAt: "20 Feb 2026",
         readingTime: "8 min read",
         author: {
@@ -42,7 +42,7 @@ const articles: Article[] = [
         id: "article-2",
         title: "Discourses: conversations with the Buddha",
         summary: "The Sutta Piṭaka, the “basket of discourses,” is the most important body of sacred scripture in Buddhism. This collection contains the teachings of the Buddha and his disciples, as collected and transmitted by the schools of early Buddhism.",
-        href: "#",
+        href: "/canon-overviews/sutta-overview",
         category: {
             name: "Sutta Piṭaka",
             href: "#",
@@ -82,7 +82,7 @@ const articles: Article[] = [
             name: "Abhidhamma Piṭaka",
             href: "#",
         },
-        thumbnailUrl: "/jetavanaramaya-scene-01.jpg",
+        thumbnailUrl: "/tibetan-buddhist-library-01.jpg",
         publishedAt: "18 Jan 2026",
         readingTime: "8 min read",
         author: {
