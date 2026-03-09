@@ -4,8 +4,6 @@ import { RouteProvider } from "@/providers/router-provider";
 import { Theme } from "@/providers/theme";
 import "@/styles/globals.css";
 import { cx } from "@/utils/cx";
-import { Header } from "@/components/marketing/header-navigation/header";
-import { FooterLarge10 } from "@/components/marketing/footers/footer-large-10";
 
 const nunito = Nunito({
     subsets: ["latin"],
@@ -42,26 +40,17 @@ export const viewport: Viewport = {
     colorScheme: "light dark",
 };
 
-import { createClient } from "@/utils/supabase/server";
-
 export default async function RootLayout({
     children,
 }: Readonly<{
     children: React.ReactNode;
 }>) {
-    const supabase = await createClient();
-    const {
-        data: { user },
-    } = await supabase.auth.getUser();
-
     return (
         <html lang="en" suppressHydrationWarning className={cx(nunito.variable, robotoSerif.variable, crimsonPro.variable, tibetan.variable)}>
             <body className="bg-primary antialiased">
                 <RouteProvider>
                     <Theme>
-                        <Header user={user} />
                         {children}
-                        <FooterLarge10 />
                     </Theme>
                 </RouteProvider>
             </body>

@@ -8,7 +8,7 @@ import { RoundButton } from "@/components/marketing/testimonials/round-button";
 import { createClient } from "@/utils/supabase/client";
 
 interface PaliSection {
-    id: string;
+    id_volumen: string;
     pitaka_type: string;
     english_title: string;
     pali_title: string;
@@ -45,7 +45,7 @@ const PaliSectionCard = ({ section }: { section: PaliSection }) => {
 
     return (
         <Carousel.Item
-            key={section.id || section.english_title}
+            key={section.id_volumen || section.english_title}
             className="group relative flex aspect-[.5625] w-full max-w-68 flex-col justify-end md:aspect-[.5625] md:max-w-76 drop-shadow-lg border-2 border-orange-300 dark:border-red-950 rounded-xl overflow-hidden hover:scale-[1.03] transition-all duration-300 cursor-pointer"
             onClick={() => setIsFlipped(!isFlipped)}
         >
@@ -115,7 +115,7 @@ export const CollectionPaliSectionGallery = ({ pitakaType }: CollectionPaliSecti
                     .from("pali-sections")
                     .select("*")
                     .eq("pitaka_type", pitakaType)
-                    .order("id", { ascending: true });
+                    .order("id_volumen", { ascending: true });
 
                 if (error) throw error;
                 setSections(data || []);
@@ -159,7 +159,7 @@ export const CollectionPaliSectionGallery = ({ pitakaType }: CollectionPaliSecti
         >
             <Carousel.Content overflowHidden={false} className="gap-4 pr-4 md:gap-4 md:pr-4">
                 {sections.map((section) => (
-                    <PaliSectionCard key={section.id || section.english_title} section={section} />
+                    <PaliSectionCard key={section.id_volumen || section.english_title} section={section} />
                 ))}
             </Carousel.Content>
             <div className="mt-6 flex gap-4 md:gap-8">

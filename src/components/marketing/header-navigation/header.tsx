@@ -14,7 +14,7 @@ import { DropdownMenuScripture } from "@/components/marketing/header-navigation/
 import Link from "next/link";
 import { ThemeToggle } from "@/components/application/theme-toggle";
 import { cx } from "@/utils/cx";
-import { signOut } from "@/app/(login)/actions";
+import { signOut } from "@/app/(marketing)/(login)/actions";
 import { User } from "@supabase/supabase-js";
 import { DropdownAvatar } from "@/components/base/avatar/dropdown-avatar";
 
@@ -35,7 +35,6 @@ const footerNavItems = [
     { label: "About us", href: "/about" },
     { label: "Legal", href: "/about/legal" },
     { label: "Contact", href: "/about/contact" },
-    { label: "Sitemap", href: "/about/sitemap" },
     { label: "Cookie settings", href: "/about/cookie-settings" },
 ];
 
