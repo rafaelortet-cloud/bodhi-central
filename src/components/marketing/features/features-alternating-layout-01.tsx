@@ -29,7 +29,7 @@ export const FeaturesAlternatingLayout01 = () => {
             <div className="mx-auto w-full max-w-container px-4 md:px-8">
                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
                     <span className="text-sm font-semibold text-brand-600 dark:text-brand-700 md:text-md">The Three Pillars</span>
-                    <h2 className="mt-3 text-display-sm text-primary md:text-display-md">Beautiful presentations of Buddha's teachings</h2>
+                    <h2 className="mt-3 text-display-sm text-primary md:text-display-md">Meaningful presentations of Buddha's teachings</h2>
                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
                         Gateways for spiritual seekers to connect with Buddhist traditions, teachings, and communities around the world.
                     </p>
@@ -89,9 +89,9 @@ export const FeaturesAlternatingLayout01 = () => {
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
-                                "Study the foundational pathways providing a solid understanding of the Buddhist core theories and principles",
+                                "Study the foundational pathways providing a solid understanding of the Buddhist core concepts and principles",
                                 "Go deeper into academic and scholarly paths (shedra studies), your truthworthy companions for in-depth study and research",
-                                "Engage in practice paths (samatha, vipassana, etc.) brought to you by the living Buddhist traditions to support your spiritual journey",
+                                "Engage in contemplative practice paths (samatha, vipassana, etc.) brought to you by the living Buddhist traditions to support your spiritual journey",
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
                             ))}
@@ -99,8 +99,10 @@ export const FeaturesAlternatingLayout01 = () => {
                     </div>
 
                     <div className="relative w-full flex-1 lg:h-128">
+
                         <AlternateImageMockup className="lg:right-0">
                             {/* Light mode image (hidden in dark mode) */}
+
                             <img
                                 alt="Mockup showing Learning Paths interface"
                                 src="/learning-paths-mockup-01.webp"
@@ -116,7 +118,7 @@ export const FeaturesAlternatingLayout01 = () => {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 gap-10 md:gap-20 lg:grid-cols-2 lg:gap-24">
+                <div className="grid grid-cols-1 gap-10 md:gap-20 lg:grid-cols-2 lg:gap-24 lg:items-center">
                     <div className="max-w-xl flex-1 self-center">
                         <FeaturedIcon icon={ChartBreakoutSquare} size="lg" color="gray" theme="modern-neue" />
                         <h3 className="mt-5 text-display-xs text-primary dark:text-brand-200 md:text-display-md">Resources for Individuals and Communities</h3>
@@ -125,10 +127,11 @@ export const FeaturesAlternatingLayout01 = () => {
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
-                                "Participate in like-minded forums and connect with communities around the world",
-                                "Discover Buddhist academic centers and institutions offering study programs",
-                                "Read educational articles on relevant topics, presented from a Buddhist perspective.",
-                                "Build your personal library with your favorite materials and learning",
+                                "DIRECTORY: Discover Buddhist academic centers and institutions offering study programs",
+                                "BLOG: Read educational articles on relevant topics, presented from a Buddhist perspective.",
+                                "YOUR DESK: Build your personal library with your favorite materials and learning",
+                                "FORUM & COMMUNITY: Participate in like-minded forums and connect with communities around the world",
+                                "DOCUMENTATION: Access guidelines, documentation, and technical information about the Bodhi Central project.",
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
                             ))}
@@ -142,7 +145,49 @@ export const FeaturesAlternatingLayout01 = () => {
                             src="https://www.untitledui.com/marketing/light-accent.webp"
                             className="absolute z-0 -right-4 -bottom-14 max-w-160 opacity-60 mix-blend-multiple md:-right-20 md:-bottom-1/3 md:max-w-7xl mask-b-from-90% mask-b-to-100% scale-x-[-1]"
                         />
-                        <AlternateImageMockup className="lg:left-0">
+                        <div className="grid h-122 w-[150%] grid-cols-[repeat(12,1fr)] grid-rows-[repeat(12,1fr)] gap-2 justify-self-center sm:h-124 sm:w-[120%] md:w-auto md:gap-4">
+                            <img
+                                src="https://www.untitledui.com/marketing/abstract-image-01.webp"
+                                className="size-full object-cover"
+                                alt="Alisa Hester"
+                                style={{
+                                    gridArea: "3 / 3 / 7 / 7",
+                                }}
+                            />
+                            <img
+                                src="https://www.untitledui.com/marketing/abstract-image-02.webp"
+                                className="size-full object-cover"
+                                alt="Alisa Hester"
+                                style={{
+                                    gridArea: "1 / 7 / 7 / 11",
+                                }}
+                            />
+                            <img
+                                src="https://www.untitledui.com/marketing/abstract-image-03.webp"
+                                className="size-full object-cover"
+                                alt="Alisa Hester"
+                                style={{
+                                    gridArea: "7 / 5 / 13 / 9",
+                                }}
+                            />
+                            <img
+                                src="/resources-mockup-01.webp"
+                                className="size-full object-cover"
+                                alt="Alisa Hester"
+                                style={{
+                                    gridArea: "7 / 9 / 10 / 13",
+                                }}
+                            />
+                            <img
+                                src="https://www.untitledui.com/marketing/smiling-girl-2.webp"
+                                className="size-full object-cover"
+                                alt="Alisa Hester"
+                                style={{
+                                    gridArea: "7 / 1 / 10 / 5",
+                                }}
+                            />
+                        </div>
+                        <AlternateImageMockup className="hidden lg:left-0">
                             {/* Light mode image (hidden in dark mode) */}
                             <img
                                 alt="Mockup showing Resources interface"

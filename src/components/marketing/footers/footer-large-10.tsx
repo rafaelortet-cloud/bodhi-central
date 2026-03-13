@@ -79,24 +79,44 @@ const footerNavList = [
                 href: "/resources/blog",
                 badge: (
                     <Badge color="gray" type="modern" size="sm" className="ml-1">
-                        New
+                        In dev
                     </Badge>
                 ),
             },
-            {
-                label: "Visit the Forum",
-                href: "/resources/forum",
-            },
+
             {
                 label: "Digital Portals",
                 href: "/resources/digital-portals",
+                badge: (
+                    <Badge color="gray" type="modern" size="sm" className="ml-1">
+                        In dev
+                    </Badge>
+                ),
             },
             {
                 label: "Groups Around",
                 href: "/resources/community",
                 badge: (
                     <Badge color="gray" type="modern" size="sm" className="ml-1">
+                        In dev
+                    </Badge>
+                ),
+            },
+            {
+                label: "Visit the Forum",
+                href: "https://bodhicentral.discourse.group/",
+                badge: (
+                    <Badge color="gray" type="modern" size="sm" className="ml-1">
                         New
+                    </Badge>
+                ),
+            },
+            {
+                label: "Documentation",
+                href: "https://bodhi-central-docs.vercel.app/research/pali-canon/sutta-numbering-system",
+                badge: (
+                    <Badge color="gray" type="modern" size="sm" className="ml-1">
+                        Testing
                     </Badge>
                 ),
             },
