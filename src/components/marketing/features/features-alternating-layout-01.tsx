@@ -59,7 +59,7 @@ export const FeaturesAlternatingLayout01 = () => {
                         <img
                             alt="Light Accent"
                             aria-hidden="true"
-                            src="https://www.untitledui.com/marketing/light-accent.webp"
+                            src="/patterns/light-accent.webp"
                             className="absolute z-0 right-0 -bottom-14 max-w-160 opacity-60 mix-blend-multiple md:right-10 md:-bottom-1/3 md:max-w-7xl mask-b-from-90% mask-b-to-100%"
                         />
                         <AlternateImageMockup className="lg:left-0">
@@ -118,12 +118,12 @@ export const FeaturesAlternatingLayout01 = () => {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 gap-10 md:gap-20 lg:grid-cols-2 lg:gap-24 lg:items-center">
-                    <div className="max-w-xl flex-1 self-center">
+                <div className="grid grid-cols-1 gap-10 md:gap-16 lg:grid-cols-2 lg:gap-16 lg:items-center">
+                    <div className="max-w-lg flex-1 self-center">
                         <FeaturedIcon icon={ChartBreakoutSquare} size="lg" color="gray" theme="modern-neue" />
                         <h3 className="mt-5 text-display-xs text-primary dark:text-brand-200 md:text-display-md">Resources for Individuals and Communities</h3>
                         <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">
-                            Whether you are a solo student-practitioner or an active community member, discover tools to enhance your activities and contributions.
+                            Whether you are a student-practitioner on your own or an active community member, discover tools to enhance your activities and contributions.
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
@@ -138,50 +138,50 @@ export const FeaturesAlternatingLayout01 = () => {
                         </ul>
                     </div>
 
-                    <div className="relative w-full flex-1 lg:h-128">
+                    <div className="relative w-full flex-1 lg:h-100">
                         <img
                             alt="Light Accent"
                             aria-hidden="true"
-                            src="https://www.untitledui.com/marketing/light-accent.webp"
-                            className="absolute z-0 -right-4 -bottom-14 max-w-160 opacity-60 mix-blend-multiple md:-right-20 md:-bottom-1/3 md:max-w-7xl mask-b-from-90% mask-b-to-100% scale-x-[-1]"
+                            src="/patterns/light-accent.webp"
+                            className="absolute z-0 -right-4 -bottom-24 max-w-160 opacity-90 mix-blend-multiple md:-right-50 md:-bottom-56 md:max-w-7xl mask-b-from-90% mask-b-to-100% mask-t-from-10% mask-t-to-100% scale-x-[-1.5]"
                         />
-                        <div className="grid h-122 w-[150%] grid-cols-[repeat(12,1fr)] grid-rows-[repeat(12,1fr)] gap-2 justify-self-center sm:h-124 sm:w-[120%] md:w-auto md:gap-4">
+                        <div className="grid h-100 w-[150%] grid-cols-[repeat(12,1fr)] grid-rows-[repeat(12,1fr)] gap-2 sm:h-124 sm:w-[150%] md:w-auto md:gap-4 drop-shadow-lg">
                             <img
-                                src="https://www.untitledui.com/marketing/abstract-image-01.webp"
+                                src="/monk-seated-in-meditation-under-forest-tree-1920.webp"
                                 className="size-full object-cover"
-                                alt="Alisa Hester"
+                                alt="Monk seated in meditation under forest tree"
                                 style={{
-                                    gridArea: "3 / 3 / 7 / 7",
+                                    gridArea: "3 / 2 / 7 / 7",
                                 }}
                             />
                             <img
-                                src="https://www.untitledui.com/marketing/abstract-image-02.webp"
+                                src="/bc-blog.webp"
                                 className="size-full object-cover"
-                                alt="Alisa Hester"
+                                alt="BD Blog screenshot"
                                 style={{
-                                    gridArea: "1 / 7 / 7 / 11",
+                                    gridArea: "1 / 7 / 7 / 12",
                                 }}
                             />
                             <img
-                                src="https://www.untitledui.com/marketing/abstract-image-03.webp"
+                                src="/bc-documentation.webp"
                                 className="size-full object-cover"
-                                alt="Alisa Hester"
+                                alt="BD Documentation screenshot"
                                 style={{
-                                    gridArea: "7 / 5 / 13 / 9",
+                                    gridArea: "7 / 5 / 12 / 8",
                                 }}
                             />
                             <img
-                                src="/resources-mockup-01.webp"
+                                src="/himalayan-scenery-02.jpg"
                                 className="size-full object-cover"
-                                alt="Alisa Hester"
+                                alt="Himalayan scenery"
                                 style={{
-                                    gridArea: "7 / 9 / 10 / 13",
+                                    gridArea: "7 / 8 / 11 / 13",
                                 }}
                             />
                             <img
-                                src="https://www.untitledui.com/marketing/smiling-girl-2.webp"
+                                src="/ancient-nalanda-university-idealization.jpg"
                                 className="size-full object-cover"
-                                alt="Alisa Hester"
+                                alt="Monk seated in meditation under forest tree"
                                 style={{
                                     gridArea: "7 / 1 / 10 / 5",
                                 }}

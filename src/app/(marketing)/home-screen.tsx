@@ -16,14 +16,14 @@ export const HomeScreen = () => {
                 alt="Grid of dots"
                 aria-hidden="true"
                 loading="lazy"
-                src="https://www.untitledui.com/patterns/light/grid-sm-desktop.svg"
+                src="/patterns/grid-sm-desktop.svg"
                 className="pointer-events-none absolute top-0 left-1/2 z-10 hidden max-w-none -translate-x-1/2 opacity-10 md:block dark:opacity-70 dark:brightness-[0.2]"
             />
             <img
                 alt="Grid of dots"
                 aria-hidden="true"
                 loading="lazy"
-                src="https://www.untitledui.com/patterns/light/grid-sm-mobile.svg"
+                src="/patterns/grid-sm-mobile.svg"
                 className="pointer-events-none absolute top-0 left-1/2 z-0 max-w-none -translate-x-1/2 opacity-10 md:hidden dark:opacity-70 dark:brightness-[0.2]"
             />
 
@@ -35,7 +35,7 @@ export const HomeScreen = () => {
                 <img
                     alt="Light Accent"
                     aria-hidden="true"
-                    src="https://www.untitledui.com/marketing/light-accent.webp"
+                    src="/patterns/light-accent.webp"
                     className="absolute z-20 -right-10 -bottom-14 max-w-160 opacity-30 mix-blend-multiple md:right-10 md:-bottom-1/3 md:max-w-7xl mask-b-from-90% mask-b-to-100% scale-x-[-1]"
                 />
                 <div className="relative mx-auto grid max-w-container grid-cols-1 gap-16 px-4 md:px-8 lg:min-h-150 lg:items-center">
