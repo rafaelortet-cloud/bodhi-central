@@ -46,7 +46,7 @@ export const FeaturesAlternatingLayout01 = () => {
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
-                                "Open and non-exclusive access to collections of texts that are currently transmitted and practiced in modern Buddhist traditions",
+                                "Open and inclusive access to collections of texts that are currently transmitted and practiced in modern Buddhist traditions",
                                 "Contextualized texts within vehicles, doctrines, genres, and tracks of study, practice and research",
                                 "State-of-the-art readers and personal workspaces to make your experience smooth and memorable",
                             ].map((feat) => (

@@ -54,13 +54,13 @@ const PaliSectionCard = ({ section }: { section: PaliSection }) => {
                 src={section.thumbnail_cover}
                 className={`absolute inset-0 z-0 size-full top-0 cursor-grab object-cover rounded-sm ${isFlipped ? "opacity-0 invisible" : "group-hover:opacity-0 group-hover:invisible"}`}
             />
-            <div className="absolute flex items-end justify-center z-200 w-16 h-14 top-[-24px] right-[8px] pb-1.5 bg-red-950/90 rounded-full">
-                <h6 className=" text-brand-200">{section.section_abbreviation}</h6>
+            <div className={`absolute flex items-end justify-center z-200 w-16 h-14 top-[-28px] right-[8px] pb-1 ${section.color} rounded-full`}>
+                <h6 className=" text-brand-100">{section.section_abbreviation}</h6>
             </div>
 
             <div className={`z-10 bg-linear-to-t from-black/30 to-black/0 pt-16 md:pt-20 lg:pt-24 rounded-b-sm ${isFlipped ? "opacity-0 invisible" : "group-hover:opacity-0 group-hover:invisible"}`}>
                 <div className={`relative ${section.color} ${section.dark_color} px-5 pt-5 pb-4 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5 rounded-b-sm`}>
-                    <h3 className="text-xl font-medium text-brand-200">{section.english_title}</h3>
+                    <h3 className="text-2xl text-brand-200">{section.english_title}</h3>
                     <p className="mt-1 text-lg">{section.pali_title}</p>
                     <p className="mt-4 text-xs font-regular">{section.pitaka_section_english}</p>
                     <div className="flex gap-2 mt-1 justify-between items-top">
