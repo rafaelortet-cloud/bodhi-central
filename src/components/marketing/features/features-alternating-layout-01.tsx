@@ -146,17 +146,19 @@ export const FeaturesAlternatingLayout01 = () => {
                             className="absolute z-0 -right-4 -bottom-24 max-w-160 opacity-90 mix-blend-multiple md:-right-50 md:-bottom-56 md:max-w-7xl mask-b-from-90% mask-b-to-100% mask-t-from-10% mask-t-to-100% scale-x-[-1.5]"
                         />
                         <div className="grid h-100 w-[150%] grid-cols-[repeat(12,1fr)] grid-rows-[repeat(12,1fr)] gap-2 sm:h-124 sm:w-[150%] md:w-auto md:gap-4 drop-shadow-lg">
+
                             <img
                                 src="/monk-seated-in-meditation-under-forest-tree-1920.webp"
-                                className="size-full object-cover"
+                                className="size-full object-cover border-double border-5 border-gray-300 dark:border-gray-700 rounded-xl"
                                 alt="Monk seated in meditation under forest tree"
                                 style={{
                                     gridArea: "3 / 2 / 7 / 7",
                                 }}
                             />
+
                             <img
                                 src="/bc-blog.webp"
-                                className="size-full object-cover"
+                                className="size-full object-cover border-double border-5 border-gray-300 dark:border-gray-700 rounded-xl"
                                 alt="BD Blog screenshot"
                                 style={{
                                     gridArea: "1 / 7 / 7 / 12",
@@ -164,7 +166,7 @@ export const FeaturesAlternatingLayout01 = () => {
                             />
                             <img
                                 src="/bc-documentation.webp"
-                                className="size-full object-cover"
+                                className="size-full object-cover border-double border-5 border-gray-300 dark:border-gray-700 rounded-xl"
                                 alt="BD Documentation screenshot"
                                 style={{
                                     gridArea: "7 / 5 / 12 / 8",
@@ -172,7 +174,7 @@ export const FeaturesAlternatingLayout01 = () => {
                             />
                             <img
                                 src="/himalayan-scenery-02.jpg"
-                                className="size-full object-cover"
+                                className="size-full object-cover border-double border-5 border-gray-300 dark:border-gray-700 rounded-xl"
                                 alt="Himalayan scenery"
                                 style={{
                                     gridArea: "7 / 8 / 11 / 13",
@@ -180,7 +182,7 @@ export const FeaturesAlternatingLayout01 = () => {
                             />
                             <img
                                 src="/ancient-nalanda-university-idealization.jpg"
-                                className="size-full object-cover"
+                                className="size-full object-cover border-double border-5 border-gray-300 dark:border-gray-700 rounded-xl"
                                 alt="Monk seated in meditation under forest tree"
                                 style={{
                                     gridArea: "7 / 1 / 10 / 5",
