@@ -129,7 +129,7 @@ export const FeaturesAlternatingLayout01 = () => {
                             {[
                                 "DIRECTORY: Discover Buddhist academic centers and institutions offering study programs",
                                 "BLOG: Read educational articles on relevant topics, presented from a Buddhist perspective.",
-                                "YOUR DESK: Build your personal library with your favorite materials and learning",
+                                "YOUR DESK: Build your personal library with your favorite readership and learning",
                                 "FORUM & COMMUNITY: Participate in like-minded forums and connect with communities around the world",
                                 "DOCUMENTATION: Access guidelines, documentation, and technical information about the Bodhi Central project.",
                             ].map((feat) => (

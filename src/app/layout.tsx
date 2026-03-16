@@ -5,6 +5,7 @@ import { Theme } from "@/providers/theme";
 import "@/styles/globals.css";
 import { cx } from "@/utils/cx";
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const nunito = Nunito({
     subsets: ["latin"],
@@ -51,6 +52,7 @@ export default async function RootLayout({
             <body className="bg-primary antialiased">
                 <RouteProvider>
                     <Analytics />
+                    <SpeedInsights />
                     <Theme>
                         {children}
                     </Theme>
