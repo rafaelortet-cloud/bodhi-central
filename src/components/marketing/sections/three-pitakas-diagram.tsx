@@ -3,16 +3,15 @@
 import { useState } from "react";
 import { Dataflow01, Columns03, Rows03 } from "@untitledui/icons";
 import { Button } from "@/components/base/buttons/button";
-import { Toggle } from "@/components/base/toggle/toggle";
 import { cx } from "@/utils/cx";
 
 export const ThreePitakasDiagram = () => {
     const [isRowsLayout, setIsRowsLayout] = useState(true);
 
     return (
-        <section className="relative py-10 md:py-24 bg-[url(/floral-background-golden-outlines-01.webp)] bg-cover bg-center bg-no-repeat">
+        <section className="relative py-10 md:pt-24 md:pb-36 bg-[url(/floral-background-golden-outlines-01.webp)] bg-cover bg-bottom bg-no-repeat">
             {/* Overlay layer for easy customization of color/transparency */}
-            <div className="absolute inset-0 bg-white/95 dark:bg-black/90 z-0" aria-hidden="true" />
+            <div className="absolute inset-0 bg-brand-50/97 dark:bg-black/88 z-0" aria-hidden="true" />
             {/* Section Header */}
             <div className="relative z-10 mx-auto max-w-container px-4 md:px-8 pb-4">
                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
@@ -27,7 +26,7 @@ export const ThreePitakasDiagram = () => {
                     <button
                         onClick={() => setIsRowsLayout(true)}
                         className={cx(
-                            "p-1 rounded-md transition-colors",
+                            "p-1 rounded-md transition-colors cursor-pointer",
                             isRowsLayout ? "text-brand-700 bg-orange-100 dark:bg-orange-900/40" : "text-tertiary hover:text-secondary"
                         )}
                         aria-label="Rows Layout"
@@ -37,7 +36,7 @@ export const ThreePitakasDiagram = () => {
                     <button
                         onClick={() => setIsRowsLayout(false)}
                         className={cx(
-                            "p-1 rounded-md transition-colors",
+                            "p-1 rounded-md transition-colors cursor-pointer",
                             !isRowsLayout ? "text-brand-700 bg-orange-100 dark:bg-orange-900/40" : "text-tertiary hover:text-secondary"
                         )}
                         aria-label="Columns Layout"
