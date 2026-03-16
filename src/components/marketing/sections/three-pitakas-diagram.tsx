@@ -10,9 +10,11 @@ export const ThreePitakasDiagram = () => {
     const [isRowsLayout, setIsRowsLayout] = useState(true);
 
     return (
-        <section className="py-10 md:py-14 bg-linear-to-b from-orange-50 to-orange-100 dark:bg-linear-to-b dark:from-mauve-900 dark:to-orange-950">
+        <section className="relative py-10 md:py-24 bg-[url(/floral-background-golden-outlines-01.webp)] bg-cover bg-center bg-no-repeat">
+            {/* Overlay layer for easy customization of color/transparency */}
+            <div className="absolute inset-0 bg-white/95 dark:bg-black/90 z-0" aria-hidden="true" />
             {/* Section Header */}
-            <div className="mx-auto max-w-container px-4 md:px-8 pb-4">
+            <div className="relative z-10 mx-auto max-w-container px-4 md:px-8 pb-4">
                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
                     <span className="text-sm font-semibold text-brand-secondary md:text-md">Pali Canon</span>
                     <h2 className="mt-1 text-display-md font-semibold text-primary md:text-display-lg">The Three Piṭakas at a glance</h2>
@@ -20,7 +22,7 @@ export const ThreePitakasDiagram = () => {
             </div>
 
             {/* Toggle Switch */}
-            <div className="mx-auto max-w-container px-4 md:px-6 pb-2">
+            <div className="relative mx-auto z-20 max-w-container px-4 md:px-6 pb-2">
                 <div className="flex justify-start items-center gap-3">
                     <button
                         onClick={() => setIsRowsLayout(true)}

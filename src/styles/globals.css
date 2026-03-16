@@ -60,8 +60,6 @@ h6 {
 h1 {
     --font-serif--opsz: 60;
     font-weight: 350;
-    font-size: var(--text-display-2xl);
-    line-height: var(--text-display-xl--line-height);
     text-wrap: balance;
 }
 

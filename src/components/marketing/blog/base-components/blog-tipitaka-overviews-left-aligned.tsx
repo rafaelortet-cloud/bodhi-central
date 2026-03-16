@@ -117,7 +117,7 @@ export const BlogSectionTipitakaOverviewsLeftAligned = () => {
                     </div>
 
                     <div className="hidden gap-3 lg:flex">
-                        <Button size="xl">View all overviews</Button>
+                        <Button size="md">View all overviews</Button>
                     </div>
                 </div>
 
@@ -129,7 +129,7 @@ export const BlogSectionTipitakaOverviewsLeftAligned = () => {
                     ))}
                 </ul>
                 <div className="mt-12 flex flex-col gap-3 lg:hidden">
-                    <Button size="xl">View all overviews</Button>
+                    <Button size="md">View all overviews</Button>
                 </div>
             </div>
         </section>
