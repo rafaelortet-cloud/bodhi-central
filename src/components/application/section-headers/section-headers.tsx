@@ -22,13 +22,13 @@ const SectionHeaderActions = (props: ComponentPropsWithRef<"div">) => (
 );
 
 const SectionHeaderHeading = (props: ComponentPropsWithRef<"h2">) => (
-    <h2 {...props} className={cx("text-xl font-semibold text-primary", props.className)}>
+    <h2 {...props} className={cx("text-2xl font-semibold text-primary", props.className)}>
         {props.children}
     </h2>
 );
 
 const SectionHeaderSubheading = (props: ComponentPropsWithRef<"p">) => (
-    <p {...props} className={cx("text-sm text-tertiary", props.className)}>
+    <p {...props} className={cx("text-md text-tertiary", props.className)}>
         {props.children}
     </p>
 );

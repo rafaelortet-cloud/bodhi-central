@@ -1336,7 +1336,7 @@
         --color-app-store-badge-border: var(--color-white);
         --color-avatar-bg: var(--color-gray-800);
         --color-avatar-contrast-border: rgb(255 255 255 / 0.12);
-        --color-avatar-profile-photo-border: var(--color-gray-950);
+        --color-avatar-profile-photo-border: var(--color-brand-900);
         --color-avatar-styles-bg-neutral: rgb(224 224 224 / 1);
         --color-button-destructive-primary-icon: var(--color-error-300);
         --color-button-destructive-primary-icon_hover: var(--color-error-200);

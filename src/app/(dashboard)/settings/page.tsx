@@ -1,5 +1,9 @@
 import { Settings06 } from "@/components/application/dashboard/settings-06";
 
 export default function SettingsPage() {
-    return <Settings06 />;
+    return <>
+        <div className="bg-olive-50 h-screen">
+            <Settings06 />
+        </div>
+    </>;
 }

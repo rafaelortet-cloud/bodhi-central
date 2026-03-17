@@ -67,7 +67,7 @@ export const Settings06 = () => {
     }, []);
 
     return (
-        <div className="flex flex-col bg-primary lg:flex-row gap-4">
+        <div className="flex flex-col lg:flex-row gap-4">
             <SidebarNavigationSectionsSubheadings
                 activeUrl="/settings"
                 user={user}
@@ -86,15 +86,15 @@ export const Settings06 = () => {
                                 icon: Settings01Icon,
                             },
                             {
-                                label: "Documentation",
-                                href: "https://bodhi-central-docs.vercel.app/",
-                                icon: File05,
-                            },
-                            {
                                 label: "Support & Help",
                                 href: "/support",
                                 icon: LifeBuoy01,
                             },
+                            {
+                                label: "Documentation",
+                                href: "https://bodhi-central-docs.vercel.app/",
+                                icon: File05,
+                            }
                         ],
                     },
                     {
@@ -183,7 +183,8 @@ export const Settings06 = () => {
                 ]}
             />
 
-            <main className="min-w-0 flex-1 bg-primary pt-8 pb-12">
+            {/* Settings Panel Main section */}
+            <main className="min-w-0 flex-1 bg-olive-50 pt-8 pb-12">
                 <div className="flex flex-col gap-8">
                     <div className="flex flex-col gap-5 px-4 lg:px-8">
                         {/* Page header simple with search */}
