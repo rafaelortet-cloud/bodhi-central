@@ -94,8 +94,8 @@ export const FeaturesAlternatingLayout01 = () => {
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
                                 "Study the foundational pathways providing a solid understanding of the Buddhist core concepts and principles",
-                                "Go deeper into academic and scholarly paths (shedra studies), your truthworthy companions for in-depth study and research",
-                                "Engage in contemplative practice paths (samatha, vipassana, etc.) brought to you by the living Buddhist traditions to support your spiritual journey",
+                                "Go deeper into academic and scholarly paths (shedra-style learning), your truthworthy companions for in-depth study and research",
+                                "Engage in contemplative practice paths (samatha, vipassana, mind-training, etc.) brought to you by the living Buddhist traditions to support your spiritual journey",
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
                             ))}

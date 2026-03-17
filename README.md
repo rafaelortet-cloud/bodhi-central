@@ -26,7 +26,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 If you want to get involved and contribute to Bodhi Central's development and content production, please contact: 
 
-rafael@bodhi-central.com
+rafael@bodhicentral.com
 
 ## Resources
 
@@ -38,4 +38,4 @@ Bodhi Central open-source components are licensed under ...
 
 [Bodhi Central →](https://www.bodhi-central.com/license)
 
-[Frequently asked questions →](https://www.bodhi-central.com/faqs)
+[Frequently asked questions →](https://www.bodhi-central.com/support)

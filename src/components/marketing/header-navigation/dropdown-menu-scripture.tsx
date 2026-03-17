@@ -47,7 +47,7 @@ const columns: MenuColumn[] = [
         items: [
             {
                 title: "Traditions at a glance",
-                subtitle: "Many traditions with intertwined goals, an historical timeline.",
+                subtitle: "An overview of Buddhist traditions.",
                 href: "/scripture/traditions",
                 Icon: Hurricane01,
             },
