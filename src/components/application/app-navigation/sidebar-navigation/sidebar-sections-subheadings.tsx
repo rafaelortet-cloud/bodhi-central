@@ -26,7 +26,7 @@ export const SidebarNavigationSectionsSubheadings = ({ activeUrl = "/", items, u
                     "--width": `${MAIN_SIDEBAR_WIDTH}px`,
                 } as React.CSSProperties
             }
-            className="flex h-full w-full max-w-full flex-col justify-between overflow-auto border-secondary bg-primary pt-4 shadow-xs md:border-r lg:w-(--width) lg:rounded-xl lg:border lg:pt-5"
+            className="flex h-full w-full max-w-full flex-col justify-between overflow-auto border-secondary bg-olive-100 pt-4 shadow-xs md:border-r lg:w-(--width) lg:rounded-2xl lg:border lg:pt-5 drop-shadow-lg dark:drop-shadow-gray-900"
         >
             <div className="flex flex-col gap-5 px-4 lg:px-5">
                 <Link href="/" className="focus:outline-hidden">
@@ -65,7 +65,7 @@ export const SidebarNavigationSectionsSubheadings = ({ activeUrl = "/", items, u
             <MobileNavigationHeader>{content}</MobileNavigationHeader>
 
             {/* Desktop sidebar navigation */}
-            <div className="hidden lg:fixed lg:inset-y-0 lg:left-0 lg:flex lg:py-1 lg:pl-1">{content}</div>
+            <div className="hidden lg:fixed lg:inset-y-0 lg:left-0 lg:flex lg:py-3 lg:pl-3">{content}</div>
 
             {/* Placeholder to take up physical space because the real sidebar has `fixed` position. */}
             <div

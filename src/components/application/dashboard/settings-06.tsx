@@ -50,7 +50,7 @@ export const Settings06 = () => {
 
     useEffect(() => {
         const supabase = createClient();
-        
+
         // Initial fetch
         supabase.auth.getUser().then(({ data: { user } }) => {
             console.log("Settings06 - Initial user fetch:", user);
@@ -67,7 +67,7 @@ export const Settings06 = () => {
     }, []);
 
     return (
-        <div className="flex flex-col bg-primary lg:flex-row">
+        <div className="flex flex-col bg-primary lg:flex-row gap-4">
             <SidebarNavigationSectionsSubheadings
                 activeUrl="/settings"
                 user={user}
@@ -87,11 +87,11 @@ export const Settings06 = () => {
                             },
                             {
                                 label: "Documentation",
-                                href: "/documentation",
+                                href: "https://bodhi-central-docs.vercel.app/",
                                 icon: File05,
                             },
                             {
-                                label: "Support",
+                                label: "Support & Help",
                                 href: "/support",
                                 icon: LifeBuoy01,
                             },
@@ -190,7 +190,7 @@ export const Settings06 = () => {
                         <div className="relative flex flex-col gap-5">
                             <div className="flex flex-col gap-4 lg:flex-row lg:justify-between">
                                 <div className="flex flex-col gap-0.5 lg:gap-1">
-                                    <h1 className="text-xl font-semibold text-primary dark:text-brand-200 lg:text-display-xs">Settings</h1>
+                                    <h1 className="text-xl font-semibold text-brand-800 dark:text-brand-200 lg:text-display-md">Settings</h1>
                                 </div>
                                 <div className="flex flex-col gap-4 lg:flex-row">
                                     <Input className="lg:w-80" size="sm" shortcut aria-label="Search" placeholder="Search" icon={SearchLg} />
