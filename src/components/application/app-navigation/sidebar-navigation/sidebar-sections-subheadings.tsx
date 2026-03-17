@@ -5,6 +5,7 @@ import { MobileNavigationHeader } from "../base-components/mobile-header";
 import { NavAccountCard } from "../base-components/nav-account-card";
 import { NavItemBase } from "../base-components/nav-item";
 import type { NavItemType } from "../config";
+import Link from "next/link";
 
 interface SidebarNavigationSectionsSubheadingsProps {
     /** URL of the currently active item. */
@@ -26,7 +27,9 @@ export const SidebarNavigationSectionsSubheadings = ({ activeUrl = "/", items }:
             className="flex h-full w-full max-w-full flex-col justify-between overflow-auto border-secondary bg-primary pt-4 shadow-xs md:border-r lg:w-(--width) lg:rounded-xl lg:border lg:pt-5"
         >
             <div className="flex flex-col gap-5 px-4 lg:px-5">
-                <BodhicentralLogo className="h-8" />
+                <Link href="/" className="focus:outline-hidden">
+                    <BodhicentralLogo className="h-8" />
+                </Link>
             </div>
 
             <ul className="mt-8">
