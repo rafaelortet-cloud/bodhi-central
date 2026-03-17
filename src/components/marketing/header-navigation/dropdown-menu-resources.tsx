@@ -60,7 +60,7 @@ const columns: MenuColumn[] = [
             {
                 title: "Help and support",
                 subtitle: "Need help with something? Our team is here to help.",
-                href: "/",
+                href: "/support",
                 Icon: LifeBuoy01,
             },
         ],

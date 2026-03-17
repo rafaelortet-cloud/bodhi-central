@@ -139,8 +139,8 @@ const footerNavList = [
                 href: "#",
             },
             {
-                label: "Contact",
-                href: "/contact",
+                label: "Support and Help",
+                href: "/support",
                 badge: (
                     <Badge color="gray" type="modern" size="sm" className="ml-1">
                         New
