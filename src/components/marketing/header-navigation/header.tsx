@@ -198,7 +198,7 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
                         </ul>
                     </nav>
                     {/* DESKTOP LOGIN/SIGNUP BUTTONS */}
-                    <div className="hidden items-center gap-3 md:flex">
+                    <div className="hidden items-center gap-3 md:flex ml-10"> {/* 10px gap between nav menu items and buttons */}
                         <ThemeToggle />
                         {user ? (
                             <DropdownAvatar user={user} />

@@ -25,11 +25,11 @@ export const DropdownAvatar = ({ user }: DropdownAvatarProps) => {
                 className={({ isPressed, isFocusVisible }) =>
                     cx(
                         "group relative inline-flex cursor-pointer rounded-full outline-focus-ring drop-shadow-lg",
-                        (isPressed || isFocusVisible) && "outline-2 outline-offset-2",
+                        (isPressed || isFocusVisible) && "outline-1 outline-offset-2",
                     )
                 }
             >
-                <Avatar alt={displayName} src={avatarUrl} size="md" />
+                <Avatar alt={displayName} src={avatarUrl} size="sm" />
             </AriaButton>
 
             <Dropdown.Popover>
@@ -53,8 +53,8 @@ export const DropdownAvatar = ({ user }: DropdownAvatarProps) => {
                     </Dropdown.Section>
                     <Dropdown.Separator />
                     <Dropdown.Section>
-                        <Dropdown.Item icon={LayersTwo01}>My Desk Preferences</Dropdown.Item>
-                        <Dropdown.Item icon={HelpCircle}>Help and FAQ</Dropdown.Item>
+                        <Dropdown.Item icon={LayersTwo01} href="/my-desk-preferences">My Desk Preferences</Dropdown.Item>
+                        <Dropdown.Item icon={HelpCircle} href="/support">Help and FAQ</Dropdown.Item>
                     </Dropdown.Section>
                     <Dropdown.Separator />
                     <Dropdown.Section>

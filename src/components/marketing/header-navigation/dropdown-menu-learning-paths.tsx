@@ -76,9 +76,9 @@ export const DropdownMenuLearningPaths = ({ onClose }: { onClose?: () => void })
                             <h3 className="text-sm font-semibold text-brand-700 dark:text-brand-300">Quick Links</h3>
                             <ul className="flex flex-col gap-3">
                                 {[
-                                    { title: "Last Path", href: "#" },
                                     { title: "New Additions", href: "#" },
                                     { title: "All Pathways", href: "#" },
+                                    { title: "Desk Preferences", href: "/my-desk-preferences" },
                                 ].map((item) => (
                                     <li key={item.title}>
                                         <Button href={item.href} color="link-gray" size="lg" onPress={onClose}>
@@ -107,8 +107,8 @@ export const DropdownMenuLearningPaths = ({ onClose }: { onClose?: () => void })
                 </div>
 
                 <div className="mx-auto flex max-w-container flex-col px-4 py-5 md:flex-row md:items-center md:justify-between md:px-6">
-                    <Button href="#" color="secondary" size="md" iconLeading={BookOpen01} className="hidden md:flex" onPress={onClose}>
-                        Dashboard
+                    <Button href="#" color="secondary" size="md" iconLeading={GraduationHat01} className="hidden md:flex" onPress={onClose}>
+                        Last Learning Path
                     </Button>
                     <Button href="/my-desk" color="primary" size="md" className="hidden md:flex" onPress={onClose}>
                         My Desk

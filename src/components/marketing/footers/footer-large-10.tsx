@@ -79,7 +79,7 @@ const footerNavList = [
                 href: "/resources/blog",
                 badge: (
                     <Badge color="gray" type="modern" size="sm" className="ml-1">
-                        In dev
+                        In progress
                     </Badge>
                 ),
             },
@@ -87,38 +87,18 @@ const footerNavList = [
             {
                 label: "Digital Portals",
                 href: "/resources/digital-portals",
-                badge: (
-                    <Badge color="gray" type="modern" size="sm" className="ml-1">
-                        In dev
-                    </Badge>
-                ),
             },
             {
                 label: "Groups Around",
                 href: "/resources/community",
-                badge: (
-                    <Badge color="gray" type="modern" size="sm" className="ml-1">
-                        In dev
-                    </Badge>
-                ),
             },
             {
                 label: "Visit the Forum",
                 href: "https://bodhicentral.discourse.group/",
-                badge: (
-                    <Badge color="gray" type="modern" size="sm" className="ml-1">
-                        New
-                    </Badge>
-                ),
             },
             {
                 label: "Documentation",
                 href: "https://bodhi-central-docs.vercel.app/research/pali-canon/sutta-numbering-system",
-                badge: (
-                    <Badge color="gray" type="modern" size="sm" className="ml-1">
-                        Testing
-                    </Badge>
-                ),
             },
         ],
     },
@@ -126,26 +106,16 @@ const footerNavList = [
         label: "About",
         items: [
             {
-                label: "Project Info",
+                label: "About the Project",
                 href: "/about/project-information",
-                badge: (
-                    <Badge color="gray" type="modern" size="sm" className="ml-1">
-                        New
-                    </Badge>
-                ),
             },
             {
                 label: "Get Involved",
                 href: "#",
             },
             {
-                label: "Support and Help",
+                label: "Help and FAQ",
                 href: "/support",
-                badge: (
-                    <Badge color="gray" type="modern" size="sm" className="ml-1">
-                        New
-                    </Badge>
-                ),
             },
         ],
     },
@@ -221,7 +191,7 @@ export const FooterLarge10 = () => {
                 <div className="mt-12 flex flex-col gap-12 md:mt-16 md:gap-16 xl:flex-row">
                     <div className="flex flex-col gap-6 md:w-64 md:gap-8">
                         <Link href="/" className="flex w-min items-center outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-2">
-                            <BodhicentralLogo className="h-10 w-min shrink-0" />
+                            <BodhicentralLogo className="h-14 w-min shrink-0" />
                         </Link>
                         <p className="text-md text-tertiary">A modern platform of universally revered Buddhist texts and accessible paths of study and practice.</p>
                     </div>

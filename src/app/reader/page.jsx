@@ -21,6 +21,8 @@ export default function ReaderPage() {
                     <div id="reader-content-container" className="w-full h-full">
                         <div id="reader-header" className="flex flex-row mx-auto w-full pl-5 pt-5 items-center justify-between"><Menu01 /> <Columns01 /></div>
                         <div id="reader-content" className="prose flex flex-col mx-auto w-md pt-8 items-center justify-center">
+                            <h1 className="text-xl font-bold text-primary">Welcome to your Last Reading!</h1>
+                            <hr className="w-full border-t border-olive-200 dark:border-olive-700" />
                             <h2 className="text-xl font-bold text-primary">Text Canvas Specs</h2>
                             <p className="text-sm text-tertiary text-center">The Text Canvas is the main area of the reader, where the user can read the text.</p>
                             <p className="text-sm text-tertiary text-center">This canvas and related features are a work in progress. Its development is ongoing and will be reported on our <a className="text-brand-700 dark:text-brand-300" href="https://bodhi-central-docs.vercel.app/tech/features-roadmap" target="_blank">Technical Documentation</a> as the project progresses.</p>
