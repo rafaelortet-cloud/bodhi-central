@@ -117,13 +117,13 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
         <header
             ref={headerRef}
             className={cx(
-                "sticky top-0 z-500 flex h-18 w-full items-center justify-center border-secondary border-b bg-bg-secondary md:h-18 shadow-md",
-                isFloating && "h-16 md:h-18 md:pt-2",
+                "sticky top-0 z-500 flex h-16 w-full items-center justify-center border-secondary border-b bg-bg-secondary md:h-16 shadow-md",
+                isFloating && "h-16 md:h-16 md:pt-2",
                 isFullWidth && !isFloating ? "has-aria-expanded:bg-primary" : "max-md:has-aria-expanded:bg-primary",
                 className,
             )}
         >
-            <div className="flex size-full max-w-container flex-1 items-center pr-3 pl-4 md:px-8">
+            <div className="flex size-full w-full flex-1 items-center pr-3 pl-4 md:px-5">
                 <div
                     className={cx(
                         "flex w-full justify-between gap-4",
@@ -133,15 +133,15 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
                     <div className="flex items-center gap-8">
                         {/* LOGO */}
                         <Link href="/" className="flex items-center outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-2">
-                            <BodhicentralLogo className="h-10 md:max-lg:hidden" />
-                            <BodhicentralLogoMinimal className="hidden h-10 md:inline-block lg:hidden" />
+                            <BodhicentralLogo className="h-9 md:max-lg:hidden" />
+                            <BodhicentralLogoMinimal className="hidden h-9 md:inline-block lg:hidden" />
                         </Link>
 
 
                     </div>
                     {/* Desktop navigation */}
                     <nav className="flex items-center max-md:hidden">
-                        <ul className="flex items-center gap-0.5 ml-20">
+                        <ul className="flex items-center gap-0.5">
                             {items.map((navItem) => (
                                 <li key={navItem.label}>
                                     {navItem.menu ? (
