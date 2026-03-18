@@ -68,7 +68,7 @@ export const DropdownMenuScripture = ({ onClose }: { onClose?: () => void }) => 
                 <div className="flex flex-col gap-4 rounded-xl bg-brand-25 dark:bg-brand-950 pt-4 ring-1 ring-secondary md:gap-8 md:rounded-t-2xl md:p-6 md:pt-5">
                     <div className="flex flex-col items-center gap-1 px-4 md:p-0">
                         <h4 className="pt-4 text-4xl font-light uppercase">Kindful Wisdom</h4>
-                        <p className="text-sm text-tertiary">Unlocking universal kindful wisdom with profound Buddhist texts at your fingertips.</p>
+                        <p className="text-sm text-tertiary">Unlocking universal kindful wisdom with precious Buddhist texts at your fingertips.</p>
                     </div>
 
                     <div className="flex flex-col gap-5 md:flex-row md:gap-8 md:py-0">
@@ -76,12 +76,12 @@ export const DropdownMenuScripture = ({ onClose }: { onClose?: () => void }) => 
                             <h3 className="text-sm font-semibold text-brand-700 dark:text-brand-300">Quick Links</h3>
                             <ul className="flex flex-col gap-3">
                                 {[
-                                    { title: "Last Reading", href: "/reader" },
+
                                     { title: "All Collections", href: "/scripture/collections" },
                                     { title: "Genres", href: "/scripture/genres" },
                                     { title: "Authors", href: "/scripture/authors" },
-
                                     { title: "Saved Searches", href: "#" },
+                                    { title: "Bookmarked Texts", href: "#" },
                                 ].map((item) => (
                                     <li key={item.title}>
                                         <Button href={item.href} color="link-gray" size="lg" onPress={onClose}>
