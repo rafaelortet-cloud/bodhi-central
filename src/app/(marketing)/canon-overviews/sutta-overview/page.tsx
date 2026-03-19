@@ -11,6 +11,7 @@ import { useClipboard } from "@/hooks/use-clipboard";
 import { cx } from "@/utils/cx";
 import { isReactComponent } from "@/utils/is-react-component";
 import { CollectionGallerySuttaPitaka } from "@/components/marketing/collection-sections/collection-gallery-sutta-pitaka";
+import Image from 'next/image';
 
 
 
@@ -31,11 +32,11 @@ const ContentSplitImage01 = () => {
                     </p>
 
                     <div className="mt-8 flex items-center gap-3 md:mt-12">
-                        <img
+                        <Image
                             src="/people/bhikku-sujato-close-up.jpg"
                             className="size-12 rounded-full object-cover"
                             alt="Bhikkhu Sujato"
-                        />
+                         width={800} height={800} />
                         <div>
                             <p className="text-md font-semibold text-primary">Bhikkhu Sujato</p>
                             <p className="text-md text-tertiary">Published by SuttaCentral</p>
@@ -43,18 +44,18 @@ const ContentSplitImage01 = () => {
                     </div>
                 </div>
 
-                <img
+                <Image
                     className="mt-16 h-100 w-full object-cover object-right rounded-3xl md:mt-0 md:ml-auto md:h-180 md:w-140 md:max-w-[50vw] drop-shadow-2xl"
                     src="/golden-buddha-faces.jpg"
                     alt="Golden Buddha faces"
-                />
+                 width={800} height={800} />
                 {/* Background Image - Rainbow Light Accent */}
-                <img
+                <Image
                     alt="Light Accent"
                     aria-hidden="true"
                     src="https://www.untitledui.com/marketing/light-accent.webp"
                     className="absolute z-20 -right-1/3 bottom-1/2 max-w-160 opacity-50 dark:opacity-40 mix-blend-multiple md:right-8 md:-bottom-1/6 md:max-w-7xl mask-b-from-90% mask-b-to-100% scale-x-[-1]"
-                />
+                 width={400} height={400} />
             </div>
             {/* Main content */}
             <div className="mx-auto max-w-container px-4 pb-16 md:px-8 md:pb-24">
@@ -117,7 +118,7 @@ const ContentSplitImage01 = () => {
                                 The texts would have originally been in a Prākrit, that is, a dialect of Middle Indo-Aryan closely related to Sanskrit. The exact form of Prākrit is unknown, and indeed it may not have been entirely standardized, since monastics from the earliest times were using different dialects. Indications in the Pali texts suggest that they were derived from an earlier version in Māgadhī, that is, the language of the kingdom of Magadha. It appears that they were standardized in later centuries to a dialect similar to that used widely across central India for inscriptions, with a partial Sanskritization. Nevertheless, these languages differ mostly in phonology, and apart from a few edge cases, changes from one form to another do not affect the meaning.
                             </p>
                             <figure>
-                                <img className="h-60 md:h-120" src="/jetavanaramaya-scene-01.jpg" alt="Jetavanaramaya Scene." />
+                                <Image className="h-60 md:h-120" src="/jetavanaramaya-scene-01.jpg" alt="Jetavanaramaya Scene."  width={400} height={400} />
                                 <figcaption>
                                     Image courtesy of Rafael Ortet via{" "}
                                     <a
@@ -189,11 +190,11 @@ const ContentSplitImage01 = () => {
                                     </p>
                                 </blockquote>
                                 <figcaption className="not-prose mt-6 flex gap-3 text-md md:mt-8">
-                                    <img
+                                    <Image
                                         src="/collections_thumbnails_sakya.jpg"
                                         className="size-12 rounded-full object-cover"
                                         alt="Olivia Rhye"
-                                    />
+                                     width={800} height={800} />
                                     <div>
                                         <p className="text-md font-semibold text-primary">Bhikkhu Sujato</p>
                                         <cite className="text-md text-tertiary not-italic">Co-founder of SuttaCentral</cite>

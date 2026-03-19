@@ -2,6 +2,7 @@
 
 import type { HTMLAttributes } from "react";
 import type { SelectItemType } from "@/components/base/select/select";
+import Image from 'next/image';
 
 /**
  * List of countries with their respective country code, flag, phone code, and phone mask.
@@ -1345,7 +1346,7 @@ export const phoneCodeOptions: SelectItemType[] = countries.map((country) => ({
 export const countriesOptions: SelectItemType[] = countries.map((country) => ({
     id: country.code,
     label: country.name,
-    icon: (props: HTMLAttributes<HTMLImageElement>) => <img {...props} src={country.flag} alt={`${country.name} flag`} />,
+    icon: (props: HTMLAttributes<HTMLImageElement>) => <Image {...props} src={country.flag} alt={`${country.name} flag`}  width={400} height={400} />,
 }));
 
 export default countries;

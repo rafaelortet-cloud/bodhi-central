@@ -11,6 +11,7 @@ import { useClipboard } from "@/hooks/use-clipboard";
 import { cx } from "@/utils/cx";
 import { isReactComponent } from "@/utils/is-react-component";
 import { CollectionGalleryAbhidhammaPitaka } from "@/components/marketing/collection-sections/collection-gallery-abhidhamma-pitaka";
+import Image from 'next/image';
 
 
 
@@ -31,11 +32,11 @@ const ContentSplitImage01 = () => {
                     </p>
 
                     <div className="mt-8 flex items-center gap-3 md:mt-12">
-                        <img
+                        <Image
                             src="/people/bhikku-sujato-close-up.jpg"
                             className="size-12 rounded-full object-cover"
                             alt="Bhikkhu Sujato"
-                        />
+                         width={800} height={800} />
                         <div>
                             <p className="text-md font-semibold text-primary">Bhikkhu Sujato</p>
                             <p className="text-md text-tertiary">Published by SuttaCentral</p>
@@ -43,18 +44,18 @@ const ContentSplitImage01 = () => {
                     </div>
                 </div>
 
-                <img
+                <Image
                     className="mt-16 h-100 w-full object-cover object-center rounded-3xl md:mt-0 md:ml-auto md:h-180 md:w-140 md:max-w-[50vw] drop-shadow-2xl"
                     src="/tibetan-buddhist-library-01.jpg"
                     alt="Buddha Sakyamuni with two disciples"
-                />
+                 width={800} height={800} />
                 {/* Background Image - Rainbow Light Accent */}
-                <img
+                <Image
                     alt="Light Accent"
                     aria-hidden="true"
                     src="https://www.untitledui.com/marketing/light-accent.webp"
                     className="absolute z-20 -right-1/3 bottom-1/2 max-w-160 opacity-50 dark:opacity-40 mix-blend-multiple md:right-8 md:-bottom-1/6 md:max-w-7xl mask-b-from-90% mask-b-to-100% scale-x-[-1]"
-                />
+                 width={400} height={400} />
             </div>
             {/* Main content */}
             <div className="mx-auto max-w-container px-4 pb-16 md:px-8 md:pb-24">
@@ -128,7 +129,7 @@ const ContentSplitImage01 = () => {
                                 While the belief that the books were composed by immediate students of the Buddha is untenable, it does point to something in how they might have developed. The major disciples would have established teaching lineages, or styles of learning, that reflected the specialties of the different masters. Over time, the explanations of various teachers became systematized and codified. The actual books as they exist today, however, are the products of schools, composed under the guidance of leading monks.
                             </p>
                             <figure>
-                                <img className="h-60 md:h-120" src="/jetavanaramaya-scene-01.jpg" alt="Jetavanaramaya virtual scene" />
+                                <Image className="h-60 md:h-120" src="/jetavanaramaya-scene-01.jpg" alt="Jetavanaramaya virtual scene"  width={400} height={400} />
                                 <figcaption>
                                     Image courtesy of Rafael Ortet via{" "}
                                     <a

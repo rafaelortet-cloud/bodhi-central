@@ -16,6 +16,7 @@ import { RadioButtonBase } from "@/components/base/radio-buttons/radio-buttons";
 import { Select } from "@/components/base/select/select";
 import { Toggle } from "@/components/base/toggle/toggle";
 import { cx } from "@/utils/cx";
+import Image from 'next/image';
 
 const themes = [
     {
@@ -91,11 +92,11 @@ export const AppearanceTab = () => {
                     <SectionLabel.Root size="sm" title="Company logo" description="Update your company logo." />
 
                     <div className="flex items-center gap-5">
-                        <img
-                            src={uploadedAvatar}
+                        <Image
+                            src={uploadedAvatar || ''}
                             alt="Company logo"
                             className="size-16 rounded-2xl object-cover ring-1 ring-avatar-contrast-border ring-inset"
-                        />
+                         width={800} height={800} />
 
                         <div className="flex gap-4">
                             <FileTrigger acceptedFileTypes={["image/*"]} onSelect={handleAvatarUpload}>
@@ -240,17 +241,17 @@ export const AppearanceTab = () => {
                                 {
                                     id: "en-US",
                                     label: "English (US)",
-                                    icon: <img src="https://www.untitledui.com/images/flags/US.svg" alt="United States flag" className="size-5" />,
+                                    icon: <Image src="https://www.untitledui.com/images/flags/US.svg" alt="United States flag" className="size-5"  width={20} height={20} />,
                                 },
                                 {
                                     id: "de-DE",
                                     label: "German (DE)",
-                                    icon: <img src="https://www.untitledui.com/images/flags/DE.svg" alt="German flag" className="size-5" />,
+                                    icon: <Image src="https://www.untitledui.com/images/flags/DE.svg" alt="German flag" className="size-5"  width={20} height={20} />,
                                 },
                                 {
                                     id: "es-ES",
                                     label: "Spanish (ES)",
-                                    icon: <img src="https://www.untitledui.com/images/flags/ES.svg" alt="Spanish flag" className="size-5" />,
+                                    icon: <Image src="https://www.untitledui.com/images/flags/ES.svg" alt="Spanish flag" className="size-5"  width={20} height={20} />,
                                 },
                             ]}
                         >

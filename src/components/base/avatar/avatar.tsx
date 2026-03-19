@@ -4,6 +4,7 @@ import { type FC, type ReactNode, useState } from "react";
 import { User01 } from "@untitledui/icons";
 import { cx } from "@/utils/cx";
 import { AvatarOnlineIndicator, VerifiedTick } from "./base-components";
+import Image from 'next/image';
 
 type AvatarSize = "xxs" | "xs" | "sm" | "md" | "lg" | "xl" | "2xl";
 
@@ -81,7 +82,7 @@ export const Avatar = ({
 
     const renderMainContent = () => {
         if (src && !isFailed) {
-            return <img data-avatar-img className="size-full rounded-full object-cover" src={src} alt={alt} onError={() => setIsFailed(true)} />;
+            return <Image data-avatar-img className="size-full rounded-full object-cover" src={src as string} alt={alt || ''} width={100} height={100} onError={() => setIsFailed(true)} />;
         }
 
         if (initials) {

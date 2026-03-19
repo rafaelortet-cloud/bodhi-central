@@ -2,6 +2,18 @@ import createMDX from '@next/mdx'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'www.untitledui.com',
+            },
+            {
+                protocol: 'https',
+                hostname: 'www.gravatar.com',
+            },
+        ],
+    },
     experimental: {
         optimizePackageImports: ["@untitledui/icons"],
     },

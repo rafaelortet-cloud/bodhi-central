@@ -11,6 +11,7 @@ import { useClipboard } from "@/hooks/use-clipboard";
 import { cx } from "@/utils/cx";
 import { isReactComponent } from "@/utils/is-react-component";
 import { CollectionGalleryVinayaPitaka } from "@/components/marketing/collection-sections/collection-gallery-vinaya-pitaka";
+import Image from 'next/image';
 
 
 
@@ -32,11 +33,11 @@ const ContentSplitImage01 = () => {
                     </p>
 
                     <div className="mt-8 flex items-center gap-3 md:mt-12">
-                        <img
+                        <Image
                             src="/people/bhikku-sujato-close-up.jpg"
                             className="size-12 rounded-full object-cover"
                             alt="Bhikkhu Sujato"
-                        />
+                         width={800} height={800} />
                         <div>
                             <p className="text-md font-semibold text-primary">Bhikkhu Sujato</p>
                             <p className="text-md text-tertiary">Published by SuttaCentral</p>
@@ -44,18 +45,18 @@ const ContentSplitImage01 = () => {
                     </div>
                 </div>
 
-                <img
+                <Image
                     className="mt-16 h-100 w-full object-cover object-center rounded-3xl md:mt-0 md:ml-auto md:h-180 md:w-140 md:max-w-[50vw] drop-shadow-2xl"
                     src="/monk-seated-in-meditation-under-forest-tree-1920.webp"
                     alt="Good Leadership"
-                />
+                 width={800} height={800} />
                 {/* Background Image - Rainbow Light Accent */}
-                <img
+                <Image
                     alt="Light Accent"
                     aria-hidden="true"
                     src="https://www.untitledui.com/marketing/light-accent.webp"
                     className="absolute z-20 -right-1/3 bottom-1/2 max-w-160 opacity-50 dark:opacity-40 mix-blend-multiple md:right-8 md:-bottom-1/6 md:max-w-7xl mask-b-from-90% mask-b-to-100% scale-x-[-1]"
-                />
+                 width={400} height={400} />
             </div>
             {/* Main content */}
             <div className="mx-auto max-w-container px-4 pb-16 md:px-8 md:pb-24">
@@ -114,7 +115,7 @@ const ContentSplitImage01 = () => {
                                 The exact cut-off point after which no new material was added to the Canonical Vinaya is impossible to pin down and it would have varied from school to school. On linguistic grounds, it seems likely that the majority of additions to the Pali Vinaya, with the exception of the Parivāra, were done prior to its arrival in Sri Lanka in the third century BCE. After this point new material was added to the commentarial literature, which, despite its likely origin in the mainland, was greatly expanded and developed in Sri Lanka.
                             </p>
                             <figure>
-                                <img className="h-60 md:h-120" src="/content/jambudipa-c-500-bce-1600px.jpg" alt="Jambudipa Map c. 500 BCE" />
+                                <Image className="h-60 md:h-120" src="/content/jambudipa-c-500-bce-1600px.jpg" alt="Jambudipa Map c. 500 BCE"  width={400} height={400} />
                                 <figcaption>
                                     Map of Jambudīpa is courtesy of Jonas David Mitja Lang via {" "}
                                     <a
@@ -132,11 +133,11 @@ const ContentSplitImage01 = () => {
                                     </p>
                                 </blockquote>
                                 <figcaption className="not-prose mt-6 flex gap-3 text-md md:mt-8">
-                                    <img
+                                    <Image
                                         src="/people/bhikku-sujato-close-up.jpg"
                                         className="size-12 rounded-full object-cover"
                                         alt="Bhikkhu Sujato"
-                                    />
+                                     width={800} height={800} />
                                     <div>
                                         <p className="text-md font-semibold text-primary">Bhikkhu Sujato</p>
                                         <cite className="text-md text-tertiary not-italic">Co-founder of SuttaCentral</cite>

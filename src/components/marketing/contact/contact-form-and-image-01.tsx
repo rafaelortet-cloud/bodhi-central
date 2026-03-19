@@ -9,6 +9,7 @@ import { InputGroup } from "@/components/base/input/input-group";
 import { NativeSelect } from "@/components/base/select/select-native";
 import { TextArea } from "@/components/base/textarea/textarea";
 import countries, { phoneCodeOptions } from "@/utils/countries";
+import Image from 'next/image';
 
 export const ContactFormAndImage01 = () => {
     const [selectedCountryPhone, setSelectedCountryPhone] = useState("US");
@@ -82,7 +83,7 @@ export const ContactFormAndImage01 = () => {
                     </div>
 
                     <div className="max-lg:hidden lg:h-200">
-                        <img src="https://www.untitledui.com/marketing/smiling-girl-12.webp" className="size-full object-cover" alt="Smiling girl" />
+                        <Image src="https://www.untitledui.com/marketing/smiling-girl-12.webp" className="size-full object-cover" alt="Smiling girl"  width={1000} height={1000} />
                     </div>
                 </div>
             </div>

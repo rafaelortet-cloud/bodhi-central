@@ -6,6 +6,7 @@ import { Dot } from "@/components/foundations/dot-icon";
 import { cx } from "@/utils/cx";
 import type { BadgeColors, BadgeTypeToColorMap, BadgeTypes, FlagTypes, IconComponentType, Sizes } from "./badge-types";
 import { badgeTypes } from "./badge-types";
+import Image from 'next/image';
 
 export const filledColors: Record<BadgeColors, { root: string; addon: string; addonButton: string }> = {
     gray: {
@@ -277,7 +278,7 @@ export const BadgeWithFlag = <T extends BadgeTypes>(props: BadgeWithFlagProps<T>
 
     return (
         <span className={cx(colors.common, sizes[type][size], colors.styles[color].root)}>
-            <img src={`https://www.untitledui.com/images/flags/${flag}.svg`} className="size-4 max-w-none rounded-full" alt={`${flag} flag`} />
+            <Image src={`https://www.untitledui.com/images/flags/${flag}.svg`} className="size-4 max-w-none rounded-full" alt={`${flag} flag`}  width={16} height={16} />
             {children}
         </span>
     );
@@ -315,7 +316,7 @@ export const BadgeWithImage = <T extends BadgeTypes>(props: BadgeWithImageProps<
 
     return (
         <span className={cx(colors.common, sizes[type][size], colors.styles[color].root)}>
-            <img src={imgSrc} className="size-4 max-w-none rounded-full" alt="Badge image" />
+            <Image src={imgSrc} className="size-4 max-w-none rounded-full" alt="Badge image"  width={16} height={16} />
             {children}
         </span>
     );

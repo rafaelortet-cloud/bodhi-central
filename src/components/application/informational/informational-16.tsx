@@ -35,6 +35,7 @@ import { Button } from "@/components/base/buttons/button";
 import { Input } from "@/components/base/input/input";
 import { Select } from "@/components/base/select/select";
 import { RatingStars } from "@/components/foundations/rating-stars";
+import Image from 'next/image';
 
 interface Listing {
     id: string;
@@ -52,7 +53,7 @@ const ListingListItem = (props: Listing) => {
     return (
         <div className="flex flex-col overflow-hidden rounded-xl bg-primary shadow-xs ring-1 ring-secondary ring-inset xl:flex-row xl:gap-5 xl:p-4">
             <div className="relative h-44 w-full overflow-hidden xl:h-36 xl:w-50 xl:rounded-lg">
-                <img src={props.imageSrc} alt={props.title} className="h-full w-full object-cover" />
+                <Image src={props.imageSrc} alt={props.title} className="h-full w-full object-cover"  width={800} height={800} />
                 {props.rare && (
                     <BadgeWithIcon iconLeading={Award02} size="sm" color="brand" type="pill-color" className="absolute bottom-2 left-2">
                         Rare find
@@ -154,22 +155,22 @@ const cities = [
     {
         id: "melbourne",
         label: "Melbourne, AU",
-        icon: () => <img src="https://www.untitledui.com/images/flags/AU.svg" alt="Australian flag" className="size-5" />,
+        icon: () => <Image src="https://www.untitledui.com/images/flags/AU.svg" alt="Australian flag" className="size-5"  width={20} height={20} />,
     },
     {
         id: "canberra",
         label: "Canberra, AU",
-        icon: () => <img src="https://www.untitledui.com/images/flags/AU.svg" alt="Australian flag" className="size-5" />,
+        icon: () => <Image src="https://www.untitledui.com/images/flags/AU.svg" alt="Australian flag" className="size-5"  width={20} height={20} />,
     },
     {
         id: "brisbane",
         label: "Brisbane, AU",
-        icon: () => <img src="https://www.untitledui.com/images/flags/AU.svg" alt="Australian flag" className="size-5" />,
+        icon: () => <Image src="https://www.untitledui.com/images/flags/AU.svg" alt="Australian flag" className="size-5"  width={20} height={20} />,
     },
     {
         id: "sydney",
         label: "Sydney, AU",
-        icon: () => <img src="https://www.untitledui.com/images/flags/AU.svg" alt="Australian flag" className="size-5" />,
+        icon: () => <Image src="https://www.untitledui.com/images/flags/AU.svg" alt="Australian flag" className="size-5"  width={20} height={20} />,
     },
 ];
 

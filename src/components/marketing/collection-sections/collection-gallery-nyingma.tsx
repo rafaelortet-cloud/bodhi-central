@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight } from "@untitledui/icons";
 import { Carousel } from "@/components/application/carousel/carousel-base";
 import { Button } from "@/components/base/buttons/button";
 import { RoundButton } from "@/components/marketing/testimonials/round-button";
+import Image from 'next/image';
 
 const collectionTexts = [
     {
@@ -106,7 +107,7 @@ export const CollectionGalleryNyingma = () => {
                                 key={text.tibetan_title}
                                 className="relative flex aspect-[.5625] w-full max-w-56 flex-col justify-end md:aspect-[.5625] md:max-w-68 drop-shadow-lg border-2 border-cyan-200 dark:border-cyan-800 rounded-xl overflow-hidden"
                             >
-                                <img alt={text.tibetan_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-[-1] cursor-grab object-cover rounded-sm" />
+                                <Image alt={text.tibetan_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-[-1] cursor-grab object-cover rounded-sm"  width={1000} height={1000} />
 
                                 <div className="z-10 bg-linear-to-t from-black/30 to-black/0 pt-16 md:pt-20 lg:pt-24 rounded-b-sm">
                                     <div className={`relative ${text.color} ${text.darkColor} px-5 pt-5 pb-4 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5 rounded-b-sm`}>

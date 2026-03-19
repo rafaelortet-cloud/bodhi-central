@@ -5,6 +5,7 @@ import { PlayCircle } from "@untitledui/icons";
 import { Button } from "@/components/base/buttons/button";
 import { useClipboard } from "@/hooks/use-clipboard";
 import { FeaturesAlternatingLayout01 } from "@/components/marketing/features/features-alternating-layout-01";
+import Image from 'next/image';
 
 export const HomeScreen = () => {
     const clipboard = useClipboard();
@@ -32,10 +33,12 @@ export const HomeScreen = () => {
                 <div className="absolute inset-0 bg-white/5 dark:bg-black/30 z-0" aria-hidden="true" />
 
 
-                <img
+                <Image
                     alt="Light Accent"
                     aria-hidden="true"
                     src="/patterns/light-accent.webp"
+                    width={1280}
+                    height={1280}
                     className="absolute z-20 -right-10 -bottom-14 max-w-160 opacity-30 mix-blend-multiple md:right-10 md:-bottom-1/3 md:max-w-7xl mask-b-from-90% mask-b-to-100% scale-x-[-1]"
                 />
                 <div className="relative mx-auto grid max-w-container grid-cols-1 gap-16 px-4 md:px-8 lg:min-h-150 lg:items-center">
@@ -57,10 +60,12 @@ export const HomeScreen = () => {
                     </div>
 
                     <div className="hidden relative lg:absolute lg:top-0 lg:right-50 lg:h-100 lg:w-100 opacity-60 mix-blend-plus-lighter">
-                        <img
-                            className="inset-0 h-70 w-full object-cover md:h-100 lg:h-full"
+                        <Image
+                            className="object-cover"
                             src="/cognitive-mandala-02.webp"
                             alt="Cognitive mandala"
+                            fill
+                            sizes="(max-width: 1024px) 100vw, 50vw"
                         />
                     </div>
                 </div>

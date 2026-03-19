@@ -1,4 +1,5 @@
 import type { MDXComponents } from "mdx/types";
+import Image from 'next/image';
 
 const components: MDXComponents = {
     h1: ({ children }) => <h1 className="text-4xl font-light">{children}</h1>,
@@ -21,7 +22,7 @@ const components: MDXComponents = {
     tr: ({ children }) => <tr className="text-base font-light">{children}</tr>,
     th: ({ children }) => <th className="text-base font-light">{children}</th>,
     td: ({ children }) => <td className="text-base font-light">{children}</td>,
-    img: ({ children }) => <img className="text-base font-light" src={children} alt="" />,
+    img: ({ children }) => <Image className="text-base font-light" src={children} alt=""  width={400} height={400} />,
     hr: ({ children }) => <hr className="text-base font-light" />,
     span: ({ children }) => <span className="text-base font-light">{children}</span>,
     div: ({ children }) => <div className="text-base font-light">{children}</div>,

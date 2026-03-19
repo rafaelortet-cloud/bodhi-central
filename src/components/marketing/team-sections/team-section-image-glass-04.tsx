@@ -5,6 +5,7 @@ import { Carousel } from "@/components/application/carousel/carousel-base";
 import { Button } from "@/components/base/buttons/button";
 import { Dribbble, LinkedIn, X } from "@/components/foundations/social-icons";
 import { RoundButton } from "@/components/marketing/testimonials/round-button";
+import Image from 'next/image';
 
 const teamMembers2 = [
     {
@@ -160,7 +161,7 @@ export const TeamSectionImageGlass04 = () => {
                                 key={member.title}
                                 className="relative flex aspect-[.65] w-full max-w-70 flex-col justify-end md:aspect-[0.75] md:max-w-96"
                             >
-                                <img alt={member.name} src={member.avatarUrl} className="absolute inset-0 z-0 size-full cursor-grab object-cover" />
+                                <Image alt={member.name} src={member.avatarUrl} className="absolute inset-0 z-0 size-full cursor-grab object-cover"  width={1000} height={1000} />
 
                                 <div className="z-10 bg-linear-to-t from-black/40 to-black/0 pt-16 md:pt-20 lg:pt-24">
                                     <div className="relative bg-primary/30 px-5 pt-5 pb-6 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5">
