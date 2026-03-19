@@ -865,9 +865,9 @@
     --color-fg-disabled_subtle: var(--color-gray-300);
 
     /* FOREGROUND COLORS - BRAND */
-    --color-fg-brand-primary: var(--color-brand-600);
+    --color-fg-brand-primary: var(--color-brand-700);
     --color-fg-brand-primary_alt: var(--color-fg-brand-primary);
-    --color-fg-brand-secondary: var(--color-brand-500);
+    --color-fg-brand-secondary: var(--color-brand-600);
     --color-fg-brand-secondary_alt: var(--color-fg-brand-secondary);
     --color-fg-brand-secondary_hover: var(--color-brand-600);
 
@@ -1304,8 +1304,8 @@
         --color-fg-secondary_hover: var(--color-gray-200);
         --color-fg-disabled: var(--color-gray-500);
         --color-fg-disabled_subtle: var(--color-gray-600);
-        --color-fg-brand-primary: var(--color-brand-500);
-        --color-fg-brand-secondary: var(--color-brand-500);
+        --color-fg-brand-primary: var(--color-brand-400);
+        --color-fg-brand-secondary: var(--color-brand-400);
         --color-fg-brand-primary_alt: var(--color-gray-300);
         --color-fg-brand-secondary_alt: var(--color-gray-600);
         --color-fg-brand-secondary_hover: var(--color-gray-500);
