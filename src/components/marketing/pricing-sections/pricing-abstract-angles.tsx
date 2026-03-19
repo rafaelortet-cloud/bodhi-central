@@ -14,13 +14,13 @@ export const PricingAbstractAngles = () => {
         {
             title: "Basic Reading Experience",
             subtitle: selectedPlan === "monthly" ? "Free" : "Free",
-            description: "Never pay for reading",
+            description: "Full access to the Buddhist texts",
             features: [
                 "Unlimited access to the Buddhist texts",
-                "Basic reading and learning paths features",
+                "Full browser experience",
+                "Reading and learning paths experiences",
                 "Basic bookmarks",
-                "Basic notes",
-                "Basic chat and email support",
+
             ],
             icon: Zap,
             buttonText: "Continue learning",
@@ -28,29 +28,32 @@ export const PricingAbstractAngles = () => {
         {
             title: "Discovery Experience",
             subtitle: selectedPlan === "monthly" ? "Free" : "Free",
-            description: "With Signing in.",
+            description: "Sign up to your Desk",
             badge: "Popular",
             features: [
                 "Access to My Desk basic features",
-                "Up to 10 stored texts",
-                "Up to 5 personal Spaces",
-                "Up to 20 stored notes",
-                "All the ",
+                "Up to 3 personal Spaces",
+                "Up to 5 stored texts",
+                "Up to 20 Saved Searches",
+                "Bookmarks",
+                "Chat and email support",
             ],
             icon: LayersTwo01,
-            buttonText: "Sign in to discover",
+            buttonText: "Start free sign up",
         },
         {
             title: "Full Access Subscription",
             subtitle: selectedPlan === "monthly" ? "$2/month" : "$20/year",
-            description: "Billed annually.",
+            description: "Unlimited everything!",
             badge: "Popular",
             features: [
-                "Advanced custom fields",
-                "Audit log and data history",
-                "Unlimited individual users",
-                "Unlimited individual data",
-                "Personalized + priority service",
+                "Everything in Discovery",
+                "Unlimited personal Spaces",
+                "Unlimited stored texts",
+                "Unlimited Saved Searches",
+                "Unlimited bookmarks",
+                "Unlimited notes",
+                "Priority support",
             ],
             icon: LayersThree01,
             buttonText: "Start Subscription",
@@ -86,7 +89,7 @@ export const PricingAbstractAngles = () => {
                                 />
 
                                 <label htmlFor="annual-pricing" className="text-md font-medium text-brand-primary select-none">
-                                    Annual pricing <span className="text-brand-secondary">(save 20%)</span>
+                                    Annual Subscription <span className="text-brand-secondary">(save 20%)</span>
                                 </label>
                             </div>
                         </div>
