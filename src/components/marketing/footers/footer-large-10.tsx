@@ -203,7 +203,7 @@ export const FooterLarge10 = () => {
                         <ul className="grid flex-1 grid-cols-2 gap-8 md:grid-cols-5">
                             {footerNavList.slice(0, 5).map((category) => (
                                 <li key={category.label}>
-                                    <h4 className="text-lg font-medium text-fg-brand-primary">{category.label}</h4>
+                                    <h3 className="text-xl text-fg-brand-primary">{category.label}</h3>
                                     <ul className="mt-4 flex flex-col gap-3">
                                         {category.items.map((item) => (
                                             <li key={item.label}>
