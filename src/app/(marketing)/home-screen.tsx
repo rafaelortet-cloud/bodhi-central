@@ -11,7 +11,7 @@ export const HomeScreen = () => {
     const clipboard = useClipboard();
 
     return (
-        <div className="relative overflow-hidden bg-brand-50 dark:bg-brand-200">
+        <main className="relative overflow-hidden bg-brand-50 dark:bg-brand-200">
             {/* Background pattern */}
             <img
                 alt="Grid of dots"
@@ -71,7 +71,7 @@ export const HomeScreen = () => {
                 </div>
             </section>
             <FeaturesAlternatingLayout01 />
-        </div >
+        </main >
 
 
     );

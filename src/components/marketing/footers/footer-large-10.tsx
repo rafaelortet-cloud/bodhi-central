@@ -220,7 +220,7 @@ export const FooterLarge10 = () => {
                 </div>
 
                 <div className="mt-12 flex flex-col-reverse justify-between gap-6 border-t border-secondary pt-8 md:mt-16 md:flex-row">
-                    <p className="text-md text-quaternary">© 2026 Bodhi Central. All rights reserved.</p>
+                    <p className="text-md text-secondary">© 2026 Bodhi Central. All rights reserved.</p>
                     <ul className="flex gap-6">
                         {footerSocials.map(({ label, icon: Icon, href }) => (
                             <li key={label}>
