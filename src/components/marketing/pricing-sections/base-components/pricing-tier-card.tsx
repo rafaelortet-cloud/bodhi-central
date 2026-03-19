@@ -84,6 +84,7 @@ interface PricingTierCardProps {
     description?: string;
     features: string[];
     className?: string;
+    buttonText?: string;
 }
 
 export const PricingTierCardIcon = (props: PricingTierCardProps) => {
@@ -104,7 +105,7 @@ export const PricingTierCardIcon = (props: PricingTierCardProps) => {
             </ul>
 
             <div className="mt-auto flex flex-col gap-3 rounded-b-2xl border-t border-secondary bg-secondary px-6 pt-6 pb-8 md:p-8">
-                <Button size="xl">Get started</Button>
+                <Button size="xl">{props.buttonText}</Button>
             </div>
         </div>
     );

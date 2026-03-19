@@ -119,7 +119,7 @@ const footerNavList = [
             },
             {
                 label: "Plans",
-                href: "#",
+                href: "/about/plans",
             },
         ],
     },
