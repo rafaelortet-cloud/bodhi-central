@@ -25,16 +25,16 @@ type HeaderNavItem = {
 };
 
 const headerNavItems: HeaderNavItem[] = [
-    { label: "Texts", href: "/scripture", menu: <DropdownMenuScripture /> },
-    { label: "Pathways", href: "/learning-paths", menu: <DropdownMenuLearningPaths /> },
+    { label: "Scriptures", href: "/scripture", menu: <DropdownMenuScripture /> },
+    { label: "Paths", href: "/learning-paths", menu: <DropdownMenuLearningPaths /> },
     { label: "Resources", href: "/resources", menu: <DropdownMenuResources /> },
 ];
 
 const footerNavItems = [
-    { label: "Project information", href: "/about/project-information" },
     { label: "About us", href: "/about" },
+    { label: "Project information", href: "/about/project-information" },
     { label: "Legal", href: "/about/legal" },
-    { label: "Contact", href: "/about/contact" },
+    { label: "Help and FAQ", href: "/support" },
     { label: "Cookie settings", href: "/about/cookie-settings" },
 ];
 
@@ -117,7 +117,7 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
         <header
             ref={headerRef}
             className={cx(
-                "sticky top-0 z-500 flex h-16 w-full items-center justify-center border-secondary border-b bg-bg-secondary md:h-16 shadow-md",
+                "sticky top-0 z-500 flex h-16 w-full items-center justify-center border-secondary border-b bg-bg-secondary/96 dark:bg-bg-secondary/90 backdrop-blur-lg md:h-16 shadow-lg shadow-black-400/50 dark:shadow-black/40",
                 isFloating && "h-16 md:h-16 md:pt-2",
                 isFullWidth && !isFloating ? "has-aria-expanded:bg-primary" : "max-md:has-aria-expanded:bg-primary",
                 className,

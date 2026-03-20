@@ -1,13 +1,75 @@
 "use client";
-import { Close01, Columns01, Menu01 } from "@untitledui/icons";
+import { Close01, Columns01, Menu02, Building08, HomeLine, Rows01, CheckDone01, PieChart03, Users01, Eye, EyeOff, Play, Headphones01, Image01, VideoRecorder } from "@untitledui/icons";
+import { Breadcrumbs } from "@/components/application/breadcrumbs/breadcrumbs";
+import { SidebarNavigationSlim } from "@/components/application/app-navigation/sidebar-navigation/sidebar-slim-reader";
 
 
 export default function ReaderPage() {
     return (
         <>
-            <div className="bg-olive-100 dark:bg-olive-800 h-full -mt-18">
-                <div className="relative top-0 pt-18 mx-auto w-full h-full grid grid-cols-1 lg:grid-cols-[2.25fr_0.75fr] gap-0 overflow-hidden">
-                    <div id="reader-nav-container" className="absolute top-22 left-4 bottom-4 w-96 z-50 bg-white dark:bg-olive-900 rounded-2xl p-8 drop-shadow-md">
+            {/* The MAIN Reader wrapper */}
+            <main className="mx-auto w-full h-full bg-olive-100 dark:bg-olive-800 pt-6">
+
+                <div className="relative top-0 mx-auto w-full h-full grid grid-cols-1 lg:grid-cols-[6rem_2fr_24rem]">
+                    {/* TODO: Add Sidebar Navigation */}
+                    <div className="pt-0">
+                        <SidebarNavigationSlim
+                            hideRightBorder
+                            activeUrl=""
+                            items={[
+                                {
+                                    label: "Non-distraction Mode",
+                                    href: "",
+                                    icon: Eye,
+                                },
+                                {
+                                    label: "Canon Navigation",
+                                    href: "",
+                                    icon: Building08,
+                                },
+                                {
+                                    label: "Table of Contents",
+                                    href: "",
+                                    icon: Menu02,
+                                },
+                                {
+                                    label: "Front Matter",
+                                    href: "",
+                                    icon: CheckDone01,
+                                },
+                                {
+                                    label: "Text Body",
+                                    href: "",
+                                    icon: PieChart03,
+                                },
+                                {
+                                    label: "Back Matter",
+                                    href: "",
+                                    icon: Users01,
+                                },
+                            ]}
+                            footerItems={[
+                                {
+                                    label: "Video Library",
+                                    href: "",
+                                    icon: VideoRecorder,
+                                },
+                                {
+                                    label: "Illustrations",
+                                    href: "",
+                                    icon: Image01,
+                                },
+                                {
+                                    label: "Audio Library",
+                                    href: "",
+                                    icon: Headphones01,
+                                },
+                            ]}
+                        />
+                    </div>
+
+                    {/* TODO: Add Modal for canonical navigation */}
+                    <div id="reader-nav-container" className="hidden absolute top-22 left-4 bottom-4 w-96 z-50 bg-white dark:bg-olive-900 rounded-2xl p-8 drop-shadow-md">
                         <div id="reader-nav" className="prose flex flex-col w-full">
                             <h2 className="text-xl font-bold text-primary">Canonical Navigation Specs</h2>
                             <p className="text-sm text-tertiary">The Canonical Navigation is a hierarchical structure of the Buddhist Pali and Tibetan canons, organized by the respective divisions, sections, and sub-sections of each canon.</p>
@@ -18,8 +80,16 @@ export default function ReaderPage() {
                             <p className="text-sm text-tertiary">On the technical side, for a reference on the developement of tre Canonical Navigation, please check out the <a className="text-brand-700 dark:text-brand-300" href="https://headless-tree.lukasbach.com" target="_blank">Headless Tree</a> component.</p>
                         </div>
                     </div>
+                    {/* TODO: Add reader content wrapper */}
                     <div id="reader-content-container" className="w-full h-full">
-                        <div id="reader-header" className="flex flex-row mx-auto w-full pl-5 pt-5 items-center justify-between"><Menu01 /> <Columns01 /></div>
+                        <div>
+                            <Breadcrumbs>
+                                <Breadcrumbs.Item href="/">Home</Breadcrumbs.Item>
+                                <Breadcrumbs.Item href="/scripture">Canon</Breadcrumbs.Item>
+                                <Breadcrumbs.Item href="/learning-paths">Section</Breadcrumbs.Item>
+                                <Breadcrumbs.Item href="/resources">Sutta</Breadcrumbs.Item>
+                            </Breadcrumbs>
+                        </div>
                         <div id="reader-content" className="prose flex flex-col mx-auto w-md pt-8 items-center justify-center">
                             <h1 className="text-xl font-bold text-primary">Welcome to your Last Reading!</h1>
                             <hr className="w-full border-t border-olive-200 dark:border-olive-700" />
@@ -43,7 +113,7 @@ export default function ReaderPage() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </main>
         </>
     );
 }

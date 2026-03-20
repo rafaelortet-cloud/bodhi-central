@@ -43,8 +43,8 @@ export const HomeScreen = () => {
                 />
                 <div className="relative mx-auto grid max-w-container grid-cols-1 gap-16 px-4 md:px-8 lg:min-h-150 lg:items-center">
                     <div className="z-10 flex max-w-2xl flex-col items-start">
-                        <span className="text-sm font-regular text-brand-100 dark:text-brand-100 md:text-lg uppercase tracking-wider">Inclusive ⟐ Relevant ⟐ Awake</span>
-                        <h1 className="text-display-md text-brand-25 dark:text-brand-300 md:text-display-xl lg:text-display-2xl text-shadow-md text-shadow-gray-700 dark:text-shadow-gray-950">
+                        <span className="text-sm font-regular text-brand-100 dark:text-brand-50 md:text-lg uppercase tracking-wider">Inclusive ⟐ Relevant ⟐ Awake</span>
+                        <h1 className="text-display-md text-brand-25 dark:text-brand-200 md:text-display-xl lg:text-display-2xl text-shadow-md text-shadow-gray-700 dark:text-shadow-gray-950">
                             Gateways to Buddhist paths of the Awakening
                         </h1>
                         <p className="mt-4 max-w-xl text-lg text-balance text-brand-100 dark:text-brand-100 md:mt-6 md:text-xl">

@@ -6,7 +6,7 @@ import { AngelList, Dribbble, Facebook, GitHub, Layers, LinkedIn, X } from "@/co
 
 const footerNavList = [
     {
-        label: "Texts",
+        label: "Scriptures",
         items: [
             {
                 label: "Overview",
@@ -43,7 +43,7 @@ const footerNavList = [
         ],
     },
     {
-        label: "Pathways",
+        label: "Paths",
         items: [
             {
                 label: "Introduction",
