@@ -28,7 +28,7 @@ export const SidebarNavigationSlimRight = ({ activeUrl, items, footerItems = [] 
                 width: MAIN_SIDEBAR_WIDTH,
             }}
             className={cx(
-                "group flex h-full max-h-full max-w-full overflow-y-auto pt-26 pb-4 transition duration-100 ease-linear",
+                "group flex h-full max-h-full max-w-full overflow-y-auto pt-22 pb-4 transition duration-100 ease-linear",
             )}
         >
             <div
