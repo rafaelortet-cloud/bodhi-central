@@ -37,7 +37,7 @@ export const SidebarNavigationSlim = ({ activeUrl, items, footerItems = [] }: Si
                 )}
             >
 
-                <ul className="mt-2 flex flex-col gap-3 px-3">
+                <ul className="mt-2 flex flex-col gap-2 px-3">
                     {items.map((item) => (
                         <li key={item.label}>
                             <NavItemButton
@@ -47,13 +47,14 @@ export const SidebarNavigationSlim = ({ activeUrl, items, footerItems = [] }: Si
                                 label={item.label || ""}
                                 icon={item.icon}
                                 onClick={() => setCurrentItem(item)}
+                                className="bg-olive-200 dark:bg-gray-950"
                             />
                         </li>
                     ))}
                 </ul>
                 <div className="mt-auto flex flex-col gap-4 px-3 py-5">
                     {footerItems.length > 0 && (
-                        <ul className="flex flex-col gap-3">
+                        <ul className="flex flex-col gap-2">
                             {footerItems.map((item) => (
                                 <li key={item.label}>
                                     <NavItemButton
@@ -63,6 +64,7 @@ export const SidebarNavigationSlim = ({ activeUrl, items, footerItems = [] }: Si
                                         href={item.href}
                                         icon={item.icon}
                                         onClick={() => setCurrentItem(item)}
+                                        className="bg-olive-200 dark:bg-gray-950"
                                     />
                                 </li>
                             ))}

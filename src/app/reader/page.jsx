@@ -1,6 +1,6 @@
 "use client";
 
-import { Close01, Type02, Columns01, Menu02, Building08, HomeLine, Rows01, BookOpen01, Eye, EyeOff, Headphones01, Image01, VideoRecorder, InfoCircle, AlignLeft01, AlignRight01, Link01, Dataflow01, Check, Copy01, ArrowRight, Settings03, SearchLg, Download01, GraduationHat02 } from "@untitledui/icons";
+import { Close01, Type02, Columns01, Menu02, Building08, HomeLine, Rows01, BookOpen01, Eye, EyeOff, Headphones01, Image01, VideoRecorder, InfoCircle, AlignLeft01, AlignRight01, Link01, Dataflow01, Check, Copy01, ArrowRight, Settings03, SearchLg, Download01, GraduationHat02, Bookmark } from "@untitledui/icons";
 import { Breadcrumbs } from "@/components/application/breadcrumbs/breadcrumbs";
 import { SidebarNavigationSlim } from "@/components/application/app-navigation/sidebar-navigation/sidebar-slim-reader";
 import { SidebarNavigationSlimRight } from "@/components/application/app-navigation/sidebar-navigation/sidebar-slim-reader-right";
@@ -273,6 +273,8 @@ export const AuxiliaryPanel = () => {
                     <li>Commentaries and sub-commentaries on the text being read.</li>
                     <li>Overviews of the text being read and recommended reading.</li>
                     <li>Related study paths.</li>
+                    <li>Bookmarks</li>
+
                 </ul>
                 <p className="text-sm text-tertiary pb-4">This panel and related features are a work in progress and will be reported on our <a className="text-brand-700 dark:text-brand-300" href="https://bodhi-central-docs.vercel.app/tech/features-roadmap" target="_blank">Technical Documentation</a>. Stay tuned!</p>
                 <div className="w-full border-t border-secondary mt-auto">
@@ -440,6 +442,11 @@ export default function ReaderPage() {
                             label: "Overviews & Recommended Reading",
                             href: "",
                             icon: BookOpen01,
+                        },
+                        {
+                            label: "Bookmarks",
+                            href: "",
+                            icon: Bookmark,
                         },
 
                     ]}
