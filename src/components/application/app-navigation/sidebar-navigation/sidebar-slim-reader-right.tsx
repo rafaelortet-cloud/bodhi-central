@@ -28,7 +28,7 @@ export const SidebarNavigationSlimRight = ({ activeUrl, items, footerItems = [] 
                 width: MAIN_SIDEBAR_WIDTH,
             }}
             className={cx(
-                "group flex h-full max-h-full max-w-full overflow-y-auto pt-22 pb-4 transition duration-100 ease-linear",
+                "group flex h-full max-h-full max-w-full overflow-y-auto pt-10 pb-4 transition duration-100 ease-linear",
             )}
         >
             <div
@@ -77,7 +77,7 @@ export const SidebarNavigationSlimRight = ({ activeUrl, items, footerItems = [] 
         <>
             {/* Desktop sidebar navigation */}
             <div
-                className="z-50 lg:fixed lg:inset-y-0 lg:top-8 lg:bottom-0 lg:right-0 lg:flex"
+                className="z-50 fixed inset-y-0 top-8 bottom-0 right-0 flex"
                 onPointerEnter={() => setIsHovering(true)}
             >
                 {mainSidebar}

@@ -13,8 +13,10 @@ export default async function ReaderLayout({
 
     return (
         <>
-            <div className="reader-root h-screen overflow-hidden top-14 bottom-4">
-                <Header user={user} />
+            <div className="reader-root bg-olive-200 dark:bg-gray-800">
+                <div className="hidden">
+                    <Header user={user} />
+                </div>
                 {children}
             </div>
         </>
