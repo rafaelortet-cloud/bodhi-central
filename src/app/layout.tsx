@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Crimson_Pro, Nunito, Roboto_Serif, Noto_Serif_Tibetan } from "next/font/google";
+import { Crimson_Pro, Nunito, Noto_Serif_Tibetan } from "next/font/google";
 import { RouteProvider } from "@/providers/router-provider";
 import { Theme } from "@/providers/theme";
 import "@/styles/globals.css";
@@ -9,13 +9,6 @@ const nunito = Nunito({
     subsets: ["latin"],
     display: "swap",
     variable: "--font-nunito",
-});
-
-const robotoSerif = Roboto_Serif({
-    subsets: ["latin"],
-    display: "swap",
-    variable: "--font-roboto-serif",
-    axes: ["wdth", "opsz", "GRAD"],
 });
 
 const crimsonPro = Crimson_Pro({
@@ -46,7 +39,7 @@ export default async function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" suppressHydrationWarning className={cx(nunito.variable, robotoSerif.variable, crimsonPro.variable, tibetan.variable)}>
+        <html lang="en" suppressHydrationWarning className={cx(nunito.variable, crimsonPro.variable, tibetan.variable)}>
             <body className="bg-primary antialiased">
                 <RouteProvider>
                     <Theme>

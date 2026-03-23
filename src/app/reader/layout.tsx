@@ -1,6 +1,7 @@
-import { Header } from "@/components/marketing/header-navigation/header";
+
 import { HeaderReader } from "@/components/marketing/header-navigation/header-reader";
 import { createClient } from "@/utils/supabase/server";
+import "@/styles/typography-reader.css";
 
 export default async function ReaderLayout({
     children,

@@ -112,7 +112,7 @@ export const HeaderReader = ({ items = headerReaderNavItems, isFullWidth, isFloa
         <header
             ref={headerRef}
             className={cx(
-                "sticky top-0 z-500 flex h-12 w-full items-center justify-center border-secondary border-b bg-olive-200 dark:bg-gray-950 backdrop-blur-lg md:h-12",
+                "sticky top-0 z-500 flex h-12 w-full items-center justify-center bg-olive-200 dark:bg-gray-950 backdrop-blur-lg md:h-12",
                 isFloating && "h-16 md:h-12 md:pt-2",
                 isFullWidth && !isFloating ? "has-aria-expanded:bg-primary" : "max-md:has-aria-expanded:bg-primary",
                 className,

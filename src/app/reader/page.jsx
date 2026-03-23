@@ -1,29 +1,26 @@
 "use client";
 
-import { Close01, Type02, Columns01, Menu02, Building08, HomeLine, Rows01, BookOpen01, Eye, EyeOff, Headphones01, Image01, VideoRecorder, InfoCircle, AlignLeft01, AlignRight01, Link01, Dataflow01, Check, Copy01, ArrowRight, Settings03, SearchLg, Download01, GraduationHat02, Bookmark } from "@untitledui/icons";
-import { Breadcrumbs } from "@/components/application/breadcrumbs/breadcrumbs";
+import { Close01, Type02, Columns01, Menu02, Building08, Rows01, BookOpen01, Eye, EyeOff, Headphones01, Image01, VideoRecorder, InfoCircle, AlignLeft01, AlignRight01, Link01, Dataflow01, Check, Copy01, ArrowRight, Settings03, Download01, GraduationHat02, Bookmark } from "@untitledui/icons";
 import { SidebarNavigationSlim } from "@/components/application/app-navigation/sidebar-navigation/sidebar-slim-reader";
 import { SidebarNavigationSlimRight } from "@/components/application/app-navigation/sidebar-navigation/sidebar-slim-reader-right";
 import { Button } from "@/components/base/buttons/button";
 import { Facebook, LinkedIn, X } from "@/components/foundations/social-icons";
 import Image from "next/image";
 import Link from "next/link";
-import { BodhicentralLogoMinimal } from "@/components/foundations/logo/bodhicentral-logo-minimal";
-import { ThemeToggle } from "@/components/application/theme-toggle";
 import { BadgeGroup } from "@/components/base/badges/badge-groups";
-import { NavItemButton } from "@/components/application/app-navigation/base-components/nav-item-button";
 
 
 export const TableOfContents = () => {
     return (
-        <div className="sticky top-14 w-90 flex flex-col items-start gap-6 px-8 py-4">
+        <div className="sticky z-45 top-12 w-full flex flex-col items-start gap-6 px-6 py-6 bg-white dark:bg-gray-900 border-r border-secondary rounded-tl-2xl h-[calc(100dvh-48px)]">
             <div className="flex flex-col gap-4">
                 <h2 className="text-display-xs text-brand-primary">Table of contents</h2>
                 <ul className="flex flex-col gap-2">
                     {[
-                        { title: "Origin", href: "#origins", indent: "ml-0" },
+                        { title: "Title", href: "#title-page", indent: "ml-0" },
+                        { title: "Origins", href: "#origins", indent: "ml-0" },
                         { title: "Textual Transmission and the Schools", href: "#textual-transmission-and-the-schools", indent: "ml-0" },
-                        { title: "Content", href: "#content", indent: "ml-0" },
+                        { title: "Content of the Vinaya Pitaka", href: "#content", indent: "ml-0" },
                         { title: "Suttavibhaṅga", href: "#suttavibhaṅga", indent: "ml-6" },
                         { title: "Khandhakas", href: "#khandhakas", indent: "ml-6" },
                         { title: "Other Texts", href: "#other-texts", indent: "ml-6" },
@@ -32,7 +29,7 @@ export const TableOfContents = () => {
                         { title: "References and Further Reading", href: "#references-and-further-reading", indent: "ml-0" },
                     ].map((item) => (
                         <li key={item.title} className={item.indent}>
-                            <Button href={item.href} size="md" color="link-gray">
+                            <Button href={item.href} size="md" color="link-gray" className="whitespace-normal">
                                 {item.title}
                             </Button>
                         </li>
@@ -52,7 +49,7 @@ export const TableOfContents = () => {
 
 export const TextCanvasSingle = () => {
     return (
-        <div className="mx-auto prose pt-6">
+        <div className="mx-auto prose-reader pt-6">
             <div className="mx-auto w-full py-4">
                 <section className="relative overflow-hidden py-2 md:pb-6">
                     <div className="mx-auto grid max-w-container grid-cols-1 items-center justify-items-center gap-8 lg:grid-cols-[1.4fr_3fr] lg:justify-items-start">
@@ -70,7 +67,7 @@ export const TextCanvasSingle = () => {
                                 src="/textCovers/buddha-sakyamuni-600.jpg"
                             />
                         </div>
-                        <div className="flex max-w-3xl flex-col items-center text-center lg:items-start lg:text-left">
+                        <div id="title-page" className="flex max-w-3xl flex-col items-center text-center lg:items-start lg:text-left">
                             <a href="#" className="rounded-full outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-2">
                                 <BadgeGroup className="hidden md:flex" size="lg" addonText="Categories" iconTrailing={ArrowRight} theme="light" color="brand">
                                     Topics
@@ -81,15 +78,15 @@ export const TextCanvasSingle = () => {
                             </a>
 
                             <h1 className="mt-4 text-display-md font-semibold text-primary md:text-display-lg lg:text-display-xl">
-                                Beautiful Sutta to inspire and grow wisdom
+                                Welcome to Bodhi Central readership and learning for everyone
                             </h1>
-                            <p className="mt-4 max-w-lg text-lg text-balance text-tertiary md:mt-6 md:text-xl">
-                                The Vinaya is the code of conduct for Buddhist monks and nuns. It is a collection of rules and regulations that govern the lives of monastics, and it is an essential part of the Buddhist tradition.
+                            <p className="description mt-4 max-w-lg text-lg text-balance text-tertiary md:mt-6 md:text-xl">
+                                An environment of generosity and dedication, offering a curated selection of Buddhist texts and teachings to inspire study and practice, with awareness, kindness, and wisdom.
                             </p>
                         </div>
                     </div>
                 </section>
-                <p className="lead first-letter:float-left first-letter:text-6xl first-letter:leading-10 first-letter:mr-2 first-letter:font-serif first-letter:font-extralight first-letter:text-brand-800 dark:first-letter:text-brand-200">
+                <p className="lead first-letter:float-left first-letter:text-7xl first-letter:leading-12 first-letter:mr-2 first-letter:font-serif first-letter:font-extralight first-letter:text-brand-800 dark:first-letter:text-brand-200">
                     The Monastic Law is available in more recensions than any other part of the Tipiṭaka. There is a full version in Pali, and four complete versions extant in Chinese translation, all belonging to different schools of early Buddhism: Mahāsāṅghika, Dharmaguptaka, Mahīśāsaka, and Sarvāstivāda. The Chinese Tipiṭaka also preserves other Vinaya related texts, such as an independent <i>bhikkhu pātimokkha</i> of the Kāśyapīya School and several more or less school-specific Vinaya texts. The Vinaya of the Mūlasarvāstivāda school exists in three versions: a complete text in Tibetan translation, a mostly complete version in Chinese, and substantial portions in Sanskrit. There are also several Vinaya texts, as well as a large number of fragments, in Sanskrit and other Indic languages, mostly of Mahāsāṅghika, Sarvāstivāda, and Mūlasarvāstivāda provenance.
                 </p>
                 <hr />
@@ -264,8 +261,8 @@ export const TextCanvasSingle = () => {
 
 export const AuxiliaryPanel = () => {
     return (
-        <div className="sticky top-12 mx-auto z-45 flex-1">
-            <div className="prose flex flex-col w-full bg-olive-100 dark:bg-gray-800/30 px-6 py-4 rounded-tr-3xl rounded-br-lg h-[calc(100dvh-48px)]">
+        <div className="sticky top-12 mx-auto z-45 flex-1 border-l border-secondary">
+            <div className="prose-reader flex flex-col w-full bg-olive-100 dark:bg-gray-800/30 px-6 py-4 rounded-tr-2xl rounded-br-xl h-[calc(100dvh-48px)]">
                 <h2 className="text-xl text-primary">Auxiliary Panel Specs</h2>
                 <p className="text-sm text-tertiary">The Auxiliary Panel displays information related to the text being read. Types of peripheral content are selected from the tools in on the right side of this panel.</p>
                 <p className="text-sm text-tertiary">Features being considered for the Auxiliary Panel include:</p>
@@ -387,14 +384,14 @@ export default function ReaderPage() {
                 <div className="w-full px-14">
                     <div className="relative flex flex-nowrap w-full bg-olive-50 dark:bg-gray-900">
 
-                        <div className="sticky top-0 w-[20%]">
+                        <div className="w-[22%] min-w-70">
                             <TableOfContents />
                         </div>
                         {/* Reader Canvas wrapper */}
-                        <div className="w-[55%]">
+                        <div className="w-[55%] px-4 md:px-10 lg:px-14 xl:px-18 min-w-96">
                             <TextCanvasSingle />
                         </div>
-                        <div className="w-[30%]">
+                        <div className="w-[28%] hidden md:block">
                             <AuxiliaryPanel />
                         </div>
                     </div></div>

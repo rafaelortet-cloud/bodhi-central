@@ -24,7 +24,7 @@ const columns: MenuColumn[] = [
         items: [
             {
                 title: "Last Reading",
-                subtitle: "Continue where you left off.",
+                subtitle: "Continue reading where you left off.",
                 href: "/scripture/theravada-tradition",
                 Icon: BookOpen01,
             },
@@ -46,14 +46,14 @@ const columns: MenuColumn[] = [
         title: "My Paths",
         items: [
             {
-                title: "Last Learning Path",
-                subtitle: "Continue where you left off.",
+                title: "Last Learning",
+                subtitle: "Continue learning where you left off.",
                 href: "/scripture/traditions",
                 Icon: Hurricane01,
             },
             {
                 title: "Saved Paths",
-                subtitle: "Your saved learning paths.",
+                subtitle: "Manage your saved paths.",
                 href: "/scripture/connections",
                 Icon: Link03,
             },
@@ -63,12 +63,12 @@ const columns: MenuColumn[] = [
 
 export const DropdownMenuMyDesk = ({ onClose }: { onClose?: () => void }) => {
     return (
-        <div className="px-3 pb-2 md:max-w-200 md:p-0">
+        <div className="px-3 pb-2 md:max-w-180 md:p-0">
             <nav className="overflow-hidden md:overflow-visible rounded-xl bg-brand-100 dark:bg-brand-900 drop-shadow-lg ring-1 ring-secondary_alt md:rounded-3xl md:drop-shadow-2xl dark:md:drop-shadow-gray-900">
                 <div className="flex flex-col gap-4 rounded-xl bg-brand-25 dark:bg-brand-950 pt-4 ring-1 ring-secondary md:gap-8 md:rounded-t-2xl md:p-6 md:pt-5">
                     <div className="flex flex-col items-center gap-1 px-4 md:p-0">
                         <h4 className="pt-4 text-4xl font-light uppercase">My Desk</h4>
-                        <p className="text-sm text-tertiary">Your personal space for Buddhist study and practice.</p>
+                        <p className="text-sm text-tertiary">Personal spaces for your study and practice.</p>
                     </div>
 
                     <div className="flex flex-col gap-5 md:flex-row md:gap-8 md:py-0">
@@ -78,7 +78,6 @@ export const DropdownMenuMyDesk = ({ onClose }: { onClose?: () => void }) => {
                                 {[
 
                                     { title: "Manage Spaces", href: "/scripture/collections" },
-                                    { title: "Manage Paths", href: "/scripture/genres" },
                                     { title: "Manage Resources", href: "/scripture/authors" },
                                 ].map((item) => (
                                     <li key={item.title}>
@@ -109,13 +108,13 @@ export const DropdownMenuMyDesk = ({ onClose }: { onClose?: () => void }) => {
 
                 <div className="mx-auto flex max-w-container flex-col px-4 py-5 md:flex-row md:items-center md:justify-between md:px-6">
                     <Button href="/reader" color="secondary" size="md" iconLeading={BookOpen01} className="hidden md:flex" onPress={onClose}>
-                        Guides
+                        Reaser's Guides
                     </Button>
                     <Button href="/my-desk" color="primary" size="md" className="hidden md:flex" onPress={onClose}>
-                        Documentation
+                        Sign up
                     </Button>
                     <Button href="/my-desk" color="primary" size="sm" className="md:hidden" onPress={onClose}>
-                        Documentation
+                        Sign up
                     </Button>
                 </div>
             </nav>
