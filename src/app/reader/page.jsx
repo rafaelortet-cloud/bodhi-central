@@ -51,13 +51,13 @@ export const TextCanvasSingle = () => {
     return (
         <div className="mx-auto prose-reader pt-6">
             <div className="mx-auto w-full py-4">
-                <section className="relative overflow-hidden py-2 md:pb-6">
+                <section className="relative mx-auto overflow-hidden py-2 md:pb-6">
                     <div className="mx-auto grid max-w-container grid-cols-1 items-center justify-items-center gap-8 lg:grid-cols-[1.4fr_3fr] lg:justify-items-start">
-                        <div className="relative lg:h-full lg:min-h-80">
+                        <div className="relative lg:w-full lg:h-full lg:min-h-80">
                             {/* Light mode image (hidden in dark mode) */}
                             <img
                                 alt="Text Cover"
-                                className="inset-0 h-auto w-full cols- object-cover dark:hidden md:h-70 md:w-auto lg:h-80 lg:object-cover"
+                                className="inset-0 h-auto w-full cols- object-top dark:hidden md:h-70 md:w-auto lg:h-80 lg:object-cover"
                                 src="/textCovers/buddha-sakyamuni-600.jpg"
                             />
                             {/* Dark mode image (hidden in light mode) */}
@@ -388,7 +388,7 @@ export default function ReaderPage() {
                             <TableOfContents />
                         </div>
                         {/* Reader Canvas wrapper */}
-                        <div className="w-[55%] px-4 md:px-10 lg:px-14 xl:px-18 min-w-96">
+                        <div className="w-[55%] px-4 md:px-8 lg:px-12 xl:px-16 min-w-96 max-w-container">
                             <TextCanvasSingle />
                         </div>
                         <div className="w-[28%] hidden md:block">
