@@ -20,7 +20,7 @@ export const SidebarNavigationSlim = ({ activeUrl, items, footerItems = [] }: Si
     const [currentItem, setCurrentItem] = useState(activeItem || items[1]);
     const [isHovering, setIsHovering] = useState(false);
 
-    const MAIN_SIDEBAR_WIDTH = 68;
+    const MAIN_SIDEBAR_WIDTH = 56;
 
     const mainSidebar = (
         <aside
@@ -28,7 +28,7 @@ export const SidebarNavigationSlim = ({ activeUrl, items, footerItems = [] }: Si
                 width: MAIN_SIDEBAR_WIDTH,
             }}
             className={cx(
-                "group flex h-full max-h-full max-w-full overflow-y-auto pt-10 pb-4 transition duration-100 ease-linear",
+                "group flex h-full max-h-full max-w-full overflow-y-auto pt-8 pb-2 transition duration-100 ease-linear",
             )}
         >
             <div
@@ -37,7 +37,7 @@ export const SidebarNavigationSlim = ({ activeUrl, items, footerItems = [] }: Si
                 )}
             >
 
-                <ul className="mt-2 flex flex-col gap-2 px-3">
+                <ul className="mt-2 flex flex-col gap-2.5 px-1.5">
                     {items.map((item) => (
                         <li key={item.label}>
                             <NavItemButton
@@ -52,9 +52,9 @@ export const SidebarNavigationSlim = ({ activeUrl, items, footerItems = [] }: Si
                         </li>
                     ))}
                 </ul>
-                <div className="mt-auto flex flex-col gap-4 px-3 py-5">
+                <div className="mt-auto flex flex-col gap-4 px-1.5 py-5">
                     {footerItems.length > 0 && (
-                        <ul className="flex flex-col gap-2">
+                        <ul className="flex flex-col gap-2.5">
                             {footerItems.map((item) => (
                                 <li key={item.label}>
                                     <NavItemButton

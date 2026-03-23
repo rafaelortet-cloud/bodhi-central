@@ -11,6 +11,7 @@ import Link from "next/link";
 import { BodhicentralLogoMinimal } from "@/components/foundations/logo/bodhicentral-logo-minimal";
 import { ThemeToggle } from "@/components/application/theme-toggle";
 import { BadgeGroup } from "@/components/base/badges/badge-groups";
+import { NavItemButton } from "@/components/application/app-navigation/base-components/nav-item-button";
 
 
 export const TableOfContents = () => {
@@ -266,13 +267,13 @@ export const AuxiliaryPanel = () => {
         <div className="sticky top-12 mx-auto z-45 flex-1">
             <div className="prose flex flex-col w-full bg-olive-100 dark:bg-gray-800/30 px-6 py-4 rounded-tr-3xl rounded-br-lg h-[calc(100dvh-48px)]">
                 <h2 className="text-xl text-primary">Auxiliary Panel Specs</h2>
-                <p className="text-sm text-tertiary">The Auxiliary Panel displays information related to the text being read. Categories of peripheral content can be selected from the tools in the sidebar on the right.</p>
+                <p className="text-sm text-tertiary">The Auxiliary Panel displays information related to the text being read. Types of peripheral content are selected from the tools in on the right side of this panel.</p>
                 <p className="text-sm text-tertiary">Features being considered for the Auxiliary Panel include:</p>
                 <ul className="text-sm text-tertiary">
-                    <li>Listings of connections and parallels with related texts or sections on other parts of the canons.</li>
-                    <li>Commentaries and sub-commentaries on the text being read.</li>
-                    <li>Overviews of the text being read and recommended reading.</li>
-                    <li>Related study paths.</li>
+                    <li>Listings of connections and parallels with other texts and/or sections of the canons.</li>
+                    <li>Commentaries and sub-commentaries associated with the active text.</li>
+                    <li>Overviews related to the active text.</li>
+                    <li>Recommended reading.</li>
                     <li>Bookmarks</li>
 
                 </ul>
@@ -281,7 +282,7 @@ export const AuxiliaryPanel = () => {
                     <h2 className="text-xl font-bold text-primary">Other Features</h2>
                     <ul className="text-sm text-tertiary">
                         <li>Downloadable versions of the texts.</li>
-                        <li>Technical documentation.</li>
+                        <li>Guides and Tips.</li>
                     </ul>
                     <p className="text-sm text-tertiary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
@@ -328,12 +329,20 @@ export default function ReaderPage() {
                         <Breadcrumbs.Item href="/resources">Sutta</Breadcrumbs.Item>
                     </Breadcrumbs>
                     {/* DESKTOP LOGIN/SIGNUP BUTTONS */}
-                    <div className="flex items-center gap-3 md:flex ml-10"> {/* 10px gap between nav menu items and buttons */}
+                    <div className="flex items-center gap-6 md:flex ml-10"> {/* 10px gap between nav menu items and buttons */}
+                        <NavItemButton
+                            size="md"
+                            label="Search in text"
+                            href=""
+                            icon={SearchLg}
+                            className="bg-olive-200 dark:bg-gray-950"
+                            tooltipPlacement="bottom"
+                        />
                         <ThemeToggle />
-                        <Button color="secondary" href="/sign-in">
+                        <Button color="link-color" href="/sign-in">
                             Log in
                         </Button>
-                        <Button color="primary" href="/sign-up">
+                        <Button color="link-color" href="/sign-up">
                             Sign up
                         </Button>
                     </div>
@@ -399,15 +408,15 @@ export default function ReaderPage() {
                     ]}
                 />
 
-                <div className="fixed z-45 top-12 left-16 right-16 h-6 rounded-t-3xl bg-linear-to-b bg-olive-50 dark:bg-gray-900">
+                <div className="fixed z-45 top-12 left-14 right-14 h-6 rounded-t-2xl bg-linear-to-b bg-olive-50 dark:bg-gray-900">
                 </div>
-                <div className="fixed z-40 top-12 left-16 w-6 h-6 bg-olive-200 dark:bg-gray-950">
+                <div className="fixed z-40 top-12 left-14 w-6 h-6 bg-olive-200 dark:bg-gray-950">
                 </div>
-                <div className="fixed z-40 top-12 right-16 w-6 h-6 bg-olive-200 dark:bg-gray-950">
+                <div className="fixed z-40 top-12 right-14 w-6 h-6 bg-olive-200 dark:bg-gray-950">
                 </div>
 
                 {/* TEXT READER CANVAS */}
-                <div className="w-full px-16 pt-12">
+                <div className="w-full px-14 pt-12">
                     <div className="relative flex flex-nowrap w-full bg-olive-50 dark:bg-gray-900">
 
                         <div className="sticky top-0 w-[20%]">
@@ -428,11 +437,6 @@ export default function ReaderPage() {
                     hideRightBorder
                     activeUrl=""
                     items={[
-                        {
-                            label: "Search in Text",
-                            href: "",
-                            icon: SearchLg,
-                        },
                         {
                             label: "Connections & Parallels",
                             href: "",
