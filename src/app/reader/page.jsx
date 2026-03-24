@@ -290,9 +290,6 @@ export const AuxiliaryPanel = () => {
 };
 
 
-
-
-
 export default function ReaderPage() {
     return (
         <>
@@ -383,13 +380,13 @@ export default function ReaderPage() {
 
                 {/* TEXT READER CANVAS */}
                 <div className="w-full px-14">
-                    <div className="relative flex flex-nowrap w-full bg-olive-50 dark:bg-gray-900">
+                    <div className="mx-auto relative flex flex-nowrap w-full bg-olive-50 dark:bg-gray-900">
 
-                        <div className="w-[22%] min-w-70">
+                        <div className=" w-[22%] min-w-70">
                             <TableOfContents />
                         </div>
                         {/* Reader Canvas wrapper */}
-                        <div className="w-[55%] px-4 md:px-8 lg:px-12 xl:px-16 min-w-96 max-w-container">
+                        <div className="mx-auto w-[55%] px-4 md:px-8 lg:px-12 xl:px-16 min-w-96 max-w-container">
                             <TextCanvasSingle />
                         </div>
                         <div className="w-[28%] hidden md:block">

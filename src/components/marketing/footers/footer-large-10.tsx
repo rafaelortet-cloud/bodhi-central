@@ -1,3 +1,5 @@
+"use client";
+
 import { Badge } from "@/components/base/badges/badges";
 import { Button } from "@/components/base/buttons/button";
 import { BodhicentralLogo } from "@/components/foundations/logo/bodhicentral-logo";

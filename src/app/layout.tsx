@@ -39,7 +39,7 @@ export default async function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" suppressHydrationWarning className={cx(nunito.variable, crimsonPro.variable, tibetan.variable)}>
+        <html lang="en" suppressHydrationWarning data-scroll-behavior="smooth" className={cx(nunito.variable, crimsonPro.variable, tibetan.variable)}>
             <body className="bg-primary antialiased">
                 <RouteProvider>
                     <Theme>

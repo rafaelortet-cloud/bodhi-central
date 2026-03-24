@@ -39,6 +39,7 @@ export const HomeScreen = () => {
                     src="/patterns/light-accent.webp"
                     width={1280}
                     height={1280}
+                    style={{ width: "auto", height: "auto" }}
                     className="absolute z-20 -right-10 -bottom-14 max-w-160 opacity-30 mix-blend-multiple md:right-10 md:-bottom-1/3 md:max-w-7xl mask-b-from-90% mask-b-to-100% scale-x-[-1]"
                 />
                 <div className="relative mx-auto grid max-w-container grid-cols-1 gap-16 px-4 md:px-8 lg:min-h-150 lg:items-center">
