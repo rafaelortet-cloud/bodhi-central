@@ -1,6 +1,6 @@
 "use client";
 
-import { Close01, Type02, Columns01, Menu02, Building08, Rows01, BookOpen01, Eye, EyeOff, Headphones01, Image01, VideoRecorder, InfoCircle, AlignLeft01, AlignRight01, Link01, Dataflow01, Check, Copy01, ArrowRight, Settings03, Download01, GraduationHat02, Bookmark } from "@untitledui/icons";
+import { Close01, Type02, Columns01, Menu02, Building08, Rows01, BookOpen01, Eye, EyeOff, Headphones01, Image01, VideoRecorder, InfoCircle, AlignLeft01, AlignRight01, Link01, Dataflow01, Check, Copy01, ArrowRight, Settings03, Download01, GraduationHat02, Bookmark, HelpOctagon } from "@untitledui/icons";
 import { SidebarNavigationSlim } from "@/components/application/app-navigation/sidebar-navigation/sidebar-slim-reader";
 import { SidebarNavigationSlimRight } from "@/components/application/app-navigation/sidebar-navigation/sidebar-slim-reader-right";
 import { Button } from "@/components/base/buttons/button";
@@ -362,6 +362,11 @@ export default function ReaderPage() {
                             label: "Illustrations Carousel",
                             href: "",
                             icon: Image01,
+                        },
+                        {
+                            label: "Quizzes",
+                            href: "",
+                            icon: HelpOctagon,
                         },
                         {
                             label: "Audio Carousel",
