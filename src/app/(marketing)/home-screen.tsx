@@ -46,7 +46,7 @@ export const HomeScreen = () => {
                     <div className="z-10 flex max-w-2xl flex-col items-start">
                         <span className="text-sm font-bold text-brand-100 dark:text-brand-50 md:text-lg uppercase tracking-wider text-shadow-md text-shadow-gray-700 dark:text-shadow-gray-950">Aware ⟐ Kind ⟐ Wise</span>
                         <h1 className="text-display-md text-brand-25 dark:text-brand-200 md:text-display-xl lg:text-display-2xl text-shadow-md text-shadow-gray-700 dark:text-shadow-gray-950">
-                            Gateways to Buddhist paths of the <span className="text-brand-700 dark:text-brand-700">Awakening</span>
+                            Gateways to Buddhist paths of the <span className="text-yellow-600 dark:text-brand-700">Awakening</span>
                         </h1>
                         <p className="mt-4 max-w-xl text-lg text-balance text-brand-100 dark:text-brand-100 md:mt-6 md:text-xl">
                             A modern platform channeling universally revered Buddhist teachings and practical knowledge for everyone.{" "}
@@ -56,7 +56,7 @@ export const HomeScreen = () => {
                             <Button color="secondary" size="xl" iconLeading={PlayCircle}>
                                 Intro
                             </Button>
-                            <Button size="xl" href="/sign-up">Sign up</Button>
+                            <Button size="xl" href="/reader">Reader</Button>
                         </div>
                     </div>
 
