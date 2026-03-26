@@ -12,7 +12,7 @@ import { BadgeGroup } from "@/components/base/badges/badge-groups";
 
 export const TableOfContents = () => {
     return (
-        <div className="sticky z-45 top-12 w-full flex flex-col items-start gap-6 px-6 py-6 bg-white dark:bg-gray-900 border-r border-secondary rounded-tl-2xl h-[calc(100dvh-48px)]">
+        <div className="sticky z-45 top-12 w-full flex flex-col items-start gap-6 px-6 py-6 bg-white dark:bg-neutral-900 border-r border-secondary rounded-tl-2xl h-[calc(100dvh-48px)]">
             <div className="flex flex-col gap-4">
                 <h2 className="text-display-xs text-brand-primary">Table of contents</h2>
                 <ul className="flex flex-col gap-2">
@@ -262,7 +262,7 @@ export const TextCanvasSingle = () => {
 export const AuxiliaryPanel = () => {
     return (
         <div className="sticky top-12 mx-auto z-45 flex-1 border-l border-secondary">
-            <div className="prose-reader flex flex-col w-full bg-olive-100 dark:bg-gray-800/30 px-6 py-4 rounded-tr-2xl rounded-br-xl h-[calc(100dvh-48px)]">
+            <div className="prose-reader flex flex-col w-full bg-olive-100 dark:bg-neutral-800/30 px-6 py-4 rounded-tr-2xl rounded-br-xl h-[calc(100dvh-48px)]">
                 <h3 className=" text-primary">Auxiliary Panel Specs</h3>
                 <p className="text-md text-tertiary">The Auxiliary Panel displays information related to the text being read. The peripheral content displayed is selected from the tools in the sidebar on the right side of the reader canvas.</p>
                 <p className="text-md text-tertiary">Features being considered for the Auxiliary Panel include:</p>
@@ -294,7 +294,7 @@ export default function ReaderPage() {
     return (
         <>
             {/* TODO: Create a dynamic Modal for canonical navigation */}
-            <div className="hidden absolute top-22 left-4 bottom-4 w-96 z-50 bg-white dark:bg-gray-900 rounded-2xl p-8 drop-shadow-md">
+            <div className="hidden absolute top-22 left-4 bottom-4 w-96 z-50 bg-white dark:bg-neutral-900 rounded-2xl p-8 drop-shadow-md">
                 <div className="prose flex flex-col w-full">
                     <h2 className="text-xl font-bold text-primary">Canonical Navigation Specs</h2>
                     <p className="text-sm text-tertiary">The Canonical Navigation is a hierarchical structure of the Buddhist Pali and Tibetan canons, organized by the respective divisions, sections, and sub-sections of each canon.</p>
@@ -309,7 +309,7 @@ export default function ReaderPage() {
 
 
             {/* The MAIN Reader wrapper */}
-            <main className="mx-auto w-full bg-olive-200 dark:bg-gray-950">
+            <main className="mx-auto w-full bg-olive-200 dark:bg-neutral-950">
 
                 {/* LEFT PLACEHOLDER - Sidebar Tools for the Text Navigation */}
                 <SidebarNavigationSlim
@@ -376,16 +376,16 @@ export default function ReaderPage() {
                     ]}
                 />
 
-                <div className="fixed z-45 top-12 left-14 right-14 h-6 rounded-t-2xl bg-linear-to-b bg-olive-50 dark:bg-gray-900">
+                <div className="fixed z-45 top-12 left-14 right-14 h-6 rounded-t-2xl bg-linear-to-b bg-olive-50 dark:bg-neutral-900">
                 </div>
-                <div className="fixed z-40 top-12 left-14 w-6 h-6 bg-olive-200 dark:bg-gray-950">
+                <div className="fixed z-40 top-12 left-14 w-6 h-6 bg-olive-200 dark:bg-neutral-950">
                 </div>
-                <div className="fixed z-40 top-12 right-14 w-6 h-6 bg-olive-200 dark:bg-gray-950">
+                <div className="fixed z-40 top-12 right-14 w-6 h-6 bg-olive-200 dark:bg-neutral-950">
                 </div>
 
                 {/* TEXT READER CANVAS */}
                 <div className="w-full px-14">
-                    <div className="mx-auto relative flex flex-nowrap w-full bg-olive-50 dark:bg-gray-900">
+                    <div className="mx-auto relative flex flex-nowrap w-full bg-olive-50 dark:bg-neutral-900">
 
                         <div className=" w-[22%] min-w-70">
                             <TableOfContents />

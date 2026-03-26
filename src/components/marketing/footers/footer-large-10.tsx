@@ -190,7 +190,7 @@ export const FooterLarge10 = () => {
                         <Button color="secondary" size="md" href="/about/project-information">
                             Project Information
                         </Button>
-                        <Button size="md" href="/my-desk">My Desk</Button>
+                        <Button size="md" href="/reader">Last Read</Button>
                     </div>
                 </div>
 
