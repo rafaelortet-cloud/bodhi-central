@@ -742,7 +742,7 @@
         --color-text-editor-icon-fg: var(--color-neutral-400);
         --color-text-editor-icon-fg_active: var(--color-white);
         --color-text-quaternary: var(--color-neutral-400);
-        --color-text-brand-primary: var(--color-neutral-50);
+        --color-text-brand-primary: var(--color-brand-200);
         --color-text-primary_on-brand: var(--color-neutral-50);
         --color-text-secondary_on-brand: var(--color-neutral-300);
         --color-text-tertiary_on-brand: var(--color-neutral-400);

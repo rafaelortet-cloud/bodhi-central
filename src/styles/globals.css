@@ -33,6 +33,7 @@
 
 html,
 body {
+    scroll-behavior: smooth;
     scroll-padding-top: 5.5rem;
     font-family: var(--font-body);
     -webkit-font-smoothing: antialiased;

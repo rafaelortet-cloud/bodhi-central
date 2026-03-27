@@ -267,9 +267,9 @@ export const AuxiliaryPanel = () => {
                 <div className="w-full border-t border-primary mt-auto">
                     <h4 className="text-primary">Downloads </h4>
                     <div className="flex gap-3">
-                        <Button color="secondary" size="md" className="text-fg-quaternary" iconLeading={<FileIcon type="pdf" variant="gray" />} />
-                        <Button color="secondary" size="md" className="text-fg-quaternary" iconLeading={<FileIcon type="epub" variant="gray" />} />
-                        <Button color="secondary" size="md" className="text-fg-quaternary" iconLeading={<FileIcon type="html" variant="gray" />} />
+                        <Button color="secondary" size="sm" className="text-fg-quaternary" iconLeading={<FileIcon type="pdf" variant="default" />} />
+                        <Button color="secondary" size="sm" className="text-fg-quaternary" iconLeading={<FileIcon type="txt" variant="default" />} />
+                        <Button color="secondary" size="sm" className="text-fg-quaternary" iconLeading={<FileIcon type="html" variant="default" />} />
                     </div>
                     <h4 className="text-primary">Social Sharing</h4>
                     <div className="flex gap-3">
@@ -383,11 +383,11 @@ export default function ReaderPage() {
                 <div className="w-full px-13">
                     <div className="mx-auto relative flex flex-nowrap w-full bg-olive-50 dark:bg-neutral-900">
 
-                        <div className=" w-[22%] min-w-70 max-w-110">
+                        <div className="hidden md:block w-[22%] min-w-70 max-w-110">
                             <TableOfContents />
                         </div>
                         {/* Reader Canvas wrapper */}
-                        <div className="mx-auto w-[55%] px-4 md:px-4 lg:px-6 xl:px-16 min-w-96 max-w-container">
+                        <div className="mx-auto w-[55%] px-3 md:px-4 lg:px-6 xl:px-16 min-w-96 max-w-container">
                             <TextCanvasSingle />
                         </div>
                         <div className="w-[28%] hidden lg:block max-w-110">
