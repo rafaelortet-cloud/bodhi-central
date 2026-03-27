@@ -1,6 +1,6 @@
 "use client";
 
-import { Close01, Menu02, Building08, BookOpen01, Eye, EyeOff, Headphones01, Image01, VideoRecorder, InfoCircle, AlignLeft01, AlignRight01, Link01, Dataflow01, Check, Copy01, ArrowRight, Settings03, Download01, GraduationHat02, Bookmark, HelpOctagon } from "@untitledui/icons";
+import { Close01, Menu02, Building08, BookOpen01, Eye, EyeOff, Headphones01, Image01, VideoRecorder, InfoCircle, AlignLeft01, AlignRight01, Link01, Dataflow01, Copy01, ArrowRight, Settings03, Download01, GraduationHat02, Bookmark, HelpOctagon } from "@untitledui/icons";
 import { FileIcon } from "@untitledui/file-icons"
 import { SidebarNavigationSlim } from "@/components/application/app-navigation/sidebar-navigation/sidebar-slim-reader";
 import { SidebarNavigationSlimRight } from "@/components/application/app-navigation/sidebar-navigation/sidebar-slim-reader-right";
@@ -8,6 +8,7 @@ import { Button } from "@/components/base/buttons/button";
 import { Facebook, LinkedIn, X } from "@/components/foundations/social-icons";
 import Image from "next/image";
 import { BadgeGroup } from "@/components/base/badges/badge-groups";
+import Link from "next/link";
 
 
 export const TableOfContents = () => {
@@ -74,13 +75,13 @@ export const TextCanvasSingle = () => {
                                 Welcome to Bodhi Central readership and learning for everyone
                             </h1>
                             <p className="description mt-4 max-w-lg text-lg text-balance text-tertiary md:mt-6 md:text-xl">
-                                An environment of dedication, offering a curated collection of Buddhist texts and teachings to inspire study and practice, with awareness, kindness, and wisdom.
+                                An environment of clear intent and dedication, offering a curated collection of Buddhist texts and teachings to inspire study and practice.
                             </p>
                         </div>
                     </div>
                 </section>
-                <p className="lead first-letter:float-left first-letter:text-7xl first-letter:leading-12 first-letter:mr-2 first-letter:font-serif first-letter:font-extralight first-letter:text-brand-800 dark:first-letter:text-brand-200">
-                    The Monastic Law is available in more recensions than any other part of the Tipiṭaka. There is a full version in Pali, and four complete versions extant in Chinese translation, all belonging to different schools of early Buddhism: Mahāsāṅghika, Dharmaguptaka, Mahīśāsaka, and Sarvāstivāda. The Chinese Tipiṭaka also preserves other Vinaya related texts, such as an independent <i>bhikkhu pātimokkha</i> of the Kāśyapīya School and several more or less school-specific Vinaya texts. The Vinaya of the Mūlasarvāstivāda school exists in three versions: a complete text in Tibetan translation, a mostly complete version in Chinese, and substantial portions in Sanskrit. There are also several Vinaya texts, as well as a large number of fragments, in Sanskrit and other Indic languages, mostly of Mahāsāṅghika, Sarvāstivāda, and Mūlasarvāstivāda provenance.
+                <p className="lead first-letter:float-left first-letter:text-7xl first-letter:leading-12 first-letter:mr-1 first-letter:font-serif first-letter:font-extralight first-letter:text-brand-800 dark:first-letter:text-brand-200">
+                    The Monastic Law is available in more recensions than any other part of the Tipiṭaka. There is a full version in Pali, and four complete versions extant in Chinese translation, all belonging to different schools of early Buddhism: Mahā&shy;sāṅghika, Dharma&shy;guptaka, Mahīśāsaka, and Sarvā&shy;stivāda. The Chinese Ti&shy;piṭaka also preserves other Vinaya related texts, such as an independent <i>bhikkhu pātimokkha </i> of the Kāśya&shy;pīya School and several more or less school-specific Vinaya texts. The Vinaya of the Mūla&shy;sarvāstivāda school exists in three versions: a complete text in Tibetan translation, a mostly complete version in Chinese, and substantial portions in Sanskrit. There are also several Vinaya texts, as well as a large number of fragments, in Sanskrit and other Indic languages, mostly of Mahā&shy;sāṅghika, Sarvā&shy;stivāda, and Mūla&shy;sarvāstivāda provenance.
                 </p>
                 <hr />
                 <h2 id="origins">Origins</h2>
@@ -256,20 +257,20 @@ export const AuxiliaryPanel = () => {
     return (
         <div className="sticky top-12 mx-auto z-45 flex-1 border-l border-secondary">
             <div className="prose-reader flex flex-col w-full bg-olive-100/30 dark:bg-neutral-950/20 px-6 py-4 rounded-tr-2xl rounded-br-xl h-[calc(100dvh-48px)]">
-                <h3 className=" text-primary">Auxiliary Panel Features (MVP)</h3>
-                <p className="text-md text-tertiary">The Auxiliary Panel displays information related to the text being read. The peripheral content displayed is selected from the tools in the right sidebar icon menu.</p>
-                <h4 className=" text-primary">Connections & Parallels 🔗</h4>
-                <p className="text-md text-tertiary">Clicking (touch on mobile) on the headings and paragraphs in the main text will display a list of connections and parallels with other texts and/or sections of the canons.</p>
-                <h4 className=" text-primary">Overviews and and Recommended Reading 📚</h4>
+                <h3 className=" text-primary">Auxiliary Panel Features</h3>
+                <p className="text-md text-tertiary">The Auxiliary Panel displays information related to the active text. The peripheral content is selected by clicking on the tools in the right sidebar:</p>
+                <h4 className=" text-primary"><Link01 size={20} />Connections and Parallels</h4>
+                <p className="text-md text-tertiary">Acting on the headings and paragraphs in the active text will display the connections and parallels with other texts and sections of the canons. For information on the types of parallels, see our <Link href="https://bodhi-central-docs.vercel.app/research/pali-canon/connections-and-parallels" target="_blank" rel="noopener noreferrer" className="text-primary underline">Documentation</Link>.</p>
+                <h4 className=" text-primary"><BookOpen01 size={20} />Overviews and Recommended Reading </h4>
                 <p className="text-md text-tertiary">Extend the utility of the reader by accessing overviews and recommended readings related to the active text.</p>
-                <h4 className=" text-primary">Bookmarks and Saved Searches 🔖</h4>
-                <p className="text-md text-tertiary">This is a feature for registered users. Users can bookmark sections of the text and save searches for future reference. </p>
+                <h4 className=" text-primary"><Bookmark size={20} />Bookmarks</h4>
+                <p className="text-md text-tertiary">This is a feature for registered users. After singning up, users can bookmark sections of the text and save searches for future reference. </p>
                 <div className="w-full border-t border-primary mt-auto">
-                    <h4 className="text-primary">Downloads </h4>
-                    <div className="flex gap-3">
-                        <Button color="secondary" size="sm" className="text-fg-quaternary" iconLeading={<FileIcon type="pdf" variant="default" />} />
-                        <Button color="secondary" size="sm" className="text-fg-quaternary" iconLeading={<FileIcon type="txt" variant="default" />} />
-                        <Button color="secondary" size="sm" className="text-fg-quaternary" iconLeading={<FileIcon type="html" variant="default" />} />
+                    <h4 className="text-primary"><Download01 size={20} />Downloads </h4>
+                    <div className="flex gap-1 dark:opacity-70">
+                        <Button color="tertiary" size="sm" iconLeading={<FileIcon type="pdf" variant="gray" className="invert-90 dark:invert-0" aria-label="Download PDF" />} />
+                        <Button color="tertiary" size="sm" iconLeading={<FileIcon type="txt" variant="gray" className="invert-90 dark:invert-0" aria-label="Download TXT" />} />
+                        <Button color="tertiary" size="sm" iconLeading={<FileIcon type="html" variant="gray" className="invert-90 dark:invert-0" aria-label="Download HTML" />} />
                     </div>
                     <h4 className="text-primary">Social Sharing</h4>
                     <div className="flex gap-3">
