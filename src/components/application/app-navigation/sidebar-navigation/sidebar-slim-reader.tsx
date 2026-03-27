@@ -47,7 +47,7 @@ export const SidebarNavigationSlim = ({ activeUrl, items, footerItems = [] }: Si
                                 label={item.label || ""}
                                 icon={item.icon}
                                 onClick={() => setCurrentItem(item)}
-                                className="bg-olive-200 dark:bg-gray-950"
+                                className="bg-olive-200 dark:bg-neutral-950"
                             />
                         </li>
                     ))}
@@ -64,7 +64,7 @@ export const SidebarNavigationSlim = ({ activeUrl, items, footerItems = [] }: Si
                                         href={item.href}
                                         icon={item.icon}
                                         onClick={() => setCurrentItem(item)}
-                                        className="bg-olive-200 dark:bg-gray-950"
+                                        className="bg-olive-200 dark:bg-neutral-950"
                                     />
                                 </li>
                             ))}

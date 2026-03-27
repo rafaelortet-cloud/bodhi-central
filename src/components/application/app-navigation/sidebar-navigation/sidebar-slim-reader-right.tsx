@@ -28,7 +28,7 @@ export const SidebarNavigationSlimRight = ({ activeUrl, items, footerItems = [] 
                 width: MAIN_SIDEBAR_WIDTH,
             }}
             className={cx(
-                "group flex h-full max-h-full max-w-full overflow-y-auto pt-8 pb-2 transition duration-100 ease-linear",
+                "group flex h-full max-h-full max-w-full overflow-y-auto pt-8 pl-1 pb-2 transition duration-100 ease-linear",
             )}
         >
             <div
@@ -47,7 +47,7 @@ export const SidebarNavigationSlimRight = ({ activeUrl, items, footerItems = [] 
                                 label={item.label || ""}
                                 icon={item.icon}
                                 onClick={() => setCurrentItem(item)}
-                                className="bg-olive-200 dark:bg-gray-950"
+                                className="bg-olive-200 dark:bg-neutral-950"
                             />
                         </li>
                     ))}
@@ -64,7 +64,7 @@ export const SidebarNavigationSlimRight = ({ activeUrl, items, footerItems = [] 
                                         href={item.href}
                                         icon={item.icon}
                                         onClick={() => setCurrentItem(item)}
-                                        className="bg-olive-200 dark:bg-gray-950"
+                                        className="bg-olive-200 dark:bg-neutral-950"
                                     />
                                 </li>
                             ))}

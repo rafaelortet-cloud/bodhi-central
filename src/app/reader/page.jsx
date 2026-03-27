@@ -1,18 +1,18 @@
 "use client";
 
-import { Close01, Type02, Columns01, Menu02, Building08, Rows01, BookOpen01, Eye, EyeOff, Headphones01, Image01, VideoRecorder, InfoCircle, AlignLeft01, AlignRight01, Link01, Dataflow01, Check, Copy01, ArrowRight, Settings03, Download01, GraduationHat02, Bookmark, HelpOctagon } from "@untitledui/icons";
+import { Close01, Menu02, Building08, BookOpen01, Eye, EyeOff, Headphones01, Image01, VideoRecorder, InfoCircle, AlignLeft01, AlignRight01, Link01, Dataflow01, Check, Copy01, ArrowRight, Settings03, Download01, GraduationHat02, Bookmark, HelpOctagon } from "@untitledui/icons";
+import { FileIcon } from "@untitledui/file-icons"
 import { SidebarNavigationSlim } from "@/components/application/app-navigation/sidebar-navigation/sidebar-slim-reader";
 import { SidebarNavigationSlimRight } from "@/components/application/app-navigation/sidebar-navigation/sidebar-slim-reader-right";
 import { Button } from "@/components/base/buttons/button";
 import { Facebook, LinkedIn, X } from "@/components/foundations/social-icons";
 import Image from "next/image";
-import Link from "next/link";
 import { BadgeGroup } from "@/components/base/badges/badge-groups";
 
 
 export const TableOfContents = () => {
     return (
-        <div className="sticky z-45 top-12 w-full flex flex-col items-start gap-6 px-6 py-6 bg-white dark:bg-neutral-900 border-r border-secondary rounded-tl-2xl h-[calc(100dvh-48px)]">
+        <div className="sticky z-45 top-12 w-full flex flex-col items-start gap-6 px-6 py-6 bg-olive-100/30 dark:bg-neutral-950/20 border-r border-secondary rounded-tl-2xl h-[calc(100dvh-48px)]">
             <div className="flex flex-col gap-4">
                 <h2 className="text-display-xs text-brand-primary">Table of contents</h2>
                 <ul className="flex flex-col gap-2">
@@ -35,13 +35,6 @@ export const TableOfContents = () => {
                         </li>
                     ))}
                 </ul>
-            </div>
-            <div className="w-full border-t border-secondary" />
-            <div className="flex gap-3">
-                <Button color="secondary" size="md" className="text-fg-quaternary" iconLeading={Link01} />
-                <Button color="secondary" size="md" className="text-fg-quaternary" iconLeading={X} />
-                <Button color="secondary" size="md" className="text-fg-quaternary" iconLeading={Facebook} />
-                <Button color="secondary" size="md" className="text-fg-quaternary" iconLeading={LinkedIn} />
             </div>
         </div>
     );
@@ -81,7 +74,7 @@ export const TextCanvasSingle = () => {
                                 Welcome to Bodhi Central readership and learning for everyone
                             </h1>
                             <p className="description mt-4 max-w-lg text-lg text-balance text-tertiary md:mt-6 md:text-xl">
-                                An environment of generosity and dedication, offering a curated selection of Buddhist texts and teachings to inspire study and practice, with awareness, kindness, and wisdom.
+                                An environment of dedication, offering a curated collection of Buddhist texts and teachings to inspire study and practice, with awareness, kindness, and wisdom.
                             </p>
                         </div>
                     </div>
@@ -262,27 +255,30 @@ export const TextCanvasSingle = () => {
 export const AuxiliaryPanel = () => {
     return (
         <div className="sticky top-12 mx-auto z-45 flex-1 border-l border-secondary">
-            <div className="prose-reader flex flex-col w-full bg-olive-100 dark:bg-neutral-800/30 px-6 py-4 rounded-tr-2xl rounded-br-xl h-[calc(100dvh-48px)]">
-                <h3 className=" text-primary">Auxiliary Panel Specs</h3>
-                <p className="text-md text-tertiary">The Auxiliary Panel displays information related to the text being read. The peripheral content displayed is selected from the tools in the sidebar on the right side of the reader canvas.</p>
-                <p className="text-md text-tertiary">Features being considered for the Auxiliary Panel include:</p>
-                <ul className="text-sm text-tertiary">
-                    <li>Listings of connections and parallels with other texts and/or sections of the canons.</li>
-                    <li>Commentaries and sub-commentaries associated with the active text.</li>
-                    <li>Overviews related to the active text.</li>
-                    <li>Recommended reading.</li>
-                    <li>Bookmarks</li>
-
-                </ul>
-                <p className="text-md text-tertiary">This panel and related features are a work in progress and will be reported on our <a className="text-brand-700 dark:text-brand-300" href="https://bodhi-central-docs.vercel.app/tech/features-roadmap" target="_blank">Technical Documentation</a>. Stay tuned!</p>
+            <div className="prose-reader flex flex-col w-full bg-olive-100/30 dark:bg-neutral-950/20 px-6 py-4 rounded-tr-2xl rounded-br-xl h-[calc(100dvh-48px)]">
+                <h3 className=" text-primary">Auxiliary Panel Features (MVP)</h3>
+                <p className="text-md text-tertiary">The Auxiliary Panel displays information related to the text being read. The peripheral content displayed is selected from the tools in the right sidebar icon menu.</p>
+                <h4 className=" text-primary">Connections & Parallels 🔗</h4>
+                <p className="text-md text-tertiary">Clicking (touch on mobile) on the headings and paragraphs in the main text will display a list of connections and parallels with other texts and/or sections of the canons.</p>
+                <h4 className=" text-primary">Overviews and and Recommended Reading 📚</h4>
+                <p className="text-md text-tertiary">Extend the utility of the reader by accessing overviews and recommended readings related to the active text.</p>
+                <h4 className=" text-primary">Bookmarks and Saved Searches 🔖</h4>
+                <p className="text-md text-tertiary">This is a feature for registered users. Users can bookmark sections of the text and save searches for future reference. </p>
                 <div className="w-full border-t border-primary mt-auto">
-                    <h3 className=" text-primary">Other Features</h3>
-                    <p className="text-md text-tertiary">The bottom of the auxiliary panel will display other features related to the reader, such as:</p>
-                    <ul className="text-sm text-tertiary">
-                        <li>Downloadable versions of the texts.</li>
-                        <li>Guides and Tips.</li>
-                    </ul>
-                    <p className="text-md text-tertiary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h4 className="text-primary">Downloads </h4>
+                    <div className="flex gap-3">
+                        <Button color="secondary" size="md" className="text-fg-quaternary" iconLeading={<FileIcon type="pdf" variant="gray" />} />
+                        <Button color="secondary" size="md" className="text-fg-quaternary" iconLeading={<FileIcon type="epub" variant="gray" />} />
+                        <Button color="secondary" size="md" className="text-fg-quaternary" iconLeading={<FileIcon type="html" variant="gray" />} />
+                    </div>
+                    <h4 className="text-primary">Social Sharing</h4>
+                    <div className="flex gap-3">
+                        <Button color="secondary" size="md" className="text-fg-quaternary" iconLeading={Link01} />
+                        <Button color="secondary" size="md" className="text-fg-quaternary" iconLeading={X} />
+                        <Button color="secondary" size="md" className="text-fg-quaternary" iconLeading={Facebook} />
+                        <Button color="secondary" size="md" className="text-fg-quaternary" iconLeading={LinkedIn} />
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -309,7 +305,7 @@ export default function ReaderPage() {
 
 
             {/* The MAIN Reader wrapper */}
-            <main className="mx-auto w-full bg-olive-200 dark:bg-neutral-950">
+            <main className="mx-auto w-full bg-olive-200 dark:bg-black">
 
                 {/* LEFT PLACEHOLDER - Sidebar Tools for the Text Navigation */}
                 <SidebarNavigationSlim
@@ -376,25 +372,25 @@ export default function ReaderPage() {
                     ]}
                 />
 
-                <div className="fixed z-45 top-12 left-14 right-14 h-6 rounded-t-2xl bg-linear-to-b bg-olive-50 dark:bg-neutral-900">
+                <div className="fixed z-45 top-12 left-13 right-13 h-6 rounded-t-2xl bg-linear-to-b bg-olive-50 dark:bg-neutral-900">
                 </div>
-                <div className="fixed z-40 top-12 left-14 w-6 h-6 bg-olive-200 dark:bg-neutral-950">
+                <div className="fixed z-40 top-12 left-13 w-6 h-6 bg-olive-200 dark:bg-neutral-950">
                 </div>
-                <div className="fixed z-40 top-12 right-14 w-6 h-6 bg-olive-200 dark:bg-neutral-950">
+                <div className="fixed z-40 top-12 right-13 w-6 h-6 bg-olive-200 dark:bg-neutral-950">
                 </div>
 
                 {/* TEXT READER CANVAS */}
-                <div className="w-full px-14">
+                <div className="w-full px-13">
                     <div className="mx-auto relative flex flex-nowrap w-full bg-olive-50 dark:bg-neutral-900">
 
-                        <div className=" w-[22%] min-w-70">
+                        <div className=" w-[22%] min-w-70 max-w-110">
                             <TableOfContents />
                         </div>
                         {/* Reader Canvas wrapper */}
-                        <div className="mx-auto w-[55%] px-4 md:px-8 lg:px-12 xl:px-16 min-w-96 max-w-container">
+                        <div className="mx-auto w-[55%] px-4 md:px-4 lg:px-6 xl:px-16 min-w-96 max-w-container">
                             <TextCanvasSingle />
                         </div>
-                        <div className="w-[28%] hidden md:block">
+                        <div className="w-[28%] hidden lg:block max-w-110">
                             <AuxiliaryPanel />
                         </div>
                     </div></div>

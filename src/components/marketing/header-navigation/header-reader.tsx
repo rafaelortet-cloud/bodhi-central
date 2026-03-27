@@ -112,20 +112,20 @@ export const HeaderReader = ({ items = headerReaderNavItems, isFullWidth, isFloa
         <header
             ref={headerRef}
             className={cx(
-                "sticky top-0 z-500 flex h-12 w-full items-center justify-center bg-olive-200 dark:bg-gray-950 backdrop-blur-lg md:h-12",
+                "sticky top-0 z-500 flex h-12 w-full items-center justify-center bg-olive-200 dark:bg-neutral-950 backdrop-blur-lg md:h-12",
                 isFloating && "h-16 md:h-12 md:pt-2",
                 isFullWidth && !isFloating ? "has-aria-expanded:bg-primary" : "max-md:has-aria-expanded:bg-primary",
                 className,
             )}
         >
-            <div className="flex size-full w-full flex-1 items-center pr-3 pl-4 md:px-5">
+            <div className="flex size-full w-full flex-1 items-center pr-3 pl-3 md:px-3">
                 <div
                     className={cx(
                         "flex w-full justify-between gap-4",
                         isFloating && "ring-secondary_alt md:rounded-2xl md:bg-primary md:py-3 md:pr-3 md:pl-4 md:shadow-xs md:ring-1",
                     )}
                 >
-                    <div className="flex items-center gap-8">
+                    <div className="flex items-center gap-9">
                         {/* LOGO */}
                         <Link href="/" aria-label="Bodhicentral Home page" className="flex items-center outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-2">
                             <BodhicentralLogoMinimal className="w-8" />
@@ -200,7 +200,7 @@ export const HeaderReader = ({ items = headerReaderNavItems, isFullWidth, isFloa
                         </ul>
                     </nav>
                     {/* DESKTOP LOGIN/SIGNUP BUTTONS */}
-                    <div className="hidden items-center gap-4 md:flex ml-10"> {/* 10px gap between nav menu items and buttons */}
+                    <div className="hidden items-center gap-3 md:flex ml-8"> {/* 10px gap between nav menu items and buttons */}
                         <NavItemButton
                             size="md"
                             label="Search in text"
