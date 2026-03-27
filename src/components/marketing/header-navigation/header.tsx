@@ -178,7 +178,7 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
                                                     >
                                                         {({ close }) =>
                                                             isValidElement(navItem.menu)
-                                                                ? React.cloneElement(navItem.menu as React.ReactElement<any>, { onClose: close })
+                                                                ? React.cloneElement(navItem.menu as React.ReactElement<any>, { onClose: close, user })
                                                                 : navItem.menu
                                                         }
                                                     </AriaDialog>

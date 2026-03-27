@@ -4,6 +4,7 @@ import type { FC, ReactNode } from "react";
 import { BookOpen01, Link03, Hurricane01 } from "@untitledui/icons";
 import { Button } from "@/components/base/buttons/button";
 import { NavMenuItemLink } from "./base-components/nav-menu-item";
+import { User } from "@supabase/supabase-js";
 
 type MenuItem = {
     title: string;
@@ -61,7 +62,7 @@ const columns: MenuColumn[] = [
     },
 ];
 
-export const DropdownMenuScripture = ({ onClose }: { onClose?: () => void }) => {
+export const DropdownMenuScripture = ({ onClose, user }: { onClose?: () => void; user?: User | null }) => {
     return (
         <div className="px-3 pb-2 md:max-w-200 md:p-0">
             <nav className="overflow-hidden md:overflow-visible rounded-xl bg-brand-100 dark:bg-brand-900 drop-shadow-lg ring-1 ring-secondary_alt md:rounded-3xl md:drop-shadow-2xl dark:md:drop-shadow-gray-900">
@@ -110,13 +111,13 @@ export const DropdownMenuScripture = ({ onClose }: { onClose?: () => void }) => 
                 </div>
 
                 <div className="mx-auto flex max-w-container flex-col px-4 py-5 md:flex-row md:items-center md:justify-between md:px-6">
-                    <Button href="/reader" color="secondary" size="md" iconLeading={BookOpen01} className="hidden md:flex" onPress={onClose}>
+                    <Button href={user ? "/reader" : "/about/plans"} color="secondary" size="md" iconLeading={BookOpen01} className="hidden md:flex" onPress={onClose}>
                         Last Reading
                     </Button>
-                    <Button href="/my-desk" color="primary" size="md" className="hidden md:flex" onPress={onClose}>
+                    <Button href={user ? "/my-desk" : "/about/plans"} color="primary" size="md" className="hidden md:flex" onPress={onClose}>
                         My Desk
                     </Button>
-                    <Button href="/my-desk" color="primary" size="sm" className="md:hidden" onPress={onClose}>
+                    <Button href={user ? "/my-desk" : "/about/plans"} color="primary" size="sm" className="md:hidden" onPress={onClose}>
                         My Desk
                     </Button>
                 </div>
