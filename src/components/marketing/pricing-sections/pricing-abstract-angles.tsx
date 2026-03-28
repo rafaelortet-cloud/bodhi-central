@@ -12,7 +12,7 @@ export const PricingAbstractAngles = () => {
 
     const plans = [
         {
-            title: "Basic Reading Experience",
+            title: "Starter",
             subtitle: selectedPlan === "monthly" ? "Free" : "Free",
             description: "Full access to the Buddhist texts",
             features: [
@@ -26,11 +26,12 @@ export const PricingAbstractAngles = () => {
             buttonText: "Continue reading",
         },
         {
-            title: "Discovery Experience",
+            title: "Discovery",
             subtitle: selectedPlan === "monthly" ? "Free" : "Free",
-            description: "Sign up to your Desk",
+            description: "Sign up for a free account",
             badge: "Popular",
             features: [
+                "Search and filter texts",
                 "Discover My Desk basic features",
                 "Basic storage capacity",
                 "Up to 2 personal Spaces",
@@ -75,10 +76,10 @@ export const PricingAbstractAngles = () => {
 
                         <h2 className="mt-4 text-display-md font-semibold text-brand-primary md:text-display-lg">Plans for all</h2>
                         <p className="mt-4 text-lg text-primary md:mt-6 md:text-xl">
-                            We believe that Buddhist texts and teachings should be open and accessible for everyone. Please enjoy the <strong>Basic Reading</strong> and <strong>Discovery</strong> experiences!
+                            We believe that Buddhist texts and teachings should be accessible to everyone. Please enjoy the free <strong>Starter</strong> and <strong>Discovery</strong> plans!
                         </p>
                         <p className="mt-4 text-lg text-primary md:mt-6 md:text-xl">
-                            Your <strong>Full Access</strong> subscription helps us keep the platform running and improving with new features, and allows us to offer the Basic Reading and Discovery experiences for free for everyone.
+                            The <strong>Full Access</strong> subscription helps us keep the platform running and improving with new features, and allows us to maintain free the Starter and Discovery plans.
                         </p>
                         <div className="mt-8 flex md:mt-12">
                             <div className="relative z-10 inline-flex gap-3">

@@ -89,13 +89,13 @@ export const FeaturesAlternatingLayout01 = () => {
                         <FeaturedIcon icon={TrendUp01} size="lg" color="gray" theme="modern-neue" />
                         <h3 className="mt-5 text-display-xs text-primary dark:text-brand-200 md:text-display-md">Paths of Study and Practice</h3>
                         <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">
-                            Accessing Buddha's teachings has become easier than ever. Yet, navigating and making sense of the vast amount of literature and teachings available today can be overwhelming and complicated without the right guidance.
+                            Finding digital Buddha's teachings has never been easier. Yet, navigating and making sense of the vast amount of literature and teachings available today can be overwhelming and complicated without good guidance:
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
-                                "Study the foundational paths providing a solid understanding of the Buddhist core concepts and principles",
-                                "Go deeper into academic and scholarly paths (shedra-style learning), your truthworthy companions for in-depth study and research",
-                                "Engage in contemplative practice paths (samatha, vipassana, mind-training, etc.) brought to you by genuine living Buddhist teachings to support your progress",
+                                "Study the foundational paths for a solid understanding of the Buddhist core concepts and principles",
+                                "Go deeper with academic paths (systematic learning), with trustworthy companions for in-depth study of the Dharma",
+                                "Engage in contemplative practice paths (samatha, vipassana, mind-training, paramitas, etc.) brought to you by genuine living Buddhist teachings to support your progress",
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="md" iconStyle="outlined" color="primary" text={feat} />
                             ))}
@@ -161,7 +161,7 @@ export const FeaturesAlternatingLayout01 = () => {
                                 className="size-full object-cover border-double border-5 border-gray-300 dark:border-gray-700 rounded-xl"
                                 alt="Monk seated in meditation under forest tree"
                                 style={{
-                                    gridArea: "3 / 2 / 7 / 7",
+                                    gridArea: "3 / 1 / 7 / 6",
                                 }}
                             />
 
@@ -170,7 +170,7 @@ export const FeaturesAlternatingLayout01 = () => {
                                 className="size-full object-cover border-double border-5 border-gray-300 dark:border-gray-700 rounded-xl"
                                 alt="BD Blog screenshot"
                                 style={{
-                                    gridArea: "1 / 7 / 7 / 12",
+                                    gridArea: "1 / 6/ 7 / 12",
                                 }}
                             />
                             <img
@@ -178,7 +178,7 @@ export const FeaturesAlternatingLayout01 = () => {
                                 className="size-full object-cover border-double border-5 border-gray-300 dark:border-gray-700 rounded-xl"
                                 alt="BD Documentation screenshot"
                                 style={{
-                                    gridArea: "7 / 5 / 12 / 8",
+                                    gridArea: "7 / 3 / 12 / 8",
                                 }}
                             />
                             <img
@@ -187,14 +187,6 @@ export const FeaturesAlternatingLayout01 = () => {
                                 alt="Himalayan scenery"
                                 style={{
                                     gridArea: "7 / 8 / 11 / 13",
-                                }}
-                            />
-                            <img
-                                src="/placeholder-image-landscape.svg"
-                                className="size-full object-cover border-double border-5 border-gray-300 dark:border-gray-700 rounded-xl"
-                                alt="Monk seated in meditation under forest tree"
-                                style={{
-                                    gridArea: "7 / 1 / 10 / 5",
                                 }}
                             />
                         </div>

@@ -256,9 +256,9 @@ export const TextCanvasSingle = () => {
 export const AuxiliaryPanel = () => {
     return (
         <div className="sticky top-12 mx-auto z-45 flex-1 border-l border-secondary">
-            <div className="prose-reader flex flex-col w-full bg-olive-100/30 dark:bg-neutral-950/20 px-6 py-4 rounded-tr-2xl h-[calc(100dvh-48px)]">
+            <div className="prose-reader flex flex-col w-full bg-olive-100/30 dark:bg-neutral-950/20 px-6 py-4 rounded-tr-2xl h-[calc(100dvh-52px)]">
                 <h3 className=" text-primary">Auxiliary Panel</h3>
-                <p className="text-md text-tertiary">Various types of content related to the active text are accessible from the tools in the right sidebar:</p>
+                <p className="text-md text-tertiary">Various types of ancillary content on the active text are accessible from the tools in the right sidebar:</p>
                 <h4 className=" text-primary"><Link01 size={18} />Connections and Parallels</h4>
                 <p className="text-md text-tertiary">Acting on the headings and paragraphs in the active text will display the connections and parallels with other texts and sections of the canons. For information on the types of parallels, see our <Link href="https://bodhi-central-docs.vercel.app/research/pali-canon/connections-and-parallels" target="_blank" rel="noopener noreferrer" className="text-primary underline">Documentation</Link>.</p>
                 <h4 className=" text-primary"><BookOpen01 size={18} />Overviews and Recommended Reading </h4>
@@ -388,7 +388,7 @@ export default function ReaderPage() {
                             <TableOfContents />
                         </div>
                         {/* Reader Canvas wrapper */}
-                        <div className="mx-auto w-[55%] px-3 md:px-4 lg:px-6 xl:px-16 min-w-96 max-w-container">
+                        <div className="mx-auto w-[55%] px-2 md:px-3 lg:px-5 xl:px-12 min-w-96 max-w-container">
                             <TextCanvasSingle />
                         </div>
                         <div className="w-[28%] hidden lg:block max-w-110">
