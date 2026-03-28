@@ -21,10 +21,11 @@ export const HomeScreen = () => {
     // Header tagline animation
     useGSAP(() => {
         gsap.from(".header-tag", {
-            x: -100,
+            y: -200,
             opacity: 100,
-            ease: "power2.out",
-            duration: 3,
+            duration: 2,
+            delay: 1,
+            ease: "power2.out"
         });
     }, { scope: container });
 
@@ -54,6 +55,7 @@ export const HomeScreen = () => {
                 <Image
                     alt="Light Accent"
                     aria-hidden="true"
+                    loading="lazy"
                     src="/patterns/light-accent.webp"
                     width={1280}
                     height={1280}

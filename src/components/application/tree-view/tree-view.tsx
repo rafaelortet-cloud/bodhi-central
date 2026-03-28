@@ -17,6 +17,7 @@ import {
     useDragAndDrop,
 } from "react-aria-components";
 import { CheckboxBase } from "@/components/base/checkbox/checkbox";
+import { Badge } from "@/components/base/badges/badges";
 import { cx } from "@/utils/cx";
 import { isReactComponent } from "@/utils/is-react-component";
 import { type TreeCollection, cascadeSelection, createDragPreview, getDescendants } from "./tree-view-utils";
@@ -224,12 +225,14 @@ interface TreeViewItemContentProps {
     icon?: FC<{ className?: string }> | ReactNode;
     /** Trailing action element (e.g. drag handle or menu trigger). */
     action?: ReactNode;
+    /** Optional count badge to display next to the label. */
+    count?: number;
     /** The text label for the tree item. */
     children: ReactNode;
     className?: string;
 }
 
-const TreeViewItemContent = ({ icon: Icon, action, children, className }: TreeViewItemContentProps) => {
+const TreeViewItemContent = ({ icon: Icon, action, count, children, className }: TreeViewItemContentProps) => {
     const { size, showConnectors, selectedKeys: ctxSelectedKeys, collectionRef } = useContext(TreeViewContext);
     return (
         <AriaTreeItemContent>
@@ -338,6 +341,12 @@ const TreeViewItemContent = ({ icon: Icon, action, children, className }: TreeVi
                                 ) : null)}
 
                             <span className="min-w-0 flex-1 truncate text-sm font-semibold text-tertiary">{children}</span>
+
+                            {count !== undefined && (
+                                <Badge size="sm" color="gray" type="pill-color" className="ml-auto">
+                                    {count}
+                                </Badge>
+                            )}
 
                             {action}
 
