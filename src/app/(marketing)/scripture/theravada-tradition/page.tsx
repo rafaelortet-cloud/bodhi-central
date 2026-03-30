@@ -26,38 +26,48 @@ export default function TheravadaTraditionPage() {
     const container = useRef<HTMLDivElement>(null);
 
     useGSAP(() => {
-
-        const tl = gsap.timeline({ defaults: { opacity: 0, ease: "back" } });
-
-        function init() {
-            tl.from("#hero", { easy: "linear", autoAlpha: 0 })
-                .from(".hero-title", {
-                    scale: 0,
-                    duration: 2,
-                })
-                .from(".hero-subtitle", {
-                    duration: 0.5,
-                })
-                .from(".sutta-card", {
-                    y: -100,
-                    scale: 0,
-                    duration: 1.5,
-                })
-                .from(".vinaya-card", {
-                    x: 200,
-                    scale: 0.3,
-                    duration: 0.5,
-                })
-                .from(".abhidhamma-card", {
-                    x: -200,
-                    scale: 0.3,
-                    duration: 0.5,
-                });
-        }
-
-        window.addEventListener("load", function (event) {
-            init();
+        const tl = gsap.timeline({
+            defaults: {
+                ease: "back.out(1.7)",
+                duration: 1
+            }
         });
+
+        // The "Cloak" technique:
+        // We use fromTo to explicitly animate from opacity 0 to 1, 
+        // which overrides the CSS 'opacity-0' class correctly.
+        tl.fromTo("#hero",
+            { autoAlpha: 0 },
+            { autoAlpha: 1, ease: "linear", duration: 0.5 }
+        )
+            .from(".hero-title", {
+                scale: 0,
+                duration: 1.2,
+            }, "-=0.3")
+            .from(".hero-subtitle", {
+                scale: 0.5,
+                autoAlpha: 0,
+                duration: 1,
+            }, "-=0.8")
+            .from(".sutta-card", {
+                y: 100,
+                autoAlpha: 0,
+                scale: 0.8,
+                duration: 0.8,
+            }, "-=0.5")
+            .from(".vinaya-card", {
+                x: 100,
+                autoAlpha: 0,
+                scale: 0.9,
+                duration: 0.6,
+            }, "-=0.3")
+            .from(".abhidhamma-card", {
+                x: -100,
+                autoAlpha: 0,
+                scale: 0.9,
+                duration: 0.6,
+            }, "-=0.3");
+
     }, { scope: container });
 
 
@@ -66,13 +76,13 @@ export default function TheravadaTraditionPage() {
     return (
         <>
 
-            <div className="relative mx-auto bg-[url(/jetavanaramaya-scene-01.jpg)] bg-cover bg-center bg-no-repeat pt-12 pb-24">
+            <div ref={container} className="relative mx-auto bg-[url(/jetavanaramaya-scene-01.jpg)] bg-cover bg-center bg-no-repeat pt-12 pb-24">
                 {/* Overlay layer for easy customization of color/transparency */}
                 <div className="absolute inset-0 bg-linear-to-b from-white/80 via-white/50 via-30% to-white/10 dark:bg-linear-to-b dark:from-black/15 dark:via-black/50 dark:via-30% dark:to-black/10 z-0" aria-hidden="true" />
 
                 {/* Content layer */}
-                <div ref={container} id="hero" className="hidden relative z-10">
-                    <section className="flex flex-col items-center justify-center pt-20 pb-12 px-4 md:px-6">
+                <div id="hero" className="opacity-0 relative z-10">
+                    <section className="md:flex flex-col items-center justify-center pt-20 pb-12 px-4 md:px-6">
                         <h1 className="hero-title text-display-sm text-center text-brand-800 dark:text-brand-200 md:text-display-lg lg:text-display-2xl">Theravāda Tradition</h1>
                         <p className="hero-subtitle text-center text-lg font-semibold text-tertiary">The Pali Canon, the earliest Buddhist scriptures.</p>
                     </section>
