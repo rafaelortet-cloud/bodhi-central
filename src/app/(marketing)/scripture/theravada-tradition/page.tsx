@@ -28,7 +28,7 @@ export default function TheravadaTraditionPage() {
     useGSAP(() => {
         const tl = gsap.timeline({
             defaults: {
-                ease: "back.out(1.7)",
+                ease: "back(1)",
                 duration: 1
             }
         });
@@ -38,35 +38,34 @@ export default function TheravadaTraditionPage() {
         // which overrides the CSS 'opacity-0' class correctly.
         tl.fromTo("#hero",
             { autoAlpha: 0 },
-            { autoAlpha: 1, ease: "linear", duration: 0.5 }
+            { autoAlpha: 1, ease: "linear", duration: 0.8 }
         )
             .from(".hero-title", {
                 scale: 0,
-                duration: 1.2,
-            }, "-=0.3")
+                duration: 1.5,
+            })
             .from(".hero-subtitle", {
                 scale: 0.5,
                 autoAlpha: 0,
-                duration: 1,
-            }, "-=0.8")
+                duration: 1.5,
+            }, "-=1")
             .from(".sutta-card", {
-                y: 100,
+                autoAlpha: 0,
+                scale: 3.5,
+                duration: 1.5,
+            }, "+=1.5")
+            .from(".vinaya-card", {
+                x: 280,
                 autoAlpha: 0,
                 scale: 0.8,
-                duration: 0.8,
-            }, "-=0.5")
-            .from(".vinaya-card", {
-                x: 100,
-                autoAlpha: 0,
-                scale: 0.9,
-                duration: 0.6,
-            }, "-=0.3")
+                duration: 1.5,
+            }, "+=0.3")
             .from(".abhidhamma-card", {
-                x: -100,
+                x: -280,
                 autoAlpha: 0,
-                scale: 0.9,
-                duration: 0.6,
-            }, "-=0.3");
+                scale: 0.8,
+                duration: 1.5,
+            }, "+=0.2");
 
     }, { scope: container });
 
