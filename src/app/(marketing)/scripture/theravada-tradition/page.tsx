@@ -73,26 +73,34 @@ export default function TheravadaTraditionPage() {
             const content = gallery.querySelector(".gallery-content");
             if (!content) return;
 
-            // Using a scrubbed timeline natively accounts for elements already in the viewport on load
-            // and provides a smooth, perfectly synchronized fade-in and fade-out in both directions.
             gsap.timeline({
                 scrollTrigger: {
                     trigger: gallery,
-                    start: "top 85%",   // Start fading in when gallery top hits 85% of viewport
-                    end: "bottom 15%",  // Finish fading out when gallery bottom hits 15% of viewport
-                    scrub: 1,           // 1 second of smoothing for a premium feel
+                    start: "top 95%",
+                    end: "bottom 5%",
+                    // scrub: true (instead of 1) perfectly locks the animation to the scrollbar 
+                    // without any artificial delay. This fixes the issue where fast scrolling 
+                    // skips the animation because of the 1-second lag calculation.
+                    scrub: true,
                 }
             })
-                // 1. Fade-in on entrance (duration ratio corresponds to scroll distance)
                 .fromTo(content,
                     { autoAlpha: 0 },
                     { autoAlpha: 1, duration: 0.15, ease: "power2.inOut" }
                 )
-                // 2. Hold visibility in the middle of the viewport
                 .to(content, { autoAlpha: 1, duration: 0.7 })
-                // 3. Fade-out on exit
                 .to(content, { autoAlpha: 0, duration: 0.15, ease: "power2.inOut" });
         });
+
+        // Force a recalculation of all ScrollTrigger positions shortly after mount.
+        // This solves the bug where images or fonts loading slightly after the initial 
+        // mount push the DOM down, causing ScrollTrigger to calculate the start/end
+        // coordinates incorrectly (which is why resizing the window fixed it for you).
+        const timeout = setTimeout(() => {
+            ScrollTrigger.refresh();
+        }, 500);
+
+        return () => clearTimeout(timeout);
 
     }, { scope: container });
 
