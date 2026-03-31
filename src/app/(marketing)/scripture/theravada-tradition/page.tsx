@@ -28,8 +28,7 @@ export default function TheravadaTraditionPage() {
     useGSAP(() => {
         const tl = gsap.timeline({
             defaults: {
-                ease: "back(1)",
-                duration: 1
+                ease: "back(0.5)"
             }
         });
 
@@ -51,21 +50,22 @@ export default function TheravadaTraditionPage() {
             }, "-=0.5")
             .from(".sutta-card", {
                 autoAlpha: 0,
-                scale: 3.5,
+                y: -150,
+                scale: 0.3,
                 duration: 1.2,
-            }, "+=0.4")
+            }, "+=0.1")
             .from(".vinaya-card", {
                 x: 280,
                 autoAlpha: 0,
                 scale: 0.8,
-                duration: 1.2,
-            }, "+=0.2")
+                duration: 1.1,
+            }, "+=0.1")
             .from(".abhidhamma-card", {
                 x: -280,
                 autoAlpha: 0,
                 scale: 0.8,
-                duration: 1.2,
-            }, "+=0.2");
+                duration: 1,
+            }, "+=0.1");
 
         // Pitaka Gallery animations
         const galleries = gsap.utils.toArray(".gallery-in") as HTMLElement[];

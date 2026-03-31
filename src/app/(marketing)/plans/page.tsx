@@ -2,6 +2,8 @@
 
 import { type FC, type ReactNode, useState } from "react";
 import {
+    BookOpen01,
+    GraduationHat02,
     ArrowRight,
     ChartBreakoutSquare,
     CheckCircle,
@@ -130,7 +132,10 @@ const PricingTierCardBanner = (props: {
     description?: string;
     features: string[];
     className?: string;
+    firstAction?: string;
+    firstActionHref?: string;
     secondAction?: string;
+    secondActionHref?: string;
 }) => {
     return (
         <div className={cx("flex flex-col overflow-hidden rounded-2xl bg-primary shadow-lg ring-1 ring-secondary_alt", props.className)}>
@@ -154,9 +159,9 @@ const PricingTierCardBanner = (props: {
                 </ul>
 
                 <div className="mt-auto flex flex-col gap-3 px-6 pb-8 md:px-8">
-                    <Button size="xl">Get started</Button>
+                    <Button href={props.firstActionHref} size="xl">{props.firstAction}</Button>
                     {props.secondAction && (
-                        <Button color="secondary" size="xl">
+                        <Button href={props.secondActionHref} color="secondary" size="xl">
                             {props.secondAction}
                         </Button>
                     )}
@@ -171,45 +176,56 @@ const PricingSimpleBanner = () => {
 
     const plans = [
         {
-            title: "Starter plan",
+            title: "STARTER plan",
             subtitle: selectedPlan === "monthly" ? "Free" : "Free",
             description: "Free plan for everyone.",
-            secondAction: "Chat to sales",
+            firstAction: "Start browsing texts",
+            firstActionHref: "/scripture/collections",
+            secondAction: "Have questions?",
+            secondActionHref: "/plans#faq",
             features: [
-                "Access to all basic features",
-                "Basic reporting and analytics",
-                "Up to 10 individual users",
-                "20 GB individual data",
+                "Access to all texts",
+                "Available free learning paths",
+                "Browsing collections and learnings",
+                "Directories of communities and centers",
                 "Basic chat and email support",
+                "Full documentation access",
             ],
         },
         {
-            title: "Discovery plan",
+            title: "DISCOVERY plan",
             subtitle: selectedPlan === "monthly" ? "Free" : "Free",
-            description: "Basic storage up to 2 workspaces.",
-            secondAction: "Chat to sales",
-            banner: "Create an account",
+            description: "2 workspaces storage with Sign up.",
+            firstAction: "Get started",
+            firstActionHref: "/sign-up",
+            secondAction: "Have questions?",
+            secondActionHref: "/plans#faq",
             features: [
-                "Dashboard with basic preferences",
-                "Advanced reporting and analytics",
-                "Up to 20 individual users",
-                "40 GB individual data",
+                "2 Workspaces storage",
+                "Basic theme preferences",
+                "Limited search history",
+                "Limited bookmarks",
+                "Limited notes",
                 "Priority chat and email support",
             ],
         },
         {
-            title: "Full Access plan",
+            title: "FULL ACCESS plan",
             subtitle: selectedPlan === "monthly" ? "$2/month" : "$20/year",
             description: "Advanced features + unlimited storage.",
-            secondAction: "Most popular plan",
+            firstAction: "Get started",
+            firstActionHref: "/sign-up",
+            secondAction: "Have questions?",
+            secondActionHref: "/plans#faq",
             banner: "Most popular plan",
             features: [
                 "Unlimited workspaces",
+                "Advance theme preferences",
                 "Unlimited stored texts",
                 "Unlimited saved searches",
                 "Unlimited bookmarks",
                 "Unlimited notes",
-                "Personalized + priority service",
+
             ],
         },
     ];
@@ -283,7 +299,7 @@ const FeatureTextFeaturedIconTopCentered = ({
 
 const FeaturesCenterMockup01 = () => {
     return (
-        <section className="bg-primary py-16 md:py-24">
+        <section id="features" className="bg-primary py-16 md:py-24">
             <div className="mx-auto w-full max-w-container px-4 md:px-8">
                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
                     <span className="hidden md:flex">
@@ -296,9 +312,9 @@ const FeaturesCenterMockup01 = () => {
                             Features
                         </BadgeWithDot>
                     </span>
-                    <h2 className="mt-4 text-display-sm font-semibold text-primary md:text-display-md">Cutting-edge features for a holistic approach to personal development</h2>
+                    <h2 className="mt-4 text-display-sm font-semibold text-primary md:text-display-md">Cutting-edge features for a balanced approach to Buddhist study and practice</h2>
                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                        A comprehensive platform that combines mindfulness, readership, learning, and practice to help you live a more fulfilling life.
+                        A platform that combines readership, learning, and practice, connecting with the living traditions of the awakening.
                     </p>
                 </div>
 
@@ -314,13 +330,13 @@ const FeaturesCenterMockup01 = () => {
                                     {/* Light mode image (hidden in dark mode) */}
                                     <img
                                         alt="Dashboard mockup showing application interface"
-                                        src="https://www.untitledui.com/marketing/screen-mockups/dashboard-desktop-mockup-light-01.webp"
+                                        src="/theravada-tradition-dark-page-1920px.webp"
                                         className="size-full object-cover dark:hidden"
                                     />
                                     {/* Dark mode image (hidden in light mode) */}
                                     <img
                                         alt="Dashboard mockup showing application interface"
-                                        src="https://www.untitledui.com/marketing/screen-mockups/dashboard-desktop-mockup-dark-01.webp"
+                                        src="theravada-tradition-light-page-1920px.webp"
                                         className="size-full object-cover not-dark:hidden"
                                     />
                                 </div>
@@ -374,8 +390,8 @@ const FeaturesCenterMockup01 = () => {
 
 const FeatureTextFeaturedIconLeft = ({ icon, title, subtitle, footer }: FeatureTextIcon) => (
     <div className="flex max-w-140 gap-4">
-        <FeaturedIcon icon={icon} size="lg" color="gray" theme="modern" className="hidden md:inline-flex" />
-        <FeaturedIcon icon={icon} size="md" color="gray" theme="modern" className="inline-flex md:hidden" />
+        <FeaturedIcon icon={icon} size="lg" color="gray" theme="modern-neue" className="hidden md:inline-flex" />
+        <FeaturedIcon icon={icon} size="md" color="gray" theme="modern-neue" className="inline-flex md:hidden" />
 
         <div className="flex flex-col items-start gap-4">
             <div>
@@ -394,11 +410,11 @@ const FeaturesIconsAndImage03 = () => {
             <div className="bg-secondary pt-16 pb-[112px] md:pt-24 md:pb-40">
                 <div className="mx-auto grid w-full max-w-container grid-cols-1 gap-12 px-4 md:gap-16 md:px-8 lg:grid-cols-2 lg:gap-24">
                     <div className="flex w-full flex-col">
-                        <span className="text-sm font-semibold text-brand-secondary md:text-md">New feature</span>
+                        <span className="text-sm font-semibold text-brand-secondary md:text-md">Our Approach</span>
 
-                        <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Introducing the holistic approach to personal development</h2>
+                        <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Introducing the combined intersection of study and practice</h2>
                         <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                            A comprehensive platform that combines mindfulness, readership, learning, and practice to help you live a more fulfilling life.
+                            A comprehensive platform that leverages kind design and wise technologies to combine the best of mindfulness, readership, learning, and practice.
                         </p>
                     </div>
 
@@ -407,14 +423,14 @@ const FeaturesIconsAndImage03 = () => {
                             {
                                 title: "Readership with kind wisdom",
                                 subtitle: "Access a curated library of books, articles, and resources on mindfulness, productivity, and personal growth.",
-                                icon: MessageChatCircle,
+                                icon: BookOpen01,
                                 cta: "Learn more",
                                 href: "#",
                             },
                             {
                                 title: "Practical learning",
                                 subtitle: "Engage in hands-on studies and practices that help you apply what you learn to your daily life.",
-                                icon: Zap,
+                                icon: GraduationHat02,
                                 cta: "Learn more",
                                 href: "#",
                             },
@@ -442,11 +458,11 @@ const FeaturesIconsAndImage03 = () => {
 
 const FAQSimple01 = () => {
     return (
-        <section className="bg-primary py-16 md:py-24">
+        <section id="faq" className="bg-primary py-16 md:py-24">
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
                     <h2 className="text-display-sm font-semibold text-primary md:text-display-md">Frequently asked questions</h2>
-                    <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">Everything you need to know about Bodhi Central plans and billing. </p>
+                    <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">Everything you need to know about Bodhi Central plans and services. </p>
                 </div>
 
                 <div className="mt-12 md:mt-16">
