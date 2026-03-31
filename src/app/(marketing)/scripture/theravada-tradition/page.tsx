@@ -76,8 +76,8 @@ export default function TheravadaTraditionPage() {
             gsap.timeline({
                 scrollTrigger: {
                     trigger: gallery,
-                    start: "top 95%",
-                    end: "bottom 5%",
+                    start: "top 90%",
+                    end: "bottom 10%",
                     // scrub: true (instead of 1) perfectly locks the animation to the scrollbar 
                     // without any artificial delay. This fixes the issue where fast scrolling 
                     // skips the animation because of the 1-second lag calculation.
