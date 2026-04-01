@@ -34,12 +34,12 @@ export const filledColors: Record<BadgeColors, { root: string; addon: string; ad
         addon: "text-utility-green-500",
         addonButton: "hover:bg-utility-green-100 text-utility-green-400 hover:text-utility-green-500",
     },
-    "gray-blue": {
+    slate: {
         root: "bg-utility-slate-50 text-utility-slate-700 ring-utility-slate-200",
         addon: "text-utility-slate-500",
         addonButton: "hover:bg-utility-slate-100 text-utility-slate-400 hover:text-utility-slate-500",
     },
-    "blue-light": {
+    sky: {
         root: "bg-utility-sky-50 text-utility-sky-700 ring-utility-sky-200",
         addon: "text-utility-sky-500",
         addonButton: "hover:bg-utility-sky-100 text-utility-sky-400 hover:text-utility-sky-500",
@@ -278,7 +278,7 @@ export const BadgeWithFlag = <T extends BadgeTypes>(props: BadgeWithFlagProps<T>
 
     return (
         <span className={cx(colors.common, sizes[type][size], colors.styles[color].root)}>
-            <Image src={`https://www.untitledui.com/images/flags/${flag}.svg`} className="size-4 max-w-none rounded-full" alt={`${flag} flag`}  width={16} height={16} />
+            <Image src={`https://www.untitledui.com/images/flags/${flag}.svg`} className="size-4 max-w-none rounded-full" alt={`${flag} flag`} width={16} height={16} />
             {children}
         </span>
     );
@@ -316,7 +316,7 @@ export const BadgeWithImage = <T extends BadgeTypes>(props: BadgeWithImageProps<
 
     return (
         <span className={cx(colors.common, sizes[type][size], colors.styles[color].root)}>
-            <Image src={imgSrc} className="size-4 max-w-none rounded-full" alt="Badge image"  width={16} height={16} />
+            <Image src={imgSrc} className="size-4 max-w-none rounded-full" alt="Badge image" width={16} height={16} />
             {children}
         </span>
     );
