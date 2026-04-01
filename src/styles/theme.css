@@ -445,7 +445,7 @@
     --color-bg-brand-primary_alt: var(--color-brand-50);
     --color-bg-secondary_alt: var(--color-neutral-50);
     --color-bg-overlay: var(--color-neutral-950);
-    --color-bg-brand-section: var(--color-brand-800);
+    --color-bg-brand-section: var(--color-brand-900);
     --color-bg-brand-section_subtle: var(--color-brand-700);
     --color-bg-primary-solid: var(--color-neutral-950);
     --color-bg-error-solid_hover: var(--color-red-700);
@@ -805,7 +805,7 @@
         --color-bg-brand-primary_alt: var(--color-bg-secondary);
         --color-bg-secondary_alt: var(--color-bg-primary);
         --color-bg-overlay: var(--color-neutral-800);
-        --color-bg-brand-section: var(--color-bg-secondary);
+        --color-bg-brand-section: var(--color-brand-950);
         --color-bg-brand-section_subtle: var(--color-bg-primary);
         --color-bg-primary-solid: var(--color-bg-secondary);
         --color-bg-error-solid_hover: var(--color-red-500);

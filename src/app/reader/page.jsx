@@ -9,6 +9,7 @@ import { Facebook, LinkedIn, X } from "@/components/foundations/social-icons";
 import Image from "next/image";
 import { BadgeGroup } from "@/components/base/badges/badge-groups";
 import Link from "next/link";
+import { CanonTreeViewSM } from "@/components/application/tree-view/canon-tree-view-sm";
 
 
 export const TableOfContents = () => {
@@ -290,17 +291,10 @@ export const AuxiliaryPanel = () => {
 export default function ReaderPage() {
     return (
         <>
-            {/* TODO: Create a dynamic Modal for canonical navigation */}
-            <div className="hidden absolute top-22 left-4 bottom-4 w-96 z-50 bg-white dark:bg-neutral-900 rounded-2xl p-8 drop-shadow-md">
-                <div className="prose flex flex-col w-full">
-                    <h2 className="text-xl font-bold text-primary">Canonical Navigation Specs</h2>
-                    <p className="text-sm text-tertiary">The Canonical Navigation is a hierarchical structure of the Buddhist Pali and Tibetan canons, organized by the respective divisions, sections, and sub-sections of each canon.</p>
-                    <p className="text-sm text-tertiary">This component is a work in progress. It will be used to navigate the Buddhist canons and their parallels.</p>
-                    <p className="text-sm text-tertiary">Built on a modal, this composable and reusable component will be opened and closed by the user from contextually relevant locations.</p>
-                    <p className="text-sm text-tertiary">A significant research effort has been undertaken to ensure the accuracy and completeness of the Canonical Navigation's functionality and structure. The result is an intuitive and holistic experience (including drag and drop functionality) that will be of great benefit to scholars and practitioners of Buddhism, and will be a cornerstone of the Bodhi Central platform.</p>
-                    <p className="text-sm text-tertiary">As an example of the ongoing research and development of the Canonical Navigation, please check out the article dealing with the subject of canonical organization, <a className="text-brand-700 dark:text-brand-300" href="https://bodhi-central-docs.vercel.app/research/pali-canon/connections-and-parallels" target="_blank">Numbering the Sutta Piṭaka</a>. Many more articles are planned to be published on the subject of canonical organization.</p>
-                    <p className="text-sm text-tertiary">On the technical side, for a reference on the developement of tre Canonical Navigation, please check out the <a className="text-brand-700 dark:text-brand-300" href="https://headless-tree.lukasbach.com" target="_blank">Headless Tree</a> component.</p>
-                </div>
+            {/* TODO: Implement a dynamic Modal for canonical navigation using the imported CanonTreeViewSM component */}
+            {/* The modal should be opened and closed by the user from the item "Canonical Navigation" in the SidebarNavigation component on the left */}
+            <div className="fixed top-12 left-13 bottom-4 w-120 z-50 bg-white/95 dark:bg-neutral-900/95 backdrop-blur-md rounded-2xl p-8 drop-shadow-lg">
+                <CanonTreeViewSM />
             </div>
 
 
