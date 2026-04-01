@@ -10,6 +10,7 @@ import { cx } from "@/utils/cx";
 interface LabelProps extends AriaLabelProps {
     children: ReactNode;
     isRequired?: boolean;
+    isInvalid?: boolean;
     tooltip?: string;
     tooltipDescription?: string;
     ref?: Ref<HTMLLabelElement>;

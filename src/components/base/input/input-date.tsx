@@ -189,11 +189,11 @@ export const InputDateBase = ({
 
 interface InputProps
     extends
-        AriaDateFieldProps<DateValue>,
-        Pick<
-            InputDateBaseProps,
-            "ref" | "size" | "placeholder" | "icon" | "shortcut" | "tooltip" | "groupRef" | "iconClassName" | "wrapperClassName" | "tooltipClassName"
-        > {
+    AriaDateFieldProps<DateValue>,
+    Pick<
+        InputDateBaseProps,
+        "ref" | "size" | "placeholder" | "icon" | "shortcut" | "tooltip" | "groupRef" | "iconClassName" | "wrapperClassName" | "tooltipClassName"
+    > {
     /** Label text for the input */
     label?: string;
     /** Helper text displayed below the input */
