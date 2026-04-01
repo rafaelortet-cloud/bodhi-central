@@ -83,7 +83,7 @@ export const ContactFormAndImage01 = () => {
                     </div>
 
                     <div className="max-lg:hidden lg:h-200">
-                        <Image src="https://www.untitledui.com/marketing/smiling-girl-12.webp" className="size-full object-cover" alt="Smiling girl"  width={1000} height={1000} />
+                        <Image src="/golden-buddha-faces.jpg" className="size-full object-cover" alt="Golden Buddha Faces" width={800} height={800} />
                     </div>
                 </div>
             </div>

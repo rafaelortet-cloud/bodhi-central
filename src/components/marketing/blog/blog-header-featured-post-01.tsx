@@ -68,7 +68,7 @@ const articles: Article[] = [
         tags: [
             {
                 name: "Product",
-                color: "blue-light",
+                color: "blue",
                 href: "#",
             },
             {
@@ -138,7 +138,7 @@ const articles: Article[] = [
             },
             {
                 name: "Management",
-                color: "gray-blue",
+                color: "slate",
                 href: "#",
             },
         ],
@@ -163,7 +163,7 @@ const articles: Article[] = [
         tags: [
             {
                 name: "Product",
-                color: "blue-light",
+                color: "blue",
                 href: "#",
             },
             {
@@ -298,7 +298,7 @@ const articles: Article[] = [
             },
             {
                 name: "Customer Success",
-                color: "gray-blue",
+                color: "slate",
                 href: "#",
             },
         ],
@@ -398,7 +398,7 @@ export const BlogHeaderFeaturedPost01 = () => {
                     href={featuredArticle.href}
                     className="relative hidden w-full overflow-hidden rounded-2xl outline-focus-ring select-none focus-visible:outline-2 focus-visible:outline-offset-4 md:block md:h-145 lg:h-180"
                 >
-                    <Image src={featuredArticle.thumbnailUrl} alt={featuredArticle.title} className="absolute inset-0 size-full object-cover"  width={1000} height={1000} />
+                    <Image src={featuredArticle.thumbnailUrl} alt={featuredArticle.title} className="absolute inset-0 size-full object-cover" width={1000} height={1000} />
 
                     <div className="absolute inset-x-0 bottom-0 w-full bg-linear-to-t from-black/40 to-transparent pt-24">
                         <div className="flex w-full flex-col gap-6 p-8">

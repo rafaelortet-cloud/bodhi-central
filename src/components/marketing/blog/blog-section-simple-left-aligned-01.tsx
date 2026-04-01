@@ -58,7 +58,7 @@ const articles: Article[] = [
         tags: [
             {
                 name: "Product",
-                color: "blue-light",
+                color: "blue",
                 href: "#",
             },
             {
@@ -128,7 +128,7 @@ const articles: Article[] = [
             },
             {
                 name: "Management",
-                color: "gray-blue",
+                color: "slate",
                 href: "#",
             },
         ],
@@ -153,7 +153,7 @@ const articles: Article[] = [
         tags: [
             {
                 name: "Product",
-                color: "blue-light",
+                color: "blue",
                 href: "#",
             },
             {
@@ -288,7 +288,7 @@ const articles: Article[] = [
             },
             {
                 name: "Customer success",
-                color: "gray-blue",
+                color: "slate",
                 href: "#",
             },
         ],

@@ -58,7 +58,7 @@ const articles: Article[] = [
         tags: [
             {
                 name: "Product",
-                color: "blue-light",
+                color: "blue",
                 href: "#",
             },
             {
