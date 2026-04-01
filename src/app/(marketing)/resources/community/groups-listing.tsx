@@ -40,7 +40,7 @@ const ListingListItem = (props: Listing) => {
     return (
         <div className="flex flex-col overflow-hidden rounded-xl bg-primary shadow-xs ring-1 ring-secondary ring-inset xl:flex-row xl:gap-6 xl:p-4">
             <div className="relative h-44 w-full overflow-hidden xl:h-36 xl:w-50 xl:rounded-lg">
-                <Image src={props.imageSrc} alt={props.title} className="h-full w-full object-cover"  width={800} height={800} />
+                <Image src={props.imageSrc} alt={props.title} className="h-full w-full object-cover" width={800} height={800} />
                 {props.rare && (
                     <BadgeWithIcon iconLeading={Award02} size="sm" color="brand" type="pill-color" className="absolute bottom-2 left-2">
                         Lineage Holder
@@ -152,22 +152,22 @@ const countries = [
     {
         id: "australia",
         label: "Australia",
-        icon: () => <Image src="https://www.untitledui.com/images/flags/AU.svg" alt="Australian flag" className="size-5"  width={20} height={20} />,
+        icon: () => <Image src="https://www.untitledui.com/images/flags/AU.svg" alt="Australian flag" className="size-5" width={20} height={20} />,
     },
     {
         id: "canada",
         label: "Canada",
-        icon: () => <Image src="https://www.untitledui.com/images/flags/CA.svg" alt="Canadian flag" className="size-5"  width={20} height={20} />,
+        icon: () => <Image src="https://www.untitledui.com/images/flags/CA.svg" alt="Canadian flag" className="size-5" width={20} height={20} />,
     },
     {
         id: "united-states",
         label: "United States",
-        icon: () => <Image src="https://www.untitledui.com/images/flags/US.svg" alt="American flag" className="size-5"  width={20} height={20} />,
+        icon: () => <Image src="https://www.untitledui.com/images/flags/US.svg" alt="American flag" className="size-5" width={20} height={20} />,
     },
     {
         id: "united-kingdom",
         label: "United Kingdom",
-        icon: () => <Image src="https://www.untitledui.com/images/flags/GB.svg" alt="British flag" className="size-5"  width={20} height={20} />,
+        icon: () => <Image src="https://www.untitledui.com/images/flags/GB.svg" alt="British flag" className="size-5" width={20} height={20} />,
     },
 ];
 
@@ -304,7 +304,7 @@ export const GroupsListing = () => {
                                         size="md"
                                         items={traditions}
                                         defaultSelectedKey={traditions[0].id}
-                                        placeholderIcon={Star01}
+                                        icon={Star01}
                                         placeholder="Any tradition"
                                     >
                                         {(item) => (
@@ -322,7 +322,7 @@ export const GroupsListing = () => {
                         </div>
 
                         {/* Search */}
-                        <div className="order-first flex gap-3 lg:order-none">
+                        <div className="order-first flex gap-3 lg:order-0">
                             <Input icon={SearchLg} shortcut aria-label="Search" placeholder="Search" size="md" />
                             <Button size="lg" color="secondary" className="hidden lg:inline-flex">
                                 Clear
@@ -359,7 +359,7 @@ export const GroupsListing = () => {
                 </div>
 
                 {/* Desktop view Map */}
-                <div className="top-0 hidden w-full p-3 lg:sticky lg:order-none lg:block lg:h-svh">
+                <div className="top-0 hidden w-full p-3 lg:sticky lg:order-0 lg:block lg:h-svh">
                     <iframe
                         title="Our address"
                         src="https://snazzymaps.com/embed/451871"
