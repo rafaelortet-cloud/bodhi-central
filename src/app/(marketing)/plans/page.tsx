@@ -27,20 +27,21 @@ import { cx } from "@/utils/cx";
 
 const faqs = [
     {
-        question: "What is included in the Starter plan?",
-        answer: "Yes, you can try us for free for 30 days. Our friendly team will work with you to get you up and running as soon as possible.",
+        question: "What is included in the Discovery plan?",
+        answer: "The Discovery plan is our free plan, and it includes access to all of our features, including the scripture reader, learning paths, and resources. The free Discovery plan is a great way to get started with Bodhi Central and to explore all that it has to offer with basic storage.",
         icon: Heart,
     },
     {
-        question: "Can I change my plan later?",
-        answer: "Of course. Our pricing scales with your company. Chat to our friendly team to find a solution that works for you.",
-        icon: SwitchHorizontal01,
-    },
-    {
-        question: "What is your cancellation policy?",
-        answer: "We understand that things change. You can cancel your plan at any time and we'll refund you the difference already paid.",
+        question: "Why you offer a paid subscription?",
+        answer: "Bodhi Central is a non-profit organization, and your Full Access subscription helps us to continue our work. It also allows us to offer a free plan to those who cannot afford it.",
         icon: SlashCircle01,
     },
+    {
+        question: "Can I change my Full Access plan later?",
+        answer: "Of course! Our affordable Full Access plan scales with your needs. You can cancel or downgrade your plan at any time from your account settings in the dashboard.",
+        icon: SwitchHorizontal01,
+    },
+
     {
         question: "Can other info be added to an invoice?",
         answer: "At the moment, the only way to add additional information to invoices is to add the information to the workspace's name.",
@@ -52,7 +53,7 @@ const faqs = [
         icon: CreditCardRefresh,
     },
     {
-        question: "How do I change my account email?",
+        question: "What is your cancellation policy?",
         answer: "You can change the email address associated with your account by going to untitledui.com/account from a laptop or desktop.",
         icon: Mail01,
     },
@@ -347,14 +348,14 @@ const FeaturesCenterMockup01 = () => {
                         {[
                             {
                                 title: "Kindful Scripture",
-                                subtitle: "With a practical approach to scriptures for genres, schools, and traditions.",
+                                subtitle: "Gathering curated texts and teachings from genuine streams of Buddhist traditions.",
                                 icon: MessageChatCircle,
                                 cta: "Learn more",
                                 href: "/scriptures/collections",
                             },
                             {
                                 title: "Paths of Learning",
-                                subtitle: "Lorem ipsum noratrum belious terbarium altrimorem menforosa.",
+                                subtitle: "Clear learning paths for every stage of your journey, from the fundamentals to advanced topics, accompanied by guided practices.",
                                 icon: Zap,
                                 cta: "Learn more",
                                 href: "/learning-paths",
@@ -362,7 +363,7 @@ const FeaturesCenterMockup01 = () => {
                             {
                                 title: "Resources that matter",
                                 subtitle:
-                                    "Expand your experience with Directories, blogs, forums, and detailed documentation.",
+                                    "Tools and resources to support your practice and learning, including directories, blogs, forums, and detailed documentation.",
                                 icon: ChartBreakoutSquare,
                                 cta: "Learn more",
                                 href: "/resources",
@@ -414,7 +415,7 @@ const FeaturesIconsAndImage03 = () => {
 
                         <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Introducing the combined intersection of study and practice</h2>
                         <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                            A comprehensive platform that leverages kind design and wise technologies to combine the best of mindfulness, readership, learning, and practice.
+                            A platform that leverages kind design and wise technologies to combine the best of readership, learning, and practice.
                         </p>
                     </div>
 
@@ -428,7 +429,7 @@ const FeaturesIconsAndImage03 = () => {
                                 href: "#",
                             },
                             {
-                                title: "Practical learning",
+                                title: "Practical learning and contemplation",
                                 subtitle: "Engage in hands-on studies and practices that help you apply what you learn to your daily life.",
                                 icon: GraduationHat02,
                                 cta: "Learn more",
