@@ -56,7 +56,7 @@ export const CanonNavigationModal = () => {
                 <Dialog>
                     <div className="flex flex-row gap-0 w-full h-full shadow-2xl rounded-2xl">
                         {/* Canon Navigator */}
-                        <div className="relative w-140 sm:min-w-110 flex flex-col overflow-hidden rounded-l-4xl bg-primary">
+                        <div className="relative w-140 sm:min-w-110 flex flex-col overflow-hidden rounded-l-3xl bg-primary border-r border-secondary">
                             <div className="h-auto flex flex-col gap-0.5 px-4 pt-4 sm:px-6 sm:py-4 bg-tertiary dark:bg-brand-950 border-b border-secondary">
                                 <AriaHeading slot="title" className="text-display-xs font-semibold text-brand-primary">
                                     Canon Navigation
@@ -68,23 +68,18 @@ export const CanonNavigationModal = () => {
                             </div>
                         </div>
                         {/* Text Listing from Canon Navigator Selections */}
-                        <div className="relative w-full flex flex-col  overflow-hidden rounded-r-4xl bg-secondary">
+                        <div className="relative w-full flex flex-col  overflow-hidden rounded-r-3xl bg-secondary">
                             <CloseButton onClick={() => setIsOpen(false)} theme="light" size="sm" className="absolute top-3 right-3 sm:top-4 sm:right-4" />
-                            <div className="h-auto flex flex-row gap-6 items-center justify-between pl-4 pr-20 pt-4 sm:pl-6 sm:py-4 bg-secondary border-b border-secondary">
-                                <div className="flex flex-col gap-0.5">
-                                    <AriaHeading slot="title" className="text-display-xs font-semibold text-brand-primary">
-                                        Texts in your selection
-                                    </AriaHeading>
-                                    <p className="text-md text-tertiary">Filter and search your selection.</p>
-                                </div>
+                            <div className="h-auto flex flex-row gap-6 items-center justify-between pl-4 pr-20 pt-4 sm:pl-6 sm:pt-7 bg-secondary">
+
                                 <TextTableFilter />
                             </div>
-                            <div className="mx-auto w-full overflow-y-auto max-h-full scrollbar-hide flex flex-col flex-1 gap-0.5 px-4 py-6 sm:px-6 sm:py-6">
+                            <div className="mx-auto w-full overflow-y-auto max-h-full scrollbar-hide flex flex-col flex-1 gap-0.5 px-4 sm:px-6 sm:pt-6">
                                 <TextTableAlternatingFills />
                             </div>
-                            <div className="z-10 flex flex-col gap-3 p-4 pt-4 sm:flex-row sm:items-center sm:justify-end sm:px-4 sm:pt-4 sm:pb-4 bg-tertiary dark:bg-brand-950 border-t border-secondary">
+                            <div className="z-10 flex flex-col gap-3 p-4 pt-4 sm:flex-row sm:items-center sm:justify-end sm:px-4 sm:pt-4 sm:pb-4 bg-tertiary dark:bg-brand-950 border-t border-secondary dark:border-secondary">
                                 <Button color="secondary" size="md">
-                                    Reset
+                                    Reset session
                                 </Button>
                                 <Button color="primary" size="md" onClick={() => setIsOpen(false)}>
                                     Save this selection

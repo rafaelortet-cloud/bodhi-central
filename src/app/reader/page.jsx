@@ -74,13 +74,13 @@ export const TextCanvasSingle = () => {
                             </a>
 
                             <h1 className="mt-4 text-display-md font-semibold text-primary md:text-display-lg lg:text-display-xl">
-                                Welcome to Bodhi Central <br />Readership and Learning Experience
+                                Welcome to the Bodhi Central <br />Readership and Learning Experience
                             </h1>
                             <p className="description mt-4 max-w-lg text-lg text-balance text-tertiary md:mt-6 md:text-xl">
-                                An environment of clear intent and dedication, offering a curated collection of Buddhist texts and teachings to inspire your study and practice.
+                                We are delighted to invite you to explore this space of clear intent and dedication, offering a curated collection of Buddhist texts and genuine teachings to inspire your study and practice.
                             </p>
-                            <Button color="primary" size="md" onClick={() => openCanonNavigator()}>
-                                Start Reading
+                            <Button color="primary" size="md" className="mt-4" onClick={() => openCanonNavigator()}>
+                                Find a text to read!
                             </Button>
                         </div>
                     </div>
