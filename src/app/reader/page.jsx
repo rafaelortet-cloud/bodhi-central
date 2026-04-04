@@ -1,6 +1,6 @@
 "use client";
 
-import { Close01, Menu02, Building08, BookOpen01, Eye, EyeOff, Headphones01, Image01, VideoRecorder, InfoCircle, AlignLeft01, AlignRight01, Link01, Dataflow01, Copy01, ArrowRight, Settings03, Download01, GraduationHat02, Bookmark, HelpOctagon } from "@untitledui/icons";
+import { Menu02, Building08, BookOpen01, Eye, EyeOff, Headphones01, Image01, VideoRecorder, InfoCircle, AlignLeft01, AlignRight01, Link01, Dataflow01, Copy01, ArrowRight, Settings03, Download01, GraduationHat02, Bookmark, HelpOctagon } from "@untitledui/icons";
 import { FileIcon } from "@untitledui/file-icons"
 import { SidebarNavigationSlim } from "@/components/application/app-navigation/sidebar-navigation/sidebar-slim-reader";
 import { SidebarNavigationSlimRight } from "@/components/application/app-navigation/sidebar-navigation/sidebar-slim-reader-right";
@@ -9,7 +9,7 @@ import { Facebook, LinkedIn, X } from "@/components/foundations/social-icons";
 import Image from "next/image";
 import { BadgeGroup } from "@/components/base/badges/badge-groups";
 import Link from "next/link";
-import { CanonTreeViewSM } from "@/components/application/tree-view/canon-tree-view-sm";
+import { CanonNavigationModal, openCanonNavigator } from "@/components-custom/navigation/canon-navigation/canon-navigation-modal-wrapper";
 
 
 export const TableOfContents = () => {
@@ -20,6 +20,7 @@ export const TableOfContents = () => {
                 <ul className="flex flex-col gap-2">
                     {[
                         { title: "Title", href: "#title-page", indent: "ml-0" },
+                        { title: "Introduction to the Reader", href: "#introduction-to-the-reader", indent: "ml-0" },
                         { title: "Origins", href: "#origins", indent: "ml-0" },
                         { title: "Textual Transmission and the Schools", href: "#textual-transmission-and-the-schools", indent: "ml-0" },
                         { title: "Content of the Vinaya Pitaka", href: "#content", indent: "ml-0" },
@@ -63,7 +64,7 @@ export const TextCanvasSingle = () => {
                             />
                         </div>
                         <div id="title-page" className="flex max-w-3xl flex-col items-center text-center lg:items-start lg:text-left">
-                            <a href="#" className="rounded-full outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-2">
+                            <a href="#" className="hidden rounded-full outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-2">
                                 <BadgeGroup className="hidden md:flex" size="lg" addonText="Categories" iconTrailing={ArrowRight} theme="light" color="brand">
                                     Topics
                                 </BadgeGroup>
@@ -73,16 +74,20 @@ export const TextCanvasSingle = () => {
                             </a>
 
                             <h1 className="mt-4 text-display-md font-semibold text-primary md:text-display-lg lg:text-display-xl">
-                                Welcome to Bodhi Central readership and learning for everyone
+                                Welcome to the Bodhi Central <br />Readership and Learning Experience
                             </h1>
                             <p className="description mt-4 max-w-lg text-lg text-balance text-tertiary md:mt-6 md:text-xl">
-                                An environment of clear intent and dedication, offering a curated collection of Buddhist texts and teachings to inspire study and practice.
+                                We are delighted to invite you to explore this space of clear intent and dedication, offering a curated collection of Buddhist texts and genuine teachings to inspire your study and practice.
                             </p>
+                            <Button color="primary" size="md" className="mt-4" onClick={() => openCanonNavigator()}>
+                                Find a text to read!
+                            </Button>
                         </div>
                     </div>
                 </section>
+                <h2 id="introduction-to-the-reader">Introduction to the Reader</h2>
                 <p className="lead first-letter:float-left first-letter:text-7xl first-letter:leading-12 first-letter:mr-1 first-letter:font-serif first-letter:font-extralight first-letter:text-brand-800 dark:first-letter:text-brand-200">
-                    The Monastic Law is available in more recensions than any other part of the Tipiṭaka. There is a full version in Pali, and four complete versions extant in Chinese translation, all belonging to different schools of early Buddhism: Mahā&shy;sāṅghika, Dharma&shy;guptaka, Mahīśāsaka, and Sarvā&shy;stivāda. The Chinese Ti&shy;piṭaka also preserves other Vinaya related texts, such as an independent <i>bhikkhu pātimokkha </i> of the Kāśya&shy;pīya School and several more or less school-specific Vinaya texts. The Vinaya of the Mūla&shy;sarvāstivāda school exists in three versions: a complete text in Tibetan translation, a mostly complete version in Chinese, and substantial portions in Sanskrit. There are also several Vinaya texts, as well as a large number of fragments, in Sanskrit and other Indic languages, mostly of Mahā&shy;sāṅghika, Sarvā&shy;stivāda, and Mūla&shy;sarvāstivāda provenance.
+                    Welcome to Bodhi Central, a digital sanctuary for Buddhist study and practice. This platform is dedicated to providing accessible, clear, and authentic teachings from the Buddhist traditions, supporting practitioners on their path of learning and awakening. Whether you are beginning your journey or deepening your understanding, Bodhi Central offers a curated collection of texts, commentaries, and resources to inspire and guide you.
                 </p>
                 <hr />
                 <h2 id="origins">Origins</h2>
@@ -254,20 +259,20 @@ export const TextCanvasSingle = () => {
     );
 };
 
-export const AuxiliaryPanel = () => {
+export const AncillaryPanel = () => {
     return (
         <div className="sticky top-12 mx-auto z-45 flex-1 border-l border-secondary">
             <div className="prose-reader flex flex-col w-full bg-olive-100/30 dark:bg-neutral-950/20 px-6 py-4 rounded-tr-2xl h-[calc(100dvh-52px)]">
-                <h3 className=" text-primary">Auxiliary Panel</h3>
-                <p className="text-md text-tertiary">Various types of ancillary content on the active text are accessible from the tools in the right sidebar:</p>
+                <h3 className=" text-primary">Ancillary Panels</h3>
+                <p className="text-md text-tertiary">Various panels of ancillary content are accessible from the tools in the right sidebar:</p>
                 <h4 className=" text-primary"><Link01 size={18} />Connections and Parallels</h4>
-                <p className="text-md text-tertiary">Acting on the headings and paragraphs in the active text will display the connections and parallels with other texts and sections of the canons. For information on the types of parallels, see our <Link href="https://bodhi-central-docs.vercel.app/research/pali-canon/connections-and-parallels" target="_blank" rel="noopener noreferrer" className="text-primary underline">Documentation</Link>.</p>
-                <h4 className=" text-primary"><BookOpen01 size={18} />Overviews and Recommended Reading </h4>
+                <p className="text-md text-tertiary">Acting on the headings and paragraphs in the active text will display the connections and parallels with other texts and sections of the canons. For more information on the types of parallels, see our <Link href="https://bodhi-central-docs.vercel.app/research/pali-canon/connections-and-parallels" target="_blank" rel="noopener noreferrer" className="text-primary underline">Documentation</Link>.</p>
+                <h4 className=" text-primary"><BookOpen01 size={18} />Recommended Reading</h4>
                 <p className="text-md text-tertiary">Extend the utility of the reader by accessing overviews and recommended readings related to the active text.</p>
                 <h4 className=" text-primary"><Bookmark size={18} />Bookmarks</h4>
-                <p className="text-md text-tertiary">This is a feature for registered users. After signing up, users can bookmark sections of the text and save searches for future reference. </p>
+                <p className="text-md text-tertiary">This is a feature for registered users. After signing up to the free Discovery plan, users can bookmark sections of the text and save searches for future reference. </p>
                 <div className="w-full border-t border-primary mt-auto">
-                    <h4 className="text-primary"><Download01 size={18} />Downloads from sources</h4>
+                    <h4 className="text-primary"><Download01 size={18} />Downloads</h4>
                     <div className="flex gap-1 dark:opacity-90">
                         <Button color="tertiary" size="sm" iconLeading={<FileIcon type="pdf" variant="gray" className="drop-shadow-md dark:invert-25" aria-label="Download PDF" />} />
                         <Button color="tertiary" size="sm" iconLeading={<FileIcon type="txt" variant="gray" className="drop-shadow-md dark:invert-25" aria-label="Download TXT" />} />
@@ -291,18 +296,21 @@ export const AuxiliaryPanel = () => {
 export default function ReaderPage() {
     return (
         <>
-            {/* TODO: Implement a dynamic Modal for canonical navigation using the imported CanonTreeViewSM component */}
-            {/* The modal should be opened and closed by the user from the item "Canonical Navigation" in the SidebarNavigation component on the left */}
-            <div className="fixed top-12 left-13 bottom-4 w-120 z-50 bg-white/95 dark:bg-neutral-900/95 backdrop-blur-md rounded-2xl p-8 drop-shadow-lg">
-                <CanonTreeViewSM />
-            </div>
 
 
 
             {/* The MAIN Reader wrapper */}
             <main className="mx-auto w-full bg-olive-200 dark:bg-black">
 
-                {/* LEFT PLACEHOLDER - Sidebar Tools for the Text Navigation */}
+
+                {/* TODO: Implement a dynamic Modal for canonical navigation using the imported CanonNavigationModal component */}
+                {/* The modal should be opened and closed by the user from the item "Canon Navigation" in the SidebarNavigationSlim component on the left */}
+                {/* Additionally, the modal should be closed by the close button inside the modal, and when the user clicks on the background overlay */}
+
+                {/* Canon Navigation Modal */}
+                <CanonNavigationModal />
+
+                {/* Sidebar Tools for the Canon and Text Navigation */}
                 <SidebarNavigationSlim
                     hideRightBorder
                     activeUrl=""
@@ -311,11 +319,7 @@ export default function ReaderPage() {
                             label: "Canon Navigation",
                             href: "",
                             icon: Building08,
-                        },
-                        {
-                            label: "Title Information",
-                            href: "",
-                            icon: InfoCircle,
+                            onClick: openCanonNavigator,
                         },
                         {
                             label: "Table of Contents",
@@ -386,7 +390,7 @@ export default function ReaderPage() {
                             <TextCanvasSingle />
                         </div>
                         <div className="w-[28%] hidden lg:block max-w-110">
-                            <AuxiliaryPanel />
+                            <AncillaryPanel />
                         </div>
                     </div></div>
 

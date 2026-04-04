@@ -14,7 +14,8 @@ import { cx } from "@/utils/cx";
 import { User } from "@supabase/supabase-js";
 import { DropdownAvatar } from "@/components/base/avatar/dropdown-avatar";
 import { NavItemButton } from "@/components/application/app-navigation/base-components/nav-button";
-import { SearchLg, HomeLine } from "@untitledui/icons";
+import { SearchLg, Building08 } from "@untitledui/icons";
+import { openCanonNavigator } from "@/components-custom/navigation/canon-navigation/canon-navigation-modal-wrapper";
 
 type HeaderNavItem = {
     label: string;
@@ -131,12 +132,11 @@ export const HeaderReader = ({ items = headerReaderNavItems, isFullWidth, isFloa
                             <BodhicentralLogoMinimal className="w-8" />
                         </Link>
                         <Breadcrumbs className="flex-1">
-                            <Breadcrumbs.Item icon={HomeLine} href="/" />
-                            <Breadcrumbs.Item href="/scripture">Collections</Breadcrumbs.Item>
+                            <Breadcrumbs.Item icon={Building08} onClick={openCanonNavigator}>Navigator</Breadcrumbs.Item>
                             <Breadcrumbs.Item href="/scripture">Canon</Breadcrumbs.Item>
                             <Breadcrumbs.Item href="/scripture/pali-canon">Division</Breadcrumbs.Item>
                             <Breadcrumbs.Item href="/learning-paths">Section</Breadcrumbs.Item>
-                            <Breadcrumbs.Item href="/resources">Sutta</Breadcrumbs.Item>
+                            <Breadcrumbs.Item href="/resources">Welcome Tour</Breadcrumbs.Item>
                         </Breadcrumbs>
 
 

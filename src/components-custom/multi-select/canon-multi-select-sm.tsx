@@ -3,18 +3,16 @@ import type { Selection } from "react-aria-components";
 import { MultiSelect } from "@/components/base/select/multi-select";
 import { type SelectItemType } from "@/components/base/select/select";
 const teamItems: SelectItemType[] = [
-    { id: "vinaya", label: "Vinaya Pitaka", supportingText: "36 scriptures" },
-    { id: "sutta", label: "Sutta Pitaka", supportingText: "840 discourses" },
-    { id: "abhidhamma", label: "Abhidhamma Pitaka", supportingText: "7 Books" },
-    { id: "dege-kangyur", label: "Degé Kangyur", supportingText: "900 scriptures" },
-    { id: "dege-tengyur", label: "Degé Tengyur", supportingText: "3332 commentaries" },
-    { id: "nyingma", label: "Nyingma Studies", supportingText: "13 treatises" },
-    { id: "kagyu", label: "Kagyu Studies", supportingText: "8 treatises" },
-    { id: "sakya", label: "Sakya Studies", supportingText: "18 treatises" },
-    { id: "gelug", label: "Gelug Studies", supportingText: "15 treatises" },
-    { id: "jonang", label: "Jonang Studies", supportingText: "15 treatises" },
-    { id: "shampa-kagyu", label: "Shampa Kagyu Studies", supportingText: "9 treatises" },
-    { id: "tok", label: "Treasury of Knowledge", supportingText: "10 volumes" },
+    { id: "vinaya", label: "Vinaya Pitaka", supportingText: "( 36 texts ~ Pali Canon )" },
+    { id: "sutta", label: "Sutta Pitaka", supportingText: "(840 texts ~ Pali Canon)" },
+    { id: "abhidhamma", label: "Abhidhamma Pitaka", supportingText: "(7 texts ~ Pali Canon)" },
+    { id: "dege-kangyur", label: "Degé Kangyur", supportingText: "( 900 texts ~ Tibetan Canon )" },
+    { id: "dege-tengyur", label: "Degé Tengyur", supportingText: "( 3332 texts ~ Tibetan Canon )" },
+    { id: "nyingma", label: "Nyingma Studies", supportingText: "( 13 texts )" },
+    { id: "kagyu", label: "Kagyu Studies", supportingText: "( 8 texts )" },
+    { id: "sakya", label: "Sakya Studies", supportingText: "( 18 texts )" },
+    { id: "gelug", label: "Gelug Studies", supportingText: "( 15 texts )" },
+    { id: "indian-masters", label: "Indian Masters", supportingText: "( 20+ texts - Indian Mahayana )" },
 ];
 
 const getSelectedUserCount = (selectedKeys: Selection) => {
@@ -30,10 +28,10 @@ export const CanonMultiSelectSm = () => {
         <MultiSelect
             isRequired
             size="sm"
-            label="Select your Collections and/or Canons."
-            tooltip="Select the Collections and/or Canons you want to browse."
+            label="Select collections..."
+            tooltip="Select the Collections you want to browse."
             hint=""
-            placeholder="Select Collections and Canons..."
+            placeholder="Select Collections..."
             items={teamItems}
             selectedKeys={selectedKeys}
             onSelectionChange={setSelectedKeys}
