@@ -75,7 +75,7 @@ export const HomeScreen = () => {
                     <div className="hero-left">
                         <div className="eyebrow">
                             <div className="eyebrow-line"></div>
-                            <div className="eyebrow-text">Buddhisat Paths & Scriptures</div>
+                            <div className="eyebrow-text">Buddhist Paths & Scriptures</div>
                         </div>
                         <h1 className="hero-headline text-display-md font-extralight text-white md:text-display-xl lg:text-display-3xl text-shadow-md text-shadow-gray-700 dark:text-shadow-gray-950">
                             Gateways to <br /> the <span className="lg:text-display-4xl italic text-brand-400 dark:text-brand-500"><em>Awakening</em></span>
