@@ -113,7 +113,7 @@ export const HeaderReader = ({ items = headerReaderNavItems, isFullWidth, isFloa
         <header
             ref={headerRef}
             className={cx(
-                "sticky top-0 z-500 flex h-12 w-full items-center justify-center bg-olive-200 dark:bg-neutral-950 backdrop-blur-lg md:h-12",
+                "fixed top-0 z-500 flex h-12 w-full items-center justify-center bg-olive-200 dark:bg-neutral-950 backdrop-blur-lg md:h-12",
                 isFloating && "h-16 md:h-12 md:pt-2",
                 isFullWidth && !isFloating ? "has-aria-expanded:bg-primary" : "max-md:has-aria-expanded:bg-primary",
                 className,
@@ -148,7 +148,7 @@ export const HeaderReader = ({ items = headerReaderNavItems, isFullWidth, isFloa
                                 <li key={navItem.label}>
                                     {navItem.menu ? (
                                         <AriaDialogTrigger>
-                                            <AriaButton className="flex cursor-pointer items-center gap-0.5 rounded-lg px-1.5 py-1 text-md font-semibold text-secondary outline-focus-ring transition duration-100 ease-linear hover:text-brand-secondary_hover aria-expanded:text-brand-secondary focus-visible:outline-2 focus-visible:outline-offset-2">
+                                            <AriaButton className="flex cursor-pointer items-center gap-0.5 rounded-lg px-1.5 py-1 text-xs font-light tracking-[0.075em] uppercase text-secondary outline-focus-ring transition duration-100 ease-linear hover:text-brand-secondary_hover aria-expanded:text-brand-secondary focus-visible:outline-2 focus-visible:outline-offset-2">
                                                 <span className="px-0.5">{navItem.label}</span>
 
                                                 <ChevronDown className="size-4 rotate-0 stroke-[2.625px] text-fg-quaternary transition duration-100 ease-linear in-aria-expanded:-rotate-180 in-aria-expanded:text-brand-secondary" />

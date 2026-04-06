@@ -22,14 +22,14 @@ export const DropdownAvatar = ({ user }: DropdownAvatarProps) => {
     useEffect(() => {
         if (!user) return;
         const supabase = createClient();
-        
+
         const fetchProfile = async () => {
             const { data } = await supabase
                 .from('profiles')
                 .select('first_name, last_name, avatar_url')
                 .eq('id', user.id)
                 .single();
-                
+
             if (data) {
                 const fullName = [data.first_name, data.last_name].filter(Boolean).join(" ");
                 setProfileData({
@@ -38,14 +38,14 @@ export const DropdownAvatar = ({ user }: DropdownAvatarProps) => {
                 });
             }
         };
-        
+
         fetchProfile();
     }, [user]);
 
     // Get the name from metadata or split the email
     const displayName = profileData?.full_name || (user.user_metadata?.full_name || user.email?.split("@")[0] || "User");
     const userEmail = user.email || "";
-    
+
     const fallbackAvatarParams = `?name=${encodeURIComponent(displayName)}&background=7F56D9&color=fff`;
     const avatarUrl = profileData?.avatar_url || (user.user_metadata?.avatar_url || `https://ui-avatars.com/api/${fallbackAvatarParams}`);
 
@@ -79,6 +79,9 @@ export const DropdownAvatar = ({ user }: DropdownAvatarProps) => {
                         </Dropdown.Item>
                         <Dropdown.Item addon="⌘S" icon={Settings01} href="/settings">
                             Settings
+                        </Dropdown.Item>
+                        <Dropdown.Item icon={Settings01} href="/plans">
+                            Plans
                         </Dropdown.Item>
                     </Dropdown.Section>
                     <Dropdown.Separator />

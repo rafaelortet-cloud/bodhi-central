@@ -15,7 +15,7 @@ export const HomeScreen = () => {
     return (
         <main className="relative overflow-hidden bg-brand-50 dark:bg-brand-200">
 
-            <section className="hero pb-28">
+            <section className="hero relative w-full pb-28">
                 <div className="hero-bg-grad"></div>
                 <div className="hero-grain"></div>
                 <div className="hero-rule"></div>
@@ -142,7 +142,7 @@ export const HomeScreen = () => {
                             </svg>
                             {/* Center symbol */}
                             <div className="medallion-inner">
-                                <Image src="/ornaments/golden-wheel.png" style={{ width: "auto", height: "auto" }} className="medallion-symbol" alt="Medallion Inner" width={160} height={160} />
+                                <Image src="/ornaments/golden-wheel.png" style={{ width: "auto", height: "auto" }} className="medallion-symbol" alt="Medallion Inner" width={180} height={180} />
                             </div>
                         </div>
                     </div>
