@@ -175,7 +175,7 @@ const footerSocials = [
 export const FooterLarge10 = () => {
     return (
         <footer className="relative bg-bg-secondary py-12 md:pt-16">
-            <Image className="absolute bottom-24 right-0 opacity-7 mask-l-from-15%" src="/ornaments/tibetan-artline-clouds-and-hills.png" alt="Tibetan artline clouds and hills" width={750} height={750} />
+            <Image className="absolute bottom-20 right-0 opacity-7 mask-l-from-15% mark-t-from-2%" src="/ornaments/tibetan-artline-clouds-and-hills.png" alt="Tibetan artline clouds and hills" width={700} height={700} />
             <div className="mx-auto max-w-container px-4 md:px-8">
 
 
