@@ -454,7 +454,7 @@
     --color-text-editor-icon-fg: var(--color-neutral-400);
     --color-text-editor-icon-fg_active: var(--color-neutral-500);
     --color-text-quaternary: var(--color-neutral-500);
-    --color-text-brand-primary: var(--color-brand-900);
+    --color-text-brand-primary: var(--color-brand-800);
     --color-text-primary_on-brand: var(--color-white);
     --color-text-secondary_on-brand: var(--color-brand-200);
     --color-text-tertiary_on-brand: var(--color-brand-200);
@@ -528,13 +528,13 @@
     /* COMPONENT COLORS */
     --color-app-store-badge-border: 166 166 166 1;
     --color-avatar-styles-bg-neutral: 224 224 224 1;
-    --color-featured-icon-light-fg-brand: var(--color-brand-600);
+    --color-featured-icon-light-fg-brand: var(--color-brand-500);
     --color-featured-icon-light-fg-error: var(--color-red-600);
     --color-featured-icon-light-fg-gray: var(--color-neutral-500);
     --color-featured-icon-light-fg-success: var(--color-green-600);
     --color-featured-icon-light-fg-warning: var(--color-yellow-600);
     --color-focus-ring-error: var(--color-red-500);
-    --color-focus-ring: var(--color-brand-500);
+    --color-focus-ring: var(--color-brand-400);
     --color-footer-button-fg: var(--color-brand-200);
     --color-footer-button-fg_hover: var(--color-white);
     --color-icon-fg-brand: var(--color-brand-600);
@@ -662,26 +662,27 @@
         --color-utility-blue-600: var(--color-blue-400);
         --color-utility-blue-700: var(--color-blue-300);
 
+        --color-utility-brand-25: var(--color-brand-950);
         --color-utility-brand-50: var(--color-brand-950);
-        --color-utility-brand-50_alt: var(--color-utility-neutral-50);
+        --color-utility-brand-50_alt: var(--color-brand-950);
         --color-utility-brand-100: var(--color-brand-900);
-        --color-utility-brand-100_alt: var(--color-utility-neutral-100);
+        --color-utility-brand-100_alt: var(--color-brand-900);
         --color-utility-brand-200: var(--color-brand-800);
-        --color-utility-brand-200_alt: var(--color-utility-neutral-200);
+        --color-utility-brand-200_alt: var(--color-brand-800);
         --color-utility-brand-300: var(--color-brand-700);
-        --color-utility-brand-300_alt: var(--color-utility-neutral-300);
+        --color-utility-brand-300_alt: var(--color-brand-700);
         --color-utility-brand-400: var(--color-brand-600);
-        --color-utility-brand-400_alt: var(--color-utility-neutral-400);
+        --color-utility-brand-400_alt: var(--color-brand-600);
         --color-utility-brand-500: var(--color-brand-500);
-        --color-utility-brand-500_alt: var(--color-utility-neutral-500);
+        --color-utility-brand-500_alt: var(--color-brand-500);
         --color-utility-brand-600: var(--color-brand-400);
-        --color-utility-brand-600_alt: var(--color-utility-neutral-600);
+        --color-utility-brand-600_alt: var(--color-brand-400);
         --color-utility-brand-700: var(--color-brand-300);
-        --color-utility-brand-700_alt: var(--color-utility-neutral-700);
+        --color-utility-brand-700_alt: var(--color-brand-300);
         --color-utility-brand-800: var(--color-brand-200);
-        --color-utility-brand-800_alt: var(--color-utility-neutral-800);
+        --color-utility-brand-800_alt: var(--color-brand-200);
         --color-utility-brand-900: var(--color-brand-100);
-        --color-utility-brand-900_alt: var(--color-utility-neutral-900);
+        --color-utility-brand-900_alt: var(--color-brand-100);
 
         --color-utility-neutral-50: var(--color-neutral-900);
         --color-utility-neutral-100: var(--color-neutral-800);

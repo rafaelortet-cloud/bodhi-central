@@ -175,7 +175,7 @@ const footerSocials = [
 export const FooterLarge10 = () => {
     return (
         <footer className="relative bg-bg-secondary py-12 md:pt-16">
-            <Image className="absolute bottom-12 right-0 opacity-7 mask-l-from-20% mask-b-from-85%" src="/ornaments/tibetan-artline-clouds-and-hills.png" alt="Tibetan artline clouds and hills" width={700} height={650} />
+            <Image className="absolute bottom-12 right-0 opacity-8 dark:opacity-10 mask-l-from-20% mask-b-from-85%" src="/ornaments/tibetan-artline-clouds-and-hills.png" alt="Tibetan artline clouds and hills" width={650} height={650} />
             <div className="mx-auto max-w-container px-4 md:px-8">
 
 
@@ -183,14 +183,14 @@ export const FooterLarge10 = () => {
                 <div className="flex flex-col justify-between border-b border-secondary pb-8 md:pb-16 lg:flex-row">
                     <div className="max-w-3xl">
                         <h2 className="text-display-sm font-light text-primary md:text-display-md">Gateways to Buddhist study and practice</h2>
-                        <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">Explore paths of kindful wisdom and connect with teachers and practitioners to make your journey count for yourself and others.</p>
+                        <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">Explore paths of the awakening and connect with teachers and practitioners to make your journey count for yourself and others.</p>
                     </div>
 
                     <div className="mt-8 flex flex-col-reverse gap-3 self-stretch sm:flex-row sm:self-start lg:mt-0">
-                        <Button color="secondary" size="md" href="/about/project-information">
-                            About the Project
+                        <Button color="secondary" size="md" href="https://www.patreon.com/bodhicentral" target="_blank">
+                            Visit our Patreon
                         </Button>
-                        <Button size="md" href="/plans">Plans</Button>
+                        <Button size="md" href="/plans">See plans</Button>
                     </div>
                 </div>
 

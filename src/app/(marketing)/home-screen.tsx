@@ -91,7 +91,7 @@ export const HomeScreen = () => {
 
                         </div>
                     </div>
-                    <div className="hero-right">
+                    <div className="hero-right pt-16">
                         <div className="medallion-wrap">
                             <svg className="medallion-svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 {/* Rings */}
@@ -142,7 +142,7 @@ export const HomeScreen = () => {
                             </svg>
                             {/* Center symbol */}
                             <div className="medallion-inner">
-                                <Image src="/ornaments/golden-wheel.png" style={{ width: "auto", height: "auto" }} className="medallion-symbol" alt="Medallion Inner" width={180} height={180} />
+                                <Image src="/ornaments/golden-wheel.png" style={{ width: "auto", height: "auto" }} className="medallion-symbol" alt="Medallion Inner" width={190} height={190} />
                             </div>
                         </div>
                     </div>

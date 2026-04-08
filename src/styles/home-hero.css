@@ -190,13 +190,12 @@
  
   .medallion-svg {
     position: absolute;
-    top: 20%;
+    top: 10%;
     transform: translateY(-50%);
     animation: slowSpin 130s linear infinite;
   }
   .medallion-inner {
     position: absolute;
-
     inset: 16%;
     border-radius: 50%;
     border: 1px solid rgba(176,141,87,0.25);
