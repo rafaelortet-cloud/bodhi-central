@@ -139,9 +139,10 @@ const PricingTierCardBanner = (props: {
     firstActionHref?: string;
     secondAction?: string;
     secondActionHref?: string;
+    shadow?: string;
 }) => {
     return (
-        <div className={cx("flex flex-col overflow-hidden rounded-2xl bg-cream-300 dark:bg-muted-900 shadow-lg ring-1 ring-secondary_alt", props.className)}>
+        <div className={cx("flex flex-col overflow-hidden rounded-2xl bg-warm-off-50 dark:bg-muted-900 ring-1 ring-secondary_alt", props.shadow, props.className)}>
             {props.banner && (
                 <div className="w-full bg-brand-300 px-2 py-3 text-center">
                     <p className="text-sm font-semibold text-black">{props.banner}</p>
@@ -181,53 +182,53 @@ const PricingSimpleBanner = () => {
         {
             title: "COMMUNITY",
             subtitle: selectedPlan === "monthly" ? "Free" : "Free",
-            description: "Free for everyone. No sign up required.",
+            description: "No sign up required.",
             firstAction: "Continue browsing",
             firstActionHref: "/scripture/collections",
             secondAction: "Have questions?",
             secondActionHref: "/plans#faq",
+            shadow: "",
             features: [
                 "Access to all texts",
                 "Available free learning paths",
                 "Browsing collections and learnings",
                 "Directories of communities and centers",
-                "Basic chat and email support",
-                "Full documentation access",
+                "Basic support",
             ],
         },
         {
-            title: "DISCOVERY PLAN",
+            title: "DISCOVERY",
             subtitle: selectedPlan === "monthly" ? "Free" : "Free",
-            description: "2 workspaces storage with Sign up.",
+            description: "Try Bodhi Central",
             firstAction: "Create your FREE account",
             firstActionHref: "/sign-up",
             secondAction: "Have questions?",
             secondActionHref: "/plans#faq",
+            shadow: "",
             features: [
                 "2 Workspaces storage",
-                "Basic theme preferences",
+                "Basic preferences",
                 "Limited search history",
                 "Limited bookmarks",
-                "Limited notes",
                 "Priority chat and email support",
             ],
         },
         {
-            title: "FULL ACCESS PLAN",
+            title: "PRO",
             subtitle: selectedPlan === "monthly" ? "$2/month" : "$20/year",
-            description: "Advanced features + unlimited storage.",
+            description: "Get the most out of Bodhi Central.",
             firstAction: "Get FULL access",
             firstActionHref: "/sign-up",
             secondAction: "Have questions?",
             secondActionHref: "/plans#faq",
-            banner: "Most popular plan",
+            banner: "",
+            shadow: "shadow-2xl shadow-ink-100 dark:shadow-ink-500",
             features: [
                 "Unlimited workspaces",
-                "Advance theme preferences",
                 "Unlimited stored texts",
                 "Unlimited saved searches",
-                "Unlimited bookmarks",
-                "Unlimited notes",
+                "Advanced preferences",
+                "Advanced features",
 
             ],
         },
@@ -235,15 +236,13 @@ const PricingSimpleBanner = () => {
 
     return (
         <section className="relative bg-primary py-16 md:py-20">
-            <Image src="/ornaments/endless-knot-corner-gold.png" width={260} height={260} alt="Plans background" className="absolute top-4 right-4 opacity-16 dark:opacity-25" />
-            <Image src="/ornaments/endless-knot-corner-gold.png" width={260} height={260} alt="Plans background" className="absolute top-4 left-4 scale-x-[-1] opacity-16 dark:opacity-25" />
+            <Image src="/ornaments/endless-knot-corner-gold.png" width={260} height={260} alt="Plans background" className="hidden  lg:block absolute top-4 right-4 opacity-16 dark:opacity-25" />
+            <Image src="/ornaments/endless-knot-corner-gold.png" width={260} height={260} alt="Plans background" className="hidden lg:block absolute top-4 left-4 scale-x-[-1] opacity-16 dark:opacity-25" />
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
                     <h2 className="text-display-md font-extralight text-brand-700 dark:text-brand-400 md:text-display-xl"> Plans for everyone</h2>
-                    <p className="mt-4 text-md text-tertiary md:mt-6 md:text-lg">
-                        We believe that Buddhist texts and teachings should be accessible to everyone. Enjoy the <strong>Community</strong> and <strong>Discovery</strong> free plans.
-                    </p>
-                    <p className="mt-4 text-md text-tertiary md:mt-6 md:text-lg">Your <strong>Full Access</strong> subscription helps us keep the platform running and improving with new features. It also allows us to maintain the free plans for everyone.
+                    <p className="mt-4 max-w-xl text-md text-tertiary md:mt-6 md:text-lg">
+                        Enjoy the <strong>Community</strong> and <strong>Discovery</strong> free plans. Buddhist texts and teachings should be accessible to everyone. Your <strong>Pro</strong> subscription keeps the platform running and improving with new features.
                     </p>
                     <Tabs selectedKey={selectedPlan} onSelectionChange={(item) => setSelectedPlan(item as string)} className="w-full md:w-auto">
                         <TabList
@@ -258,7 +257,7 @@ const PricingSimpleBanner = () => {
                     </Tabs>
                 </div>
 
-                <div className="mt-12 grid w-full grid-cols-1 items-end gap-4 md:mt-16 md:grid-cols-2 md:gap-8 xl:grid-cols-3">
+                <div className="mt-8 grid w-full grid-cols-1 items-end gap-4 md:mt-10 md:grid-cols-2 md:gap-10 xl:grid-cols-3">
                     {plans.map((plan) => (
                         <PricingTierCardBanner key={plan.title} {...plan} />
                     ))}

@@ -319,6 +319,18 @@
     --color-utility-brand-900: var(--color-brand-900);
     --color-utility-brand-900_alt: var(--color-brand-900);
 
+    --color-utility-warm-off-50: var(--color-warm-off-50);
+    --color-utility-warm-off-100: var(--color-warm-off-100);
+    --color-utility-warm-off-200: var(--color-warm-off-200);
+    --color-utility-warm-off-300: var(--color-warm-off-300);
+    --color-utility-warm-off-400: var(--color-warm-off-400);
+    --color-utility-warm-off-500: var(--color-warm-off-500);
+    --color-utility-warm-off-600: var(--color-warm-off-600);
+    --color-utility-warm-off-700: var(--color-warm-off-700);
+    --color-utility-warm-off-800: var(--color-warm-off-800);
+    --color-utility-warm-off-900: var(--color-warm-off-900);
+    --color-utility-warm-off-950: var(--color-warm-off-950);
+
     --color-utility-neutral-50: var(--color-neutral-50);
     --color-utility-neutral-100: var(--color-neutral-100);
     --color-utility-neutral-200: var(--color-neutral-200);
@@ -495,7 +507,7 @@
     --color-fg-brand-secondary_hover: var(--color-brand-600);
 
     /* BACKGROUND COLORS */
-    --color-bg-primary: var(--color-white);
+    --color-bg-primary: var(--color-warm-off-200);
     --color-bg-tertiary: var(--color-neutral-100);
     --color-bg-brand-primary: var(--color-brand-50);
     --color-bg-error-secondary: var(--color-red-100);
@@ -661,6 +673,19 @@
         --color-utility-blue-500: var(--color-blue-500);
         --color-utility-blue-600: var(--color-blue-400);
         --color-utility-blue-700: var(--color-blue-300);
+
+        --color-utility-warm-off-50: var(--color-warm-off-950);
+        --color-utility-warm-off-100: var(--color-warm-off-900);
+        --color-utility-warm-off-200: var(--color-warm-off-800);
+        --color-utility-warm-off-300: var(--color-warm-off-700);
+        --color-utility-warm-off-400: var(--color-warm-off-600);
+        --color-utility-warm-off-500: var(--color-warm-off-500);
+        --color-utility-warm-off-600: var(--color-warm-off-400);
+        --color-utility-warm-off-700: var(--color-warm-off-300);
+        --color-utility-warm-off-800: var(--color-warm-off-200);
+        --color-utility-warm-off-900: var(--color-warm-off-100);
+        --color-utility-warm-off-950: var(--color-warm-off-50);
+        
 
         --color-utility-brand-25: var(--color-brand-950);
         --color-utility-brand-50: var(--color-brand-950);
@@ -856,7 +881,7 @@
         --color-fg-brand-secondary_alt: var(--color-neutral-600);
         --color-fg-brand-secondary_hover: var(--color-neutral-500);
 
-        --color-bg-primary: var(--color-neutral-950);
+        --color-bg-primary: var(--color-ink-800);
         --color-bg-tertiary: var(--color-neutral-800);
         --color-bg-brand-primary: var(--color-brand-500);
         --color-bg-error-secondary: var(--color-red-600);
