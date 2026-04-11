@@ -163,7 +163,7 @@ const PricingTierCardBanner = (props: {
                 <div className="mt-auto flex flex-col gap-3 px-6 pb-8 md:px-8">
                     <Button href={props.firstActionHref} size="xl">{props.firstAction}</Button>
                     {props.secondAction && (
-                        <Button href={props.secondActionHref} color="secondary" size="xl">
+                        <Button className="hidden" href={props.secondActionHref} color="secondary" size="xl">
                             {props.secondAction}
                         </Button>
                     )}
@@ -250,7 +250,7 @@ const PricingSimpleBanner = () => {
                                 { id: "monthly", label: "Monthly billing" },
                                 { id: "annually", label: "Annual billing" },
                             ]}
-                            className="mt-8 w-full md:mt-12 md:w-auto [&_[role=tab]]:flex-1"
+                            className="mt-6 w-full md:mt-10 md:w-auto [&_[role=tab]]:flex-1"
                         />
                     </Tabs>
                 </div>
