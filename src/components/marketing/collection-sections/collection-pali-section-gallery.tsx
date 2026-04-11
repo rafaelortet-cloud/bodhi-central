@@ -16,11 +16,12 @@ interface PaliSection {
     pitaka_section_english: string;
     short_description: string;
     thumbnail_cover: string;
-    pitaka_section: string;
+    pitaka_division: string;
     section_abbreviation: string;
     section_numbers: string;
     color: string;
     dark_color: string;
+    pali_section_slug: string;
 }
 
 interface CollectionPaliSectionGalleryProps {
@@ -66,7 +67,7 @@ const PaliSectionCard = ({ section }: { section: PaliSection }) => {
                     <div className="flex mt-2 justify-between items-top">
                         <div className="flex flex-col gap-1">
                             <p className="mt-4 text-sm font-regular text-brand-300">{section.pitaka_section_english}</p>
-                            <p className="text-sm font-normal text-white uppercase">{section.pitaka_section}</p>
+                            <p className="text-sm font-normal text-white uppercase">{section.pitaka_division}</p>
                             <p className="text-xs font-normal text-white">{section.section_numbers}</p>
                         </div>
                     </div>
@@ -92,6 +93,7 @@ const PaliSectionCard = ({ section }: { section: PaliSection }) => {
 
                 <Button
                     size="sm"
+                    href={`/reader/pali-canon/${section.pali_section_slug}`}
                     className="bg-black/20 hover:bg-black/30 border-0.5 border-white/50 hover:border-white/50 text-white/50 hover:text-white/60 dark:bg-gray-900/50 dark:border-gray-900/50 dark:text-gray-400"
                 >
                     Explore section

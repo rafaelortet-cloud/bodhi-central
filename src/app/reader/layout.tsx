@@ -15,7 +15,7 @@ export default async function ReaderLayout({
 
     return (
         <>
-            <div className="reader-root bg-olive-200 dark:bg-black">
+            <div className="bg-primary">
                 <HeaderReader user={user} />
                 {children}
             </div>

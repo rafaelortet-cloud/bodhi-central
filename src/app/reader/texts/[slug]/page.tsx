@@ -12,7 +12,6 @@ export default function TextPage() {
                     <section className="flex flex-col mx-auto max-w-2xl items-center justify-center pt-20 pb-12 px-4 md:px-6">
                         <h1 className="text-display-md text-center text-brand-800 dark:text-brand-200 md:text-display-lg lg:text-display-xl pb-6">Text</h1>
                         <p className="text-center text-lg font-semibold text-tertiary">A single text.</p>
-                        <h2 className="text-display-md text-green-800 dark:text-green-200 md:text-display-lg lg:text-display-xl mt-40">Text in progress</h2>
                     </section>
                 </div>
             </div>
