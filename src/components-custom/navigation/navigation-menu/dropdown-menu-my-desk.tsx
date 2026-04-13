@@ -20,7 +20,7 @@ type MenuColumn = {
 
 const columns: MenuColumn[] = [
     {
-        title: "Scriptures",
+        title: "Readership",
         items: [
             {
                 title: "Last Reading",
@@ -37,7 +37,7 @@ const columns: MenuColumn[] = [
         ],
     },
     {
-        title: "Learning Paths",
+        title: "Learning",
         items: [
             {
                 title: "Last Learning",
@@ -70,9 +70,11 @@ export const DropdownMenuMyDesk = ({ onClose }: { onClose?: () => void }) => {
                             <ul className="flex flex-col gap-3">
                                 {[
 
+                                    { title: "Pali Canon", href: "/scripture/theravada-tradition" },
+                                    { title: "Tibetan Canon", href: "/scripture/tibetan-canons" },
+                                    { title: "Tibetan Schools", href: "/scripture/tibetan-schools" },
                                     { title: "Collections", href: "/scripture/collections" },
                                     { title: "Spaces", href: "/dashboard" },
-                                    { title: "Reader Preferences", href: "/settings" },
                                 ].map((item) => (
                                     <li key={item.title}>
                                         <Button href={item.href} color="link-gray" size="md" onPress={onClose}>

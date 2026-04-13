@@ -4,6 +4,7 @@ import { RouteProvider } from "@/providers/router-provider";
 import { Theme } from "@/providers/theme";
 import "@/styles/globals.css";
 import { cx } from "@/utils/cx";
+import { CanonNavigationModal } from "@/components-custom/navigation/canon-navigation/canon-navigation-modal-wrapper";
 
 const nunito = Nunito({
     subsets: ["latin"],
@@ -43,6 +44,8 @@ export default async function RootLayout({
             <body className="bg-primary antialiased pt-15">
                 <RouteProvider>
                     <Theme>
+                        {/* Canon Navigation Modal */}
+                        <CanonNavigationModal />
                         {children}
                     </Theme>
                 </RouteProvider>

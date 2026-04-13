@@ -113,7 +113,7 @@ export const HeaderReader = ({ items = headerReaderNavItems, isFullWidth, isFloa
         <header
             ref={headerRef}
             className={cx(
-                "fixed top-0 z-500 flex h-12 w-full items-center justify-center bg-olive-200 dark:bg-neutral-950 backdrop-blur-lg md:h-12",
+                "fixed top-0 z-500 flex h-12 w-full items-center justify-center bg-tertiary md:h-12",
                 isFloating && "h-16 md:h-12 md:pt-2",
                 isFullWidth && !isFloating ? "has-aria-expanded:bg-primary" : "max-md:has-aria-expanded:bg-primary",
                 className,
@@ -136,7 +136,7 @@ export const HeaderReader = ({ items = headerReaderNavItems, isFullWidth, isFloa
                             <Breadcrumbs.Item href="/scripture">Canon</Breadcrumbs.Item>
                             <Breadcrumbs.Item href="/scripture/pali-canon">Division</Breadcrumbs.Item>
                             <Breadcrumbs.Item href="/learning-paths">Section</Breadcrumbs.Item>
-                            <Breadcrumbs.Item href="/resources">Welcome Tour</Breadcrumbs.Item>
+                            <Breadcrumbs.Item href="/resources">Word of Welcome</Breadcrumbs.Item>
                         </Breadcrumbs>
 
 
@@ -207,7 +207,7 @@ export const HeaderReader = ({ items = headerReaderNavItems, isFullWidth, isFloa
                                 label="Search in text"
                                 href=""
                                 icon={SearchLg}
-                                className="bg-olive-200 dark:bg-gray-950"
+                                className="bg-tertiary"
                                 tooltipPlacement="bottom"
                             />
                             <ThemeToggle />

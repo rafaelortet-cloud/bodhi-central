@@ -3,10 +3,10 @@
 import type { FC } from "react";
 import { useState } from "react";
 import { cx } from "@/utils/cx";
-import { NavItemButton } from "../base-components/nav-button";
-import type { NavItemType } from "../config";
+import { NavItemButton } from "@/components/application/app-navigation/base-components/nav-button";
+import type { NavItemType } from "@/components/application/app-navigation/config";
 
-interface SidebarNavigationSlimProps {
+interface SidebarReaderLeftProps {
     /** URL of the currently active item. */
     activeUrl?: string;
     /** List of items to display. */
@@ -15,7 +15,7 @@ interface SidebarNavigationSlimProps {
     footerItems?: (NavItemType & { icon: FC<{ className?: string }> })[];
 }
 
-export const SidebarNavigationSlimRight = ({ activeUrl, items, footerItems = [] }: SidebarNavigationSlimProps) => {
+export const SidebarReaderLeft = ({ activeUrl, items, footerItems = [] }: SidebarReaderLeftProps) => {
     const activeItem = [...items, ...footerItems].find((item) => item.href === activeUrl || item.items?.some((subItem) => subItem.href === activeUrl));
     const [currentItem, setCurrentItem] = useState(activeItem || items[1]);
     const [isHovering, setIsHovering] = useState(false);
@@ -28,7 +28,7 @@ export const SidebarNavigationSlimRight = ({ activeUrl, items, footerItems = [] 
                 width: MAIN_SIDEBAR_WIDTH,
             }}
             className={cx(
-                "group flex h-full max-h-full max-w-full overflow-y-auto pt-8 pl-1 pb-2 transition duration-100 ease-linear",
+                "group flex h-full max-h-full max-w-full overflow-y-auto pt-8 pb-2 transition duration-100 ease-linear",
             )}
         >
             <div
@@ -46,8 +46,17 @@ export const SidebarNavigationSlimRight = ({ activeUrl, items, footerItems = [] 
                                 href={item.href}
                                 label={item.label || ""}
                                 icon={item.icon}
-                                onClick={() => setCurrentItem(item)}
-                                className="bg-olive-200 dark:bg-neutral-950"
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    if (item.onClick) {
+                                        e.preventDefault();
+                                        item.onClick();
+                                    } else if (!item.href || item.href === "") {
+                                        e.preventDefault();
+                                    }
+                                    setCurrentItem(item);
+                                }}
+                                className="bg-tertiary"
                             />
                         </li>
                     ))}
@@ -63,8 +72,17 @@ export const SidebarNavigationSlimRight = ({ activeUrl, items, footerItems = [] 
                                         label={item.label || ""}
                                         href={item.href}
                                         icon={item.icon}
-                                        onClick={() => setCurrentItem(item)}
-                                        className="bg-olive-200 dark:bg-neutral-950"
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            if (item.onClick) {
+                                                e.preventDefault();
+                                                item.onClick();
+                                            } else if (!item.href || item.href === "") {
+                                                e.preventDefault();
+                                            }
+                                            setCurrentItem(item);
+                                        }}
+                                        className="bg-tertiary"
                                     />
                                 </li>
                             ))}
@@ -79,7 +97,7 @@ export const SidebarNavigationSlimRight = ({ activeUrl, items, footerItems = [] 
         <>
             {/* Desktop sidebar navigation */}
             <div
-                className="z-50 fixed inset-y-0 top-8 bottom-0 right-0 flex"
+                className="z-50 fixed inset-y-0 top-8 bottom-0 left-0 flex"
                 onPointerEnter={() => setIsHovering(true)}
             >
                 {mainSidebar}
@@ -88,9 +106,9 @@ export const SidebarNavigationSlimRight = ({ activeUrl, items, footerItems = [] 
             {/* Placeholder to take up physical space because the real sidebar has `fixed` position. */}
             <div
                 style={{
-                    paddingRight: MAIN_SIDEBAR_WIDTH,
+                    paddingLeft: MAIN_SIDEBAR_WIDTH,
                 }}
-                className="sticky lg:top-16 lg:bottom-0 lg:right-0 lg:flex"
+                className="sticky lg:top-16 lg:bottom-0 lg:left-0 lg:flex"
             />
 
 

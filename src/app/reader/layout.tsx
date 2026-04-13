@@ -1,5 +1,6 @@
 
 import { HeaderReader } from "@/components/marketing/header-navigation/header-reader";
+import { SidebarReaderWrapper } from "@/components-custom/sidebars/sidebar-reader-wrapper";
 import { createClient } from "@/utils/supabase/server";
 import "@/styles/typography-reader.css";
 
@@ -15,8 +16,12 @@ export default async function ReaderLayout({
 
     return (
         <>
-            <div className="bg-primary">
+            <div className="relative -mt-3">
+                {/* Header Navigation */}
                 <HeaderReader user={user} />
+                {/* Sidebar Navigation - LEFT & RIGHT panels */}
+                <SidebarReaderWrapper />
+                {/* Main Content */}
                 {children}
             </div>
         </>

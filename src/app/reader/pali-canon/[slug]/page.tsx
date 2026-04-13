@@ -21,10 +21,10 @@ export default async function PaliCanonSectionPage({ params }: { params: { slug:
     // 2. Fetch parent section (e.g., the Nikāya this Paṇṇāsa belongs to)
     const { data: parentSection } = section.parent_id
         ? await supabase
-              .from("pali_sections")
-              .select("*")
-              .eq("id", section.parent_id)
-              .single()
+            .from("pali_sections")
+            .select("*")
+            .eq("id", section.parent_id)
+            .single()
         : { data: null };
 
     // 3. Fetch child Vaggas (chapters) of this section
@@ -45,10 +45,10 @@ export default async function PaliCanonSectionPage({ params }: { params: { slug:
 
     const textsResult = vaggaIds.length > 0
         ? await supabase
-              .from("pali_texts")
-              .select("*")
-              .in("vagga_id", vaggaIds)
-              .order("sort_order", { ascending: true })
+            .from("pali_texts")
+            .select("*")
+            .in("vagga_id", vaggaIds)
+            .order("sort_order", { ascending: true })
         : { data: [], error: null };
 
     // --- DEBUG: remove after resolving ---
@@ -58,7 +58,7 @@ export default async function PaliCanonSectionPage({ params }: { params: { slug:
     const textList = textsResult.data ?? [];
 
     return (
-        <main className="bg-primary-100 dark:bg-primary-900">
+        <main className="bg-primary dark:bg-primary-900 px-14 ">
             <PaliSectionHeader section={section} parentSection={parentSection} />
             <PaliSectionChapterTabs vaggas={vaggaList} texts={textList} />
         </main>
