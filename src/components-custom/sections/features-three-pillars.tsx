@@ -6,6 +6,7 @@ import { Button } from "@/components/base/buttons/button";
 import { FeaturedIcon } from "@/components/foundations/featured-icon/featured-icon";
 import { CheckItemText } from "@/components/marketing/pricing-sections/base-components/pricing-tier-card";
 import { cx } from "@/utils/cx";
+import Image from "next/image";
 
 const AlternateImageMockup: FC<HTMLAttributes<HTMLDivElement>> = (props) => {
     return (
@@ -74,13 +75,13 @@ export const FeaturesThreePillars = () => {
                         <AlternateImageMockup className="lg:left-0">
 
                             {/* Light mode image (hidden in dark mode) */}
-                            <img
+                            <Image
                                 alt="Scripture mockup showing Collections interface"
                                 src="/theravada-tradition-light-mode-1600px.webp"
                                 className="size-full object-contain lg:w-auto lg:max-w-none dark:hidden"
                             />
                             {/* Dark mode image (hidden in light mode) */}
-                            <img
+                            <Image
                                 alt="Dashboard mockup showing application interface"
                                 src="/theravada-tradition-light-mode-1600px.webp"
                                 className="size-full object-contain not-dark:hidden lg:w-auto lg:max-w-none"
@@ -122,13 +123,13 @@ export const FeaturesThreePillars = () => {
                         <AlternateImageMockup className="lg:right-0">
                             {/* Light mode image (hidden in dark mode) */}
 
-                            <img
+                            <Image
                                 alt="Mockup showing Learning Paths interface"
                                 src="/tibetan-schools-hero-header-light-mode-1600px.webp"
                                 className="size-full object-contain lg:w-auto lg:max-w-none dark:hidden"
                             />
                             {/* Dark mode image (hidden in light mode) */}
-                            <img
+                            <Image
                                 alt="Mockup showing Learning Paths interface"
                                 src="/tibetan-schools-hero-header-light-mode-1600px.webp"
                                 className="size-full object-contain not-dark:hidden lg:w-auto lg:max-w-none"

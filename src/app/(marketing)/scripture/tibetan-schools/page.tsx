@@ -11,7 +11,7 @@ export default function TibetanSchoolsPage() {
                 {/* Hero Section */}
                 <section className="relative flex flex-col items-center justify-center gap-4 mx-auto h-[calc(100dvh-3.5rem)] bg-[url(/himalayan-scenery-02.jpg)] bg-cover bg-center bg-no-repeat">
                     {/* Overlay layer for easy customization of color/transparency */}
-                    <div className="absolute inset-0 bg-linear-to-b from-black/15 via-black/50 via-30% to-black/10 dark:bg-linear-to-b dark:from-black/15 dark:via-black/50 dark:via-30% dark:to-black/10 z-0" aria-hidden="true" />
+                    <div className="absolute inset-0 bg-linear-to-b from-black/20 via-black/50 via-30% to-black/20 z-0" aria-hidden="true" />
 
                     {/* Hero Inner Content */}
                     <div className="relative flex flex-col items-center justify-center gap-12 z-10">
