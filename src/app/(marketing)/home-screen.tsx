@@ -4,7 +4,7 @@
 import { ArrowRight } from "@untitledui/icons";
 import { Button } from "@/components/base/buttons/button";
 import { useClipboard } from "@/hooks/use-clipboard";
-import { FeaturesAlternatingLayout01 } from "@/components-custom/sections/features-alternating-layout-01";
+import { FeaturesThreePillars } from "@/components-custom/sections/features-three-pillars";
 import { CTACenteredPlansSignup } from "@/components-custom/sections/cta-centered-plans-signup";
 import { AttributionsAffiliationsBanner } from "@/components-custom/sections/attributions-affiliations-banner";
 import Image from 'next/image';
@@ -143,7 +143,7 @@ export const HomeScreen = () => {
                             </svg>
                             {/* Center symbol */}
                             <div className="medallion-inner">
-                                <Image src="/ornaments/golden-wheel.png" style={{ width: "auto", height: "auto" }} className="medallion-symbol" alt="Medallion Inner" width={190} height={190} />
+                                <Image src="/ornaments/golden-wheel-maroon-400px.png" style={{ width: "250px", height: "250px" }} className="opacity-60" alt="Medallion Inner" width={250} height={250} />
                             </div>
                         </div>
                     </div>
@@ -170,7 +170,7 @@ export const HomeScreen = () => {
                     <div className="scroll-cue-line"></div>
                 </div>
             </section>
-            <FeaturesAlternatingLayout01 />
+            <FeaturesThreePillars />
             <CTACenteredPlansSignup />
             <AttributionsAffiliationsBanner />
         </main >

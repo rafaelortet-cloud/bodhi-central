@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const AttributionsAffiliationsBanner = () => {
     return (
-        <section className="bg-primary py-16 md:py-24">
+        <section className="bg-warm-off-300 dark:bg-primary py-16 md:py-24">
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="flex flex-col gap-8">
                     <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">

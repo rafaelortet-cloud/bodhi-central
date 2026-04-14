@@ -76,7 +76,7 @@ export const DropdownMenuResources = ({ onClose }: { onClose?: () => void }) => 
                         <h4 className="py-2 text-display-md font-extralight tracking-wide uppercase text-brand-700 dark:text-brand-300">RESOURCES</h4>
                     </div>
 
-                    <div className="flex flex-col gap-5 md:flex-row md:gap-10 md:py-0">
+                    <div className="flex flex-col gap-5 md:flex-row md:gap-10 md:pb-2">
                         <div className="-mb-px flex flex-col gap-4 border-b border-b-secondary px-4 pb-5 md:mb-0 md:gap-5 md:border-none md:p-0">
                             <h3 className="text-md font-semibold text-brand-600 dark:text-brand-400">Quick Links</h3>
                             <ul className="flex flex-col gap-3">

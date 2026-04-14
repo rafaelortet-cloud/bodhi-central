@@ -24,7 +24,7 @@ const AlternateImageMockup: FC<HTMLAttributes<HTMLDivElement>> = (props) => {
     );
 };
 
-export const FeaturesAlternatingLayout01 = () => {
+export const FeaturesThreePillars = () => {
     return (
         <section className="relative flex flex-col gap-12 overflow-hidden bg-primary py-16 sm:gap-16 md:gap-20 md:py-24 lg:gap-24">
             {/* Top decorative band */}
@@ -112,6 +112,12 @@ export const FeaturesAlternatingLayout01 = () => {
                     </div>
 
                     <div className="relative w-full flex-1 lg:h-128">
+                        <img
+                            alt="Light Accent"
+                            aria-hidden="true"
+                            src="/patterns/light-accent.webp"
+                            className="absolute z-0 -left-4 -bottom-24 max-w-160 opacity-70 mix-blend-multiple md:left-80 md:-bottom-90 md:max-w-7xl mask-b-from-90% mask-b-to-100% mask-t-from-10% mask-t-to-100% scale-x-[-1.5]"
+                        />
 
                         <AlternateImageMockup className="lg:right-0">
                             {/* Light mode image (hidden in dark mode) */}
@@ -155,12 +161,7 @@ export const FeaturesAlternatingLayout01 = () => {
                     </div>
 
                     <div className="relative col-span-2 w-full flex-1 self-center lg:pt-20">
-                        <img
-                            alt="Light Accent"
-                            aria-hidden="true"
-                            src="/patterns/light-accent.webp"
-                            className="absolute z-0 -right-4 -bottom-24 max-w-160 opacity-90 mix-blend-multiple md:-right-50 md:-bottom-56 md:max-w-7xl mask-b-from-90% mask-b-to-100% mask-t-from-10% mask-t-to-100% scale-x-[-1.5]"
-                        />
+
                         <div className="grid w-full grid-cols-[repeat(12,1fr)] grid-rows-[repeat(12,1fr)] gap-2 md:w-auto md:gap-4 drop-shadow-lg ">
 
                             <img

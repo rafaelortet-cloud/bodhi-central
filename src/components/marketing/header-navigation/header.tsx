@@ -115,8 +115,8 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
         <header
             ref={headerRef}
             className={cx(
-                "fixed top-0 z-500 flex h-15 w-full items-center justify-center border-ink-500/50 border-b bg-ink-600 backdrop-blur-lg md:h-15 shadow-md shadow-ink-800/20",
-                isFloating && "h-15 md:h-15 md:pt-2",
+                "fixed top-0 z-500 flex h-14 w-full items-center justify-center border-ink-500/50 border-b bg-ink-600 backdrop-blur-lg md:h-14 shadow-md shadow-ink-800/20",
+                isFloating && "h-14 md:h-14 md:pt-2",
                 isFullWidth && !isFloating ? "has-aria-expanded:bg-primary" : "max-md:has-aria-expanded:bg-primary",
                 className,
             )}
@@ -134,7 +134,7 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
                             <span className="text-2xl font-serif font-light uppercase tracking-wide text-white">Bodhi</span>
                             <span className="text-2xl font-serif font-light uppercase tracking-wide text-brand-600">Central</span>
                             <BodhicentralLogo className="hidden h-8 md:max-lg:hidden" />
-                            <BodhicentralLogoMinimal className="hidden h-8 md:inline-block lg:hidden" />
+                            <BodhicentralLogoMinimal className="hidden h-8 md:hidden lg:hidden" />
                         </Link>
 
 
@@ -204,10 +204,10 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
                             <DropdownAvatar user={user} />
                         ) : (
                             <>
-                                <Button color="secondary" size={isFloating ? "sm" : "md"} href="/sign-in">
+                                <Button color="secondary" size={isFloating ? "sm" : "sm"} href="/sign-in">
                                     Log in
                                 </Button>
-                                <Button color="primary" size={isFloating ? "sm" : "md"} href="/sign-up">
+                                <Button color="primary" size={isFloating ? "sm" : "sm"} href="/sign-up">
                                     Sign up
                                 </Button>
                             </>

@@ -2,11 +2,8 @@
 
 import type { ComponentPropsWithRef, FC } from "react";
 import { ArrowLeft, ArrowRight, ArrowUpRight, Check, Copy01, Link01, Dataflow01 } from "@untitledui/icons";
-import { BadgeGroup } from "@/components/base/badges/badge-groups";
-import { Badge, type BadgeColor } from "@/components/base/badges/badges";
 import { Button } from "@/components/base/buttons/button";
 import { Facebook, LinkedIn, X } from "@/components/foundations/social-icons";
-import { SectionDivider } from "@/components/shared-assets/section-divider";
 import { useClipboard } from "@/hooks/use-clipboard";
 import { cx } from "@/utils/cx";
 import { isReactComponent } from "@/utils/is-react-component";
@@ -21,7 +18,10 @@ const ArticleOverview = () => {
     const { copied, copy } = useClipboard();
 
     return (
-        <div className="bg-primary">
+        <div className="relative bg-primary">
+            {/* Decorative pattern at the bottom of the article */}
+            <div className="absolute h-6 bottom-0 left-0 right-0 mx-auto bg-[url(/patterns/detailed-endless-band-gold-140px.png)] bg-contain bg-repeat dark:drop-shadow-black/50 opacity-30 dark:opacity-40">
+            </div>
             {/* Article Header */}
             <ArticleHeaderSection
                 badge_addon_text="Sutta Piṭaka"
@@ -359,7 +359,9 @@ const ArticleOverview = () => {
                         </div>
                     </div>
                 </div>
+
             </div>
+
         </div>
     );
 };
@@ -391,8 +393,6 @@ const BlogPost05 = () => {
         <div className="bg-primary">
 
             <ArticleOverview />
-
-            <SectionDivider className="hidden pt-16 md:pt-24" />
 
             <CollectionGallerySuttaPitaka />
 

@@ -139,7 +139,7 @@ const PricingTierCardBanner = (props: {
     shadow?: string;
 }) => {
     return (
-        <div className={cx("flex flex-col overflow-hidden rounded-2xl bg-warm-off-50 dark:bg-muted-900 ring-1 ring-secondary_alt", props.shadow, props.className)}>
+        <div className={cx("flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-muted-900 ring-1 ring-secondary_alt", props.shadow, props.className)}>
             {props.banner && (
                 <div className="w-full bg-brand-300 px-2 py-3 text-center">
                     <p className="text-sm font-semibold text-black">{props.banner}</p>
@@ -237,7 +237,7 @@ const PricingSimpleBanner = () => {
             <Image src="/ornaments/endless-knot-corner-gold.png" width={260} height={260} alt="Plans background" className="hidden lg:block absolute top-4 left-4 scale-x-[-1] opacity-16 dark:opacity-25" />
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
-                    <h2 className="text-display-md font-extralight text-brand-700 dark:text-brand-400 md:text-display-xl"> Plans for everyone</h2>
+                    <h2 className="text-display-md font-extralight text-brand-800 dark:text-brand-400 md:text-display-xl"> Plans for everyone</h2>
                     <p className="mt-4 max-w-2xl text-md text-tertiary md:mt-6 md:text-lg">
                         Enjoy the <strong>Community</strong> and <strong>Discovery</strong> free plans. Buddhist texts and teachings should be accessible to everyone. Your <strong>Housekeeper</strong> subscription keeps the platform running and improving with new features.
                     </p>
@@ -408,7 +408,7 @@ const FeatureTextFeaturedIconLeft = ({ icon, title, subtitle, footer }: FeatureT
 const FeaturesIconsAndImage03 = () => {
     return (
         <section className="bg-primary">
-            <div className="bg-secondary pt-16 pb-[112px] md:pt-24 md:pb-40">
+            <div className="bg-tertiary pt-16 pb-[112px] md:pt-24 md:pb-40">
                 <div className="mx-auto grid w-full max-w-container grid-cols-1 gap-12 px-4 md:gap-16 md:px-8 lg:grid-cols-2 lg:gap-24">
                     <div className="flex w-full flex-col">
                         <span className="text-sm font-light text-brand-600 dark:text-brand-700 md:text-md">Our Approach</span>
@@ -482,7 +482,7 @@ const FAQSimple01 = () => {
                     </dl>
                 </div>
 
-                <div className="mt-12 flex flex-col items-center gap-6 rounded-2xl bg-white px-6 py-8 text-center md:mt-16 md:gap-8 md:px-8 md:py-8 md:pb-10">
+                <div className="mt-12 flex flex-col items-center gap-6 rounded-2xl bg-tertiary border border-secondary px-6 py-8 text-center md:mt-16 md:gap-8 md:px-8 md:py-8 md:pb-10">
                     <div className="flex items-end -space-x-4">
                         <Avatar
                             src="/placeholder-image-landscape.svg"
