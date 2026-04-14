@@ -4,19 +4,20 @@ import { useState } from "react";
 import { Dataflow01, Columns03, Rows03 } from "@untitledui/icons";
 import { Button } from "@/components/base/buttons/button";
 import { cx } from "@/utils/cx";
+import { openCanonNavigator } from "@/components-custom/navigation/canon-navigation/canon-navigation-modal-wrapper";
 
 export const TibetanCanonsDiagram = () => {
     const [isRowsLayout, setIsRowsLayout] = useState(true);
 
     return (
-        <section className="relative py-10 md:pt-24 md:pb-36 bg-[url(/floral-background-golden-outlines-01.webp)] bg-cover bg-bottom bg-no-repeat">
+        <section className="relative py-10 md:py-24 bg-[url(/ornaments/golden-wheel.png)] bg-center bg-contain bg-no-repeat">
             {/* Overlay layer for easy customization of color/transparency */}
-            <div className="absolute inset-0 bg-brand-50/97 dark:bg-black/88 z-0" aria-hidden="true" />
+            <div className="absolute inset-0 bg-brand-50/94 dark:bg-brand-800/94 z-0" aria-hidden="true" />
             {/* Section Header */}
             <div className="relative z-10 mx-auto max-w-container px-4 md:px-8 pb-4">
                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
-                    <span className="text-sm font-semibold text-brand-secondary md:text-md">Tibetan Canons</span>
-                    <h2 className="mt-1 text-display-md font-semibold text-primary md:text-display-lg">The Tibetan Canons at a glance</h2>
+                    <span className="text-sm font-light text-brand-secondary md:text-md">Tibetan Canons</span>
+                    <h2 className="text-display-md font-extralight text-brand-800 dark:text-brand-300 md:text-display-xl">The Tibetan Canon Divisions</h2>
                 </div>
             </div>
 
@@ -27,7 +28,7 @@ export const TibetanCanonsDiagram = () => {
                         onClick={() => setIsRowsLayout(true)}
                         className={cx(
                             "p-1 rounded-md transition-colors cursor-pointer",
-                            isRowsLayout ? "text-brand-700 bg-red-100 dark:bg-red-900/40" : "text-tertiary hover:text-secondary"
+                            isRowsLayout ? "text-brand-700 bg-brand-100 dark:bg-brand-900/40" : "text-tertiary hover:text-secondary"
                         )}
                         aria-label="Rows Layout"
                     >
@@ -37,7 +38,7 @@ export const TibetanCanonsDiagram = () => {
                         onClick={() => setIsRowsLayout(false)}
                         className={cx(
                             "p-1 rounded-md transition-colors cursor-pointer",
-                            !isRowsLayout ? "text-brand-700 bg-red-100 dark:bg-red-900/40" : "text-tertiary hover:text-secondary"
+                            !isRowsLayout ? "text-brand-700 bg-brand-100 dark:bg-brand-900/40" : "text-tertiary hover:text-secondary"
                         )}
                         aria-label="Columns Layout"
                     >
@@ -51,10 +52,10 @@ export const TibetanCanonsDiagram = () => {
             <div className="mt-4 transition-all duration-300">
                 {!isRowsLayout ? (
                     /* Tibetan Canons COLUMNS LAYOUT */
-                    <div className="mx-auto max-w-7xl px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-start animate-in fade-in duration-500">
+                    <div className="mx-auto max-w-7xl px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-start animate-in fade-in duration-500">
                         {/* The Kangyur */}
-                        <div className="flex flex-col items-center justify-start bg-secondary p-2 rounded-4xl drop-shadow-sm h-full max-w-xl mx-auto w-full">
-                            <h4 className="text-display-sm text-brand-700 dark:text-brand-700/80 text-center py-2">The Degé Kangyur</h4>
+                        <div className="flex flex-col gap-2 items-center justify-start bg-white/90 dark:bg-brand-950/80 p-4 rounded-2xl drop-shadow-sm h-full max-w-xl mx-auto w-full">
+                            <h4 className="text-display-xs text-brand-800 dark:text-brand-400">The Degé Kangyur</h4>
                             <p className="text-sm text-tertiary text-center pb-4 px-4 whitespace-pre-wrap">Translations of Indian scriptures into Tibetan (102 vols.)</p>
                             <div className="mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-2 rounded-3xl p-2">
                                 <div className="mx-auto w-full col-span-2 flex flex-col items-center justify-center gap-0 bg-blue-100/60 dark:bg-blue-800/40 px-10 py-2 rounded-2xl border border-blue-200 dark:border-blue-700">
@@ -103,15 +104,15 @@ export const TibetanCanonsDiagram = () => {
                                 </div>
                             </div>
                             <div className="my-4 flex flex-col gap-3 md:my-6 md:justify-center">
-                                <Button color="secondary" size="sm" iconLeading={Dataflow01}>
+                                <Button color="secondary" size="sm" iconTrailing={Dataflow01} onClick={() => openCanonNavigator()}>
                                     Kangyur Outline
                                 </Button>
                             </div>
                         </div>
 
                         {/* The Tengyur */}
-                        <div className="flex flex-col items-center justify-start bg-secondary p-2 rounded-4xl drop-shadow-md h-full max-w-xl mx-auto w-full">
-                            <h4 className="text-display-sm text-brand-700 dark:text-brand-700/80 text-center py-2">The Degé Tengyur</h4>
+                        <div className="flex flex-col gap-2 items-center justify-start bg-white/90 dark:bg-brand-950/80 p-4 rounded-2xl drop-shadow-sm h-full max-w-xl mx-auto w-full">
+                            <h4 className="text-display-xs text-brand-800 dark:text-brand-400">The Degé Tengyur</h4>
                             <p className="text-sm text-tertiary text-center pb-4 px-4 whitespace-pre-wrap">Translations of Indian Treatises in Tibetan (213 vols.)</p>
                             <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-2 rounded-3xl p-2">
                                 <div className="w-full flex flex-col items-center justify-center gap-0 bg-gray-200/60 dark:bg-gray-700/40 px-2 py-2 rounded-2xl border border-gray-300 dark:border-gray-600">
@@ -168,7 +169,7 @@ export const TibetanCanonsDiagram = () => {
                                 </div>
                             </div>
                             <div className="my-4 flex flex-col gap-3 md:my-6 md:justify-center">
-                                <Button color="secondary" size="sm" iconLeading={Dataflow01}>
+                                <Button color="secondary" size="sm" iconTrailing={Dataflow01} onClick={() => openCanonNavigator()}>
                                     Tengyur Outline
                                 </Button>
                             </div>
@@ -176,24 +177,24 @@ export const TibetanCanonsDiagram = () => {
                     </div>
                 ) : (
                     /* Tibetan Canons ROWS LAYOUT */
-                    <div className="mx-auto max-w-container px-4 md:px-6 grid grid-cols-1 gap-4 items-start animate-in fade-in duration-500">
+                    <div className="mx-auto max-w-container px-4 md:px-6 grid grid-cols-1 gap-8 items-start animate-in fade-in duration-500">
                         {/* The Degé Kangyur - Rows Layout */}
-                        <div className="flex flex-col bg-secondary p-6 gap-2 rounded-4xl drop-shadow-sm">
+                        <div className="flex flex-col bg-white/90 dark:bg-brand-950/80 p-6 gap-4 rounded-2xl drop-shadow-sm">
                             <div className="flex flex-row items-center justify-between gap-4">
                                 <div className="flex flex-col">
                                     <h4 className="text-display-xs text-brand-700 dark:text-brand-700/80">The Degé Kangyur</h4>
                                     <p className="text-xs text-tertiary">Translations of Indian scriptures into Tibetan (102 vols.)</p>
                                 </div>
                                 <div className="flex flex-col gap-3 md:justify-center pb-1">
-                                    <Button color="secondary" size="sm" iconLeading={Dataflow01}>
-                                        Outline
+                                    <Button color="secondary" size="sm" iconTrailing={Dataflow01} onClick={() => openCanonNavigator()}>
+                                        Kangyur Outline
                                     </Button>
                                 </div>
                             </div>
                             <div className="mx-auto w-full grid grid-cols-1 md:grid-cols-4 gap-2 items-start justify-center rounded-3xl mt-2">
                                 <div className="mx-auto w-full h-full flex flex-col items-center justify-center gap-0 bg-blue-100/60 dark:bg-blue-900/40 px-10 py-3 rounded-2xl border border-blue-200 dark:border-blue-700">
                                     <p className="text-lg font-light text-primary/70 text-center tracking-tight">འདུལ་བ།</p>
-                                    <p className="text-md font-bold text-center text-secondary">Disciplinary Rules</p>
+                                    <p className="text-md font-bold text-center text-secondary">Discipline</p>
                                 </div>
                                 <div className="mx-auto w-full h-full flex flex-col items-center justify-center gap-0 bg-yellow-100/60 dark:bg-yellow-900/40 px-10 py-3 rounded-2xl border border-yellow-300 dark:border-yellow-800">
                                     <p className="text-lg font-light text-primary/70 text-center tracking-tight">ཤེར་ཕྱིན།</p>
@@ -239,15 +240,15 @@ export const TibetanCanonsDiagram = () => {
                         </div>
 
                         {/* The Tengyur - Rows Layout */}
-                        <div className="flex flex-col bg-secondary p-6 gap-2 rounded-4xl drop-shadow-sm">
+                        <div className="flex flex-col bg-white/90 dark:bg-brand-950/80 p-6 gap-4 rounded-2xl drop-shadow-sm">
                             <div className="flex flex-row items-center justify-between gap-4">
                                 <div className="flex flex-col">
                                     <h4 className="text-display-xs text-brand-700 dark:text-brand-700/80">The Degé Tengyur</h4>
                                     <p className="text-xs text-tertiary">Translations of Indian Commentaries in Tibetan (213 vols.)</p>
                                 </div>
                                 <div className="flex flex-col gap-3 md:justify-center pb-1">
-                                    <Button color="secondary" size="sm" iconLeading={Dataflow01}>
-                                        Outline
+                                    <Button color="secondary" size="sm" iconTrailing={Dataflow01} onClick={() => openCanonNavigator()}>
+                                        Tengyur Outline
                                     </Button>
                                 </div>
                             </div>
@@ -282,7 +283,7 @@ export const TibetanCanonsDiagram = () => {
                                 </div>
                                 <div className="mx-auto w-full h-full flex flex-col items-center justify-start gap-0 bg-blue-100/60 dark:bg-blue-800/40 px-2 py-3 rounded-2xl border border-blue-200 dark:border-blue-700">
                                     <p className="text-lg font-light text-primary/70 text-center">འདུལ་བ།</p>
-                                    <p className="text-md font-bold text-center text-secondary">Discipline</p>
+                                    <p className="text-md font-bold text-center text-secondary">Discipline Treatises</p>
                                 </div>
                                 <div className="mx-auto w-full h-full flex flex-col items-center justify-start gap-0 bg-olive-200/70 dark:bg-olive-800/40 px-2 py-3 rounded-2xl border border-olive-300 dark:border-olive-700">
                                     <p className="text-lg font-light text-primary/70 text-center">སྐྱེས་རབས།</p>

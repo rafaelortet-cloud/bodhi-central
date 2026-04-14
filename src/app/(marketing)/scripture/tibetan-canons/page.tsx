@@ -4,6 +4,7 @@ import { TengyurDivisionsSection } from '@/components/marketing/collection-secti
 import { Button } from '@/components/base/buttons/button';
 import { ArrowDown } from "@untitledui/icons";
 import { TibetanCanonsDiagram } from "@/components/marketing/sections/tibetan-canons-diagram";
+import { BlogSectionTibetanCanonOverviews } from '@/components-custom/blog/blog-tibetan-canon-overviews';
 
 export default function TibetanCanonsPage() {
     return (
@@ -51,6 +52,7 @@ export default function TibetanCanonsPage() {
             <KangyurDivisionsSection />
             <TengyurDivisionsSection />
             <TibetanCanonsDiagram />
+            <BlogSectionTibetanCanonOverviews />
         </>
     );
 }
