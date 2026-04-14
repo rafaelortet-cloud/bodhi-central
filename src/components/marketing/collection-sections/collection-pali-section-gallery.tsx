@@ -13,11 +13,11 @@ interface PaliSection {
     english_title: string;
     pali_title: string;
     author_pali: string;
-    pitaka_section_english: string;
+    pitaka_division_english: string;
     short_description: string;
     thumbnail_cover: string;
     pitaka_division: string;
-    section_abbreviation: string;
+    division_abbreviation: string;
     section_numbers: string;
     color: string;
     dark_color: string;
@@ -57,7 +57,7 @@ const PaliSectionCard = ({ section }: { section: PaliSection }) => {
                 className={`absolute inset-0 z-0 size-full top-0 cursor-grab object-cover rounded-sm ${isFlipped ? "opacity-0 invisible" : "group-hover:opacity-0 group-hover:invisible"}`}
             />
             <div className={`absolute flex items-end justify-center z-200 w-16 h-14 top-[-28px] right-[8px] pb-1 ${section.color} rounded-full`}>
-                <h6 className=" text-brand-100">{section.section_abbreviation}</h6>
+                <h6 className=" text-brand-100">{section.division_abbreviation}</h6>
             </div>
 
             <div className={`z-10 bg-linear-to-t from-black/30 to-black/0 pt-16 md:pt-20 lg:pt-24 rounded-b-sm ${isFlipped ? "opacity-0 invisible" : "group-hover:opacity-0 group-hover:invisible"}`}>
@@ -67,7 +67,7 @@ const PaliSectionCard = ({ section }: { section: PaliSection }) => {
 
                     <div className="flex mt-2 justify-between items-top">
                         <div className="flex flex-col gap-1">
-                            <p className="mt-4 text-sm font-regular text-brand-300">{section.pitaka_section_english}</p>
+                            <p className="mt-4 text-sm font-regular text-brand-300">{section.pitaka_division_english}</p>
                             <p className="text-sm font-normal text-white uppercase">{section.pitaka_division}</p>
                             <p className="text-xs font-normal text-white">{section.section_numbers}</p>
                         </div>
@@ -86,8 +86,8 @@ const PaliSectionCard = ({ section }: { section: PaliSection }) => {
                 {/* Card Reversed Side */}
                 <div className="flex flex-col gap-2 mt-1 items-top">
                     <div className="flex flex-col gap-0">
-                        <p className="text-sm font-normal pb-2">{section.pitaka_section_english}</p>
-                        <h3 className="text-lg font-medium text-brand-200">{section.english_title}</h3>
+                        <p className="text-sm font-normal pb-2">{section.pali_title}</p>
+                        <h3 className="text-lg font-medium text-brand-300">{section.english_title}</h3>
                     </div>
                     <p className="mt-2 text-sm md:text-regular text-balance pb-4">{section.short_description}</p>
                 </div>
@@ -95,9 +95,9 @@ const PaliSectionCard = ({ section }: { section: PaliSection }) => {
                 <Button
                     size="sm"
                     href={`/reader/pali-canon/${section.pali_section_slug}`}
-                    className="bg-black/20 hover:bg-black/30 border-0.5 border-white/50 hover:border-white/50 text-white/50 hover:text-white/60 dark:bg-gray-900/50 dark:border-gray-900/50 dark:text-gray-400"
+                    className="bg-black/20 hover:bg-black/30 border-0.5 border-white/50 hover:border-white/50 text-white/80 hover:text-white/90 dark:bg-gray-900/50 dark:border-gray-900/50 dark:text-gray-400"
                 >
-                    Explore section
+                    Open section
                 </Button>
             </div>
         </Carousel.Item>

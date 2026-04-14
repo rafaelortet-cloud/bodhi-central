@@ -1,25 +1,26 @@
 "use client";
 
-import { BookOpen01, Link01, Dataflow01, ArrowRight, Download01, Bookmark } from "@untitledui/icons";
+import { BookOpen01, Link01, Dataflow01, ArrowRight, ArrowLeft, Download01, Bookmark } from "@untitledui/icons";
 import { FileIcon } from "@untitledui/file-icons"
 import { Button } from "@/components/base/buttons/button";
 import { Facebook, LinkedIn, X } from "@/components/foundations/social-icons";
 import Image from "next/image";
-import { BadgeGroup } from "@/components/base/badges/badge-groups";
 import Link from "next/link";
 import { openCanonNavigator } from "@/components-custom/navigation/canon-navigation/canon-navigation-modal-wrapper";
 
 
 export const TableOfContents = () => {
     return (
-        <div className="sticky z-45 top-12 w-full flex flex-col items-start gap-6 px-6 py-6 bg-olive-100/30 dark:bg-neutral-950/20 border-r border-secondary rounded-tl-2xl h-[calc(100dvh-48px)]">
-            <div className="flex flex-col gap-4">
-                <h2 className="text-display-xs text-brand-primary">Table of contents</h2>
+        <div className="sticky flex flex-col top-12 px-6 py-4 mx-auto z-45 border border-secondary rounded-l-2xl max-h-full">
+            <div className="py-2">
+                <h5 className="text-display-xs text-brand-primary">Table of Contents</h5>
+            </div>
+            <div className="flex flex-col w-full py-4 overflow-y-auto scrollbar-hide h-[calc(100vh-4rem)]">
                 <ul className="flex flex-col gap-2">
                     {[
                         { title: "Title", href: "#title-page", indent: "ml-0" },
                         { title: "Introduction to the Reader", href: "#introduction-to-the-reader", indent: "ml-0" },
-                        { title: "Origins", href: "#origins", indent: "ml-0" },
+                        { title: "Auspicious Sample Text", href: "#auspicious-sample-text", indent: "ml-0" },
                         { title: "Textual Transmission and the Schools", href: "#textual-transmission-and-the-schools", indent: "ml-0" },
                         { title: "Content of the Vinaya Pitaka", href: "#content", indent: "ml-0" },
                         { title: "Suttavibhaṅga", href: "#suttavibhaṅga", indent: "ml-6" },
@@ -37,45 +38,45 @@ export const TableOfContents = () => {
                     ))}
                 </ul>
             </div>
+            <div className="hidden px-6 py-2 border-t border-secondary">
+                <h5 className=" text-tertiary text-center">[TOC utilities]</h5>
+            </div>
         </div>
     );
 };
 
 export const TextCanvasSingle = () => {
     return (
-        <div className="mx-auto prose-reader pt-6">
-            <div className="mx-auto w-full py-4">
-                <section className="relative mx-auto overflow-hidden py-2 md:pb-6">
+        <div className="mx-auto prose-reader flex flex-col px-2">
+            <div className="flex justify-between py-4">
+                <ArrowLeft size={16} />
+                <ArrowRight size={16} />
+            </div>
+            <div className="py-2 overflow-y-auto scrollbar-hide h-[calc(100dvh-6rem)]">
+
+                <section className="relative mx-auto md:pb-6">
                     <div className="mx-auto grid max-w-container grid-cols-1 items-center justify-items-center gap-8 lg:grid-cols-[1.4fr_3fr] lg:justify-items-start">
-                        <div className="relative lg:w-full lg:h-full lg:min-h-80">
+                        <div className="relative lg:w-full lg:h-full lg:min-h-70">
                             {/* Light mode image (hidden in dark mode) */}
                             <img
                                 alt="Text Cover"
-                                className="inset-0 h-auto w-full cols- object-top dark:hidden md:h-70 md:w-auto lg:h-80 lg:object-cover"
+                                className="inset-0 h-auto w-full cols- object-top dark:hidden md:h-70 md:w-auto lg:h-75 lg:object-cover"
                                 src="/textCovers/buddha-sakyamuni-600.jpg"
                             />
                             {/* Dark mode image (hidden in light mode) */}
                             <img
                                 alt="Text Cover"
-                                className="inset-0 h-auto w-full max-w-none object-cover not-dark:hidden md:h-70 md:w-auto lg:h-80 lg:object-cover"
+                                className="inset-0 h-auto w-full max-w-none object-cover not-dark:hidden md:h-70 md:w-auto lg:h-75 lg:object-cover"
                                 src="/textCovers/buddha-sakyamuni-600.jpg"
                             />
                         </div>
                         <div id="title-page" className="flex max-w-3xl flex-col items-center text-center lg:items-start lg:text-left">
-                            <a href="#" className="hidden rounded-full outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-2">
-                                <BadgeGroup className="hidden md:flex" size="lg" addonText="Categories" iconTrailing={ArrowRight} theme="light" color="brand">
-                                    Topics
-                                </BadgeGroup>
-                                <BadgeGroup className="md:hidden" size="md" addonText="Categories" iconTrailing={ArrowRight} theme="light" color="brand">
-                                    Topics
-                                </BadgeGroup>
-                            </a>
 
                             <h1 className="mt-4 text-display-md font-semibold text-primary md:text-display-lg lg:text-display-xl">
                                 Welcome to Bodhi Central <br />Readership and Learning
                             </h1>
                             <p className="description mt-4 max-w-lg text-lg text-tertiary md:mt-6 md:text-xl">
-                                We are delighted to invite you to explore this space of clear intent, offering you an illuminating collection of texts and teachings to inspire your study and practice.
+                                We are delighted to invite you to explore this space of clear intent, offering you a treasure trove of texts and teachings to inspire your study and practice.
                             </p>
                             <Button color="primary" size="md" className="mt-4" onClick={() => openCanonNavigator()}>
                                 Find a text
@@ -83,12 +84,12 @@ export const TextCanvasSingle = () => {
                         </div>
                     </div>
                 </section>
-                <h2 id="introduction-to-the-reader">Introduction to the Reader</h2>
+                <h2 id="introduction-to-the-reader">A Word of Welcome</h2>
                 <p className="lead first-letter:float-left first-letter:text-7xl first-letter:leading-12 first-letter:mr-1 first-letter:font-serif first-letter:font-extralight first-letter:text-brand-400 dark:first-letter:text-brand-200">
-                    The Bodhi Central experience is a digital sanctuary of scriptures, education, and dharma open to everyone. The platform's mission is to provide you with clear access to authentic sources and teachings from the living transmissions of the awakening. Whether you are beginning your journey or deepening your understanding, may this space of readership and learning inspire you and support your journey.
+                    The Bodhi Central experience is a digital sanctuary of scriptures, education, and dharma open to everyone. The platform's mission is to expose you to authentic sources and teachings from the living transmissions of the awakening. Whether you are beginning your journey or deepening your understanding, may this space of readership and learning inspire you and support your journey. This platform is also a space for the community of practitioners to gather and share their knowledge and insights. May it be a source of benefit for all beings.
                 </p>
                 <hr />
-                <h2 id="origins">Sample Text</h2>
+                <h2 id="auspicious-sample-text">Auspicious Sample Text</h2>
                 <p>
                     The word <i>vinaya</i>, here translated as “Monastic Law,” originally probably meant “training,” as can be seen from its usage in the Sutta Piṭaka, “the Basket of Discourses.” In this sense it complements the Dhamma, the doctrine or teaching, which provides the instructions on how the training is to be achieved. The compound <i>dhamma-vinaya</i> is a common one in the earliest literature and might be rendered as “theory and practice.” Gradually the meaning shifted to refer to the rules of conduct instead, thus referring to the training in a narrower sense. Although the former usage is more common in the suttas, it is this latter usage of vinaya which has become the dominant one and which has prevailed to the present day.
                 </p>
@@ -157,11 +158,11 @@ export const TextCanvasSingle = () => {
                     The Vinaya Piṭaka is divided into two main parts: the Suttavibhaṅga, “The Analysis of the Rules,” and The Khandhakas, “the Chapters.” The individual schools sometimes have additional texts, such as the Parivāra, “The Compendium,” belonging to the Theravāda tradition, and the Uttaragrantha belonging to the Mūlasarvāstivādins.
                 </p>
                 {/* Vinaya Piṭaka */}
-                <div className="flex flex-col bg-secondary px-6 py-4 gap-2 rounded-4xl drop-shadow-sm">
+                <div className="flex flex-col bg-secondary px-4 pt-2 pb-4 gap-2 rounded-xl border border-secondary drop-shadow-sm">
                     <div className="flex flex-row items-center justify-between gap-4">
                         <h4 className="text-display-xs text-brand-700 dark:text-brand-700/80">Vinaya Piṭaka</h4>
                         <div className="flex flex-col gap-3 md:justify-center pb-1">
-                            <Button color="secondary" size="sm" iconLeading={Dataflow01}>
+                            <Button color="secondary" size="sm" iconLeading={Dataflow01} onClick={() => openCanonNavigator()}>
                                 Outline
                             </Button>
                         </div>
@@ -253,65 +254,67 @@ export const TextCanvasSingle = () => {
                     </ul>
                 </div>
             </div>
+
         </div>
     );
 };
 
 export const AncillaryPanel = () => {
     return (
-        <div className="sticky top-12 mx-auto z-45 flex-1 border-l border-secondary">
-            <div className="prose-reader flex flex-col w-full bg-olive-100/30 dark:bg-neutral-950/20 px-6 py-4 rounded-tr-2xl h-[calc(100dvh-52px)]">
-                <h3 className=" text-primary">Ancillary Panels</h3>
-                <p className="text-md text-tertiary">Various panels of ancillary content are accessible from the tools in the right sidebar:</p>
+        <div className="sticky prose-reader flex flex-col top-12 px-6 py-4 mx-auto z-45 border border-secondary rounded-r-2xl max-h-full">
+            <div className="py-2">
+                <h5 className="text-display-xs text-brand-primary">Ancillary Right Panels</h5>
+            </div>
+            <div className="flex flex-col w-full overflow-y-auto scrollbar-hide h-[calc(100vh-4rem)]">
                 <h4 className=" text-primary"><Link01 size={18} />Connections and Parallels</h4>
-                <p className="text-md text-tertiary">Acting on the headings and paragraphs in the active text will display the connections and parallels with other texts and sections of the canons. For more information on the types of parallels, see our <Link href="https://bodhi-central-docs.vercel.app/research/pali-canon/connections-and-parallels" target="_blank" rel="noopener noreferrer" className="text-primary underline">Documentation</Link>.</p>
+                <p className="text-md text-tertiary">Connections and parallels with other texts and canon sections. For more information on the types of parallels, see our <Link href="https://bodhi-central-docs.vercel.app/research/pali-canon/connections-and-parallels" target="_blank" rel="noopener noreferrer" className="text-primary underline">Documentation</Link>.</p>
                 <h4 className=" text-primary"><BookOpen01 size={18} />Recommended Reading</h4>
-                <p className="text-md text-tertiary">Extend the utility of the reader by accessing overviews and recommended readings related to the active text.</p>
+                <p className="text-md text-tertiary">Extend your reading by accessing overviews, commentaries, and recommended readings related to the active text.</p>
                 <h4 className=" text-primary"><Bookmark size={18} />Bookmarks</h4>
-                <p className="text-md text-tertiary">This is a feature for registered users. After signing up to the free Discovery plan, users can bookmark sections of the text and save searches for future reference. </p>
-                <div className="w-full border-t border-primary mt-auto">
-                    <h4 className="text-primary"><Download01 size={18} />Downloads</h4>
-                    <div className="flex gap-1 dark:opacity-90">
-                        <Button color="tertiary" size="sm" iconLeading={<FileIcon type="pdf" variant="gray" className="drop-shadow-md dark:invert-25" aria-label="Download PDF" />} />
-                        <Button color="tertiary" size="sm" iconLeading={<FileIcon type="txt" variant="gray" className="drop-shadow-md dark:invert-25" aria-label="Download TXT" />} />
-                        <Button color="tertiary" size="sm" iconLeading={<FileIcon type="html" variant="gray" className="drop-shadow-md dark:invert-25" aria-label="Download HTML" />} />
+                <p className="text-md text-tertiary">This is a feature for registered users. After signing up to the free Discovery plan, users can bookmark a limited amount of texts as well as save searches. </p>
+                <div className="w-full border-t pb-4 border-secondary mt-auto">
+                    <h4 className="text-primary">Downloads</h4>
+                    <div className="flex gap-3 dark:opacity-90">
+                        <Button color="secondary" size="sm" iconLeading={<FileIcon type="pdf" variant="gray" aria-label="Download PDF" />} />
+                        <Button color="secondary" size="sm" iconLeading={<FileIcon type="txt" variant="gray" aria-label="Download TXT" />} />
+                        <Button color="secondary" size="sm" iconLeading={<FileIcon type="html" variant="gray" aria-label="Download HTML" />} />
                     </div>
-                    <h4 className="text-primary">Social sharing</h4>
-                    <div className="flex gap-3">
-                        <Button color="secondary" size="md" className="text-fg-quaternary" iconLeading={Link01} />
-                        <Button color="secondary" size="md" className="text-fg-quaternary" iconLeading={X} />
-                        <Button color="secondary" size="md" className="text-fg-quaternary" iconLeading={Facebook} />
-                        <Button color="secondary" size="md" className="text-fg-quaternary" iconLeading={LinkedIn} />
-                    </div>
-
+                </div>
+            </div>
+            <div className="pt-4 border-t border-secondary">
+                <div className="flex justify-end gap-3">
+                    <Button color="secondary" size="md" className="text-fg-quaternary" iconLeading={Link01} />
+                    <Button color="secondary" size="md" className="text-fg-quaternary" iconLeading={X} />
+                    <Button color="secondary" size="md" className="text-fg-quaternary" iconLeading={Facebook} />
+                    <Button color="secondary" size="md" className="text-fg-quaternary" iconLeading={LinkedIn} />
                 </div>
             </div>
         </div>
     );
 };
 
-
 export default function ReaderPage() {
     return (
         <>
             {/* The MAIN Reader wrapper */}
-            <main className="w-full px-14">
+            <main className="fixed top-12 bottom-0 w-full px-13 bg-tertiary">
 
                 {/* TEXT READER CANVAS */}
-                <div className="w-full">
-                    <div className="mx-auto relative flex flex-nowrap w-full bg-primary rounded-t-2xl">
 
-                        <div className="hidden md:block w-[22%] min-w-70 max-w-110">
-                            <TableOfContents />
-                        </div>
-                        {/* Reader Canvas wrapper */}
-                        <div className="mx-auto w-[55%] px-2 md:px-3 lg:px-5 xl:px-12 min-w-96 max-w-container">
-                            <TextCanvasSingle />
-                        </div>
-                        <div className="w-[28%] hidden lg:block max-w-110">
-                            <AncillaryPanel />
-                        </div>
-                    </div></div>
+                <div className="relative top-0 bottom-0 mx-auto flex flex-nowrap w-full h-full rounded-2xl overflow-hidden">
+                    {/* Left Sidebar Panels: Table of Contents, Textual Outline, Front & Back matters when needed. */}
+                    <div className="hidden md:block w-[22%] min-w-70 max-w-110 max-h-auto bg-secondary">
+                        <TableOfContents />
+                    </div>
+                    {/* Central Reader Canvas wrapper */}
+                    <div className="relative top-0 bottom-0 mx-auto w-[55%] px-2 md:px-4 lg:px-6 xl:px-10 min-w-96 max-w-container bg-primary max-h-auto border-t border-secondary">
+                        <TextCanvasSingle />
+                    </div>
+                    {/* Right Sidebar Panels: Ancillary content when needed. */}
+                    <div className="hidden w-[28%] lg:block max-w-110 max-h-auto bg-secondary">
+                        <AncillaryPanel />
+                    </div>
+                </div>
 
             </main>
         </>

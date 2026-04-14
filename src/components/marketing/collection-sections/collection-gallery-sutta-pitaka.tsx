@@ -3,6 +3,7 @@
 import { Dataflow01 } from "@untitledui/icons";
 import { Button } from "@/components/base/buttons/button";
 import { CollectionPaliSectionGallery } from "./collection-pali-section-gallery";
+import { openCanonNavigator } from "@/components-custom/navigation/canon-navigation/canon-navigation-modal-wrapper";
 
 export const CollectionGallerySuttaPitaka = () => {
     return (
@@ -11,7 +12,7 @@ export const CollectionGallerySuttaPitaka = () => {
                 {/* <!-- Collection Gallery Header --> */}
                 <div className="flex w-full flex-col justify-between md:flex-row">
                     <div className="flex flex-1 flex-col max-w-280 pr-4 md:pr-24">
-                        <h2 className="text-display-md text-brand-700 dark:text-brand-200 md:text-display-lg">Sutta Piṭaka</h2>
+                        <h2 className="text-display-md font-extralight text-brand-800 dark:text-brand-300 md:text-display-lg">Sutta Piṭaka</h2>
                         <p className="mt-1 text-base text-tertiary md:mt-2 md:text-lg text-balance">
                             The Sutta Piṭaka, the “basket of discourses,” is the most important body of sacred scripture in Buddhism. This collection contains the teachings of the Buddha and his disciples, as collected and transmitted by the schools of early Buddhism. This is the well-spring of Dhamma, from which the teachings and practices of the many schools of Buddhism are drawn.
                         </p>
@@ -20,8 +21,8 @@ export const CollectionGallerySuttaPitaka = () => {
                         <Button href="/canon-overviews/sutta-overview" color="secondary" size="md">
                             Overview
                         </Button>
-                        <Button href="#" color="secondary" size="md" iconLeading={Dataflow01}>
-                            Suttapiṭaka Outline
+                        <Button color="secondary" size="md" iconTrailing={Dataflow01} onClick={() => openCanonNavigator()} >
+                            Sutta Outline
                         </Button>
 
                     </div>

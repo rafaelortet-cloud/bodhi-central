@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Dataflow01, Columns03, Rows03 } from "@untitledui/icons";
 import { Button } from "@/components/base/buttons/button";
 import { cx } from "@/utils/cx";
+import { openCanonNavigator } from "@/components-custom/navigation/canon-navigation/canon-navigation-modal-wrapper";
 
 export const ThreePitakasDiagram = () => {
     const [isRowsLayout, setIsRowsLayout] = useState(true);
@@ -27,7 +28,7 @@ export const ThreePitakasDiagram = () => {
                         onClick={() => setIsRowsLayout(true)}
                         className={cx(
                             "p-1 rounded-md transition-colors cursor-pointer",
-                            isRowsLayout ? "text-brand-700 bg-orange-100 dark:bg-orange-900/40" : "text-tertiary hover:text-secondary"
+                            isRowsLayout ? "text-brand-700 bg-brand-100 dark:bg-brand-900/40" : "text-tertiary hover:text-secondary"
                         )}
                         aria-label="Rows Layout"
                     >
@@ -37,7 +38,7 @@ export const ThreePitakasDiagram = () => {
                         onClick={() => setIsRowsLayout(false)}
                         className={cx(
                             "p-1 rounded-md transition-colors cursor-pointer",
-                            !isRowsLayout ? "text-brand-700 bg-orange-100 dark:bg-orange-900/40" : "text-tertiary hover:text-secondary"
+                            !isRowsLayout ? "text-brand-700 bg-brand-100 dark:bg-brand-900/40" : "text-tertiary hover:text-secondary"
                         )}
                         aria-label="Columns Layout"
                     >
@@ -70,14 +71,14 @@ export const ThreePitakasDiagram = () => {
                                 </div>
                             </div>
                             <div className="flex flex-col gap-3 items-end">
-                                <Button color="tertiary" size="sm" iconTrailing={Dataflow01}>
-                                    Vinayapiṭaka Outline
+                                <Button color="tertiary" size="sm" iconTrailing={Dataflow01} onClick={() => openCanonNavigator()}>
+                                    Vinaya Outline
                                 </Button>
                             </div>
                         </div>
 
                         {/* Sutta Piṭaka */}
-                        <div className="flex flex-col gap-5 justify-center bg-white/90 dark:bg-brand-950/80 p-6 rounded-2xl drop-shadow-md h-full">
+                        <div className="flex flex-col gap-5 justify-center bg-white/90 dark:bg-brand-950/80 p-6 rounded-2xl drop-shadow-sm h-full">
                             <h4 className="text-display-xs text-brand-800 dark:text-brand-400">Sutta Piṭaka Divisions</h4>
                             <div className="mx-auto w-full flex flex-col justify-center gap-2 grow">
                                 <div className="mx-auto w-full h-full flex flex-col items-center justify-center gap-0 bg-emerald-100/60 dark:bg-emerald-950/80 px-2 py-4 rounded-2xl border border-emerald-200 dark:border-emerald-800">
@@ -102,14 +103,14 @@ export const ThreePitakasDiagram = () => {
                                 </div>
                             </div>
                             <div className="flex flex-col gap-3 items-end">
-                                <Button color="tertiary" size="sm" iconTrailing={Dataflow01}>
-                                    Suttapiṭaka Outline
+                                <Button color="tertiary" size="sm" iconTrailing={Dataflow01} onClick={() => openCanonNavigator()}>
+                                    Sutta Outline
                                 </Button>
                             </div>
                         </div>
 
                         {/* Abhidhamma Piṭaka */}
-                        <div className="flex flex-col gap-5 justify-center bg-white/90 dark:bg-brand-950/80 p-6 rounded-2xl drop-shadow-md h-full">
+                        <div className="flex flex-col gap-5 justify-center bg-white/90 dark:bg-brand-950/80 p-6 rounded-2xl drop-shadow-sm h-full">
                             <h4 className="text-display-xs text-brand-800 dark:text-brand-400">Abhidhamma Piṭaka (7 Books)</h4>
                             <div className="mx-auto w-full flex flex-col items-center justify-center gap-2 grow">
                                 <div className="mx-auto w-full h-full flex flex-col items-center justify-center gap-0 bg-olive-200/80 dark:bg-olive-800/80 px-2 py-3 rounded-2xl border border-olive-300 dark:border-olive-700">
@@ -142,22 +143,22 @@ export const ThreePitakasDiagram = () => {
                                 </div>
                             </div>
                             <div className="flex flex-col items-end">
-                                <Button color="tertiary" size="sm" iconTrailing={Dataflow01}>
-                                    Abhidhammapiṭaka Outline
+                                <Button color="tertiary" size="sm" iconTrailing={Dataflow01} onClick={() => openCanonNavigator()}>
+                                    Abhidhamma Outline
                                 </Button>
                             </div>
                         </div>
                     </div>
                 ) : (
                     /* Tipiṭaka Baskets ROWS LAYOUT */
-                    <div className="mx-auto max-w-container px-4 md:px-6 grid grid-cols-1 gap-4 items-start animate-in fade-in duration-500">
+                    <div className="mx-auto max-w-container px-4 md:px-6 grid grid-cols-1 gap-8 items-start animate-in fade-in duration-500">
                         {/* Vinaya Piṭaka */}
-                        <div className="flex flex-col bg-white/90 dark:bg-brand-950/80 p-6 gap-2 rounded-2xl drop-shadow-sm">
+                        <div className="flex flex-col bg-white/90 dark:bg-brand-950/80 px-6 pt-5 pb-6 gap-4 rounded-2xl drop-shadow-sm">
                             <div className="flex flex-row items-center justify-between gap-4">
                                 <h4 className="text-display-xs text-brand-800 dark:text-brand-400">Vinaya Piṭaka Divisions</h4>
                                 <div className="flex flex-col gap-3 md:justify-center pb-1">
-                                    <Button color="tertiary" size="sm" iconLeading={Dataflow01}>
-                                        Outline
+                                    <Button color="tertiary" size="sm" iconTrailing={Dataflow01} onClick={() => openCanonNavigator()}>
+                                        Vinaya Outline
                                     </Button>
                                 </div>
                             </div>
@@ -178,12 +179,12 @@ export const ThreePitakasDiagram = () => {
                         </div>
 
                         {/* Sutta Piṭaka */}
-                        <div className="flex flex-col bg-white/90 dark:bg-brand-950/80 p-6 gap-2 rounded-2xl drop-shadow-sm">
+                        <div className="flex flex-col bg-white/90 dark:bg-brand-950/80 px-6 pt-4 pb-6 gap-4 rounded-2xl drop-shadow-sm">
                             <div className="flex flex-row items-center justify-between gap-4">
                                 <h4 className="text-display-xs text-brand-800 dark:text-brand-400">Sutta Piṭaka Divisions</h4>
                                 <div className="flex flex-col gap-3 md:justify-center pb-1">
-                                    <Button color="tertiary" size="sm" iconLeading={Dataflow01}>
-                                        Outline
+                                    <Button color="tertiary" size="sm" iconTrailing={Dataflow01} onClick={() => openCanonNavigator()}>
+                                        Sutta Outline
                                     </Button>
                                 </div>
                             </div>
@@ -212,12 +213,12 @@ export const ThreePitakasDiagram = () => {
                         </div>
 
                         {/* Abhidhamma Piṭaka */}
-                        <div className="flex flex-col bg-white/90 dark:bg-brand-950/80 p-6 gap-2 rounded-2xl drop-shadow-sm">
+                        <div className="flex flex-col bg-white/90 dark:bg-brand-950/80 px-6 pt-4 pb-6 gap-4 rounded-2xl drop-shadow-sm">
                             <div className="flex flex-row items-center justify-between gap-4">
                                 <h4 className="text-display-xs text-brand-800 dark:text-brand-400">Abhidhamma Piṭaka (Seven Books)</h4>
                                 <div className="flex flex-col gap-3 md:justify-center pb-1">
-                                    <Button color="tertiary" size="sm" iconLeading={Dataflow01}>
-                                        Outline
+                                    <Button color="tertiary" size="sm" iconTrailing={Dataflow01} onClick={() => openCanonNavigator()}>
+                                        Abhidhamma Outline
                                     </Button>
                                 </div>
                             </div>

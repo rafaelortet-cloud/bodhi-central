@@ -5,7 +5,6 @@ import { FileIcon } from "@untitledui/file-icons"
 import { Button } from "@/components/base/buttons/button";
 import { Facebook, LinkedIn, X } from "@/components/foundations/social-icons";
 import Image from "next/image";
-import { BadgeGroup } from "@/components/base/badges/badge-groups";
 import Link from "next/link";
 import { openCanonNavigator } from "@/components-custom/navigation/canon-navigation/canon-navigation-modal-wrapper";
 
@@ -13,7 +12,7 @@ import { openCanonNavigator } from "@/components-custom/navigation/canon-navigat
 export const TableOfContents = () => {
     return (
         <div className="sticky flex flex-col top-12 px-6 py-4 mx-auto z-45 border border-secondary rounded-l-2xl max-h-full">
-            <div className="py-2 border-b border-secondary">
+            <div className="py-2">
                 <h5 className="text-display-xs text-brand-primary">Table of Contents</h5>
             </div>
             <div className="flex flex-col w-full py-4 overflow-y-auto scrollbar-hide h-[calc(100vh-4rem)]">
@@ -48,12 +47,12 @@ export const TableOfContents = () => {
 
 export const TextCanvasSingle = () => {
     return (
-        <div className="relative mx-auto prose-reader flex flex-col px-2 border-secondary ">
+        <div className="mx-auto prose-reader flex flex-col px-2">
             <div className="flex justify-between py-4">
                 <ArrowLeft size={16} />
                 <ArrowRight size={16} />
             </div>
-            <div className="py-2 overflow-y-auto scrollbar-hide h-[calc(100vh-6rem)]">
+            <div className="py-2 overflow-y-auto scrollbar-hide h-[calc(100dvh-6rem)]">
 
                 <section className="relative mx-auto md:pb-6">
                     <div className="mx-auto grid max-w-container grid-cols-1 items-center justify-items-center gap-8 lg:grid-cols-[1.4fr_3fr] lg:justify-items-start">
@@ -159,11 +158,11 @@ export const TextCanvasSingle = () => {
                     The Vinaya Piṭaka is divided into two main parts: the Suttavibhaṅga, “The Analysis of the Rules,” and The Khandhakas, “the Chapters.” The individual schools sometimes have additional texts, such as the Parivāra, “The Compendium,” belonging to the Theravāda tradition, and the Uttaragrantha belonging to the Mūlasarvāstivādins.
                 </p>
                 {/* Vinaya Piṭaka */}
-                <div className="flex flex-col bg-secondary px-6 py-4 gap-2 rounded-4xl drop-shadow-sm">
+                <div className="flex flex-col bg-secondary px-4 pt-2 pb-4 gap-2 rounded-xl border border-secondary drop-shadow-sm">
                     <div className="flex flex-row items-center justify-between gap-4">
                         <h4 className="text-display-xs text-brand-700 dark:text-brand-700/80">Vinaya Piṭaka</h4>
                         <div className="flex flex-col gap-3 md:justify-center pb-1">
-                            <Button color="secondary" size="sm" iconLeading={Dataflow01}>
+                            <Button color="secondary" size="sm" iconLeading={Dataflow01} onClick={() => openCanonNavigator()}>
                                 Outline
                             </Button>
                         </div>
@@ -308,7 +307,7 @@ export default function ReaderPage() {
                         <TableOfContents />
                     </div>
                     {/* Central Reader Canvas wrapper */}
-                    <div className="relative top-0 bottom-0 mx-auto w-[55%] px-2 md:px-3 lg:px-5 xl:px-12 min-w-96 max-w-container bg-primary max-h-auto border-t border-secondary">
+                    <div className="relative top-0 bottom-0 mx-auto w-[55%] px-2 md:px-4 lg:px-6 xl:px-10 min-w-96 max-w-container bg-primary max-h-auto border-t border-secondary">
                         <TextCanvasSingle />
                     </div>
                     {/* Right Sidebar Panels: Ancillary content when needed. */}
