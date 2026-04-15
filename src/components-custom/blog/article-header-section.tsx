@@ -58,7 +58,7 @@ export const ArticleHeaderSection = (props: ArticleHeaderProps) => {
                 <BadgeGroup size="md" addonText={badge_addon_text} color="brand" theme="light" className="pr-3" iconTrailing={null}>
                     {badge_text}
                 </BadgeGroup>
-                <h1 className="mt-4 text-display-md font-extralight text-fg-primary md:text-display-lg text-balance">{article_headline}<br /><span className="text-fg-brand-primary text-balance">{article_headline_span}</span></h1>
+                <h1 id="overview-title" className="mt-4 text-display-md font-extralight text-fg-primary md:text-display-lg text-balance">{article_headline}<br /><span className="text-fg-brand-primary text-balance">{article_headline_span}</span></h1>
                 <p className="mt-4 max-w-140 text-lg font-light text-tertiary md:mt-6 md:text-xl">
                     {article_subheadline}
                 </p>

@@ -207,7 +207,7 @@ const ArticleOverview = () => {
                             <p>
                                 The four <i>nikāyas</i> in Pali are a highly integrated corpus of texts, and we continually find passages, teachings, and phrases that are shared throughout. It is possible to discern differences in emphasis and orientation between them, but this should not obscure the fact that the bulk of the main doctrines are shared. Lacking complete sets of <i>āgamas</i> from other schools, it is hard to know for sure that their collections were similarly integrated, but it seems likely that this was the case.
                             </p>
-                            {/* Vinaya Piṭaka */}
+                            {/* Sutta Piṭaka */}
                             <figure>
                                 <div className="flex flex-col bg-secondary px-6 py-4 gap-2 rounded-4xl drop-shadow-sm">
                                     <div className="flex flex-row items-center justify-between gap-4">
