@@ -86,7 +86,7 @@ export const GalleryNyingmaStudies = () => {
                     <div className="flex flex-1 flex-col max-w-280 pr-4 md:pr-24">
                         <h2 className="text-display-md font-extralight text-brand-800 dark:text-brand-300 md:text-display-lg">Nyingma Studies</h2>
                         <p className="mt-1 text-base text-tertiary md:mt-2 md:text-lg">
-                            The Thirteen Great Treatises are the most important texts in the Nyingma school curriculum, bringing together profound expositions and treatises by realized Buddhist masters, including Mipham Rinpoche and Khenpo Shenga.
+                            The Thirteen Major Treatises (<em>gzhung chen po bcu gsum</em>) formed the core of the curriculum in many scriptural colleges or commentarial schools (<em>bshad grwa</em>) of eastern Tibet, especially Śrī Siṃha college at Dzogchen Monastery.
                         </p>
                     </div>
                     <div className="mt-8 flex flex-col gap-3 self-stretch md:mt-0 md:flex-row-reverse md:justify-center md:self-center">

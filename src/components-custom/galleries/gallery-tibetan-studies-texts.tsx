@@ -33,7 +33,7 @@ interface GalleryTibetanStudiesTextsProps {
 }
 
 const TAILWIND_COLOR_SAFELIST = [
-    "bg-cyan-800/70", "dark:bg-cyan-800/70",
+    "bg-cyan-800/80", "dark:bg-cyan-800/80",
     "bg-blue-950/75", "dark:bg-blue-950/75",
     "bg-violet-950/80", "dark:bg-violet-950/80",
     "bg-red-900/75", "dark:bg-red-900/75",
@@ -51,7 +51,7 @@ const TibetanStudiesTextCard = ({ text }: { text: TibetanStudiesText }) => {
     return (
         <Carousel.Item
             key={text.toh_numbers || text.english_title}
-            className="group relative flex aspect-[.5625] w-full max-w-68 flex-col justify-end md:aspect-[.5625] md:max-w-76  drop-shadow-lg border-2 border-brand-300 dark:border-brand-950 rounded-xl overflow-hidden hover:scale-[1.05] transition-all duration-300 cursor-pointer"
+            className="group relative flex aspect-[.5625] w-full max-w-56 flex-col justify-end md:aspect-[.5625] md:max-w-68  drop-shadow-lg border-2 border-brand-300 dark:border-brand-950 rounded-xl overflow-hidden hover:scale-[1.05] transition-all duration-300 cursor-pointer"
             onClick={() => setIsFlipped(!isFlipped)}
         >
             <Image
@@ -62,14 +62,14 @@ const TibetanStudiesTextCard = ({ text }: { text: TibetanStudiesText }) => {
                 style={{ width: "100%", height: "100%" }}
                 className={`absolute inset-0 z-0 size-full top-0 cursor-grab object-cover rounded-sm ${isFlipped ? "opacity-0 invisible" : "group-hover:opacity-0 group-hover:invisible"}`}
             />
-            <div className={`absolute flex items-end justify-center z-200 w-16 h-16 top-[-34px] right-[12px] pb-1 ${text.color} rounded-3xl`}>
+            <div className={`absolute flex items-end justify-center z-200 w-22 h-14 top-[-30px] right-[12px] pb-0.5 ${text.color} rounded-3xl`}>
                 <h6 className=" text-brand-200">{text.part}</h6>
             </div>
 
             <div className={`z-10 bg-linear-to-t from-black/30 to-black/0 pt-16 md:pt-20 lg:pt-24 rounded-b-sm ${isFlipped ? "opacity-0 invisible" : "group-hover:opacity-0 group-hover:invisible"}`}>
                 <div className={`relative ${text.color} ${text.dark_color} px-5 pt-5 pb-4 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5 rounded-b-sm`}>
-                    <h3 className="text-2xl text-brand-300">{text.english_title}</h3>
-                    <p className="mt-3 text-xl font-regular">{text.tibetan_title}</p>
+                    <h3 className="text-xl text-brand-300">{text.english_title}</h3>
+                    <p className="mt-3 text-lg font-regular">{text.tibetan_title}</p>
                     <p className="mt-2 text-md font-regular">{text.sanskrit_title}</p>
                     <div className="flex gap-2 mt-6 justify-between items-top">
                         <div className="flex flex-col gap-0">
@@ -109,14 +109,14 @@ const TibetanStudiesTextCard = ({ text }: { text: TibetanStudiesText }) => {
 };
 
 export const GalleryTibetanStudiesTexts = ({ schoolType }: GalleryTibetanStudiesTextsProps) => {
-    const [sections, setSections] = useState<TibetanStudiesText[]>([]);
+    const [tibetanTexts, setTibetanTexts] = useState<TibetanStudiesText[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
     const supabase = createClient();
 
     useEffect(() => {
-        const fetchSections = async () => {
+        const fetchTexts = async () => {
             try {
                 setLoading(true);
                 const { data, error } = await supabase
@@ -126,16 +126,16 @@ export const GalleryTibetanStudiesTexts = ({ schoolType }: GalleryTibetanStudies
                     .order("sort_order", { ascending: true });
 
                 if (error) throw error;
-                setSections(data || []);
+                setTibetanTexts(data || []);
             } catch (err: any) {
-                console.error("Error fetching Tibetan Canon divisions:", err);
+                console.error("Error fetching Tibetan texts:", err);
                 setError(err.message);
             } finally {
                 setLoading(false);
             }
         };
 
-        fetchSections();
+        fetchTexts();
     }, [schoolType, supabase]);
 
     if (loading) {
@@ -154,7 +154,7 @@ export const GalleryTibetanStudiesTexts = ({ schoolType }: GalleryTibetanStudies
         );
     }
 
-    if (sections.length === 0) {
+    if (tibetanTexts.length === 0) {
         return null; // Or a placeholder
     }
 
@@ -166,7 +166,7 @@ export const GalleryTibetanStudiesTexts = ({ schoolType }: GalleryTibetanStudies
             }}
         >
             <Carousel.Content overflowHidden={false} className="gap-4 pr-4 md:gap-4 md:pr-4">
-                {sections.map((text) => (
+                {tibetanTexts.map((text) => (
                     <TibetanStudiesTextCard key={text.toh_numbers || text.english_title} text={text} />
                 ))}
             </Carousel.Content>
