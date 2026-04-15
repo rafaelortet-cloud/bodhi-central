@@ -6,6 +6,7 @@ import { Carousel } from "@/components/application/carousel/carousel-base";
 import { Button } from "@/components/base/buttons/button";
 import { RoundButton } from "@/components/marketing/testimonials/round-button";
 import { createClient } from "@/utils/supabase/client";
+import Image from "next/image";
 
 interface PaliSection {
     id_volumen: string;
@@ -25,7 +26,7 @@ interface PaliSection {
     sort_order: number;
 }
 
-interface CollectionPaliSectionGalleryProps {
+interface PaliDivisionsGalleryProps {
     pitakaType: "vinaya" | "sutta" | "abhidhamma";
 }
 
@@ -51,9 +52,12 @@ const PaliSectionCard = ({ section }: { section: PaliSection }) => {
             className="group relative flex aspect-[.5625] w-full max-w-68 flex-col justify-end md:aspect-[.5625] md:max-w-76 drop-shadow-lg border border-olive-500 dark:border-olive-950 rounded-xl overflow-hidden hover:scale-[1.05] transition-all duration-300 cursor-pointer"
             onClick={() => setIsFlipped(!isFlipped)}
         >
-            <img
+            <Image
                 alt={section.pali_title}
                 src={section.thumbnail_cover}
+                width={100}
+                height={100}
+                style={{ width: "100%", height: "100%" }}
                 className={`absolute inset-0 z-0 size-full top-0 cursor-grab object-cover rounded-sm ${isFlipped ? "opacity-0 invisible" : "group-hover:opacity-0 group-hover:invisible"}`}
             />
             <div className={`absolute flex items-end justify-center z-200 w-16 h-14 top-[-28px] right-[8px] pb-1 ${section.color} rounded-full`}>
@@ -104,7 +108,7 @@ const PaliSectionCard = ({ section }: { section: PaliSection }) => {
     );
 };
 
-export const CollectionPaliSectionGallery = ({ pitakaType }: CollectionPaliSectionGalleryProps) => {
+export const PaliDivisionsGallery = ({ pitakaType }: PaliDivisionsGalleryProps) => {
     const [sections, setSections] = useState<PaliSection[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);

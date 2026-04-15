@@ -2,9 +2,9 @@
 
 import Image from 'next/image';
 import { Button } from "@/components/base/buttons/button";
-import { CollectionGalleryVinayaPitaka } from "@/components/marketing/collection-sections/collection-gallery-vinaya-pitaka";
-import { CollectionGallerySuttaPitaka } from "@/components/marketing/collection-sections/collection-gallery-sutta-pitaka";
-import { CollectionGalleryAbhidhammaPitaka } from "@/components/marketing/collection-sections/collection-gallery-abhidhamma-pitaka";
+import { GalleryVinayaPitakaDivisions } from "@/components-custom/galleries/gallery-vinaya-pitaka-divisions";
+import { GallerySuttaPitakaDivisions } from "@/components-custom/galleries/gallery-sutta-pitaka-divisions";
+import { GalleryAbhidhammaPitakaDivisions } from "@/components-custom/galleries/gallery-abhidhamma-pitaka-divisions";
 import { ArrowDown } from "@untitledui/icons";
 import { ThreePitakasDiagram } from "@/components-custom/sections/three-pitakas-diagram";
 import { BlogSectionTipitakaOverviewsLeftAligned } from "@/components/marketing/blog/base-components/blog-tipitaka-overviews-left-aligned";
@@ -62,9 +62,9 @@ export default function TheravadaTraditionPage() {
             </section>
             {/* Gallery Section */}
             <section>
-                <div id="sutta-pitaka-gallery" className=""><CollectionGallerySuttaPitaka /></div>
-                <div id="vinaya-pitaka-gallery" className=""><CollectionGalleryVinayaPitaka /></div>
-                <div id="abhidhamma-pitaka-gallery" className=""><CollectionGalleryAbhidhammaPitaka /></div>
+                <div id="sutta-pitaka-gallery" className=""><GallerySuttaPitakaDivisions /></div>
+                <div id="vinaya-pitaka-gallery" className=""><GalleryVinayaPitakaDivisions /></div>
+                <div id="abhidhamma-pitaka-gallery" className=""><GalleryAbhidhammaPitakaDivisions /></div>
             </section>
             <ThreePitakasDiagram />
             <BlogSectionTipitakaOverviewsLeftAligned />

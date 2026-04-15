@@ -1,12 +1,13 @@
 "use client";
 
-import { ArrowLeft, ArrowRight } from "@untitledui/icons";
+import { ArrowLeft, ArrowRight, Dataflow01 } from "@untitledui/icons";
 import { Carousel } from "@/components/application/carousel/carousel-base";
 import { Button } from "@/components/base/buttons/button";
 import { RoundButton } from "@/components/marketing/testimonials/round-button";
+import { openCanonNavigator } from "@/components-custom/navigation/canon-navigation/canon-navigation-modal-wrapper";
 import Image from 'next/image';
 
-const collectionTexts = [
+const kagyuStudiesTexts = [
     {
         english_title: "The Ocean of Texts on Logic (Vol. 1)",
         tibetan_title: "ཚད་མ་ལེགས་པར་བཤད་པ་ཐམས་ཅད་ཀྱི་ཆུ་བོ་ཡོངས་སུ་འདུ་བ་རིག་པའི་གཞུང་ལུགས་ཀྱི་རྒྱ་མཚོ་ཞེས་བྱ་བའི་གླེགས་བམ་དང་པོ།",
@@ -135,22 +136,24 @@ const collectionTexts = [
     },
 ];
 
-export const CollectionGalleryKagyu = () => {
+export const GalleryKagyuStudies = () => {
     return (
-        <section className="overflow-hidden bg-linear-to-b from-pink-25 to-pink-50 dark:bg-linear-to-b dark:from-black dark:to-pink-950 py-6 md:py-10">
+        <section className="relative overflow-hidden bg-linear-to-b from-brand-50 from-0% via-brand-100 via-30% to-brand-200 to-100% dark:bg-linear-to-b dark:from-brand-800/50 dark:from-0% dark:via-brand-800/30 dark:via-30% dark:to-brand-900/90 py-6 md:py-10">
             <div className="mx-auto px-4 md:px-8">
                 {/* <!-- Collection Gallery Header --> */}
                 <div className="flex w-full flex-col justify-between md:flex-row">
                     <div className="flex flex-1 flex-col max-w-280 pr-4 md:pr-24">
-                        <h2 className="text-display-md text-primary md:text-display-lg">Kagyu Studies</h2>
+                        <h2 className="text-display-md font-extralight text-brand-800 dark:text-brand-300 md:text-display-lg">Kagyu Studies</h2>
                         <p className="mt-1 text-base text-tertiary md:mt-2 md:text-lg">
                             The Eight Kagyu commentaries were recommended by Rangjung Rigpe Dorje, the 16th Karmapa, as the core curriculum for a complete understanding of Sutra and Tantra from the Kagyu school perspective.
                         </p>
                     </div>
-                    <div className="mt-8 flex flex-col gap-3 self-stretch md:mt-0 md:flex-row-reverse md:justify-center md:self-start">
-
-                        <Button color="secondary" size="md">
-                            Texts by genre
+                    <div className="mt-8 flex flex-col gap-3 self-stretch md:mt-0 md:flex-row-reverse md:justify-center md:self-center">
+                        <Button href="/canon-overviews/sutta-overview" color="secondary" size="md">
+                            Overview
+                        </Button>
+                        <Button color="secondary" size="md" iconTrailing={Dataflow01} onClick={() => openCanonNavigator()} >
+                            Kagyu Studies Outline
                         </Button>
                     </div>
                 </div>
@@ -162,12 +165,12 @@ export const CollectionGalleryKagyu = () => {
                     }}
                 >
                     <Carousel.Content overflowHidden={false} className="gap-4 pr-4 md:gap-4 md:pr-4">
-                        {collectionTexts.map((text) => (
+                        {kagyuStudiesTexts.map((text) => (
                             <Carousel.Item
                                 key={text.english_title}
                                 className="relative flex aspect-[.5625] w-full max-w-56 flex-col justify-end md:aspect-[.5625] md:max-w-68 shadow-xl border-2 border-pink-200 dark:border-pink-950 rounded-xl overflow-hidden"
                             >
-                                <Image alt={text.english_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-0 cursor-grab object-cover rounded-sm"  width={1000} height={1000} />
+                                <Image alt={text.english_title} src={text.thumbnailCover} className="absolute inset-0 z-0 size-full top-0 cursor-grab object-cover rounded-sm" width={1000} height={1000} />
 
                                 <div className="z-10 bg-linear-to-t from-black/30 to-black/0 pt-16 md:pt-20 lg:pt-24 rounded-b-sm">
                                     <div className="relative bg-pink-900/50 px-5 pt-5 pb-4 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5 rounded-b-sm">

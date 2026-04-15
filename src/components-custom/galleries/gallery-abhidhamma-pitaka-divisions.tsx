@@ -2,10 +2,10 @@
 
 import { Dataflow01 } from "@untitledui/icons";
 import { Button } from "@/components/base/buttons/button";
-import { CollectionPaliSectionGallery } from "./collection-pali-section-gallery";
+import { PaliDivisionsGallery } from "./gallery-pali-divisions";
 import { openCanonNavigator } from "@/components-custom/navigation/canon-navigation/canon-navigation-modal-wrapper";
 
-export const CollectionGalleryAbhidhammaPitaka = () => {
+export const GalleryAbhidhammaPitakaDivisions = () => {
     return (
         <section className="relative overflow-hidden bg-linear-to-b from-brand-50 from-0% via-brand-100 via-30% to-brand-200 to-100% dark:bg-linear-to-b dark:from-brand-800/50 dark:from-0% dark:via-brand-800/30 dark:via-30% dark:to-brand-900/90 py-6 md:py-10">
             <div className="mx-auto px-4 md:px-8">
@@ -28,7 +28,7 @@ export const CollectionGalleryAbhidhammaPitaka = () => {
                 </div>
 
                 {/* <!-- Collection Pali Section Gallery --> */}
-                <CollectionPaliSectionGallery pitakaType="abhidhamma" />
+                <PaliDivisionsGallery pitakaType="abhidhamma" />
             </div>
         </section >
     );
