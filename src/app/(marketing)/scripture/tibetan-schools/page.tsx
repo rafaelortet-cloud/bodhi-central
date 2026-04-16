@@ -27,7 +27,7 @@ export default function TibetanSchoolsPage() {
                                 <Image src="/collections_thumbnails_nyingma.jpg" alt="thai ornament" width={90} height={90} style={{ width: "90px", height: "90px" }} className="hidden md:block drop-shadow-xs drop-shadow-black/90 dark:drop-shadow-black/50 opacity-90 rounded-full" />
                                 <h2 className="text-display-md text-brand-800 dark:text-brand-200 text-center py-2">Nyingma</h2>
                                 <p className="text-sm text-tertiary font-semibold text-center pb-6">The Thirteen Great Indian Treatises on Vinaya, Abhidharma, the Profound View, and Vast Conduct.</p>
-                                <Button href="#nyingma-studies-gallery" className="mt-auto" color="primary" size="sm" iconLeading={<ArrowDown data-icon />} aria-label="Go to Vinaya gallery" />
+                                <Button href="#nyingma-studies-gallery" className="mt-auto" color="primary" size="sm" iconLeading={<ArrowDown data-icon />} aria-label="Go to Nyingma Studies gallery" />
                             </div>
                             {/* Sakya Card */}
                             <div className="flex flex-col h-full items-center justify-start bg-radial-[at_50%_46%] from-brand-50/90 via-brand-200/95 via-32% to-brand-600/2 dark:bg-linear-to-b dark:bg-radial-[at_50%_46%] dark:from-brand-950/95 dark:via-brand-900/90 dark:via-30% dark:to-black/15 p-6 rounded-full">
@@ -42,7 +42,7 @@ export default function TibetanSchoolsPage() {
                                 <h2 className="text-display-md text-brand-800 dark:text-brand-200 text-center py-2">Gelug</h2>
                                 <p className="pb-6 text-sm text-tertiary font-semibold text-center">Standardized Tibetan studies into five genres: Pramana, Prajnaparamita, Madhyamaka,
                                     Abhidharma, and Vinaya.</p>
-                                <Button href="#gelug-studies-gallery" className="mt-auto" color="primary" size="sm" iconLeading={<ArrowDown data-icon />} aria-label="Go to Abhidhamma gallery" />
+                                <Button href="#gelug-studies-gallery" className="mt-auto" color="primary" size="sm" iconLeading={<ArrowDown data-icon />} aria-label="Go to Gelug Studies gallery" />
                             </div>
                             {/* Kagyu Card */}
                             <div className="relative top-0 md:top-[-68px] lg:top-[-96px] flex flex-col h-full items-center justify-start bg-radial-[at_50%_46%] from-brand-50/90 via-brand-200/95 via-32% to-brand-600/2 dark:bg-linear-to-b dark:bg-radial-[at_50%_46%] dark:from-brand-950/95 dark:via-brand-900/90 dark:via-30% dark:to-black/15 p-6 rounded-full">
@@ -50,7 +50,7 @@ export default function TibetanSchoolsPage() {
                                 <h2 className="text-display-md text-brand-800 dark:text-brand-200 text-center py-2">Kagyu</h2>
                                 <p className="pb-6 text-sm text-tertiary font-semibold text-center">Standardized Tibetan studies into five genres: Pramana, Prajnaparamita, Madhyamaka,
                                     Abhidharma, and Vinaya.</p>
-                                <Button href="#kagyu-studies-gallery" className="mt-auto" color="primary" size="sm" iconLeading={<ArrowDown data-icon />} aria-label="Go to Abhidhamma gallery" />
+                                <Button href="#kagyu-studies-gallery" className="mt-auto" color="primary" size="sm" iconLeading={<ArrowDown data-icon />} aria-label="Go to Kagyu Studies gallery" />
                             </div>
                         </div>
                     </div>

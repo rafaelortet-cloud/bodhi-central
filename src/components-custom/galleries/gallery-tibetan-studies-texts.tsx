@@ -34,6 +34,7 @@ interface GalleryTibetanStudiesTextsProps {
 
 const TAILWIND_COLOR_SAFELIST = [
     "bg-cyan-800/80", "dark:bg-cyan-800/80",
+    "bg-pink-900/70", "dark:bg-pink-900/70",
     "bg-blue-950/75", "dark:bg-blue-950/75",
     "bg-violet-950/80", "dark:bg-violet-950/80",
     "bg-red-900/75", "dark:bg-red-900/75",
