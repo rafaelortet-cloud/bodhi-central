@@ -29,7 +29,7 @@ const columns: MenuColumn[] = [
                 Icon: BookOpen01,
             },
             {
-                title: "Tibetan Traditions",
+                title: "Tibetan Studies",
                 subtitle: "The curricula of the four main schools of Tibetan Buddhism.",
                 href: "/scripture/tibetan-schools",
                 Icon: BookOpen01,

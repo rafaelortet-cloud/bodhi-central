@@ -69,13 +69,13 @@ const TibetanStudiesTextCard = ({ text }: { text: TibetanStudiesText }) => {
 
             <div className={`z-10 bg-linear-to-t from-black/30 to-black/0 pt-16 md:pt-20 lg:pt-24 rounded-b-sm ${isFlipped ? "opacity-0 invisible" : "group-hover:opacity-0 group-hover:invisible"}`}>
                 <div className={`relative ${text.color} ${text.dark_color} px-5 pt-5 pb-4 text-white backdrop-blur-[10px] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-alpha-white/30 md:px-5 rounded-b-sm`}>
-                    <h3 className="text-xl text-brand-300">{text.english_title}</h3>
-                    <p className="mt-3 text-lg font-regular">{text.tibetan_title}</p>
-                    <p className="mt-2 text-md font-regular">{text.sanskrit_title}</p>
+                    <h3 className="text-xl text-brand-300" dangerouslySetInnerHTML={{ __html: text.english_title }} />
+                    <p className="mt-3 text-lg font-regular" dangerouslySetInnerHTML={{ __html: text.tibetan_title }} />
+                    <p className="mt-2 text-md font-regular" dangerouslySetInnerHTML={{ __html: text.sanskrit_title }} />
                     <div className="flex gap-2 mt-6 justify-between items-top">
                         <div className="flex flex-col gap-0">
-                            <p className="text-sm font-normal text-brand-300 uppercase">{text.author_english}</p>
-                            <p className="text-sm font-normal text-brand-200">{text.genre}</p>
+                            <p className="text-sm font-normal text-brand-300 uppercase" dangerouslySetInnerHTML={{ __html: text.author_english }} />
+                            <p className="text-sm font-normal text-brand-200" dangerouslySetInnerHTML={{ __html: text.genre }} />
                         </div>
                     </div>
                 </div>
@@ -92,10 +92,10 @@ const TibetanStudiesTextCard = ({ text }: { text: TibetanStudiesText }) => {
                 {/* Card Reversed Side */}
                 <div className="flex flex-col gap-2 mt-1 items-top">
                     <div className="flex flex-col gap-0">
-                        <p className="text-lg font-normal pb-2">{text.tibetan_title}</p>
-                        <h3 className="text-lg font-medium text-brand-300">{text.english_title}</h3>
+                        <p className="text-lg font-normal pb-2" dangerouslySetInnerHTML={{ __html: text.tibetan_title }} />
+                        <h3 className="text-lg font-medium text-brand-300" dangerouslySetInnerHTML={{ __html: text.english_title }} />
                     </div>
-                    <p className="mt-2 text-sm md:text-regular text-balance pb-4">{text.short_description}</p>
+                    <p className="mt-2 text-sm md:text-regular text-balance pb-4" dangerouslySetInnerHTML={{ __html: text.short_description }} />
                 </div>
 
                 <Button

@@ -16,7 +16,7 @@ const footerNavList = [
                 href: "/scripture/collections",
             },
             {
-                label: "Theravada Canons",
+                label: "Theravada Tradition",
                 href: "/scripture/theravada-tradition",
             },
             {
