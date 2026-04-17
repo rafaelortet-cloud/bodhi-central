@@ -78,13 +78,19 @@ export const FeaturesThreePillars = () => {
                             <Image
                                 alt="Scripture mockup showing Collections interface"
                                 src="/theravada-tradition-light-mode-1600px.webp"
-                                className="size-full object-contain lg:w-auto lg:max-w-none dark:hidden"
+                                className="size-full object-cover lg:w-auto lg:max-w-none dark:hidden"
+                                width={1600}
+                                height={931}
+                                style={{ width: "auto", height: "100%" }}
                             />
                             {/* Dark mode image (hidden in light mode) */}
                             <Image
                                 alt="Dashboard mockup showing application interface"
                                 src="/theravada-tradition-light-mode-1600px.webp"
                                 className="size-full object-contain not-dark:hidden lg:w-auto lg:max-w-none"
+                                width={1600}
+                                height={931}
+                                style={{ width: "auto", height: "100%" }}
                             />
                         </AlternateImageMockup>
                     </div>
@@ -127,12 +133,18 @@ export const FeaturesThreePillars = () => {
                                 alt="Mockup showing Learning Paths interface"
                                 src="/tibetan-schools-hero-header-light-mode-1600px.webp"
                                 className="size-full object-contain lg:w-auto lg:max-w-none dark:hidden"
+                                width={1600}
+                                height={931}
+                                style={{ width: "auto", height: "100%" }}
                             />
                             {/* Dark mode image (hidden in light mode) */}
                             <Image
                                 alt="Mockup showing Learning Paths interface"
                                 src="/tibetan-schools-hero-header-light-mode-1600px.webp"
                                 className="size-full object-contain not-dark:hidden lg:w-auto lg:max-w-none"
+                                width={1600}
+                                height={931}
+                                style={{ width: "auto", height: "100%" }}
                             />
                         </AlternateImageMockup>
                     </div>
