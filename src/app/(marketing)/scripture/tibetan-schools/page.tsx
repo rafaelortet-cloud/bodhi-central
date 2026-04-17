@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { GalleryNyingmaStudies } from '@/components-custom/galleries/gallery-nyingma-studies';
 import { GalleryKagyuStudies } from '@/components-custom/galleries/gallery-kagyu-studies';
+import { FeaturedGalleryIndianGoldenTexts } from '@/components-custom/galleries/featured-gallery-indian-golden-texts';
 import { Button } from '@/components/base/buttons/button';
 import { ArrowDown } from '@untitledui/icons';
 
@@ -68,6 +69,7 @@ export default function TibetanSchoolsPage() {
                 <section>
                     <div id="nyingma-studies-gallery" className=""><GalleryNyingmaStudies /></div>
                     <div id="kagyu-studies-gallery" className=""><GalleryKagyuStudies /></div>
+                    <div id="indian-mahayana-gallery" className=""><FeaturedGalleryIndianGoldenTexts /></div>
                 </section>
             </main>
         </>

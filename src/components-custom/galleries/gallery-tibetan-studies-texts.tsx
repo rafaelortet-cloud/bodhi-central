@@ -166,7 +166,7 @@ export const GalleryTibetanStudiesTexts = ({ schoolType }: GalleryTibetanStudies
                 align: "start",
             }}
         >
-            <Carousel.Content overflowHidden={false} className="gap-4 pr-4 md:gap-4 md:pr-4">
+            <Carousel.Content overflowHidden={false} className="gap-4 pr-4 md:gap-4 md:pr-4 backdrop-blur-sm">
                 {tibetanTexts.map((text) => (
                     <TibetanStudiesTextCard key={text.toh_numbers || text.english_title} text={text} />
                 ))}
