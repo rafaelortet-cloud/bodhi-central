@@ -129,7 +129,7 @@ export const GalleryTibetanStudiesTexts = ({ schoolType }: GalleryTibetanStudies
                 if (error) throw error;
                 setTibetanTexts(data || []);
             } catch (err: any) {
-                console.error("Error fetching Tibetan texts:", err);
+                console.error("Error fetching texts:", err);
                 setError(err.message);
             } finally {
                 setLoading(false);
