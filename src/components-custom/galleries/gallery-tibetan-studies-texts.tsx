@@ -63,7 +63,7 @@ const TibetanStudiesTextCard = ({ text }: { text: TibetanStudiesText }) => {
                 style={{ width: "100%", height: "100%" }}
                 className={`absolute inset-0 z-0 size-full top-0 cursor-grab object-cover rounded-sm ${isFlipped ? "opacity-0 invisible" : "group-hover:opacity-0 group-hover:invisible"}`}
             />
-            <div className={`absolute flex items-end justify-center z-200 w-22 h-14 top-[-30px] right-[12px] pb-0.5 ${text.color} rounded-3xl`}>
+            <div className={`absolute flex items-end justify-end z-200 w-auto px-3.5 h-14 top-[-32px] right-[12px] pb-0.5 ${text.color} rounded-2xl`}>
                 <h6 className=" text-brand-200">{text.part}</h6>
             </div>
 

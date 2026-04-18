@@ -5,7 +5,7 @@ import { ArrowRight } from "@untitledui/icons";
 import { Button } from "@/components/base/buttons/button";
 import { useClipboard } from "@/hooks/use-clipboard";
 import { FeaturesThreePillars } from "@/components-custom/sections/features-three-pillars";
-import { CTACenteredPlansSignup } from "@/components-custom/sections/cta-centered-plans-signup";
+import { CTACenteredPlansSignupFeaturedBgImage } from "@/components-custom/sections/cta-centered-plans-signup-featured-bg-image";
 import { AttributionsAffiliationsBanner } from "@/components-custom/sections/attributions-affiliations-banner";
 import Image from 'next/image';
 import "@/styles/home-hero.css";
@@ -171,7 +171,7 @@ export const HomeScreen = () => {
                 </div>
             </section>
             <FeaturesThreePillars />
-            <CTACenteredPlansSignup />
+            <CTACenteredPlansSignupFeaturedBgImage />
             <AttributionsAffiliationsBanner />
         </main >
 

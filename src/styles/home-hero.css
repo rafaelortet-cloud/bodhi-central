@@ -39,6 +39,15 @@
     animation: slowSpin 90s linear infinite;
   }
 
+      .hero-mandala-right {
+    position: absolute;
+    right: -60px; top: 50%;
+    transform: translateY(-50%);
+    width: 660px; height: 660px;
+    opacity: 0.6;
+    animation: slowSpin 90s linear infinite;
+  }
+
   @keyframes slowSpin { to { transform: translateY(-50%) rotate(360deg); } }
 
     /* Fine grain overlay */
