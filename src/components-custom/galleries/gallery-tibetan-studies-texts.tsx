@@ -33,8 +33,8 @@ interface GalleryTibetanStudiesTextsProps {
 }
 
 const TAILWIND_COLOR_SAFELIST = [
-    "bg-cyan-800/80", "dark:bg-cyan-800/80",
-    "bg-pink-900/70", "dark:bg-pink-900/70",
+    "bg-cyan-900/70", "dark:bg-cyan-900/70",
+    "bg-pink-950/70", "dark:bg-pink-950/70",
     "bg-blue-950/75", "dark:bg-blue-950/75",
     "bg-violet-950/80", "dark:bg-violet-950/80",
     "bg-red-900/75", "dark:bg-red-900/75",
@@ -63,7 +63,7 @@ const TibetanStudiesTextCard = ({ text }: { text: TibetanStudiesText }) => {
                 style={{ width: "100%", height: "100%" }}
                 className={`absolute inset-0 z-0 size-full top-0 cursor-grab object-cover rounded-sm ${isFlipped ? "opacity-0 invisible" : "group-hover:opacity-0 group-hover:invisible"}`}
             />
-            <div className={`absolute flex items-end justify-end z-200 w-auto px-3.5 h-14 top-[-32px] right-[12px] pb-0.5 ${text.color} rounded-2xl`}>
+            <div className={`absolute hidden md:hidden items-end justify-end z-200 w-auto px-3.5 h-14 top-[-32px] right-[12px] pb-0.5 ${text.color} rounded-2xl`}>
                 <h6 className=" text-brand-200">{text.part}</h6>
             </div>
 

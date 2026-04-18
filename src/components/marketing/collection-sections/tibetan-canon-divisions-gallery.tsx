@@ -21,6 +21,7 @@ interface TibetanCanonDivision {
     thumbnail_cover: string;
     volumes: string;
     toh_numbers: string;
+    texts_count: string;
     color: string;
     dark_color: string;
 }
@@ -31,34 +32,33 @@ interface TibetanCanonDivisionsGalleryProps {
 
 const TAILWIND_COLOR_SAFELIST = [
     "bg-cyan-950/80", "dark:bg-cyan-950/80",
-    "to-cyan-950/80", "dark:to-cyan-950/80",
 
     "bg-blue-950/75", "dark:bg-blue-950/75",
-    "to-blue-950/75", "dark:to-blue-950/75",
+
 
     "bg-violet-950/80", "dark:bg-violet-950/80",
-    "to-violet-950/80", "dark:to-violet-950/80",
+
 
     "bg-red-900/75", "dark:bg-red-900/75",
-    "to-red-900/75", "dark:to-red-900/75",
+
 
     "bg-orange-900/75", "dark:bg-orange-900/75",
-    "to-orange-900/75", "dark:to-orange-900/75",
 
-    "bg-yellow-900/75", "dark:bg-yellow-900/75",
-    "to-yellow-900/75", "dark:to-yellow-900/75",
+
+    "bg-yellow-950/70", "dark:bg-yellow-950/70",
+
 
     "bg-fuchsia-950/70", "dark:bg-fuchsia-950/70",
-    "to-fuchsia-950/70", "dark:to-fuchsia-950/70",
+
 
     "bg-green-950/75", "dark:bg-green-950/75",
-    "to-green-950/75", "dark:to-green-950/75",
+
 
     "bg-gray-900/75", "dark:bg-gray-900/75",
-    "to-gray-900/75", "dark:to-gray-900/75",
+
 
     "bg-olive-800/80", "dark:bg-olive-800/80",
-    "to-olive-800/80", "dark:to-olive-800/80"
+
 ];
 
 const TibetanCanonDivisionsCard = ({ section }: { section: TibetanCanonDivision }) => {
@@ -67,7 +67,7 @@ const TibetanCanonDivisionsCard = ({ section }: { section: TibetanCanonDivision 
     return (
         <Carousel.Item
             key={section.toh_numbers || section.english_title}
-            className={`group relative flex aspect-[.5625] w-full max-w-68 flex-col justify-end md:aspect-[.5625] md:max-w-76 bg-radial-[at_50%_35%] from-brand-300 via-brand-300 via-6% to-${section.color} to-85% dark:from-brand-dark-200 dark:via-brand-dark-300 dark:via-10% dark:to-${section.dark_color} dark:to-85% drop-shadow-lg border-2 border-brand-300 dark:border-brand-950 rounded-xl overflow-hidden hover:scale-[1.05] transition-all duration-300 cursor-pointer`}
+            className={`group relative flex aspect-[.5625] w-full max-w-68 flex-col justify-end md:aspect-[.5625] md:max-w-76 bg-${section.color} dark:bg-${section.dark_color} drop-shadow-lg border-2 border-brand-300 dark:border-brand-950 rounded-xl overflow-hidden hover:scale-[1.05] transition-all duration-300 cursor-pointer`}
             onClick={() => setIsFlipped(!isFlipped)}
         >
             <Image
@@ -78,8 +78,8 @@ const TibetanCanonDivisionsCard = ({ section }: { section: TibetanCanonDivision 
                 style={{ width: "100%", height: "100%" }}
                 className={`absolute inset-0 z-0 size-full top-0 cursor-grab object-cover mix-blend-luminosity grayscale rounded-sm ${isFlipped ? "opacity-0 invisible" : "group-hover:opacity-0 group-hover:invisible"}`}
             />
-            <div className={`absolute flex items-end justify-center z-200 w-auto h-16 top-[-34px] right-[12px] px-3.5 pb-1 bg-${section.color} rounded-2xl`}>
-                <h6 className=" text-brand-200">{section.toh_numbers}</h6>
+            <div className={`absolute flex items-end justify-center z-200 w-auto h-16 top-[-34px] right-[12px] px-3.5 pb-1 bg-${section.color} rounded-2xl drop-shadow-md drop-shadow-dark/80 `}>
+                <h6 className=" text-brand-200">{section.texts_count}</h6>
             </div>
 
             <div className={`z-10 bg-linear-to-t from-black/30 to-black/0 pt-16 md:pt-20 lg:pt-24 rounded-b-sm ${isFlipped ? "opacity-0 invisible" : "group-hover:opacity-0 group-hover:invisible"}`}>
@@ -90,7 +90,7 @@ const TibetanCanonDivisionsCard = ({ section }: { section: TibetanCanonDivision 
                     <div className="flex gap-2 mt-6 justify-between items-top">
                         <div className="flex flex-col gap-0">
                             <p className="text-sm font-normal text-brand-300 uppercase">{section.canon_division}</p>
-                            <p className="text-sm font-normal text-brand-200">{section.volumes}</p>
+                            <p className="text-sm font-normal text-brand-200">{section.toh_numbers}</p>
                         </div>
                     </div>
                 </div>
