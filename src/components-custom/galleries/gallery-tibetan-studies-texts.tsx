@@ -43,7 +43,7 @@ const TAILWIND_COLOR_SAFELIST = [
     "bg-fuchsia-950/80", "dark:bg-fuchsia-950/80",
     "bg-green-950/75", "dark:bg-green-950/75",
     "bg-gray-900/75", "dark:bg-gray-900/75",
-    "bg-olive-700/70", "dark:bg-olive-700/70"
+    "bg-olive-700/80", "dark:bg-olive-700/80"
 ];
 
 const TibetanStudiesTextCard = ({ text }: { text: TibetanStudiesText }) => {
