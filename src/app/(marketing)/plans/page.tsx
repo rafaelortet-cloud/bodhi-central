@@ -139,7 +139,7 @@ const PricingTierCardBanner = (props: {
     shadow?: string;
 }) => {
     return (
-        <div className={cx("flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-muted-900 ring-1 ring-secondary_alt", props.shadow, props.className)}>
+        <div className={cx("flex flex-col overflow-hidden h-full rounded-2xl bg-white dark:bg-muted-900 ring-1 ring-secondary_alt", props.shadow, props.className)}>
             {props.banner && (
                 <div className="w-full bg-brand-300 px-2 py-3 text-center">
                     <p className="text-sm font-semibold text-black">{props.banner}</p>
@@ -152,14 +152,7 @@ const PricingTierCardBanner = (props: {
                     <h2 className="mt-4 text-3xl font-light text-brand-secondary">{props.title}</h2>
                     <p className="mt-1 text-md text-tertiary">{props.description}</p>
                 </div>
-
-                <ul className="flex flex-col gap-4 px-6 py-8 md:px-8 md:pb-10">
-                    {props.features.map((feat) => (
-                        <CheckItemText key={feat} iconStyle="outlined" color="success" text={feat} />
-                    ))}
-                </ul>
-
-                <div className="mt-auto flex flex-col gap-3 px-6 pb-8 md:px-8">
+                <div className="flex flex-col gap-3 px-6 py-6 md:px-8">
                     <Button href={props.firstActionHref} size="xl">{props.firstAction}</Button>
                     {props.secondAction && (
                         <Button className="hidden" href={props.secondActionHref} color="secondary" size="xl">
@@ -167,6 +160,14 @@ const PricingTierCardBanner = (props: {
                         </Button>
                     )}
                 </div>
+                <p className="px-6 md:px-8">Includes:</p>
+                <ul className="flex flex-col gap-4 px-6 py-4 md:px-8 md:pb-8">
+                    {props.features.map((feat) => (
+                        <CheckItemText key={feat} iconStyle="outlined" color="success" text={feat} />
+                    ))}
+                </ul>
+
+
             </div>
         </div>
     );
@@ -179,53 +180,56 @@ const PricingSimpleBanner = () => {
         {
             title: "COMMUNITY",
             subtitle: selectedPlan === "monthly" ? "Free" : "Free",
-            description: "No sign up required.",
-            firstAction: "Continue browsing",
-            firstActionHref: "/scripture/collections",
+            description: "Account personalization and community features.",
+            firstAction: "Get started",
+            firstActionHref: "/sign-up",
             secondAction: "Have questions?",
-            secondActionHref: "/plans#faq",
+            secondActionHref: "/sign-up",
             shadow: "",
             features: [
-                "Access to all texts",
-                "Available free learning paths",
-                "Browsing collections and learnings",
+                "Canon preferences",
+                "Reading & display settings",
+                "Canon navigation and collections",
                 "Directories of communities and centers",
-                "Basic support",
             ],
         },
         {
-            title: "DISCOVERY",
-            subtitle: selectedPlan === "monthly" ? "Free" : "Free",
-            description: "Try Bodhi Central",
-            firstAction: "Create your FREE account",
+            title: "STANDARD",
+            subtitle: selectedPlan === "monthly" ? "$2/month" : "$20/year",
+            description: "Daily and advanced study tools for personal engagement.",
+            firstAction: "Get started",
             firstActionHref: "/sign-up",
             secondAction: "Have questions?",
             secondActionHref: "/plans#faq",
-            shadow: "",
+            shadow: "shadow-2xl shadow-ink-100 dark:shadow-ink-500",
             features: [
-                "2 Workspaces storage",
-                "Basic preferences",
-                "Limited search history",
-                "Limited bookmarks",
-                "Priority chat and email support",
+                "All COMMUNITY-tier features",
+                "Advanced search with filtering",
+                "Marginal notes",
+                "Categorized bookmarks",
+                "Multicolor highlights",
+                "Footnotes",
+                "Cross references",
+                "Search personal notes, bookmarks, and highlights",
+                "Saved texts, spaces, bookmarks, and notes",
             ],
         },
         {
-            title: "HOUSEKEEPER",
-            subtitle: selectedPlan === "monthly" ? "$2/month" : "$20/year",
-            description: "Get the most out of Bodhi Central.",
-            firstAction: "Get FULL access",
+            title: "PATRON",
+            subtitle: selectedPlan === "monthly" ? "$10/month" : "$100/year",
+            description: "Support BodhiCentral's mission and help fund ongoing development.",
+            firstAction: "Get started",
             firstActionHref: "/sign-up",
             secondAction: "Have questions?",
             secondActionHref: "/plans#faq",
             banner: "",
-            shadow: "shadow-2xl shadow-ink-100 dark:shadow-ink-500",
+            shadow: "",
             features: [
-                "Unlimited workspaces",
-                "Unlimited stored texts",
-                "Unlimited saved searches",
-                "Advanced preferences",
-                "Advanced features",
+                "All STANDARD-Tier features",
+                "Early access to experimental and pre-release features",
+                "Preview new tools before general availability",
+                "Helps fund licensing, infrastructure, and development",
+                "Patron-exclusive digital gifts (when available)",
 
             ],
         },
@@ -237,9 +241,9 @@ const PricingSimpleBanner = () => {
             <Image src="/ornaments/endless-knot-corner-gold.png" width={260} height={260} alt="Plans background" className="hidden lg:block absolute top-4 left-4 scale-x-[-1] opacity-16 dark:opacity-25" />
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
-                    <h2 className="text-display-md font-extralight text-brand-800 dark:text-brand-400 md:text-display-xl"> Plans for everyone</h2>
+                    <h2 className="text-display-md font-extralight text-brand-800 dark:text-brand-400 md:text-display-xl">Start free. Upgrade to unlock advanced study tools.</h2>
                     <p className="mt-4 max-w-2xl text-md text-tertiary md:mt-6 md:text-lg">
-                        Enjoy the <strong>Community</strong> and <strong>Discovery</strong> free plans. Buddhist texts and teachings should be accessible to everyone. Your <strong>Housekeeper</strong> subscription keeps the platform running and improving with new features.
+                        Bodhicentral provides free access to Scripture worldwide. No account required. Optional subscriptions unlock advanced study tools.
                     </p>
                     <Tabs selectedKey={selectedPlan} onSelectionChange={(item) => setSelectedPlan(item as string)} className="w-full md:w-auto">
                         <TabList
@@ -254,7 +258,7 @@ const PricingSimpleBanner = () => {
                     </Tabs>
                 </div>
 
-                <div className="mt-8 grid w-full grid-cols-1 items-end gap-4 md:mt-10 md:grid-cols-2 md:gap-10 xl:grid-cols-3">
+                <div className="mt-8 grid w-full grid-cols-1 items-start  gap-4 md:mt-10 md:grid-cols-2 md:gap-10 xl:grid-cols-3">
                     {plans.map((plan) => (
                         <PricingTierCardBanner key={plan.title} {...plan} />
                     ))}
