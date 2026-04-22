@@ -59,9 +59,9 @@ export const CTACenteredPlansSignupFeaturedBgImage = () => {
                         <circle cx="200" cy="4" r="1.5" transform="rotate(315 200 200)" />
                     </g>
                 </svg>
-                <div className="flex flex-col justify-center text-center max-w-3xl mx-auto">
-                    <h2 className="text-display-md font-light text-white text-shadow-sm text-shadow-gray-800 md:text-display-3xl">Start reading, reflecting, and growing, together.</h2>
-                    <p className="mt-4 text-lg font-medium text-tertiary_on-brand md:mt-5 md:text-xl text-shadow-xs text-shadow-neutral-950">Explore multiple Buddhist sutras and shastras from all traditions, highlight what matters, take personal notes -- all in one unified environment.</p>
+                <div className="flex flex-col justify-center text-center max-w-4xl mx-auto">
+                    <h2 className="text-display-md font-light text-white text-shadow-sm text-shadow-gray-800 md:text-display-3xl">Start reading, reflecting, and growing together.</h2>
+                    <p className="mt-4 text-lg font-medium text-tertiary_on-brand md:mt-5 md:text-xl text-shadow-xs text-shadow-neutral-950">Explore sutras and shastras from all traditions, highlight what matters, take personal notes, and build a study space that is intirely your own — all within a single, unified reader.</p>
                     <div className="mt-8 flex flex-col-reverse gap-3 self-stretch md:mt-8 md:flex-row md:self-center">
                         <Button href="/reader" iconTrailing={ArrowRight} size="lg">Get started - it's free</Button>
                     </div>
