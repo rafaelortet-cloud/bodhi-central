@@ -16,6 +16,7 @@ const crimsonPro = Crimson_Pro({
     subsets: ["latin", "latin-ext"],
     display: "swap",
     variable: "--font-crimson-pro",
+    style: ["normal", "italic"],
 });
 
 const tibetan = Noto_Serif_Tibetan({

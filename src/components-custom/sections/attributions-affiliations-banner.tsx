@@ -13,16 +13,8 @@ export const AttributionsAffiliationsBanner = () => {
                     </div>
                     <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 xl:gap-x-6">
                         {/* Light mode images (hidden in dark mode) */}
-                        <Image alt="Odeaolabs" src="/placeholder-image-landscape.svg" className="h-9 md:h-10 dark:hidden" width={100} height={100} />
-                        <Image alt="Kintsugi" src="/placeholder-image-landscape.svg" className="h-9 md:h-10 dark:hidden" width={100} height={100} />
-                        <Image alt="Magnolia" src="/placeholder-image-landscape.svg" className="h-9 md:h-10 dark:hidden" width={100} height={100} />
-                        <Image alt="Warpspeed" src="/placeholder-image-landscape.svg" className="h-9 md:h-10 dark:hidden" width={100} height={100} />
-                        <Image alt="Sisyphus" src="/placeholder-image-landscape.svg" className="h-9 md:h-10 dark:hidden" width={100} height={100} />
                         <Image alt="Himalayan Archive of Resilience" src="/social-logos/har_logo_blocks@2x.png" className="h-9 md:h-10 dark:hidden grayscale opacity-60" width={100} height={100} />
                         <Image alt="Kintsugi" src="/social-logos/the-treasury-of-lives-logo.png" className="h-9 md:h-10 dark:hidden grayscale opacity-60" width={220} height={100} />
-                        <Image alt="Magnolia" src="/placeholder-image-landscape.svg" className="h-9 md:h-10 dark:hidden" width={100} height={100} />
-                        <Image alt="Warpspeed" src="/placeholder-image-landscape.svg" className="h-9 md:h-10 dark:hidden" width={100} height={100} />
-                        <Image alt="Sisyphus" src="/placeholder-image-landscape.svg" className="h-9 md:h-10 dark:hidden" width={100} height={100} />
 
                         {/* Dark mode images (hidden in light mode) */}
 
@@ -30,12 +22,6 @@ export const AttributionsAffiliationsBanner = () => {
                         <Image alt="Kintsugi" src="/placeholder-image-landscape.svg" className="h-9 md:h-10 opacity-85 not-dark:hidden" width={100} height={100} />
                         <Image alt="Magnolia" src="/placeholder-image-landscape.svg" className="h-9 md:h-10 opacity-85 not-dark:hidden" width={100} height={100} />
                         <Image alt="Warpspeed" src="/placeholder-image-landscape.svg" className="h-9 md:h-10 opacity-85 not-dark:hidden" width={100} height={100} />
-                        <Image alt="Sisyphus" src="/placeholder-image-landscape.svg" className="h-9 md:h-10 opacity-85 not-dark:hidden" width={100} height={100} />
-                        <Image alt="Odeaolabs" src="/placeholder-image-landscape.svg" className="h-9 md:h-10 opacity-85 not-dark:hidden" width={100} height={100} />
-                        <Image alt="Kintsugi" src="/placeholder-image-landscape.svg" className="h-9 md:h-10 opacity-85 not-dark:hidden" width={100} height={100} />
-                        <Image alt="Magnolia" src="/placeholder-image-landscape.svg" className="h-9 md:h-10 opacity-85 not-dark:hidden" width={100} height={100} />
-                        <Image alt="Warpspeed" src="/placeholder-image-landscape.svg" className="h-9 md:h-10 opacity-85 not-dark:hidden" width={100} height={100} />
-                        <Image alt="Sisyphus" src="/placeholder-image-landscape.svg" className="h-9 md:h-10 opacity-85 not-dark:hidden" width={100} height={100} />
                     </div>
                 </div>
             </div>

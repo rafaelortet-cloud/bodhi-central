@@ -1,19 +1,13 @@
 @theme {
     /* FONT FAMILY */
-    /* FONT FAMILY */
     --font-sans: var(--font-nunito, "Nunito"), -apple-system, "Segoe UI", Verdana, sans-serif;
-    --font-display: var(--font-roboto-serif, "RobotoSerif"), -apple-system, "Segoe UI", Times, Georgia, serif;
     --font-serif: var(--font-crimson-pro, "CrimsonPro"), -apple-system, "Segoe UI", Times, Georgia, serif;
     --font-mono: ui-monospace, "Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --font-tibetan: var(--font-tibetan, "Noto Serif Tibetan"), -apple-system, "Segoe UI", Verdana, Arial, sans-serif;
 
     /* FONT VARIATIONS */
-    --font-display--opsz: 144;
-    --font-display--wdth: 100;
-    --font-display--grad: 0;
     --font-serif--opsz: 100;
-    --font-serif--wdth: 100;
-    --font-serif--grad: 50;
+    --font-serif--ital: 0;
 
 
     /* FONT SIZE */
@@ -169,6 +163,19 @@
             opacity: 0;
         }
     }
+
+    /* Custom Hero Animation */
+    --animate-pulse-slow: pulse 6s ease-in-out infinite;
+
+
+    /* Custom Background Image */
+    --background-image-hero-glow: radial-gradient(
+        ellipse 55% 40% at 50% 50%, 
+        rgba(176,141,87,0.12) 0%, 
+        transparent 80%
+    );
+
+
 
     /* BASE COLOR */
     --color-transparent: rgb(0 0 0 / 0);

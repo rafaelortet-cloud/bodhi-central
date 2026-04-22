@@ -18,8 +18,10 @@ interface DropdownAvatarProps {
 export const DropdownAvatar = ({ user }: DropdownAvatarProps) => {
     // Add local state to dynamically fetch the user's latest details and avatar right from the profiles table
     const [profileData, setProfileData] = useState<{ full_name?: string, avatar_url?: string } | null>(null);
+    const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
+        setMounted(true);
         if (!user) return;
         const supabase = createClient();
 

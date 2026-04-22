@@ -104,21 +104,9 @@
 
   /* Headline */
   .hero-headline {
-    font-family: var(--font-serif);
-    line-height: 1.08;
-    color: var(--color-cream-600);
     margin-bottom: 28px;
     animation: fadeUp 1s ease both;
     animation-delay: 0.25s;
-  }
-  .hero-headline em {
-    font-style: italic;
-    font-weight: 200;
-    color: var(--color-gold-500);
-  }
-
-  .hero-headline span {
-    font-style: italic;
   }
  
   /* Sub */

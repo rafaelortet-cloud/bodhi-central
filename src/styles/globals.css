@@ -99,6 +99,8 @@ body {
     font-kerning: normal;
 }
 
+
+
 h1,
 h2,
 h3,
@@ -108,8 +110,14 @@ h6 {
     font-family: var(--font-serif);
     font-variation-settings:
         "opsz" var(--font-serif--opsz),
-        "wdth" var(--font-serif--wdth),
-        "GRAD" var(--font-serif--grad);
+        "ital" var(--font-serif--ital);
+}
+
+em,
+i,
+.italic,
+[style*="font-style: italic"] {
+    --font-serif--ital: 1;
 }
 
 h1 {

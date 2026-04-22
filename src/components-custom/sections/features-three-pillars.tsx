@@ -33,12 +33,8 @@ export const FeaturesThreePillars = () => {
             </div>
             {/* Header Title and Subtitle */}
             <div className="mx-auto w-full max-w-container px-4 md:px-8">
-                <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
-                    <span className="text-sm font-light text-brand-600 dark:text-brand-700 md:text-md">The Three Pillars</span>
-                    <h2 className="mt-3 text-display-sm text-brand-800 dark:text-brand-400 md:text-display-md">Practical presentations of Buddha's teachings</h2>
-                    <p className="mt-4 text-lg font-light text-tertiary md:mt-5 md:text-xl">
-                        Gateways for spiritual seekers to connect with Buddhist living transmissions, apply teachings, and meet worldwide communities.
-                    </p>
+                <div className="mx-auto flex w-full max-w-4xl flex-col items-center text-center">
+                    <h2 className="mt-3 text-display-lg font-extralight tracking-tight italic text-brand-600 dark:text-brand-400 lg:text-display-2xl">Not a library. Not an app.<br /> A living doorway into the Dharma</h2>
                 </div>
             </div>
             {/* Features Group: Scriptures, Paths, and Resources */}
@@ -156,18 +152,8 @@ export const FeaturesThreePillars = () => {
                         <FeaturedIcon icon={ChartBreakoutSquare} size="lg" color="gray" theme="modern-neue" />
                         <h3 className="mt-5 text-display-xs text-brand-800 dark:text-brand-400 md:text-display-lg">Resources for Individuals and Communities</h3>
                         <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">
-                            Discover tools to enhance your personal activities and contributions to the Buddhist community.
+                            Find teachers and study centres worldwide through our curated directory. Deepen your understanding with articles written from within the living Buddhist traditions. Join practitioners in our forum and bring questions, reflections, and encouragement to a growing global sangha. All documentation and guidelines are openly available for contributors and curious minds alike.
                         </p>
-                        <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
-                            {[
-                                "DIRECTORIES: Find institutions that offer study and practice programs",
-                                "BLOG: Read articles on relevant topics, presented from a Buddhist perspective.",
-                                "FORUM: Join groups and discussions related to our activities",
-                                "DOCUMENTATION: Guidelines and information about the project",
-                            ].map((feat) => (
-                                <CheckItemText key={feat} size="sm" iconStyle="outlined" color="primary" text={feat} />
-                            ))}
-                        </ul>
                         <Button href="/resources" color="secondary" size="md" className="relative z-100 mt-8 cursor-pointer">
                             Explore resources
                         </Button>
@@ -214,6 +200,6 @@ export const FeaturesThreePillars = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 };

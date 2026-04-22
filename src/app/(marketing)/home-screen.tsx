@@ -78,11 +78,11 @@ export const HomeScreen = () => {
                             <div className="eyebrow-line"></div>
                             <div className="eyebrow-text">Buddhist Paths & Scriptures</div>
                         </div>
-                        <h1 className="hero-headline text-display-lg md:text-display-xl lg:text-display-4xl font-extralight text-white text-shadow-md text-shadow-gray-700 dark:text-shadow-gray-950">
-                            Gateways to <br /> the <span className="text-brand-500">Awakening</span>
+                        <h1 className="hero-headline text-display-lg md:text-display-xl lg:text-display-4xl font-extralight text-white text-shadow-md text-shadow-gray-700 dark:text-shadow-gray-950 bg-hero-glow animate-pulse-slow">
+                            Gateways to <br /> the <span className="text-brand-500 lg:text-display-5xl italic animate-pulse-slow">Awakening</span>
                         </h1>
                         <p className="hero-sub mt-4 max-w-xs sm:max-w-sm md:max-w-xl text-lg text-balance text-brand-200 dark:text-brand-100 md:mt-6 md:text-xl">
-                            A modern platform channeling universally revered Buddhist teachings and practical knowledge — for every sincere seeker on the path.{" "}
+                            The great Buddhist traditions have illuminated the nature of mind for 2,500 years. Now, their most essential teachings — scriptures, paths, and living transmissions — are gathered in one place, for every sincere seeker.
                         </p>
                         <div className="hero-ctas mt-8 flex w-full gap-3 md:mt-12 md:flex-row lg:items-start">
                             <Button className="cta-primary" size="md" href="/reader">Open Reader</Button>
@@ -142,7 +142,7 @@ export const HomeScreen = () => {
                                 </g>
                             </svg>
                             {/* Center symbol */}
-                            <div className="medallion-inner">
+                            <div className="medallion-inner animate-pulse-slow">
                                 <Image src="/ornaments/golden-wheel-maroon-400px.png" style={{ width: "250px", height: "250px" }} className="opacity-60" alt="Medallion Inner" width={250} height={250} />
                             </div>
                         </div>
