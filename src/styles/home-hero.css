@@ -20,15 +20,7 @@
       rgba(26,23,20,0) 60%);
   }
 
-    /* Mandala SVG ring – decorative right side */
-  .hero-mandala {
-    position: absolute;
-    right: -60px; top: 50%;
-    transform: translateY(-50%);
-    width: 660px; height: 660px;
-    opacity: 0.2;
-    animation: slowSpin 70s linear infinite reverse;
-  }
+
 
     .hero-mandala-left {
     position: absolute;
@@ -38,17 +30,6 @@
     opacity: 0.2;
     animation: slowSpin 90s linear infinite;
   }
-
-      .hero-mandala-right {
-    position: absolute;
-    right: -60px; top: 50%;
-    transform: translateY(-50%);
-    width: 660px; height: 660px;
-    opacity: 0.6;
-    animation: slowSpin 90s linear infinite;
-  }
-
-
 
     /* Fine grain overlay */
   .hero-grain {
