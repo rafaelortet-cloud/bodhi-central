@@ -33,7 +33,7 @@
 
     /* Mandala SVG ring – decorative ornament */
 
-    .hero-mandala-left {
+.hero-mandala-left {
     transform: translateY(-50%);
     animation: slowSpin 90s linear infinite;
   }
@@ -51,15 +51,7 @@
     to   { opacity:1; }
   }
 
-  /* Mandala SVG ring – decorative right side Hero Section */
-  .hero-mandala {
-    position: absolute;
-    right: -60px; top: 50%;
-    transform: translateY(-50%);
-    width: 660px; height: 660px;
-    opacity: 0.2;
-    animation: slowSpin 70s linear infinite reverse;
-  }
+
 
 /* Mandala SVG ring – decorative ornament */
 .hero-mandala-right {
@@ -67,7 +59,7 @@
     right: -60px; top: 50%;
     transform: translateY(-50%);
     width: 660px; height: 660px;
-    opacity: 0.6;
+    opacity: 0.65;
     animation: slowSpin 90s linear infinite;
   }
 

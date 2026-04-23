@@ -22,7 +22,7 @@ export const HomeScreen = () => {
                 <div className="hero-rule"></div>
 
                 {/* Brackground Large Mandala */}
-                <svg className="hero-mandala" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="hero-section-mandala" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="200" cy="200" r="196" stroke="#B08D57" strokeWidth="0.5" />
                     <circle cx="200" cy="200" r="170" stroke="#B08D57" strokeWidth="0.3" />
                     <circle cx="200" cy="200" r="140" stroke="#B08D57" strokeWidth="0.5" />
