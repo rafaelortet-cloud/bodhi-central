@@ -81,7 +81,7 @@ export const HomeScreen = () => {
                         <h1 className="hero-headline text-display-lg md:text-display-xl lg:text-display-4xl font-extralight text-white text-shadow-md text-shadow-gray-700 dark:text-shadow-gray-950 bg-hero-glow animate-pulse-slow">
                             Gateways to <br /> the <span className="text-brand-500 lg:text-display-5xl italic animate-pulse-slow">Awakening</span>
                         </h1>
-                        <p className="hero-sub mt-4 max-w-xs sm:max-w-sm md:max-w-xl text-lg text-balance text-brand-200 dark:text-brand-100 md:mt-6 md:text-xl">
+                        <p className="hero-sub mt-4 max-w-xs sm:max-w-sm md:max-w-xl text-md text-balance text-brand-200 dark:text-brand-100 md:mt-6 md:text-lg">
                             The great Buddhist traditions have illuminated the nature of mind for 2,500 years. Now, their most essential teachings — scriptures, paths, and living transmissions — are gathered in one place, for every sincere seeker.
                         </p>
                         <div className="hero-ctas mt-8 flex w-full gap-3 md:mt-12 md:flex-row lg:items-start">

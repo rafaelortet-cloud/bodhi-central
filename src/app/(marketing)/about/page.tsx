@@ -29,7 +29,7 @@ export default function AboutPage() {
                 <div className="mx-auto flex w-full flex-col">
                     <h2 className="text-display-md font-extralight text-brand-800 dark:text-brand-400 md:text-display-lg">What We Are Building</h2>
                     <p className="mt-4 max-w-2xl text-md text-tertiary md:mt-6 md:text-lg">
-                        A unified reading and study environment spanning the Pali Canon, the Tibetan Buddhist canon, and the Chinese Buddhist canon — in both original languages and modern translations. Our tools are built for everyone: from first encounters with the Dhammapada to deep study of the Tibetan commentarial tradition.
+                        A unified reading and study environment spanning the Pali Canon, the Tibetan Canon, and the Chinese Canon — in both original languages and modern translations. Our tools are built for everyone: from first encounters with the Dhammapada to deep study of the Tibetan commentarial tradition.
                     </p>
                     <p className="mt-4 max-w-2xl text-md text-tertiary md:mt-6 md:text-lg">
                         Bodhi Central is non-denominational by design. We don't privilege one tradition over another. We trust the seeker to find their own resonance — and we build the infrastructure to make that possible.
@@ -40,7 +40,7 @@ export default function AboutPage() {
                 <div className="mx-auto flex w-full flex-col">
                     <h2 className="text-display-md font-extralight text-brand-800 dark:text-brand-400 md:text-display-lg">Our Mission</h2>
                     <p className="mt-4 max-w-2xl text-md text-tertiary md:mt-6 md:text-lg">
-                        The suttas speak for themselves — when a reader can see how they connect to each other, where they sit in the tradition, and how they are lived today. That connective tissue is what we build.
+                        The suttas speak for themselves — when a reader can see how they connect to each other, where they sit in the tradition, and how they are lived today. That connective tissue is what we build, in support of the living transmission of the Dharma.
                     </p>
                     <p className="mt-4 max-w-2xl text-md text-tertiary md:mt-6 md:text-lg">
                         Our mission is to offer free access to this world of wisdom in multiple languages — in the spirit of the dana tradition and the Bodhisattva ideal of benefit for all beings.

@@ -96,13 +96,7 @@
 
   /* Sub */
   .hero-sub {
-    font-family: var(--font-sans);
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 1.72;
     color: rgba(245,240,232,0.52);
-    max-width: 420px;
-    margin-bottom: 48px;
     animation: fadeUp 1s ease both;
     animation-delay: 0.4s;
   }
