@@ -202,6 +202,7 @@ export const Button = ({
             ...otherProps,
 
             href: disabled ? undefined : href,
+            onPress,
         };
     } else {
         props = {
