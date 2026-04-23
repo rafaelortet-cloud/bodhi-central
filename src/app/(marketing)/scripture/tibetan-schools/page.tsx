@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { GalleryNyingmaStudies } from '@/components-custom/galleries/gallery-nyingma-studies';
 import { GalleryKagyuStudies } from '@/components-custom/galleries/gallery-kagyu-studies';
 import { FeaturedGalleryIndianGoldenTexts } from '@/components-custom/galleries/featured-gallery-indian-golden-texts';
-import { Button } from '@/components/base/buttons/button';
+import { BlogSectionTibetanStudiesOverviews } from '@/components-custom/blog/blog-tibetan-studies-overviews';
 import { ArrowDown } from '@untitledui/icons';
 
 export default function TibetanSchoolsPage() {
@@ -78,6 +78,7 @@ export default function TibetanSchoolsPage() {
                     <div id="kagyu-studies-gallery" className=""><GalleryKagyuStudies /></div>
                     <div id="indian-mahayana-gallery" className=""><FeaturedGalleryIndianGoldenTexts /></div>
                 </section>
+                <BlogSectionTibetanStudiesOverviews />
             </main>
         </>
     );
