@@ -182,10 +182,7 @@ export const FooterLarge10 = () => {
                     </div>
 
                     <div className="mt-8 flex flex-col-reverse gap-3 self-stretch sm:flex-row sm:self-start lg:mt-0">
-                        <Button color="secondary" size="md" href="/plans">
-                            Plans
-                        </Button>
-                        <Button size="md" href="/plans">Support us</Button>
+                        <Button size="md" href="/plans">Plans</Button>
                     </div>
                 </div>
 

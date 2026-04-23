@@ -89,7 +89,11 @@
     animation: fadeUp 1s ease both;
     animation-delay: 0.25s;
   }
- 
+
+  .hero-headline span {
+    text-shadow: 0 0 20px rgba(201, 169, 110, 0.35), 0 0 32px rgba(176, 141, 87, 0.15);
+    }
+
   /* Sub */
   .hero-sub {
     font-family: var(--font-sans);

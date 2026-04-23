@@ -45,13 +45,14 @@ export const FeaturesThreePillars = () => {
                         <FeaturedIcon icon={BookOpen01} size="lg" color="gray" theme="modern-neue" />
                         <h3 className="mt-5 text-display-xs text-brand-800 dark:text-brand-400 md:text-display-lg">Gems of Wisdom</h3>
                         <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">
-                            Whether you are already studying and practicing a Buddhist path, or exploring what Buddha's teachings mean to you, we have gathered scriptures and teachings from genuine streams of Buddhism with a pragmatic approach:
+                            For a long time Buddhist scripture was fragmented and scattered across many sources, making it difficult to access and study. We've made it simple, organized, and beautiful:
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
-                                "Clear access to a treasure trove of texts that are currently transmitted and practiced in modern Buddhist transmissions",
-                                "Texts and teachings organized by genres, traditions, and schools of study and practice, for everyone",
                                 "State-of-the-art readers and personal workspaces to make your experience smooth and memorable",
+                                "Clear access to a treasure trove of texts that are currently transmitted and practiced in modern Buddhist transmissions",
+                                "The collections are organized in collections that make sense to students of Buddhism with a pragmatic approach"
+
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="sm" iconStyle="outlined" color="primary" text={feat} />
                             ))}
