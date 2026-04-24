@@ -1,0 +1,137 @@
+import { Button } from "@/components/base/buttons/button";
+import { type Article, Simple01Vertical } from "@/components/marketing/blog/base-components/blog-cards";
+
+const articles: Article[] = [
+    {
+        id: "article-1",
+        title: "The Foundamental Studies",
+        summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        href: "#",
+        category: {
+            name: "Foundamental Studies",
+            href: "#",
+        },
+        thumbnailUrl: "/placeholder-image-landscape.svg",
+        publishedAt: "20 Feb 2026",
+        readingTime: "8 min read",
+        author: {
+            name: "John Doe",
+            href: "#",
+            avatarUrl: "/placeholder-image-landscape.svg",
+        },
+        tags: [
+            {
+                name: "Tibetan Canon",
+                color: "brand",
+                href: "#",
+            },
+            {
+                name: "Kangyur",
+                color: "indigo",
+                href: "#",
+            },
+            {
+                name: "Buddha's Words",
+                color: "pink",
+                href: "#",
+            },
+        ],
+        isFeatured: true,
+    },
+    {
+        id: "article-2",
+        title: "Academic Studies",
+        summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        href: "#",
+        category: {
+            name: "Academic Studies",
+            href: "#",
+        },
+        thumbnailUrl: "/placeholder-image-landscape.svg",
+        publishedAt: "19 Feb 2026",
+        readingTime: "8 min read",
+        author: {
+            name: "John Doe",
+            href: "#",
+            avatarUrl: "/placeholder-image-landscape.svg",
+        },
+        tags: [
+            {
+                name: "Tibetan Canon",
+                color: "blue",
+                href: "#",
+            },
+            {
+                name: "Tengyur",
+                color: "pink",
+                href: "#",
+            },
+            {
+                name: "Treatises",
+                color: "pink",
+                href: "#",
+            },
+        ],
+    },
+    {
+        id: "article-3",
+        title: "Practice Paths",
+        summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        href: "#",
+        category: {
+            name: "Practice Paths",
+            href: "#",
+        },
+        thumbnailUrl: "/placeholder-image-landscape.svg",
+        publishedAt: "18 Jan 2026",
+        readingTime: "8 min read",
+        author: {
+            name: "John Doe",
+            href: "#",
+            avatarUrl: "/placeholder-image-landscape.svg",
+        },
+        tags: [
+            {
+                name: "Tibetan Canon",
+                color: "success",
+                href: "#",
+            },
+            {
+                name: "Historical Context",
+                color: "pink",
+                href: "#",
+            },
+        ],
+    },
+];
+
+export const BlogSectionLearningPathsOverviews = () => {
+    return (
+        <section className="bg-linear-to-b from-brand-100 via-brand-50 via-15% to-brand-100 to-80% dark:bg-linear-to-b dark:from-brand-900/90 dark:via-brand-800/50 dark:via-50% dark:to-brand-900/90 py-12 md:py-20">
+            <div className="mx-auto max-w-container px-4 md:px-8">
+                <div className="flex flex-col items-start justify-between lg:flex-row">
+                    <div className="max-w-3xl">
+                        <span className="text-sm font-light text-brand-600 dark:text-brand-700 md:text-md">Study and Practice</span>
+                        <h2 className="mt-2 text-display-sm font-extralight text-brand-800 dark:text-brand-300 md:text-display-lg">Pathways to Awakening</h2>
+                        <p className="mt-4 text-lg text-tertiary md:mt-2 md:text-xl">What are the different approaches to the Buddhist path? Discover the main approaches to the study and practice of the Buddhadharma.</p>
+                    </div>
+
+                    <div className="hidden gap-3 lg:flex">
+                        <Button size="sm">View more</Button>
+                    </div>
+                </div>
+
+                <ul className="mt-10 grid grid-cols-1 gap-x-8 gap-y-10 md:mt-12 md:grid-cols-2 md:gap-y-14 lg:grid-cols-3">
+                    {articles.slice(0, 3).map((article) => (
+                        <li key={article.id}>
+                            <Simple01Vertical article={article} />
+                        </li>
+                    ))}
+                </ul>
+                <div className="mt-12 flex flex-col gap-3 lg:hidden">
+                    <Button size="md">View more</Button>
+                </div>
+            </div>
+        </section>
+    );
+};
