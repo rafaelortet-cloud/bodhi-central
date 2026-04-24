@@ -8,7 +8,7 @@ const articles: Article[] = [
         summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         href: "#",
         category: {
-            name: "Foundamental Studies",
+            name: "Study",
             href: "#",
         },
         thumbnailUrl: "/placeholder-image-landscape.svg",
@@ -44,7 +44,7 @@ const articles: Article[] = [
         summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         href: "#",
         category: {
-            name: "Academic Studies",
+            name: "Study",
             href: "#",
         },
         thumbnailUrl: "/placeholder-image-landscape.svg",
@@ -79,7 +79,7 @@ const articles: Article[] = [
         summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         href: "#",
         category: {
-            name: "Practice Paths",
+            name: "Practice",
             href: "#",
         },
         thumbnailUrl: "/placeholder-image-landscape.svg",
@@ -113,7 +113,7 @@ export const BlogSectionLearningPathsOverviews = () => {
                     <div className="max-w-3xl">
                         <span className="text-sm font-light text-brand-600 dark:text-brand-700 md:text-md">Study and Practice</span>
                         <h2 className="mt-2 text-display-sm font-extralight text-brand-800 dark:text-brand-300 md:text-display-lg">Pathways to Awakening</h2>
-                        <p className="mt-4 text-lg text-tertiary md:mt-2 md:text-xl">What are the different approaches to the Buddhist path? Discover the main approaches to the study and practice of the Buddhadharma.</p>
+                        <p className="mt-4 text-lg text-tertiary md:mt-2 md:text-xl">Explore the different approaches to the study and practice of the Buddhadharma and discover how they complement each other on the path to awakening.</p>
                     </div>
 
                     <div className="hidden gap-3 lg:flex">
