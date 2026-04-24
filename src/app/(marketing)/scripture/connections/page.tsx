@@ -1,4 +1,4 @@
-import { BlogSectionTibetanCanonOverviews } from '@/components-custom/blog/blog-tibetan-canon-overviews';
+import { BlogSectionConnectionsAndParallelsOverviews } from '@/components-custom/blog/blog-connections-and-parallels-overviews';
 
 export default function ScriptureConnectionsPage() {
     return (
@@ -12,7 +12,7 @@ export default function ScriptureConnectionsPage() {
                 <div className="relative flex flex-col items-center justify-center gap-12 z-10">
                     {/* Hero Title & Subtitle */}
                     <div className="md:flex flex-col items-center justify-center gap-1 px-4 md:px-6 animate-[fadeUp_1s_ease_both] delay-300 ">
-                        <h1 className="text-display-sm font-extralight text-center text-brand-300 dark:text-brand-300 md:text-display-lg lg:text-display-3xl text-shadow-brand-950 text-shadow-sm">Buddhist Connections</h1>
+                        <h1 className="text-display-sm font-extralight text-center text-brand-300 dark:text-brand-300 md:text-display-lg lg:text-display-3xl text-shadow-brand-950 text-shadow-sm">Scripture Connections & Parallels</h1>
                         <p className="hero-subtitle text-center text-lg font-light text-white">Landing page in progress...</p>
                     </div>
                 </div>
@@ -26,7 +26,7 @@ export default function ScriptureConnectionsPage() {
                 </div>
 
             </section>
-            <BlogSectionTibetanCanonOverviews />
+            <BlogSectionConnectionsAndParallelsOverviews />
         </>
     );
 }
