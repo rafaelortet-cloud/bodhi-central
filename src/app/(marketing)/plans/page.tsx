@@ -47,7 +47,7 @@ const faqs = [
     },
     {
         question: "How does billing work?",
-        answer: "You can manage the monthly and annual billing options of the Housekeeper subscription at your account settings, under the 'Billing' section.",
+        answer: "You can manage the monthly and annual billing options of the Standard and Patron subscription at your account settings, under the 'Billing' section.",
         icon: CreditCardRefresh,
     },
     {
