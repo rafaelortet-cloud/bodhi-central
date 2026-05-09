@@ -34,7 +34,7 @@ export const FeaturesThreePillars = () => {
             {/* Header Title and Subtitle */}
             <div className="mx-auto w-full max-w-container px-4 md:px-8">
                 <div className="mx-auto flex w-full max-w-4xl flex-col items-center text-center">
-                    <h2 className="mt-3 text-display-lg font-extralight tracking-tight italic text-brand-600 dark:text-brand-400 lg:text-display-2xl">Not a library. Not an app.<br /> A living doorway into the Dharma</h2>
+                    <h2 className="mt-3 text-display-lg font-extralight tracking-tight text-brand-600 dark:text-brand-400 lg:text-display-xl">Not a library. Not an app.<br /> A living doorway into the Dharma</h2>
                 </div>
             </div>
             {/* Features Group: Scriptures, Paths, and Resources */}
@@ -43,15 +43,15 @@ export const FeaturesThreePillars = () => {
                 <div className="grid grid-cols-1 gap-10 md:gap-20 lg:grid-cols-2 lg:gap-24">
                     <div className="max-w-xl flex-1 self-center">
                         <FeaturedIcon icon={BookOpen01} size="lg" color="gray" theme="modern-neue" />
-                        <h3 className="mt-5 text-display-xs text-brand-800 dark:text-brand-400 md:text-display-lg">Gems of Wisdom</h3>
+                        <h3 className="mt-5 text-display-xs text-brand-800 dark:text-brand-400 md:text-display-lg">Sources to Gems of Wisdom</h3>
                         <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">
-                            For a long time Buddhist scripture was fragmented and scattered across many sources, making it difficult to access and study. We've made it simple, organized, and beautiful:
+                            Buddhist sources were fragmented and scattered for too long. We've made it simple, organized, and beautiful:
                         </p>
                         <ul className="mt-8 flex flex-col gap-4 pl-2 md:gap-5 md:pl-4">
                             {[
                                 "State-of-the-art readers and personal workspaces to make your experience smooth and memorable",
                                 "Clear access to a treasure trove of texts that are currently transmitted and practiced in modern Buddhist transmissions",
-                                "The collections are organized in collections that make sense to students of Buddhism with a pragmatic approach"
+                                "With a pragmatic approach, collections, genres, and other categories of texts are organized in a way that makes sense to students and practitioners, regardless of their school or tradition."
 
                             ].map((feat) => (
                                 <CheckItemText key={feat} size="sm" iconStyle="outlined" color="primary" text={feat} />
@@ -151,9 +151,9 @@ export const FeaturesThreePillars = () => {
                 <div className="grid grid-cols-1 gap-10 md:gap-16 lg:grid-cols-3 lg:gap-16 lg:items-center lg:justify-center">
                     <div className="max-w-lg flex-1 self-center">
                         <FeaturedIcon icon={ChartBreakoutSquare} size="lg" color="gray" theme="modern-neue" />
-                        <h3 className="mt-5 text-display-xs text-brand-800 dark:text-brand-400 md:text-display-lg">Resources for Individuals and Communities</h3>
+                        <h3 className="mt-5 text-display-xs text-brand-800 dark:text-brand-400 md:text-display-lg">Resources for Communities</h3>
                         <p className="mt-2 text-md text-tertiary md:mt-4 md:text-lg">
-                            Find teachers and study centres worldwide through our curated directory. Deepen your understanding with articles written from within the living Buddhist traditions. Join practitioners in our forum and bring questions, reflections, and encouragement to a growing global sangha. All documentation and guidelines are openly available for contributors and curious minds alike.
+                            Find teachers and study centers worldwide through our curated directory. Deepen your understanding with articles written from within the living Buddhist traditions. Join practitioners in our forum and bring questions, reflections, and encouragement to a growing global sangha. All documentation and guidelines are openly available for contributors and curious minds alike.
                         </p>
                         <Button href="/resources" color="secondary" size="md" className="relative z-100 mt-8 cursor-pointer">
                             Explore resources
