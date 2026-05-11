@@ -26,19 +26,9 @@ export const SidebarReaderWrapper = () => {
                         icon: Menu02,
                     },
                     {
-                        label: "Front Matter",
-                        href: "",
-                        icon: AlignLeft01,
-                    },
-                    {
                         label: "Main Body Outline",
                         href: "",
                         icon: BookOpen01,
-                    },
-                    {
-                        label: "Back Matter",
-                        href: "",
-                        icon: AlignRight01,
                     },
                 ]}
                 footerItems={[
