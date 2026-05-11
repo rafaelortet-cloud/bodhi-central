@@ -10,8 +10,12 @@ export default function AboutPage() {
             <section className="relative mx-auto w-full bg-primary py-12 md:py-16">
                 <Image src="/ornaments/endless-knot-corner-gold.png" width={260} height={260} alt="Plans background" className="hidden  lg:block absolute top-4 right-4 opacity-16 dark:opacity-25" />
                 <Image src="/ornaments/endless-knot-corner-gold.png" width={260} height={260} alt="Plans background" className="hidden lg:block absolute top-4 left-4 scale-x-[-1] opacity-16 dark:opacity-25" />
-                <div className="mx-auto max-w-container px-4 md:px-8">
-                    <h1 className="text-display-md font-extralight text-brand-800 dark:text-brand-400 md:text-display-xl text-center">About Us</h1>
+                <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
+                    <span className="text-sm font-semibold text-brand-secondary md:text-md">About Us</span>
+                    <h1 className="text-display-md font-extralight text-brand-800 dark:text-brand-400 md:text-display-xl text-center">We believe the Dharma belongs to everyone.</h1>
+                    <p className="mt-2 text-lg text-tertiary md:mt-8 md:text-xl">
+                        Bodhi Central is a modern platform built to make the essential teachings of Buddhism genuinely accessible — across traditions, languages, and levels of practice.
+                    </p>
                 </div>
             </section>
             <section className="mx-auto w-3xl px-4 md:px-8">
@@ -27,7 +31,7 @@ export default function AboutPage() {
             </section>
             <section className="mx-auto w-3xl px-4 md:px-8">
                 <div className="mx-auto flex w-full flex-col">
-                    <h2 className="text-display-md font-extralight text-brand-800 dark:text-brand-400 md:text-display-lg">What We Are Building</h2>
+                    <h2 className="text-display-md font-extralight text-brand-800 dark:text-brand-400 md:text-display-lg">What We’re Building</h2>
                     <p className="mt-4 max-w-2xl text-md text-tertiary md:mt-6 md:text-lg">
                         A unified reading and study environment spanning the Pali Canon, the Tibetan Canon, and the Chinese Canon — in both original languages and modern translations. Our tools are built for everyone: from first encounters with the Dhammapada to deep study of the Tibetan commentarial tradition.
                     </p>
@@ -52,7 +56,7 @@ export default function AboutPage() {
                 <div className="mx-auto flex flex-col">
                     <h2 className="text-display-md font-extralight text-brand-800 dark:text-brand-400 md:text-display-lg">Our Business Model — Leading with the Right Foot</h2>
                     <p className="mt-4 max-w-2xl text-md text-tertiary md:mt-6 md:text-lg">
-                        Access to the Buddhist texts will always be free on Bodhi Central. So will core study features like side-by-side version comparison and interactive timelines. That commitment is unconditional.
+                        Access to the Buddhist texts will always be free on Bodhi Central. So will core study features like state-of-the-art readers, navigation across canons, and interactive timelines. That commitment is unconditional.
                     </p>
                     <p className="mt-4 max-w-2xl text-md text-tertiary md:mt-6 md:text-lg">
                         For practitioners who want to go deeper, a low-cost subscription unlocks note-taking, personalised workspaces, and advanced tools built to support long-term study. Your subscription is what allows us to keep building — and to keep the platform free for everyone else.
