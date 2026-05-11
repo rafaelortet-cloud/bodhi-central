@@ -1,4 +1,4 @@
-import { BlogSectionTibetanCanonOverviews } from '@/components-custom/blog/blog-tibetan-canon-overviews';
+import { BlogSectionPracticePathsOverviews } from '@/components-custom/blog/blog-practice-paths-overviews';
 
 export default function PracticePathsPage() {
     return (
@@ -26,7 +26,7 @@ export default function PracticePathsPage() {
                 </div>
 
             </section>
-            <BlogSectionTibetanCanonOverviews />
+            <BlogSectionPracticePathsOverviews />
         </>
     );
 }
