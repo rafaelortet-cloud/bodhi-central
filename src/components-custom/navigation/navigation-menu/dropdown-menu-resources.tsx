@@ -9,6 +9,7 @@ type MenuItem = {
     title: string;
     subtitle?: string;
     href: string;
+    target?: string;
     Icon: FC<{ className?: string }>;
     badge?: ReactNode;
 };
@@ -19,29 +20,6 @@ type MenuColumn = {
 };
 
 const columns: MenuColumn[] = [
-    {
-        title: "Resources",
-        items: [
-            {
-                title: "The Blog",
-                subtitle: "Read educational articles distilling wisdom and kindness",
-                href: "/resources/blog",
-                Icon: Certificate02,
-            },
-            {
-                title: "Join our Forum",
-                subtitle: "Engage in conversations and share knowledge with others.",
-                href: "https://bodhicentral.discourse.group",
-                Icon: UsersPlus,
-            },
-            {
-                title: "Documentation",
-                subtitle: "In-depth articles about our platfrom, technologies, and research.",
-                href: "https://bodhicentral-docs.vercel.app/",
-                Icon: FileQuestion01,
-            },
-        ],
-    },
     {
         title: "Community and Support",
         items: [
@@ -63,6 +41,32 @@ const columns: MenuColumn[] = [
                 href: "/support",
                 Icon: LifeBuoy01,
             },
+
+        ],
+    },
+    {
+        title: "Resources",
+        items: [
+            {
+                title: "The Blog",
+                subtitle: "Read educational articles distilling wisdom and kindness",
+                href: "/resources/blog",
+                Icon: Certificate02,
+            },
+            {
+                title: "Join our Forum",
+                subtitle: "Engage in conversations and share knowledge with others.",
+                href: "https://bodhicentral.discourse.group",
+                target: "_blank",
+                Icon: UsersPlus,
+            },
+            {
+                title: "Documentation",
+                subtitle: "In-depth articles about our platfrom, technologies, and research.",
+                href: "https://bodhicentral-docs.vercel.app/",
+                target: "_blank",
+                Icon: FileQuestion01,
+            },
         ],
     },
 ];
@@ -73,7 +77,7 @@ export const DropdownMenuResources = ({ onClose }: { onClose?: () => void }) => 
             <nav className="overflow-hidden md:overflow-visible rounded-xl bg-warm-off-300 dark:bg-brand-800 drop-shadow-lg ring-1 ring-secondary_alt md:rounded-2xl md:drop-shadow-2xl dark:md:drop-shadow-gray-900">
                 <div className="flex flex-col gap-2 rounded-xl bg-white dark:bg-brand-900 pt-4 pb-5 ring-1 ring-secondary md:gap-8 md:rounded-t-2xl md:p-6 md:pt-5">
                     <div className="flex flex-col gap-1 px-4 md:p-0 border-b border-b-brand-100 dark:border-b-brand-800/60">
-                        <h4 className="py-2 text-display-md font-extralight tracking-wide uppercase text-brand-700 dark:text-brand-300">RESOURCES</h4>
+                        <h4 className="py-2 text-display-md font-extralight tracking-wide uppercase text-brand-700 dark:text-brand-300">COMMUNITY & RESOURCES</h4>
                     </div>
 
                     <div className="flex flex-col gap-5 md:flex-row md:gap-10 md:pb-2">
@@ -99,7 +103,7 @@ export const DropdownMenuResources = ({ onClose }: { onClose?: () => void }) => 
                                 <div key={column.title}>
                                     <h3 className="mb-2 px-4 text-md font-semibold text-brand-600 dark:text-brand-400">{column.title}</h3>
                                     <ul className="flex flex-col gap-0.5">
-                                        {column.items.map(({ title, subtitle, href, Icon }) => (
+                                        {column.items.map(({ title, subtitle, href, target, Icon }) => (
                                             <li key={title}>
                                                 <NavMenuItemLink icon={Icon} title={title} subtitle={subtitle} href={href} />
                                             </li>
@@ -112,14 +116,14 @@ export const DropdownMenuResources = ({ onClose }: { onClose?: () => void }) => 
                 </div>
 
                 <div className="mx-auto flex max-w-container flex-col px-4 py-5 md:flex-row md:items-center md:justify-between md:px-6">
-                    <Button href="/dashboard" color="secondary" size="md" iconLeading={BookOpen01} className="hidden md:flex" onPress={onClose}>
-                        Docs | Dashboard
+                    <Button href="https://bodhicentral-docs.vercel.app/documentation/introduction" target="_blank" color="secondary" size="md" iconLeading={BookOpen01} className="hidden md:flex" onPress={onClose}>
+                        Documentation
                     </Button>
                     <Button href="/plans" color="primary" size="md" className="hidden md:flex" onPress={onClose}>
-                        Plans | My Desk
+                        Plans
                     </Button>
                     <Button href="/plans" color="primary" size="sm" className="md:hidden" onPress={onClose}>
-                        Plans | My Desk
+                        Plans
                     </Button>
                 </div>
             </nav>

@@ -78,7 +78,7 @@ export const HomeScreen = () => {
                             <div className="eyebrow-line"></div>
                             <div className="eyebrow-text">Buddhist Paths & Scriptures</div>
                         </div>
-                        <h1 className="hero-headline text-display-lg md:text-display-xl lg:text-display-3xl font-light text-white text-shadow-md text-shadow-gray-700 dark:text-shadow-gray-950">
+                        <h1 className="hero-headline text-display-lg md:text-display-xl lg:text-display-3xl font-extralight text-white text-shadow-md text-shadow-gray-700 dark:text-shadow-gray-950">
                             Gateways to <br /> the <span className="text-brand-500 lg:text-display-5xl font-extralight italic">Awakening</span>
                         </h1>
                         <p className="hero-sub mt-4 max-w-xs sm:max-w-sm md:max-w-xl text-md text-balance text-brand-200 dark:text-brand-100 md:mt-6 md:text-lg">

@@ -23,13 +23,13 @@ const columns: MenuColumn[] = [
         title: "Readership",
         items: [
             {
-                title: "Last Reading",
+                title: "Continue Reading",
                 subtitle: "Continue reading where you left off.",
                 href: "#",
                 Icon: BookOpen01,
             },
             {
-                title: "Stored Texts",
+                title: "My Library",
                 subtitle: "Texts you have stored in your library for later reading.",
                 href: "#",
                 Icon: BookOpen01,
@@ -40,13 +40,13 @@ const columns: MenuColumn[] = [
         title: "Learning",
         items: [
             {
-                title: "Last Learning",
+                title: "Continue Learning",
                 subtitle: "Continue learning where you left off.",
                 href: "#",
                 Icon: Hurricane01,
             },
             {
-                title: "Stored Paths",
+                title: "My Paths",
                 subtitle: "Learnings you have stored in your library.",
                 href: "#",
                 Icon: Link03,
@@ -61,7 +61,7 @@ export const DropdownMenuMyDesk = ({ onClose }: { onClose?: () => void }) => {
             <nav className="overflow-hidden md:overflow-visible rounded-xl  bg-warm-off-300 dark:bg-brand-800  drop-shadow-lg ring-1 ring-secondary_alt md:rounded-2xl md:drop-shadow-2xl dark:md:drop-shadow-gray-900">
                 <div className="flex flex-col gap-2 rounded-xl bg-white dark:bg-brand-900  pt-4 ring-1 ring-secondary md:gap-8 md:rounded-t-2xl md:p-6 md:pt-5">
                     <div className="flex flex-col gap-1 px-4 md:p-0 border-b border-b-brand-100 dark:border-b-brand-800/60">
-                        <h4 className="py-2 text-display-md font-extralight tracking-wide uppercase text-brand-700 dark:text-brand-300">DESK</h4>
+                        <h4 className="py-2 text-display-md font-extralight tracking-wide uppercase text-brand-700 dark:text-brand-300">MY DESK</h4>
                     </div>
 
                     <div className="flex flex-col gap-5 md:flex-row md:gap-10 md:pb-2">
@@ -70,11 +70,11 @@ export const DropdownMenuMyDesk = ({ onClose }: { onClose?: () => void }) => {
                             <ul className="flex flex-col gap-3">
                                 {[
 
+                                    { title: "Edit Workspaces", href: "/dashboard" },
                                     { title: "Pali Canon", href: "/scripture/theravada-tradition" },
                                     { title: "Tibetan Canon", href: "/scripture/tibetan-canons" },
                                     { title: "Tibetan Schools", href: "/scripture/tibetan-schools" },
-                                    { title: "Collections", href: "/scripture/collections" },
-                                    { title: "Spaces", href: "/dashboard" },
+                                    { title: "Collections Overview", href: "/scripture/collections" },
                                 ].map((item) => (
                                     <li key={item.title}>
                                         <Button href={item.href} color="link-gray" size="md" onPress={onClose}>
@@ -103,7 +103,7 @@ export const DropdownMenuMyDesk = ({ onClose }: { onClose?: () => void }) => {
                 </div>
 
                 <div className="mx-auto flex max-w-container flex-col px-4 py-5 md:flex-row md:items-center md:justify-between md:px-6">
-                    <Button href="https://bodhicentral-docs.vercel.app/documentation/introduction" color="secondary" size="md" iconLeading={BookOpen01} className="hidden md:flex" onPress={onClose}>
+                    <Button href="https://bodhicentral-docs.vercel.app/documentation/introduction" target="_blank" color="secondary" size="md" iconLeading={BookOpen01} className="hidden md:flex" onPress={onClose}>
                         Documentation
                     </Button>
                     <Button href="/plans" color="primary" size="md" className="hidden md:flex" onPress={onClose}>

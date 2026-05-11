@@ -107,7 +107,7 @@ export const DropdownMenuLearningPaths = ({ onClose }: { onClose?: () => void })
 
                 <div className="mx-auto flex max-w-container flex-col px-4 py-5 md:flex-row md:items-center md:justify-between md:px-6">
                     <Button href="/plans" color="secondary" size="md" className="hidden md:flex" onPress={onClose}>
-                        Plans | My Desk
+                        Plans
                     </Button>
                     <Button href="/learning-paths" color="primary" size="md" iconLeading={GraduationHat01} className="hidden md:flex" onPress={onClose}>
                         Last learning

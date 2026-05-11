@@ -58,7 +58,7 @@ export const CanonNavigationModal = () => {
                         {/* Canon Navigator */}
                         <div className="relative w-140 sm:min-w-110 flex flex-col overflow-hidden rounded-l-2xl bg-secondary border-r border-secondary">
                             {/* Header */}
-                            <div className="h-auto flex flex-col gap-0.5 px-4 pt-4 sm:px-6 sm:py-4 bg-tertiary dark:bg-neutral-900 border-b border-secondary">
+                            <div className="h-auto flex flex-col gap-0.5 px-4 pt-3 sm:px-6 sm:py-3 bg-secondary dark:bg-neutral-900 border-b border-secondary">
                                 <AriaHeading slot="title" className="text-display-xs font-light text-brand-primary">
                                     Canon Navigation
                                 </AriaHeading>

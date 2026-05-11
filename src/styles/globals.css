@@ -132,7 +132,6 @@ i,
 }
 
 h1 {
-    --font-serif--opsz: 60;
     text-wrap: balance;
 }
 
@@ -142,7 +141,7 @@ h2 {
 }
 
 h3 {
-    --font-serif--opsz: 60;
+
     line-height: 1.15;
     text-wrap: balance;
 }
