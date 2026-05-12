@@ -143,7 +143,7 @@ export const HomeScreen = () => {
                             </svg>
                             {/* Center symbol */}
                             <div className="medallion-inner">
-                                <Image src="/ornaments/golden-wheel-orange-400px.png" style={{ width: "280px", height: "280px" }} className="opacity-60" alt="Medallion Inner" width={280} height={280} />
+                                <Image src="/ornaments/golden-wheel-280px.webp" style={{ width: "280px", height: "270px" }} className="opacity-60" alt="Medallion Inner" width={280} height={270} />
                             </div>
                         </div>
                     </div>
