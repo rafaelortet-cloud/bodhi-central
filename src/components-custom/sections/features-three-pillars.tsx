@@ -29,7 +29,7 @@ export const FeaturesThreePillars = () => {
     return (
         <section className="relative flex flex-col gap-12 overflow-hidden bg-primary py-16 sm:gap-16 md:gap-20 md:py-24 lg:gap-24">
             {/* Top decorative band */}
-            <div className="absolute h-6 top-0 left-0 right-0 mx-auto bg-[url(/patterns/detailed-endless-band-gold-140px.png)] bg-contain bg-repeat opacity-50 dark:opacity-40">
+            <div className="absolute h-6 top-0 left-0 right-0 mx-auto bg-[url(/patterns/detailed-endless-band-gold-140px.webp)] bg-contain bg-repeat opacity-50 dark:opacity-40">
             </div>
             {/* Header Title and Subtitle */}
             <div className="mx-auto w-full max-w-container px-4 md:px-8">
@@ -74,7 +74,7 @@ export const FeaturesThreePillars = () => {
                             {/* Light mode image (hidden in dark mode) */}
                             <Image
                                 alt="Scripture mockup showing Collections interface"
-                                src="/theravada-tradition-light-mode-1280px.webp"
+                                src="/theravada-tradition-light-mode-912px.webp"
                                 className="size-full object-cover lg:w-auto lg:max-w-none dark:hidden"
                                 width={1600}
                                 height={931}
@@ -83,7 +83,7 @@ export const FeaturesThreePillars = () => {
                             {/* Dark mode image (hidden in light mode) */}
                             <Image
                                 alt="Dashboard mockup showing application interface"
-                                src="/theravada-tradition-light-mode-1280px.webp"
+                                src="/theravada-tradition-light-mode-912px.webp"
                                 className="size-full object-contain not-dark:hidden lg:w-auto lg:max-w-none"
                                 width={1600}
                                 height={931}
@@ -128,7 +128,7 @@ export const FeaturesThreePillars = () => {
 
                             <Image
                                 alt="Mockup showing Learning Paths interface"
-                                src="/tibetan-schools-light-mode-1280px.webp"
+                                src="/tibetan-schools-light-mode-912px.webp"
                                 className="size-full object-contain lg:w-auto lg:max-w-none dark:hidden"
                                 width={1600}
                                 height={931}
@@ -137,7 +137,7 @@ export const FeaturesThreePillars = () => {
                             {/* Dark mode image (hidden in light mode) */}
                             <Image
                                 alt="Mockup showing Learning Paths interface"
-                                src="/tibetan-schools-light-mode-1280px.webp"
+                                src="/tibetan-schools-light-mode-912px.webp"
                                 className="size-full object-contain not-dark:hidden lg:w-auto lg:max-w-none"
                                 width={1600}
                                 height={931}
@@ -191,7 +191,7 @@ export const FeaturesThreePillars = () => {
                                 }}
                             >Research & Documentation</span>
                             <Image
-                                src="/bc-documentation-dark-mode-600px.webp"
+                                src="/bc-documentation-dark-mode-373px.webp"
                                 className="size-full max-h-full object-fill border-double border-5 border-gray-300 dark:border-gray-700 rounded-xl -rotate-y-2 rotate-x-1 rotate-z-15 translate-y-25 -translate-x-3"
                                 alt="BD Blog article with menu screenshot"
                                 style={{
@@ -208,7 +208,7 @@ export const FeaturesThreePillars = () => {
                                 }}
                             >Expert Articles</span>
                             <img
-                                src="/blog-article-with-menu-dark-mode-600px.webp"
+                                src="/blog-article-with-menu-dark-mode-373px.webp"
                                 className="size-full object-fill border-double border-5 border-gray-300 dark:border-gray-700 rounded-xl -rotate-y-2 rotate-x-2 rotate-z-15 translate-y-11"
                                 alt="BD documentation and research screenshot"
                                 style={{
