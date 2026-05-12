@@ -74,7 +74,7 @@ export const FeaturesThreePillars = () => {
                             {/* Light mode image (hidden in dark mode) */}
                             <Image
                                 alt="Scripture mockup showing Collections interface"
-                                src="/theravada-tradition-light-mode-1600px.webp"
+                                src="/theravada-tradition-light-mode-1280px.webp"
                                 className="size-full object-cover lg:w-auto lg:max-w-none dark:hidden"
                                 width={1600}
                                 height={931}
@@ -83,7 +83,7 @@ export const FeaturesThreePillars = () => {
                             {/* Dark mode image (hidden in light mode) */}
                             <Image
                                 alt="Dashboard mockup showing application interface"
-                                src="/theravada-tradition-light-mode-1600px.webp"
+                                src="/theravada-tradition-light-mode-1280px.webp"
                                 className="size-full object-contain not-dark:hidden lg:w-auto lg:max-w-none"
                                 width={1600}
                                 height={931}
@@ -128,7 +128,7 @@ export const FeaturesThreePillars = () => {
 
                             <Image
                                 alt="Mockup showing Learning Paths interface"
-                                src="/tibetan-schools-hero-header-light-mode-1600px.webp"
+                                src="/tibetan-schools-light-mode-1280px.webp"
                                 className="size-full object-contain lg:w-auto lg:max-w-none dark:hidden"
                                 width={1600}
                                 height={931}
@@ -137,7 +137,7 @@ export const FeaturesThreePillars = () => {
                             {/* Dark mode image (hidden in light mode) */}
                             <Image
                                 alt="Mockup showing Learning Paths interface"
-                                src="/tibetan-schools-hero-header-light-mode-1600px.webp"
+                                src="/tibetan-schools-light-mode-1280px.webp"
                                 className="size-full object-contain not-dark:hidden lg:w-auto lg:max-w-none"
                                 width={1600}
                                 height={931}
