@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { HelpCircle } from "@untitledui/icons";
 import { Dialog, Modal, ModalOverlay } from "@/components/application/modals/canon-modal";
 import { Button } from "@/components/base/buttons/button";
 import { CloseButton } from "@/components/base/buttons/close-button";
@@ -54,9 +53,9 @@ export const CanonNavigationModal = () => {
         <ModalOverlay isOpen={isOpen} onOpenChange={setIsOpen} isDismissable={true}>
             <Modal>
                 <Dialog>
-                    <div className="flex flex-row gap-0 w-full h-full shadow-2xl rounded-xl">
+                    <div className="flex flex-row gap-0 w-full h-full shadow-lg">
                         {/* Canon Navigator */}
-                        <div className="relative w-140 sm:min-w-110 flex flex-col overflow-hidden rounded-l-2xl bg-secondary border-r border-secondary">
+                        <div className="relative w-140 sm:min-w-110 flex flex-col overflow-hidden bg-secondary border-r border-secondary">
                             {/* Header */}
                             <div className="h-auto flex flex-col gap-0.5 px-4 pt-3 sm:px-6 sm:py-3 bg-secondary dark:bg-neutral-900 border-b border-secondary">
                                 <AriaHeading slot="title" className="text-display-xs font-light text-brand-primary">
@@ -78,7 +77,7 @@ export const CanonNavigationModal = () => {
                             </div>
                         </div>
                         {/* Text Listing from Canon Navigator Selections */}
-                        <div className="relative w-full flex flex-col  overflow-hidden rounded-r-3xl bg-secondary">
+                        <div className="relative w-full flex flex-col  overflow-hidden bg-secondary">
                             <CloseButton onClick={() => setIsOpen(false)} theme="light" size="sm" className="absolute top-3 right-3 sm:top-4 sm:right-4" />
                             <div className="h-auto flex flex-row gap-6 items-center justify-between pl-4 pr-20 pt-4 sm:pl-6 sm:pt-7 bg-secondary">
 

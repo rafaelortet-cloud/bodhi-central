@@ -11,7 +11,7 @@ import { openCanonNavigator } from "@/components-custom/navigation/canon-navigat
 
 export const TableOfContents = () => {
     return (
-        <div className="sticky flex flex-col top-12 px-6 py-4 mx-auto z-45 border border-secondary rounded-l-2xl max-h-full">
+        <div className="sticky flex flex-col top-12 px-6 py-4 mx-auto z-45 border border-secondary max-h-full">
             <div className="py-2">
                 <h5 className="text-display-xs text-brand-primary">Table of Contents</h5>
             </div>
@@ -267,7 +267,7 @@ export const TextCanvasSingle = () => {
 
 export const AncillaryPanel = () => {
     return (
-        <div className="sticky prose-reader flex flex-col top-12 px-6 py-4 mx-auto z-45 border border-secondary rounded-r-2xl max-h-full">
+        <div className="sticky prose-reader flex flex-col top-12 px-6 py-4 mx-auto z-45 border border-secondary max-h-full">
             <div className="py-2">
                 <h3 className="text-display-md text-brand-primary">Ancillary Panels</h3>
             </div>
@@ -307,7 +307,7 @@ export default function ReaderPage() {
 
                 {/* TEXT READER CANVAS */}
 
-                <div className="relative top-0 bottom-0 mx-auto flex flex-nowrap w-full h-full rounded-2xl overflow-hidden">
+                <div className="relative top-0 bottom-0 mx-auto flex flex-nowrap w-full h-full overflow-hidden">
                     {/* Left Sidebar Panels: Table of Contents, Textual Outline, Front & Back matters when needed. */}
                     <div className="hidden md:block w-[21%] min-w-70 max-w-110 max-h-auto bg-secondary">
                         <TableOfContents />

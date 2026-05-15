@@ -9,7 +9,7 @@ export default async function ReaderLayout({
 }>) {
     return (
         <>
-            <div className="relative -mt-3">
+            <div className="relative">
                 <SidebarReaderWrapper />
                 {/* Main Content */}
                 {children}
