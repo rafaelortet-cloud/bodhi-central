@@ -5,8 +5,6 @@ import React, { useRef, useState, isValidElement } from "react";
 import { ChevronDown } from "@untitledui/icons";
 import { Button as AriaButton, Dialog as AriaDialog, DialogTrigger as AriaDialogTrigger, Popover as AriaPopover } from "react-aria-components";
 import { Button } from "@/components/base/buttons/button";
-import { BodhicentralLogo } from "@/components/foundations/logo/bodhicentral-logo";
-import { BodhicentralLogoMinimal } from "@/components/foundations/logo/bodhicentral-logo-minimal";
 import { DropdownMenuResources } from "@/components-custom/navigation/navigation-menu/dropdown-menu-resources";
 import { DropdownMenuLearningPaths } from "@/components-custom/navigation/navigation-menu/dropdown-menu-learning-paths";
 import { DropdownMenuScripture } from "@/components-custom/navigation/navigation-menu/dropdown-menu-scripture";
@@ -117,7 +115,7 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
         <header
             ref={headerRef}
             className={cx(
-                "fixed top-0 z-500 flex h-14 w-full items-center justify-center border-ink-500/50 border-b bg-ink-600 backdrop-blur-md md:h-14 shadow-md shadow-ink-800/20 transform-gpu will-change-transform",
+                "sticky top-0 z-500 flex h-14 w-full items-center justify-center border-ink-500/50 border-b bg-ink-600 backdrop-blur-md md:h-14 shadow-md shadow-ink-800/20 transform-gpu will-change-transform",
                 isFloating && "h-14 md:h-14 md:pt-2",
                 isFullWidth && !isFloating ? "has-aria-expanded:bg-primary" : "max-md:has-aria-expanded:bg-primary",
                 className,
@@ -135,8 +133,6 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
                         <Link href="/" aria-label="Bodhicentral Home page" className="flex items-center outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-2 gap-1">
                             <span className="text-2xl font-serif font-light uppercase tracking-wide text-white">Bodhi</span>
                             <span className="text-2xl font-serif font-light uppercase tracking-wide text-brand-600">Central</span>
-                            <BodhicentralLogo className="hidden h-8 md:max-lg:hidden" />
-                            <BodhicentralLogoMinimal className="hidden h-8 md:hidden lg:hidden" />
                         </Link>
 
 
@@ -148,7 +144,7 @@ export const Header = ({ items = headerNavItems, isFullWidth, isFloating, classN
                                 <li key={navItem.label}>
                                     {navItem.menu ? (
                                         <AriaDialogTrigger>
-                                            <AriaButton className="flex cursor-pointer items-center gap-0.5 rounded-lg px-1.5 py-1 text-xs font-light uppercase tracking-[0.075em] text-brand-200 outline-focus-ring transition duration-100 ease-linear hover:text-fg-brand-secondary_hover aria-expanded:text-brand-secondary focus-visible:outline-2 focus-visible:outline-offset-2">
+                                            <AriaButton className="relative flex cursor-pointer items-center gap-0.5 rounded-lg px-1.5 py-1 text-xs font-light uppercase tracking-[0.075em] text-brand-200 outline-focus-ring transition duration-100 ease-linear hover:text-fg-brand-secondary_hover aria-expanded:text-brand-secondary focus-visible:outline-2 focus-visible:outline-offset-2 after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:rounded-full after:bg-brand-500 after:scale-x-0 after:transition-transform after:duration-200 aria-expanded:after:scale-x-100">
                                                 <span className="px-0.5">{navItem.label}</span>
 
                                                 <ChevronDown className="size-4 rotate-0 stroke-[2.625px] text-fg-quaternary hover:text-fg-brand-secondary_hover transition duration-100 ease-linear in-aria-expanded:-rotate-180 in-aria-expanded:text-brand-secondary" />

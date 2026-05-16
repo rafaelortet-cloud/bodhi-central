@@ -50,11 +50,10 @@ export default async function RootLayout({
 
     return (
         <html lang="en" suppressHydrationWarning data-scroll-behavior="smooth" className={cx(nunito.variable, crimsonPro.variable, tibetan.variable)}>
-            <body className="bg-primary antialiased pt-14">
+            <body className="bg-primary antialiased">
                 <RouteProvider>
                     <Theme>
                         <Header user={user} />
-                        {/* Canon Navigation Modal */}
                         <CanonNavigationModal />
                         {children}
                     </Theme>
