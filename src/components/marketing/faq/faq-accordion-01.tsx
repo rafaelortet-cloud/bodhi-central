@@ -80,7 +80,7 @@ export const FAQAccordion01 = () => {
                                     >
                                         <span className="text-lg font-medium text-primary">{faq.question}</span>
 
-                                        <span aria-hidden="true" className="mt-0.5 flex size-6 items-center text-fg-quaternary">
+                                        <span aria-hidden="true" className="mt-0.5 flex size-5 items-center text-fg-brand-primary">
                                             <svg
                                                 width="24"
                                                 height="24"

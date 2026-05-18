@@ -55,10 +55,10 @@ const sections: Section[] = [
         name: "Content features",
         features: [
             {
-                name: "All Canon traditions",
+                name: "Full Canon navigation",
                 tooltip: {
-                    title: "All Canon traditions",
-                    description: "Access to all canon traditions, including pali, and tibetan texts.",
+                    title: "Canon navigation for all traditions",
+                    description: "Access to all canon traditions, with full navigation.",
                 },
                 tiers: { Community: true, Standard: true, Patron: true },
             },
@@ -67,22 +67,6 @@ const sections: Section[] = [
                 tooltip: {
                     title: "Full access to all texts",
                     description: "Access to all canon traditions, including pali, and tibetan texts.",
-                },
-                tiers: { Community: true, Standard: true, Patron: true },
-            },
-            {
-                name: "Canon navigation",
-                tooltip: {
-                    title: "User-level insights",
-                    description: "View data and activity specific to individual users in your workspace.",
-                },
-                tiers: { Community: true, Standard: true, Patron: true },
-            },
-            {
-                name: "Community directory",
-                tooltip: {
-                    title: "Community directory",
-                    description: "Access the directory of other users to connect with them.",
                 },
                 tiers: { Community: true, Standard: true, Patron: true },
             },
@@ -102,6 +86,22 @@ const sections: Section[] = [
                 },
                 tiers: { Community: false, Standard: true, Patron: true },
             },
+            {
+                name: "Advanced Media synchronization",
+                tooltip: {
+                    title: "Advanced Media synchronization",
+                    description: "State-of-the-art multimedia experiences combining the best of scripture and education.",
+                },
+                tiers: { Community: false, Standard: true, Patron: true },
+            },
+            {
+                name: "Quizzes, infographics, and educational timelines",
+                tooltip: {
+                    title: "Quizzes, infographics, and timelines",
+                    description: "Curated educational materials produced by expert educators and qualified Buddhist teachers and instructors.",
+                },
+                tiers: { Community: false, Standard: true, Patron: true },
+            },
         ],
     },
     {
@@ -111,7 +111,7 @@ const sections: Section[] = [
                 name: "Marginal notes",
                 tooltip: {
                     title: "Marginal notes",
-                    description: "Add notes in the margin of the texts for quick reference.",
+                    description: "Add personal notes in the margin of the texts for quick reference.",
                 },
                 tiers: { Community: false, Standard: true, Patron: true },
             },
@@ -135,7 +135,7 @@ const sections: Section[] = [
                 name: "Footnotes (where provided by the publisher)",
                 tooltip: {
                     title: "Footnotes (where provided by the publisher)",
-                    description: "View footnotes and other publisher-supplied metadata where available.",
+                    description: "View in context footnotes and other publisher-supplied metadata where available.",
                 },
                 tiers: { Community: false, Standard: true, Patron: true },
             },
@@ -227,16 +227,16 @@ const sections: Section[] = [
             {
                 name: "Supporter recognition in select YouTube content",
                 tooltip: {
-                    title: "Supporter recognition",
-                    description: "Lorem ipsum",
+                    title: "Supporter recognition on Media",
+                    description: "With your Patron subscription, we are adding your name to all our Media presence.",
                 },
                 tiers: { Community: false, Standard: false, Patron: true },
             },
             {
                 name: "Helps fund licensing, infrasture, and development",
                 tooltip: {
-                    title: "Helps funding",
-                    description: "",
+                    title: "Helps funding, infrasture, and development",
+                    description: "Your generosity helps us move forward with our mission.",
                 },
                 tiers: { Community: false, Standard: false, Patron: true },
             },
@@ -250,7 +250,7 @@ const PricingLargeTable01 = () => {
             <div className="mx-auto max-w-container px-4 py-10 md:px-8 md:py-12">
                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
 
-                    <h2 className="text-display-md font-extralight text-brand-700 dark:text-brand-400 md:text-display-xl">All Plan Features Overview</h2>
+                    <h2 className="text-display-md font-extralight text-brand-700 dark:text-brand-400 md:text-display-xl">Subscriptions & features overview</h2>
                 </div>
             </div>
 
