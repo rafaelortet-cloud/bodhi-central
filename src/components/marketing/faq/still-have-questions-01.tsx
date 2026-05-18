@@ -1,3 +1,5 @@
+"use client";
+
 import { Avatar } from "@/components/base/avatar/avatar";
 import { Button } from "@/components/base/buttons/button";
 
@@ -32,7 +34,7 @@ export const StillHaveQuestions = () => {
                         <h4 className="text-xl font-semibold text-primary">Still have questions?</h4>
                         <p className="mt-2 text-md text-tertiary md:text-lg">Can't find the answer you're looking for? Please chat to our friendly team.</p>
                     </div>
-                    <Button size="md">Get in touch</Button>
+                    <Button href="/support#contact-us" size="md">Get in touch</Button>
                 </div>
             </div>
         </section>

@@ -83,7 +83,7 @@ export default function AboutPage() {
                         As part of our commitment to users, we actively uphold strict standards and protocols to protect our data and infrastructure. For more details about the measures we take to protect your privacy, your data, your rights and the intellectual property we feature on our website, please see our <a href="/terms-of-use" className="text-brand-tertiary hover:text-brand-tertiary-hover">Terms of Use</a> & <a href="/privacy-policy" className="text-brand-tertiary hover:text-brand-tertiary-hover">Privacy Policy</a>.
                     </p>
                     <p className="mt-4 max-w-2xl text-md text-tertiary md:mt-6 md:text-lg">
-                        Thank you for your interest in Bodhi Central. We look forward to providing you with groundbreaking features to enrich your Buddhist study and help you through a lifelong journey of learning and discovery. Please subscribe to our YouTube channel and sign up for a free account on our site to get early access to new features. If you have any questions or feedback, feel free to <a href="/contact" className="text-brand-tertiary hover:text-brand-tertiary-hover">contact us</a>.
+                        Thank you for your interest in Bodhi Central. We look forward to providing you with groundbreaking features to enrich your Buddhist study and help you through a lifelong journey of learning and discovery. Please subscribe to our YouTube channel and sign up for a free account on our site to get early access to new features. If you have any questions or feedback, feel free to <a href="/support#contact-us" className="text-brand-tertiary hover:text-brand-tertiary-hover">contact us</a>.
                     </p>
                 </div>
 

@@ -8,12 +8,12 @@ import { cx } from "@/utils/cx";
 const faqsExtended = [
     {
         question: "What is included in the Community free plan?",
-        answer: "Anyone can read the Bodhi Central scriptures for free — no account os subscription required. Free access includes: Reading all available canon traditions, canon navigation, and reading display settings. Creating a Community free account  is optional and only required to save personal preferences.",
+        answer: "Anyone can read the Bodhi Central scriptures for free — no account or subscription required. Free access includes: Reading all available canon traditions, navigating the canon with intuitive browsing experiences, and reading display settings. Creating a Community free account is optional and only required to save personal preferences.",
         icon: Heart,
     },
     {
         question: "What do I get by creating a free acccount?",
-        answer: "A free account lets you personalize your experience across devices, including: Preferred canon traditions, font and font size, light / dark mode, reading layout, and theme preferences. Creating a free account does not change which canon texts you can access — it simply lets Bodhi Central remember how you prefer to study.",
+        answer: "A free account lets you personalize your experience across devices, including: Preferred canon galleries, font settings, light and dark mode selectors, default reading layout, and theme preferences. Creating a free account does not change which canon texts you can access — it simply lets Bodhi Central remember how you prefer to study.",
         icon: SwitchHorizontal01,
     },
     {
@@ -47,7 +47,7 @@ const faqsExtended = [
         icon: Mail01,
     },
     {
-        question: "Do you charge for Scriptural footnotes, cross-references, or other publisher-supplied metadata?",
+        question: "Do you charge for scriptural footnotes, cross-references, or other publisher-supplied metadata?",
         answer: "No. For any Scripture version that includes footnotes, cross-references, or other publisher-supplied study metadata, that information is made freely available to all users directly within the reader view. This applies to all anonymous users worldwide regardless of registration or subscription status. Optional subscriptions do not restrict or modify basic access to this material at the bottom of each chapter. Paid plans may unlock additional tools that make it easier to view, navigate, study, or reference this information alongside the Scriptural texts, but the underlying content itself remains freely accessible to everyone.",
         icon: Mail01,
     },
@@ -62,7 +62,7 @@ export const FAQAccordionSimple = () => {
     };
 
     return (
-        <section className="bg-secondary py-16 md:py-20">
+        <section className="py-16 md:py-20 relative z-1">
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
                     <h2 className="text-display-md font-extralight text-brand-800 dark:text-brand-400 md:text-display-xl">Your Questions, Answered</h2>
@@ -79,7 +79,7 @@ export const FAQAccordionSimple = () => {
                                     >
                                         <span className="text-lg font-medium text-primary">{faq.question}</span>
 
-                                        <span aria-hidden="true" className="mt-0.5 flex size-6 items-center text-fg-quaternary">
+                                        <span aria-hidden="true" className="mt-0.5 flex size-5 items-center text-fg-brand-primary">
                                             <svg
                                                 width="24"
                                                 height="24"

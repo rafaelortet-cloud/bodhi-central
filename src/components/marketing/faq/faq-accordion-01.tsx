@@ -9,12 +9,12 @@ import { StillHaveQuestions } from "./still-have-questions-01";
 const faqsExtended = [
     {
         question: "What is included in the Community free plan?",
-        answer: "Anyone can read the Bodhi Central scriptures for free — no account os subscription required. Free access includes: Reading all available canon traditions, canon navigation, and reading display settings. Creating a Community free account  is optional and only required to save personal preferences.",
+        answer: "Anyone can read the Bodhi Central scriptures for free — no account or subscription required. Free access includes: Reading all available canon traditions, navigating the canon with intuitive browsing experiences, and reading display settings. Creating a Community free account is optional and only required to save personal preferences.",
         icon: Heart,
     },
     {
         question: "What do I get by creating a free acccount?",
-        answer: "A free account lets you personalize your experience across devices, including: Preferred canon traditions, font and font size, light / dark mode, reading layout, and theme preferences. Creating a free account does not change which canon texts you can access — it simply lets Bodhi Central remember how you prefer to study.",
+        answer: "A free account lets you personalize your experience across devices, including: Preferred canon galleries, font settings, light and dark mode selectors, default reading layout, and theme preferences. Creating a free account does not change which canon texts you can access — it simply lets Bodhi Central remember how you prefer to study.",
         icon: SwitchHorizontal01,
     },
     {
@@ -48,7 +48,7 @@ const faqsExtended = [
         icon: Mail01,
     },
     {
-        question: "Do you charge for Scriptural footnotes, cross-references, or other publisher-supplied metadata?",
+        question: "Do you charge for scriptural footnotes, cross-references, or other publisher-supplied metadata?",
         answer: "No. For any Scripture version that includes footnotes, cross-references, or other publisher-supplied study metadata, that information is made freely available to all users directly within the reader view. This applies to all anonymous users worldwide regardless of registration or subscription status. Optional subscriptions do not restrict or modify basic access to this material at the bottom of each chapter. Paid plans may unlock additional tools that make it easier to view, navigate, study, or reference this information alongside the Scriptural texts, but the underlying content itself remains freely accessible to everyone.",
         icon: Mail01,
     },
