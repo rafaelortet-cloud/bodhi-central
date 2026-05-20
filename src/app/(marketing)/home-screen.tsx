@@ -16,7 +16,7 @@ export const HomeScreen = () => {
     return (
         <main className="relative overflow-hidden bg-brand-50 dark:bg-brand-200">
 
-            <section className="hero relative w-full pb-28">
+            <section className="hero relative flex flex-col items-center justify-center w-full pb-28 h-[calc(100vh-3.5rem)] bg-ink-700">
                 <div className="hero-bg-grad"></div>
                 <div className="hero-grain"></div>
                 <div className="hero-rule"></div>
