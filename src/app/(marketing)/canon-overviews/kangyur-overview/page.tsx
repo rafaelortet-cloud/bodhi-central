@@ -108,12 +108,12 @@ const ArticleOverview = () => {
                             <figure>
                                 <Image className="h-60 md:h-100" src="/content/kangyur-timeline-evolution.webp" alt="Timeline showing the evolution of the Kangyur canon." width={400} height={400} />
                                 <figcaption>
-                                    Image courtesy of Bodhi Central, generated with{" "}
+                                    Infographic courtesy of Bodhi Central, generated with NotebookLM. Report mistakes at{" "}
                                     <a
-                                        href="https://notebooklm.google.com/notebook/0cd67a23-ff4a-437b-9b47-995e80ef64d6?authuser=0&pli=1"
+                                        href="support#contact-us"
                                         className="rounded-xs outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-2"
                                     >
-                                        NotebookLLM
+                                        Contact us
                                     </a>
                                 </figcaption>
                             </figure>
