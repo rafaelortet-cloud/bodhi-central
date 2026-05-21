@@ -31,7 +31,7 @@ const ArticleOverview = () => {
                 article_headline_span="The Canonical Heart of the Tibetan Tradition"
                 article_subheadline="The Kangyur is the principal collection of the Buddhist scriptures in Tibetan. It contains some 900 works in over 100 volumes, all translations into Tibetan of the Indian texts considered to record the words of the Buddha."
                 author_name="Bodhi Central Team"
-                author_caption="Article sources below"
+                author_caption="List of sources below"
                 author_image="/placeholder-image-landscape.svg"
                 author_image_alt="Bodhi Central image"
                 article_image="/tibetan-buddhist-library-01.jpg"
@@ -57,7 +57,7 @@ const ArticleOverview = () => {
                                     { title: "Major Editions and Recensions", href: "#major-editions-and-recensions", indent: "ml-0" },
                                     { title: "The Living Tradition: Usage and Significance", href: "#living-traditions", indent: "ml-0" },
                                     { title: "Sources, References and Further Reading", href: "#sources-references-and-further-reading", indent: "ml-0" },
-                                    { title: "Gallery of the Kangyur Divisions", href: "#kangyur-divisions", indent: "ml-0" },
+                                    { title: "Navigate the Kangyur Divisions", href: "#kangyur-divisions", indent: "ml-0" },
                                 ].map((item) => (
                                     <li key={item.title} className={item.indent}>
                                         <a href={item.href} >
@@ -145,12 +145,12 @@ const ArticleOverview = () => {
                                             <p className="not-prose text-md font-bold text-center text-secondary">Discipline</p>
                                         </div>
                                         <div className="mx-auto w-full h-full flex flex-col items-center justify-center gap-0 bg-cyan-100/60 dark:bg-cyan-950/80 px-2 py-4 rounded-2xl border border-cyan-200 dark:border-cyan-800">
-                                            <p className="not-prose text-md font-light text-primary/70 text-center">Sūtra</p>
+                                            <p className="not-prose text-md font-light text-primary/70 text-center">མདོ།</p>
                                             <p className="not-prose text-md font-bold text-center text-secondary">Discourses</p>
                                         </div>
                                         <div className="mx-auto w-full h-full flex flex-col items-center justify-center gap-0 bg-blue-100/60 dark:bg-blue-950/80 px-2 py-4 rounded-2xl border border-blue-200 dark:border-blue-800">
-                                            <p className="not-prose text-md font-light text-primary/70 text-center">རྒྱུད་འབུམ།</p>
-                                            <p className="not-prose text-md font-bold text-center text-secondary">Tantra Collection</p>
+                                            <p className="not-prose text-md font-light text-primary/70 text-center">རྒྱུད།</p>
+                                            <p className="not-prose text-md font-bold text-center text-secondary">Tantra</p>
                                         </div>
                                         <div className="mx-auto w-full h-full flex flex-col items-center justify-center gap-0 bg-violet-100/60 dark:bg-violet-950/80 px-2 py-4 rounded-2xl border border-violet-200 dark:border-violet-800">
                                             <p className="not-prose text-md font-light text-primary/70 text-center">གཟུངས་འབུམ།</p>
@@ -201,18 +201,18 @@ const ArticleOverview = () => {
                             <figure>
                                 <blockquote>
                                     <p>
-                                        The unanimous opinion of the scholars who have studied these [early Buddhist] texts is that they are mostly consistent in doctrine and content, and differ mainly in arrangement and organization. While it is true that the differences are not small, and it is hard to generalize, it is clear that the early community saw their main task to preserve verbatim the words of the Buddha, especially the essential teachings, a task that they took very seriously.
+                                        The Kangyur and Tengyur are not merely historical archives; they are active components of a living spiritual tradition. The intertextual relationship between the scriptures (Kangyur) and the commentaries (Tengyur) allows practitioners to engage with the philosophy and practice side-by-side. Both corpora combined are the cornestone of our educational foundation, transformative nature, and the luminous path to awakening.
                                     </p>
                                 </blockquote>
                                 <figcaption className="not-prose mt-6 flex gap-3 text-md md:mt-8">
                                     <Image
-                                        src="/people/bhikku-sujato-close-up.jpg"
+                                        src="/placeholder-image-landscape.svg"
                                         className="size-12 rounded-full object-cover"
                                         alt="Bhikkhu Sujato"
                                         width={800} height={800} />
                                     <div>
-                                        <p className="text-md font-semibold text-primary">Bhikkhu Sujato</p>
-                                        <cite className="text-md text-tertiary not-italic">Co-founder of SuttaCentral</cite>
+                                        <p className="text-md font-semibold text-primary">Bhodi Central</p>
+                                        <cite className="text-md text-tertiary not-italic">Editorial Team</cite>
                                     </div>
                                 </figcaption>
                             </figure>
