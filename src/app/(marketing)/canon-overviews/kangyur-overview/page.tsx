@@ -105,18 +105,7 @@ const ArticleOverview = () => {
                             <p>
                                 Following a brief hiatus after the collapse of the Tibetan Empire, the "Later Propagation" (phyi dar) began in the 10th century. This second wave saw the arrival of new tantric materials from India. Notably, while the Kangyur contains many of these "New" translations, many tantras from the early period were eventually preserved in a separate collection known as the Nyingma Gyubum (rnying ma'i rgyud 'bum), influencing the eventual taxonomy of the Kangyur's Tantra section.
                             </p>
-                            <figure>
-                                <Image className="h-60 md:h-100" src="/content/kangyur-timeline-evolution-1280px.webp" alt="Timeline showing the evolution of the Kangyur canon." width={400} height={400} />
-                                <figcaption>
-                                    Infographic courtesy of Bodhi Central, generated with NotebookLM. Report mistakes at{" "}
-                                    <a
-                                        href="/support#contact-us"
-                                        className="rounded-xs outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-2"
-                                    >
-                                        Contact us
-                                    </a>
-                                </figcaption>
-                            </figure>
+
 
                             <h2 id="scope-and-structural-classification">3. Scope and Structural Classification</h2>
                             <p>
@@ -176,6 +165,18 @@ const ArticleOverview = () => {
                             <p>
                                 Most versions of the canon utilized today are "conflations"—complex hybrids that integrate the text-critical variants and structural classifications of both traditions. The most prominent examples of these conflated recensions are the Narthang (1730) and Degé (1733) editions.
                             </p>
+                            <figure>
+                                <Image className="h-60 md:h-100" src="/content/kangyur-timeline-evolution-1280px.webp" alt="Timeline showing the evolution of the Kangyur canon." width={400} height={400} />
+                                <figcaption>
+                                    Infographic courtesy of Bodhi Central, generated with NotebookLM. Report mistakes at{" "}
+                                    <a
+                                        href="/support#contact-us"
+                                        className="rounded-xs outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-2"
+                                    >
+                                        Contact us
+                                    </a>
+                                </figcaption>
+                            </figure>
 
                             <h2 id="major-editions-and-recensions">5. Major Editions and Recensions</h2>
                             <p>

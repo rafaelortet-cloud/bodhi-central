@@ -4,11 +4,11 @@ import { type Article, Simple01Vertical } from "@/components/marketing/blog/base
 const articles: Article[] = [
     {
         id: "article-1",
-        title: "The Kangyur: the Buddha’s words",
-        summary: "The Kangyur, the “translated words,” is the collection of the Buddha’s teachings as they were translated into Tibetan.",
+        title: "Understanding the Kangyur: The Canonical Heart of the Tibetan Tratidion",
+        summary: "The Kangyur stands as the primary scriptural authority within the Tibetan Buddhist tradition, serving as the foundational repository of the 'Word of the Buddha.'",
         href: "/canon-overviews/kangyur-overview",
         category: {
-            name: "Kangyur Canon",
+            name: "Kangyur",
             href: "/canon-overviews/kangyur-overview",
         },
         thumbnailUrl: "/tibetan-buddhist-library-01.jpg",
@@ -44,7 +44,7 @@ const articles: Article[] = [
         summary: "The Tengyur, the “translated treatises,” is the collection of commentaries and treatises that expound upon the Buddha’s teachings.",
         href: "#",
         category: {
-            name: "Tengyur Canon",
+            name: "Tengyur",
             href: "#",
         },
         thumbnailUrl: "/placeholder-image-landscape.svg",
